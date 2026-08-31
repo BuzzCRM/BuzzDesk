@@ -1,6 +1,6 @@
-# Znuny JavaScript Module Framework
+# BuzzDesk JavaScript Module Framework
 
-This directory contains the JavaScript module framework for Znuny's frontend architecture. The framework provides a modular, scalable approach to building interactive UI components with automatic lifecycle management and inter-module communication.
+This directory contains the JavaScript module framework for BuzzDesk's frontend architecture. The framework provides a modular, scalable approach to building interactive UI components with automatic lifecycle management and inter-module communication.
 
 ## Framework Architecture
 
@@ -34,7 +34,6 @@ All modules follow this consistent structure:
 
 ```javascript
 // --
-// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (AGPL). If you
@@ -228,7 +227,7 @@ The framework includes comprehensive error handling:
 
 ## Integration with Legacy Code
 
-The module framework coexists with existing Znuny JavaScript:
+The module framework coexists with existing BuzzDesk JavaScript:
 
 ### Core Integration
 

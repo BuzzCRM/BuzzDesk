@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -50,7 +49,7 @@ OUTPUT
         $Output .= <<OUTPUT;
 ## SLA '$SLAData{Name}'
 
-\$ZnunyHelperObject->_SLACreateIfNotExists(
+\$BuzzDeskHelperObject->_SLACreateIfNotExists(
     Name                => '$SLAData{Name}',
     ServiceIDs          => [],                    # should not be necessary for UnitTest
     FirstResponseTime   => '$SLAData{FirstResponseTime}',

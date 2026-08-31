@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -26,7 +25,7 @@ my $TimeAccountingWebserviceObject = $Kernel::OM->Get('Kernel::System::TimeAccou
 my $TimeObject                     = $Kernel::OM->Get('Kernel::System::Time');
 my $UnitTestWebserviceObject       = $Kernel::OM->Get('Kernel::System::UnitTest::Webservice');
 my $ConfigObject                   = $Kernel::OM->Get('Kernel::Config');
-my $ZnunyHelperObject              = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject              = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $ValidObject                    = $Kernel::OM->Get('Kernel::System::Valid');
 my $WebserviceObject               = $Kernel::OM->Get('Kernel::System::GenericInterface::Webservice');
 
@@ -35,7 +34,7 @@ my $ValidID        = $ValidIDsByName{valid};
 
 my $Home = $ConfigObject->Get('Home');
 
-$ZnunyHelperObject->_WebserviceCreateIfNotExists(
+$BuzzDeskHelperObject->_WebserviceCreateIfNotExists(
     Webservices => {
         TimeAccounting => $Home . '/var/webservices/examples/TimeAccountingREST.yml'
     },
@@ -52,7 +51,7 @@ $WebserviceObject->WebserviceUpdate(
     UserID  => 1,
 );
 
-$ZnunyHelperObject->_GroupCreateIfNotExists(
+$BuzzDeskHelperObject->_GroupCreateIfNotExists(
     Name => 'timeaccounting_webservice',
 );
 

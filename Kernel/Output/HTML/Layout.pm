@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -1154,7 +1152,7 @@ create notify lines
     my $Output = $LayoutObject->Notify(
         Priority  => 'Warning',
         Data      => 'Template content',
-        Link      => 'http://znuny.com/',
+        Link      => 'http://buzzdesk.com/',
         LinkClass => 'some_CSS_class',              # optional
     );
 
@@ -1188,19 +1186,19 @@ create notify lines
             {
                 type => 'submit',
                 text => 'Continue',
-                url  => 'http://znuny.com/',
+                url  => 'http://buzzdesk.com/',
                 class => 'some_CSS_class',
             },
             {
                 type => 'error',
                 text => 'Error',
-                url  => 'http://znuny.com/',
+                url  => 'http://buzzdesk.com/',
                 class => 'Error',
             },
             {
                 type => 'notify',
                 text => 'Cancel',
-                url  => 'http://znuny.com/',
+                url  => 'http://buzzdesk.com/',
                 class => 'some_CSS_class',
             },
         ],

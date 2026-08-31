@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -21,7 +20,7 @@ $Kernel::OM->ObjectParamAdd(
     },
 );
 
-my $ZnunyHelperObject         = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject         = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $LayoutObject              = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
 my $DynamicFieldObject        = $Kernel::OM->Get('Kernel::System::DynamicField');
 my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
@@ -34,7 +33,7 @@ my $DynamicFieldWebserviceDirectRequestObject
 my $WebserviceName = 'DynamicFieldWebservice';
 my $DynamicField   = $WebserviceName . 'DirectRequest';
 
-$ZnunyHelperObject->_WebserviceCreate(
+$BuzzDeskHelperObject->_WebserviceCreate(
     Webservices => {
         $WebserviceName => 'scripts/test/sample/Webservice/' . $WebserviceName . '.yml',
     }
@@ -63,7 +62,7 @@ my @DynamicFields = (
         },
     },
 );
-my $Success = $ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFields);
+my $Success = $BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFields);
 
 $Self->True(
     $Success,
@@ -82,8 +81,8 @@ $UnitTestWebserviceObject->Mock(
                 Success => 1,
                 Data    => [
                     {
-                        Key   => 'Znuny',
-                        Value => 'Znuny',
+                        Key   => 'BuzzDesk',
+                        Value => 'BuzzDesk',
                     },
                     {
                         Key   => 'Rocks',
@@ -99,8 +98,8 @@ $UnitTestWebserviceObject->Mock(
             Result => {
                 Success => 1,
                 Data    => {
-                    Key   => 'Znuny',
-                    Value => 'Znuny',
+                    Key   => 'BuzzDesk',
+                    Value => 'BuzzDesk',
                 },
             },
         },
@@ -109,7 +108,7 @@ $UnitTestWebserviceObject->Mock(
 
 # Request
 my $Data = $DynamicFieldWebserviceDirectRequestObject->Request(
-    SearchTerms => 'Znuny',
+    SearchTerms => 'BuzzDesk',
     UserID      => 1,
     %{ $DynamicFieldConfig->{Config} },
 );
@@ -118,8 +117,8 @@ $Self->IsDeeply(
     $Data,
     [
         {
-            'Key'   => 'Znuny',
-            'Value' => 'Znuny'
+            'Key'   => 'BuzzDesk',
+            'Value' => 'BuzzDesk'
         },
         {
             'Key'   => 'Rocks',

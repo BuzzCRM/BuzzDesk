@@ -1,14 +1,12 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
 
-## nofilter(TidyAll::Plugin::Znuny::Perl::NoExitInConsoleCommands)
-## nofilter(TidyAll::Plugin::Znuny::CodeStyle::STDERRCheck)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::NoExitInConsoleCommands)
+## nofilter(TidyAll::Plugin::BuzzDesk::CodeStyle::STDERRCheck)
 
 package Kernel::System::Console::Command::Maint::PostMaster::MailAccountFetch;
 
@@ -45,7 +43,7 @@ sub Configure {
     );
     $Self->AddOption(
         Name        => 'debug',
-        Description => "Print debug info to the Znuny log.",
+        Description => "Print debug info to the BuzzDesk log.",
         Required    => 0,
         HasValue    => 0,
     );
@@ -83,7 +81,7 @@ sub PreRun {
     if ($Debug) {
         $Kernel::OM->Get('Kernel::System::Log')->Log(
             Priority => 'debug',
-            Message  => "Znuny email handle ($Name) started.",
+            Message  => "BuzzDesk email handle ($Name) started.",
         );
     }
 
@@ -245,7 +243,7 @@ sub PostRun {
     if ($Debug) {
         $Kernel::OM->Get('Kernel::System::Log')->Log(
             Priority => 'debug',
-            Message  => "Znuny email handle ($Name) stopped.",
+            Message  => "BuzzDesk email handle ($Name) stopped.",
         );
     }
 

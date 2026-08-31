@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -9,10 +7,10 @@
 
 package Kernel::System::Log;
 
-## nofilter(TidyAll::Plugin::Znuny::Perl::Time)
-## nofilter(TidyAll::Plugin::Znuny::Perl::Dumper)
-## nofilter(TidyAll::Plugin::Znuny::Perl::Require)
-## nofilter(TidyAll::Plugin::Znuny::CodeStyle::STDERRCheck)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Time)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Dumper)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Require)
+## nofilter(TidyAll::Plugin::BuzzDesk::CodeStyle::STDERRCheck)
 
 use strict;
 use warnings;

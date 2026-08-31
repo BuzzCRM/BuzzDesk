@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -23,7 +22,7 @@ $Kernel::OM->ObjectParamAdd(
 my $ConfigObject              = $Kernel::OM->Get('Kernel::Config');
 my $HelperObject              = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $UnitTestParamObject       = $Kernel::OM->Get('Kernel::System::UnitTest::Param');
-my $ZnunyHelperObject         = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject         = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $LayoutObject              = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
 my $ParamObject               = $Kernel::OM->Get('Kernel::System::Web::Request');
 my $WebserviceObject          = $Kernel::OM->Get('Kernel::System::GenericInterface::Webservice');
@@ -37,7 +36,7 @@ $LayoutObject->{UserID} = 1;
 my $DynamicField   = 'WebserviceCustomSearchFormTest';
 my $WebserviceName = 'DynamicFieldWebservice';
 
-$ZnunyHelperObject->_WebserviceCreate(
+$BuzzDeskHelperObject->_WebserviceCreate(
     Webservices => {
         $WebserviceName => 'scripts/test/sample/Webservice/' . $WebserviceName . '.yml',
     }
@@ -106,7 +105,7 @@ my @DynamicFields = (
     },
 );
 
-$ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFields);
+$BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFields);
 
 $UnitTestWebserviceObject->Mock(
     TestSearch => [
@@ -116,16 +115,16 @@ $UnitTestWebserviceObject->Mock(
                 Success => 1,
                 Data    => [
                     {
-                        Key   => 'Znuny',
-                        Value => 'Znuny',
+                        Key   => 'BuzzDesk',
+                        Value => 'BuzzDesk',
                     },
                     {
                         Key   => 'Rocks',
                         Value => 'Rocks',
                     },
                     {
-                        Key   => 'Znuny2',
-                        Value => 'Znuny2',
+                        Key   => 'BuzzDesk2',
+                        Value => 'BuzzDesk2',
                     },
                 ],
             },
@@ -138,8 +137,8 @@ $UnitTestWebserviceObject->Mock(
             Result => {
                 Success => 1,
                 Data    => {
-                    Key   => 'Znuny',
-                    Value => 'Znuny',
+                    Key   => 'BuzzDesk',
+                    Value => 'BuzzDesk',
                 },
             },
         },
@@ -163,16 +162,16 @@ my @Tests = (
         DynamicFieldName => $DynamicField . 'Dropdown',
         Param            => {
             DynamicFieldWebserviceCustomSearchForm              => '1',
-            "Search_DynamicField_" . $DynamicField . "Dropdown" => 'Znuny2',
+            "Search_DynamicField_" . $DynamicField . "Dropdown" => 'BuzzDesk2',
         },
         ExpectedGetParamResult => {
             "Search_DynamicField_" . $DynamicField . "Dropdown" => [
-                'Znuny2'
+                'BuzzDesk2'
             ],
         },
         ExpectedSearchFieldValueGetResult => {
             "Search_DynamicField_" . $DynamicField . "Dropdown" => [
-                'Znuny2'
+                'BuzzDesk2'
             ],
         },
     },
@@ -181,18 +180,18 @@ my @Tests = (
         DynamicFieldName => $DynamicField . 'Dropdown',
         Param            => {
             DynamicFieldWebserviceCustomSearchForm              => '1',
-            "Search_DynamicField_" . $DynamicField . "Dropdown" => 'Znuny*',
+            "Search_DynamicField_" . $DynamicField . "Dropdown" => 'BuzzDesk*',
         },
         ExpectedGetParamResult => {
             "Search_DynamicField_" . $DynamicField . "Dropdown" => [
-                'Znuny',
-                'Znuny2',
+                'BuzzDesk',
+                'BuzzDesk2',
             ],
         },
         ExpectedSearchFieldValueGetResult => {
             "Search_DynamicField_" . $DynamicField . "Dropdown" => [
-                'Znuny',
-                'Znuny2',
+                'BuzzDesk',
+                'BuzzDesk2',
             ],
         },
     },
@@ -212,16 +211,16 @@ my @Tests = (
         DynamicFieldName => $DynamicField . 'Multiselect',
         Param            => {
             DynamicFieldWebserviceCustomSearchForm                 => '1',
-            "Search_DynamicField_" . $DynamicField . "Multiselect" => 'Znuny2',
+            "Search_DynamicField_" . $DynamicField . "Multiselect" => 'BuzzDesk2',
         },
         ExpectedGetParamResult => {
             "Search_DynamicField_" . $DynamicField . "Multiselect" => [
-                'Znuny2',
+                'BuzzDesk2',
             ],
         },
         ExpectedSearchFieldValueGetResult => {
             "Search_DynamicField_" . $DynamicField . "Multiselect" => [
-                'Znuny2',
+                'BuzzDesk2',
             ],
         },
     },
@@ -230,18 +229,18 @@ my @Tests = (
         DynamicFieldName => $DynamicField . 'Multiselect',
         Param            => {
             DynamicFieldWebserviceCustomSearchForm                 => '1',
-            "Search_DynamicField_" . $DynamicField . "Multiselect" => 'Znuny*',
+            "Search_DynamicField_" . $DynamicField . "Multiselect" => 'BuzzDesk*',
         },
         ExpectedGetParamResult => {
             "Search_DynamicField_" . $DynamicField . "Multiselect" => [
-                'Znuny',
-                'Znuny2',
+                'BuzzDesk',
+                'BuzzDesk2',
             ],
         },
         ExpectedSearchFieldValueGetResult => {
             "Search_DynamicField_" . $DynamicField . "Multiselect" => [
-                'Znuny',
-                'Znuny2',
+                'BuzzDesk',
+                'BuzzDesk2',
             ],
         },
     },

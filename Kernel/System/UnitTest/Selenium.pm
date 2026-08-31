@@ -1,13 +1,11 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::CodeStyle::STDERRCheck)
-## nofilter(TidyAll::Plugin::Znuny::Perl::Pod::FunctionPod)
+## nofilter(TidyAll::Plugin::BuzzDesk::CodeStyle::STDERRCheck)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Pod::FunctionPod)
 
 package Kernel::System::UnitTest::Selenium;
 
@@ -366,7 +364,7 @@ sub get_alert_text {    ## no critic
 
 =head2 VerifiedGet()
 
-perform a get() call, but wait for the page to be fully loaded (works only within Znuny).
+perform a get() call, but wait for the page to be fully loaded (works only within BuzzDesk).
 Will die() if the verification fails.
 
     $SeleniumObject->VerifiedGet(
@@ -383,14 +381,14 @@ sub VerifiedGet {
     $Self->WaitFor(
         JavaScript =>
             'return typeof(Core) == "object" && typeof(Core.App) == "object" && Core.App.PageLoadComplete'
-    ) || die "Znuny API verification failed after page load.";
+    ) || die "BuzzDesk API verification failed after page load.";
 
     return;
 }
 
 =head2 VerifiedRefresh()
 
-perform a refresh() call, but wait for the page to be fully loaded (works only within Znuny).
+perform a refresh() call, but wait for the page to be fully loaded (works only within BuzzDesk).
 Will die() if the verification fails.
 
     $SeleniumObject->VerifiedRefresh();
@@ -405,7 +403,7 @@ sub VerifiedRefresh {
     $Self->WaitFor(
         JavaScript =>
             'return typeof(Core) == "object" && typeof(Core.App) == "object" && Core.App.PageLoadComplete'
-    ) || die "Znuny API verification failed after page load.";
+    ) || die "BuzzDesk API verification failed after page load.";
 
     return;
 }
@@ -1093,7 +1091,7 @@ sub SelectOption {
 
 =head2 InputGet()
 
-Wrapper for the Znuny.Form.Input JavaScript namespace 'Get' function.
+Wrapper for the BuzzDesk.Form.Input JavaScript namespace 'Get' function.
 
     my $Result = $SeleniumObject->InputGet(
         Attribute => 'QueueID',
@@ -1120,7 +1118,7 @@ sub InputGet {
         $OptionsParameter = ", $OptionsJSON";
     }
 
-    my $Result = $Self->execute_script("return Znuny.Form.Input.Get('$Param{Attribute}' $OptionsParameter);");
+    my $Result = $Self->execute_script("return BuzzDesk.Form.Input.Get('$Param{Attribute}' $OptionsParameter);");
 
     return $Result if !IsHashRefWithData($Result);
 
@@ -1141,7 +1139,7 @@ sub InputGet {
 
 =head2 InputSet()
 
-Wrapper for the Znuny.Form.Input JavaScript namespace 'Set' function.
+Wrapper for the BuzzDesk.Form.Input JavaScript namespace 'Set' function.
 
     my $Result = $SeleniumObject->InputSet(
         Attribute   => 'QueueID',
@@ -1233,7 +1231,7 @@ sub InputSet {
     }
 
     my $Result = $Self->execute_script(
-        "return Znuny.Form.Input.Set('$Param{Attribute}', $Content $OptionsParameter);"
+        "return BuzzDesk.Form.Input.Set('$Param{Attribute}', $Content $OptionsParameter);"
     );
 
     if (
@@ -1251,7 +1249,7 @@ sub InputSet {
 
 =head2 InputMandatory()
 
-Wrapper for the Znuny.Form.Input JavaScript namespace 'Mandatory' function.
+Wrapper for the BuzzDesk.Form.Input JavaScript namespace 'Mandatory' function.
 Sets OR returns the Mandatory state of an input field.
 
     # Set mandatory state:
@@ -1283,12 +1281,12 @@ sub InputMandatory {
         $Mandatory = $Param{Mandatory} ? 'true' : 'false';
     }
 
-    return $Self->execute_script("return Znuny.Form.Input.Mandatory('$Param{Attribute}' $Mandatory);");
+    return $Self->execute_script("return BuzzDesk.Form.Input.Mandatory('$Param{Attribute}' $Mandatory);");
 }
 
 =head2 InputFieldID()
 
-Wrapper for the Znuny.Form.Input JavaScript namespace 'FieldID' function.
+Wrapper for the BuzzDesk.Form.Input JavaScript namespace 'FieldID' function.
 
     my $Result = $SeleniumObject->InputFieldID(
         Attribute => 'QueueID',
@@ -1301,12 +1299,12 @@ Wrapper for the Znuny.Form.Input JavaScript namespace 'FieldID' function.
 sub InputFieldID {
     my ( $Self, %Param ) = @_;
 
-    return $Self->execute_script("return Znuny.Form.Input.FieldID('$Param{Attribute}');");
+    return $Self->execute_script("return BuzzDesk.Form.Input.FieldID('$Param{Attribute}');");
 }
 
 =head2 InputType()
 
-Wrapper for the Znuny.Form.Input JavaScript namespace 'Type' function.
+Wrapper for the BuzzDesk.Form.Input JavaScript namespace 'Type' function.
 Attention: Requires the FieldID - not the Attribute! (See InputFieldID)
 
     my $Result = $SeleniumObject->InputType(
@@ -1320,12 +1318,12 @@ Attention: Requires the FieldID - not the Attribute! (See InputFieldID)
 sub InputType {
     my ( $Self, %Param ) = @_;
 
-    return $Self->execute_script("return Znuny.Form.Input.Type('$Param{FieldID}');");
+    return $Self->execute_script("return BuzzDesk.Form.Input.Type('$Param{FieldID}');");
 }
 
 =head2 InputHide()
 
-Wrapper for the Znuny.Form.Input JavaScript namespace 'Hide' function.
+Wrapper for the BuzzDesk.Form.Input JavaScript namespace 'Hide' function.
 
     my $Result = $SeleniumObject->InputHide(
         Attribute => 'QueueID',
@@ -1338,12 +1336,12 @@ Wrapper for the Znuny.Form.Input JavaScript namespace 'Hide' function.
 sub InputHide {
     my ( $Self, %Param ) = @_;
 
-    return $Self->execute_script("return Znuny.Form.Input.Hide('$Param{Attribute}');");
+    return $Self->execute_script("return BuzzDesk.Form.Input.Hide('$Param{Attribute}');");
 }
 
 =head2 InputExists()
 
-Wrapper for the Znuny.Form.Input JavaScript namespace 'Exists' function.
+Wrapper for the BuzzDesk.Form.Input JavaScript namespace 'Exists' function.
 
     my $Result = $SeleniumObject->InputExists(
         Attribute => 'QueueID',
@@ -1356,12 +1354,12 @@ Wrapper for the Znuny.Form.Input JavaScript namespace 'Exists' function.
 sub InputExists {
     my ( $Self, %Param ) = @_;
 
-    return $Self->execute_script("return Znuny.Form.Input.Exists('$Param{Attribute}');");
+    return $Self->execute_script("return BuzzDesk.Form.Input.Exists('$Param{Attribute}');");
 }
 
 =head2 InputShow()
 
-Wrapper for the Znuny.Form.Input JavaScript namespace 'Show' function.
+Wrapper for the BuzzDesk.Form.Input JavaScript namespace 'Show' function.
 
     my $Result = $SeleniumObject->InputShow(
         Attribute => 'QueueID',
@@ -1374,12 +1372,12 @@ Wrapper for the Znuny.Form.Input JavaScript namespace 'Show' function.
 sub InputShow {
     my ( $Self, %Param ) = @_;
 
-    return $Self->execute_script("return Znuny.Form.Input.Show('$Param{Attribute}');");
+    return $Self->execute_script("return BuzzDesk.Form.Input.Show('$Param{Attribute}');");
 }
 
 =head2 InputModule()
 
-Wrapper for the Znuny.Form.Input JavaScript namespace 'Module' function.
+Wrapper for the BuzzDesk.Form.Input JavaScript namespace 'Module' function.
 
     my $Result = $SeleniumObject->InputModule(
         Action => 'QueueID',
@@ -1392,12 +1390,12 @@ Wrapper for the Znuny.Form.Input JavaScript namespace 'Module' function.
 sub InputModule {
     my ( $Self, %Param ) = @_;
 
-    return $Self->execute_script("return Znuny.Form.Input.Module('$Param{Action}');");
+    return $Self->execute_script("return BuzzDesk.Form.Input.Module('$Param{Action}');");
 }
 
 =head2 InputFieldIDMapping()
 
-Wrapper for the Znuny.Form.Input JavaScript namespace 'FieldIDMapping' function.
+Wrapper for the BuzzDesk.Form.Input JavaScript namespace 'FieldIDMapping' function.
 Sets OR returns the mapping structure of the given Action.
 
     my $Result = $SeleniumObject->InputFieldIDMapping(
@@ -1439,13 +1437,13 @@ sub InputFieldIDMapping {
     }
 
     return $Self->execute_script(
-        "return Znuny.Form.Input.FieldIDMapping('$Param{Action}' $MappingParameter);"
+        "return BuzzDesk.Form.Input.FieldIDMapping('$Param{Action}' $MappingParameter);"
     );
 }
 
 =head2 AgentLogin()
 
-Creates and logs in an Agent. Calls TestUserDataGet and Login on the ZnunyHelper object.
+Creates and logs in an Agent. Calls TestUserDataGet and Login on the BuzzDeskHelper object.
 
     my %UserData = $SeleniumObject->AgentLogin(
         Groups => ['admin', 'users'],           # optional, list of groups to add this user to (rw rights)
@@ -1466,10 +1464,10 @@ Creates and logs in an Agent. Calls TestUserDataGet and Login on the ZnunyHelper
 sub AgentLogin {
     my ( $Self, %Param ) = @_;
 
-    my $ZnunyHelper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
+    my $BuzzDeskHelper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
     # create test user and login
-    my %TestUser = $ZnunyHelper->TestUserDataGet(
+    my %TestUser = $BuzzDeskHelper->TestUserDataGet(
         %Param
     );
 
@@ -1484,7 +1482,7 @@ sub AgentLogin {
 
 =head2 CustomerUserLogin()
 
-Creates and logs in an CustomerUser. Calls TestCustomerUserDataGet and Login on the ZnunyHelper object.
+Creates and logs in an CustomerUser. Calls TestCustomerUserDataGet and Login on the BuzzDeskHelper object.
 
     my %CustomerUserData = $SeleniumObject->CustomerUserLogin(
         Language => 'de' # optional, defaults to 'en' if not set
@@ -1507,10 +1505,10 @@ Creates and logs in an CustomerUser. Calls TestCustomerUserDataGet and Login on 
 sub CustomerUserLogin {
     my ( $Self, %Param ) = @_;
 
-    my $ZnunyHelper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
+    my $BuzzDeskHelper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
     # create test user and login
-    my %TestCustomerUser = $ZnunyHelper->TestCustomerUserDataGet(
+    my %TestCustomerUser = $BuzzDeskHelper->TestCustomerUserDataGet(
         %Param
     );
 
@@ -1652,7 +1650,7 @@ sub AJAXCompleted {
     );
 
     # The idea of this improvement is the following problem case:
-    # A InputSet of the Znuny.Form.Input in a selenium test does trigger an ajax request
+    # A InputSet of the BuzzDesk.Form.Input in a selenium test does trigger an ajax request
     # which is completed too fast for the "WaitFor" check above. So the "WaitFor" check jQuery.active
     # is not set to true and will crash the test completely. In these cases we want to disable
     # the die and the following checks and hope that the ajax request is done successfully.
@@ -1876,7 +1874,7 @@ This function builds a requestable HTTP GET URL to the given OTRS interface with
         }
     );
 
-    $RequestURL = 'http://localhost/znuny/index.pl?Action=AgentTicketZoom';
+    $RequestURL = 'http://localhost/buzzdesk/index.pl?Action=AgentTicketZoom';
 
 =cut
 
@@ -2152,7 +2150,7 @@ sub CaptureScreenshot {
 =head2 GetScreenshotFileName()
 
     my $ScreenshotFileName = $SeleniumObject->GetScreenshotFileName(
-        Filename => 'ZnunyRocks',
+        Filename => 'BuzzDeskRocks',
         # or
         Line     => '359',
         Function => 'InputFieldID',
@@ -2162,8 +2160,8 @@ sub CaptureScreenshot {
 Returns:
 
     #                         TIME      - COUNTER - Path to Test       - Line   - Function   - BEFORE or AFTER function
-    my $ScreenshotFileName = '1497085163-0001-Znuny_Selenium_Input-Line=359-InputFieldID-BEFORE.png';
-    my $ScreenshotFileName = '1497085163-0002-Znuny_Selenium_Input-Line=359-InputFieldID-AFTER.png';
+    my $ScreenshotFileName = '1497085163-0001-BuzzDesk_Selenium_Input-Line=359-InputFieldID-BEFORE.png';
+    my $ScreenshotFileName = '1497085163-0002-BuzzDesk_Selenium_Input-Line=359-InputFieldID-AFTER.png';
 
 
 =cut
@@ -2196,7 +2194,7 @@ sub GetScreenshotFileName {
     else {
 
         # build filename to be most reasonable and easy to follow like e.g.:
-        # 1497085163-0001-Znuny_Selenium_Input-Line=359-InputFieldID-BEFORE.png
+        # 1497085163-0001-BuzzDesk_Selenium_Input-Line=359-InputFieldID-BEFORE.png
 
         my $SystemTime = $DateTimeObject->ToEpoch();
 
@@ -2236,7 +2234,7 @@ Returns:
 
     my %ScreenshotDirectory = (
         WebPath  => 'SeleniumScreenshots/Captured',
-        FullPath => '/opt/znuny/var/httpd/htdocs/SeleniumScreenshots/Captured',
+        FullPath => '/opt/buzzdesk/var/httpd/htdocs/SeleniumScreenshots/Captured',
     );
 
 =cut
@@ -2279,7 +2277,7 @@ sub GetScreenshotDirectory {
 =head2 GetScreenshotURL()
 
     my $ScreenshotURL = $SeleniumObject->GetScreenshotURL(
-        WebPath  = '/otrs-web/SeleniumScreenshots/ZnunyRocks/',
+        WebPath  = '/otrs-web/SeleniumScreenshots/BuzzDeskRocks/',
         Filename = 'AgentTicketZoom',
     );
 
@@ -2305,12 +2303,12 @@ sub GetScreenshotURL {
 =head2 GetSeleniumHome()
 
     my $SeleniumHome = $SeleniumObject->GetSeleniumHome(
-        Directory => '/opt/znuny',
+        Directory => '/opt/buzzdesk',
     );
 
 Returns:
 
-    my $SeleniumHome = '/opt/znuny';
+    my $SeleniumHome = '/opt/buzzdesk';
 
 =cut
 

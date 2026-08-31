@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -8,7 +6,7 @@
 # --
 
 package Kernel::System::Email;
-## nofilter(TidyAll::Plugin::Znuny::Perl::Require)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Require)
 
 use strict;
 use warnings;
@@ -1072,13 +1070,13 @@ sub _CreateMimeEntity {
 
 # Encode phrase and address parts of email addresses separately to be able to
 # set phrase in quotes. This is needed for MSGraph because otherwise it throws an error
-# if the phrase contains "special characters", e.g. for address 'Ööüä Äöü <jp@znuny.com>':
+# if the phrase contains "special characters", e.g. for address 'Ööüä Äöü <jp@buzzdesk.com>':
 # 400 Bad Request, {
 #   "error": {
 #       "code":    "ErrorInvalidRecipients",
 #       "message": "At least one recipient is not valid., Recipient '\u00d6\u00f6\u00fc\u00e4 ' is not resolved. All recipients must be resolved before a message can be submitted."
 #   }
-# With adress changed to '"Ööüä Äöü" <jp@znuny.com>' it works.
+# With adress changed to '"Ööüä Äöü" <jp@buzzdesk.com>' it works.
     ATTRIBUTE:
     for my $Attribute (qw(From To Cc)) {
         next ATTRIBUTE if !IsStringWithData( $Header{$Attribute} );
@@ -1169,7 +1167,7 @@ sub _CreateMimeEntity {
     }
     else {
         $Header{'X-Mailer'}     = "$Product Mail Service ($Version)";
-        $Header{'X-Powered-By'} = 'Znuny (https://www.znuny.com/)';
+        $Header{'X-Powered-By'} = 'BuzzDesk (https://www.buzzdesk.com/)';
     }
     $Header{Type} = $Param{MimeType} || 'text/plain';
 

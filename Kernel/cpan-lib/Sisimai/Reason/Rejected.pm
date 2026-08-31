@@ -164,7 +164,6 @@ azumakuniyuki
 
 =head1 COPYRIGHT
 
-Copyright (C) 2014-2019,2021,2022 azumakuniyuki, All rights reserved.
 
 =head1 LICENSE
 

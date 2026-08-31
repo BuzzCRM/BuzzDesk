@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -190,7 +189,7 @@ EOF
         Data => \@AdditionalDFs,
     );
 
-    # Add attributes needed for Znuny.DynamicField.Webservice.InitDynamicField() to created HTML string.
+    # Add attributes needed for BuzzDesk.DynamicField.Webservice.InitDynamicField() to created HTML string.
     # BuildSelection() does not support HTML attributes.
     my $DynamicFieldName      = $Param{DynamicFieldConfig}->{Name};
     my $DynamicFieldFieldType = $Param{DynamicFieldConfig}->{FieldType};
@@ -204,7 +203,7 @@ EOF
     # Add InitSelect for search.
     my $DynamicFieldJS = <<"EOF";
     // Initialize JS for dynamic field.
-    Znuny.DynamicField.Webservice.InitSelect('$InputFieldUUID', '$Param{DynamicFieldConfig}->{Name}', '$FieldName', '${FieldName}_Search', $AutocompleteMinLength, $QueryDelay, '$DefaultSearchTerm', '$TicketID', $AdditionalDFs);
+    BuzzDesk.DynamicField.Webservice.InitSelect('$InputFieldUUID', '$Param{DynamicFieldConfig}->{Name}', '$FieldName', '${FieldName}_Search', $AutocompleteMinLength, $QueryDelay, '$DefaultSearchTerm', '$TicketID', $AdditionalDFs);
 EOF
     $Param{LayoutObject}->AddJSOnDocumentComplete( Code => $DynamicFieldJS );
 
@@ -378,7 +377,7 @@ sub SearchFieldRender {
         Data => \@AdditionalDFs,
     );
 
-    # Add attributes needed for Znuny.DynamicField.Webservice.InitDynamicField() to created HTML string.
+    # Add attributes needed for BuzzDesk.DynamicField.Webservice.InitDynamicField() to created HTML string.
     # BuildSelection() does not support HTML attributes.
     my $DynamicFieldName      = $Param{DynamicFieldConfig}->{Name};
     my $DynamicFieldFieldType = $Param{DynamicFieldConfig}->{FieldType};
@@ -392,7 +391,7 @@ sub SearchFieldRender {
     # Add InitSelect for search.
     my $DynamicFieldJS = <<"EOF";
     // Initialize JS for dynamic field.
-    Znuny.DynamicField.Webservice.InitSelect('$InputFieldUUID', '$Param{DynamicFieldConfig}->{Name}', '$FieldName', '${FieldName}_Search', $AutocompleteMinLength, $QueryDelay, '$DefaultSearchTerm', '$TicketID', $AdditionalDFs);
+    BuzzDesk.DynamicField.Webservice.InitSelect('$InputFieldUUID', '$Param{DynamicFieldConfig}->{Name}', '$FieldName', '${FieldName}_Search', $AutocompleteMinLength, $QueryDelay, '$DefaultSearchTerm', '$TicketID', $AdditionalDFs);
 EOF
     $Param{LayoutObject}->AddJSOnDocumentComplete( Code => $DynamicFieldJS );
 

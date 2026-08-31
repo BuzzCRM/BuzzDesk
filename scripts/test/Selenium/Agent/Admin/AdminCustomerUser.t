@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -42,7 +40,7 @@ $Selenium->RunTest(
             CustomerCompanyZIP     => $RandomID,
             CustomerCompanyCity    => $RandomID,
             CustomerCompanyCountry => 'Germany',
-            CustomerCompanyURL     => 'http://www.znuny.com',
+            CustomerCompanyURL     => 'http://www.buzzdesk.com',
             CustomerCompanyComment => $RandomID,
             ValidID                => 1,
             UserID                 => 1,
@@ -61,7 +59,7 @@ $Selenium->RunTest(
             CustomerCompanyZIP     => $RandomID2,
             CustomerCompanyCity    => $RandomID2,
             CustomerCompanyCountry => 'Germany',
-            CustomerCompanyURL     => 'http://www.znuny.com',
+            CustomerCompanyURL     => 'http://www.buzzdesk.com',
             CustomerCompanyComment => $RandomID2,
             ValidID                => 1,
             UserID                 => 1,

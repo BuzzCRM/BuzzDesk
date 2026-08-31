@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -58,7 +57,7 @@ sub Run {
     }
 
     $LayoutObject->AddJSOnDocumentComplete(
-        Code => 'Znuny.DynamicField.Webservice.InitAdmin();',
+        Code => 'BuzzDesk.DynamicField.Webservice.InitAdmin();',
     );
 
     if ( $Self->{Subaction} eq 'Add' ) {

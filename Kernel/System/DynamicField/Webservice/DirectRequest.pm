@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -123,7 +122,7 @@ sub Request {
     # a valid result should be an array which includes one or more hashes
     # with the structure:
     #   {
-    #       Key   => 'Znuny',
+    #       Key   => 'BuzzDesk',
     #       Value => 'Bar'
     #   }
     # please tell your invoker to send the right stuff
@@ -150,7 +149,7 @@ sub Documentation {
 Executes a direct request without any checks before or after.
 Example response:
 {
-    Key   => 'Znuny',
+    Key   => 'BuzzDesk',
     Value => 'Rocks'
 }
 EOF

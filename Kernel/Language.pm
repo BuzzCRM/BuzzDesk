@@ -1,12 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::CodeStyle::STDERRCheck)
+## nofilter(TidyAll::Plugin::BuzzDesk::CodeStyle::STDERRCheck)
 
 package Kernel::Language;
 
@@ -672,7 +670,7 @@ sub LanguageChecksum {
 Returns an array of translation strings from tt templates.
 
     my @TranslationStrings = $LanguageObject->GetTTTemplateTranslatableStrings(
-        ModuleDirectory => "$Home/...",  # optional, translates the Znuny module in the given directory
+        ModuleDirectory => "$Home/...",  # optional, translates the BuzzDesk module in the given directory
     );
 
 Returns:
@@ -765,7 +763,7 @@ sub GetTTTemplateTranslatableStrings {
 Returns an array of translation strings from JS templates.
 
     my @TranslationStrings = $LanguageObject->GetJSTemplateTranslatableStrings(
-        ModuleDirectory  => "$Home/...",  # optional, translates the Znuny module in the given directory
+        ModuleDirectory  => "$Home/...",  # optional, translates the BuzzDesk module in the given directory
     );
 
 Returns:
@@ -866,7 +864,7 @@ sub GetJSTemplateTranslatableStrings {
 Returns an array of translation strings from Perl modules mark with Translatable or Translate.
 
     my @TranslationStrings = $LanguageObject->GetPerlModuleTranslatableStrings(
-        ModuleDirectory  => "$Home/...",  # optional, translates the Znuny module in the given directory
+        ModuleDirectory  => "$Home/...",  # optional, translates the BuzzDesk module in the given directory
     );
 
 Returns:
@@ -995,7 +993,7 @@ sub GetPerlModuleTranslatableStrings {
 Returns an array of translation strings from JS templates.
 
     my @TranslationStrings = $LanguageObject->GetXMLTranslatableStrings(
-        ModuleDirectory  => "$Home/...",  # optional, translates the Znuny module in the given directory
+        ModuleDirectory  => "$Home/...",  # optional, translates the BuzzDesk module in the given directory
     );
 
 Returns:
@@ -1079,7 +1077,7 @@ sub GetXMLTranslatableStrings {
 Returns an array of translation strings from JS.
 
     my @TranslationStrings = $LanguageObject->GetJSTranslatableStrings(
-        ModuleDirectory  => "$Home/...",  # optional, translates the Znuny module in the given directory
+        ModuleDirectory  => "$Home/...",  # optional, translates the BuzzDesk module in the given directory
     );
 
 Returns:

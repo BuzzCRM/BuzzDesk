@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -67,7 +65,7 @@ $Selenium->RunTest(
         # Create test dynamic field.
         my $RandomNumber     = $HelperObject->GetRandomNumber();
         my $DynamicFieldName = 'LinkPreview';
-        my $DynamicFieldLink = "http://znuny.com/bugs/?id=[% Data.TicketID | uri %]";
+        my $DynamicFieldLink = "http://buzzdesk.com/bugs/?id=[% Data.TicketID | uri %]";
         my $DynamicFieldID   = $DynamicFieldObject->DynamicFieldAdd(
             Name       => $DynamicFieldName,
             Label      => $DynamicFieldName,
@@ -155,7 +153,7 @@ $Selenium->RunTest(
         );
 
         # Check dynamic field link.
-        $DynamicFieldLink = "http://znuny.com/bugs/?id=$TicketID";
+        $DynamicFieldLink = "http://buzzdesk.com/bugs/?id=$TicketID";
         $Self->Is(
             $Selenium->execute_script(
                 "return \$('.SidebarColumn a.DynamicFieldLink').attr('href');"

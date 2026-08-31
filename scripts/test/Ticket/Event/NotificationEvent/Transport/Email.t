@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -172,7 +170,7 @@ my $RandomID                  = $HelperObject->GetRandomNumber();
 my $DynamicFieldObject        = $Kernel::OM->Get('Kernel::System::DynamicField');
 my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
 
-my @FieldValue = ( 'aaatest@znunyexample.com', 'bbbtest@znunyexample.com', 'ccctest@znunyexample.com' );
+my @FieldValue = ( 'aaatest@buzzdeskexample.com', 'bbbtest@buzzdeskexample.com', 'ccctest@buzzdeskexample.com' );
 
 my @DynamicFields = (
     {
@@ -282,7 +280,7 @@ my @Tests = (
         Data => {
             Events          => [ 'TicketDynamicFieldUpdate_DFT1' . $RandomID . 'Update' ],
             RecipientAgents => [$UserID],
-            RecipientEmail  => ['zzztest@znunyexample.com'],
+            RecipientEmail  => ['zzztest@buzzdeskexample.com'],
         },
         ExpectedResults => [
             {
@@ -290,7 +288,7 @@ my @Tests = (
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['zzztest@znunyexample.com'],
+                ToArray => ['zzztest@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -355,19 +353,19 @@ my @Tests = (
         Name => 'Multiple valid RecipientEmail',
         Data => {
             Events         => [ 'TicketDynamicFieldUpdate_DFT1' . $RandomID . 'Update' ],
-            RecipientEmail => ['zz1test@znunyexample.com, zz2test@znunyexample.com; zz3test@znunyexample.com'],
+            RecipientEmail => ['zz1test@buzzdeskexample.com, zz2test@buzzdeskexample.com; zz3test@buzzdeskexample.com'],
         },
         ExpectedResults => [
             {
-                ToArray => ['zz1test@znunyexample.com'],
+                ToArray => ['zz1test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['zz2test@znunyexample.com'],
+                ToArray => ['zz2test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['zz3test@znunyexample.com'],
+                ToArray => ['zz3test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -376,19 +374,19 @@ my @Tests = (
         Name => 'Multiple valid RecipientEmail not separated by space with additional commas and semmi-colons',
         Data => {
             Events         => [ 'TicketDynamicFieldUpdate_DFT1' . $RandomID . 'Update' ],
-            RecipientEmail => ['zz1test@znunyexample.com,;,zz2test@znunyexample.com;;zz3test@znunyexample.com'],
+            RecipientEmail => ['zz1test@buzzdeskexample.com,;,zz2test@buzzdeskexample.com;;zz3test@buzzdeskexample.com'],
         },
         ExpectedResults => [
             {
-                ToArray => ['zz1test@znunyexample.com'],
+                ToArray => ['zz1test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['zz2test@znunyexample.com'],
+                ToArray => ['zz2test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['zz3test@znunyexample.com'],
+                ToArray => ['zz3test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -397,15 +395,15 @@ my @Tests = (
         Name => 'Multiple valid and invalid RecipientEmail',
         Data => {
             Events         => [ 'TicketDynamicFieldUpdate_DFT1' . $RandomID . 'Update' ],
-            RecipientEmail => ['zz1test@znunyexample.com, asdfqwe; zz2test@znunyexample.com; e212355qwe.com'],
+            RecipientEmail => ['zz1test@buzzdeskexample.com, asdfqwe; zz2test@buzzdeskexample.com; e212355qwe.com'],
         },
         ExpectedResults => [
             {
-                ToArray => ['zz1test@znunyexample.com'],
+                ToArray => ['zz1test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['zz2test@znunyexample.com'],
+                ToArray => ['zz2test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -415,7 +413,7 @@ my @Tests = (
         Data => {
             Events         => [ 'TicketDynamicFieldUpdate_DFT1' . $RandomID . 'Update' ],
             RecipientEmail =>
-                ["zz1test\@znunyexample.com, <OTRS_TICKET_DynamicField_$FieldName[0]>, zz2test\@znunyexample.com;"],
+                ["zz1test\@buzzdeskexample.com, <OTRS_TICKET_DynamicField_$FieldName[0]>, zz2test\@buzzdeskexample.com;"],
         },
         ExpectedResults => [
             {
@@ -423,11 +421,11 @@ my @Tests = (
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['zz1test@znunyexample.com'],
+                ToArray => ['zz1test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['zz2test@znunyexample.com'],
+                ToArray => ['zz2test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -437,7 +435,7 @@ my @Tests = (
         Data => {
             Events         => [ 'TicketDynamicFieldUpdate_DFT1' . $RandomID . 'Update' ],
             RecipientEmail =>
-                ["zz1test\@znunyexample.com, <OTRS_TICKET_DynamicField_$FieldName[1]>, zz2test\@znunyexample.com;"],
+                ["zz1test\@buzzdeskexample.com, <OTRS_TICKET_DynamicField_$FieldName[1]>, zz2test\@buzzdeskexample.com;"],
         },
         ExpectedResults => [
             {
@@ -445,11 +443,11 @@ my @Tests = (
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['zz1test@znunyexample.com'],
+                ToArray => ['zz1test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['zz2test@znunyexample.com'],
+                ToArray => ['zz2test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],

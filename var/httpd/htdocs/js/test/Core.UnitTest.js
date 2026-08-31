@@ -1,6 +1,4 @@
 // --
-// Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (GPL). If you
@@ -11,8 +9,8 @@
 
 var Core = Core || {};
 
-// nofilter(TidyAll::Plugin::Znuny::JavaScript::FileNameUnitTest)
-// nofilter(TidyAll::Plugin::Znuny::JavaScript::FileNameUnitTest)
+// nofilter(TidyAll::Plugin::BuzzDesk::JavaScript::FileNameUnitTest)
+// nofilter(TidyAll::Plugin::BuzzDesk::JavaScript::FileNameUnitTest)
 Core.UnitTest = (function (Namespace) {
 
     QUnit.done(function () { //eslint-disable-line no-undef

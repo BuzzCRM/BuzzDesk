@@ -1,12 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::CodeStyle::STDERRCheck)
+## nofilter(TidyAll::Plugin::BuzzDesk::CodeStyle::STDERRCheck)
 
 package Kernel::System::Package;
 
@@ -1482,18 +1480,18 @@ Returns:
 
     my %RepositoryList = (
         'Freebie Features' => {
-            URL   => 'https://download.znuny.org/releases/packages',
+            URL   => 'https://download.buzzdesk.org/releases/packages',
         },
-        'Znuny Open Source Add-ons' => {
-            URL   => 'https://addons.znuny.com/public',
+        'BuzzDesk Open Source Add-ons' => {
+            URL   => 'https://addons.buzzdesk.com/public',
         },
-        'Znuny GmbH' => {
-            URL   => 'https://addons.znuny.com/private',
+        'BuzzDesk GmbH' => {
+            URL   => 'https://addons.buzzdesk.com/private',
             AuthHeaderKey   => '...',
             AuthHeaderValue => '...',
         },
         'Customer Z' => {
-            URL             => 'https://addons.znuny.com/private',
+            URL             => 'https://addons.buzzdesk.com/private',
             AuthHeaderKey   => '...',
             AuthHeaderValue => '...',
         },
@@ -1981,7 +1979,7 @@ build an opm package
             Content => 'OTRS AG',
         },
         URL => {
-            Content => 'L<http://znuny.org/>',
+            Content => 'L<http://buzzdesk.org/>',
         },
         License => {
             Content => 'GNU GENERAL PUBLIC LICENSE Version 3, November 2007',
@@ -4228,7 +4226,7 @@ sub _FileSystemCheck {
         $Kernel::OM->Get('Kernel::System::Log')->Log(
             Priority => 'error',
             Message  => "ERROR: Need write permissions for directory $Home$Filepath\n"
-                . " Try: $Home/bin/znuny.SetPermissions.pl!",
+                . " Try: $Home/bin/buzzdesk.SetPermissions.pl!",
         );
 
         return;
@@ -4874,14 +4872,14 @@ Returns:
                         # ... ,
                     },
                 ],
-                URL    => 'http://znuny.org/',
+                URL    => 'http://buzzdesk.org/',
                 Vendor => 'OTRS AG',
             },
             # ...
         ];
         PackageLookup  => {
             Test => {
-                   URL        => 'http://znuny.org/',
+                   URL        => 'http://buzzdesk.org/',
                     Version   => '6.0.20',
                     File      => 'Test-6.0.20.opm',
             },

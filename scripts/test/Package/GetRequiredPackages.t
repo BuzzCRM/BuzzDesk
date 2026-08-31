@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -27,15 +25,15 @@ my $String  = '<?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.0">
     <Name>GetRequiredPackages</Name>
     <Version>1.0.0</Version>
-    <Vendor>Znuny GmbH</Vendor>
-    <URL>http://znuny.com/</URL>
+    <Vendor>BuzzDesk GmbH</Vendor>
+    <URL>http://buzzdesk.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">A test package (some test &lt; &gt; &amp;).</Description>
     <Description Lang="de">Ein Test Paket (some test &lt; &gt; &amp;).</Description>
     <ModuleRequired Version="1.112">Encode</ModuleRequired>
     <Framework>' . $Version . '</Framework>
     <BuildDate>2022-11-30 12:34:56</BuildDate>
-    <BuildHost>znuny.com</BuildHost>
+    <BuildHost>buzzdesk.com</BuildHost>
     <Filelist>
         <File Location="GetRequiredPackages" Permission="644" Encode="Base64">aGVsbG8K</File>
         <File Location="var/GetRequiredPackages" Permission="644" Encode="Base64">aGVsbG8K</File>

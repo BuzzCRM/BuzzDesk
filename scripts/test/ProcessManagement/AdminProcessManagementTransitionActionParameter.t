@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -43,7 +42,7 @@ $ConfigObject->Set(
     Value => {
         TicketCreate => {
             Body   => $RandomID,
-            From   => 'Znuny',
+            From   => 'BuzzDesk',
             UserID => 123,
         },
         TicketCustomerSet => {
@@ -75,7 +74,7 @@ my @ParameterTestConfigs = (
         ActionModule => 'Kernel::System::ProcessManagement::TransitionAction::TicketCreate',
         Result       => {
             Body   => $RandomID,
-            From   => 'Znuny',
+            From   => 'BuzzDesk',
             UserID => 123,
         },
     },

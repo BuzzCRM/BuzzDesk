@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -8,7 +6,7 @@
 # --
 
 package Kernel::System::Ticket::Event::LockAfterCreate;
-## nofilter(TidyAll::Plugin::Znuny::Perl::ParamObject)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::ParamObject)
 
 use strict;
 use warnings;

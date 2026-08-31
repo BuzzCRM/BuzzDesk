@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -20,14 +19,14 @@ $Kernel::OM->ObjectParamAdd(
     },
 );
 
-my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $CommandObject     = $Kernel::OM->Get('Kernel::System::Console::Command::Admin::DynamicField::ScreenConfig');
 
 my @DynamicFields;
 for my $Count ( 1 .. 3 ) {
     push @DynamicFields, "Test$Count";
 
-    $ZnunyHelperObject->_DynamicFieldsCreateIfNotExists(
+    $BuzzDeskHelperObject->_DynamicFieldsCreateIfNotExists(
         {
             Name       => 'Test' . $Count,
             Label      => 'Test' . $Count,
@@ -175,7 +174,7 @@ for my $Test (@Tests) {
     next TEST if !$Test->{Arguments}->{'--dynamic-field'};
     next TEST if !$Test->{Arguments}->{'--screen'};
 
-    $ZnunyHelperObject->_RebuildConfig();
+    $BuzzDeskHelperObject->_RebuildConfig();
 
     for my $Screen ( @{ $Test->{Arguments}->{'--screen'} } ) {
         my $ScreenConfig = $GetDynamicFieldScreenConfig->(

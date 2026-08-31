@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -8,8 +6,8 @@
 # --
 
 package Kernel::Modules::Installer;
-## nofilter(TidyAll::Plugin::Znuny::Perl::DBObject)
-## nofilter(TidyAll::Plugin::Znuny::Perl::Print)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::DBObject)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Print)
 
 use strict;
 use warnings;
@@ -163,7 +161,7 @@ sub Run {
     my $ParamObject = $Kernel::OM->Get('Kernel::System::Web::Request');
 
     # Print intro form.
-    my $Title = $LayoutObject->{LanguageObject}->Translate('Install Znuny');
+    my $Title = $LayoutObject->{LanguageObject}->Translate('Install BuzzDesk');
     if ( $Self->{Subaction} eq 'Intro' ) {
         my $Output =
             $LayoutObject->Header(
@@ -332,7 +330,7 @@ sub Run {
                     Item                => Translatable('Configure MySQL'),
                     Step                => $StepCounter,
                     InstallType         => $DBInstallType,
-                    DefaultDBUser       => $DBInstallType eq 'CreateDB' ? 'root' : 'znuny',
+                    DefaultDBUser       => $DBInstallType eq 'CreateDB' ? 'root' : 'buzzdesk',
                     PasswordExplanation => $PasswordExplanation,
                 },
             );
@@ -375,7 +373,7 @@ sub Run {
                     Item          => Translatable('Database'),
                     Step          => $StepCounter,
                     InstallType   => $DBInstallType,
-                    DefaultDBUser => $DBInstallType eq 'CreateDB' ? 'postgres' : 'znuny',
+                    DefaultDBUser => $DBInstallType eq 'CreateDB' ? 'postgres' : 'buzzdesk',
                 },
             );
             if ( $DBInstallType eq 'CreateDB' ) {
@@ -608,7 +606,7 @@ sub Run {
         if ($ReConfigure) {
             my $Output =
                 $LayoutObject->Header(
-                Title => Translatable('Install Znuny - Error')
+                Title => Translatable('Install BuzzDesk - Error')
                 );
             $Output .= $LayoutObject->Warning(
                 Message => Translatable('Kernel/Config.pm isn\'t writable!'),

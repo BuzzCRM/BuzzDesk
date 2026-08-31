@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -24,7 +23,7 @@ my $ConfigObject           = $Kernel::OM->Get('Kernel::Config');
 my $HelperObject           = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $TicketObject           = $Kernel::OM->Get('Kernel::System::Ticket');
 my $TransitionActionObject = $Kernel::OM->Get('Kernel::System::ProcessManagement::TransitionAction::TicketWatchSet');
-my $ZnunyHelperObject      = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject      = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
 $ConfigObject->{'Ticket::Watcher'} = 1;
 

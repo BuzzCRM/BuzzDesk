@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -19,8 +17,8 @@ our @ObjectDependencies;
 # Use Net::SSLGlue::POP3 on systems with older Net::POP3 modules that cannot handle POP3TLS.
 BEGIN {
     if ( !defined &Net::POP3::starttls ) {
-        ## nofilter(TidyAll::Plugin::Znuny::Perl::Require)
-        ## nofilter(TidyAll::Plugin::Znuny::Perl::SyntaxCheck)
+        ## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Require)
+        ## nofilter(TidyAll::Plugin::BuzzDesk::Perl::SyntaxCheck)
         require Net::SSLGlue::POP3;
     }
 }

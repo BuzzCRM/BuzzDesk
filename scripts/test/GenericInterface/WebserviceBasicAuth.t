@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -21,7 +20,7 @@ $Kernel::OM->ObjectParamAdd(
 );
 
 # get needed objects
-my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $WebserviceObject  = $Kernel::OM->Get('Kernel::System::GenericInterface::Webservice');
 my $ConfigObject      = $Kernel::OM->Get('Kernel::Config');
@@ -50,7 +49,7 @@ my $ID = $WebserviceObject->WebserviceAdd(
                 'Type'   => 'HTTP::REST',
                 'Config' => {
                     'Timeout'                  => '120',
-                    'Host'                     => 'https://znuny.com',
+                    'Host'                     => 'https://buzzdesk.com',
                     'InvokerControllerMapping' => {
                         'Endpoints' => {
                             'Controller' => '/v1.0/endpoints.json',

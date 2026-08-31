@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -18,12 +17,12 @@ my $SeleniumObject = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
 
 my $SeleniumTest = sub {
 
-    my $ZnunyHelperObject  = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject  = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
     my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
     my $HelperObject       = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
     for my $Count ( 0 .. 3 ) {
-        $ZnunyHelperObject->_DynamicFieldsCreateIfNotExists(
+        $BuzzDeskHelperObject->_DynamicFieldsCreateIfNotExists(
             {
                 Name          => 'UnitTestText' . $Count,
                 Label         => "UnitTestText" . $Count,

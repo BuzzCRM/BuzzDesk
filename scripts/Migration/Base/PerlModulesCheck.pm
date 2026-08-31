@@ -1,12 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Perl::Pod::NamePod)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Pod::NamePod)
 
 package scripts::Migration::Base::PerlModulesCheck;    ## no critic
 
@@ -32,7 +30,7 @@ check for initial conditions for running this migration step.
 
 Returns 1 on success
 
-    my $Result = $MigrateToZnunyObject->CheckPreviousRequirement();
+    my $Result = $MigrateToBuzzDeskObject->CheckPreviousRequirement();
 
 =cut
 
@@ -45,7 +43,7 @@ sub CheckPreviousRequirement {
     my $Home    = $ConfigObject->Get('Home');
 
     my $PerlBinary = $^X;
-    my $ScriptPath = "$Home/bin/znuny.CheckModules.pl";
+    my $ScriptPath = "$Home/bin/buzzdesk.CheckModules.pl";
 
     # verify check modules script exist
     if ( !-e $ScriptPath ) {

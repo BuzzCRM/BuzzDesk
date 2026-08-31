@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -60,7 +59,7 @@ $Self->True(
 );
 
 # delete orphaned session via console command method
-# ( i.e. bin/znuny.Console.pl Maint::Session::DeleteOrphaned for maintenance )
+# ( i.e. bin/buzzdesk.Console.pl Maint::Session::DeleteOrphaned for maintenance )
 my $CommandObject = $Kernel::OM->Get('Kernel::System::Console::Command::Maint::Session::DeleteOrphaned');
 my $ExitCode      = $CommandObject->Execute();
 

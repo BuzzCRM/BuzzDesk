@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<database Name="znuny">
+<database Name="buzzdesk">
 
 <!-- framework -->
     <Insert Table="valid">
@@ -30,7 +30,7 @@
     <Insert Table="users">
         <Data Key="id" Type="AutoIncrement">1</Data>
         <Data Key="first_name" Type="Quote">Admin</Data>
-        <Data Key="last_name" Type="Quote">Znuny</Data>
+        <Data Key="last_name" Type="Quote">BuzzDesk</Data>
         <Data Key="login" Type="Quote">root@localhost</Data>
         <Data Key="pw" Type="Quote">roK20XGbWEsSM</Data>
         <Data Key="valid_id">1</Data>
@@ -359,8 +359,8 @@ Your Ticket-Team
 
     <Insert Table="system_address">
         <Data Key="id" Type="AutoIncrement">1</Data>
-        <Data Key="value0" Type="Quote">znuny@localhost</Data>
-        <Data Key="value1" Type="Quote">Znuny System</Data>
+        <Data Key="value0" Type="Quote">buzzdesk@localhost</Data>
+        <Data Key="value1" Type="Quote">BuzzDesk System</Data>
         <Data Key="comments" Type="Quote" Translatable="1">Standard Address.</Data>
         <Data Key="valid_id">1</Data>
         <Data Key="queue_id">1</Data>
@@ -594,9 +594,9 @@ You wrote:
 
 Your email will be answered by a human ASAP
 
-Have fun with Znuny! :-)
+Have fun with BuzzDesk! :-)
 
-Your Znuny Team
+Your BuzzDesk Team
 </Data>
         <Data Key="text1" Type="Quote">RE: &lt;OTRS_CUSTOMER_SUBJECT[24]&gt;</Data>
         <Data Key="content_type" Type="Quote">text/plain</Data>
@@ -618,7 +618,7 @@ Your Znuny Team
 
 Please create a new ticket.
 
-Your Znuny Team
+Your BuzzDesk Team
 </Data>
         <Data Key="text1" Type="Quote">Your email has been rejected! (RE: &lt;OTRS_CUSTOMER_SUBJECT[24]&gt;)</Data>
         <Data Key="content_type" Type="Quote">text/plain</Data>
@@ -641,9 +641,9 @@ You wrote:
 
 Your email will be answered by a human ASAP.
 
-Have fun with Znuny!
+Have fun with BuzzDesk!
 
-Your Znuny Team
+Your BuzzDesk Team
 </Data>
         <Data Key="text1" Type="Quote">RE: &lt;OTRS_CUSTOMER_SUBJECT[24]&gt;</Data>
         <Data Key="content_type" Type="Quote">text/plain</Data>
@@ -668,9 +668,9 @@ You wrote:
 
 Your email will be answered by a human ASAP.
 
-Have fun with Znuny!
+Have fun with BuzzDesk!
 
-Your Znuny Team
+Your BuzzDesk Team
 </Data>
         <Data Key="text1" Type="Quote">New ticket has been created! (RE: &lt;OTRS_CUSTOMER_SUBJECT[24]&gt;)</Data>
         <Data Key="content_type" Type="Quote">text/plain</Data>
@@ -1277,7 +1277,7 @@ Your Znuny Team
         <Data Key="responsible_user_id">1</Data>
         <Data Key="ticket_priority_id">3</Data>
         <Data Key="ticket_state_id">1</Data>
-        <Data Key="title" Type="Quote">Znuny says hi!</Data>
+        <Data Key="title" Type="Quote">BuzzDesk says hi!</Data>
         <Data Key="timeout">0</Data>
         <Data Key="until_time">0</Data>
         <Data Key="escalation_time">0</Data>
@@ -1398,24 +1398,24 @@ ArticleDataTables:
     <Insert Table="article_data_mime">
         <Data Key="id" Type="AutoIncrement">1</Data>
         <Data Key="article_id">1</Data>
-        <Data Key="a_from" Type="Quote">Znuny &lt;hello@znuny.org&gt;</Data>
-        <Data Key="a_to" Type="Quote">Your Znuny service desk &lt;znuny@localhost&gt;</Data>
-        <Data Key="a_subject" Type="Quote">Znuny says hi!</Data>
-        <Data Key="a_body" Type="Quote">We welcome you to Znuny, our ticketing solution based on the well-known OTRS ((Community Edition)) which we forked to make things different.
+        <Data Key="a_from" Type="Quote">BuzzDesk &lt;hello@buzzdesk.org&gt;</Data>
+        <Data Key="a_to" Type="Quote">Your BuzzDesk service desk &lt;buzzdesk@localhost&gt;</Data>
+        <Data Key="a_subject" Type="Quote">BuzzDesk says hi!</Data>
+        <Data Key="a_body" Type="Quote">We welcome you to BuzzDesk, our ticketing solution based on the well-known OTRS ((Community Edition)) which we forked to make things different.
 
 We are focused on delivering a stable and community influenced software. So if you have something to contribute, whether bug reports, solutions or enhancements, let us know. We will be happy about your participation.
 
 You can get additional information here:
 
-Community forum: https://community.znuny.org/
+Community forum: https://community.buzzdesk.org/
 
-Documentation: https://doc.znuny.org/
+Documentation: https://doc.buzzdesk.org/
 
-GitHub: https://github.com/znuny/Znuny
+GitHub: https://github.com/buzzdesk/BuzzDesk
 
 Have fun and enjoy it.
 
-Your Znuny Team
+Your BuzzDesk Team
 </Data>
         <Data Key="a_message_id" Type="Quote">&lt;007@localhost&gt;</Data>
         <Data Key="incoming_time">1611745200</Data>
@@ -1429,27 +1429,27 @@ Your Znuny Team
     <Insert Table="article_data_mime_plain">
         <Data Key="id" Type="AutoIncrement">1</Data>
         <Data Key="article_id">1</Data>
-        <Data Key="body" Type="Quote">From: Znuny &lt;hello@znuny.org&gt;
-To: Your Znuny service desk &lt;znuny@localhost&gt;
-Subject: Znuny says hi!
+        <Data Key="body" Type="Quote">From: BuzzDesk &lt;hello@buzzdesk.org&gt;
+To: Your BuzzDesk service desk &lt;buzzdesk@localhost&gt;
+Subject: BuzzDesk says hi!
 Content-Type: text/plain; charset=utf-8
 Content-Transfer-Encoding: 8bit
 
-We welcome you to Znuny, our ticketing solution based on the well-known OTRS ((Community Edition)) which we forked to make things different.
+We welcome you to BuzzDesk, our ticketing solution based on the well-known OTRS ((Community Edition)) which we forked to make things different.
 
 We are focused on delivering a stable and community influenced software. So if you have something to contribute, whether bug reports, solutions or enhancements, let us know. We will be happy about your participation.
 
 You can get additional information here:
 
-Community forum: https://community.znuny.org/
+Community forum: https://community.buzzdesk.org/
 
-Documentation: https://doc.znuny.org/
+Documentation: https://doc.buzzdesk.org/
 
-GitHub: https://github.com/znuny/Znuny
+GitHub: https://github.com/buzzdesk/BuzzDesk
 
 Have fun and enjoy it.
 
-Your Znuny Team
+Your BuzzDesk Team
 </Data>
         <Data Key="create_by">1</Data>
         <Data Key="create_time">current_timestamp</Data>

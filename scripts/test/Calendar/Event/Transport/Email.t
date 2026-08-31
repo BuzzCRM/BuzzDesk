@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -190,20 +188,20 @@ my @Tests = (
         Name => 'Multiple valid RecipientEmail',
         Data => {
             Events           => ['CalendarUpdate'],
-            RecipientEmail   => ['zz1test@znunyexample.com, zz2test@znunyexample.com; zz3test@znunyexample.com'],
+            RecipientEmail   => ['zz1test@buzzdeskexample.com, zz2test@buzzdeskexample.com; zz3test@buzzdeskexample.com'],
             NotificationType => ['Appointment'],
         },
         ExpectedResults => [
             {
-                ToArray => ['zz1test@znunyexample.com'],
+                ToArray => ['zz1test@buzzdeskexample.com'],
                 Body    => "Calendar: -=\n",
             },
             {
-                ToArray => ['zz2test@znunyexample.com'],
+                ToArray => ['zz2test@buzzdeskexample.com'],
                 Body    => "Calendar: -=\n",
             },
             {
-                ToArray => ['zz3test@znunyexample.com'],
+                ToArray => ['zz3test@buzzdeskexample.com'],
                 Body    => "Calendar: -=\n",
             },
         ],
@@ -212,20 +210,20 @@ my @Tests = (
         Name => 'Multiple valid RecipientEmail not separated by space with additional commas and semmi-colons',
         Data => {
             Events           => ['CalendarUpdate'],
-            RecipientEmail   => ['zz1test@znunyexample.com,;,zz2test@znunyexample.com;;zz3test@znunyexample.com'],
+            RecipientEmail   => ['zz1test@buzzdeskexample.com,;,zz2test@buzzdeskexample.com;;zz3test@buzzdeskexample.com'],
             NotificationType => ['Appointment'],
         },
         ExpectedResults => [
             {
-                ToArray => ['zz1test@znunyexample.com'],
+                ToArray => ['zz1test@buzzdeskexample.com'],
                 Body    => "Calendar: -=\n",
             },
             {
-                ToArray => ['zz2test@znunyexample.com'],
+                ToArray => ['zz2test@buzzdeskexample.com'],
                 Body    => "Calendar: -=\n",
             },
             {
-                ToArray => ['zz3test@znunyexample.com'],
+                ToArray => ['zz3test@buzzdeskexample.com'],
                 Body    => "Calendar: -=\n",
             },
         ],
@@ -234,16 +232,16 @@ my @Tests = (
         Name => 'Multiple valid and invalid RecipientEmail',
         Data => {
             Events           => ['CalendarUpdate'],
-            RecipientEmail   => ['aaatest@znunyexample.com, asdfqwe; zzztest@znunyexample.com; e212355qwe.com'],
+            RecipientEmail   => ['aaatest@buzzdeskexample.com, asdfqwe; zzztest@buzzdeskexample.com; e212355qwe.com'],
             NotificationType => ['Appointment'],
         },
         ExpectedResults => [
             {
-                ToArray => ['aaatest@znunyexample.com'],
+                ToArray => ['aaatest@buzzdeskexample.com'],
                 Body    => "Calendar: -=\n",
             },
             {
-                ToArray => ['zzztest@znunyexample.com'],
+                ToArray => ['zzztest@buzzdeskexample.com'],
                 Body    => "Calendar: -=\n",
             },
         ],

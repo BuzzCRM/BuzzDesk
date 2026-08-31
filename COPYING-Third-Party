@@ -63,7 +63,6 @@ o Name:    HTML::TreeBuilder
 o Name:    HTML::TreeBuilder::XPath
   Web;     n/a
   License: GNU v2 - http://www.gnu.org/licenses/gpl.html
-  Note:    # Copyright (C) 2006-2011 by Michel Rodriguez
 
 o Name:    CPAN IO::Interactive
   Web:     n/a
@@ -129,7 +128,6 @@ o Name:    CPAN Net::IMAP::Simple
 o Name:    CPAN Net::POP3::XOAuth2
   Web:     n/a
   License: https://dev.perl.org/licenses/artistic.html
-  Note:    Copyright (C) Kizashi Nagata
 
 o Name:    CPAN Net::SSLGlue
   Web:     n/a
@@ -177,8 +175,6 @@ o Name:    CPAN XML::Parser::Lite
 o Name:    CPAN XML::PathEngine
   Web:     n/a
   License: GNU v2 - http://www.gnu.org/licenses/gpl.html
-  Note:    # Copyright (C) 2006 Michel Rodriguez
-           # Copyright (C) 2000 AxKit.com Ltd
 
 o Name:    CPAN JSON::PP
   Web:     n/a
@@ -188,24 +184,20 @@ o Name:    CPAN JSON::PP
 o Name:    CPAN CSS::Minifier
   Web:     n/a
   License: GNU v2 - http://www.gnu.org/licenses/gpl.html
-  Note:    Copyright (C) 2007 by Peter Michaux
 
 o Name:    CPAN CSS::Minifier::XS
   Web:     n/a
   License: GNU v1 - http://www.gnu.org/licenses/old-licenses/gpl-1.0.html
            Artistic v1 - https://opensource.org/licenses/artistic-license-1.0
-  Note:    Copyright (C) 2020 by Graham TerMarsch
 
 o Name:    CPAN JavaScript::Minifier
   Web:     n/a
   License: GNU v2 - http://www.gnu.org/licenses/gpl.html
-  Note:    Copyright (C) 2007 by Peter Michaux
 
 o Name:    CPAN JavaScript::Minifier::XS
   Web:     n/a
   License: GNU v1 - http://www.gnu.org/licenses/old-licenses/gpl-1.0.html
            Artistic v1 - https://opensource.org/licenses/artistic-license-1.0
-  Note:    Copyright (C) 2020 by Graham TerMarsch
 
 o Name:    CPAN YAML
   Web:     n/a
@@ -273,9 +265,6 @@ o Name:    CPAN SOAP::Lite
            # This text and all associated documentation for this library
            # is made available under the Creative Commons Attribution-NoDerivs
            # 2.0 license. http://creativecommons.org/licenses/by-nd/2.0/
-  Note:    # Copyright (C) 2000-2007 Paul Kulchenko. All rights reserved.
-           # Copyright (C) 2007-2008 Martin Kutter
-           # Copyright (C) 2013 Fred Moyer
 
 o Name:    CPAN  Excel::Writer::XLSX
   Web:     http://github.com/jmcnamara/excel-writer-xlsx
@@ -333,8 +322,6 @@ o Name:    CPAN Lingua::Translit
            # modified under the terms of either the GPL v2 or the Artistic license.
            # GNU v2 - http://www.opensource.org/licenses/gpl-2.0.php
            # Artistic v2 - http://www.opensource.org/licenses/artistic-license-2.0.php
-  Note:    # Copyright (C) 2007-2008 Alex Linke and Rona Linke.
-           # Copyright (C) 2009-2015 Lingua-Systems Software GmbH
 
 o Name:    CPAN Class::Accessor
   Web:     n/a
@@ -377,12 +364,10 @@ o Name:    CPAN Class::Accessor::Lite
   Web:     n/a
   License: # GNU v1 - http://dev.perl.org/licenses/gpl1.html
            # Artistic v1 - http://dev.perl.org/licenses/artistic.html
-  Note:    # Copyright (C) 2008 - 2010 Kazuho Oku.
 
 o Name:    CPAN Sisimai
   Web:     http://libsisimai.org
   License: # BSD 2-Clause - https://opensource.org/licenses/BSD-2-Clause
-  Note:    # Copyright (C) 2014-2021 azumakuniyuki, All rights reserved.
 
 o Name:    Authen::SASL::Perl::XOAUTH2
   Web:     https://www.perlmonks.org/?node_id=1218405

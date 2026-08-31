@@ -1,18 +1,10 @@
 # --
-# Copyright (C) 2006 Gabor Gancs /gg@magicnet.hu/
-# Copyright (C) 2006 Krisztian Gancs /krisz@gancs.hu/
-# Copyright (C) 2006 Flora Szabo /szaboflora@magicnet.hu/
-# Copyright (C) 2007 Aron Ujvari <ujvari@hungary.com>
-# Copyright (C) 2009 Arnold Matyasi <arn@webma.hu>
-# Copyright (C) 2013 Csaba Németh <csaba@sopron.hu>
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Translation::JavaScriptStrings)
+## nofilter(TidyAll::Plugin::BuzzDesk::Translation::JavaScriptStrings)
 
 package Kernel::Language::hu;
 
@@ -866,8 +858,8 @@ sub Data {
             'A név használható a különböző hibakezelési beállítások megkülönböztetéséhez.',
         'Please provide a unique name for this web service.' => 'Adjon meg egy egyedi nevet ehhez a webszolgáltatáshoz.',
         'Error handling module backend' => 'Hibakezelési modul háttérprogram',
-        'This Znuny error handling backend module will be called internally to process the error handling mechanism.' =>
-            'Ez a Znuny hibakezelési háttérprogrammodul kerül meghívásra belsőleg a hibakezelési mechanizmus feldolgozásához.',
+        'This BuzzDesk error handling backend module will be called internally to process the error handling mechanism.' =>
+            'Ez a BuzzDesk hibakezelési háttérprogrammodul kerül meghívásra belsőleg a hibakezelési mechanizmus feldolgozásához.',
         'Processing options' => 'Feldolgozási beállítások',
         'Configure filters to control error handling module execution.' =>
             'Szűrők beállítása a hibakezelési modul végrehajtásának vezérléséhez.',
@@ -958,15 +950,15 @@ sub Data {
         'The name is typically used to call up an operation of a remote web service.' =>
             'A név tipikusan egy távoli webszolgáltatás műveletének meghívásához használható.',
         'Invoker backend' => 'Meghívó háttérprogram',
-        'This Znuny invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
-            'Ez a Znuny meghívó háttérprogrammodul lesz meghívva a távoli rendszerre küldendő adatok előkészítéséhez, és a válasz adatainak feldolgozásához.',
+        'This BuzzDesk invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
+            'Ez a BuzzDesk meghívó háttérprogrammodul lesz meghívva a távoli rendszerre küldendő adatok előkészítéséhez, és a válasz adatainak feldolgozásához.',
         'Mapping for outgoing request data' => 'Leképezés a kimenő kérés adataihoz',
         'Configure' => 'Beállítás',
-        'The data from the invoker of Znuny will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
-            'Ez a leképezés fogja a Znuny meghívójából származó adatokat feldolgozni olyan formára alakítva át azokat, ahogy a távoli rendszer várja.',
+        'The data from the invoker of BuzzDesk will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
+            'Ez a leképezés fogja a BuzzDesk meghívójából származó adatokat feldolgozni olyan formára alakítva át azokat, ahogy a távoli rendszer várja.',
         'Mapping for incoming response data' => 'Leképezés a bejövő válasz adataihoz',
-        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of Znuny expects.' =>
-            'Ez a leképezés fogja a válasz adatait feldolgozni olyan formára alakítva át azokat, ahogy a Znuny meghívója várja.',
+        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of BuzzDesk expects.' =>
+            'Ez a leképezés fogja a válasz adatait feldolgozni olyan formára alakítva át azokat, ahogy a BuzzDesk meghívója várja.',
         'Asynchronous' => 'Aszinkron',
         'Condition' => 'Feltétel',
         'Edit this event' => 'Esemény szerkesztése',
@@ -974,8 +966,8 @@ sub Data {
         'Add Event' => 'Esemény hozzáadása',
         'To add a new event select the event object and event name and click on the "+" button' =>
             'Egy új esemény hozzáadásához válassza ki az eseményobjektumot és az eseménynevet, majd kattintson a „+” gombra',
-        'Asynchronous event triggers are handled by the Znuny Scheduler Daemon in background (recommended).' =>
-            'Az aszinkron eseményaktiválókat a Znuny ütemeződémon kezeli a háttérben (javasolt).',
+        'Asynchronous event triggers are handled by the BuzzDesk Scheduler Daemon in background (recommended).' =>
+            'Az aszinkron eseményaktiválókat a BuzzDesk ütemeződémon kezeli a háttérben (javasolt).',
         'Synchronous event triggers would be processed directly during the web request.' =>
             'A szinkron eseményaktiválók közvetlenül lehetnek feldolgozva a webkérések közben.',
         'Add all attachments' => 'Összes melléklet hozzáadása',
@@ -1109,11 +1101,11 @@ sub Data {
         'The name is typically used to call up this web service operation from a remote system.' =>
             'A név tipikusan ennek a webszolgáltatás műveletnek a meghívásához használható egy távoli rendszerből.',
         'Operation backend' => 'Műveleti háttérprogram',
-        'This Znuny operation backend module will be called internally to process the request, generating data for the response.' =>
-            'Ez a Znuny műveleti háttérprogrammodul lesz belsőleg meghívva a kérés feldolgozásához, és az adat előállításához a válasz számára.',
+        'This BuzzDesk operation backend module will be called internally to process the request, generating data for the response.' =>
+            'Ez a BuzzDesk műveleti háttérprogrammodul lesz belsőleg meghívva a kérés feldolgozásához, és az adat előállításához a válasz számára.',
         'Mapping for incoming request data' => 'Leképezés a bejövő kérés adataihoz',
-        'The request data will be processed by this mapping, to transform it to the kind of data Znuny expects.' =>
-            'Ez a leképezés fogja a kérés adatait feldolgozni olyan formára alakítva át azokat, ahogy a Znuny várja.',
+        'The request data will be processed by this mapping, to transform it to the kind of data BuzzDesk expects.' =>
+            'Ez a leképezés fogja a kérés adatait feldolgozni olyan formára alakítva át azokat, ahogy a BuzzDesk várja.',
         'Mapping for outgoing response data' => 'Leképezés a kimenő válasz adataihoz',
         'The response data will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
             'Ez a leképezés fogja a válasz adatait feldolgozni olyan formára alakítva át azokat, ahogy a távoli rendszer várja.',
@@ -1136,8 +1128,8 @@ sub Data {
             'Kattintson a „Mentés” gombra, hogy megkapja a megfelelő háttérprogram-paramétert, ha a feldolgozó háttérprogram megváltozott.',
         'Maximum message length' => 'Legnagyobb üzenethossz',
         'This field should be an integer number.' => 'Ez a mező csak egész szám lehet.',
-        'Here you can specify the maximum size (in bytes) of REST messages that Znuny will process.' =>
-            'Itt adhatja meg a REST üzenetek legnagyobb méretét (bájtban), amelyeket a Znuny fel fog dolgozni.',
+        'Here you can specify the maximum size (in bytes) of REST messages that BuzzDesk will process.' =>
+            'Itt adhatja meg a REST üzenetek legnagyobb méretét (bájtban), amelyeket a BuzzDesk fel fog dolgozni.',
         'Send Keep-Alive' => 'Életben tartás küldése',
         'This configuration defines if incoming connections should get closed or kept alive.' =>
             'Ez a beállítás azt határozza meg, hogy a bejövő kapcsolatok le legyenek-e zárva vagy maradjanak életben.',
@@ -1205,22 +1197,22 @@ sub Data {
         'Client Certificate' => 'Kliens tanúsítvány',
         'The full path and name of the SSL client certificate file (must be in PEM, DER or PKCS#12 format).' =>
             'Az SSL-kliens tanúsítványfájljának teljes elérési útja és neve (PEM, DER vagy PKCS#12 formátumban kell lennie).',
-        'e.g. /opt/znuny/var/certificates/SOAP/certificate.pem' => 'például /opt/znuny/var/certificates/SOAP/certificate.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/certificate.pem' => 'például /opt/buzzdesk/var/certificates/SOAP/certificate.pem',
         'Client Certificate Key' => 'Kliens tanúsítvány kulcsa',
         'The full path and name of the SSL client certificate key file (if not already included in certificate file).' =>
             'Az SSL-kliens tanúsítvány kulcsfájljának teljes elérési útja és neve (ha még nem tartalmazza a tanúsítványfájl).',
-        'e.g. /opt/znuny/var/certificates/SOAP/key.pem' => 'például /opt/znuny/var/certificates/SOAP/key.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/key.pem' => 'például /opt/buzzdesk/var/certificates/SOAP/key.pem',
         'Client Certificate Key Password' => 'Kliens tanúsítvány kulcsának jelszava',
         'The password to open the SSL certificate if the key is encrypted.' =>
             'A jelszó az SSL-tanúsítvány megnyitásához, ha a kulcs titkosított.',
         'Certification Authority (CA) Certificate' => 'Hitelesítés-szolgáltató (CA) tanúsítvány',
         'The full path and name of the certification authority certificate file that validates SSL certificate.' =>
             'A hitelesítés-szolgáltató tanúsítványfájljának teljes elérési útja és neve, amely hitelesíti az SSL tanúsítványt.',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA/ca.pem' => 'például /opt/znuny/var/certificates/SOAP/CA/ca.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem' => 'például /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem',
         'Certification Authority (CA) Directory' => 'Hitelesítés-szolgáltató (CA) könyvtár',
         'The full path of the certification authority directory where the CA certificates are stored in the file system.' =>
             'A hitelesítés-szolgáltató könyvtárának teljes elérési útja, ahol a CA tanúsítványok tárolva vannak a fájlrendszeren.',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA' => 'például /opt/znuny/var/certificates/SOAP/CA',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA' => 'például /opt/buzzdesk/var/certificates/SOAP/CA',
         'Controller mapping for Invoker' => 'Vezérlő leképezés a meghívóhoz',
         'The controller that the invoker should send requests to. Variables marked by a \':\' will get replaced by the data value and passed along with the request. (e.g. /Ticket/:TicketID?UserLogin=:UserLogin&Password=:Password).' =>
             'Az a vezérlő, amelyhez a meghívónak kéréseket kell küldenie. A kettősponttal „:” megjelölt változók az adatok értékével lesznek helyettesítve és a kéréssel együtt kerülnek átadásra. (például /Ticket/:TicketID?UserLogin=:UserLogin&Password=:Password).',
@@ -1277,14 +1269,14 @@ sub Data {
         'Select how SOAP response function wrapper should be constructed.' =>
             'Válassza ki, hogy a SOAP-válasz függvénycsomagolót hogyan kell felépíteni.',
         'Response name free text' => 'Kérés nevének szabad szövege',
-        'Here you can specify the maximum size (in bytes) of SOAP messages that Znuny will process.' =>
-            'Itt adhatja meg a SOAP üzenetek legnagyobb méretét (bájtban), amelyeket a Znuny fel fog dolgozni.',
+        'Here you can specify the maximum size (in bytes) of SOAP messages that BuzzDesk will process.' =>
+            'Itt adhatja meg a SOAP üzenetek legnagyobb méretét (bájtban), amelyeket a BuzzDesk fel fog dolgozni.',
         'Fixed namespace prefix' => 'Rögzített névtérelőtag',
         'Use a fixed namespace prefix (e. g. myns:) for the root tag of a SOAP message.' =>
             'Rögzített névtérelőtag (például myns:) használata egy SOAP-üzenet gyökércímkéjénél.',
         'Suffix for response tag' => 'Utótag a válaszcímkéhez',
-        'Usually Znuny expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
-            'Általában a Znuny egy olyan válaszcímkét vár, mint például „&lt;Operation&gt;Response”. Ez a beállítás megváltoztathatja a „Response” részt, például „Result” értékre.',
+        'Usually BuzzDesk expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
+            'Általában a BuzzDesk egy olyan válaszcímkét vár, mint például „&lt;Operation&gt;Response”. Ez a beállítás megváltoztathatja a „Response” részt, például „Result” értékre.',
         'Encoding' => 'Kódolás',
         'The character encoding for the SOAP message contents.' => 'A SOAP üzenettartalmak karakterkódolása.',
         'e.g utf-8, latin1, iso-8859-1, cp1250, Etc.' => 'például utf-8, latin1, iso-8859-1, cp1250, stb.',
@@ -1326,10 +1318,10 @@ sub Data {
         'Provider transport' => 'Szolgáltató átvitel',
         'Requester transport' => 'Kérő átvitel',
         'Debug threshold' => 'Hibakeresési küszöbszint',
-        'In provider mode, Znuny offers web services which are used by remote systems.' =>
-            'Szolgáltató módban a Znuny olyan webszolgáltatásokat javasol, amelyeket a távoli rendszerek használnak.',
-        'In requester mode, Znuny uses web services of remote systems.' =>
-            'Kérő módban a Znuny a távoli rendszerek webszolgáltatásait használja.',
+        'In provider mode, BuzzDesk offers web services which are used by remote systems.' =>
+            'Szolgáltató módban a BuzzDesk olyan webszolgáltatásokat javasol, amelyeket a távoli rendszerek használnak.',
+        'In requester mode, BuzzDesk uses web services of remote systems.' =>
+            'Kérő módban a BuzzDesk a távoli rendszerek webszolgáltatásait használja.',
         'Network transport' => 'Hálózati átvitel',
         'Error Handling Modules' => 'Hibakezelési modulok',
         'Error handling modules are used to react in case of errors during the communication. Those modules are executed in a specific order, which can be changed by drag and drop.' =>
@@ -1447,8 +1439,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportEmailSettings.tt
         'Use comma or semicolon to separate email addresses.' => 'Használjon vesszőt vagy pontosvesszőt az e-mail-címek elválasztásához.',
-        'You can use Znuny-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
-            'Használhatja a Znuny címkéket (mint például <OTRS_TICKET_DynamicField_...>) értékek beszúrásához a jelenlegi jegyből.',
+        'You can use BuzzDesk-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
+            'Használhatja a BuzzDesk címkéket (mint például <OTRS_TICKET_DynamicField_...>) értékek beszúrásához a jelenlegi jegyből.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportWebserviceSettings.tt
         'Web service name' => 'Webszolgáltatás neve',
@@ -1515,8 +1507,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminPGP.tt
         'PGP support is disabled' => 'A PGP támogatás le van tiltva',
-        'To be able to use PGP in Znuny, you have to enable it first.' =>
-            'Hogy képes legyen PGP-t használni a Znunyban, ahhoz először engedélyeznie kell azt.',
+        'To be able to use PGP in BuzzDesk, you have to enable it first.' =>
+            'Hogy képes legyen PGP-t használni a BuzzDeskban, ahhoz először engedélyeznie kell azt.',
         'Enable PGP support' => 'PGP támogatás engedélyezése',
         'Faulty PGP configuration' => 'Hibás PGP beállítás',
         'PGP support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -1547,21 +1539,21 @@ sub Data {
         'Do you really want to reinstall this package? Any manual changes will be lost.' =>
             'Valóban újra szeretné telepíteni ezt a csomagot? Minden kézi változtatás el fog veszni.',
         'Go to updating instructions' => 'Ugrás a frissítési utasításokhoz',
-        'Go to znuny.org' => 'Ugrás a znuny.org webhelyre',
+        'Go to buzzdesk.org' => 'Ugrás a buzzdesk.org webhelyre',
         'package information' => 'csomaginformációk',
-        'Package installation requires a patch level update of Znuny.' =>
-            'A csomagtelepítés a Znuny hibajavító szintű frissítését igényli.',
-        'Package update requires a patch level update of Znuny.' => 'A csomagfrissítés a Znuny hibajavító szintű frissítését igényli.',
-        'Please note that your installed Znuny version is %s.' => 'Ne feledje, hogy a telepített Znuny verziója %s.',
-        'To install this package, you need to update Znuny to version %s or newer.' =>
-            'A csomag telepítéséhez frissítenie kell a Znunyt %s vagy újabb verzióra.',
-        'This package can only be installed on Znuny version %s or older.' =>
-            'Ez a csomag csak a Znuny %s vagy régebbi verziójára telepíthető.',
-        'This package can only be installed on Znuny version %s.' => 'Ez a csomag csak a Znuny %s verziójára telepíthető.',
-        'Why should I keep Znuny up to date?' => 'Miért kell naprakészen tartanom a Znunyt?',
+        'Package installation requires a patch level update of BuzzDesk.' =>
+            'A csomagtelepítés a BuzzDesk hibajavító szintű frissítését igényli.',
+        'Package update requires a patch level update of BuzzDesk.' => 'A csomagfrissítés a BuzzDesk hibajavító szintű frissítését igényli.',
+        'Please note that your installed BuzzDesk version is %s.' => 'Ne feledje, hogy a telepített BuzzDesk verziója %s.',
+        'To install this package, you need to update BuzzDesk to version %s or newer.' =>
+            'A csomag telepítéséhez frissítenie kell a BuzzDeskt %s vagy újabb verzióra.',
+        'This package can only be installed on BuzzDesk version %s or older.' =>
+            'Ez a csomag csak a BuzzDesk %s vagy régebbi verziójára telepíthető.',
+        'This package can only be installed on BuzzDesk version %s.' => 'Ez a csomag csak a BuzzDesk %s verziójára telepíthető.',
+        'Why should I keep BuzzDesk up to date?' => 'Miért kell naprakészen tartanom a BuzzDeskt?',
         'You will receive updates about relevant security issues.' => 'Frissítéseket fog kapni a fontos biztonsági problémákról.',
-        'You will receive updates for all other relevant Znuny issues.' =>
-            'Frissítéseket fog kapni minden egyéb fontos Znuny problémáról.',
+        'You will receive updates for all other relevant BuzzDesk issues.' =>
+            'Frissítéseket fog kapni minden egyéb fontos BuzzDesk problémáról.',
         'How can I do a patch level update if I don’t have a contract?' =>
             'Hogyan végezhetek hibajavító szintű frissítést, ha nincs szerződésem?',
         'Please find all relevant information within the updating instructions at %s.' =>
@@ -1960,8 +1952,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSMIME.tt
         'SMIME support is disabled' => 'Az S/MIME támogatás le van tiltva',
-        'To be able to use SMIME in Znuny, you have to enable it first.' =>
-            'Hogy képes legyen S/MIME-t használni a Znunyban, ahhoz először engedélyeznie kell azt.',
+        'To be able to use SMIME in BuzzDesk, you have to enable it first.' =>
+            'Hogy képes legyen S/MIME-t használni a BuzzDeskban, ahhoz először engedélyeznie kell azt.',
         'Enable SMIME support' => 'S/MIME támogatás engedélyezése',
         'Faulty SMIME configuration' => 'Hibás S/MIME beállítás',
         'SMIME support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -2154,8 +2146,8 @@ sub Data {
         'Find out how to use the system configuration by reading the %s.' =>
             'Ismerje meg, hogy hogyan kell használni a rendszert az %s elolvasásával.',
         'Search in all settings...' => 'Keresés az összes beállításban…',
-        'There are currently no settings available. Please make sure to run \'znuny.Console.pl Maint::Config::Rebuild\' before using the software.' =>
-            'Jelenleg nincsenek elérhető beállítások. Győződjön meg arról, hogy lefuttatta-e a „znuny.Console.pl Maint::Config::Rebuild” parancsot a szoftver használata előtt.',
+        'There are currently no settings available. Please make sure to run \'buzzdesk.Console.pl Maint::Config::Rebuild\' before using the software.' =>
+            'Jelenleg nincsenek elérhető beállítások. Győződjön meg arról, hogy lefuttatta-e a „buzzdesk.Console.pl Maint::Config::Rebuild” parancsot a szoftver használata előtt.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSystemConfigurationDeployment.tt
         'Help' => 'Súgó',
@@ -2450,17 +2442,17 @@ sub Data {
         'Customer User Information Center' => 'Ügyfél-felhasználó információs-központ',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDaemonInfo.tt
-        'The Znuny Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
-            'A Znuny démon egy démonfolyamat, amely olyan aszinkron feladatokat hajt végre, mint például jegyeszkaláció aktiválás, e-mail küldés, stb.',
-        'A running Znuny Daemon is mandatory for correct system operation.' =>
-            'Egy futó Znuny démon feltétlenül szükséges a helyes rendszerműködéshez.',
-        'Starting the Znuny Daemon' => 'A Znuny démon indítása',
-        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the Znuny Daemon is running and start it if needed.' =>
-            'Győződjön meg arról, hogy a(z) „%s” fájl létezik-e (.dist kiterjesztés nélkül). Ez a cron-feladat 5 percenként fogja ellenőrizni, hogy a Znuny démon fut-e, és szükség szerint elindítja azt.',
-        'Execute \'%s start\' to make sure the cron jobs of the \'znuny\' user are active.' =>
-            'Hajtsa végre a(z) „%s start” parancsot, hogy megbizonyosodjon arról, hogy a „znuny” felhasználó cron-feladatai aktívak-e.',
-        'After 5 minutes, check that the Znuny Daemon is running in the system (\'bin/znuny.Daemon.pl status\').' =>
-            'Ellenőrizze 5 perc után, hogy a Znuny démon fut-e a rendszeren („bin/znuny.Daemon.pl status”).',
+        'The BuzzDesk Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
+            'A BuzzDesk démon egy démonfolyamat, amely olyan aszinkron feladatokat hajt végre, mint például jegyeszkaláció aktiválás, e-mail küldés, stb.',
+        'A running BuzzDesk Daemon is mandatory for correct system operation.' =>
+            'Egy futó BuzzDesk démon feltétlenül szükséges a helyes rendszerműködéshez.',
+        'Starting the BuzzDesk Daemon' => 'A BuzzDesk démon indítása',
+        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the BuzzDesk Daemon is running and start it if needed.' =>
+            'Győződjön meg arról, hogy a(z) „%s” fájl létezik-e (.dist kiterjesztés nélkül). Ez a cron-feladat 5 percenként fogja ellenőrizni, hogy a BuzzDesk démon fut-e, és szükség szerint elindítja azt.',
+        'Execute \'%s start\' to make sure the cron jobs of the \'buzzdesk\' user are active.' =>
+            'Hajtsa végre a(z) „%s start” parancsot, hogy megbizonyosodjon arról, hogy a „buzzdesk” felhasználó cron-feladatai aktívak-e.',
+        'After 5 minutes, check that the BuzzDesk Daemon is running in the system (\'bin/buzzdesk.Daemon.pl status\').' =>
+            'Ellenőrizze 5 perc után, hogy a BuzzDesk démon fut-e a rendszeren („bin/buzzdesk.Daemon.pl status”).',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboard.tt
         'Dashboard' => 'Vezérlőpult',
@@ -2604,7 +2596,7 @@ sub Data {
         'This setting can currently not be saved' => 'Ezt a beállítás jelenleg nem lehet elmenteni',
         'Save setting' => 'Beállítás mentése',
         'Save this setting' => 'Beállítás mentése',
-        'Did you know? You can help translating Znuny at %s.' => 'Tudta? Segíthet a Znuny fordításában a következő címen: %s.',
+        'Did you know? You can help translating BuzzDesk at %s.' => 'Tudta? Segíthet a BuzzDesk fordításában a következő címen: %s.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentPreferencesOverview.tt
         'Choose from the groups on the left to find the settings you\'d wish to change.' =>
@@ -3143,8 +3135,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBStart.tt
         'Install Type' => 'Telepítés típusa',
-        'Create a new database for Znuny' => 'Új adatbázis létrehozása a Znunyhoz',
-        'Use an existing database for Znuny' => 'Meglévő adatbázis használata a Znunyhoz',
+        'Create a new database for BuzzDesk' => 'Új adatbázis létrehozása a BuzzDeskhoz',
+        'Use an existing database for BuzzDesk' => 'Meglévő adatbázis használata a BuzzDeskhoz',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBmssql.tt
         'If you have set a root password for your database, it must be entered here. If not, leave this field empty.' =>
@@ -3155,8 +3147,8 @@ sub Data {
         'Database check successful.' => 'Az adatbázis-ellenőrzés sikeres.',
         'Database User' => 'Adatbázis felhasználó',
         'New' => 'Új',
-        'A new database user with limited permissions will be created for this Znuny system.' =>
-            'Egy új, korlátozott jogosultságokkal rendelkező adatbázis-felhasználó lesz létrehozva ehhez a Znuny rendszerhez.',
+        'A new database user with limited permissions will be created for this BuzzDesk system.' =>
+            'Egy új, korlátozott jogosultságokkal rendelkező adatbázis-felhasználó lesz létrehozva ehhez a BuzzDesk rendszerhez.',
         'Repeat Password' => 'Jelszó ismétlése',
         'Generated password' => 'Előállított jelszó',
         'Database' => 'Adatbázis',
@@ -3168,10 +3160,10 @@ sub Data {
         'SID' => 'SID',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerFinish.tt
-        'To be able to use Znuny you have to enter the following line in your command line (Terminal/Shell) as root.' =>
-            'Ahhoz, hogy a Znunyt használni tudja, a következő parancsot kell begépelnie a parancssorban (terminálban/parancsértelmezőben) rendszergazdaként.',
+        'To be able to use BuzzDesk you have to enter the following line in your command line (Terminal/Shell) as root.' =>
+            'Ahhoz, hogy a BuzzDeskt használni tudja, a következő parancsot kell begépelnie a parancssorban (terminálban/parancsértelmezőben) rendszergazdaként.',
         'Restart your webserver' => 'Indítsa újra a webkiszolgálót',
-        'After doing so your Znuny is up and running.' => 'Miután ezt megtette, a Znuny készen áll és fut.',
+        'After doing so your BuzzDesk is up and running.' => 'Miután ezt megtette, a BuzzDesk készen áll és fut.',
         'Start page' => 'Kezdőoldal',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerLicense.tt
@@ -3214,8 +3206,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/MobileNotAvailableWidget.tt
         'Feature not Available' => 'A szolgáltatás nem érhető el',
-        'Sorry, but this feature of Znuny is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
-            'Sajnáljuk, de a Znuny ezen szolgáltatása jelenleg nem érhető el mobil készülékekről. Ha használni szeretné, akkor vagy váltson asztali módra, vagy használja a megszokott asztali eszközét.',
+        'Sorry, but this feature of BuzzDesk is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
+            'Sajnáljuk, de a BuzzDesk ezen szolgáltatása jelenleg nem érhető el mobil készülékekről. Ha használni szeretné, akkor vagy váltson asztali módra, vagy használja a megszokott asztali eszközét.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Motd.tt
         'Message of the Day' => 'A nap üzenete',
@@ -3254,8 +3246,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/PublicDefault.tt
         'Welcome' => 'Üdvözöljük',
-        'This is the default public interface of Znuny! There was no action parameter given.' =>
-            'Ez a Znuny alapértelmezett nyilvános felülete! Nem került megadásra műveleti paraméter.',
+        'This is the default public interface of BuzzDesk! There was no action parameter given.' =>
+            'Ez a BuzzDesk alapértelmezett nyilvános felülete! Nem került megadásra műveleti paraméter.',
         'You could install a custom public module (via the package manager), for example the FAQ module, which has a public interface.' =>
             'Telepíthetne egy olyan egyéni nyilvános modult (a csomagkezelőn keresztül), amelynek van nyilvános felülete, mint például a GyIK modulnak.',
 
@@ -3441,7 +3433,7 @@ sub Data {
         'Navigation' => 'Navigáció',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Test.tt
-        'Znuny Test Page' => 'Znuny tesztoldal',
+        'BuzzDesk Test Page' => 'BuzzDesk tesztoldal',
         'Unlock' => 'Feloldás',
         'Welcome %s %s' => 'Üdvözli a(z) %s %s',
         'Counter' => 'Számláló',
@@ -3536,8 +3528,8 @@ sub Data {
         # Perl Module: Kernel/Modules/AdminACL.pm
         'ACL information from database is not in sync with the system configuration, please deploy all ACLs.' =>
             'Az adatbázis ACL információi nincsenek szinkronizálva a rendszer beállításaival, állítson üzembe minden ACL-t.',
-        'ACLs could not be Imported due to a unknown error, please check Znuny logs for more information' =>
-            'Az ACL-eket nem sikerült importálni egy ismeretlen hiba miatt, további információkért nézze meg a Znuny naplókat',
+        'ACLs could not be Imported due to a unknown error, please check BuzzDesk logs for more information' =>
+            'Az ACL-eket nem sikerült importálni egy ismeretlen hiba miatt, további információkért nézze meg a BuzzDesk naplókat',
         'The following ACLs have been added successfully: %s' => 'A következő ACL-ek sikeresen hozzá lettek adva: %s',
         'The following ACLs have been updated successfully: %s' => 'A következő ACL-ek sikeresen frissítve lettek: %s',
         'There where errors adding/updating the following ACLs: %s. Please check the log file for more information.' =>
@@ -3893,12 +3885,12 @@ sub Data {
         'Could not load %s.' => 'Nem sikerült betölteni: %s.',
         'Could not read %s!' => 'Nem sikerült olvasni: %s!',
         'Need a file to import!' => 'Egy fájl szükséges az importáláshoz!',
-        'The imported file has not valid YAML content! Please check Znuny log for details' =>
-            'Az importált fájl nem rendelkezik érvényes YAML tartalommal! A részletekért nézze meg a Znuny naplóját.',
+        'The imported file has not valid YAML content! Please check BuzzDesk log for details' =>
+            'Az importált fájl nem rendelkezik érvényes YAML tartalommal! A részletekért nézze meg a BuzzDesk naplóját.',
         'Web service "%s" deleted!' => 'A(z) „%s” webszolgáltatás törölve!',
-        'Znuny as provider' => 'Znuny mint szolgáltató',
+        'BuzzDesk as provider' => 'BuzzDesk mint szolgáltató',
         'Operations' => 'Műveletek',
-        'Znuny as requester' => 'Znuny mint kérelmező',
+        'BuzzDesk as requester' => 'BuzzDesk mint kérelmező',
         'Invokers' => 'Meghívók',
 
         # Perl Module: Kernel/Modules/AdminGenericInterfaceWebserviceHistory.pm
@@ -3947,8 +3939,8 @@ sub Data {
         'Need param Key to download!' => 'Kulcs paraméter szükséges a letöltéshez!',
 
         # Perl Module: Kernel/Modules/AdminPackageManager.pm
-        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/znuny.Console.pl to install packages!' =>
-            'Sajnáljuk, de az Apache::Reload modul PerlModule és PerlInitHandler beállításként szükséges az Apache beállítófájljában. Nézze meg a scripts/apache2-httpd.include.conf parancsfájlt is. Alternatívaként használhatja a bin/znuny.Console.pl parancssori eszközt is a csomagok telepítéséhez!',
+        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/buzzdesk.Console.pl to install packages!' =>
+            'Sajnáljuk, de az Apache::Reload modul PerlModule és PerlInitHandler beállításként szükséges az Apache beállítófájljában. Nézze meg a scripts/apache2-httpd.include.conf parancsfájlt is. Alternatívaként használhatja a bin/buzzdesk.Console.pl parancssori eszközt is a csomagok telepítéséhez!',
         'No such package!' => 'Nincs ilyen csomag!',
         'No such file %s in package!' => 'Nincs ilyen %s fájl a csomagban!',
         'No such file %s in local file system!' => 'Nincs ilyen %s fájl a helyi fájlrendszeren!',
@@ -4170,14 +4162,14 @@ sub Data {
         'You currently don\'t have any favourite settings.' => 'Jelenleg nincs egyetlen kedvenc beállítása sem.',
         'The following settings could not be found: %s' => 'A következő beállítások nem találhatók: %s',
         'Import not allowed!' => 'Az importálás nem engedélyezett!',
-        'System Configuration could not be imported due to an unknown error, please check Znuny logs for more information.' =>
-            'A rendszerbeállításokat nem sikerült importálni egy ismeretlen hiba miatt, további információkért nézze meg a Znuny naplókat.',
+        'System Configuration could not be imported due to an unknown error, please check BuzzDesk logs for more information.' =>
+            'A rendszerbeállításokat nem sikerült importálni egy ismeretlen hiba miatt, további információkért nézze meg a BuzzDesk naplókat.',
         'Category Search' => 'Kategóriakeresés',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationDeployment.pm
         'Quick Deploy by' => 'A gyors üzembe állítás elvégzője',
-        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the Znuny log for more information.' =>
-            'Néhány importált beállítás nincs jelen a konfiguráció jelenlegi állapotában, vagy nem volt lehetséges frissíteni azokat. További információkért nézze meg a Znuny naplóját.',
+        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the BuzzDesk log for more information.' =>
+            'Néhány importált beállítás nincs jelen a konfiguráció jelenlegi állapotában, vagy nem volt lehetséges frissíteni azokat. További információkért nézze meg a BuzzDesk naplóját.',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationGroup.pm
         'You need to enable the setting before locking!' => 'Engedélyeznie kell a beállítást zárolás előtt!',
@@ -4602,7 +4594,7 @@ sub Data {
         'Configure "Home" in Kernel/Config.pm first!' => 'Először állítsa be a „Home” értékét a Kernel/Config.pm fájlban!',
         'File "%s/Kernel/Config.pm" not found!' => 'A(z) „%s/Kernel/Config.pm” fájl nem található!',
         'Directory "%s" not found!' => 'A(z) „%s” könyvtár nem található!',
-        'Install Znuny' => 'A Znuny telepítése',
+        'Install BuzzDesk' => 'A BuzzDesk telepítése',
         'Intro' => 'Bevezetés',
         'Kernel/Config.pm isn\'t writable!' => 'A Kernel/Config.pm nem írható!',
         'If you want to use the installer, set the Kernel/Config.pm writable for the webserver user!' =>
@@ -4619,7 +4611,7 @@ sub Data {
         'Unknown database type "%s".' => 'Ismeretlen adatbázistípus: „%s”.',
         'Please go back.' => 'Lépjen vissza.',
         'Create Database' => 'Adatbázis létrehozása',
-        'Install Znuny - Error' => 'A Znuny telepítése – hiba',
+        'Install BuzzDesk - Error' => 'A BuzzDesk telepítése – hiba',
         'File "%s/%s.xml" not found!' => 'A(z) „%s/%s.xml” fájl nem található!',
         'Contact your Admin!' => 'Vegye fel a kapcsolatot a rendszergazdával!',
         'System Settings' => 'Rendszerbeállítások',
@@ -4849,7 +4841,7 @@ sub Data {
             'Egy rendszerkarbantartás időszak fog kezdődni ekkor: %s, és várható befejezése: %s',
 
         # Perl Module: Kernel/Output/HTML/Notification/DaemonCheck.pm
-        'Znuny Daemon is not running.' => 'A Znuny démon nem fut.',
+        'BuzzDesk Daemon is not running.' => 'A BuzzDesk démon nem fut.',
 
         # Perl Module: Kernel/Output/HTML/Notification/OAuth2TokenManagementTokenExpired.pm
         'OAuth2 token for "%s" has expired.' => 'A(z) „%s” OAuth2-tokenje lejárt.',
@@ -5228,8 +5220,8 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/InvalidDefaultValues.pm
         'Invalid Default Values' => 'Érvénytelen alapértelmezett értékek',
-        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/znuny.Console.pl Maint::Database::Check --repair' =>
-            'Érvénytelen alapértelmezett értékekkel rendelkező táblák találhatók. Az automatikus javításukhoz futtassa a következő parancsot: bin/znuny.Console.pl Maint::Database::Check --repair',
+        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/buzzdesk.Console.pl Maint::Database::Check --repair' =>
+            'Érvénytelen alapértelmezett értékekkel rendelkező táblák találhatók. Az automatikus javításukhoz futtassa a következő parancsot: bin/buzzdesk.Console.pl Maint::Database::Check --repair',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/MaxAllowedPacket.pm
         'Maximum Query Size' => 'Legnagyobb lekérdezési méret',
@@ -5274,15 +5266,15 @@ sub Data {
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/postgresql/Version.pm
         'PostgreSQL 9.2 or higher is required.' => 'PostgreSQL 9.2 vagy újabb szükséges.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionZnuny.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionBuzzDesk.pm
         'Operating System' => 'Operációs rendszer',
-        'Znuny Disk Partition' => 'Znuny lemezpartíció',
+        'BuzzDesk Disk Partition' => 'BuzzDesk lemezpartíció',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpace.pm
         'Disk Usage' => 'Lemezhasználat',
-        'The partition where Znuny is located is almost full.' => 'A Znunyt tartalmazó partíció majdnem betelt.',
-        'The partition where Znuny is located has no disk space problems.' =>
-            'A Znunyt tartalmazó partíciónak nincs tárhely problémája.',
+        'The partition where BuzzDesk is located is almost full.' => 'A BuzzDeskt tartalmazó partíció majdnem betelt.',
+        'The partition where BuzzDesk is located has no disk space problems.' =>
+            'A BuzzDeskt tartalmazó partíciónak nincs tárhely problémája.',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpacePartitions.pm
         'Disk Partitions Usage' => 'Lemezpartíciók használata',
@@ -5327,8 +5319,8 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/MPMModel.pm
         'MPM model' => 'MPM modell',
-        'Znuny requires apache to be run with the \'prefork\' MPM model.' =>
-            'A Znuny az apache „prefork” MPM-modellel való futtatását igényli.',
+        'BuzzDesk requires apache to be run with the \'prefork\' MPM model.' =>
+            'A BuzzDesk az apache „prefork” MPM-modellel való futtatását igényli.',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/Performance.pm
         'CGI Accelerator Usage' => 'CGI gyorsító használat',
@@ -5358,37 +5350,37 @@ sub Data {
         'Webserver Version' => 'Webkiszolgáló verzió',
         'Could not determine webserver version.' => 'Nem sikerült meghatározni a webkiszolgáló verzióját.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticleSearchIndexStatus.pm
-        'Znuny' => 'Znuny',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticleSearchIndexStatus.pm
+        'BuzzDesk' => 'BuzzDesk',
         'Article Search Index Status' => 'Bejegyzés keresési index állapot',
         'Indexed Articles' => 'Indexelt bejegyzések',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticlesPerCommunicationChannel.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticlesPerCommunicationChannel.pm
         'Articles Per Communication Channel' => 'Bejegyzések kommunikációs csatornánként',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLog.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLog.pm
         'Incoming communications' => 'Bejövő kommunikációk',
         'Outgoing communications' => 'Kimenő kommunikációk',
         'Failed communications' => 'Sikertelen kommunikációk',
         'Average processing time of communications (s)' => 'Kommunikációk átlagos feldolgozási ideje (mp)',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLogAccountStatus.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLogAccountStatus.pm
         'Communication Log Account Status (last 24 hours)' => 'Kommunikációs napló fiókjának állapota (az elmúlt 24 óra)',
         'No connections found.' => 'Nem találhatók kapcsolatok.',
         'ok' => 'OK',
         'permanent connection errors' => 'állandó kommunikációs hibák',
         'intermittent connection errors' => 'időszakos kommunikációs hibák',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ConfigSettings.pm
         'Config Settings' => 'Konfigurációs beállítások',
         'Could not determine value.' => 'Nem sikerült meghatározni az értéket.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DaemonRunning.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DaemonRunning.pm
         'Daemon' => 'Démon',
         'Daemon is running.' => 'A démon fut.',
         'Daemon is not running.' => 'A démon nem fut.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DatabaseRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DatabaseRecords.pm
         'Database Records' => 'Adatbázis rekordok',
         'Ticket History Entries' => 'Jegy előzmény bejegyzések',
         'Articles' => 'Bejegyzések',
@@ -5403,31 +5395,31 @@ sub Data {
         'Tickets Per Month (avg)' => 'Jegyek havonta (átlag)',
         'Open Tickets' => 'Nyitott jegyek',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultSOAPUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultSOAPUser.pm
         'Default SOAP Username And Password' => 'Alapértelmezett SOAP felhasználónév és jelszó',
         'Security risk: you use the default setting for SOAP::User and SOAP::Password. Please change it.' =>
             'Biztonsági kockázat: a SOAP::User és a SOAP::Password alapértelmezett beállításait használja. Változtassa meg.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultUser.pm
         'Default Admin Password' => 'Alapértelmezett adminisztrátor jelszó',
         'Security risk: the agent account root@localhost still has the default password. Please change it or invalidate the account.' =>
             'Biztonsági kockázat: a root@localhost ügyintéző fióknak még mindig az alapértelmezett jelszava van. Változtassa meg, vagy érvénytelenítse a fiókot.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/EmailQueue.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/EmailQueue.pm
         'Email Sending Queue' => 'E-mail várakozási sor',
         'Emails queued for sending' => 'Küldéshez sorba állított e-mailek',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FQDN.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FQDN.pm
         'FQDN (domain name)' => 'FQDN (tartománynév)',
         'Please configure your FQDN setting.' => 'Állítsa be az FQDN beállítását.',
         'Domain Name' => 'Tartománynév',
         'Your FQDN setting is invalid.' => 'Az FQDN beállítás érvénytelen.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FileSystemWritable.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FileSystemWritable.pm
         'File System Writable' => 'Fájlrendszer írhatóság',
-        'The file system on your Znuny partition is not writable.' => 'A Znuny partíción lévő fájlrendszer nem írható.',
+        'The file system on your BuzzDesk partition is not writable.' => 'A BuzzDesk partíción lévő fájlrendszer nem írható.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/LegacyConfigBackups.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/LegacyConfigBackups.pm
         'Legacy Configuration Backups' => 'Örökölt konfigurációs biztonsági mentések',
         'No legacy configuration backup files found.' => 'Nem találhatók örökölt biztonsági mentés fájlok.',
         'Legacy configuration backup files found in Kernel/Config/Backups folder, but they might still be required by some packages.' =>
@@ -5435,12 +5427,12 @@ sub Data {
         'Legacy configuration backup files are no longer needed for the installed packages, please remove them from Kernel/Config/Backups folder.' =>
             'Az örökölt konfigurációs biztonsági mentés fájlok többé nem szükségesek a telepített csomagokhoz, távolítsa el azokat a Kernel/Config/Backups mappából.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/MultipleJSFileLoad.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/MultipleJSFileLoad.pm
         'The following JavaScript files loaded multiple times:' => 'A következő JavaScript-fájlok többször vannak betöltve:',
         'Files' => 'Fájlok',
         'Views with multiple loaded JavaScript files' => 'Többszörösen betöltött JavaScript-fájlokkal rendelkező nézetek',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageDeployment.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageDeployment.pm
         'Package Installation Status' => 'Csomagtelepítési állapot',
         'Some packages have locally modified files.' => 'Néhány csomag helyileg módosított fájlokkal rendelkezik.',
         'Some packages are not correctly installed.' => 'Néhány csomag nincs megfelelően telepítve.',
@@ -5448,75 +5440,75 @@ sub Data {
         'Some packages are not allowed for the current framework version.' =>
             'Néhány csomag nem engedélyezett a jelenlegi keretrendszer verzióhoz.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageList.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageList.pm
         'Package List' => 'Csomaglista',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SessionConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SessionConfigSettings.pm
         'Session Config Settings' => 'Munkamenet-konfigurációs beállítások',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SpoolMails.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SpoolMails.pm
         'Spooled Emails' => 'Várakozási sorba helyezett levelek',
-        'There are emails in var/spool that Znuny could not process.' => 'Olyan levelek találhatók a var/spool mappában, amelyeket a Znuny nem tudott feldolgozni.',
+        'There are emails in var/spool that BuzzDesk could not process.' => 'Olyan levelek találhatók a var/spool mappában, amelyeket a BuzzDesk nem tudott feldolgozni.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SystemID.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SystemID.pm
         'Your SystemID setting is invalid, it should only contain digits.' =>
             'A rendszer-azonosító beállítás érvénytelen, csak számjegyeket tartalmazhat.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/DefaultType.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/DefaultType.pm
         'Default Ticket Type' => 'Alapértelmezett jegytípus',
         'The configured default ticket type is invalid or missing. Please change the setting Ticket::Type::Default and select a valid ticket type.' =>
             'A beállított alapértelmezett jegytípus érvénytelen vagy hiányzik. Változtassa meg a Ticket::Type::Default beállításait, és válasszon egy érvényes jegytípust.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/IndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/IndexModule.pm
         'Ticket Index Module' => 'Jegyindexelő modul',
         'You have more than 60,000 tickets and should use the StaticDB backend. See admin manual (Performance Tuning) for more information.' =>
             'Több mint 60.000 jegye van, ezért a StaticDB háttérprogramot kellene használnia. További információkért nézze meg az adminisztrátori kézikönyvet (Teljesítmény finomhangolás).',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/InvalidUsersWithLockedTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/InvalidUsersWithLockedTickets.pm
         'Invalid Users with Locked Tickets' => 'Érvénytelen felhasználók zárolt jegyekkel',
         'There are invalid users with locked tickets.' => 'Zárolt jegyekkel rendelkező érvénytelen felhasználók vannak.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/OpenTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/OpenTickets.pm
         'You should not have more than 8,000 open tickets in your system.' =>
             'Nem kellene 8.000 nyitott jegynél többel rendelkeznie a rendszeren.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/SearchIndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/SearchIndexModule.pm
         'Ticket Search Index Module' => 'Jegykeresés indexelő modul',
         'The indexing process forces the storage of the original article text in the article search index, without executing filters or applying stop word lists. This will increase the size of the search index and thus may slow down fulltext searches.' =>
             'Az indexelési folyamat kényszeríti az eredeti bejegyzésszöveg tárolását a bejegyzés keresési indexében anélkül, hogy szűrőket hajtana végre vagy a kiszűrendő szavak listáit alkalmazná. Ez meg fogja növelni a keresési index méretét, és ezért lelassíthatja a szabad-szavas kereséseket.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/StaticDBOrphanedRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/StaticDBOrphanedRecords.pm
         'Orphaned Records In ticket_lock_index Table' => 'Árva rekordok a ticket_lock_index táblában',
-        'Table ticket_lock_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            'A ticket_lock_index tábla árva rekordokat tartalmaz. Futtassa a bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" parancsot a StaticDB index tisztításához.',
+        'Table ticket_lock_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            'A ticket_lock_index tábla árva rekordokat tartalmaz. Futtassa a bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" parancsot a StaticDB index tisztításához.',
         'Orphaned Records In ticket_index Table' => 'Árva rekordok a ticket_index táblában',
-        'Table ticket_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            'A ticket_index tábla árva rekordokat tartalmaz. Futtassa a bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" parancsot a StaticDB index tisztításához.',
+        'Table ticket_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            'A ticket_index tábla árva rekordokat tartalmaz. Futtassa a bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" parancsot a StaticDB index tisztításához.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/TimeSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/TimeSettings.pm
         'Time Settings' => 'Időbeállítások',
         'Server time zone' => 'Kiszolgáló időzónája',
-        'Znuny time zone' => 'Znuny időzóna',
-        'Znuny time zone is not set.' => 'A Znuny időzónája nincs beállítva.',
+        'BuzzDesk time zone' => 'BuzzDesk időzóna',
+        'BuzzDesk time zone is not set.' => 'A BuzzDesk időzónája nincs beállítva.',
         'User default time zone' => 'Felhasználó alapértelmezett időzónája',
         'User default time zone is not set.' => 'A felhasználó alapértelmezett időzónája nincs beállítva.',
         'Calendar time zone is not set.' => 'A naptár időzónája nincs beállítva.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentSkinUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentSkinUsage.pm
         'UI - Agent Skin Usage' => 'UI – ügyintézői felszín használat',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentThemeUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentThemeUsage.pm
         'UI - Agent Theme Usage' => 'UI – ügyintézői téma használat',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/SpecialStats.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/SpecialStats.pm
         'UI - Special Statistics' => 'UI – különleges statisztikák',
         'Agents using custom main menu ordering' => 'Egyéni menürendezést használó ügyintézők',
         'Agents using favourites for the admin overview' => 'Kedvenceket használó ügyintézők az adminisztrációs áttekintőnél',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Version.pm
-        'Znuny Version' => 'Znuny verzió',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Version.pm
+        'BuzzDesk Version' => 'BuzzDesk verzió',
 
-        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/Znuny/ConcurrentUsers.pm
+        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/BuzzDesk/ConcurrentUsers.pm
         'Concurrent Users Details' => 'Egyidejű felhasználók részletei',
         'Concurrent Users' => 'Egyidejű felhasználók',
 
@@ -5622,8 +5614,8 @@ sub Data {
             'Műveletek meghatározása, ahol egy beállítások gomb érhető el a kapcsolt objektumok felületi elemen (LinkObject::ViewMode = „összetett”). Ne feledje, hogy ezeknek a műveleteknek rendelkezniük kell a következő JS és CSS fájlok regisztrálásával: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js.',
         'Define which columns are shown in the linked appointment widget (LinkObject::ViewMode = "complex"). Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.' =>
             'Annak meghatározása, hogy mely oszlopok legyenek láthatók a kapcsolt időpont felületi elemen (LinkObject::ViewMode = „összetett”). Lehetséges beállítások: 0 = letiltva, 1 = elérhető, 2 = alapértelmezetten engedélyezett.',
-        'Znuny doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
-            'A Znuny nem támogatja a befejezési dátum vagy az ismétlések száma nélküli ismétlődő időpontokat. Az importálási folyamat során előfordulhat, hogy az ICS-fájl ilyen időpontokat tartalmaz. Ehelyett a rendszer az összes időpontot a múltban hozza létre, valamint a következő N hónapban (120 hónap/10 év alapértelmezetten).',
+        'BuzzDesk doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
+            'A BuzzDesk nem támogatja a befejezési dátum vagy az ismétlések száma nélküli ismétlődő időpontokat. Az importálási folyamat során előfordulhat, hogy az ICS-fájl ilyen időpontokat tartalmaz. Ehelyett a rendszer az összes időpontot a múltban hozza létre, valamint a következő N hónapban (120 hónap/10 év alapértelmezetten).',
         'Defines the ticket appointment type backend for ticket escalation time.' =>
             'Meghatározza a jegyidőpont típusának háttérprogramját a jegy eszkalációs idejéhez.',
         'Defines the ticket appointment type backend for ticket pending time.' =>
@@ -5660,14 +5652,14 @@ sub Data {
             'Aktiválja az automatikus naptáridőpontok hozzáadását vagy frissítését bizonyos jegyidők alapján.',
 
         # XML Definition: Kernel/Config/Files/XML/Daemon.xml
-        'Defines the module to display a notification in the agent interface if the Znuny Daemon is not running.' =>
-            'Meghatározza azt a modult, amely egy értesítést jelenít meg az ügyintézői felületen, ha a Znuny démon nem fut.',
+        'Defines the module to display a notification in the agent interface if the BuzzDesk Daemon is not running.' =>
+            'Meghatározza azt a modult, amely egy értesítést jelenít meg az ügyintézői felületen, ha a BuzzDesk démon nem fut.',
         'List of CSS files to always be loaded for the agent interface.' =>
             'CSS fájlok listája, amelyek mindig betöltődnek az ügyintézői felületnél.',
         'List of JS files to always be loaded for the agent interface.' =>
             'JavaScript-fájlok listája, amelyek mindig betöltődnek az ügyintézői felületnél.',
-        'Type of daemon log rotation to use: Choose \'Znuny\' to let Znuny system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
-            'A használandó démon naplóforgatásának típusa: válassza a „Znuny” lehetőséget, ha a Znuny rendszerre szeretné bízni a fájlforgatás kezelését, vagy válassza a „Külső” lehetőséget egy harmadik féltől származó forgatási mechanizmus (azaz logrotate) használatához. Megjegyzés: a külső forgatási mechanizmus a saját és független beállítását igényli.',
+        'Type of daemon log rotation to use: Choose \'BuzzDesk\' to let BuzzDesk system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
+            'A használandó démon naplóforgatásának típusa: válassza a „BuzzDesk” lehetőséget, ha a BuzzDesk rendszerre szeretné bízni a fájlforgatás kezelését, vagy válassza a „Külső” lehetőséget egy harmadik féltől származó forgatási mechanizmus (azaz logrotate) használatához. Megjegyzés: a külső forgatási mechanizmus a saját és független beállítását igényli.',
         'If enabled the daemon will use this directory to create its PID files. Note: Please stop the daemon before any change and use this setting only if &lt;$OTRSHome&gt;/var/run/ can not be used.' =>
             'Ha engedélyezve van, akkor a démon ezt a könyvtárat fogja használni a PID-fájljai létrehozásához. Megjegyzés: állítsa le a démont, mielőtt bármit megváltoztatna, és csak akkor használja ezt a beállítást, ha az &lt;$OTRSHome&gt;/var/run/ nem használható.',
         'Defines the number of days to keep the daemon log files.' => 'Meghatározza a napok számát a démon naplófájljainak megtartásához.',
@@ -5728,8 +5720,8 @@ sub Data {
         'Remove closed tickets from agents\' ticket watch lists.' => 'Lezárt jegyek eltávolítása az ügyintézők jegymegfigyelő listájáról.',
 
         # XML Definition: Kernel/Config/Files/XML/Framework.xml
-        'Disables the web installer (http://yourhost.example.com/znuny/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
-            'Letiltja a webes telepítőt (http://yourhost.example.com/znuny/installer.pl), hogy megakadályozza a rendszer feltörését. Ha nincs engedélyezve, akkor a rendszer újratelepíthető, és a jelenlegi alap konfiguráció lesz felhasználva a telepítő parancsfájlon belüli kérdések előre kitöltéséhez. Ha engedélyezve van, akkor letiltja az általános ügyintézőt, a csomagkezelőt és az SQL dobozt is.',
+        'Disables the web installer (http://yourhost.example.com/buzzdesk/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
+            'Letiltja a webes telepítőt (http://yourhost.example.com/buzzdesk/installer.pl), hogy megakadályozza a rendszer feltörését. Ha nincs engedélyezve, akkor a rendszer újratelepíthető, és a jelenlegi alap konfiguráció lesz felhasználva a telepítő parancsfájlon belüli kérdések előre kitöltéséhez. Ha engedélyezve van, akkor letiltja az általános ügyintézőt, a csomagkezelőt és az SQL dobozt is.',
         'Enables or disables the debug mode over frontend interface.' => 'Engedélyezi vagy letiltja a hibakereső módot az előtétprogram felületén.',
         'Delivers extended debugging information in the frontend in case any AJAX errors occur, if enabled.' =>
             'Kiterjesztett hibakeresési információkat szolgáltat az előtétprogramon abban az esetben, ha bármilyen AJAX-hiba történik, ha engedélyezve van.',
@@ -5741,16 +5733,16 @@ sub Data {
             'Azt szabályozza, hogy az adminisztrátornak megengedett-e egy elmentett rendszerbeállítás importálása a rendszerbeállításokban.',
         'Defines the name of the application, shown in the web interface, tabs and title bar of the web browser.' =>
             'Meghatározza annak az alkalmazásnak a nevét, amely a webes felületen, a füleken és a webböngésző címsorában jelenik meg.',
-        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of Znuny).' =>
-            'Meghatározza a rendszer azonosítóját. Minden jegyszám és HTTP munkamenet szöveg tartalmazza ezt az azonosítót. Ez biztosítja, hogy csak azok a jegyek legyenek feldolgozva követőként, amelyek a rendszerhez tartoznak (hasznos a Znuny két példánya közötti kommunikációkor).',
+        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of BuzzDesk).' =>
+            'Meghatározza a rendszer azonosítóját. Minden jegyszám és HTTP munkamenet szöveg tartalmazza ezt az azonosítót. Ez biztosítja, hogy csak azok a jegyek legyenek feldolgozva követőként, amelyek a rendszerhez tartoznak (hasznos a BuzzDesk két példánya közötti kommunikációkor).',
         'Defines the fully qualified domain name of the system. This setting is used as a variable, OTRS_CONFIG_FQDN which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
             'Meghatározza a rendszer teljes képzésű tartománynevét. Ezt a beállítást az OTRS_CONFIG_FQDN változójaként használják, amely az alkalmazás által használt üzenetküldés összes űrlapján megtalálható a jegyekre mutató hivatkozások készítéséhez a rendszeren belül.',
         'Defines the fully qualified domain name for external IDs generation (i.e. Message-ID, ContentID).' =>
             'Meghatározza a teljes képzésű tartománynevet a külső azonosítók előállításához (azaz üzenetazonosító, tartalomazonosító).',
-        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
-            'Meghatározza a HTTP gépnevet a támogatási adatok gyűjtéséhez a nyilvános „PublicSupportDataCollector” modullal (például a Znuny démonból használva).',
-        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
-            'Meghatározza az időkorlátot (másodpercben, a minimum 20 másodperc) a támogatási adatok gyűjtéséhez a nyilvános „PublicSupportDataCollector” modullal (például a Znuny démonból használva).',
+        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
+            'Meghatározza a HTTP gépnevet a támogatási adatok gyűjtéséhez a nyilvános „PublicSupportDataCollector” modullal (például a BuzzDesk démonból használva).',
+        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
+            'Meghatározza az időkorlátot (másodpercben, a minimum 20 másodperc) a támogatási adatok gyűjtéséhez a nyilvános „PublicSupportDataCollector” modullal (például a BuzzDesk démonból használva).',
         'When support data is collected via SupportDataCollector, certain SysConfig values marked with ValueType="Password" are automatically masked. This prevents passwords from appearing in plain text in the support data. This setting defines the settings that contain complex configuration hashes that should not be masked when generating the support data.' =>
             'Ha támogatási adatok kerülnek begyűjtésre a támogatási adatgyűjtőn keresztül, akkor a ValueType="Password" jelöléssel ellátott bizonyos rendszerbeállítási értékek automatikusan el lesznek takarva. Ez megakadályozza, hogy a jelszavak egyszerű szövegként jelenjenek meg a támogatási adatokban. Ez a beállítás határozza meg azokat a beállításokat, amelyek olyan összetett beállítási kivonatokat tartalmaznak, amelyeket nem szabad eltakarni a támogatási adatok előállításakor.',
         'Defines the type of protocol, used by the web server, to serve the application. If https protocol will be used instead of plain http, it must be specified here. Since this has no affect on the web server\'s settings or behavior, it will not change the method of access to the application and, if it is wrong, it will not prevent you from logging into the application. This setting is only used as a variable, OTRS_CONFIG_HttpType which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
@@ -5769,8 +5761,8 @@ sub Data {
             'Meghatározza az összes olyan nyelvet, amelyek elérhetők az alkalmazásnak. A nyelveknek csak az angol neveit adja meg itt.',
         'Defines all the languages that are available to the application. Specify only native names of languages here.' =>
             'Meghatározza az összes olyan nyelvet, amelyek elérhetők az alkalmazásnak. A nyelveknek csak az eredeti neveit adja meg itt.',
-        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.znuny.org/developer/general_information/themes.html.' =>
-            'Meghatározza az ügyintézők és az ügyfelek által használt alapértelmezett előtétprogram (HTML) témáját. Ha szeretné, hozzáadhatja a saját témáját. Nézze meg a https://doc.znuny.org/developer/general_information/themes.html címen elérhető adminisztrátori kézikönyvet.',
+        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.buzzdesk.org/developer/general_information/themes.html.' =>
+            'Meghatározza az ügyintézők és az ügyfelek által használt alapértelmezett előtétprogram (HTML) témáját. Ha szeretné, hozzáadhatja a saját témáját. Nézze meg a https://doc.buzzdesk.org/developer/general_information/themes.html címen elérhető adminisztrátori kézikönyvet.',
         'It is possible to configure different themes, for example to distinguish between agents and customers, to be used on a per-domain basis within the application. Using a regular expression (regex), you can configure a Key/Content pair to match a domain. The value in "Key" should match the domain, and the value in "Content" should be a valid theme on your system. Please see the example entries for the proper form of the regex.' =>
             'Lehetséges különféle témák beállítása, például különbséget lehet tenni az alkalmazáson belül ügyintézők és ügyfelek között tartományonkénti alapon használva. Egy reguláris kifejezés (regex) használatával beállíthat egy tartományra illeszkedő Kulcs/Tartalom párt. A „Kulcsban” lévő értéknek kell illeszkednie a tartományra, és a „Tartalomban” lévő értéknek a rendszeren lévő érvényes témának kell lennie. Nézze meg a példabejegyzéseket a reguláris kifejezés megfelelő formájáért.',
         'The headline shown in the customer interface.' => 'Az ügyfélfelületen megjelenített főcím.',
@@ -5832,8 +5824,8 @@ sub Data {
             'Meghatározza azt a tartalmat, amely használata nem megengedett a Rich Text szerkesztőben.',
         'Global settings for all popup profiles.' => 'Globális beállítások az összes felugró profilhoz.',
         'Disable autocomplete in the login screen.' => 'Automatikus kiegészítés letiltása a bejelentkező képernyőn.',
-        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow Znuny to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
-            'Az „X-Frame-Options: SAMEORIGIN” HTTP-fejléc letiltása, hogy lehetővé tegye a Znuny beágyazását IFrame-ként más weboldalakba. Ennek a HTTP-fejlécnek a letiltása biztonsági probléma lehet! Csak akkor tiltsa le, ha tudja, hogy mit csinál!',
+        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow BuzzDesk to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
+            'Az „X-Frame-Options: SAMEORIGIN” HTTP-fejléc letiltása, hogy lehetővé tegye a BuzzDesk beágyazását IFrame-ként más weboldalakba. Ennek a HTTP-fejlécnek a letiltása biztonsági probléma lehet! Csak akkor tiltsa le, ha tudja, hogy mit csinál!',
         'Disable HTTP header "Content-Security-Policy" to allow loading of external script contents. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
             'A „Content-Security-Policy” HTTP-fejléc letiltása a külső parancsfájltartalmak betöltésének engedélyezéséhez. Ezen HTTP-fejléc letiltása biztonsági probléma lehet! Csak akkor tiltsa le, ha tudja, hogy mit csinál!',
         'Automated line break in text messages after x number of chars.' =>
@@ -5879,8 +5871,8 @@ sub Data {
             'Ha „SysLog” lett kiválasztva a LogModule modulnál, akkor megadható a naplózásnál használandó karakterkészlet.',
         'If "file" was selected for LogModule, a logfile must be specified. If the file doesn\'t exist, it will be created by the system.' =>
             'Ha „File” lett kiválasztva a LogModule modulnál, akkor meg kell adni egy naplófájlt. Ha a fájl nem létezik, a rendszer létre fogja hozni.',
-        'Adds a suffix with the actual year and month to the Znuny log file. A logfile for every month will be created.' =>
-            'Az aktuális évet és hónapot tartalmazó előtagot ad a Znuny naplófájlhoz. Minden hónapban új naplófájl lesz létrehozva.',
+        'Adds a suffix with the actual year and month to the BuzzDesk log file. A logfile for every month will be created.' =>
+            'Az aktuális évet és hónapot tartalmazó előtagot ad a BuzzDesk naplófájlhoz. Minden hónapban új naplófájl lesz létrehozva.',
         'Set the minimum log level. If you select \'error\', just errors are logged. With \'debug\' you get all logging messages. The order of log levels is: \'debug\', \'info\', \'notice\' and \'error\'.' =>
             'A legkisebb naplózási szint beállítása. Ha a „hibát” választja, akkor csak a hibák lesznek naplózva. A „hibakeresés” lehetőséggel minden naplózási üzenetet megkap. A naplózási szintek sorrendje: „hibakeresés”, „információ”, „értesítés” és „hiba”.',
         'Defines the module to send emails. "DoNotSendEmail" doesn\'t send emails at all. Any of the "SMTP" mechanisms use a specified (external) mailserver. "Sendmail" directly uses the sendmail binary of your operating system. "Test" doesn\'t send emails, but writes them to $OTRS_HOME/var/tmp/CacheFileStorable/EmailTest/ for testing purposes.' =>
@@ -5949,8 +5941,8 @@ sub Data {
             'Meghatározza azt a modult, amely egy általános értesítést jelenít meg az ügyintézői felületen. Vagy a „Text” szövege – ha be van állítva – vagy a „File” tartalma kerül megjelenítésre.',
         'Defines the module used to store the session data. With "DB" the frontend server can be splitted from the db server. "FS" is faster.' =>
             'Meghatározza azt a modult, amely a munkamenet adatait tárolja. A „DB” értékkel az előtétprogram kiszolgáló leválasztható az adatbázis kiszolgálóról. Az „FS” gyorsabb.',
-        'Defines the name of the session key. E.g. Session, SessionID or Znuny.' =>
-            'Meghatározza a munkamenetkulcs nevét. Például munkamenet, munkamenet-azonosító vagy Znuny.',
+        'Defines the name of the session key. E.g. Session, SessionID or BuzzDesk.' =>
+            'Meghatározza a munkamenetkulcs nevét. Például munkamenet, munkamenet-azonosító vagy BuzzDesk.',
         'Defines the name of the key for customer sessions.' => 'Meghatározza a kulcs nevét az ügyfél munkamenetekhez.',
         'Turns on the remote ip address check. It should not be enabled if the application is used, for example, via a proxy farm or a dialup connection, because the remote ip address is mostly different for the requests.' =>
             'Bekapcsolja a távoli IP-cím ellenőrzését. Nem szabad engedélyezni, ha az alkalmazást például egy proxy-farmon vagy betárcsázós kapcsolaton keresztül használják, mert a távoli IP-cím többnyire eltérő az egyes kéréseknél.',
@@ -5983,10 +5975,10 @@ sub Data {
         'Defines the period of time (in minutes) before customer is marked as "away" due to inactivity (e.g. in the "Logged-In Users" widget or for the chat).' =>
             'Meghatározza azt az időtartamot (percben), mielőtt az ügyfél „távol” lesz inaktivitás miatt (például a „Bejelentkezett felhasználók” felületi elemben vagy a csevegésnél).',
         'This setting is deprecated. Set OTRSTimeZone instead.' => 'Ez a beállítás elavult. Állítsa be az OTRSTimeZone beállítást helyette.',
-        'Sets the time zone being used internally by Znuny to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
-            'Beállítja a Znuny által belsőleg használt időzónát, hogy például dátumokat és időket tároljon az adatbázisban. FIGYELEM: ezt a beállítást nem szabad megváltoztatni, miután beállították, és jegyek vagy bármilyen dátumot és időt tartalmazó egyéb adatok létrejöttek.',
-        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the Znuny time zone and the user\'s time zone.' =>
-            'Beállítja az időzónát, amely hozzá lesz rendelve az újonnan létrehozott felhasználókhoz, valamint olyan felhasználóknál lesz használva, akiknek még nincs beállított időzónájuk. Ez az alapértelmezetten használt időzóna a Znuny időzónája és a felhasználó időzónája közötti dátum és idő átalakításához.',
+        'Sets the time zone being used internally by BuzzDesk to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
+            'Beállítja a BuzzDesk által belsőleg használt időzónát, hogy például dátumokat és időket tároljon az adatbázisban. FIGYELEM: ezt a beállítást nem szabad megváltoztatni, miután beállították, és jegyek vagy bármilyen dátumot és időt tartalmazó egyéb adatok létrejöttek.',
+        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the BuzzDesk time zone and the user\'s time zone.' =>
+            'Beállítja az időzónát, amely hozzá lesz rendelve az újonnan létrehozott felhasználókhoz, valamint olyan felhasználóknál lesz használva, akiknek még nincs beállított időzónájuk. Ez az alapértelmezetten használt időzóna a BuzzDesk időzónája és a felhasználó időzónája közötti dátum és idő átalakításához.',
         'If enabled, users that haven\'t selected a time zone yet will be notified to do so. Note: Notification will not be shown if (1) user has not yet selected a time zone and (2) OTRSTimeZone and UserDefaultTimeZone do match and (3) are not set to UTC.' =>
             'Ha engedélyezve van, akkor azok a felhasználók, akik még nem választottak időzónát, értesítve lesznek, hogy válasszanak. Megjegyzés: az értesítés nem lesz megjelenítve, ha (1) a felhasználó még nem választott időzónát és (2) az OTRS időzónája, valamint a felhasználó alapértelmezett időzónája megegyezik és (3) nincsenek UTC-re állítva.',
         'Maximum Number of a calendar shown in a dropdown.' => 'Egy legördülőben megjelenített naptár legnagyobb száma.',
@@ -6004,8 +5996,8 @@ sub Data {
         'Adds the one time vacation days for the indicated calendar.' => 'Hozzáadja az egyszeri munkaszüneti napokat a jelzett naptárhoz.',
         'Defines the hours and week days of the indicated calendar, to count the working time.' =>
             'Meghatározza a jelzett naptár óráit és hétköznapjait a munkaidő számításához.',
-        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your Znuny instance to stop working (probably any mask which takes input from the user).' =>
-            'Meghatározza a böngészőn keresztüli fájlfeltöltések legnagyobb méretét (bájtban). Figyelem: a beállítás túl alacsony értékre állítása azt okozhatja, hogy a Znuny példány számos maszkja nem fog működni (valószínűleg az összes maszk, amely bemenetet vár a felhasználótól).',
+        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your BuzzDesk instance to stop working (probably any mask which takes input from the user).' =>
+            'Meghatározza a böngészőn keresztüli fájlfeltöltések legnagyobb méretét (bájtban). Figyelem: a beállítás túl alacsony értékre állítása azt okozhatja, hogy a BuzzDesk példány számos maszkja nem fog működni (valószínűleg az összes maszk, amely bemenetet vár a felhasználótól).',
         'Selects the module to handle uploads via the web interface. "DB" stores all uploads in the database, "FS" uses the file system.' =>
             'Kiválasztja a modult a webes felületen keresztüli feltöltések kezeléséhez. A „DB” minden feltöltést adatbázisban tárol, az „FS” a fájlrendszert használja.',
         'Specifies the text that should appear in the log file to denote a CGI script entry.' =>
@@ -6072,8 +6064,8 @@ sub Data {
             'Meghatározza az útvonalat és a TTF-fájlt a dőlt rögzített szélességű betűkészlet kezeléséhez a PDF dokumentumokban.',
         'Defines the path and TTF-File to handle bold italic monospaced font in PDF documents.' =>
             'Meghatározza az útvonalat és a TTF-fájlt a félkövér dőlt rögzített szélességű betűkészlet kezeléséhez a PDF dokumentumokban.',
-        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the Znuny user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
-            'Engedélyezi a PGP támogatást. Amikor a PGP támogatás engedélyezve van levelek aláírásához és titkosításához, akkor ERŐSEN javasolt, hogy a webkiszolgáló a Znuny felhasználóként fusson. Egyébként problémák lesznek a jogosultságokkal, amikor hozzáfér a .gnupg mappához.',
+        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the BuzzDesk user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
+            'Engedélyezi a PGP támogatást. Amikor a PGP támogatás engedélyezve van levelek aláírásához és titkosításához, akkor ERŐSEN javasolt, hogy a webkiszolgáló a BuzzDesk felhasználóként fusson. Egyébként problémák lesznek a jogosultságokkal, amikor hozzáfér a .gnupg mappához.',
         'Defines the path to PGP binary.' => 'Meghatározza a PGP bináris útvonalát.',
         'Sets the options for PGP binary.' => 'Beállítja a PGP bináris beállításait.',
         'Sets the preferred digest to be used for PGP binary.' => 'Beállítja a PGP binárisnál használandó előnyben részesített kivonatot.',
@@ -6091,10 +6083,10 @@ sub Data {
             'Azt a könyvtárat adja meg, ahol a személyes SSL tanúsítványok vannak tárolva.',
         'Cache time in seconds for the SSL certificate attributes.' => 'Gyorsítótárazás ideje másodpercben az SSL tanúsítvány attribútumainál.',
         'Enables fetch S/MIME from CustomerUser backend support.' => 'Engedélyezi az S/MIME lekérését az ügyfél-felhasználó háttérprogram támogatásából.',
-        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com).' =>
-            'Azt a nevet adja meg, amelyet az alkalmazás az értesítések elküldésekor használjon. A küldő neve a teljes megjelenítési név összeállításához lesz használva az értesítési mesternél (azaz "Znuny értesítések" <znuny@your.example.com>).',
-        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
-            'Azt az e-mail-címet adja meg, amelyet az alkalmazás az értesítések elküldésekor használjon. Az e-mail-cím a teljes megjelenítési név összeállításához lesz használva az értesítési mesternél (azaz "Znuny értesítések" <znuny@your.example.com>). Használhatja az OTRS_CONFIG_FQDN változót, ahogy a konfigurációban be van állítva, vagy válasszon egy másik e-mail-címet.',
+        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com).' =>
+            'Azt a nevet adja meg, amelyet az alkalmazás az értesítések elküldésekor használjon. A küldő neve a teljes megjelenítési név összeállításához lesz használva az értesítési mesternél (azaz "BuzzDesk értesítések" <buzzdesk@your.example.com>).',
+        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
+            'Azt az e-mail-címet adja meg, amelyet az alkalmazás az értesítések elküldésekor használjon. Az e-mail-cím a teljes megjelenítési név összeállításához lesz használva az értesítési mesternél (azaz "BuzzDesk értesítések" <buzzdesk@your.example.com>). Használhatja az OTRS_CONFIG_FQDN változót, ahogy a konfigurációban be van állítva, vagy válasszon egy másik e-mail-címet.',
         'Defines the validity period in seconds for password reset tokens. After this time the token expires and a new reset request is required. Default: 3600 (1 hour).' =>
             'Meghatározza a jelszó-visszaállítási tokenek érvényességi időszakát másodpercben. Ezen idő után a token lejár, és új visszaállítási kérés szükséges. Alapértelmezetten: 3600 (1 óra).',
         'Maximum number of password reset requests allowed per IP address or username within the rate limit window. Set to 0 to disable rate limiting. Default: 5.' =>
@@ -6221,8 +6213,8 @@ sub Data {
             'Ha „LDAP” lett kiválasztva a Customer::AuthModule modulnál, akkor a BaseDN megadása kötelező.',
         'If "LDAP" was selected for Customer::AuthModule, the user identifier must be specified.' =>
             'Ha „LDAP” lett kiválasztva a Customer::AuthModule modulnál, akkor meg kell adni a felhasználó-azonosítót.',
-        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use Znuny. Specify the group, who may access the system.' =>
-            'Ha „LDAP” lett kiválasztva a Customer::AuthModule modulnál, akkor ellenőrizheti, hogy a felhasználónak engedélyezett-e a hitelesítés, mert egy posixGroup része. Például a felhasználónak az xyz csoportban kell lennie a Znuny használatához. Adja meg azt a csoportot, amely hozzáférhet a rendszerhez.',
+        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use BuzzDesk. Specify the group, who may access the system.' =>
+            'Ha „LDAP” lett kiválasztva a Customer::AuthModule modulnál, akkor ellenőrizheti, hogy a felhasználónak engedélyezett-e a hitelesítés, mert egy posixGroup része. Például a felhasználónak az xyz csoportban kell lennie a BuzzDesk használatához. Adja meg azt a csoportot, amely hozzáférhet a rendszerhez.',
         'If "LDAP" was selected for Customer::AuthModule, you can specify access attributes here.' =>
             'Ha „LDAP” lett kiválasztva a Customer::AuthModule modulnál, akkor itt adhatja meg a hozzáférés attribútumait.',
         'If "LDAP" was selected for Customer::AuthModule, user attributes can be specified. For LDAP posixGroups use UID, for non LDAP posixGroups use full user DN.' =>
@@ -6276,8 +6268,8 @@ sub Data {
         'Activates the available themes on the system. Value 1 means active, 0 means inactive.' =>
             'Az elérhető témákat aktiválja a rendszeren. Az 1 érték aktívat, a 0 inaktívat jelent.',
         'Defines the default value for the action parameter.' => 'Meghatározza az alapértelmezett értéket a művelet paraméternél.',
-        'Defines the shown links in the footer area of the customer and public interface of this Znuny system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
-            'Meghatározza ennek a Znuny rendszernek az ügyfél- és nyilvános felületének láblécterületén megjelenített hivatkozásokat. A „Kulcs” mezőben lévő érték a külső URL, a „Tartalom” mezőben lévő érték a megjelenített címke.',
+        'Defines the shown links in the footer area of the customer and public interface of this BuzzDesk system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
+            'Meghatározza ennek a BuzzDesk rendszernek az ügyfél- és nyilvános felületének láblécterületén megjelenített hivatkozásokat. A „Kulcs” mezőben lévő érték a külső URL, a „Tartalom” mezőben lévő érték a megjelenített címke.',
         'Defines the default value for the action parameter for the public frontend. The action parameter is used in the scripts of the system.' =>
             'Meghatározza a nyilvános előtétprogram művelet paraméterének alapértelmezett értékét. Ezt a művelet paramétert használják a rendszer parancsfájljaiban.',
         'Sets the stats hook.' => 'Beállítja a statisztikai horgokat.',
@@ -6305,8 +6297,8 @@ sub Data {
             'Megjeleníti az összes ügyfél-felhasználó azonosítót egy többválasztós mezőben (nem hasznos, ha nagyon sok ügyfél-felhasználó azonosítója van).',
         'Defines the default maximum number of X-axis attributes for the time scale.' =>
             'Meghatározza az X-tengely attribútumainak az alapértelmezett legnagyobb számát az időskálánál.',
-        'Znuny can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
-            'A Znuny képes egy vagy több csak olvasható tükör adatbázist használni az olyan költséges műveleteknél, mint például a szabad-szavas keresés vagy a statisztikák előállítása. Itt adhatja meg a DNS-t az első tükör adatbázishoz.',
+        'BuzzDesk can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
+            'A BuzzDesk képes egy vagy több csak olvasható tükör adatbázist használni az olyan költséges műveleteknél, mint például a szabad-szavas keresés vagy a statisztikák előállítása. Itt adhatja meg a DNS-t az első tükör adatbázishoz.',
         'Specify the username to authenticate for the first mirror database.' =>
             'A felhasználónév megadása az első tükör adatbázisnál történő hitelesítéshez.',
         'Specify the password to authenticate for the first mirror database.' =>
@@ -6323,24 +6315,24 @@ sub Data {
             'Elindítja az aktív objektum helyettesítő karakter keresését, miután a hivatkozás objektum maszk elindult.',
         'Defines a filter to process the text in the articles, in order to highlight predefined keywords.' =>
             'Egy szűrőt határoz meg a bejegyzésekben lévő szöveg feldolgozásához annak érdekében, hogy kiemelje az előre meghatározott kulcsszavakat.',
-        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Szűrő meghatározása a HTML kimenethez, hogy hivatkozást adjon a CVE számok mögé. Ez a képelem kétfajta bevitelt tesz lehetővé. Elsőként egy kép nevét (például faq.png). Ez esetben a Znuny képútvonal lesz felhasználva. A másik lehetőség a hivatkozás beszúrása a képhez.',
-        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Szűrő meghatározása a HTML kimenethez, hogy hivatkozást adjon a bugtraq számok mögé. Ez a képelem kétfajta bevitelt tesz lehetővé. Elsőként egy kép nevét (például faq.png). Ez esetben a Znuny képútvonal lesz felhasználva. A másik lehetőség a hivatkozás beszúrása a képhez.',
-        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Szűrő meghatározása a HTML kimenethez, hogy hivatkozást adjon az MSBulletin számok mögé. Ez a képelem kétfajta bevitelt tesz lehetővé. Elsőként egy kép nevét (például faq.png). Ez esetben a Znuny képútvonal lesz felhasználva. A másik lehetőség a hivatkozás beszúrása a képhez.',
-        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Szűrő meghatározása a HTML kimenethez, hogy hivatkozást adjon egy meghatározott szöveg mögé. Ez a képelem kétfajta bevitelt tesz lehetővé. Elsőként egy kép nevét (például faq.png). Ez esetben a Znuny képútvonal lesz felhasználva. A másik lehetőség a hivatkozás beszúrása a képhez.',
-        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Szűrő meghatározása a HTML kimenethez, hogy hivatkozást adjon egy meghatározott szöveg mögé. Ez a képelem kétfajta bevitelt tesz lehetővé. Elsőként egy kép nevét (például faq.png). Ez esetben a Znuny képútvonal lesz felhasználva. A másik lehetőség a hivatkozás beszúrása a képhez.',
-        'If enabled, the Znuny version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
-            'Ha engedélyezve van, akkor a Znuny verziócímke el lesz távolítva a webes felületről, a HTTP fejlécekből és a kimenő levelek X-Headers bejegyzéseiből. Megjegyzés: ha megváltoztatja ezt a beállítást, akkor gondoskodjon a gyorsítótár törléséről is.',
+        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Szűrő meghatározása a HTML kimenethez, hogy hivatkozást adjon a CVE számok mögé. Ez a képelem kétfajta bevitelt tesz lehetővé. Elsőként egy kép nevét (például faq.png). Ez esetben a BuzzDesk képútvonal lesz felhasználva. A másik lehetőség a hivatkozás beszúrása a képhez.',
+        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Szűrő meghatározása a HTML kimenethez, hogy hivatkozást adjon a bugtraq számok mögé. Ez a képelem kétfajta bevitelt tesz lehetővé. Elsőként egy kép nevét (például faq.png). Ez esetben a BuzzDesk képútvonal lesz felhasználva. A másik lehetőség a hivatkozás beszúrása a képhez.',
+        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Szűrő meghatározása a HTML kimenethez, hogy hivatkozást adjon az MSBulletin számok mögé. Ez a képelem kétfajta bevitelt tesz lehetővé. Elsőként egy kép nevét (például faq.png). Ez esetben a BuzzDesk képútvonal lesz felhasználva. A másik lehetőség a hivatkozás beszúrása a képhez.',
+        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Szűrő meghatározása a HTML kimenethez, hogy hivatkozást adjon egy meghatározott szöveg mögé. Ez a képelem kétfajta bevitelt tesz lehetővé. Elsőként egy kép nevét (például faq.png). Ez esetben a BuzzDesk képútvonal lesz felhasználva. A másik lehetőség a hivatkozás beszúrása a képhez.',
+        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Szűrő meghatározása a HTML kimenethez, hogy hivatkozást adjon egy meghatározott szöveg mögé. Ez a képelem kétfajta bevitelt tesz lehetővé. Elsőként egy kép nevét (például faq.png). Ez esetben a BuzzDesk képútvonal lesz felhasználva. A másik lehetőség a hivatkozás beszúrása a képhez.',
+        'If enabled, the BuzzDesk version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
+            'Ha engedélyezve van, akkor a BuzzDesk verziócímke el lesz távolítva a webes felületről, a HTTP fejlécekből és a kimenő levelek X-Headers bejegyzéseiből. Megjegyzés: ha megváltoztatja ezt a beállítást, akkor gondoskodjon a gyorsítótár törléséről is.',
         'Default template for notification e-mails (see Kernel/Output/HTML/Templates/Standard/NotificationEvent/Email directory for available templates).' =>
             'Alapértelmezett sablon az értesítési e-mailekhez (nézze meg a „Kernel/Output/HTML/Templates/Standard/NotificationEvent/Email” könyvtárat az elérhető sablonokért).',
-        'If enabled, Znuny will deliver all CSS files in minified form.' =>
-            'Ha engedélyezve van, akkor a Znuny minden CSS-fájlt minimalizált formában fog szállítani.',
-        'If enabled, Znuny will deliver all JavaScript files in minified form.' =>
-            'Ha engedélyezve van, akkor a Znuny minden JavaScript-fájlt minimalizált formában fog szállítani.',
+        'If enabled, BuzzDesk will deliver all CSS files in minified form.' =>
+            'Ha engedélyezve van, akkor a BuzzDesk minden CSS-fájlt minimalizált formában fog szállítani.',
+        'If enabled, BuzzDesk will deliver all JavaScript files in minified form.' =>
+            'Ha engedélyezve van, akkor a BuzzDesk minden JavaScript-fájlt minimalizált formában fog szállítani.',
         'List of responsive CSS files to always be loaded for the agent interface.' =>
             'Alkalmazkodó CSS fájlok listája, amelyek mindig betöltődnek az ügyintézői felületnél.',
         'List of JS files to always be loaded for the admin interface.' =>
@@ -6566,10 +6558,10 @@ sub Data {
             'Beállítja a legkisebb jegyszámlálóméretet, ha „AutoIncrement” lett kiválasztva jegyszám-előállítóként. Alapértelmezetten 5, amely azt jelenti, hogy a számláló 10000-től indul.',
         'Enables the minimal ticket counter size (if "Date" was selected as TicketNumberGenerator).' =>
             'Engedélyezi a legkisebb jegyszámláló méretet (ha „Date” lett kiválasztva mint jegyszám-előállító).',
-        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
-            'IndexAccelerator: a TicketViewAccelerator háttérprogrammodul választásához. A „RuntimeDB” minden egyes várólista nézetet valós időben állít elő a jegytáblából (nincs teljesítmény-probléma a rendszeren körülbelül 60.000 összes jegyig és 6.000 nyitott jegyig). A „StaticDB” a legerősebb modul, amely egy további jegyindex táblát használ, amely úgy működik mint egy nézet (javasolt, ha több mint 80.000 és 6.000 nyitott jegy van a rendszeren tárolva). Használja a „bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild” parancsot a kezdeti index létrehozásához.',
-        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the Znuny user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
-            'Elmenti a bejegyzések mellékleteit. A „DB” minden adatot az adatbázisban tárol (nem ajánlott nagy mellékletek tárolásához). Az „FS” a fájlrendszeren tárolja az adatokat. Ez gyorsabb, de a webkiszolgálót a Znuny felhasználó alatt kell futtatni. Adatvesztés nélkül válthat át a modulok között még egy olyan rendszeren is, amely produktív használatban van. Megjegyzés: a mellékletnevek keresése nem támogatott „FS” használata esetén.',
+        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
+            'IndexAccelerator: a TicketViewAccelerator háttérprogrammodul választásához. A „RuntimeDB” minden egyes várólista nézetet valós időben állít elő a jegytáblából (nincs teljesítmény-probléma a rendszeren körülbelül 60.000 összes jegyig és 6.000 nyitott jegyig). A „StaticDB” a legerősebb modul, amely egy további jegyindex táblát használ, amely úgy működik mint egy nézet (javasolt, ha több mint 80.000 és 6.000 nyitott jegy van a rendszeren tárolva). Használja a „bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild” parancsot a kezdeti index létrehozásához.',
+        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the BuzzDesk user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
+            'Elmenti a bejegyzések mellékleteit. A „DB” minden adatot az adatbázisban tárol (nem ajánlott nagy mellékletek tárolásához). Az „FS” a fájlrendszeren tárolja az adatokat. Ez gyorsabb, de a webkiszolgálót a BuzzDesk felhasználó alatt kell futtatni. Adatvesztés nélkül válthat át a modulok között még egy olyan rendszeren is, amely produktív használatban van. Megjegyzés: a mellékletnevek keresése nem támogatott „FS” használata esetén.',
         'Specifies whether all storage backends should be checked when looking for attachments. This is only required for installations where some attachments are in the file system, and others in the database.' =>
             'Megadja, hogy az összes tárolási háttérprogramot ellenőrizni kell-e a mellékletek keresésekor. Ez csak azoknál a telepítéseknél szükséges, ahol néhány melléklet a fájlrendszeren van tárolva, a többi pedig adatbázisban.',
         'Specifies the directory to store the data in, if "FS" was selected for ArticleStorage.' =>
@@ -6611,16 +6603,16 @@ sub Data {
             'Ez az eseménymodul az ügyfél-felhasználó attribútumait tárolja jegy típusú dinamikus mezőkként. Nézze meg a DynamicFieldFromCustomerUser::Mapping beállítást ahhoz, hogy hogyan kell beállítani a leképezést.',
         'Overloads (redefines) existing functions in Kernel::System::Ticket. Used to easily add customizations.' =>
             'Túlterheli (újra meghatározza) a Kernel::System::Ticket helyen meglévő függvényeket. Személyre szabások könnyű hozzáadásához használható.',
-        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
-            'Segít kiterjeszteni a bejegyzések szabad-szavas keresését (feladó, címzett, másolat, tárgy és törzs keresés). Fel fogja darabolni az összes bejegyzést, és egy indexet fog felépíteni a bejegyzés létrehozása után, körülbelül 50%-kal növelve a szabad-szavas kereséseket. Egy kezdeti index létrehozásához használja a „bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild” parancsfájlt.',
+        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
+            'Segít kiterjeszteni a bejegyzések szabad-szavas keresését (feladó, címzett, másolat, tárgy és törzs keresés). Fel fogja darabolni az összes bejegyzést, és egy indexet fog felépíteni a bejegyzés létrehozása után, körülbelül 50%-kal növelve a szabad-szavas kereséseket. Egy kezdeti index létrehozásához használja a „bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild” parancsfájlt.',
         'Defines whether to index archived tickets for fulltext searches.' =>
             'Meghatározza, hogy kell-e indexelni az archivált jegyeket a szabad-szavas keresésekhez.',
         'Force the storage of the original article text in the article search index, without executing filters or applying stop word lists. This will increase the size of the search index and thus may slow down fulltext searches.' =>
             'Az eredeti bejegyzésszöveg tárolásának kényszerítése a bejegyzés keresési indexében anélkül, hogy szűrőket hajtana végre vagy a kiszűrendő szavak listáit alkalmazná. Ez meg fogja növelni a keresési index méretét, és ezért lelassíthatja a szabad-szavas kereséseket.',
         'Display a warning and prevent search when using stop words within fulltext search.' =>
             'Figyelmeztetés megjelenítése és a keresés megakadályozása, ha kiszűrendő szavakat használ a szabad-szavas keresésen belül.',
-        'Basic fulltext index settings. Execute "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
-            'Alapvető szabad-szavas index beállítások. Futtassa a „bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild” parancsfájlt egy új index előállítása érdekében.',
+        'Basic fulltext index settings. Execute "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
+            'Alapvető szabad-szavas index beállítások. Futtassa a „bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild” parancsfájlt egy új index előállítása érdekében.',
         'Fulltext index regex filters to remove parts of the text.' => 'Szabad-szavas index reguláris kifejezés szűrők a szöveg részeinek áthelyezéséhez.',
         'English stop words for fulltext index. These words will be removed from the search index.' =>
             'Angol kiszűrendő szavak a szabad-szavas indexnél. Ezek a szavak el lesznek távolítva a keresési indexből.',
@@ -7348,8 +7340,8 @@ sub Data {
             'Meghatározza egy jegy látható zárait. MEGJEGYZÉS: ha megváltoztatja ezt a beállítást, akkor győződjön meg arról, hogy törölte-e a gyorsítótárat annak érdekében, hogy használhassa az új értéket. Alapértelmezett: unlock, tmp_lock.',
         'Defines the valid state types for a ticket. If a ticket is in a state which have any state type from this setting, this ticket will be considered as open, otherwise as closed.' =>
             'Meghatározza egy jegy érvényes állapottípusait. Ha a jegy olyan állapotban van, amelynek van valamilyen állapottípusa ebből a beállításból, akkor a jegy nyitottként lesz figyelembe véve, egyébként lezártként.',
-        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/znuny.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
-            'Meghatározza a feloldott jegyek érvényes állapotait. A jegyek feloldásához a „bin/znuny.Console.pl Maint::Ticket::UnlockTimeout” parancsfájl használható.',
+        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
+            'Meghatározza a feloldott jegyek érvényes állapotait. A jegyek feloldásához a „bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout” parancsfájl használható.',
         'Sends reminder notifications of unlocked ticket after reaching the reminder date (only sent to ticket owner).' =>
             'Elküldi a feloldott jegy emlékeztető értesítéseit az emlékeztető dátum elérése után (csak a jegy tulajdonosának küldi).',
         'Disables sending reminder notifications to the responsible agent of a ticket (Ticket::Responsible needs to be enabled).' =>
@@ -7735,8 +7727,8 @@ sub Data {
             'Egy modul a bejövő üzenetek ügyfél-felhasználói S/MIME tanúsítványainak lekéréséhez.',
         'Module to check if a incoming e-mail message is bounce.' => 'Egy modul annak ellenőrzéséhez, hogy egy bejövő e-mail üzenet átirányítás-e.',
         'Module used to detect if attachments are present.' => 'Egy modul annak használatához, hogy felismerje, ha a melléklet létezik.',
-        'Executes follow-up checks on Znuny Header \'X-OTRS-Bounce\'.' =>
-            'Követő ellenőrzéseket hajt végre az „X-OTRS-Bounce” Znuny fejlécen.',
+        'Executes follow-up checks on BuzzDesk Header \'X-OTRS-Bounce\'.' =>
+            'Követő ellenőrzéseket hajt végre az „X-OTRS-Bounce” BuzzDesk fejlécen.',
         'Checks if an E-Mail is a followup to an existing ticket by searching the subject for a valid ticket number.' =>
             'Azt ellenőrzi a tárgyban történő érvényes jegyszám keresésével, hogy egy e-mail egy meglévő jegy követője-e.',
         'Executes follow-up checks on In-Reply-To or References headers for mails that don\'t have a ticket number in the subject.' =>
@@ -7894,10 +7886,10 @@ sub Data {
         'Defines the default queue for new tickets in the agent interface.' =>
             'Meghatározza az alapértelmezett várólistát az új jegyeknél az ügyintézői felületen.',
 
-        # XML Definition: Kernel/Config/Files/XML/Znuny.xml
+        # XML Definition: Kernel/Config/Files/XML/BuzzDesk.xml
         'Default preferences to set during user creation.' => 'Felhasználó-létrehozás során beállítandó alapértelmezett beállítások.',
-        'Enables/disables the Znuny package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
-            'Engedélyezi vagy letiltja a Znuny csomagok ellenőrzését. Ha le van tiltva, akkor az összes csomag ellenőrzöttként jelenik meg. Továbbra is ajánlott csak ellenőrzött csomagokat használni.',
+        'Enables/disables the BuzzDesk package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
+            'Engedélyezi vagy letiltja a BuzzDesk csomagok ellenőrzését. Ha le van tiltva, akkor az összes csomag ellenőrzöttként jelenik meg. Továbbra is ajánlott csak ellenőrzött csomagokat használni.',
         'Screens for which it is possible to enable or disable dynamic fields.' =>
             'Azok a képernyők, amelyeknél lehetőség van dinamikus mezők engedélyezésére vagy letiltására.',
         'Screens for which it is possible to enable or disable default columns.' =>
@@ -8159,8 +8151,8 @@ sub Data {
             'A jegyprioritás leképezése az X-Priority e-mail fejlécre az „ügyintéző” kommunikációs csatorna kimenő e-mailjeinél.',
         'Mapping of ticket priority to X-Priority email header for outgoing emails of communication channel "system".' =>
             'A jegyprioritás leképezése az X-Priority e-mail fejlécre a „rendszer” kommunikációs csatorna kimenő e-mailjeinél.',
-        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by Znuny.Form.Input.' =>
-            'Hozzáadja az AgentTicketActionCommon mezőleképezését egy ismeretlen művelethez. A Znuny.Form.Input használja.',
+        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by BuzzDesk.Form.Input.' =>
+            'Hozzáadja az AgentTicketActionCommon mezőleképezését egy ismeretlen művelethez. A BuzzDesk.Form.Input használja.',
         'Once limit of watched tickets per user is reached, the oldest entries will be removed from the watch list. Disable this setting or set it to 0 to disable the limit (default).' =>
             'Ha a felhasználónkénti megfigyelt jegyek korlátja elérésre kerül, a legrégebbi bejegyzések el lesznek távolítva a megfigyelési listából. Tiltsa le ezt a beállítást vagy állítsa 0 értékre a korlát letiltásához (alapértelmezett).',
         'Enables ticket search with admin user (ID 1) instead of the logged in user. Only affects this view.' =>
@@ -8421,8 +8413,8 @@ sub Data {
         'Currently not possible' => 'Jelenleg nem lehetséges',
         'This is currently disabled because of an ongoing package upgrade.' =>
             'Ez jelenleg le van tiltva egy folyamatban lévő csomagfrissítés miatt.',
-        'This option is currently disabled because the Znuny Daemon is not running.' =>
-            'Ez a beállítás jelenleg le van tiltva, mert a Znuny démon nem fut.',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.' =>
+            'Ez a beállítás jelenleg le van tiltva, mert a BuzzDesk démon nem fut.',
         'Are you sure you want to update all installed packages?' => 'Biztosan frissíteni szeretné az összes telepített csomagot?',
         'No response from get package upgrade run status.' => 'Nincs válasz a csomaglekérés frissítések futási állapotáról.',
 
@@ -8552,7 +8544,7 @@ sub Data {
         'Insert selected customer user(s) into the "%s:" field.' => 'A kiválasztott ügyfél-felhasználók beszúrása a(z) „%s:” mezőbe.',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Daemon.js
-        'Information about the Znuny Daemon' => 'Információk a Znuny démonról',
+        'Information about the BuzzDesk Daemon' => 'Információk a BuzzDesk démonról',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Dashboard.js
         'Please check the fields marked as red for valid inputs.' => 'Ellenőrizze a pirosan megjelölt mezőket a helyes bevitelekért.',
@@ -8941,8 +8933,8 @@ Az Ön ügyfélszolgálati csapata
         'Create tickets.' => 'Jegyek létrehozása.',
         'Created ticket [%s] in "%s" with priority "%s" and state "%s".' =>
             'Egy jegy [%s] létrejött a(z) „%s” várólistában „%s” prioritással és „%s” állapottal.',
-        'Creates a unit test file for this ticket and sends it to Znuny.' =>
-            'Létrehoz egy egységtesztfájlt ehhez a jegyhez, és elküldi a Znunynak.',
+        'Creates a unit test file for this ticket and sends it to BuzzDesk.' =>
+            'Létrehoz egy egységtesztfájlt ehhez a jegyhez, és elküldi a BuzzDesknak.',
         'Creates a unit test file for this ticket.' => 'Létrehoz egy egységtesztfájlt ehhez a jegyhez.',
         'Croatian' => 'Horvát',
         'Current action description.' => 'Jelenlegi művelet leírása.',
@@ -9383,7 +9375,7 @@ Az Ön ügyfélszolgálati csapata
             'Ez az alapértelmezett narancssárga-fekete felszín az ügyfélfelülethez.',
         'This is the default orange - black skin.' => 'Ez az alapértelmezett narancssárga-fekete felszín.',
         'This key is not certified with a trusted signature!' => 'Ez a kulcs nincs tanúsítva egy megbízható aláírással!',
-        'This module is part of the admin area of Znuny.' => 'Ez a modul a Znuny adminisztrációs területének a része.',
+        'This module is part of the admin area of BuzzDesk.' => 'Ez a modul a BuzzDesk adminisztrációs területének a része.',
         'Ticket Close.' => 'Jegylezárás.',
         'Ticket Compose Bounce Email.' => 'E-mail átirányító jegyválasz.',
         'Ticket Compose email Answer.' => 'E-mailre történő jegyválasz.',
@@ -9470,7 +9462,7 @@ Az Ön ügyfélszolgálati csapata
         'Your service selection of your preferred services. You also get notified about those services via email if enabled.' =>
             'Az előnyben részesített szolgáltatásoknak a szolgáltatás kiválasztása. Értesítést is kaphat azokról a szolgáltatásokról e-mailben, ha engedélyezve van.',
         'Your username in Mattermost without the leading @' => 'A Mattermost szolgáltatásban lévő felhasználóneve a kezdő @ nélkül',
-        'Znuny.org - News' => 'Znuny.org – Hírek',
+        'BuzzDesk.org - News' => 'BuzzDesk.org – Hírek',
         'Zoom' => 'Részletek',
         'all tickets' => 'összes jegy',
         'archived tickets' => 'archivált jegyek',
@@ -9661,7 +9653,7 @@ Az Ön ügyfélszolgálati csapata
         'Hide EntityIDs',
         'If you now leave this page, all open popup windows will be closed, too!',
         'Import web service',
-        'Information about the Znuny Daemon',
+        'Information about the BuzzDesk Daemon',
         'Insert selected customer user(s) into the "%s:" field.',
         'Invalid date (need a future date)!',
         'Invalid date (need a past date)!',
@@ -9841,7 +9833,7 @@ Az Ön ügyfélszolgálati csapata
         'This is a repeating appointment',
         'This is currently disabled because of an ongoing package upgrade.',
         'This item still contains sub items. Are you sure you want to remove this item including its sub items?',
-        'This option is currently disabled because the Znuny Daemon is not running.',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.',
         'This software runs with a huge lists of browsers, please upgrade to one of these.',
         'This window must be called from compose window.',
         'Thu',

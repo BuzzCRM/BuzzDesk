@@ -1,12 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Translation::JavaScriptStrings)
+## nofilter(TidyAll::Plugin::BuzzDesk::Translation::JavaScriptStrings)
 
 package Kernel::Language::ko;
 
@@ -860,8 +858,8 @@ sub Data {
             '이 이름은 다른 오류 처리 구성을 구분하는데 사용할 수 있습니다.',
         'Please provide a unique name for this web service.' => '이 웹 서비스에 고유한 이름을 입력하십시오.',
         'Error handling module backend' => '오류 처리 모듈 백엔드',
-        'This Znuny error handling backend module will be called internally to process the error handling mechanism.' =>
-            '이 Znuny 오류 처리 백엔드 모듈은 내부적으로 호출되어 오류 처리 메커니즘을 처리합니다.',
+        'This BuzzDesk error handling backend module will be called internally to process the error handling mechanism.' =>
+            '이 BuzzDesk 오류 처리 백엔드 모듈은 내부적으로 호출되어 오류 처리 메커니즘을 처리합니다.',
         'Processing options' => '처리 옵션',
         'Configure filters to control error handling module execution.' =>
             '오류 처리 모듈 실행을 제어하는 필터를 구성합니다.',
@@ -952,15 +950,15 @@ sub Data {
         'The name is typically used to call up an operation of a remote web service.' =>
             '이름은 일반적으로 원격 웹 서비스의 작업을 호출하는데 사용됩니다.',
         'Invoker backend' => '호출자 백엔드',
-        'This Znuny invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
-            '이 Znuny 호출자 백엔드 모듈은 원격 시스템에 전송할 데이터를 준비하고 응답 데이터를 처리하기 위해 호출됩니다.',
+        'This BuzzDesk invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
+            '이 BuzzDesk 호출자 백엔드 모듈은 원격 시스템에 전송할 데이터를 준비하고 응답 데이터를 처리하기 위해 호출됩니다.',
         'Mapping for outgoing request data' => '나가는 요청 데이터 매핑',
         'Configure' => '구성',
-        'The data from the invoker of Znuny will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
-            'Znuny 호출자의 데이터는이 매핑에 의해 처리되어 원격 시스템이 예상하는 종류의 데이터로 변환됩니다.',
+        'The data from the invoker of BuzzDesk will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
+            'BuzzDesk 호출자의 데이터는이 매핑에 의해 처리되어 원격 시스템이 예상하는 종류의 데이터로 변환됩니다.',
         'Mapping for incoming response data' => '들어오는 응답 데이터 매핑',
-        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of Znuny expects.' =>
-            '응답 데이터는이 매핑에 의해 처리되어 Znuny의 호출자가 예상하는 종류의 데이터로 변환됩니다.',
+        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of BuzzDesk expects.' =>
+            '응답 데이터는이 매핑에 의해 처리되어 BuzzDesk의 호출자가 예상하는 종류의 데이터로 변환됩니다.',
         'Asynchronous' => '비동기식',
         'Condition' => '조건',
         'Edit this event' => '이 일정 수정',
@@ -968,8 +966,8 @@ sub Data {
         'Add Event' => '',
         'To add a new event select the event object and event name and click on the "+" button' =>
             '새 이벤트를 추가하려면 이벤트 객체와 이벤트 이름을 선택하고 "+"버튼을 클릭하십시오.',
-        'Asynchronous event triggers are handled by the Znuny Scheduler Daemon in background (recommended).' =>
-            '비동기 이벤트 트리거는 백그라운드에서 Znuny Scheduler Daemon에 의해 처리됩니다 (권장).',
+        'Asynchronous event triggers are handled by the BuzzDesk Scheduler Daemon in background (recommended).' =>
+            '비동기 이벤트 트리거는 백그라운드에서 BuzzDesk Scheduler Daemon에 의해 처리됩니다 (권장).',
         'Synchronous event triggers would be processed directly during the web request.' =>
             '동기 이벤트 트리거는 웹 요청 중에 직접 처리됩니다.',
         'Add all attachments' => '',
@@ -1103,11 +1101,11 @@ sub Data {
         'The name is typically used to call up this web service operation from a remote system.' =>
             '이름은 일반적으로 원격 시스템에서이 웹 서비스 조작을 호출하는 데 사용됩니다.',
         'Operation backend' => '작업 백엔드',
-        'This Znuny operation backend module will be called internally to process the request, generating data for the response.' =>
-            '이 Znuny 연산 백엔드 모듈은 내부적으로 호출되어 요청을 처리하고 응답 데이터를 생성합니다.',
+        'This BuzzDesk operation backend module will be called internally to process the request, generating data for the response.' =>
+            '이 BuzzDesk 연산 백엔드 모듈은 내부적으로 호출되어 요청을 처리하고 응답 데이터를 생성합니다.',
         'Mapping for incoming request data' => '들어오는 요청 데이터 매핑',
-        'The request data will be processed by this mapping, to transform it to the kind of data Znuny expects.' =>
-            '요청 데이터는이 매핑에 의해 처리되어 Znuny가 예상하는 종류의 데이터로 변환됩니다.',
+        'The request data will be processed by this mapping, to transform it to the kind of data BuzzDesk expects.' =>
+            '요청 데이터는이 매핑에 의해 처리되어 BuzzDesk가 예상하는 종류의 데이터로 변환됩니다.',
         'Mapping for outgoing response data' => '발신 응답 데이터 매핑',
         'The response data will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
             '응답 데이터는이 매핑에 의해 처리되어 원격 시스템이 예상하는 종류의 데이터로 변환합니다.',
@@ -1130,8 +1128,8 @@ sub Data {
             '',
         'Maximum message length' => '최대 메시지 길이',
         'This field should be an integer number.' => '이 필드는 정수여야 합니다.',
-        'Here you can specify the maximum size (in bytes) of REST messages that Znuny will process.' =>
-            '여기서 Znuny가 처리 할 REST 메시지의 최대 크기 (바이트)를 지정할 수 있습니다.',
+        'Here you can specify the maximum size (in bytes) of REST messages that BuzzDesk will process.' =>
+            '여기서 BuzzDesk가 처리 할 REST 메시지의 최대 크기 (바이트)를 지정할 수 있습니다.',
         'Send Keep-Alive' => 'Keep-Alive 보내기',
         'This configuration defines if incoming connections should get closed or kept alive.' =>
             '이 구성은 들어오는 연결이 닫히거나 살아 있어야 하는지를 정의합니다.',
@@ -1199,22 +1197,22 @@ sub Data {
         'Client Certificate' => '클라이언트 인증서',
         'The full path and name of the SSL client certificate file (must be in PEM, DER or PKCS#12 format).' =>
             'SSL 클라이언트 인증서 파일의 전체 경로 및 이름 (PEM, DER 또는 PKCS # 12 형식이어야 함).',
-        'e.g. /opt/znuny/var/certificates/SOAP/certificate.pem' => '예 : /opt/znuny/var/certificates/SOAP/certificate.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/certificate.pem' => '예 : /opt/buzzdesk/var/certificates/SOAP/certificate.pem',
         'Client Certificate Key' => '클라이언트 인증서 키',
         'The full path and name of the SSL client certificate key file (if not already included in certificate file).' =>
             'SSL 클라이언트 인증서 키 파일의 전체 경로 및 이름 (아직 인증서 파일에 포함되어 있지 않은 경우).',
-        'e.g. /opt/znuny/var/certificates/SOAP/key.pem' => '예 : /opt/znuny/var/certificates/SOAP/key.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/key.pem' => '예 : /opt/buzzdesk/var/certificates/SOAP/key.pem',
         'Client Certificate Key Password' => '클라이언트 인증서 키 암호',
         'The password to open the SSL certificate if the key is encrypted.' =>
             '키가 암호화 된 경우 SSL 인증서를 여는 암호입니다.',
         'Certification Authority (CA) Certificate' => '인증 기관 (CA) 인증서',
         'The full path and name of the certification authority certificate file that validates SSL certificate.' =>
             'SSL 인증서의 유효성을 검사하는 인증 기관 인증서 파일의 전체 경로 및 이름입니다.',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA/ca.pem' => '예 : /opt/znuny/var/certificates/SOAP/CA/ca.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem' => '예 : /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem',
         'Certification Authority (CA) Directory' => '인증 기관 (CA) 디렉토리',
         'The full path of the certification authority directory where the CA certificates are stored in the file system.' =>
             'CA 인증서가 파일 시스템에 저장되는 인증 기관 디렉토리의 전체 경로입니다.',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA' => '예 : / opt / znuny / var / certificates / SOAP / CA',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA' => '예 : / opt / buzzdesk / var / certificates / SOAP / CA',
         'Controller mapping for Invoker' => '호출자에 대한 컨트롤러 매핑',
         'The controller that the invoker should send requests to. Variables marked by a \':\' will get replaced by the data value and passed along with the request. (e.g. /Ticket/:TicketID?UserLogin=:UserLogin&Password=:Password).' =>
             '호출자가 요청을 보내야하는 컨트롤러. \':\'로 표시된 변수는 데이터 값으로 대체되고 요청과 함께 전달됩니다. (예 : / Ticket / : TicketID? UserLogin = : UserLogin & Password = : Password).',
@@ -1271,13 +1269,13 @@ sub Data {
         'Select how SOAP response function wrapper should be constructed.' =>
             'SOAP 응답 함수 랩퍼를 구성하는 방법을 선택하십시오.',
         'Response name free text' => '응답 이름 자유 텍스트',
-        'Here you can specify the maximum size (in bytes) of SOAP messages that Znuny will process.' =>
-            '여기서 Znuny가 처리 할 SOAP 메시지의 최대 크기 (바이트)를 지정할 수 있습니다.',
+        'Here you can specify the maximum size (in bytes) of SOAP messages that BuzzDesk will process.' =>
+            '여기서 BuzzDesk가 처리 할 SOAP 메시지의 최대 크기 (바이트)를 지정할 수 있습니다.',
         'Fixed namespace prefix' => '',
         'Use a fixed namespace prefix (e. g. myns:) for the root tag of a SOAP message.' =>
             '',
         'Suffix for response tag' => '',
-        'Usually Znuny expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
+        'Usually BuzzDesk expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
             '',
         'Encoding' => '부호화',
         'The character encoding for the SOAP message contents.' => 'SOAP 메시지 내용의 문자 인코딩입니다.',
@@ -1320,10 +1318,10 @@ sub Data {
         'Provider transport' => '공급자 전송',
         'Requester transport' => '요청자 전송',
         'Debug threshold' => '디버그 임계 값',
-        'In provider mode, Znuny offers web services which are used by remote systems.' =>
-            '공급자 모드에서 Znuny는 원격 시스템에서 사용되는 웹 서비스를 제공합니다.',
-        'In requester mode, Znuny uses web services of remote systems.' =>
-            '요청자 모드에서 Znuny는 원격 시스템의 웹 서비스를 사용합니다.',
+        'In provider mode, BuzzDesk offers web services which are used by remote systems.' =>
+            '공급자 모드에서 BuzzDesk는 원격 시스템에서 사용되는 웹 서비스를 제공합니다.',
+        'In requester mode, BuzzDesk uses web services of remote systems.' =>
+            '요청자 모드에서 BuzzDesk는 원격 시스템의 웹 서비스를 사용합니다.',
         'Network transport' => '네트워크 전송',
         'Error Handling Modules' => '오류 처리 모듈',
         'Error handling modules are used to react in case of errors during the communication. Those modules are executed in a specific order, which can be changed by drag and drop.' =>
@@ -1441,8 +1439,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportEmailSettings.tt
         'Use comma or semicolon to separate email addresses.' => '',
-        'You can use Znuny-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
-            '<OTRS_TICKET_DynamicField _...>와 같은 Znuny 태그를 사용하여 현재 티켓의 값을 삽입 할 수 있습니다.',
+        'You can use BuzzDesk-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
+            '<OTRS_TICKET_DynamicField _...>와 같은 BuzzDesk 태그를 사용하여 현재 티켓의 값을 삽입 할 수 있습니다.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportWebserviceSettings.tt
         'Web service name' => '',
@@ -1509,8 +1507,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminPGP.tt
         'PGP support is disabled' => 'PGP 지원이 비활성화되었습니다.',
-        'To be able to use PGP in Znuny, you have to enable it first.' =>
-            'Znuny에서 PGP를 사용하려면 먼저 PGP를 활성화해야합니다.',
+        'To be able to use PGP in BuzzDesk, you have to enable it first.' =>
+            'BuzzDesk에서 PGP를 사용하려면 먼저 PGP를 활성화해야합니다.',
         'Enable PGP support' => 'PGP 지원 사용',
         'Faulty PGP configuration' => 'PGP 구성 오류',
         'PGP support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -1541,21 +1539,21 @@ sub Data {
         'Do you really want to reinstall this package? Any manual changes will be lost.' =>
             '이 패키지를 정말로 다시 설치 하시겠습니까? 수동으로 변경하면 손실됩니다.',
         'Go to updating instructions' => '',
-        'Go to znuny.org' => '',
+        'Go to buzzdesk.org' => '',
         'package information' => '패키지 정보',
-        'Package installation requires a patch level update of Znuny.' =>
-            '패키지를 설치하려면 Znuny의 패치 레벨 업데이트가 필요합니다. ',
-        'Package update requires a patch level update of Znuny.' => '패키지 업데이트에는 Znuny의 패치 수준 업데이트가 필요합니다. ',
-        'Please note that your installed Znuny version is %s.' => '설치된 Znuny 버전은 %s입니다.',
-        'To install this package, you need to update Znuny to version %s or newer.' =>
-            '이 패키지를 설치하려면 Znuny를 버전 %s 이상으로 업데이트해야합니다.',
-        'This package can only be installed on Znuny version %s or older.' =>
-            '이 패키지는 Znuny 버전 %s 또는 그 이상에서만 설치할 수 있습니다.',
-        'This package can only be installed on Znuny version %s.' => '',
-        'Why should I keep Znuny up to date?' => '왜 Znuny를 최신 상태로 유지해야합니까?',
+        'Package installation requires a patch level update of BuzzDesk.' =>
+            '패키지를 설치하려면 BuzzDesk의 패치 레벨 업데이트가 필요합니다. ',
+        'Package update requires a patch level update of BuzzDesk.' => '패키지 업데이트에는 BuzzDesk의 패치 수준 업데이트가 필요합니다. ',
+        'Please note that your installed BuzzDesk version is %s.' => '설치된 BuzzDesk 버전은 %s입니다.',
+        'To install this package, you need to update BuzzDesk to version %s or newer.' =>
+            '이 패키지를 설치하려면 BuzzDesk를 버전 %s 이상으로 업데이트해야합니다.',
+        'This package can only be installed on BuzzDesk version %s or older.' =>
+            '이 패키지는 BuzzDesk 버전 %s 또는 그 이상에서만 설치할 수 있습니다.',
+        'This package can only be installed on BuzzDesk version %s.' => '',
+        'Why should I keep BuzzDesk up to date?' => '왜 BuzzDesk를 최신 상태로 유지해야합니까?',
         'You will receive updates about relevant security issues.' => '관련 보안 문제에 대한 업데이트가 제공됩니다.',
-        'You will receive updates for all other relevant Znuny issues.' =>
-            '다른 모든 관련 Znuny 문제에 대한 업데이트가 제공됩니다.',
+        'You will receive updates for all other relevant BuzzDesk issues.' =>
+            '다른 모든 관련 BuzzDesk 문제에 대한 업데이트가 제공됩니다.',
         'How can I do a patch level update if I don’t have a contract?' =>
             '계약이 없다면 어떻게 패치 레벨 업데이트를 할 수 있습니까?',
         'Please find all relevant information within the updating instructions at %s.' =>
@@ -1954,8 +1952,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSMIME.tt
         'SMIME support is disabled' => 'SMIME 지원이 비활성화되었습니다.',
-        'To be able to use SMIME in Znuny, you have to enable it first.' =>
-            'Znuny에서 SMIME을 사용하려면 먼저 SMIME를 활성화해야합니다.',
+        'To be able to use SMIME in BuzzDesk, you have to enable it first.' =>
+            'BuzzDesk에서 SMIME을 사용하려면 먼저 SMIME를 활성화해야합니다.',
         'Enable SMIME support' => 'SMIME 지원 사용',
         'Faulty SMIME configuration' => 'SMIME 구성 오류',
         'SMIME support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -2148,8 +2146,8 @@ sub Data {
         'Find out how to use the system configuration by reading the %s.' =>
             '%s를 읽음으로써 시스템 구성을 사용하는 방법을 알아보십시오.',
         'Search in all settings...' => '모든 설정에서 검색...',
-        'There are currently no settings available. Please make sure to run \'znuny.Console.pl Maint::Config::Rebuild\' before using the software.' =>
-            '현재 사용할 수있는 설정이 없습니다. 소프트웨어를 사용하기 전에 \'znuny.Console.pl Maint :: Config :: Rebuild\'를 실행하십시오. ',
+        'There are currently no settings available. Please make sure to run \'buzzdesk.Console.pl Maint::Config::Rebuild\' before using the software.' =>
+            '현재 사용할 수있는 설정이 없습니다. 소프트웨어를 사용하기 전에 \'buzzdesk.Console.pl Maint :: Config :: Rebuild\'를 실행하십시오. ',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSystemConfigurationDeployment.tt
         'Help' => '도움',
@@ -2444,17 +2442,17 @@ sub Data {
         'Customer User Information Center' => '고객 사용자 정보 센터',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDaemonInfo.tt
-        'The Znuny Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
-            'Znuny Daemon은 비동기 작업을 수행하는 데몬 프로세스입니다. 티켓 에스컬레이션 트리거링, 이메일 전송 등',
-        'A running Znuny Daemon is mandatory for correct system operation.' =>
-            '올바른 시스템 작동을 위해서는 실행중인 Znuny 데몬이 필수입니다.',
-        'Starting the Znuny Daemon' => 'Znuny Daemon 시작',
-        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the Znuny Daemon is running and start it if needed.' =>
-            '.dist (확장자없이) \'%s\'파일이 있는지 확인하십시오. 이 cron 작업은 Znuny 데몬이 실행중인 경우 5 분마다 점검하고 필요한 경우 시작합니다.',
-        'Execute \'%s start\' to make sure the cron jobs of the \'znuny\' user are active.' =>
-            '\'%s start\'를 실행하여 \'znuny\'사용자의 cron 작업이 활성 상태인지 확인하십시오.',
-        'After 5 minutes, check that the Znuny Daemon is running in the system (\'bin/znuny.Daemon.pl status\').' =>
-            '5 분 후, Znuny 데몬이 시스템에서 실행 중인지 확인하십시오 ( \'bin / znuny.Daemon.pl status\').',
+        'The BuzzDesk Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
+            'BuzzDesk Daemon은 비동기 작업을 수행하는 데몬 프로세스입니다. 티켓 에스컬레이션 트리거링, 이메일 전송 등',
+        'A running BuzzDesk Daemon is mandatory for correct system operation.' =>
+            '올바른 시스템 작동을 위해서는 실행중인 BuzzDesk 데몬이 필수입니다.',
+        'Starting the BuzzDesk Daemon' => 'BuzzDesk Daemon 시작',
+        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the BuzzDesk Daemon is running and start it if needed.' =>
+            '.dist (확장자없이) \'%s\'파일이 있는지 확인하십시오. 이 cron 작업은 BuzzDesk 데몬이 실행중인 경우 5 분마다 점검하고 필요한 경우 시작합니다.',
+        'Execute \'%s start\' to make sure the cron jobs of the \'buzzdesk\' user are active.' =>
+            '\'%s start\'를 실행하여 \'buzzdesk\'사용자의 cron 작업이 활성 상태인지 확인하십시오.',
+        'After 5 minutes, check that the BuzzDesk Daemon is running in the system (\'bin/buzzdesk.Daemon.pl status\').' =>
+            '5 분 후, BuzzDesk 데몬이 시스템에서 실행 중인지 확인하십시오 ( \'bin / buzzdesk.Daemon.pl status\').',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboard.tt
         'Dashboard' => '현황판',
@@ -2598,7 +2596,7 @@ sub Data {
         'This setting can currently not be saved' => '이 설정은 현재 저장할 수 없습니다.',
         'Save setting' => '',
         'Save this setting' => '이 설정 저장',
-        'Did you know? You can help translating Znuny at %s.' => '',
+        'Did you know? You can help translating BuzzDesk at %s.' => '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentPreferencesOverview.tt
         'Choose from the groups on the left to find the settings you\'d wish to change.' =>
@@ -3137,8 +3135,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBStart.tt
         'Install Type' => '설치 유형',
-        'Create a new database for Znuny' => 'Znuny를위한 새로운 데이터베이스 생성',
-        'Use an existing database for Znuny' => 'Znuny에 기존 데이터베이스 사용',
+        'Create a new database for BuzzDesk' => 'BuzzDesk를위한 새로운 데이터베이스 생성',
+        'Use an existing database for BuzzDesk' => 'BuzzDesk에 기존 데이터베이스 사용',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBmssql.tt
         'If you have set a root password for your database, it must be entered here. If not, leave this field empty.' =>
@@ -3149,8 +3147,8 @@ sub Data {
         'Database check successful.' => '데이터베이스 검사에 성공했습니다.',
         'Database User' => '데이터베이스 사용자',
         'New' => '새로운',
-        'A new database user with limited permissions will be created for this Znuny system.' =>
-            '제한된 권한을 가진 새로운 데이터베이스 사용자가이 Znuny 시스템에 대해 생성됩니다.',
+        'A new database user with limited permissions will be created for this BuzzDesk system.' =>
+            '제한된 권한을 가진 새로운 데이터베이스 사용자가이 BuzzDesk 시스템에 대해 생성됩니다.',
         'Repeat Password' => '비밀번호 반복',
         'Generated password' => '생성된 암호',
         'Database' => '데이터베이스',
@@ -3162,10 +3160,10 @@ sub Data {
         'SID' => 'SID',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerFinish.tt
-        'To be able to use Znuny you have to enter the following line in your command line (Terminal/Shell) as root.' =>
-            'Znuny를 사용하려면 명령 줄 (터미널 / 쉘)에 다음 행을 루트로 입력해야합니다.',
+        'To be able to use BuzzDesk you have to enter the following line in your command line (Terminal/Shell) as root.' =>
+            'BuzzDesk를 사용하려면 명령 줄 (터미널 / 쉘)에 다음 행을 루트로 입력해야합니다.',
         'Restart your webserver' => '웹 서버 다시 시작',
-        'After doing so your Znuny is up and running.' => '그렇게하면 Znuny가 실행됩니다.',
+        'After doing so your BuzzDesk is up and running.' => '그렇게하면 BuzzDesk가 실행됩니다.',
         'Start page' => '시작 페이지',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerLicense.tt
@@ -3208,8 +3206,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/MobileNotAvailableWidget.tt
         'Feature not Available' => '사용할 수없는 기능',
-        'Sorry, but this feature of Znuny is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
-            '죄송합니다. 현재 Znuny의이 기능은 휴대 기기에서 사용할 수 없습니다. 이 기능을 사용하려면 데스크톱 모드로 전환하거나 일반 데스크톱 장치를 사용할 수 있습니다.',
+        'Sorry, but this feature of BuzzDesk is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
+            '죄송합니다. 현재 BuzzDesk의이 기능은 휴대 기기에서 사용할 수 없습니다. 이 기능을 사용하려면 데스크톱 모드로 전환하거나 일반 데스크톱 장치를 사용할 수 있습니다.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Motd.tt
         'Message of the Day' => '오늘의 메시지',
@@ -3248,8 +3246,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/PublicDefault.tt
         'Welcome' => '환영',
-        'This is the default public interface of Znuny! There was no action parameter given.' =>
-            '이것은 Znuny의 기본 공용 인터페이스입니다! 주어진 행동 매개 변수가 없습니다.',
+        'This is the default public interface of BuzzDesk! There was no action parameter given.' =>
+            '이것은 BuzzDesk의 기본 공용 인터페이스입니다! 주어진 행동 매개 변수가 없습니다.',
         'You could install a custom public module (via the package manager), for example the FAQ module, which has a public interface.' =>
             '공용 인터페이스가있는 FAQ 모듈과 같이 (패키지 관리자)를 통해 사용자 정의 공용 모듈을 설치할 수 있습니다.',
 
@@ -3435,7 +3433,7 @@ sub Data {
         'Navigation' => '항해',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Test.tt
-        'Znuny Test Page' => 'Znuny 테스트 페이지',
+        'BuzzDesk Test Page' => 'BuzzDesk 테스트 페이지',
         'Unlock' => '잠금해제',
         'Welcome %s %s' => '환영합니다 %s %s',
         'Counter' => '계수기',
@@ -3530,8 +3528,8 @@ sub Data {
         # Perl Module: Kernel/Modules/AdminACL.pm
         'ACL information from database is not in sync with the system configuration, please deploy all ACLs.' =>
             '데이터베이스의 ACL 정보가 시스템 구성과 일치하지 않습니다. 모든 ACL을 배포하십시오.',
-        'ACLs could not be Imported due to a unknown error, please check Znuny logs for more information' =>
-            '알 수없는 오류로 인해 ACL을 가져올 수 없습니다. 자세한 내용은 Znuny 로그를 확인하십시오.',
+        'ACLs could not be Imported due to a unknown error, please check BuzzDesk logs for more information' =>
+            '알 수없는 오류로 인해 ACL을 가져올 수 없습니다. 자세한 내용은 BuzzDesk 로그를 확인하십시오.',
         'The following ACLs have been added successfully: %s' => '다음 ACL이 성공적으로 추가되었습니다 : %s',
         'The following ACLs have been updated successfully: %s' => '다음 ACL이 성공적으로 업데이트되었습니다 : %s',
         'There where errors adding/updating the following ACLs: %s. Please check the log file for more information.' =>
@@ -3887,12 +3885,12 @@ sub Data {
         'Could not load %s.' => '',
         'Could not read %s!' => '%s를 읽을 수 없습니다!',
         'Need a file to import!' => '가져올 파일이 필요합니다!',
-        'The imported file has not valid YAML content! Please check Znuny log for details' =>
-            '가져온 파일에 유효한 YAML 콘텐츠가 없습니다! 자세한 내용은 Znuny 로그를 확인하십시오.',
+        'The imported file has not valid YAML content! Please check BuzzDesk log for details' =>
+            '가져온 파일에 유효한 YAML 콘텐츠가 없습니다! 자세한 내용은 BuzzDesk 로그를 확인하십시오.',
         'Web service "%s" deleted!' => 'Web service "%s"이 삭제되었습니다!',
-        'Znuny as provider' => '공급자 인 Znuny',
+        'BuzzDesk as provider' => '공급자 인 BuzzDesk',
         'Operations' => '운영',
-        'Znuny as requester' => '요청자 인 Znuny',
+        'BuzzDesk as requester' => '요청자 인 BuzzDesk',
         'Invokers' => '인보커',
 
         # Perl Module: Kernel/Modules/AdminGenericInterfaceWebserviceHistory.pm
@@ -3941,8 +3939,8 @@ sub Data {
         'Need param Key to download!' => '다운로드하려면 param이 필요합니다!',
 
         # Perl Module: Kernel/Modules/AdminPackageManager.pm
-        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/znuny.Console.pl to install packages!' =>
-            '죄송합니다, Apache :: Reload는 Apache config 파일의 PerlModule 및 PerlInitHandler로 필요합니다. scripts / apache2-httpd.include.conf도 참조하십시오. 또는 명령 행 도구 bin / znuny.Console.pl을 사용하여 패키지를 설치할 수 있습니다!',
+        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/buzzdesk.Console.pl to install packages!' =>
+            '죄송합니다, Apache :: Reload는 Apache config 파일의 PerlModule 및 PerlInitHandler로 필요합니다. scripts / apache2-httpd.include.conf도 참조하십시오. 또는 명령 행 도구 bin / buzzdesk.Console.pl을 사용하여 패키지를 설치할 수 있습니다!',
         'No such package!' => '그런 패키지는 없습니다!',
         'No such file %s in package!' => '패키지에 %s 파일이 없습니다!',
         'No such file %s in local file system!' => '로컬 파일 시스템에 %s 파일이 없습니다!',
@@ -4164,14 +4162,14 @@ sub Data {
         'You currently don\'t have any favourite settings.' => '현재 즐겨찾는 설정이 없습니다.',
         'The following settings could not be found: %s' => '다음 설정을 찾을 수 없습니다 : %s',
         'Import not allowed!' => '가져오기가 허용되지 않습니다!',
-        'System Configuration could not be imported due to an unknown error, please check Znuny logs for more information.' =>
-            '알 수없는 오류로 인해 시스템 구성을 가져올 수 없습니다. 자세한 내용은 Znuny 로그를 확인하십시오.',
+        'System Configuration could not be imported due to an unknown error, please check BuzzDesk logs for more information.' =>
+            '알 수없는 오류로 인해 시스템 구성을 가져올 수 없습니다. 자세한 내용은 BuzzDesk 로그를 확인하십시오.',
         'Category Search' => '카테고리 검색',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationDeployment.pm
         'Quick Deploy by' => '',
-        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the Znuny log for more information.' =>
-            '일부 가져온 설정은 구성의 현재 상태에 나타나지 않거나 업데이트 할 수 없습니다. 자세한 내용은 Znuny 로그를 확인하십시오.',
+        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the BuzzDesk log for more information.' =>
+            '일부 가져온 설정은 구성의 현재 상태에 나타나지 않거나 업데이트 할 수 없습니다. 자세한 내용은 BuzzDesk 로그를 확인하십시오.',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationGroup.pm
         'You need to enable the setting before locking!' => '잠금 전에 설정을 활성화해야 합니다!',
@@ -4596,7 +4594,7 @@ sub Data {
         'Configure "Home" in Kernel/Config.pm first!' => '먼저 Kernel / Config.pm에서 "홈"을 구성하십시오!',
         'File "%s/Kernel/Config.pm" not found!' => '"%s/Kernel/Config.pm"파일을 찾을 수 없습니다!',
         'Directory "%s" not found!' => '"%s" 디렉토리를 찾을 수 없습니다!',
-        'Install Znuny' => 'Znuny 설치',
+        'Install BuzzDesk' => 'BuzzDesk 설치',
         'Intro' => '소개',
         'Kernel/Config.pm isn\'t writable!' => 'Kernel / Config.pm에 쓸 수 없습니다!',
         'If you want to use the installer, set the Kernel/Config.pm writable for the webserver user!' =>
@@ -4613,7 +4611,7 @@ sub Data {
         'Unknown database type "%s".' => '알 수없는 데이터베이스 유형 "%s".',
         'Please go back.' => '돌아가 주세요.',
         'Create Database' => '데이터베이스 생성',
-        'Install Znuny - Error' => 'Znuny 설치 - 오류',
+        'Install BuzzDesk - Error' => 'BuzzDesk 설치 - 오류',
         'File "%s/%s.xml" not found!' => '"%s / %s.xml"파일을 찾을 수 없습니다!',
         'Contact your Admin!' => '관리자에게 문의하십시오!',
         'System Settings' => '환경 설정',
@@ -4843,7 +4841,7 @@ sub Data {
             '시스템 유지 보수 기간은 %s에서 시작되며 %s에서 중단 될 것으로 예상됩니다.',
 
         # Perl Module: Kernel/Output/HTML/Notification/DaemonCheck.pm
-        'Znuny Daemon is not running.' => 'Znuny 데몬이 실행되고 있지 않습니다.',
+        'BuzzDesk Daemon is not running.' => 'BuzzDesk 데몬이 실행되고 있지 않습니다.',
 
         # Perl Module: Kernel/Output/HTML/Notification/OAuth2TokenManagementTokenExpired.pm
         'OAuth2 token for "%s" has expired.' => '',
@@ -5222,8 +5220,8 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/InvalidDefaultValues.pm
         'Invalid Default Values' => '잘못된 기본값',
-        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/znuny.Console.pl Maint::Database::Check --repair' =>
-            '잘못된 기본값이있는 테이블을 찾았습니다. 자동으로 수정하려면 다음을 실행하십시오. bin / znuny.Console.pl Maint :: Database :: Check --repair',
+        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/buzzdesk.Console.pl Maint::Database::Check --repair' =>
+            '잘못된 기본값이있는 테이블을 찾았습니다. 자동으로 수정하려면 다음을 실행하십시오. bin / buzzdesk.Console.pl Maint :: Database :: Check --repair',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/MaxAllowedPacket.pm
         'Maximum Query Size' => '최대 쿼리 크기',
@@ -5268,15 +5266,15 @@ sub Data {
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/postgresql/Version.pm
         'PostgreSQL 9.2 or higher is required.' => 'PostgreSQL 9.2 이상이 필요합니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionZnuny.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionBuzzDesk.pm
         'Operating System' => '운영 체제',
-        'Znuny Disk Partition' => 'Znuny 디스크 파티션',
+        'BuzzDesk Disk Partition' => 'BuzzDesk 디스크 파티션',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpace.pm
         'Disk Usage' => '디스크 사용량',
-        'The partition where Znuny is located is almost full.' => 'Znuny가 위치한 파티션이 거의 찼습니다.',
-        'The partition where Znuny is located has no disk space problems.' =>
-            'Znuny가 위치한 파티션에는 디스크 공간 문제가 없습니다.',
+        'The partition where BuzzDesk is located is almost full.' => 'BuzzDesk가 위치한 파티션이 거의 찼습니다.',
+        'The partition where BuzzDesk is located has no disk space problems.' =>
+            'BuzzDesk가 위치한 파티션에는 디스크 공간 문제가 없습니다.',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpacePartitions.pm
         'Disk Partitions Usage' => '디스크 파티션 사용법',
@@ -5321,8 +5319,8 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/MPMModel.pm
         'MPM model' => 'MPM 모델',
-        'Znuny requires apache to be run with the \'prefork\' MPM model.' =>
-            'Znuny는 \'prefork\'MPM 모델로 아파치를 실행해야합니다.',
+        'BuzzDesk requires apache to be run with the \'prefork\' MPM model.' =>
+            'BuzzDesk는 \'prefork\'MPM 모델로 아파치를 실행해야합니다.',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/Performance.pm
         'CGI Accelerator Usage' => 'CGI 가속기 사용법',
@@ -5352,37 +5350,37 @@ sub Data {
         'Webserver Version' => '웹 서버 버전',
         'Could not determine webserver version.' => '웹 서버 버전을 확인할 수 없습니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticleSearchIndexStatus.pm
-        'Znuny' => '',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticleSearchIndexStatus.pm
+        'BuzzDesk' => '',
         'Article Search Index Status' => '기사 검색 색인 상태',
         'Indexed Articles' => '색인 생성된 기사',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticlesPerCommunicationChannel.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticlesPerCommunicationChannel.pm
         'Articles Per Communication Channel' => '커뮤니케이션 채널 당 기사',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLog.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLog.pm
         'Incoming communications' => '수신 통신',
         'Outgoing communications' => '나가는 통신',
         'Failed communications' => '실패한 통신',
         'Average processing time of communications (s)' => '통신 평균 처리 시간(s)',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLogAccountStatus.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLogAccountStatus.pm
         'Communication Log Account Status (last 24 hours)' => '통신 로그 계정 상태 (지난 24시간)',
         'No connections found.' => '연결이 없습니다.',
         'ok' => '승인',
         'permanent connection errors' => '영구 연결 오류',
         'intermittent connection errors' => '간헐적인 연결 오류',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ConfigSettings.pm
         'Config Settings' => '구성 설정',
         'Could not determine value.' => '가치를 결정할 수 없습니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DaemonRunning.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DaemonRunning.pm
         'Daemon' => '데몬',
         'Daemon is running.' => '데몬이 실행 중입니다.',
         'Daemon is not running.' => '데몬이 실행되고 있지 않습니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DatabaseRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DatabaseRecords.pm
         'Database Records' => '데이터베이스 레코드',
         'Ticket History Entries' => '티켓 기록 항목',
         'Articles' => '게시물',
@@ -5397,31 +5395,31 @@ sub Data {
         'Tickets Per Month (avg)' => '월간 티켓 (평균)',
         'Open Tickets' => '진행중 티켓',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultSOAPUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultSOAPUser.pm
         'Default SOAP Username And Password' => '기본 SOAP 사용자 이름 및 암호',
         'Security risk: you use the default setting for SOAP::User and SOAP::Password. Please change it.' =>
             '보안 위험 : SOAP :: User 및 SOAP :: Password의 기본 설정을 사용합니다. 변경하십시오.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultUser.pm
         'Default Admin Password' => '기본 관리자 비밀번호',
         'Security risk: the agent account root@localhost still has the default password. Please change it or invalidate the account.' =>
             '보안 위험 : 에이전트 계정 root @ localhost에는 여전히 기본 암호가 있습니다. 계정을 변경하거나 계정을 무효화하십시오.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/EmailQueue.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/EmailQueue.pm
         'Email Sending Queue' => '이메일 전송 대기열',
         'Emails queued for sending' => '전송 대기중인 이메일',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FQDN.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FQDN.pm
         'FQDN (domain name)' => 'FQDN (도메인 이름)',
         'Please configure your FQDN setting.' => 'FQDN 설정을 구성하십시오.',
         'Domain Name' => '도메인 이름',
         'Your FQDN setting is invalid.' => 'FQDN 설정이 잘못되었습니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FileSystemWritable.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FileSystemWritable.pm
         'File System Writable' => '파일 시스템 쓰기 가능',
-        'The file system on your Znuny partition is not writable.' => 'Znuny 파티션의 파일 시스템에 쓸 수 없습니다.',
+        'The file system on your BuzzDesk partition is not writable.' => 'BuzzDesk 파티션의 파일 시스템에 쓸 수 없습니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/LegacyConfigBackups.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/LegacyConfigBackups.pm
         'Legacy Configuration Backups' => '레거시 구성 백업',
         'No legacy configuration backup files found.' => '레거시 구성 백업 파일이 없습니다.',
         'Legacy configuration backup files found in Kernel/Config/Backups folder, but they might still be required by some packages.' =>
@@ -5429,12 +5427,12 @@ sub Data {
         'Legacy configuration backup files are no longer needed for the installed packages, please remove them from Kernel/Config/Backups folder.' =>
             '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/MultipleJSFileLoad.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/MultipleJSFileLoad.pm
         'The following JavaScript files loaded multiple times:' => '',
         'Files' => '',
         'Views with multiple loaded JavaScript files' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageDeployment.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageDeployment.pm
         'Package Installation Status' => '패키지 설치 상태',
         'Some packages have locally modified files.' => '일부 패키지에는 로컬로 수정된 파일이 있습니다.',
         'Some packages are not correctly installed.' => '일부 패키지가 올바르게 설치되지 않았습니다.',
@@ -5442,75 +5440,75 @@ sub Data {
         'Some packages are not allowed for the current framework version.' =>
             '일부 패키지는 현재 프레임 워크 버전에 허용되지 않습니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageList.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageList.pm
         'Package List' => '패키지 목록',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SessionConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SessionConfigSettings.pm
         'Session Config Settings' => '세션 구성 설정',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SpoolMails.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SpoolMails.pm
         'Spooled Emails' => '스풀된 전자 메일',
-        'There are emails in var/spool that Znuny could not process.' => 'Znuny가 처리 할 수없는 var / spool에 이메일이 있습니다.',
+        'There are emails in var/spool that BuzzDesk could not process.' => 'BuzzDesk가 처리 할 수없는 var / spool에 이메일이 있습니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SystemID.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SystemID.pm
         'Your SystemID setting is invalid, it should only contain digits.' =>
             '시스템 ID 설정이 잘못되었습니다. 숫자 만 포함해야합니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/DefaultType.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/DefaultType.pm
         'Default Ticket Type' => '기본 티켓 유형',
         'The configured default ticket type is invalid or missing. Please change the setting Ticket::Type::Default and select a valid ticket type.' =>
             '구성된 기본 티켓 유형이 잘못되었거나 누락되었습니다. Ticket :: Type :: Default 설정을 변경하고 유효한 티켓 유형을 선택하십시오.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/IndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/IndexModule.pm
         'Ticket Index Module' => '티켓 색인 모듈',
         'You have more than 60,000 tickets and should use the StaticDB backend. See admin manual (Performance Tuning) for more information.' =>
             '60,000 개 이상의 티켓이 있으며 StaticDB 백엔드를 사용해야합니다. 자세한 내용은 관리자 설명서 (성능 튜닝)를 참조하십시오.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/InvalidUsersWithLockedTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/InvalidUsersWithLockedTickets.pm
         'Invalid Users with Locked Tickets' => '잠긴 티켓이 있는 사용자가 잘못되었습니다.',
         'There are invalid users with locked tickets.' => '잠긴 티켓이 있는 유효하지 않은 사용자가 있습니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/OpenTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/OpenTickets.pm
         'You should not have more than 8,000 open tickets in your system.' =>
             '시스템에 8,000개 이상의 티켓이 없어야합니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/SearchIndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/SearchIndexModule.pm
         'Ticket Search Index Module' => '티켓 검색 Index Module',
         'The indexing process forces the storage of the original article text in the article search index, without executing filters or applying stop word lists. This will increase the size of the search index and thus may slow down fulltext searches.' =>
             '색인 생성 프로세스는 필터를 실행하거나 정지 단어 목록을 적용하지 않고 기사 검색 색인에 원본 기사 텍스트의 저장을 강제합니다. 이렇게하면 검색 색인의 크기가 커지고 전체 텍스트 검색 속도가 느려질 수 있습니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/StaticDBOrphanedRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/StaticDBOrphanedRecords.pm
         'Orphaned Records In ticket_lock_index Table' => 'ticket_lock_index 테이블의 고아 레코드',
-        'Table ticket_lock_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            '표 ticket_lock_index에는 분리 된 레코드가 있습니다. bin / znuny.Console.pl "Maint :: Ticket :: QueueIndexCleanup"을 실행하여 StaticDB 색인을 정리하십시오.',
+        'Table ticket_lock_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            '표 ticket_lock_index에는 분리 된 레코드가 있습니다. bin / buzzdesk.Console.pl "Maint :: Ticket :: QueueIndexCleanup"을 실행하여 StaticDB 색인을 정리하십시오.',
         'Orphaned Records In ticket_index Table' => 'ticket_index 테이블의 고아 레코드',
-        'Table ticket_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            '표 ticket_index에는 분리 된 레코드가 있습니다. bin / znuny.Console.pl "Maint :: Ticket :: QueueIndexCleanup"을 실행하여 StaticDB 색인을 정리하십시오.',
+        'Table ticket_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            '표 ticket_index에는 분리 된 레코드가 있습니다. bin / buzzdesk.Console.pl "Maint :: Ticket :: QueueIndexCleanup"을 실행하여 StaticDB 색인을 정리하십시오.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/TimeSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/TimeSettings.pm
         'Time Settings' => '시간 설정',
         'Server time zone' => '서버 시간대',
-        'Znuny time zone' => 'Znuny 시간대',
-        'Znuny time zone is not set.' => 'Znuny 시간대가 설정되지 않았습니다.',
+        'BuzzDesk time zone' => 'BuzzDesk 시간대',
+        'BuzzDesk time zone is not set.' => 'BuzzDesk 시간대가 설정되지 않았습니다.',
         'User default time zone' => '사용자 기본 시간대',
         'User default time zone is not set.' => '사용자 기본 시간대가 설정되지 않았습니다.',
         'Calendar time zone is not set.' => '달력 표준 시간대가 설정되지 않았습니다.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentSkinUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentSkinUsage.pm
         'UI - Agent Skin Usage' => 'UI - 에이전트 스킨 사용',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentThemeUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentThemeUsage.pm
         'UI - Agent Theme Usage' => 'UI - 에이전트 테마 사용법',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/SpecialStats.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/SpecialStats.pm
         'UI - Special Statistics' => 'UI - 특수 통계',
         'Agents using custom main menu ordering' => '사용자 정의 주 메뉴 순서를 사용하는 에이전트',
         'Agents using favourites for the admin overview' => '관리자 개요에 즐겨찾기를 사용하는 에이전트',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Version.pm
-        'Znuny Version' => 'Znuny 버전',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Version.pm
+        'BuzzDesk Version' => 'BuzzDesk 버전',
 
-        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/Znuny/ConcurrentUsers.pm
+        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/BuzzDesk/ConcurrentUsers.pm
         'Concurrent Users Details' => '동시 사용자 세부 정보',
         'Concurrent Users' => '동시 사용자',
 
@@ -5616,8 +5614,8 @@ sub Data {
             '링크 객체 위젯에서 설정 버튼을 사용할 수있는 액션 정의 (LinkObject :: ViewMode = "complex"). 이러한 작업은 다음 JS 및 CSS 파일을 등록해야합니다. Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js.',
         'Define which columns are shown in the linked appointment widget (LinkObject::ViewMode = "complex"). Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.' =>
             '연결된 약속 위젯에 표시 할 열을 정의하십시오 (LinkObject :: ViewMode = "complex"). 가능한 설정 : 0 = 사용 안 함, 1 = 사용 가능, 2 = 기본적으로 사용함.',
-        'Znuny doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
-            'Znuny는 끝 날짜 또는 반복 횟수가없는 되풀이 약속을 지원하지 않습니다. 가져 오기 프로세스 중에 ICS 파일에 이러한 약속이 포함될 수 있습니다. 대신, 시스템은 과거의 모든 약속과 다음 N 개월 (기본적으로 120 개월 / 10 년)의 약속을 작성합니다.',
+        'BuzzDesk doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
+            'BuzzDesk는 끝 날짜 또는 반복 횟수가없는 되풀이 약속을 지원하지 않습니다. 가져 오기 프로세스 중에 ICS 파일에 이러한 약속이 포함될 수 있습니다. 대신, 시스템은 과거의 모든 약속과 다음 N 개월 (기본적으로 120 개월 / 10 년)의 약속을 작성합니다.',
         'Defines the ticket appointment type backend for ticket escalation time.' =>
             '티켓 에스컬레이션 시간에 대한 티켓 약속 유형 백엔드를 정의합니다.',
         'Defines the ticket appointment type backend for ticket pending time.' =>
@@ -5654,14 +5652,14 @@ sub Data {
             '특정 티켓 시간을 기준으로 자동 달력 약속을 추가하거나 업데이트 합니다.',
 
         # XML Definition: Kernel/Config/Files/XML/Daemon.xml
-        'Defines the module to display a notification in the agent interface if the Znuny Daemon is not running.' =>
-            'Znuny 데몬이 실행되고 있지 않은 경우 에이전트 인터페이스에 알림을 표시 할 모듈을 정의합니다.',
+        'Defines the module to display a notification in the agent interface if the BuzzDesk Daemon is not running.' =>
+            'BuzzDesk 데몬이 실행되고 있지 않은 경우 에이전트 인터페이스에 알림을 표시 할 모듈을 정의합니다.',
         'List of CSS files to always be loaded for the agent interface.' =>
             '에이전트 인터페이스 용으로 항상로드 될 CSS 파일 목록입니다.',
         'List of JS files to always be loaded for the agent interface.' =>
             '에이전트 인터페이스 용으로 항상로드 될 JS 파일 목록.',
-        'Type of daemon log rotation to use: Choose \'Znuny\' to let Znuny system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
-            '사용할 데몬 로그 회전 유형 : Znuny 시스템이 파일 순환을 처리하도록하려면 \'Znuny\'를 선택하고 제3자 회전 메커니즘 (즉, logrotate)을 사용하려면 \'외부\'를 선택하십시오. 참고 : 외부 회전 메커니즘은 자체적으로 독립적인 구성이 필요합니다.',
+        'Type of daemon log rotation to use: Choose \'BuzzDesk\' to let BuzzDesk system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
+            '사용할 데몬 로그 회전 유형 : BuzzDesk 시스템이 파일 순환을 처리하도록하려면 \'BuzzDesk\'를 선택하고 제3자 회전 메커니즘 (즉, logrotate)을 사용하려면 \'외부\'를 선택하십시오. 참고 : 외부 회전 메커니즘은 자체적으로 독립적인 구성이 필요합니다.',
         'If enabled the daemon will use this directory to create its PID files. Note: Please stop the daemon before any change and use this setting only if &lt;$OTRSHome&gt;/var/run/ can not be used.' =>
             '',
         'Defines the number of days to keep the daemon log files.' => '데몬 로그 파일을 보관할 기간을 정의합니다.',
@@ -5722,8 +5720,8 @@ sub Data {
         'Remove closed tickets from agents\' ticket watch lists.' => '',
 
         # XML Definition: Kernel/Config/Files/XML/Framework.xml
-        'Disables the web installer (http://yourhost.example.com/znuny/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
-            '시스템이 하이재킹되지 않도록 웹 설치 프로그램 (http://yourhost.example.com/znuny/installer.pl)을 비활성화합니다. 사용하도록 설정하지 않으면 시스템을 다시 설치하고 현재 기본 구성을 사용하여 설치 프로그램 스크립트에서 질문을 미리 채 웁니다. 활성화 된 경우 GenericAgent, PackageManager 및 SQL Box도 비활성화됩니다.',
+        'Disables the web installer (http://yourhost.example.com/buzzdesk/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
+            '시스템이 하이재킹되지 않도록 웹 설치 프로그램 (http://yourhost.example.com/buzzdesk/installer.pl)을 비활성화합니다. 사용하도록 설정하지 않으면 시스템을 다시 설치하고 현재 기본 구성을 사용하여 설치 프로그램 스크립트에서 질문을 미리 채 웁니다. 활성화 된 경우 GenericAgent, PackageManager 및 SQL Box도 비활성화됩니다.',
         'Enables or disables the debug mode over frontend interface.' => '프론트 엔드 인터페이스에서 디버그 모드를 활성화 또는 비활성화합니다. ',
         'Delivers extended debugging information in the frontend in case any AJAX errors occur, if enabled.' =>
             '활성화 된 경우 AJAX 오류가 발생할 경우 프론트 엔드에 확장 디버깅 정보를 제공합니다.',
@@ -5735,16 +5733,16 @@ sub Data {
             '관리자가 SysConfig에서 저장된 시스템 구성을 가져올 수 있는지 여부를 제어합니다.',
         'Defines the name of the application, shown in the web interface, tabs and title bar of the web browser.' =>
             '웹 인터페이스, 탭 및 웹 브라우저의 제목 표시 줄에 표시된 응용 프로그램의 이름을 정의합니다.',
-        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of Znuny).' =>
-            '시스템 식별자를 정의합니다. 모든 티켓 번호와 http 세션 문자열에는이 ID가 들어 있습니다. 이렇게하면 시스템에 속한 티켓 만 후속 조치로 처리됩니다 (Znuny의 두 인스턴스간에 통신 할 때 유용함).',
+        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of BuzzDesk).' =>
+            '시스템 식별자를 정의합니다. 모든 티켓 번호와 http 세션 문자열에는이 ID가 들어 있습니다. 이렇게하면 시스템에 속한 티켓 만 후속 조치로 처리됩니다 (BuzzDesk의 두 인스턴스간에 통신 할 때 유용함).',
         'Defines the fully qualified domain name of the system. This setting is used as a variable, OTRS_CONFIG_FQDN which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
             '시스템의 정규화 된 도메인 이름을 정의합니다. 이 설정은 응용 프로그램에서 사용하는 모든 형식의 메시징에있는 변수 인 OTRS_CONFIG_FQDN으로 사용되어 시스템 내의 티켓에 대한 링크를 만듭니다.',
         'Defines the fully qualified domain name for external IDs generation (i.e. Message-ID, ContentID).' =>
             '',
-        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
-            '\'PublicSupportDataCollector\'공용 모듈 (예 : Znuny 데몬에서 사용)을 사용하여 지원 데이터 수집을위한 HTTP 호스트 이름을 정의합니다.',
-        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
-            '공개 모듈 \'PublicSupportDataCollector\'(예 : Znuny 데몬에서 사용)를 사용하여 지원 데이터 수집에 대한 시간 초과 (최소, 20 초)를 정의합니다.',
+        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
+            '\'PublicSupportDataCollector\'공용 모듈 (예 : BuzzDesk 데몬에서 사용)을 사용하여 지원 데이터 수집을위한 HTTP 호스트 이름을 정의합니다.',
+        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
+            '공개 모듈 \'PublicSupportDataCollector\'(예 : BuzzDesk 데몬에서 사용)를 사용하여 지원 데이터 수집에 대한 시간 초과 (최소, 20 초)를 정의합니다.',
         'When support data is collected via SupportDataCollector, certain SysConfig values marked with ValueType="Password" are automatically masked. This prevents passwords from appearing in plain text in the support data. This setting defines the settings that contain complex configuration hashes that should not be masked when generating the support data.' =>
             '',
         'Defines the type of protocol, used by the web server, to serve the application. If https protocol will be used instead of plain http, it must be specified here. Since this has no affect on the web server\'s settings or behavior, it will not change the method of access to the application and, if it is wrong, it will not prevent you from logging into the application. This setting is only used as a variable, OTRS_CONFIG_HttpType which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
@@ -5763,8 +5761,8 @@ sub Data {
             '응용 프로그램에서 사용할 수 있는 모든 언어를 정의합니다. 여기에 영어의 영어이름만 지정하십시오.',
         'Defines all the languages that are available to the application. Specify only native names of languages here.' =>
             '응용 프로그램에서 사용할 수있는 모든 언어를 정의합니다. 여기에는 언어의 고유이름만 지정하십시오.',
-        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.znuny.org/developer/general_information/themes.html.' =>
-            '에이전트 및 고객이 사용할 기본 프런트 엔드 (HTML) 테마를 정의합니다. 원한다면 자신 만의 테마를 추가 할 수 있습니다. https://doc.znuny.org/developer/general_information/themes.html 에있는 관리자 설명서를 참조하십시오.',
+        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.buzzdesk.org/developer/general_information/themes.html.' =>
+            '에이전트 및 고객이 사용할 기본 프런트 엔드 (HTML) 테마를 정의합니다. 원한다면 자신 만의 테마를 추가 할 수 있습니다. https://doc.buzzdesk.org/developer/general_information/themes.html 에있는 관리자 설명서를 참조하십시오.',
         'It is possible to configure different themes, for example to distinguish between agents and customers, to be used on a per-domain basis within the application. Using a regular expression (regex), you can configure a Key/Content pair to match a domain. The value in "Key" should match the domain, and the value in "Content" should be a valid theme on your system. Please see the example entries for the proper form of the regex.' =>
             '에이전트와 고객을 구별하기 위해 응용 프로그램 내에서 도메인별로 사용되도록 다른 테마를 구성 할 수 있습니다. 정규식 (정규식)을 사용하면 키 / 내용 쌍을 도메인과 일치하도록 구성 할 수 있습니다. "Key"의 값은 도메인과 일치해야하며 "Content"의 값은 시스템의 유효한 테마 여야합니다. 올바른 형식의 정규식에 대한 예제 항목을 참조하십시오.',
         'The headline shown in the customer interface.' => '고객 인터페이스에 표시되는 헤드 라인.',
@@ -5826,8 +5824,8 @@ sub Data {
             '',
         'Global settings for all popup profiles.' => '',
         'Disable autocomplete in the login screen.' => '',
-        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow Znuny to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
-            'HTTP 헤더 "X-Frame-Options : SAMEORIGIN"을 사용하지 않도록 설정하여 Znuny를 다른 웹 사이트의 IFrame으로 포함 할 수 있습니다. 이 HTTP 헤더를 비활성화하면 보안 문제가 발생할 수 있습니다! 자신이하는 일을 아는 경우에만 사용을 중지하십시오!',
+        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow BuzzDesk to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
+            'HTTP 헤더 "X-Frame-Options : SAMEORIGIN"을 사용하지 않도록 설정하여 BuzzDesk를 다른 웹 사이트의 IFrame으로 포함 할 수 있습니다. 이 HTTP 헤더를 비활성화하면 보안 문제가 발생할 수 있습니다! 자신이하는 일을 아는 경우에만 사용을 중지하십시오!',
         'Disable HTTP header "Content-Security-Policy" to allow loading of external script contents. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
             '외부 스크립트 내용로드를 허용하려면 HTTP 헤더 "Content-Security-Policy"를 비활성화하십시오. 이 HTTP 헤더를 비활성화하면 보안 문제가 발생할 수 있습니다! 자신이하는 일을 아는 경우에만 사용을 중지하십시오!',
         'Automated line break in text messages after x number of chars.' =>
@@ -5873,8 +5871,8 @@ sub Data {
             'LogModule에 "SysLog"를 선택하면 로깅에 사용해야하는 charset을 지정할 수 있습니다.',
         'If "file" was selected for LogModule, a logfile must be specified. If the file doesn\'t exist, it will be created by the system.' =>
             'LogModule에 대해 "file"을 선택하면 로그 파일을 지정해야합니다. 파일이 없으면 시스템에 의해 작성됩니다.',
-        'Adds a suffix with the actual year and month to the Znuny log file. A logfile for every month will be created.' =>
-            'Znuny 로그 파일에 실제 연도와 월이있는 접미어를 추가합니다. 매월 로그 파일이 생성됩니다.',
+        'Adds a suffix with the actual year and month to the BuzzDesk log file. A logfile for every month will be created.' =>
+            'BuzzDesk 로그 파일에 실제 연도와 월이있는 접미어를 추가합니다. 매월 로그 파일이 생성됩니다.',
         'Set the minimum log level. If you select \'error\', just errors are logged. With \'debug\' you get all logging messages. The order of log levels is: \'debug\', \'info\', \'notice\' and \'error\'.' =>
             '최소 로그 레벨을 설정하십시오. \'오류\'를 선택하면 오류 만 기록됩니다. \'디버그\'를 사용하면 모든 로깅 메시지를 얻을 수 있습니다. 로그 수준의 순서는 \'debug\', \'info\', \'notice\'및 \'error\'입니다.',
         'Defines the module to send emails. "DoNotSendEmail" doesn\'t send emails at all. Any of the "SMTP" mechanisms use a specified (external) mailserver. "Sendmail" directly uses the sendmail binary of your operating system. "Test" doesn\'t send emails, but writes them to $OTRS_HOME/var/tmp/CacheFileStorable/EmailTest/ for testing purposes.' =>
@@ -5943,8 +5941,8 @@ sub Data {
             '에이전트 인터페이스에서 일반 알림을 표시하는 모듈을 정의합니다. "텍스트"- 구성된 경우 - 또는 "파일"의 내용이 표시됩니다.',
         'Defines the module used to store the session data. With "DB" the frontend server can be splitted from the db server. "FS" is faster.' =>
             '세션 데이터를 저장하는 데 사용되는 모듈을 정의합니다. "DB"를 사용하면 프론트 엔드 서버를 db 서버에서 분리 할 수 ​​있습니다. "FS"가 빠릅니다.',
-        'Defines the name of the session key. E.g. Session, SessionID or Znuny.' =>
-            '세션 키의 이름을 정의합니다. 예 : 세션, 세션 ID 또는 Znuny.',
+        'Defines the name of the session key. E.g. Session, SessionID or BuzzDesk.' =>
+            '세션 키의 이름을 정의합니다. 예 : 세션, 세션 ID 또는 BuzzDesk.',
         'Defines the name of the key for customer sessions.' => '고객 세션의 키 이름을 정의합니다.',
         'Turns on the remote ip address check. It should not be enabled if the application is used, for example, via a proxy farm or a dialup connection, because the remote ip address is mostly different for the requests.' =>
             '원격 IP 주소 확인을 켭니다. 예를 들어 프록시 팜이나 전화 접속 연결을 통해 응용 프로그램을 사용하는 경우에는 원격 IP 주소가 대부분 요청마다 다릅니다.',
@@ -5977,10 +5975,10 @@ sub Data {
         'Defines the period of time (in minutes) before customer is marked as "away" due to inactivity (e.g. in the "Logged-In Users" widget or for the chat).' =>
             '비활성 상태 (예 : \'로그인 사용자\'위젯 또는 채팅)로 인해 고객이 \'자리 비움\'으로 표시되기까지의 시간 (분)을 정의합니다.',
         'This setting is deprecated. Set OTRSTimeZone instead.' => '이 설정은 사용되지 않습니다. 대신 OTRSTimeZone을 설정하십시오.',
-        'Sets the time zone being used internally by Znuny to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
-            'Znuny에 의해 내부적으로 사용되는 시간대를 e로 설정합니다. 지. 날짜와 시간을 데이터베이스에 저장하십시오. 경고 :이 설정은 일단 설정하고 티켓 또는 날짜 / 시간이 포함 된 다른 데이터를 작성한 후에 변경하면 안됩니다.',
-        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the Znuny time zone and the user\'s time zone.' =>
-            '새로 생성 된 사용자에게 할당되고 아직 시간대를 설정하지 않은 사용자에게 사용될 시간대를 설정합니다. 이 시간대는 Znuny 시간대와 사용자 시간대 사이의 날짜와 시간을 변환하기 위해 기본값으로 사용됩니다.',
+        'Sets the time zone being used internally by BuzzDesk to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
+            'BuzzDesk에 의해 내부적으로 사용되는 시간대를 e로 설정합니다. 지. 날짜와 시간을 데이터베이스에 저장하십시오. 경고 :이 설정은 일단 설정하고 티켓 또는 날짜 / 시간이 포함 된 다른 데이터를 작성한 후에 변경하면 안됩니다.',
+        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the BuzzDesk time zone and the user\'s time zone.' =>
+            '새로 생성 된 사용자에게 할당되고 아직 시간대를 설정하지 않은 사용자에게 사용될 시간대를 설정합니다. 이 시간대는 BuzzDesk 시간대와 사용자 시간대 사이의 날짜와 시간을 변환하기 위해 기본값으로 사용됩니다.',
         'If enabled, users that haven\'t selected a time zone yet will be notified to do so. Note: Notification will not be shown if (1) user has not yet selected a time zone and (2) OTRSTimeZone and UserDefaultTimeZone do match and (3) are not set to UTC.' =>
             '사용하도록 설정하면 아직 시간대를 선택하지 않은 사용자에게 알림이 전송됩니다. 참고 : (1) 사용자가 아직 시간대를 선택하지 않았으며 (2) OTRSTimeZone과 UserDefaultTimeZone이 일치하고 (3) UTC로 설정되지 않은 경우 알림이 표시되지 않습니다.',
         'Maximum Number of a calendar shown in a dropdown.' => '드롭 다운에 표시된 최대 달력 수입니다.',
@@ -5998,8 +5996,8 @@ sub Data {
         'Adds the one time vacation days for the indicated calendar.' => '표시된 달력에 대해 휴가일을 한 번 추가합니다.',
         'Defines the hours and week days of the indicated calendar, to count the working time.' =>
             '작업 시간을 계산하기 위해 표시된 달력의 시간과 요일을 정의합니다.',
-        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your Znuny instance to stop working (probably any mask which takes input from the user).' =>
-            '브라우저를 통한 파일 업로드의 최대 크기 (바이트)를 정의합니다. 경고 :이 옵션을 너무 낮은 값으로 설정하면 Znuny 인스턴스의 많은 마스크가 작동을 멈출 수 있습니다 (사용자가 입력 한 마스크 일 가능성이 있음).',
+        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your BuzzDesk instance to stop working (probably any mask which takes input from the user).' =>
+            '브라우저를 통한 파일 업로드의 최대 크기 (바이트)를 정의합니다. 경고 :이 옵션을 너무 낮은 값으로 설정하면 BuzzDesk 인스턴스의 많은 마스크가 작동을 멈출 수 있습니다 (사용자가 입력 한 마스크 일 가능성이 있음).',
         'Selects the module to handle uploads via the web interface. "DB" stores all uploads in the database, "FS" uses the file system.' =>
             '웹 인터페이스를 통해 업로드를 처리 할 모듈을 선택합니다. "DB"는 모든 업로드를 데이터베이스에 저장하고 "FS"는 파일 시스템을 사용합니다.',
         'Specifies the text that should appear in the log file to denote a CGI script entry.' =>
@@ -6066,8 +6064,8 @@ sub Data {
             'PDF 문서에서 이탤릭체로 고정 폭 글꼴을 처리 할 경로와 TTF 파일을 정의합니다.',
         'Defines the path and TTF-File to handle bold italic monospaced font in PDF documents.' =>
             'PDF 문서에서 굵은 기울임 꼴 고정 폭 글꼴을 처리 할 경로와 TTF-File을 정의합니다.',
-        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the Znuny user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
-            'PGP 지원을 사용합니다. 메일 서명 및 암호화에 대해 PGP 지원을 사용하는 경우 웹 서버를 Znuny 사용자로 실행하는 것이 좋습니다. 그렇지 않으면 .gnupg 폴더에 액세스 할 때 권한에 문제가 있습니다.',
+        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the BuzzDesk user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
+            'PGP 지원을 사용합니다. 메일 서명 및 암호화에 대해 PGP 지원을 사용하는 경우 웹 서버를 BuzzDesk 사용자로 실행하는 것이 좋습니다. 그렇지 않으면 .gnupg 폴더에 액세스 할 때 권한에 문제가 있습니다.',
         'Defines the path to PGP binary.' => 'PGP 바이너리 경로를 정의합니다.',
         'Sets the options for PGP binary.' => 'PGP 바이너리의 옵션을 설정합니다.',
         'Sets the preferred digest to be used for PGP binary.' => 'PGP 바이너리에 사용할 선호 다이제스트를 설정합니다.',
@@ -6085,10 +6083,10 @@ sub Data {
             '개인 SSL 인증서가 저장되는 디렉토리를 지정합니다.',
         'Cache time in seconds for the SSL certificate attributes.' => 'SSL 인증서 속성의 캐시 시간 초.',
         'Enables fetch S/MIME from CustomerUser backend support.' => '고객사용자 백 엔드 지원에서 S / MIME을 가져올 수 있습니다.',
-        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com).' =>
-            '알림을 보낼 때 응용 프로그램에서 사용해야하는 이름을 지정합니다. 발신자 이름은 알림 마스터의 전체 표시 이름 (예 : "Znuny Notifications"znuny@your.example.com)을 작성하는 데 사용됩니다.',
-        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
-            '알림을 보낼 때 응용 프로그램에서 사용해야하는 전자 메일 주소를 지정합니다. 이메일 주소는 알림 마스터의 전체 표시 이름 (예 : "Znuny Notifications"znuny@your.example.com)을 작성하는 데 사용됩니다. OTRS_CONFIG_FQDN 변수를 설정에 사용하거나 다른 이메일 주소를 선택할 수 있습니다.',
+        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com).' =>
+            '알림을 보낼 때 응용 프로그램에서 사용해야하는 이름을 지정합니다. 발신자 이름은 알림 마스터의 전체 표시 이름 (예 : "BuzzDesk Notifications"buzzdesk@your.example.com)을 작성하는 데 사용됩니다.',
+        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
+            '알림을 보낼 때 응용 프로그램에서 사용해야하는 전자 메일 주소를 지정합니다. 이메일 주소는 알림 마스터의 전체 표시 이름 (예 : "BuzzDesk Notifications"buzzdesk@your.example.com)을 작성하는 데 사용됩니다. OTRS_CONFIG_FQDN 변수를 설정에 사용하거나 다른 이메일 주소를 선택할 수 있습니다.',
         'Defines the validity period in seconds for password reset tokens. After this time the token expires and a new reset request is required. Default: 3600 (1 hour).' =>
             '비밀번호 재설정 토큰의 유효 기간(초)을 정의합니다. 이 시간이 지나면 토큰이 만료되며 새 요청이 필요합니다. 기본값: 3600(1시간).',
         'Maximum number of password reset requests allowed per IP address or username within the rate limit window. Set to 0 to disable rate limiting. Default: 5.' =>
@@ -6215,8 +6213,8 @@ sub Data {
             'Customer :: AuthModule에서 "LDAP"를 선택한 경우 BaseDN을 지정해야합니다.',
         'If "LDAP" was selected for Customer::AuthModule, the user identifier must be specified.' =>
             'Customer :: AuthModule에 대해 "LDAP"를 선택한 경우 사용자 식별자를 지정해야합니다.',
-        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use Znuny. Specify the group, who may access the system.' =>
-            'Customer :: Authmodule에 대해 "LDAP"가 선택된 경우 사용자가 posixGroup에 있기 때문에 인증 할 수 있는지 확인할 수 있습니다. 사용자는 Znuny를 사용하려면 그룹 xyz에 있어야합니다. 시스템에 액세스 할 수있는 그룹을 지정하십시오.',
+        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use BuzzDesk. Specify the group, who may access the system.' =>
+            'Customer :: Authmodule에 대해 "LDAP"가 선택된 경우 사용자가 posixGroup에 있기 때문에 인증 할 수 있는지 확인할 수 있습니다. 사용자는 BuzzDesk를 사용하려면 그룹 xyz에 있어야합니다. 시스템에 액세스 할 수있는 그룹을 지정하십시오.',
         'If "LDAP" was selected for Customer::AuthModule, you can specify access attributes here.' =>
             'Customer :: AuthModule에 대해 "LDAP"를 선택한 경우 여기에서 액세스 속성을 지정할 수 있습니다.',
         'If "LDAP" was selected for Customer::AuthModule, user attributes can be specified. For LDAP posixGroups use UID, for non LDAP posixGroups use full user DN.' =>
@@ -6270,7 +6268,7 @@ sub Data {
         'Activates the available themes on the system. Value 1 means active, 0 means inactive.' =>
             '시스템에서 사용 가능한 테마를 활성화합니다. 값 1은 활성을 의미하고 0은 비활성을 의미합니다.',
         'Defines the default value for the action parameter.' => '',
-        'Defines the shown links in the footer area of the customer and public interface of this Znuny system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
+        'Defines the shown links in the footer area of the customer and public interface of this BuzzDesk system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
             '',
         'Defines the default value for the action parameter for the public frontend. The action parameter is used in the scripts of the system.' =>
             'public frontend에 대한 action 매개 변수의 기본값을 정의합니다. action 매개 변수는 시스템의 스크립트에서 사용됩니다.',
@@ -6299,8 +6297,8 @@ sub Data {
             '다중 선택 필드에 모든 고객 사용자 식별자를 표시합니다 (많은 고객 사용자 식별자가 있는 경우 유용하지 않음).',
         'Defines the default maximum number of X-axis attributes for the time scale.' =>
             '시간 스케일에 대한 X 축 속성의 기본 최대 수를 정의합니다.',
-        'Znuny can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
-            'Znuny는 전체 텍스트 검색이나 통계 생성과 같은 값 비싼 작업에 대해 하나 이상의 읽기 전용 미러 데이터베이스를 사용할 수 있습니다. 여기서 첫 번째 미러 데이터베이스에 대해 DSN을 지정할 수 있습니다.',
+        'BuzzDesk can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
+            'BuzzDesk는 전체 텍스트 검색이나 통계 생성과 같은 값 비싼 작업에 대해 하나 이상의 읽기 전용 미러 데이터베이스를 사용할 수 있습니다. 여기서 첫 번째 미러 데이터베이스에 대해 DSN을 지정할 수 있습니다.',
         'Specify the username to authenticate for the first mirror database.' =>
             '첫 번째 미러 데이터베이스에 대해 인증할 사용자 이름을 지정하십시오.',
         'Specify the password to authenticate for the first mirror database.' =>
@@ -6317,24 +6315,24 @@ sub Data {
             '링크 개체 마스크가 시작된 후 활성 개체의 와일드 카드 검색을 시작합니다.',
         'Defines a filter to process the text in the articles, in order to highlight predefined keywords.' =>
             '미리 정의된 키워드를 강조 표시하기 위해 기사의 텍스트를 처리하는 필터를 정의합니다.',
-        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'CVE 번호 뒤에 링크를 추가하는 html 출력을위한 필터를 정의합니다. Image 요소는 두 가지 입력 종류를 허용합니다. 한 번에 이미지의 이름 (예 : faq.png). 이 경우 Znuny 이미지 경로가 사용됩니다. 두 번째 가능성은 링크를 이미지에 삽입하는 것입니다.',
-        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'bugtraq 번호 뒤에 링크를 추가하기위한 html 출력을위한 필터를 정의합니다. Image 요소는 두 가지 입력 종류를 허용합니다. 한 번에 이미지의 이름 (예 : faq.png). 이 경우 Znuny 이미지 경로가 사용됩니다. 두 번째 가능성은 링크를 이미지에 삽입하는 것입니다.',
-        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'MSBulletin 번호 뒤에 링크를 추가하기 위해 html 출력을위한 필터를 정의합니다. Image 요소는 두 가지 입력 종류를 허용합니다. 한 번에 이미지의 이름 (예 : faq.png). 이 경우 Znuny 이미지 경로가 사용됩니다. 두 번째 가능성은 링크를 이미지에 삽입하는 것입니다.',
-        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            '정의 된 문자열 뒤에 링크를 추가하기 위해 html 출력을위한 필터를 정의하십시오. Image 요소는 두 가지 입력 종류를 허용합니다. 한 번에 이미지의 이름 (예 : faq.png). 이 경우 Znuny 이미지 경로가 사용됩니다. 두 번째 가능성은 링크를 이미지에 삽입하는 것입니다.',
-        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            '정의 된 문자열 뒤에 링크를 추가하는 html 출력을위한 필터를 정의합니다. Image 요소는 두 가지 입력 종류를 허용합니다. 한 번에 이미지의 이름 (예 : faq.png). 이 경우 Znuny 이미지 경로가 사용됩니다. 두 번째 가능성은 링크를 이미지에 삽입하는 것입니다.',
-        'If enabled, the Znuny version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
-            '사용 설정하면 Znuny 버전 태그가 웹 인터페이스, 나가는 메일의 HTTP 헤더 및 X 헤더에서 삭제됩니다. 참고 :이 옵션을 변경하면 캐시를 삭제하십시오.',
+        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'CVE 번호 뒤에 링크를 추가하는 html 출력을위한 필터를 정의합니다. Image 요소는 두 가지 입력 종류를 허용합니다. 한 번에 이미지의 이름 (예 : faq.png). 이 경우 BuzzDesk 이미지 경로가 사용됩니다. 두 번째 가능성은 링크를 이미지에 삽입하는 것입니다.',
+        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'bugtraq 번호 뒤에 링크를 추가하기위한 html 출력을위한 필터를 정의합니다. Image 요소는 두 가지 입력 종류를 허용합니다. 한 번에 이미지의 이름 (예 : faq.png). 이 경우 BuzzDesk 이미지 경로가 사용됩니다. 두 번째 가능성은 링크를 이미지에 삽입하는 것입니다.',
+        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'MSBulletin 번호 뒤에 링크를 추가하기 위해 html 출력을위한 필터를 정의합니다. Image 요소는 두 가지 입력 종류를 허용합니다. 한 번에 이미지의 이름 (예 : faq.png). 이 경우 BuzzDesk 이미지 경로가 사용됩니다. 두 번째 가능성은 링크를 이미지에 삽입하는 것입니다.',
+        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            '정의 된 문자열 뒤에 링크를 추가하기 위해 html 출력을위한 필터를 정의하십시오. Image 요소는 두 가지 입력 종류를 허용합니다. 한 번에 이미지의 이름 (예 : faq.png). 이 경우 BuzzDesk 이미지 경로가 사용됩니다. 두 번째 가능성은 링크를 이미지에 삽입하는 것입니다.',
+        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            '정의 된 문자열 뒤에 링크를 추가하는 html 출력을위한 필터를 정의합니다. Image 요소는 두 가지 입력 종류를 허용합니다. 한 번에 이미지의 이름 (예 : faq.png). 이 경우 BuzzDesk 이미지 경로가 사용됩니다. 두 번째 가능성은 링크를 이미지에 삽입하는 것입니다.',
+        'If enabled, the BuzzDesk version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
+            '사용 설정하면 BuzzDesk 버전 태그가 웹 인터페이스, 나가는 메일의 HTTP 헤더 및 X 헤더에서 삭제됩니다. 참고 :이 옵션을 변경하면 캐시를 삭제하십시오.',
         'Default template for notification e-mails (see Kernel/Output/HTML/Templates/Standard/NotificationEvent/Email directory for available templates).' =>
             '',
-        'If enabled, Znuny will deliver all CSS files in minified form.' =>
-            '사용하도록 설정하면 Znuny는 모든 CSS 파일을 축소 된 형식으로 제공합니다.',
-        'If enabled, Znuny will deliver all JavaScript files in minified form.' =>
-            '사용하도록 설정하면 Znuny는 모든 JavaScript 파일을 축소 된 형식으로 제공합니다.',
+        'If enabled, BuzzDesk will deliver all CSS files in minified form.' =>
+            '사용하도록 설정하면 BuzzDesk는 모든 CSS 파일을 축소 된 형식으로 제공합니다.',
+        'If enabled, BuzzDesk will deliver all JavaScript files in minified form.' =>
+            '사용하도록 설정하면 BuzzDesk는 모든 JavaScript 파일을 축소 된 형식으로 제공합니다.',
         'List of responsive CSS files to always be loaded for the agent interface.' =>
             '에이전트 인터페이스 용으로 항상로드되는 반응 형 CSS 파일 목록입니다.',
         'List of JS files to always be loaded for the admin interface.' =>
@@ -6560,10 +6558,10 @@ sub Data {
             '"AutoIncrement"가 TicketNumberGenerator로 선택된 경우 최소 티켓 카운터 크기를 설정합니다. 기본값은 5이며, 이는 카운터가 10000에서 시작 함을 의미합니다. ',
         'Enables the minimal ticket counter size (if "Date" was selected as TicketNumberGenerator).' =>
             '최소 티켓 카운터 크기를 활성화합니다 ( "Date"가 TicketNumberGenerator로 선택된 경우).',
-        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
-            'IndexAccelerator : 백엔드 TicketViewAccelerator 모듈을 선택합니다. "RuntimeDB"는 티켓 테이블에서 각 큐 뷰를 생성합니다 (성능상의 문제없이 최대 약 60,000 개의 티켓과 시스템의 6.000 개 티켓). "StaticDB"는보기와 같이 작동하는 별도의 티켓 색인 표를 사용하는 가장 강력한 모듈입니다 (80.000 개 이상의 티켓이 시스템에 저장되어있는 경우 권장). 초기 색인 작성은 "bin / znuny.Console.pl Maint :: Ticket :: QueueIndexRebuild"명령을 사용하십시오.',
-        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the Znuny user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
-            '기사의 첨부 파일을 저장합니다. "DB"는 모든 데이터를 데이터베이스에 저장합니다 (큰 첨부 파일 저장에는 권장되지 않음). "FS"는 데이터를 파일 시스템에 저장합니다. 이것은 더 빠르지 만 웹 서버는 Znuny 사용자 하에서 실행되어야합니다. 데이터 손실없이 이미 생산중인 시스템에서도 모듈 간을 전환 할 수 있습니다. 참고 : "FS"를 사용하면 첨부 파일 이름을 검색 할 수 없습니다.',
+        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
+            'IndexAccelerator : 백엔드 TicketViewAccelerator 모듈을 선택합니다. "RuntimeDB"는 티켓 테이블에서 각 큐 뷰를 생성합니다 (성능상의 문제없이 최대 약 60,000 개의 티켓과 시스템의 6.000 개 티켓). "StaticDB"는보기와 같이 작동하는 별도의 티켓 색인 표를 사용하는 가장 강력한 모듈입니다 (80.000 개 이상의 티켓이 시스템에 저장되어있는 경우 권장). 초기 색인 작성은 "bin / buzzdesk.Console.pl Maint :: Ticket :: QueueIndexRebuild"명령을 사용하십시오.',
+        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the BuzzDesk user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
+            '기사의 첨부 파일을 저장합니다. "DB"는 모든 데이터를 데이터베이스에 저장합니다 (큰 첨부 파일 저장에는 권장되지 않음). "FS"는 데이터를 파일 시스템에 저장합니다. 이것은 더 빠르지 만 웹 서버는 BuzzDesk 사용자 하에서 실행되어야합니다. 데이터 손실없이 이미 생산중인 시스템에서도 모듈 간을 전환 할 수 있습니다. 참고 : "FS"를 사용하면 첨부 파일 이름을 검색 할 수 없습니다.',
         'Specifies whether all storage backends should be checked when looking for attachments. This is only required for installations where some attachments are in the file system, and others in the database.' =>
             '첨부 파일을 찾을 때 모든 저장소 백엔드를 검사할지 여부를 지정합니다. 일부 첨부 파일이 파일 시스템에 있고 다른 파일 시스템에 있는 설치에만 필요합니다.',
         'Specifies the directory to store the data in, if "FS" was selected for ArticleStorage.' =>
@@ -6605,7 +6603,7 @@ sub Data {
             '이 이벤트 모듈은 CustomerUser의 특성을 DynamicFields 티켓으로 저장합니다. 매핑을 구성하는 방법은 DynamicFieldFromCustomerUser::Mapping 설정을 참조하십시오.',
         'Overloads (redefines) existing functions in Kernel::System::Ticket. Used to easily add customizations.' =>
             'Kernel :: System :: Ticket의 기존 함수를 오버로드 (재정의)합니다. 쉽게 사용자 정의를 추가하는 데 사용됩니다.',
-        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
+        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
             '',
         'Defines whether to index archived tickets for fulltext searches.' =>
             '전체 텍스트 검색을 위해 보관된 티켓의 색인을 생성할지 여부를 정의합니다.',
@@ -6613,7 +6611,7 @@ sub Data {
             '필터를 실행하거나 정지 단어 목록을 적용하지 않고 기사 검색 색인에서 원본 기사 텍스트의 저장을 강제 실행합니다. 이렇게하면 검색 색인의 크기가 커지고 전체 텍스트 검색 속도가 느려질 수 있습니다.',
         'Display a warning and prevent search when using stop words within fulltext search.' =>
             '전체 텍스트 검색 내에서 중지 단어를 사용할 때 경고를 표시하고 검색을 차단합니다.',
-        'Basic fulltext index settings. Execute "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
+        'Basic fulltext index settings. Execute "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
             '',
         'Fulltext index regex filters to remove parts of the text.' => '전체 텍스트 색인 정규식 필터는 텍스트의 일부를 제거합니다.',
         'English stop words for fulltext index. These words will be removed from the search index.' =>
@@ -7342,8 +7340,8 @@ sub Data {
             '티켓의 표시 가능 잠금을 정의합니다. 참고 :이 설정을 변경할 때 새 값을 사용하려면 캐시를 삭제해야합니다. 기본값 : 잠금 해제, tmp_lock.',
         'Defines the valid state types for a ticket. If a ticket is in a state which have any state type from this setting, this ticket will be considered as open, otherwise as closed.' =>
             '',
-        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/znuny.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
-            '잠금 해제 된 티켓의 유효한 상태를 정의합니다. 티켓의 잠금을 해제하려면 "bin / znuny.Console.pl Maint :: Ticket :: UnlockTimeout"스크립트를 사용할 수 있습니다.',
+        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
+            '잠금 해제 된 티켓의 유효한 상태를 정의합니다. 티켓의 잠금을 해제하려면 "bin / buzzdesk.Console.pl Maint :: Ticket :: UnlockTimeout"스크립트를 사용할 수 있습니다.',
         'Sends reminder notifications of unlocked ticket after reaching the reminder date (only sent to ticket owner).' =>
             '미리 알림 날짜에 도달 한 후 잠금 해제 된 티켓에 대한 미리 알림을 전송합니다 (티켓 소유자에게만 전송 됨).',
         'Disables sending reminder notifications to the responsible agent of a ticket (Ticket::Responsible needs to be enabled).' =>
@@ -7729,8 +7727,8 @@ sub Data {
             '들어오는 메시지의 고객 사용자 SMIME 인증서를 가져 오는 모듈.',
         'Module to check if a incoming e-mail message is bounce.' => '들어오는 전자 메일 메시지가 바운드되는지 확인하는 모듈입니다.',
         'Module used to detect if attachments are present.' => '첨부 파일이 있는지 감지하는데 사용되는 모듈입니다.',
-        'Executes follow-up checks on Znuny Header \'X-OTRS-Bounce\'.' =>
-            'Znuny Header \'X-OTRS-Bounce\'에 대한 후속 검사를 실행합니다.',
+        'Executes follow-up checks on BuzzDesk Header \'X-OTRS-Bounce\'.' =>
+            'BuzzDesk Header \'X-OTRS-Bounce\'에 대한 후속 검사를 실행합니다.',
         'Checks if an E-Mail is a followup to an existing ticket by searching the subject for a valid ticket number.' =>
             '유효한 티켓 번호를 검색하여 전자 메일이 기존 티켓의 후속 조치인지 확인합니다.',
         'Executes follow-up checks on In-Reply-To or References headers for mails that don\'t have a ticket number in the subject.' =>
@@ -7888,9 +7886,9 @@ sub Data {
         'Defines the default queue for new tickets in the agent interface.' =>
             '에이전트 인터페이스에서 새 티켓의 기본 대기열을 정의합니다.',
 
-        # XML Definition: Kernel/Config/Files/XML/Znuny.xml
+        # XML Definition: Kernel/Config/Files/XML/BuzzDesk.xml
         'Default preferences to set during user creation.' => '',
-        'Enables/disables the Znuny package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
+        'Enables/disables the BuzzDesk package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
             '',
         'Screens for which it is possible to enable or disable dynamic fields.' =>
             '',
@@ -8153,7 +8151,7 @@ sub Data {
             '',
         'Mapping of ticket priority to X-Priority email header for outgoing emails of communication channel "system".' =>
             '',
-        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by Znuny.Form.Input.' =>
+        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by BuzzDesk.Form.Input.' =>
             '',
         'Once limit of watched tickets per user is reached, the oldest entries will be removed from the watch list. Disable this setting or set it to 0 to disable the limit (default).' =>
             '',
@@ -8415,8 +8413,8 @@ sub Data {
         'Currently not possible' => '현재 불가능',
         'This is currently disabled because of an ongoing package upgrade.' =>
             '진행중인 패키지 업그레이드로 인해 현재 이 기능을 사용할 수 없습니다.',
-        'This option is currently disabled because the Znuny Daemon is not running.' =>
-            'Znuny 데몬이 실행 중이 아니기 때문에이 옵션은 현재 비활성화되어 있습니다.',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.' =>
+            'BuzzDesk 데몬이 실행 중이 아니기 때문에이 옵션은 현재 비활성화되어 있습니다.',
         'Are you sure you want to update all installed packages?' => '설치된 패키지를 모두 업데이트 하시겠습니까?',
         'No response from get package upgrade run status.' => '',
 
@@ -8546,7 +8544,7 @@ sub Data {
         'Insert selected customer user(s) into the "%s:" field.' => '',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Daemon.js
-        'Information about the Znuny Daemon' => 'Znuny 데몬에 대한 정보',
+        'Information about the BuzzDesk Daemon' => 'BuzzDesk 데몬에 대한 정보',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Dashboard.js
         'Please check the fields marked as red for valid inputs.' => '유효한 입력을 위해 빨간색으로 표시된 필드를 확인하십시오.',
@@ -8935,7 +8933,7 @@ Thanks for your help!
         'Create tickets.' => '티켓을 만드십시오.',
         'Created ticket [%s] in "%s" with priority "%s" and state "%s".' =>
             '티켓 [%s] 생성 : "%s", 우선 순위 -"%s" , 상태 -"%s"',
-        'Creates a unit test file for this ticket and sends it to Znuny.' =>
+        'Creates a unit test file for this ticket and sends it to BuzzDesk.' =>
             '',
         'Creates a unit test file for this ticket.' => '',
         'Croatian' => '크로아티아 사람',
@@ -9377,7 +9375,7 @@ Thanks for your help!
             '이것은 고객 인터페이스의 기본 오렌지색 검정색 스킨입니다.',
         'This is the default orange - black skin.' => '이것은 기본 오랜지색 검은색 피부입니다.',
         'This key is not certified with a trusted signature!' => '',
-        'This module is part of the admin area of Znuny.' => '',
+        'This module is part of the admin area of BuzzDesk.' => '',
         'Ticket Close.' => '티켓 닫기.',
         'Ticket Compose Bounce Email.' => '티켓 작성 반송 이메일.',
         'Ticket Compose email Answer.' => '티켓 전자 메일 응답을 작성하십시오.',
@@ -9464,7 +9462,7 @@ Thanks for your help!
         'Your service selection of your preferred services. You also get notified about those services via email if enabled.' =>
             '원하는 서비스에 대한 귀하의 서비스 선택. 또한 활성화된 경우 이메일을 통해 해당 서비스에 대한 알림을 받습니다.',
         'Your username in Mattermost without the leading @' => '',
-        'Znuny.org - News' => '',
+        'BuzzDesk.org - News' => '',
         'Zoom' => '줌',
         'all tickets' => '',
         'archived tickets' => '',
@@ -9655,7 +9653,7 @@ Thanks for your help!
         'Hide EntityIDs',
         'If you now leave this page, all open popup windows will be closed, too!',
         'Import web service',
-        'Information about the Znuny Daemon',
+        'Information about the BuzzDesk Daemon',
         'Insert selected customer user(s) into the "%s:" field.',
         'Invalid date (need a future date)!',
         'Invalid date (need a past date)!',
@@ -9835,7 +9833,7 @@ Thanks for your help!
         'This is a repeating appointment',
         'This is currently disabled because of an ongoing package upgrade.',
         'This item still contains sub items. Are you sure you want to remove this item including its sub items?',
-        'This option is currently disabled because the Znuny Daemon is not running.',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.',
         'This software runs with a huge lists of browsers, please upgrade to one of these.',
         'This window must be called from compose window.',
         'Thu',

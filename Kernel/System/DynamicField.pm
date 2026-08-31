@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -1727,11 +1725,11 @@ Removes reserved keywords in link configuration:
 
     my $Success = $DynamicFieldObject->_SanitizeConfig(
         Config => {
-            Link => 'https://www.znuny.org/[% Data.Link %]/[% Data.LinkPreview %]/[% Data.Title %]/[% Data.Value %]'
+            Link => 'https://www.buzzdesk.org/[% Data.Link %]/[% Data.LinkPreview %]/[% Data.Title %]/[% Data.Value %]'
         },
     );
 
-    $Config->{Link} = 'https://www.znuny.org////';
+    $Config->{Link} = 'https://www.buzzdesk.org////';
 
 
 Return:

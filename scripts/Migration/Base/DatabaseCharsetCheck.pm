@@ -1,12 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Perl::Pod::NamePod)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Pod::NamePod)
 
 package scripts::Migration::Base::DatabaseCharsetCheck;    ## no critic
 
@@ -36,7 +34,7 @@ sub Run {
     my $DBObject     = $Kernel::OM->Get('Kernel::System::DB');
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
-    # Get Znuny version
+    # Get BuzzDesk version
     my $Version = $ConfigObject->Get('Version');
     my $MajorVersion;
     my $MinorVersion;
@@ -46,7 +44,7 @@ sub Run {
         $MinorVersion = $2;
     }
 
-    # Define the required charset based on Znuny version
+    # Define the required charset based on BuzzDesk version
     my $RequiredCharacterSet = 'utf8';
     if ( $MajorVersion == 7 && $MinorVersion >= 1 ) {
         $RequiredCharacterSet = 'utf8mb4';

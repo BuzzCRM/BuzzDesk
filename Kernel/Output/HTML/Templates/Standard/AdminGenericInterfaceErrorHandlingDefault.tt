@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -116,7 +114,7 @@
                         <div class="Field">
                             <input type="text" readonly="readonly" class="W50pc" id="ErrorHandlingTypeDisplay" value="[% Data.ErrorHandlingType | html %]" />
                             <p class="FieldExplanation">
-                                [% Translate("This Znuny error handling backend module will be called internally to process the error handling mechanism.") | html %]
+                                [% Translate("This BuzzDesk error handling backend module will be called internally to process the error handling mechanism.") | html %]
                             </p>
                         </div>
 

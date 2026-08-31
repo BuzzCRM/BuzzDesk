@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -53,7 +51,7 @@ sub Run {
     my $PreviousWord = $Self->GetArgument('previous-word');
 
     # We are looking for the command name
-    if ( $PreviousWord =~ m/znuny\.Console\.pl/xms ) {
+    if ( $PreviousWord =~ m/buzzdesk\.Console\.pl/xms ) {
 
         # Get all matching commands
         my @CommandList = $Self->ListAllCommands();
@@ -68,10 +66,10 @@ sub Run {
     else {
         # We need to extract the command name from the command line if present.
         my $CompLine = $ENV{COMP_LINE};
-        if ( !$CompLine || !$CompLine =~ m/znuny\.Console\.pl/ ) {
+        if ( !$CompLine || !$CompLine =~ m/buzzdesk\.Console\.pl/ ) {
             $Self->ExitCodeError();
         }
-        $CompLine =~ s/.*znuny\.Console\.pl\s*//xms;
+        $CompLine =~ s/.*buzzdesk\.Console\.pl\s*//xms;
         my @Elements = split( m/\s+/, $CompLine );
 
         # Try to create the command object to get its options

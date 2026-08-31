@@ -1,13 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
-# Copyright (C) 2010 Milorad Jovanovic <j.milorad at gmail.com>
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Translation::JavaScriptStrings)
+## nofilter(TidyAll::Plugin::BuzzDesk::Translation::JavaScriptStrings)
 
 package Kernel::Language::sr_Cyrl;
 
@@ -861,7 +858,7 @@ sub Data {
             'Назив се може користити за прављење разлике између појединачних конфигурација за обраду грешке.',
         'Please provide a unique name for this web service.' => 'Молимо да обезбедите јединствени назив за овај веб сервис.',
         'Error handling module backend' => 'Модул за обраду грешке',
-        'This Znuny error handling backend module will be called internally to process the error handling mechanism.' =>
+        'This BuzzDesk error handling backend module will be called internally to process the error handling mechanism.' =>
             'Овај модул за отклањање грешака ће бити позван интерно да обради грешку.',
         'Processing options' => 'Подешавања обраде',
         'Configure filters to control error handling module execution.' =>
@@ -953,15 +950,15 @@ sub Data {
         'The name is typically used to call up an operation of a remote web service.' =>
             'Назив се обично користи за покретање операције удаљеног веб сервиса.',
         'Invoker backend' => 'Модул позиваоца',
-        'This Znuny invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
+        'This BuzzDesk invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
             'Овај модул позиваоца биће позван да припреми податке за слање на удаљени систем и да обради податке његовог одговора.',
         'Mapping for outgoing request data' => 'Мапирање за излазне податке захтева',
         'Configure' => 'Подеси',
-        'The data from the invoker of Znuny will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
-            'Подаци из Znuny позиваоца биће обрађени овим мапирањем, да би их трансформисали у типове података које удаљени систем очекује.',
+        'The data from the invoker of BuzzDesk will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
+            'Подаци из BuzzDesk позиваоца биће обрађени овим мапирањем, да би их трансформисали у типове података које удаљени систем очекује.',
         'Mapping for incoming response data' => 'Мапирање за улазне податке одговора',
-        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of Znuny expects.' =>
-            'Подаци одговора из Znuny позиваоца биће обрађени овим мапирањем, да би их трансформисали у типове података које удаљени систем очекује..',
+        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of BuzzDesk expects.' =>
+            'Подаци одговора из BuzzDesk позиваоца биће обрађени овим мапирањем, да би их трансформисали у типове података које удаљени систем очекује..',
         'Asynchronous' => 'Асинхрони',
         'Condition' => 'Услов',
         'Edit this event' => 'Уреди овај догађај',
@@ -969,8 +966,8 @@ sub Data {
         'Add Event' => 'Додај догађај',
         'To add a new event select the event object and event name and click on the "+" button' =>
             'За додавање новог догађаја изаберите објекат и назив догађаја па кликните на "+" дугме',
-        'Asynchronous event triggers are handled by the Znuny Scheduler Daemon in background (recommended).' =>
-            'Асинхроним окидачима догађаја управља планер Znuny системског сервиса у позадини (препоручено).',
+        'Asynchronous event triggers are handled by the BuzzDesk Scheduler Daemon in background (recommended).' =>
+            'Асинхроним окидачима догађаја управља планер BuzzDesk системског сервиса у позадини (препоручено).',
         'Synchronous event triggers would be processed directly during the web request.' =>
             'Синхрони окидачи догађаја биће обрађени директно током веб захтева.',
         'Add all attachments' => '',
@@ -1104,11 +1101,11 @@ sub Data {
         'The name is typically used to call up this web service operation from a remote system.' =>
             'Назив се обично користи за позивање операције веб сервиса из удаљеног система.',
         'Operation backend' => 'Модул операције',
-        'This Znuny operation backend module will be called internally to process the request, generating data for the response.' =>
+        'This BuzzDesk operation backend module will be called internally to process the request, generating data for the response.' =>
             'Овај модул операције ће бити интерно позван да обради захтев, генерисањем података за одговор.',
         'Mapping for incoming request data' => 'Мапирање за долазне податке захтева',
-        'The request data will be processed by this mapping, to transform it to the kind of data Znuny expects.' =>
-            'Подаци захтева ће бити обрађени кроз мапирање, ради трансформације у облик који Znuny очекује.',
+        'The request data will be processed by this mapping, to transform it to the kind of data BuzzDesk expects.' =>
+            'Подаци захтева ће бити обрађени кроз мапирање, ради трансформације у облик који BuzzDesk очекује.',
         'Mapping for outgoing response data' => 'Мапирање за излазне податке одговора',
         'The response data will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
             'Подаци одговора ће бити обрађени кроз ово мапирање, ради трансформације у облик који удаљени систем очекује.',
@@ -1131,8 +1128,8 @@ sub Data {
             '',
         'Maximum message length' => 'Највећа дужина поруке',
         'This field should be an integer number.' => 'Ово поље треба да буде цео број.',
-        'Here you can specify the maximum size (in bytes) of REST messages that Znuny will process.' =>
-            'Овде можете унети максималну величину (у бајтима) REST порука које ће Znuny да обради.',
+        'Here you can specify the maximum size (in bytes) of REST messages that BuzzDesk will process.' =>
+            'Овде можете унети максималну величину (у бајтима) REST порука које ће BuzzDesk да обради.',
         'Send Keep-Alive' => 'Пошаљи Keep-Alive',
         'This configuration defines if incoming connections should get closed or kept alive.' =>
             'Конфигурација дефинише да ли долазна конекција треба да се затвори и одржава.',
@@ -1200,22 +1197,22 @@ sub Data {
         'Client Certificate' => 'Клијентски сертификат',
         'The full path and name of the SSL client certificate file (must be in PEM, DER or PKCS#12 format).' =>
             'Цела путања и назив за датотеку SSL сертификата (мора бити у PEM, DER или PKCS#12 формату).',
-        'e.g. /opt/znuny/var/certificates/SOAP/certificate.pem' => 'нпр. /opt/znuny/var/certificates/SOAP/certificate.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/certificate.pem' => 'нпр. /opt/buzzdesk/var/certificates/SOAP/certificate.pem',
         'Client Certificate Key' => 'Кључ клијентског сертификата',
         'The full path and name of the SSL client certificate key file (if not already included in certificate file).' =>
             'Цела путања и назив за датотеку кључа SSL сертификата (уколико није укључен у датотеку сертификата).',
-        'e.g. /opt/znuny/var/certificates/SOAP/key.pem' => 'нпр. /opt/znuny/var/certificates/SOAP/key.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/key.pem' => 'нпр. /opt/buzzdesk/var/certificates/SOAP/key.pem',
         'Client Certificate Key Password' => 'Лозинка кључа клијентског сертификата',
         'The password to open the SSL certificate if the key is encrypted.' =>
             'Лозинка за отварање SSL сертификата уколико је кључ шифрован.',
         'Certification Authority (CA) Certificate' => 'Сертификат сертификационог тела (CA)',
         'The full path and name of the certification authority certificate file that validates SSL certificate.' =>
             'Цела путања и назив сертификационог тела које провера исправност SSL сертификата.',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA/ca.pem' => 'нпр. /opt/znuny/var/certificates/SOAP/CA/ca.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem' => 'нпр. /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem',
         'Certification Authority (CA) Directory' => 'Директоријум сертификационог тела (CA)',
         'The full path of the certification authority directory where the CA certificates are stored in the file system.' =>
             'Цела путања директоријума сертификационог тела где се складиште CA сертификати у систему датотека.',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA' => 'нпр. /opt/znuny/var/certificates/SOAP/CA',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA' => 'нпр. /opt/buzzdesk/var/certificates/SOAP/CA',
         'Controller mapping for Invoker' => 'Мапирање контролера за позиваоца',
         'The controller that the invoker should send requests to. Variables marked by a \':\' will get replaced by the data value and passed along with the request. (e.g. /Ticket/:TicketID?UserLogin=:UserLogin&Password=:Password).' =>
             'Контролер коме ће позивалац прослеђивати захтеве. Променљиве обележене са \':\' ће бити замењене њиховим вредностима и прослеђене заједно са захтевом (нпр. /Ticket/:TicketID?UserLogin=:UserLogin&Password=:Password).',
@@ -1272,13 +1269,13 @@ sub Data {
         'Select how SOAP response function wrapper should be constructed.' =>
             'Изаберите како ће бити конструисан омотач функције SOAP одговора.',
         'Response name free text' => 'Слободан текст назива одговора',
-        'Here you can specify the maximum size (in bytes) of SOAP messages that Znuny will process.' =>
-            'Овде можете унети максималну величину (у бајтима) SOAP порука које ће Znuny да обради.',
+        'Here you can specify the maximum size (in bytes) of SOAP messages that BuzzDesk will process.' =>
+            'Овде можете унети максималну величину (у бајтима) SOAP порука које ће BuzzDesk да обради.',
         'Fixed namespace prefix' => '',
         'Use a fixed namespace prefix (e. g. myns:) for the root tag of a SOAP message.' =>
             '',
         'Suffix for response tag' => '',
-        'Usually Znuny expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
+        'Usually BuzzDesk expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
             '',
         'Encoding' => 'Кодни распоред',
         'The character encoding for the SOAP message contents.' => 'Кодни распоред знакова за садржај SOAP поруке.',
@@ -1321,10 +1318,10 @@ sub Data {
         'Provider transport' => 'Транспорт провајдера',
         'Requester transport' => 'Транспорт потражиоца',
         'Debug threshold' => 'Праг уклањања грешака',
-        'In provider mode, Znuny offers web services which are used by remote systems.' =>
-            'У режиму провајдера, Znuny нуди веб сервисе који се користе од стране удаљених система.',
-        'In requester mode, Znuny uses web services of remote systems.' =>
-            'У режиму наручиоца, Znuny користи веб сервисе удаљених система.',
+        'In provider mode, BuzzDesk offers web services which are used by remote systems.' =>
+            'У режиму провајдера, BuzzDesk нуди веб сервисе који се користе од стране удаљених система.',
+        'In requester mode, BuzzDesk uses web services of remote systems.' =>
+            'У режиму наручиоца, BuzzDesk користи веб сервисе удаљених система.',
         'Network transport' => 'Мрежни транспорт',
         'Error Handling Modules' => 'Модули за обраду грешке',
         'Error handling modules are used to react in case of errors during the communication. Those modules are executed in a specific order, which can be changed by drag and drop.' =>
@@ -1442,8 +1439,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportEmailSettings.tt
         'Use comma or semicolon to separate email addresses.' => 'Користите зарез или тачку-зарез за одвајање имејл адреса.',
-        'You can use Znuny-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
-            'Можете користити Znuny тагове као <OTRS_TICKET_DynamicField_...> за уметање вредности из тренутног тикета.',
+        'You can use BuzzDesk-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
+            'Можете користити BuzzDesk тагове као <OTRS_TICKET_DynamicField_...> за уметање вредности из тренутног тикета.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportWebserviceSettings.tt
         'Web service name' => '',
@@ -1510,8 +1507,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminPGP.tt
         'PGP support is disabled' => 'PGP подршка је онемогућена',
-        'To be able to use PGP in Znuny, you have to enable it first.' =>
-            'Да би могли да користите PGP у Znuny, морате га прво омогућити.',
+        'To be able to use PGP in BuzzDesk, you have to enable it first.' =>
+            'Да би могли да користите PGP у BuzzDesk, морате га прво омогућити.',
         'Enable PGP support' => 'Омогући PGP подршку',
         'Faulty PGP configuration' => 'Неисправна PGP конфигурација',
         'PGP support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -1542,23 +1539,23 @@ sub Data {
         'Do you really want to reinstall this package? Any manual changes will be lost.' =>
             'Да ли стварно желите да поново инсталирате овај пакет? Све ручне промене ће бити изгубљене.',
         'Go to updating instructions' => 'Иди на упутство за ажурирање',
-        'Go to znuny.org' => '',
+        'Go to buzzdesk.org' => '',
         'package information' => 'Информације о пакету',
-        'Package installation requires a patch level update of Znuny.' =>
-            'Инсталација пакета захтева ажурирану верзију Znuny.',
-        'Package update requires a patch level update of Znuny.' => 'Ажурирање пакета захтева ажурирану верзију Znuny.',
-        'Please note that your installed Znuny version is %s.' => 'Тренутно инсталирана Znuny верзија је %s.',
-        'To install this package, you need to update Znuny to version %s or newer.' =>
-            'Да бисте инсталирали овај пакет, неопходно је да ажурирате ваш Znuny на верзију %s или новију.',
-        'This package can only be installed on Znuny version %s or older.' =>
-            'Овај пакет се може инсталирати само на Znuny верзију%s или старију.',
-        'This package can only be installed on Znuny version %s.' => '',
-        'Why should I keep Znuny up to date?' => 'Зашто би требало да Znuny увек буде ажуриран?',
+        'Package installation requires a patch level update of BuzzDesk.' =>
+            'Инсталација пакета захтева ажурирану верзију BuzzDesk.',
+        'Package update requires a patch level update of BuzzDesk.' => 'Ажурирање пакета захтева ажурирану верзију BuzzDesk.',
+        'Please note that your installed BuzzDesk version is %s.' => 'Тренутно инсталирана BuzzDesk верзија је %s.',
+        'To install this package, you need to update BuzzDesk to version %s or newer.' =>
+            'Да бисте инсталирали овај пакет, неопходно је да ажурирате ваш BuzzDesk на верзију %s или новију.',
+        'This package can only be installed on BuzzDesk version %s or older.' =>
+            'Овај пакет се може инсталирати само на BuzzDesk верзију%s или старију.',
+        'This package can only be installed on BuzzDesk version %s.' => '',
+        'Why should I keep BuzzDesk up to date?' => 'Зашто би требало да BuzzDesk увек буде ажуриран?',
         'You will receive updates about relevant security issues.' => 'Добићете ажурирања одговарајућих безбедносних издања.',
-        'You will receive updates for all other relevant Znuny issues.' =>
-            'Добићете ажурирања свих других релевантних Znuny издања.',
+        'You will receive updates for all other relevant BuzzDesk issues.' =>
+            'Добићете ажурирања свих других релевантних BuzzDesk издања.',
         'How can I do a patch level update if I don’t have a contract?' =>
-            'Како могу да ажурирам верзију Znuny уколико немам уговор?',
+            'Како могу да ажурирам верзију BuzzDesk уколико немам уговор?',
         'Please find all relevant information within the updating instructions at %s.' =>
             'Молимо пронађите све релевантне информације у оквиру инструкција за ажурирање на %s.',
         'In case you would have further questions we would be glad to answer them.' =>
@@ -1955,8 +1952,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSMIME.tt
         'SMIME support is disabled' => 'SMIME подршка је онемогућена',
-        'To be able to use SMIME in Znuny, you have to enable it first.' =>
-            'Да би могли да користите SMIME у Znuny, морате је прво омогућити.',
+        'To be able to use SMIME in BuzzDesk, you have to enable it first.' =>
+            'Да би могли да користите SMIME у BuzzDesk, морате је прво омогућити.',
         'Enable SMIME support' => 'Омогући SMIME подршку',
         'Faulty SMIME configuration' => 'Неисправна SMIME конфигурација',
         'SMIME support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -2149,8 +2146,8 @@ sub Data {
         'Find out how to use the system configuration by reading the %s.' =>
             'Сазнајте како да користите системску конфигурацију читањем %s.',
         'Search in all settings...' => 'Претражите сва подешавања...',
-        'There are currently no settings available. Please make sure to run \'znuny.Console.pl Maint::Config::Rebuild\' before using the software.' =>
-            'Тренутно нема доступних подешавања. Молимо проверите да ли сте покренули скрипт \'znuny.Console.pl Maint::Config::Rebuild\' пре коришћења апликације.',
+        'There are currently no settings available. Please make sure to run \'buzzdesk.Console.pl Maint::Config::Rebuild\' before using the software.' =>
+            'Тренутно нема доступних подешавања. Молимо проверите да ли сте покренули скрипт \'buzzdesk.Console.pl Maint::Config::Rebuild\' пре коришћења апликације.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSystemConfigurationDeployment.tt
         'Help' => 'Помоћ',
@@ -2445,17 +2442,17 @@ sub Data {
         'Customer User Information Center' => 'Клијент-кориснички информативни центар',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDaemonInfo.tt
-        'The Znuny Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
-            'Znuny сервис је системски процес који извршава асинхроне послове, нпр. окидање ескалација тикета, слање имејлова, итд.',
-        'A running Znuny Daemon is mandatory for correct system operation.' =>
-            'Покренут Znuny системски сервис је неопходан за исправно функционисање система.',
-        'Starting the Znuny Daemon' => 'Покретање Znuny системског сервиса',
-        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the Znuny Daemon is running and start it if needed.' =>
-            'Осигурава да датотека \'%s\' постоји (без .dist екстензије). Овај крон посао ће проверавати сваких 5 минута да ли Znuny системски сервис ради и покреће га ако је потребно.',
-        'Execute \'%s start\' to make sure the cron jobs of the \'znuny\' user are active.' =>
-            'Извршите \'%s start\' да би били сигурни да су крон послови за Znuny корисника увек активни.',
-        'After 5 minutes, check that the Znuny Daemon is running in the system (\'bin/znuny.Daemon.pl status\').' =>
-            'После 5 минута, проверава да ли Znuny системски сервис функционише у систему (\'bin/znuny.Daemon.pl status\').',
+        'The BuzzDesk Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
+            'BuzzDesk сервис је системски процес који извршава асинхроне послове, нпр. окидање ескалација тикета, слање имејлова, итд.',
+        'A running BuzzDesk Daemon is mandatory for correct system operation.' =>
+            'Покренут BuzzDesk системски сервис је неопходан за исправно функционисање система.',
+        'Starting the BuzzDesk Daemon' => 'Покретање BuzzDesk системског сервиса',
+        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the BuzzDesk Daemon is running and start it if needed.' =>
+            'Осигурава да датотека \'%s\' постоји (без .dist екстензије). Овај крон посао ће проверавати сваких 5 минута да ли BuzzDesk системски сервис ради и покреће га ако је потребно.',
+        'Execute \'%s start\' to make sure the cron jobs of the \'buzzdesk\' user are active.' =>
+            'Извршите \'%s start\' да би били сигурни да су крон послови за BuzzDesk корисника увек активни.',
+        'After 5 minutes, check that the BuzzDesk Daemon is running in the system (\'bin/buzzdesk.Daemon.pl status\').' =>
+            'После 5 минута, проверава да ли BuzzDesk системски сервис функционише у систему (\'bin/buzzdesk.Daemon.pl status\').',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboard.tt
         'Dashboard' => 'Командна табла',
@@ -2599,7 +2596,7 @@ sub Data {
         'This setting can currently not be saved' => 'Ово подешавање тренутно не може бити сачувано',
         'Save setting' => '',
         'Save this setting' => 'Сачувај ово подешавање',
-        'Did you know? You can help translating Znuny at %s.' => '',
+        'Did you know? You can help translating BuzzDesk at %s.' => '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentPreferencesOverview.tt
         'Choose from the groups on the left to find the settings you\'d wish to change.' =>
@@ -3138,8 +3135,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBStart.tt
         'Install Type' => 'Инсталирај тип',
-        'Create a new database for Znuny' => 'Креирај нову базу података за Znuny',
-        'Use an existing database for Znuny' => 'Користи постојећу базу података за Znuny',
+        'Create a new database for BuzzDesk' => 'Креирај нову базу података за BuzzDesk',
+        'Use an existing database for BuzzDesk' => 'Користи постојећу базу података за BuzzDesk',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBmssql.tt
         'If you have set a root password for your database, it must be entered here. If not, leave this field empty.' =>
@@ -3150,8 +3147,8 @@ sub Data {
         'Database check successful.' => 'Успешна провера базе података.',
         'Database User' => 'Корисник базе података',
         'New' => 'Ново',
-        'A new database user with limited permissions will be created for this Znuny system.' =>
-            'Нови корисник базе са ограниченим правима ће бити креиран за овај Znuny систем.',
+        'A new database user with limited permissions will be created for this BuzzDesk system.' =>
+            'Нови корисник базе са ограниченим правима ће бити креиран за овај BuzzDesk систем.',
         'Repeat Password' => 'Понови лозинку',
         'Generated password' => 'Генерисана лозинка',
         'Database' => 'База података',
@@ -3163,10 +3160,10 @@ sub Data {
         'SID' => 'SID',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerFinish.tt
-        'To be able to use Znuny you have to enter the following line in your command line (Terminal/Shell) as root.' =>
-            'Да би сте користили Znuny морате унети следеће у командну линију (Terminal/Shell) као root.',
+        'To be able to use BuzzDesk you have to enter the following line in your command line (Terminal/Shell) as root.' =>
+            'Да би сте користили BuzzDesk морате унети следеће у командну линију (Terminal/Shell) као root.',
         'Restart your webserver' => 'Поново покрените ваш веб сервер.',
-        'After doing so your Znuny is up and running.' => 'После овога ваш Znuny је укључен и ради.',
+        'After doing so your BuzzDesk is up and running.' => 'После овога ваш BuzzDesk је укључен и ради.',
         'Start page' => 'Početna strana',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerLicense.tt
@@ -3209,7 +3206,7 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/MobileNotAvailableWidget.tt
         'Feature not Available' => 'Својство није доступно',
-        'Sorry, but this feature of Znuny is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
+        'Sorry, but this feature of BuzzDesk is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
             'На жалост, ово својство моментално није доступно за мобилне уређаје. Ако желите да га користите, можете де вратити на десктоп мод или користити стандардни десктоп уређај.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Motd.tt
@@ -3249,8 +3246,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/PublicDefault.tt
         'Welcome' => 'Добродошли',
-        'This is the default public interface of Znuny! There was no action parameter given.' =>
-            'Ово је подразумевани јавни интерфејс за Znuny! Нема датих акционих параметара.',
+        'This is the default public interface of BuzzDesk! There was no action parameter given.' =>
+            'Ово је подразумевани јавни интерфејс за BuzzDesk! Нема датих акционих параметара.',
         'You could install a custom public module (via the package manager), for example the FAQ module, which has a public interface.' =>
             'Можете инсталирати додатни модул (видите управљање пакетима), нпр. FAQ, који има јавни интерфејс.',
 
@@ -3436,7 +3433,7 @@ sub Data {
         'Navigation' => 'Навигација',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Test.tt
-        'Znuny Test Page' => 'Znuny тест страна',
+        'BuzzDesk Test Page' => 'BuzzDesk тест страна',
         'Unlock' => 'Откључај',
         'Welcome %s %s' => 'Добродошли %s %s',
         'Counter' => 'Бројач',
@@ -3531,8 +3528,8 @@ sub Data {
         # Perl Module: Kernel/Modules/AdminACL.pm
         'ACL information from database is not in sync with the system configuration, please deploy all ACLs.' =>
             'ACL информације из базе података нису синхронизоване са системском конфигурацијом, молимо вас да примените све ACL листе.',
-        'ACLs could not be Imported due to a unknown error, please check Znuny logs for more information' =>
-            'ACL листе не могу да се увезу због непознате грешке, молимо да проверите Znuny логове за више информација',
+        'ACLs could not be Imported due to a unknown error, please check BuzzDesk logs for more information' =>
+            'ACL листе не могу да се увезу због непознате грешке, молимо да проверите BuzzDesk логове за више информација',
         'The following ACLs have been added successfully: %s' => 'Следеће ACL листе су успешно додате: %s',
         'The following ACLs have been updated successfully: %s' => 'Следеће ACL листе су успешно ажуриране: %s',
         'There where errors adding/updating the following ACLs: %s. Please check the log file for more information.' =>
@@ -3680,7 +3677,7 @@ sub Data {
         'Fields configuration is not valid' => 'Конфигурација поља је неважећа',
         'Objects configuration is not valid' => 'Конфигурација објекта је неважећа',
         'Could not reset Dynamic Field order properly, please check the error log for more details.' =>
-            'Није могуће поништити редослед динамичких поља, молимо да проверите Znuny логове за више информација.',
+            'Није могуће поништити редослед динамичких поља, молимо да проверите BuzzDesk логове за више информација.',
 
         # Perl Module: Kernel/Modules/AdminDynamicFieldAutoConfig.pm
         'Currently' => 'Тренутно',
@@ -3888,12 +3885,12 @@ sub Data {
         'Could not load %s.' => 'Није било могуће учитати %s.',
         'Could not read %s!' => 'Није могуће прочитати %s!',
         'Need a file to import!' => 'Неопходна датотека за увоз!',
-        'The imported file has not valid YAML content! Please check Znuny log for details' =>
-            'Увезена датотека нема исправан YAML садржај! Молимо проверите Znuny лог за детаље',
+        'The imported file has not valid YAML content! Please check BuzzDesk log for details' =>
+            'Увезена датотека нема исправан YAML садржај! Молимо проверите BuzzDesk лог за детаље',
         'Web service "%s" deleted!' => 'Веб сервис "%s" је обрисан!',
-        'Znuny as provider' => 'Znuny као пружалац услуга',
+        'BuzzDesk as provider' => 'BuzzDesk као пружалац услуга',
         'Operations' => 'Операције',
-        'Znuny as requester' => 'Znuny као наручилац',
+        'BuzzDesk as requester' => 'BuzzDesk као наручилац',
         'Invokers' => 'Позиваоци',
 
         # Perl Module: Kernel/Modules/AdminGenericInterfaceWebserviceHistory.pm
@@ -3942,8 +3939,8 @@ sub Data {
         'Need param Key to download!' => 'Неопходан параметар Key за преузимање!',
 
         # Perl Module: Kernel/Modules/AdminPackageManager.pm
-        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/znuny.Console.pl to install packages!' =>
-            'Жао нам је, али Apache::Reload је неопходан као PerlModule и PerlInitHandler у конфигурацији Apache-а. Молимо погледајте scripts/apache2-httpd.include.conf. Алтернативно, можете користити конзолну алатку bin/znuny.Console.pl за инсталацију пакета!',
+        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/buzzdesk.Console.pl to install packages!' =>
+            'Жао нам је, али Apache::Reload је неопходан као PerlModule и PerlInitHandler у конфигурацији Apache-а. Молимо погледајте scripts/apache2-httpd.include.conf. Алтернативно, можете користити конзолну алатку bin/buzzdesk.Console.pl за инсталацију пакета!',
         'No such package!' => 'Нема таквог пакета!',
         'No such file %s in package!' => 'Нема такве датотеке %s у пакету!',
         'No such file %s in local file system!' => 'Нема такве датотеке %s у локалном систему!',
@@ -4165,14 +4162,14 @@ sub Data {
         'You currently don\'t have any favourite settings.' => 'Тренутно немате ниједно омиљено подешавање.',
         'The following settings could not be found: %s' => 'Следећа подешавања нису могла бити пронађена: %s',
         'Import not allowed!' => 'Увоз није дозвољен!',
-        'System Configuration could not be imported due to an unknown error, please check Znuny logs for more information.' =>
-            'Системска конфигурација није могла бити увежена звог непознате грешке, молико проверите Znuny логове за више информација.',
+        'System Configuration could not be imported due to an unknown error, please check BuzzDesk logs for more information.' =>
+            'Системска конфигурација није могла бити увежена звог непознате грешке, молико проверите BuzzDesk логове за више информација.',
         'Category Search' => 'Претрага категорија',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationDeployment.pm
         'Quick Deploy by' => '',
-        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the Znuny log for more information.' =>
-            'Нека увезена подешавања нису присутна у тренутној конфигурацији или није било могуће ажурирати их. Молимо проверите Znuny лог за више информација.',
+        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the BuzzDesk log for more information.' =>
+            'Нека увезена подешавања нису присутна у тренутној конфигурацији или није било могуће ажурирати их. Молимо проверите BuzzDesk лог за више информација.',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationGroup.pm
         'You need to enable the setting before locking!' => 'Морате укључити подешавање пре закључавања!',
@@ -4597,7 +4594,7 @@ sub Data {
         'Configure "Home" in Kernel/Config.pm first!' => 'Прво подесите "Home" у Kernel/Config.pm!',
         'File "%s/Kernel/Config.pm" not found!' => 'Датотека "%s/Kernel/Config.pm" није пронађена!',
         'Directory "%s" not found!' => 'Директоријум "%s" није пронађен!',
-        'Install Znuny' => 'Инсталирај Znuny',
+        'Install BuzzDesk' => 'Инсталирај BuzzDesk',
         'Intro' => 'Увод',
         'Kernel/Config.pm isn\'t writable!' => 'Немогућ упис у %s/Kernel/Config.pm!',
         'If you want to use the installer, set the Kernel/Config.pm writable for the webserver user!' =>
@@ -4614,7 +4611,7 @@ sub Data {
         'Unknown database type "%s".' => 'Непознат тип базе података "%s".',
         'Please go back.' => 'Молимо идите назад.',
         'Create Database' => 'Креирај базу података',
-        'Install Znuny - Error' => 'Инсталирање Znuny - грешка',
+        'Install BuzzDesk - Error' => 'Инсталирање BuzzDesk - грешка',
         'File "%s/%s.xml" not found!' => 'Датотека "%s/%s.xml" није пронађена!',
         'Contact your Admin!' => 'Контактирајте вашег администратора!',
         'System Settings' => 'Системска подешавања',
@@ -4844,7 +4841,7 @@ sub Data {
             'Период одржавања система ће отпочети у: %s и очекивано је да се заврши у: %s',
 
         # Perl Module: Kernel/Output/HTML/Notification/DaemonCheck.pm
-        'Znuny Daemon is not running.' => 'Znuny системски сервис не ради.',
+        'BuzzDesk Daemon is not running.' => 'BuzzDesk системски сервис не ради.',
 
         # Perl Module: Kernel/Output/HTML/Notification/OAuth2TokenManagementTokenExpired.pm
         'OAuth2 token for "%s" has expired.' => '',
@@ -5223,8 +5220,8 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/InvalidDefaultValues.pm
         'Invalid Default Values' => 'Неисправне подразумеване вредности',
-        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/znuny.Console.pl Maint::Database::Check --repair' =>
-            'Пронађене су табеле са неисправним подразумеваним вредностима. Да бисте их аутоматски исправили, молимо покрените bin/znuny.Console.pl Maint::Database::Check --repair',
+        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/buzzdesk.Console.pl Maint::Database::Check --repair' =>
+            'Пронађене су табеле са неисправним подразумеваним вредностима. Да бисте их аутоматски исправили, молимо покрените bin/buzzdesk.Console.pl Maint::Database::Check --repair',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/MaxAllowedPacket.pm
         'Maximum Query Size' => 'Максимална величина упита',
@@ -5269,14 +5266,14 @@ sub Data {
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/postgresql/Version.pm
         'PostgreSQL 9.2 or higher is required.' => 'Неопходан је PostgreSQL 9.2 или више.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionZnuny.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionBuzzDesk.pm
         'Operating System' => 'Оперативни систем',
-        'Znuny Disk Partition' => 'Znuny партиција на диску',
+        'BuzzDesk Disk Partition' => 'BuzzDesk партиција на диску',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpace.pm
         'Disk Usage' => 'Коришћење диска',
-        'The partition where Znuny is located is almost full.' => 'Партиција на којој је смештен ОТРС је скоро пуна.',
-        'The partition where Znuny is located has no disk space problems.' =>
+        'The partition where BuzzDesk is located is almost full.' => 'Партиција на којој је смештен ОТРС је скоро пуна.',
+        'The partition where BuzzDesk is located has no disk space problems.' =>
             'Партиција на којој је смештен ОТРС нема проблеме са простором.',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpacePartitions.pm
@@ -5322,8 +5319,8 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/MPMModel.pm
         'MPM model' => 'MPM модел',
-        'Znuny requires apache to be run with the \'prefork\' MPM model.' =>
-            'Znuny захтева да Apache буде покренут са \'prefork\' MPM моделом.',
+        'BuzzDesk requires apache to be run with the \'prefork\' MPM model.' =>
+            'BuzzDesk захтева да Apache буде покренут са \'prefork\' MPM моделом.',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/Performance.pm
         'CGI Accelerator Usage' => 'Употреба CGI Accelerator',
@@ -5353,37 +5350,37 @@ sub Data {
         'Webserver Version' => 'Веб сервер верзија',
         'Could not determine webserver version.' => 'Не може да препозна веб сервер верзију.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticleSearchIndexStatus.pm
-        'Znuny' => '',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticleSearchIndexStatus.pm
+        'BuzzDesk' => '',
         'Article Search Index Status' => 'Стање индекса претраге чланака',
         'Indexed Articles' => 'Индексираних чланака',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticlesPerCommunicationChannel.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticlesPerCommunicationChannel.pm
         'Articles Per Communication Channel' => 'Чланака по комуникационом каналу',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLog.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLog.pm
         'Incoming communications' => 'Долазне комуникације',
         'Outgoing communications' => 'Одлазне комуникације',
         'Failed communications' => 'Неуспеле комуникације',
         'Average processing time of communications (s)' => 'Просечно време трајања комуникација (с)',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLogAccountStatus.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLogAccountStatus.pm
         'Communication Log Account Status (last 24 hours)' => 'Стање налога комуникационог лога (последњих 24 сата)',
         'No connections found.' => 'Нису пронађене конекције.',
         'ok' => 'у реду',
         'permanent connection errors' => 'трајне грешке у конекцији',
         'intermittent connection errors' => 'повремене грешке у конекцији',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ConfigSettings.pm
         'Config Settings' => 'Подешавања конфигурације',
         'Could not determine value.' => 'Није могуће утврдити вредност.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DaemonRunning.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DaemonRunning.pm
         'Daemon' => 'Системски сервис',
         'Daemon is running.' => 'Сервис ради.',
         'Daemon is not running.' => 'Сервис не ради.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DatabaseRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DatabaseRecords.pm
         'Database Records' => 'Записи у бази података',
         'Ticket History Entries' => 'Историја уноса тикета',
         'Articles' => 'Чланци',
@@ -5398,31 +5395,31 @@ sub Data {
         'Tickets Per Month (avg)' => 'Тикети месечно (просечно)',
         'Open Tickets' => 'Отворени тикети',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultSOAPUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultSOAPUser.pm
         'Default SOAP Username And Password' => 'Подразумевано SOAP корисничко име и лозинка',
         'Security risk: you use the default setting for SOAP::User and SOAP::Password. Please change it.' =>
             'Сигурносни ризик: користите подразумевана подешавања за SOAP::User i SOAP::Password. Молимо промените га.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultUser.pm
         'Default Admin Password' => 'Предефинисана лозинка администратора',
         'Security risk: the agent account root@localhost still has the default password. Please change it or invalidate the account.' =>
             'Сигурносни ризик: агент налог root@localhost још увек има предефинисану лозинку. Молимо промените је или деактивирајте налог.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/EmailQueue.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/EmailQueue.pm
         'Email Sending Queue' => 'Ред за слање имејлова',
         'Emails queued for sending' => 'Број имејлова заказаних за слање',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FQDN.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FQDN.pm
         'FQDN (domain name)' => 'FQDN (назив домена)',
         'Please configure your FQDN setting.' => 'Молимо да конфигуришете FQDN подешавање.',
         'Domain Name' => 'Назив домена',
         'Your FQDN setting is invalid.' => 'Ваша FQDN подешавања су неважећа.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FileSystemWritable.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FileSystemWritable.pm
         'File System Writable' => 'Омогућено писање у систем датотека.',
-        'The file system on your Znuny partition is not writable.' => 'Није могуће писање у систем датотека на вашој Znuny партицији.',
+        'The file system on your BuzzDesk partition is not writable.' => 'Није могуће писање у систем датотека на вашој BuzzDesk партицији.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/LegacyConfigBackups.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/LegacyConfigBackups.pm
         'Legacy Configuration Backups' => 'Резервне копије прошлих конфигурација',
         'No legacy configuration backup files found.' => 'Нису пронађене резервне копије прошлих конфигурација.',
         'Legacy configuration backup files found in Kernel/Config/Backups folder, but they might still be required by some packages.' =>
@@ -5430,12 +5427,12 @@ sub Data {
         'Legacy configuration backup files are no longer needed for the installed packages, please remove them from Kernel/Config/Backups folder.' =>
             'Резервне копије прошлих конфигурација више нису неопходне за рад инсталираних пакета, молимо уклоните их из Kernel/Config/Backups.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/MultipleJSFileLoad.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/MultipleJSFileLoad.pm
         'The following JavaScript files loaded multiple times:' => '',
         'Files' => '',
         'Views with multiple loaded JavaScript files' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageDeployment.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageDeployment.pm
         'Package Installation Status' => 'Статус инсталације пакета',
         'Some packages have locally modified files.' => 'Неки пакети садрже локално измењене датотеке.',
         'Some packages are not correctly installed.' => 'Неки пакети нису исправно инсталирани.',
@@ -5443,75 +5440,75 @@ sub Data {
         'Some packages are not allowed for the current framework version.' =>
             'Неки пакети нису дозвољени за верзију вашег система. ',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageList.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageList.pm
         'Package List' => 'Листа пакета',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SessionConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SessionConfigSettings.pm
         'Session Config Settings' => 'Подешавања сесија',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SpoolMails.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SpoolMails.pm
         'Spooled Emails' => 'Имејлови у реду чекања',
-        'There are emails in var/spool that Znuny could not process.' => 'Постоје имејлови у var/spool које Znuny не може да обради.',
+        'There are emails in var/spool that BuzzDesk could not process.' => 'Постоје имејлови у var/spool које BuzzDesk не може да обради.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SystemID.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SystemID.pm
         'Your SystemID setting is invalid, it should only contain digits.' =>
             'Ваша подешавање SystemID је неважеће, треба да садржи само цифре.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/DefaultType.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/DefaultType.pm
         'Default Ticket Type' => 'Подразумевани тип тикета',
         'The configured default ticket type is invalid or missing. Please change the setting Ticket::Type::Default and select a valid ticket type.' =>
             'Подешени подразумевани тип тикета је неважећи или недостаје. Молимо промените подешавање Ticket::Type::Default и изаберите важећи тип тикета.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/IndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/IndexModule.pm
         'Ticket Index Module' => 'Тикет индекс модул',
         'You have more than 60,000 tickets and should use the StaticDB backend. See admin manual (Performance Tuning) for more information.' =>
             'Имате више од 60.000 тикета и треба да користите StaticDB модул. Погледајте администраторско упутство (Подешавање перформанси) за више информација.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/InvalidUsersWithLockedTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/InvalidUsersWithLockedTickets.pm
         'Invalid Users with Locked Tickets' => 'Неисправни корисници са закључаним тикетима',
         'There are invalid users with locked tickets.' => 'Постоје неисправни корисници са закључаним тикетима.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/OpenTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/OpenTickets.pm
         'You should not have more than 8,000 open tickets in your system.' =>
             'Не би требало да имате више од 8.000 отворених тикета у систему.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/SearchIndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/SearchIndexModule.pm
         'Ticket Search Index Module' => 'Модул за индексну претрагу тикета',
         'The indexing process forces the storage of the original article text in the article search index, without executing filters or applying stop word lists. This will increase the size of the search index and thus may slow down fulltext searches.' =>
             'Процес индексирања ће укључити спремање оригиналног текста чланка у индексу претраге, без извршавања филтера или уклањања зауставних речи. Ово ће увећати величину индекса претраге и може успорити текстуалну претрагу.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/StaticDBOrphanedRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/StaticDBOrphanedRecords.pm
         'Orphaned Records In ticket_lock_index Table' => 'Напуштени записи у ticket_lock_index табели',
-        'Table ticket_lock_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            'Табела ticket_lock_index садржи неповезане записе. Молимо да покренете bin/znuny.Console.pl Maint::Ticket::QueueIndexCleanup да би очистили StaticDB индекс.',
+        'Table ticket_lock_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            'Табела ticket_lock_index садржи неповезане записе. Молимо да покренете bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexCleanup да би очистили StaticDB индекс.',
         'Orphaned Records In ticket_index Table' => 'Напуштени записи у ticket_index табели',
-        'Table ticket_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            'Табела ticket_lindex садржи неповезане записе. Молимо да покренете bin/znuny.Console.pl Maint::Ticket::QueueIndexCleanup да би очистили StaticDB индекс.',
+        'Table ticket_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            'Табела ticket_lindex садржи неповезане записе. Молимо да покренете bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexCleanup да би очистили StaticDB индекс.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/TimeSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/TimeSettings.pm
         'Time Settings' => 'Подешавања времена',
         'Server time zone' => 'Временска зона сервера',
-        'Znuny time zone' => 'Znuny временска зона',
-        'Znuny time zone is not set.' => 'Znuny временска зона није подешена.',
+        'BuzzDesk time zone' => 'BuzzDesk временска зона',
+        'BuzzDesk time zone is not set.' => 'BuzzDesk временска зона није подешена.',
         'User default time zone' => 'Подразумевана временска зона корисника',
         'User default time zone is not set.' => 'Подразумевана временска зона корисника није подешена.',
         'Calendar time zone is not set.' => 'Временска зона календара није подешена.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentSkinUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentSkinUsage.pm
         'UI - Agent Skin Usage' => 'UI - изгледи интерфејса оператера у коришћењу',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentThemeUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentThemeUsage.pm
         'UI - Agent Theme Usage' => 'UI - теме интерфејса оператера у коришћењу',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/SpecialStats.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/SpecialStats.pm
         'UI - Special Statistics' => 'UI - посебне статистике',
         'Agents using custom main menu ordering' => 'Оператери са прилагођеним редоследом главног менија',
         'Agents using favourites for the admin overview' => 'Оператери са омиљеним ставкама за администраторски преглед',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Version.pm
-        'Znuny Version' => 'Znuny верзија',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Version.pm
+        'BuzzDesk Version' => 'BuzzDesk верзија',
 
-        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/Znuny/ConcurrentUsers.pm
+        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/BuzzDesk/ConcurrentUsers.pm
         'Concurrent Users Details' => 'Детаљи истовремених корисника',
         'Concurrent Users' => 'Истовремени корисници',
 
@@ -5617,8 +5614,8 @@ sub Data {
             'Дефинише акције на којима је омогућен приказ дугмета за подешавање у апликативном додатку линкованих објеката (LinkObject::ViewMode = "complex"). Напомињемо да ове акције морају имати регистроване следеће JS и CSS датотеке: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js.',
         'Define which columns are shown in the linked appointment widget (LinkObject::ViewMode = "complex"). Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.' =>
             'Дефинише које колоне ће бити приказане у додатку линкованих термина (LinkObject::ViewMode = "сложено"). Могућа подешавања: 0 = искључено, 1 = укључено, 2 = подразумевано укључено.',
-        'Znuny doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
-            'Znuny не подржава термине који се понављају без крајњег датума или броја итерација. Приликом увоза календара, може се догодити да ICS датотека садржи такве \'бесконачне\' термине. Уместо таквог понашања, систем ће креирати све термине из прошлости, као и термине за следећи n број месеци (подразумевано 120 месеци/10 година).',
+        'BuzzDesk doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
+            'BuzzDesk не подржава термине који се понављају без крајњег датума или броја итерација. Приликом увоза календара, може се догодити да ICS датотека садржи такве \'бесконачне\' термине. Уместо таквог понашања, систем ће креирати све термине из прошлости, као и термине за следећи n број месеци (подразумевано 120 месеци/10 година).',
         'Defines the ticket appointment type backend for ticket escalation time.' =>
             'Дефинише модул термина тикета за време ескалације.',
         'Defines the ticket appointment type backend for ticket pending time.' =>
@@ -5655,14 +5652,14 @@ sub Data {
             'Активира додавање или освежавање аутоматских термина на основу времена тикета.',
 
         # XML Definition: Kernel/Config/Files/XML/Daemon.xml
-        'Defines the module to display a notification in the agent interface if the Znuny Daemon is not running.' =>
-            'Одређује модул за приказ обавештења у интерфејсу оператера ако Znuny системски сервис не ради.',
+        'Defines the module to display a notification in the agent interface if the BuzzDesk Daemon is not running.' =>
+            'Одређује модул за приказ обавештења у интерфејсу оператера ако BuzzDesk системски сервис не ради.',
         'List of CSS files to always be loaded for the agent interface.' =>
             'Листа CSS директоријума увек учитаних за интерфејс оператера.',
         'List of JS files to always be loaded for the agent interface.' =>
             'Листа JS директоријума увек учитаних за интерфејс оператера.',
-        'Type of daemon log rotation to use: Choose \'Znuny\' to let Znuny system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
-            'Врста ротације сервисног лога: изаберите \'Znuny\' да допустите Znuny систему да ротира логове, или \'Екстерно\' за други механизам ротације (нпр. logrotate). Напомена: ектерни ротациони механизми захтевају сопствену и независну конфигурацију.',
+        'Type of daemon log rotation to use: Choose \'BuzzDesk\' to let BuzzDesk system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
+            'Врста ротације сервисног лога: изаберите \'BuzzDesk\' да допустите BuzzDesk систему да ротира логове, или \'Екстерно\' за други механизам ротације (нпр. logrotate). Напомена: ектерни ротациони механизми захтевају сопствену и независну конфигурацију.',
         'If enabled the daemon will use this directory to create its PID files. Note: Please stop the daemon before any change and use this setting only if &lt;$OTRSHome&gt;/var/run/ can not be used.' =>
             '',
         'Defines the number of days to keep the daemon log files.' => 'Одређује колико дана ће се чувати датотеке историјата рада системског сервиса',
@@ -5723,8 +5720,8 @@ sub Data {
         'Remove closed tickets from agents\' ticket watch lists.' => '',
 
         # XML Definition: Kernel/Config/Files/XML/Framework.xml
-        'Disables the web installer (http://yourhost.example.com/znuny/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
-            'Онемогућује приступ инсталационом екрану (http://yourhost.example.com/znuny/installer.pl) у сврху заштите система од недозвољеног преузимања. Ако је искључено, систем може бити поново инсталиран и тренутна основна конфигурација ће бити коришћена да унапред попуни питања унутар инсталационог екрана. Уколико није укључено, такође се онемогућују GenericAgent, PackageManager и SQL Box.',
+        'Disables the web installer (http://yourhost.example.com/buzzdesk/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
+            'Онемогућује приступ инсталационом екрану (http://yourhost.example.com/buzzdesk/installer.pl) у сврху заштите система од недозвољеног преузимања. Ако је искључено, систем може бити поново инсталиран и тренутна основна конфигурација ће бити коришћена да унапред попуни питања унутар инсталационог екрана. Уколико није укључено, такође се онемогућују GenericAgent, PackageManager и SQL Box.',
         'Enables or disables the debug mode over frontend interface.' => 'Укључује или искључује мод тражења грешака преко приступног интерфејса.',
         'Delivers extended debugging information in the frontend in case any AJAX errors occur, if enabled.' =>
             'Омогућава прибављање додатних информација о грешкама у интерфејсу, у случају проблема са AJAX методом.',
@@ -5736,16 +5733,16 @@ sub Data {
             'Контролише да ли је администратору дозвољено да увезе сачувану системску конфигурацију у „SysConfig”.',
         'Defines the name of the application, shown in the web interface, tabs and title bar of the web browser.' =>
             'Дефинише назив апликације, који се приказује у веб интерфејсу, картицама и насловној траци веб претраживача.',
-        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of Znuny).' =>
-            'Дефинише идентификатор система. Сваки број тикета и низ знакова „http” сесије садрши овај ИД. Ово осигурава да ће само тикети који припадају вашем систему бити обрађени као операције праћења (корисно када се одвија комуникација између две „Znuny” инстанце).',
+        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of BuzzDesk).' =>
+            'Дефинише идентификатор система. Сваки број тикета и низ знакова „http” сесије садрши овај ИД. Ово осигурава да ће само тикети који припадају вашем систему бити обрађени као операције праћења (корисно када се одвија комуникација између две „BuzzDesk” инстанце).',
         'Defines the fully qualified domain name of the system. This setting is used as a variable, OTRS_CONFIG_FQDN which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
             'Дефинише потпуно квалификовано име домена система. Ово подешавање се користи као променљива OTRS_CONFIG_FQDN, која се налази у свим формама порука и користи од стране апликације, за грађење веза до тикета унутар вашег система.',
         'Defines the fully qualified domain name for external IDs generation (i.e. Message-ID, ContentID).' =>
             '',
-        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
-            'Дефинише HTTP хост за слање података подршке преко јавног модуле \'PublicSupportDataCollector\' (нпр. од стране Znuny системског сервиса).',
-        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
-            'Дефинише предвиђено време (у секундама, минимум је 20 секунди) за прикупљање података подршке путем модула јавог интерфејса \'PublicSupportDataCollector\' (нпр. кад се користи путем Znuny системског сервиса).',
+        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
+            'Дефинише HTTP хост за слање података подршке преко јавног модуле \'PublicSupportDataCollector\' (нпр. од стране BuzzDesk системског сервиса).',
+        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
+            'Дефинише предвиђено време (у секундама, минимум је 20 секунди) за прикупљање података подршке путем модула јавог интерфејса \'PublicSupportDataCollector\' (нпр. кад се користи путем BuzzDesk системског сервиса).',
         'When support data is collected via SupportDataCollector, certain SysConfig values marked with ValueType="Password" are automatically masked. This prevents passwords from appearing in plain text in the support data. This setting defines the settings that contain complex configuration hashes that should not be masked when generating the support data.' =>
             '',
         'Defines the type of protocol, used by the web server, to serve the application. If https protocol will be used instead of plain http, it must be specified here. Since this has no affect on the web server\'s settings or behavior, it will not change the method of access to the application and, if it is wrong, it will not prevent you from logging into the application. This setting is only used as a variable, OTRS_CONFIG_HttpType which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
@@ -5764,8 +5761,8 @@ sub Data {
             'Дефинише све језике који су доступни апликацији. Овде унесите имена језика само на енглеском.',
         'Defines all the languages that are available to the application. Specify only native names of languages here.' =>
             'Дефинише све језике који су доступни апликацији. Овде унесите имена језика само на матичном језику.',
-        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.znuny.org/developer/general_information/themes.html.' =>
-            'Одређује подразумевану тему главног интерфејса (HTML) која ће бити коришћена од стране оператера или клијената. Уколико желите можете додати вашу личну тему. Молимо вас да погледате упутство за администратора, које се налази на https://doc.znuny.org/developer/general_information/themes.html.',
+        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.buzzdesk.org/developer/general_information/themes.html.' =>
+            'Одређује подразумевану тему главног интерфејса (HTML) која ће бити коришћена од стране оператера или клијената. Уколико желите можете додати вашу личну тему. Молимо вас да погледате упутство за администратора, које се налази на https://doc.buzzdesk.org/developer/general_information/themes.html.',
         'It is possible to configure different themes, for example to distinguish between agents and customers, to be used on a per-domain basis within the application. Using a regular expression (regex), you can configure a Key/Content pair to match a domain. The value in "Key" should match the domain, and the value in "Content" should be a valid theme on your system. Please see the example entries for the proper form of the regex.' =>
             'Могуће је подесити различите теме за различите оператере и кориснике, који се користе на нивоу домена у апликацији. Коришћењем регуларног израза (regex), можете подесити пар кључ/вредност за препознавање домена. Вредност у Key би требало да препозна домен, а вредност у Content би требало да буде важећа тема у систему. Молимо консултујте примере за исправан облик регуларног израза.',
         'The headline shown in the customer interface.' => 'Наслов приказан у клијентском интерфејсу.',
@@ -5827,8 +5824,8 @@ sub Data {
             '',
         'Global settings for all popup profiles.' => '',
         'Disable autocomplete in the login screen.' => '',
-        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow Znuny to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
-            'Онемогућава HTTP заглавље "X-Frame-Options: SAMEORIGIN" ради учитавања Znuny у оквиру IFRAME на другим странама. Онемогућавање овог HTTP заглавља сноси сигурносни ризик! Искључите га само ако знате шта радите!',
+        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow BuzzDesk to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
+            'Онемогућава HTTP заглавље "X-Frame-Options: SAMEORIGIN" ради учитавања BuzzDesk у оквиру IFRAME на другим странама. Онемогућавање овог HTTP заглавља сноси сигурносни ризик! Искључите га само ако знате шта радите!',
         'Disable HTTP header "Content-Security-Policy" to allow loading of external script contents. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
             'Онемогућава HTTP заглавље "Content-Security-Policy" ради учитавања екстерних скриптова. Онемогућавање овог HTTP заглавља сноси сигурносни ризик! Искључите га само ако знате шта радите!',
         'Automated line break in text messages after x number of chars.' =>
@@ -5874,8 +5871,8 @@ sub Data {
             'Уколико је подешен SysLog за LogModule, може бити дефинисан карактерсет за логовање.',
         'If "file" was selected for LogModule, a logfile must be specified. If the file doesn\'t exist, it will be created by the system.' =>
             'Уколико је подешен File за LogModule, мора бити дефинисана локација лог датотеке. Уколико датотека не постоји, биће креирана од стране система.',
-        'Adds a suffix with the actual year and month to the Znuny log file. A logfile for every month will be created.' =>
-            'Додаје текућу годину и месец као суфикс у Znuny лог датотеку. Биће креирана лог датотека за сваки месец.',
+        'Adds a suffix with the actual year and month to the BuzzDesk log file. A logfile for every month will be created.' =>
+            'Додаје текућу годину и месец као суфикс у BuzzDesk лог датотеку. Биће креирана лог датотека за сваки месец.',
         'Set the minimum log level. If you select \'error\', just errors are logged. With \'debug\' you get all logging messages. The order of log levels is: \'debug\', \'info\', \'notice\' and \'error\'.' =>
             'Одредите најнижи ниво логовања. Уколико изаберете \'error\', биће логоване само грешке. Са \'debug\' добићете све поруке у логовима. Редослед нивоа логовања је: \'debug\', \'info\', \'notice\' и \'error\'.',
         'Defines the module to send emails. "DoNotSendEmail" doesn\'t send emails at all. Any of the "SMTP" mechanisms use a specified (external) mailserver. "Sendmail" directly uses the sendmail binary of your operating system. "Test" doesn\'t send emails, but writes them to $OTRS_HOME/var/tmp/CacheFileStorable/EmailTest/ for testing purposes.' =>
@@ -5944,8 +5941,8 @@ sub Data {
             'Дефинише модул који приказује генеричку напомену у интерфејсу оператера. Биће приказан или "Text" (ако је конфигурисан) или садржај "File".',
         'Defines the module used to store the session data. With "DB" the frontend server can be splitted from the db server. "FS" is faster.' =>
             'Дефинише модул који се користи за складиштење података сесије. Са "DB" приступни сервер може бити одвојен од сервера базе података. "FS" је бржи.',
-        'Defines the name of the session key. E.g. Session, SessionID or Znuny.' =>
-            'Дефинише назив кључа сесије. Нпр. Session, SessionID или Znuny”',
+        'Defines the name of the session key. E.g. Session, SessionID or BuzzDesk.' =>
+            'Дефинише назив кључа сесије. Нпр. Session, SessionID или BuzzDesk”',
         'Defines the name of the key for customer sessions.' => 'Одређује назив кључа за клијентске сесије.',
         'Turns on the remote ip address check. It should not be enabled if the application is used, for example, via a proxy farm or a dialup connection, because the remote ip address is mostly different for the requests.' =>
             'Укључује проверу удаљене IP адресе. Треба бити искључено ако се апликација користи, на пример, преко proxy фарме или dialup конекције, зато што је удаљена IP адреса углавном другачија за сваки захтев.',
@@ -5978,10 +5975,10 @@ sub Data {
         'Defines the period of time (in minutes) before customer is marked as "away" due to inactivity (e.g. in the "Logged-In Users" widget or for the chat).' =>
             'Дефинише временски период (у минутима) после ког ће клијент бити означен као "одсутан" због неактивности (нпр. у додатку "Пријављени корисници" или за ћаскања).',
         'This setting is deprecated. Set OTRSTimeZone instead.' => 'Ово подешавање је застарело. Подесите OTRSTimeZone уместо њега.',
-        'Sets the time zone being used internally by Znuny to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
-            'Подешава интерну временску зону Znuny за нпр. чување датума и времена у бази података. Упозорење: ово подешавање не смете мењати једном када га подесите и ако су креирани тикети или било који други подаци са временом.',
-        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the Znuny time zone and the user\'s time zone.' =>
-            'Подешава временску зону која ће бити додељена ново-креираним корисницима и која ће бити коришћена за оне који још нису подесили временску зону. Ово је подразумевана временска зона за конверзију датума и времена између интерне Znuny временске зоне и временске зоне корисника.',
+        'Sets the time zone being used internally by BuzzDesk to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
+            'Подешава интерну временску зону BuzzDesk за нпр. чување датума и времена у бази података. Упозорење: ово подешавање не смете мењати једном када га подесите и ако су креирани тикети или било који други подаци са временом.',
+        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the BuzzDesk time zone and the user\'s time zone.' =>
+            'Подешава временску зону која ће бити додељена ново-креираним корисницима и која ће бити коришћена за оне који још нису подесили временску зону. Ово је подразумевана временска зона за конверзију датума и времена између интерне BuzzDesk временске зоне и временске зоне корисника.',
         'If enabled, users that haven\'t selected a time zone yet will be notified to do so. Note: Notification will not be shown if (1) user has not yet selected a time zone and (2) OTRSTimeZone and UserDefaultTimeZone do match and (3) are not set to UTC.' =>
             'Уколико је укључено, корисници који још нису одабрали временску зону биће обавештени о томе. Напомена: обавештење неће бити приказано уколико (1) корисник још није одабрао временску зону и (2) OTRSTimeZone и UserDefaultTimeZone се подударају и (3) нису постављена на UTC.',
         'Maximum Number of a calendar shown in a dropdown.' => 'Максимални број календара приказан у листи.',
@@ -5999,8 +5996,8 @@ sub Data {
         'Adds the one time vacation days for the indicated calendar.' => 'Једнократно додаје нерадне дане за изабрани календар.',
         'Defines the hours and week days of the indicated calendar, to count the working time.' =>
             'Одређује сате и дане у недељи у назначеном календару, ради рачунања радног времена.',
-        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your Znuny instance to stop working (probably any mask which takes input from the user).' =>
-            'Дефинише максималну величину (у бајтовима) за слање датотеке преко претраживача. Упозорење: Подешавање ове опције на сувише малу вредност може узроковати да многе маске у вашој Znuny инстанци престану са радом (вероватно свака маска која има улаз од корисника).',
+        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your BuzzDesk instance to stop working (probably any mask which takes input from the user).' =>
+            'Дефинише максималну величину (у бајтовима) за слање датотеке преко претраживача. Упозорење: Подешавање ове опције на сувише малу вредност може узроковати да многе маске у вашој BuzzDesk инстанци престану са радом (вероватно свака маска која има улаз од корисника).',
         'Selects the module to handle uploads via the web interface. "DB" stores all uploads in the database, "FS" uses the file system.' =>
             'Бира модул за руковање пренешеним датотекама преко веб интерфејса. "DB" складишти све пренешене датотеке у базу података, "FS" користи систем датотека.',
         'Specifies the text that should appear in the log file to denote a CGI script entry.' =>
@@ -6067,8 +6064,8 @@ sub Data {
             'Дефинише путању и TTF датотеку непропорционалног фонта у курзиву у PDF документима.',
         'Defines the path and TTF-File to handle bold italic monospaced font in PDF documents.' =>
             'Дефинише путању и TTF датотеку подебљаног непропорционалног фонта у курзиву у PDF документима.',
-        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the Znuny user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
-            'Обезбеђује „PGP” подршку. Када је „PGP” подршка омогућена за потписивање и енкрипровање мејла, строго се препоручује да веб сервер ради као „Znuny” корисник. У супротном, биће проблема са привилегијама приликом приступа „.gnupg” директоријуму.',
+        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the BuzzDesk user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
+            'Обезбеђује „PGP” подршку. Када је „PGP” подршка омогућена за потписивање и енкрипровање мејла, строго се препоручује да веб сервер ради као „BuzzDesk” корисник. У супротном, биће проблема са привилегијама приликом приступа „.gnupg” директоријуму.',
         'Defines the path to PGP binary.' => 'Одређује путању до PGP апликације.',
         'Sets the options for PGP binary.' => 'Одређује опције за PGP апликацију.',
         'Sets the preferred digest to be used for PGP binary.' => 'Дефинише мод шифровања PGP апликације.',
@@ -6086,10 +6083,10 @@ sub Data {
             'Одређује директоријум где се приватни „SSL” сертификати складиште.',
         'Cache time in seconds for the SSL certificate attributes.' => 'Време кеширања у секундама за „SSL” сертификоване атрибуте.',
         'Enables fetch S/MIME from CustomerUser backend support.' => 'Омогућава подршку за прибављање „S/MIME” из подршке позадинског система клијента корисника.',
-        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com).' =>
-            'Дефинише назив које ће апликација користити приликом слања обавештења. Назив се користи у називу пошиљаоца обавештења (нпр. "Znuny Notifications" znuny@your.example.com).',
-        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
-            'Дефинише имејл адресу коју ће апликација користити приликом слања обавештења. Имејл адреса се користи у називу пошиљаоца обавештења (нпр. "Znuny Notifications" znuny@your.example.com). Можете користити променљиву OTRS_CONFIG_FQDN из ваше конфигурације, или одредите другу имејл адресу.',
+        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com).' =>
+            'Дефинише назив које ће апликација користити приликом слања обавештења. Назив се користи у називу пошиљаоца обавештења (нпр. "BuzzDesk Notifications" buzzdesk@your.example.com).',
+        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
+            'Дефинише имејл адресу коју ће апликација користити приликом слања обавештења. Имејл адреса се користи у називу пошиљаоца обавештења (нпр. "BuzzDesk Notifications" buzzdesk@your.example.com). Можете користити променљиву OTRS_CONFIG_FQDN из ваше конфигурације, или одредите другу имејл адресу.',
         'Defines the validity period in seconds for password reset tokens. After this time the token expires and a new reset request is required. Default: 3600 (1 hour).' =>
             'Дефинише период важења у секундама за токене ресетовања лозинке. После тога токен истиче и потребан је нови захтев. Подразумевано: 3600 (1 сат).',
         'Maximum number of password reset requests allowed per IP address or username within the rate limit window. Set to 0 to disable rate limiting. Default: 5.' =>
@@ -6216,8 +6213,8 @@ sub Data {
             'Уколико је подешен „LDAP” за „Customer::AuthModule”, „BaseDN” мора бити дефинисан.',
         'If "LDAP" was selected for Customer::AuthModule, the user identifier must be specified.' =>
             'Уколико је подешен „LDAP” за „Customer::AuthModule”, кориснички идентификатор мора бити наведен.',
-        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use Znuny. Specify the group, who may access the system.' =>
-            'Уколико је подешен „LDAP” за „Customer::AuthModule”, можете проверити да ли је кориснику омогућена аутентикација ако припада „posixGroup”, нпр. корисник мора да припада групи xyz да би могао да користи „Znuny”. Дефинишите групу са приступом систему.',
+        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use BuzzDesk. Specify the group, who may access the system.' =>
+            'Уколико је подешен „LDAP” за „Customer::AuthModule”, можете проверити да ли је кориснику омогућена аутентикација ако припада „posixGroup”, нпр. корисник мора да припада групи xyz да би могао да користи „BuzzDesk”. Дефинишите групу са приступом систему.',
         'If "LDAP" was selected for Customer::AuthModule, you can specify access attributes here.' =>
             'Уколико је подешен „LDAP” за „Customer::AuthModule”, овде можете дефинисати приступне параметре.',
         'If "LDAP" was selected for Customer::AuthModule, user attributes can be specified. For LDAP posixGroups use UID, for non LDAP posixGroups use full user DN.' =>
@@ -6271,8 +6268,8 @@ sub Data {
         'Activates the available themes on the system. Value 1 means active, 0 means inactive.' =>
             'Активира расположиве теме - шаблоне у систему. Вредност 1 значи активно, 0 значи неактивно.',
         'Defines the default value for the action parameter.' => '',
-        'Defines the shown links in the footer area of the customer and public interface of this Znuny system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
-            'Одређује приказане везе у доњем делу клијентског и јавног интерфејса овог Znuny система. Вредност поља "Key" је екстерна адреса (URL), а вредност поља "Content" је приказан назив.',
+        'Defines the shown links in the footer area of the customer and public interface of this BuzzDesk system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
+            'Одређује приказане везе у доњем делу клијентског и јавног интерфејса овог BuzzDesk система. Вредност поља "Key" је екстерна адреса (URL), а вредност поља "Content" је приказан назив.',
         'Defines the default value for the action parameter for the public frontend. The action parameter is used in the scripts of the system.' =>
             'Дефинише подрезумевану вредност за акциони параметар за јавни кориснички део. Акциони параметар је коришћен у скриптама система.',
         'Sets the stats hook.' => 'Дефинише ознаку за статистике.',
@@ -6300,8 +6297,8 @@ sub Data {
             'Приказује све клијентске идентификаторе у пољу вишеструког избора (није корисно ако имате много клијентских идентификатора).',
         'Defines the default maximum number of X-axis attributes for the time scale.' =>
             'Дефинише подразумевани максимални број атрибута на Х-оси временске скале.',
-        'Znuny can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
-            '„Znuny” може да користи једну или више пресликаних база података за скупе операције као што су претрага текста или генерисање статистика. Овде можете дефинисати DSN за прву пресликану базу података.',
+        'BuzzDesk can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
+            '„BuzzDesk” може да користи једну или више пресликаних база података за скупе операције као што су претрага текста или генерисање статистика. Овде можете дефинисати DSN за прву пресликану базу података.',
         'Specify the username to authenticate for the first mirror database.' =>
             'Наведи корисничко име за ауторизацију на прву пресликану базу података.',
         'Specify the password to authenticate for the first mirror database.' =>
@@ -6318,24 +6315,24 @@ sub Data {
             'Почиње џокер претрагу активног објекта након покретања везе маске објекта.',
         'Defines a filter to process the text in the articles, in order to highlight predefined keywords.' =>
             'Дефинише филтер за обраду текста у чланцима, да би се истакле унапред дефинисане кључне речи.',
-        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Дефинише филтер за html излаз да би сте додали везе иза CVE бројева. Елемент Image дозвољава два начина улаза. У једном назив слике (нпр. faq.png). И том случају биће коришћена Znuny путања слике. Други начин је уношење везе до слике.',
-        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Дефинише филтер за HTML излаз да би сте додали везе иза bugtraq бројева. Елемент Image дозвољава два начина улаза. У једном назив слике (нпр. faq.png). И том случају биће коришћена Znuny путања слике. Други начин је уношење путање до слике.',
-        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Дефинише филтер за html излаз да би сте додали везе иза MSBulletin бројева. Елемент Image дозвољава два начина улаза. У једном назив слике (нпр. faq.png). И том случају биће коришћена Znuny путања слике. Други начин је уношење везе до слике.',
-        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Дефиниши филтер за html излаз да би додали везе иза дефинисаног низа знакова. Елемент Image дозвољава два начина улаза. У једном назив слике (нпр. faq.png). У том случају биће коришћена Znuny путања слике. Други начин је уношење везе до слике.',
-        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Дефинише филтер за html излаз да би сте додали везе иза дефинисаног низа знакова. Елемент Image дозвољава два начина улаза. У једном назив слике (нпр. faq.png). И том случају биће коришћена Znuny путања слике. Други начин је уношење везе до слике.',
-        'If enabled, the Znuny version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
-            'Ако је активирано, ознака Znuny верзије ће бити уклоњена из веб интерфејса, HTTP заглавља и X-Headers у одлазним имејл порукама. НАПОМЕНА: ако мењате ову опцију, молимо да осигурате брисање кеша.',
+        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Дефинише филтер за html излаз да би сте додали везе иза CVE бројева. Елемент Image дозвољава два начина улаза. У једном назив слике (нпр. faq.png). И том случају биће коришћена BuzzDesk путања слике. Други начин је уношење везе до слике.',
+        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Дефинише филтер за HTML излаз да би сте додали везе иза bugtraq бројева. Елемент Image дозвољава два начина улаза. У једном назив слике (нпр. faq.png). И том случају биће коришћена BuzzDesk путања слике. Други начин је уношење путање до слике.',
+        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Дефинише филтер за html излаз да би сте додали везе иза MSBulletin бројева. Елемент Image дозвољава два начина улаза. У једном назив слике (нпр. faq.png). И том случају биће коришћена BuzzDesk путања слике. Други начин је уношење везе до слике.',
+        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Дефиниши филтер за html излаз да би додали везе иза дефинисаног низа знакова. Елемент Image дозвољава два начина улаза. У једном назив слике (нпр. faq.png). У том случају биће коришћена BuzzDesk путања слике. Други начин је уношење везе до слике.',
+        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Дефинише филтер за html излаз да би сте додали везе иза дефинисаног низа знакова. Елемент Image дозвољава два начина улаза. У једном назив слике (нпр. faq.png). И том случају биће коришћена BuzzDesk путања слике. Други начин је уношење везе до слике.',
+        'If enabled, the BuzzDesk version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
+            'Ако је активирано, ознака BuzzDesk верзије ће бити уклоњена из веб интерфејса, HTTP заглавља и X-Headers у одлазним имејл порукама. НАПОМЕНА: ако мењате ову опцију, молимо да осигурате брисање кеша.',
         'Default template for notification e-mails (see Kernel/Output/HTML/Templates/Standard/NotificationEvent/Email directory for available templates).' =>
             '',
-        'If enabled, Znuny will deliver all CSS files in minified form.' =>
-            'Уколико је укључено, Znuny ће испоручити све CSS датотеке у смањеној форми.',
-        'If enabled, Znuny will deliver all JavaScript files in minified form.' =>
-            'Уколико је укључено, Znuny ће испоручити све JavaScript датотеке у смањеној форми.',
+        'If enabled, BuzzDesk will deliver all CSS files in minified form.' =>
+            'Уколико је укључено, BuzzDesk ће испоручити све CSS датотеке у смањеној форми.',
+        'If enabled, BuzzDesk will deliver all JavaScript files in minified form.' =>
+            'Уколико је укључено, BuzzDesk ће испоручити све JavaScript датотеке у смањеној форми.',
         'List of responsive CSS files to always be loaded for the agent interface.' =>
             'Листа прилагодљивих CSS датотека увек учитаних за интерфејс оператера.',
         'List of JS files to always be loaded for the admin interface.' =>
@@ -6561,10 +6558,10 @@ sub Data {
             'Дефинише минималну величину бројача тикета уколико је изабран "AutoIncrement" као TicketNumberGenerator. Подразумевано је 5, што значи да бројач почиње од 10000.',
         'Enables the minimal ticket counter size (if "Date" was selected as TicketNumberGenerator).' =>
             'Активира минималну величину бројача тикета (ако је изабран "Датум" као генератор броја тикета).',
-        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
-            'Убрзивач индексирања: за одабир TicketViewAccelerator модула. "RuntimeDB" генерише сваки преглед реда у ходу из табеле тикета (нема утицаја на перформансе до око 60.000 тикета укупно и 6.000 отворених тикета у систему). "StaticDB" је најмоћнији модул, користи додатну тикет индекс табелу која ради као преглед (препоручује се за више од 80.000 и 6.000 отворених тикета у систему). Коришћењем команде "bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild" можете креирати почетни индекс.',
-        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the Znuny user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
-            'Чува прилоге у чланцима. „DB” снима све прилоге у бази података (није препоручљиво за чување великих прилога). „FS” снима прилоге у систему датотека; ово је бржа опција, али веб сервер мора бити покренут под „Znuny” системским корисником. Дозвољена је промена модула чак и на продукцијским системима без било каквог губитка података. Напомена: претрага прилога по називу није могућа када је „FS” у функцији.',
+        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
+            'Убрзивач индексирања: за одабир TicketViewAccelerator модула. "RuntimeDB" генерише сваки преглед реда у ходу из табеле тикета (нема утицаја на перформансе до око 60.000 тикета укупно и 6.000 отворених тикета у систему). "StaticDB" је најмоћнији модул, користи додатну тикет индекс табелу која ради као преглед (препоручује се за више од 80.000 и 6.000 отворених тикета у систему). Коришћењем команде "bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild" можете креирати почетни индекс.',
+        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the BuzzDesk user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
+            'Чува прилоге у чланцима. „DB” снима све прилоге у бази података (није препоручљиво за чување великих прилога). „FS” снима прилоге у систему датотека; ово је бржа опција, али веб сервер мора бити покренут под „BuzzDesk” системским корисником. Дозвољена је промена модула чак и на продукцијским системима без било каквог губитка података. Напомена: претрага прилога по називу није могућа када је „FS” у функцији.',
         'Specifies whether all storage backends should be checked when looking for attachments. This is only required for installations where some attachments are in the file system, and others in the database.' =>
             'Дефинише да ли ће бити прегледани сви позадински модули приликом претраге прилога. Ово је неопходно само на системима где су неки прилози у систему датотека, а други у бази података.',
         'Specifies the directory to store the data in, if "FS" was selected for ArticleStorage.' =>
@@ -6606,16 +6603,16 @@ sub Data {
             'Овај модул догађаја чува атрибуте корисника као динамичка поља тикета. Погледајте опцију DynamicFieldFromCustomerUser::Mapping за подешавање мапирања.',
         'Overloads (redefines) existing functions in Kernel::System::Ticket. Used to easily add customizations.' =>
             'Преоптерећује (редефинисано) постојеће фуцкције у Kernel::System::Ticket. Користи се за лако додавање прилагођавања.',
-        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
-            'Омогућује проширену текстуалну претрагу ваших чланака (претрага по пољима From, To, Cc, Subject и Body). Сви постојећи чланци ће бити реиндексирани, нови додати у индекс претраге по креирању, тиме убрзавајући текстуалну претрагу за око 50%. За креирање почетног индекса користите "bin/znuny.Console.pl Maint::Ticket::FulltextIndexRebuild --rebuild".',
+        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
+            'Омогућује проширену текстуалну претрагу ваших чланака (претрага по пољима From, To, Cc, Subject и Body). Сви постојећи чланци ће бити реиндексирани, нови додати у индекс претраге по креирању, тиме убрзавајући текстуалну претрагу за око 50%. За креирање почетног индекса користите "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndexRebuild --rebuild".',
         'Defines whether to index archived tickets for fulltext searches.' =>
             'Дефинише да ли ће архивирани тикети бити индексирани за текстуалну претрагу.',
         'Force the storage of the original article text in the article search index, without executing filters or applying stop word lists. This will increase the size of the search index and thus may slow down fulltext searches.' =>
             'Укључује спремање оригиналног текста чланка у индексу претраге, без извршавања филтера или уклањања зауставних речи. Ово ће увећати величину индекса претраге и може успорити текстуалну претрагу.',
         'Display a warning and prevent search when using stop words within fulltext search.' =>
             'Прикажи упозорење и онемогући претрагу ако су употребљене зауставне речи у претрази комплетног текста.',
-        'Basic fulltext index settings. Execute "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
-            'Основно подешавање индекса целог текста. Покрените "bin/znuny.Console.pl Maint::Ticket::FulltextIndexRebuild --rebuild" како би се генерисао нови индекс.',
+        'Basic fulltext index settings. Execute "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
+            'Основно подешавање индекса целог текста. Покрените "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndexRebuild --rebuild" како би се генерисао нови индекс.',
         'Fulltext index regex filters to remove parts of the text.' => 'Текст индекс филтери (регуларни изрази) за уклањање делова текста.',
         'English stop words for fulltext index. These words will be removed from the search index.' =>
             'Енглеске зауставне речи за индекс претраге комплетног текста. Ове речи ће бити уклоњене из индекса претраге.',
@@ -7343,8 +7340,8 @@ sub Data {
             'Дефинише',
         'Defines the valid state types for a ticket. If a ticket is in a state which have any state type from this setting, this ticket will be considered as open, otherwise as closed.' =>
             'Дефинише исправне типове стања тикета. Ако је тикет у стању који садржи било који тип стања из овог подешавања, овај тикет ће се сматрати отвореним, у супротном као затворен.',
-        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/znuny.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
-            'Одређује важеће статусе за откључане тикете. За откључавање тикета може се користити скрипт "bin/znuny.Console.pl Maint::Ticket::UnlockTimeout".',
+        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
+            'Одређује важеће статусе за откључане тикете. За откључавање тикета може се користити скрипт "bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout".',
         'Sends reminder notifications of unlocked ticket after reaching the reminder date (only sent to ticket owner).' =>
             'Шаље обавештење за потсећање о откључаном тикету кад се достигне датум подсетника (шаље само власнику тикета).',
         'Disables sending reminder notifications to the responsible agent of a ticket (Ticket::Responsible needs to be enabled).' =>
@@ -7730,8 +7727,8 @@ sub Data {
             'Модул за извлачење корисничких SMIME сертификата из долазних порука.',
         'Module to check if a incoming e-mail message is bounce.' => 'Модул за проверу да ли је долазна имејл порука одбијена.',
         'Module used to detect if attachments are present.' => 'Модул за детекцију да ли су присутни прилози.',
-        'Executes follow-up checks on Znuny Header \'X-OTRS-Bounce\'.' =>
-            'Извршава провере наставка на „Znuny” заглављу „X-OTRS-Bounce”.',
+        'Executes follow-up checks on BuzzDesk Header \'X-OTRS-Bounce\'.' =>
+            'Извршава провере наставка на „BuzzDesk” заглављу „X-OTRS-Bounce”.',
         'Checks if an E-Mail is a followup to an existing ticket by searching the subject for a valid ticket number.' =>
             'Проверава да ли је имејл настављање на постојећи тикет претрагом предмета важећих бројева тикета.',
         'Executes follow-up checks on In-Reply-To or References headers for mails that don\'t have a ticket number in the subject.' =>
@@ -7889,9 +7886,9 @@ sub Data {
         'Defines the default queue for new tickets in the agent interface.' =>
             'Дефинише подразумевани ред за нове тикете у интерфејсу оератера.',
 
-        # XML Definition: Kernel/Config/Files/XML/Znuny.xml
+        # XML Definition: Kernel/Config/Files/XML/BuzzDesk.xml
         'Default preferences to set during user creation.' => '',
-        'Enables/disables the Znuny package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
+        'Enables/disables the BuzzDesk package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
             '',
         'Screens for which it is possible to enable or disable dynamic fields.' =>
             '',
@@ -8154,7 +8151,7 @@ sub Data {
             '',
         'Mapping of ticket priority to X-Priority email header for outgoing emails of communication channel "system".' =>
             '',
-        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by Znuny.Form.Input.' =>
+        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by BuzzDesk.Form.Input.' =>
             '',
         'Once limit of watched tickets per user is reached, the oldest entries will be removed from the watch list. Disable this setting or set it to 0 to disable the limit (default).' =>
             '',
@@ -8416,8 +8413,8 @@ sub Data {
         'Currently not possible' => 'Тренутно није могуће',
         'This is currently disabled because of an ongoing package upgrade.' =>
             'Ова функција је тренутно искључена због ажурирања пакета у току.',
-        'This option is currently disabled because the Znuny Daemon is not running.' =>
-            'Ова функција је тренутно искључена зато што Znuny сервис не ради.',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.' =>
+            'Ова функција је тренутно искључена зато што BuzzDesk сервис не ради.',
         'Are you sure you want to update all installed packages?' => 'Да ли сте сигурни да желите да унапредите све инсталиране пакете?',
         'No response from get package upgrade run status.' => 'Без одговора од команде за статус унапређења пакета.',
 
@@ -8547,7 +8544,7 @@ sub Data {
         'Insert selected customer user(s) into the "%s:" field.' => '',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Daemon.js
-        'Information about the Znuny Daemon' => 'Информације о Znuny системском сервису',
+        'Information about the BuzzDesk Daemon' => 'Информације о BuzzDesk системском сервису',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Dashboard.js
         'Please check the fields marked as red for valid inputs.' => 'Молимо проверите поља означена црвеним за важеће уносе.',
@@ -8936,7 +8933,7 @@ Thanks for your help!
         'Create tickets.' => 'Креирање тикета.',
         'Created ticket [%s] in "%s" with priority "%s" and state "%s".' =>
             'Креиран тикет [%s] у "%s" са приоритетом "%s" и стањем "%s".',
-        'Creates a unit test file for this ticket and sends it to Znuny.' =>
+        'Creates a unit test file for this ticket and sends it to BuzzDesk.' =>
             '',
         'Creates a unit test file for this ticket.' => '',
         'Croatian' => 'Хрватски',
@@ -9378,7 +9375,7 @@ Thanks for your help!
             'Ово је подразумевани наранџасто-црни изглед клијентског интерфејса.',
         'This is the default orange - black skin.' => 'Ово је подразумевани наранџасто-црни изглед.',
         'This key is not certified with a trusted signature!' => '',
-        'This module is part of the admin area of Znuny.' => '',
+        'This module is part of the admin area of BuzzDesk.' => '',
         'Ticket Close.' => 'Затварање тикета.',
         'Ticket Compose Bounce Email.' => 'Преусмеравање имејл поруке у тикету.',
         'Ticket Compose email Answer.' => 'Писање имејл поруке у тикету.',
@@ -9465,7 +9462,7 @@ Thanks for your help!
         'Your service selection of your preferred services. You also get notified about those services via email if enabled.' =>
             'Избор услуга по вашој жељи. Уколико је укључено, добијаћете и обавештења о овим услугама путем имејла.',
         'Your username in Mattermost without the leading @' => '',
-        'Znuny.org - News' => '',
+        'BuzzDesk.org - News' => '',
         'Zoom' => 'Увећај',
         'all tickets' => '',
         'archived tickets' => '',
@@ -9656,7 +9653,7 @@ Thanks for your help!
         'Hide EntityIDs',
         'If you now leave this page, all open popup windows will be closed, too!',
         'Import web service',
-        'Information about the Znuny Daemon',
+        'Information about the BuzzDesk Daemon',
         'Insert selected customer user(s) into the "%s:" field.',
         'Invalid date (need a future date)!',
         'Invalid date (need a past date)!',
@@ -9836,7 +9833,7 @@ Thanks for your help!
         'This is a repeating appointment',
         'This is currently disabled because of an ongoing package upgrade.',
         'This item still contains sub items. Are you sure you want to remove this item including its sub items?',
-        'This option is currently disabled because the Znuny Daemon is not running.',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.',
         'This software runs with a huge lists of browsers, please upgrade to one of these.',
         'This window must be called from compose window.',
         'Thu',

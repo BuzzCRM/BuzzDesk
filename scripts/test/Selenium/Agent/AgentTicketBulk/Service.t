@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -14,7 +13,7 @@ use Kernel::System::VariableCheck qw(:all);
 
 use vars (qw($Self));
 
-my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $ServiceObject     = $Kernel::OM->Get('Kernel::System::Service');
 my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $TicketObject      = $Kernel::OM->Get('Kernel::System::Ticket');
@@ -50,7 +49,7 @@ $HelperObject->ConfigSettingChange(
 
 my $Service = 'AAAUnitTestService';
 
-my $ServiceID = $ZnunyHelperObject->_ServiceCreateIfNotExists(
+my $ServiceID = $BuzzDeskHelperObject->_ServiceCreateIfNotExists(
     Name        => $Service,
     TypeID      => 2,             # itsm
     Criticality => '3 normal',    # itsm
@@ -81,7 +80,7 @@ $Self->True(
     scalar keys %UserData,
     "Test User created successfully.",
 );
-my $QueueID = $ZnunyHelperObject->_QueueCreateIfNotExists(
+my $QueueID = $BuzzDeskHelperObject->_QueueCreateIfNotExists(
     Name    => 'UT' . $HelperObject->GetRandomNumber(),
     GroupID => 1,
 );
@@ -129,9 +128,9 @@ for my $TicketID (@TicketIDs) {
 
 my $SeleniumTest = sub {
 
-    # initialize Znuny4OTRS Helpers and other needed objects
+    # initialize BuzzDesk4OTRS Helpers and other needed objects
     my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     # create test user and login
     my %UserData = $SeleniumObject->AgentLogin(

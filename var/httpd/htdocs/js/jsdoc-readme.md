@@ -1,14 +1,14 @@
-# Documentation of Znuny JavaScript Namespaces
+# Documentation of BuzzDesk JavaScript Namespaces
 
-This is the documentation of all JavaScript namespaces used in Znuny. The information
+This is the documentation of all JavaScript namespaces used in BuzzDesk. The information
 is automatically extracted from the JavaScript source files of
-[the rel-7_0 branch](https://github.com/znuny/znuny/tree/rel-7_0).
+[the rel-7_0 branch](https://github.com/buzzdesk/buzzdesk/tree/rel-7_0).
 
 If you find any error or an inconsistency, please feel free to fix the issue and send us a pull request!
 
 ## Structure of JavaScript Namespaces
 
-Every namespace has a matching JavaScript file. Some namespaces are used in every Znuny screen or dialog (e.g.
+Every namespace has a matching JavaScript file. Some namespaces are used in every BuzzDesk screen or dialog (e.g.
 [Core.Form](Core.Form.html), [Core.AJAX](Core.AJAX.html)), some are only loaded and used for a specific screen (e.g.
 [Core.Agent.Admin.ACL](Core.Agent.Admin.ACL.html),
 [Core.Agent.Admin.ProcessManagement](Core.Agent.Admin.ProcessManagement.html)).

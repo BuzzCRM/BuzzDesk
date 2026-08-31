@@ -14,7 +14,7 @@ Provider:
   Transport:
     Config:
       MaxLength: '9999999999'
-      NameSpace: http://www.znuny.org/TimeAccountingWebservice/
+      NameSpace: http://www.buzzdesk.org/TimeAccountingWebservice/
       RequestNameFreeText: ''
       RequestNameScheme: Plain
       ResponseNameFreeText: ''

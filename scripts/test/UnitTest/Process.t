@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -20,7 +19,7 @@ $Kernel::OM->ObjectParamAdd(
     },
 );
 
-my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $TicketObject      = $Kernel::OM->Get('Kernel::System::Ticket');
 
@@ -33,7 +32,7 @@ my @Tests = (
     {
         Name    => 'Valid YAML but no Process',
         Process => {
-            Name     => 'ZnunyProcessTest',
+            Name     => 'BuzzDeskProcessTest',
             FilePath => 'ValidYAMLNoProcess.yml'
         },
         Type => 'False',
@@ -41,7 +40,7 @@ my @Tests = (
     {
         Name    => 'Valid YAML but no Process Name',
         Process => {
-            Name     => 'ZnunyProcessTest',
+            Name     => 'BuzzDeskProcessTest',
             FilePath => 'ValidYAMLNoProcessName.yml'
         },
         Type => 'False',
@@ -49,7 +48,7 @@ my @Tests = (
     {
         Name    => 'Valid YAML with missing Activity',
         Process => {
-            Name     => 'ZnunyProcessTest',
+            Name     => 'BuzzDeskProcessTest',
             FilePath => 'ValidYAMLMissingActivity.yml'
         },
         Type => 'False',
@@ -62,7 +61,7 @@ my @Tests = (
     {
         Name    => 'Process exists',
         Process => {
-            Name     => 'ZnunyProcessTest',
+            Name     => 'BuzzDeskProcessTest',
             FilePath => 'ProcessExists.yml'
         },
         Type => 'False',
@@ -73,13 +72,13 @@ for my $Test (@Tests) {
 
     my $Success = 0;
     if ( $Test->{Directory} ) {
-        $Success = $ZnunyHelperObject->_ProcessCreateIfNotExists(
+        $Success = $BuzzDeskHelperObject->_ProcessCreateIfNotExists(
             SubDir => $Test->{Directory},
         );
 
     }
     elsif ( IsHashRefWithData( $Test->{Process} ) ) {
-        $Success = $ZnunyHelperObject->_ProcessCreateIfNotExists(
+        $Success = $BuzzDeskHelperObject->_ProcessCreateIfNotExists(
             $Test->{Name} => $Test->{FilePath},
         );
     }

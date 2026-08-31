@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -23,7 +22,7 @@ my $CalendarObject    = $Kernel::OM->Get('Kernel::System::Calendar');
 my $GroupObject       = $Kernel::OM->Get('Kernel::System::Group');
 my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $TicketObject      = $Kernel::OM->Get('Kernel::System::Ticket');
-my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
 my $TransitionActionObject = $Kernel::OM->Get('Kernel::System::ProcessManagement::TransitionAction::AppointmentCreate');
 
@@ -52,7 +51,7 @@ my @DynamicFields = (
         },
     },
 );
-$ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFields);
+$BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFields);
 
 my $TicketID = $HelperObject->TicketCreate(
     Queue => 'Raw',

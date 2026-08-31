@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -20,13 +19,13 @@ $Kernel::OM->ObjectParamAdd(
     },
 );
 
-my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
 my $RandomNumber1 = $HelperObject->GetRandomNumber();
 my $RandomNumber2 = $HelperObject->GetRandomNumber();
 
-my %StartConfig = $ZnunyHelperObject->_ProcessWidgetDynamicFieldGroupsGet();
+my %StartConfig = $BuzzDeskHelperObject->_ProcessWidgetDynamicFieldGroupsGet();
 
 $Self->True(
     \%StartConfig,
@@ -42,9 +41,9 @@ my %ProcessWidgetDynamicFieldGroupsAdd = (
     "Group $RandomNumber2" => []
 );
 
-my $Success = $ZnunyHelperObject->_ProcessWidgetDynamicFieldGroupsAdd(%ProcessWidgetDynamicFieldGroupsAdd);
+my $Success = $BuzzDeskHelperObject->_ProcessWidgetDynamicFieldGroupsAdd(%ProcessWidgetDynamicFieldGroupsAdd);
 
-my %AfterAddConfig = $ZnunyHelperObject->_ProcessWidgetDynamicFieldGroupsGet();
+my %AfterAddConfig = $BuzzDeskHelperObject->_ProcessWidgetDynamicFieldGroupsGet();
 
 my %ExpectedConfig = (
     %StartConfig,
@@ -57,9 +56,9 @@ $Self->IsDeeply(
     'ProcessWidgetDynamicFieldGroupsAdd was successful',
 );
 
-$Success = $ZnunyHelperObject->_ProcessWidgetDynamicFieldGroupsRemove(%ProcessWidgetDynamicFieldGroupsAdd);
+$Success = $BuzzDeskHelperObject->_ProcessWidgetDynamicFieldGroupsRemove(%ProcessWidgetDynamicFieldGroupsAdd);
 
-my %AfterRemoveConfig = $ZnunyHelperObject->_ProcessWidgetDynamicFieldGroupsGet();
+my %AfterRemoveConfig = $BuzzDeskHelperObject->_ProcessWidgetDynamicFieldGroupsGet();
 
 $Self->IsDeeply(
     \%AfterRemoveConfig,

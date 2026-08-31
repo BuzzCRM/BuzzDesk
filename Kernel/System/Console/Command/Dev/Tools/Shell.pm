@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -21,11 +19,11 @@ our @ObjectDependencies = (
 sub Configure {
     my ( $Self, %Param ) = @_;
 
-    $Self->Description('An interactive REPL shell for the Znuny API.');
+    $Self->Description('An interactive REPL shell for the BuzzDesk API.');
 
     $Self->AddOption(
         Name        => 'eval',
-        Description => 'Perl code that should be evaluated in Znuny context.',
+        Description => 'Perl code that should be evaluated in BuzzDesk context.',
         Required    => 0,
         HasValue    => 1,
         ValueRegex  => qr/.*/smx,

@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -16,7 +15,7 @@ my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
 my $MainObject   = $Kernel::OM->Get('Kernel::System::Main');
 
-$ConfigObject->{'Frontend::Template::GenerateBlockHooks'}->{'100-ZnunyGenerateBlockHooks'} = {
+$ConfigObject->{'Frontend::Template::GenerateBlockHooks'}->{'100-BuzzDeskGenerateBlockHooks'} = {
     'AdminState' => [
         'Overview',
         'ActionList',

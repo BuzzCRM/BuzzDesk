@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -20,7 +19,7 @@ $Kernel::OM->ObjectParamAdd(
     },
 );
 
-my $ZnunyHelperObject    = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject    = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $ConfigObject         = $Kernel::OM->Get('Kernel::Config');
 my $UnitTestHelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $YAMLObject           = $Kernel::OM->Get('Kernel::System::YAML');
@@ -47,7 +46,7 @@ my @DynamicFieldConfigs = (
     },
 );
 
-my $DynamicFieldsCreated = $ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFieldConfigs);
+my $DynamicFieldsCreated = $BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFieldConfigs);
 
 $Self->True(
     scalar $DynamicFieldsCreated,
@@ -158,12 +157,12 @@ my @Tests = (
 
 TEST:
 for my $Test (@Tests) {
-    my $Export = $ZnunyHelperObject->_DynamicFieldsConfigExport( %{ $Test->{ExportParams} } );
+    my $Export = $BuzzDeskHelperObject->_DynamicFieldsConfigExport( %{ $Test->{ExportParams} } );
 
     # Turn export into Perl structure.
     if ( $Test->{ExportParams}->{Format} eq 'perl' ) {
         $Export =~ s{\A(\$VAR1)}{\$Export};
-        eval $Export;    ## nofilter(TidyAll::Plugin::Znuny::Perl::PerlCritic)
+        eval $Export;    ## nofilter(TidyAll::Plugin::BuzzDesk::Perl::PerlCritic)
     }
     elsif ( $Test->{ExportParams}->{Format} eq 'yml' ) {
         $Export = $YAMLObject->Load(

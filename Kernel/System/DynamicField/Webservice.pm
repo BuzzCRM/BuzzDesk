@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -335,8 +334,8 @@ Executes search in configured dynamic field web-service.
 
     my $Results = [
         {
-            'Key'   => 'Znuny3',
-            'Value' => 'Znuny3'
+            'Key'   => 'BuzzDesk3',
+            'Value' => 'BuzzDesk3'
         },
         {
             'Key'   => 'Rocks4',
@@ -349,9 +348,9 @@ Executes search in configured dynamic field web-service.
 
     my $Results = [
         {
-            'Key'  => 'Znuny3',
-            'ID'   => 'Znuny3',
-            'Name' => 'Znuny3'
+            'Key'  => 'BuzzDesk3',
+            'ID'   => 'BuzzDesk3',
+            'Name' => 'BuzzDesk3'
         },
         {
             'Key'  => 'Rocks4',
@@ -739,8 +738,8 @@ Returns:
         'UserFirstname'          => 'Firstname',
         'UserLastname'           => 'Lastname',
         'UserFullname'           => 'Firstname Lastname',
-        'UserEmail'              => 'znuny@localunittest.com',
-        'UserCustomerID'         => 'znuny',
+        'UserEmail'              => 'buzzdesk@localunittest.com',
+        'UserCustomerID'         => 'buzzdesk',
         'Source'                 => 'CustomerUser',
         [...]
     );

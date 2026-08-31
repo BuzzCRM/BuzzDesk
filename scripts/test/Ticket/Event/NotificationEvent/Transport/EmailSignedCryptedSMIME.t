@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -239,9 +237,9 @@ if ( !$SMIMEObject ) {
 my $Check1Hash       = 'f62a2257';
 my $Check2Hash       = '35c7d865';
 my $Check3Hash       = 'a2ba8622';
-my $ZnunyRootCAHash  = '7835cf94';
-my $ZnunySub2CAHash  = 'b5d19fb9';
-my $ZnunySub1CAHash  = '19545811';
+my $BuzzDeskRootCAHash  = '7835cf94';
+my $BuzzDeskSub2CAHash  = 'b5d19fb9';
+my $BuzzDeskSub1CAHash  = '19545811';
 my $OTRSUserCertHash = '4d400195';
 
 # certificates
@@ -275,25 +273,25 @@ my @Certificates = (
         PrivateSecretFileName => 'SMIMEPrivateKeyPass-smimeuser1.crt',
     },
     {
-        CertificateName       => 'ZnunySub1CA',
-        CertificateHash       => $ZnunySub1CAHash,
-        CertificateFileName   => 'SMIMECACertificate-Znuny-Sub1.crt',
-        PrivateKeyFileName    => 'SMIMECAPrivateKey-Znuny-Sub1.pem',
-        PrivateSecretFileName => 'SMIMECAPrivateKeyPass-Znuny-Sub1.crt',
+        CertificateName       => 'BuzzDeskSub1CA',
+        CertificateHash       => $BuzzDeskSub1CAHash,
+        CertificateFileName   => 'SMIMECACertificate-BuzzDesk-Sub1.crt',
+        PrivateKeyFileName    => 'SMIMECAPrivateKey-BuzzDesk-Sub1.pem',
+        PrivateSecretFileName => 'SMIMECAPrivateKeyPass-BuzzDesk-Sub1.crt',
     },
     {
-        CertificateName       => 'ZnunySub2CA',
-        CertificateHash       => $ZnunySub2CAHash,
-        CertificateFileName   => 'SMIMECACertificate-Znuny-Sub2.crt',
-        PrivateKeyFileName    => 'SMIMECAPrivateKey-Znuny-Sub2.pem',
-        PrivateSecretFileName => 'SMIMECAPrivateKeyPass-Znuny-Sub2.crt',
+        CertificateName       => 'BuzzDeskSub2CA',
+        CertificateHash       => $BuzzDeskSub2CAHash,
+        CertificateFileName   => 'SMIMECACertificate-BuzzDesk-Sub2.crt',
+        PrivateKeyFileName    => 'SMIMECAPrivateKey-BuzzDesk-Sub2.pem',
+        PrivateSecretFileName => 'SMIMECAPrivateKeyPass-BuzzDesk-Sub2.crt',
     },
     {
-        CertificateName       => 'ZnunyRootCA',
-        CertificateHash       => $ZnunyRootCAHash,
-        CertificateFileName   => 'SMIMECACertificate-Znuny-Root.crt',
-        PrivateKeyFileName    => 'SMIMECAPrivateKey-Znuny-Root.pem',
-        PrivateSecretFileName => 'SMIMECAPrivateKeyPass-Znuny-Root.crt',
+        CertificateName       => 'BuzzDeskRootCA',
+        CertificateHash       => $BuzzDeskRootCAHash,
+        CertificateFileName   => 'SMIMECACertificate-BuzzDesk-Root.crt',
+        PrivateKeyFileName    => 'SMIMECAPrivateKey-BuzzDesk-Root.pem',
+        PrivateSecretFileName => 'SMIMECAPrivateKeyPass-BuzzDesk-Root.crt',
     },
 );
 

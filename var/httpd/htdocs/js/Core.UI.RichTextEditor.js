@@ -1,6 +1,4 @@
 // --
-// Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (GPL). If you
@@ -10,8 +8,8 @@
 "use strict";
 
 var Core  = Core || {},
-    Znuny = Znuny || {},
-    ZnunyEditor = ZnunyEditor,
+    BuzzDesk = BuzzDesk || {},
+    BuzzDeskEditor = BuzzDeskEditor,
     Promise = Promise;
 
 Core.UI = Core.UI || {};
@@ -185,7 +183,7 @@ Core.UI.RichTextEditor = (function (TargetNS) {
 
             // do not display any selection data if trigger contain some text
             // before it as it would work when typing e-mail address
-            // see bug: https://github.com/znuny/Znuny/issues/738
+            // see bug: https://github.com/buzzdesk/BuzzDesk/issues/738
             if(IgnoreCallback) return [];
 
             Core.AJAX.FunctionCallSynchronous(
@@ -384,7 +382,7 @@ Core.UI.RichTextEditor = (function (TargetNS) {
                 // These are all optional and might not be present
                 TicketID: $('input[name="TicketID"]').val(),
                 Action:   $('input[name="Action"]').val(),
-                QueueID:  Znuny.Form.Input.Get('QueueID'),
+                QueueID:  BuzzDesk.Form.Input.Get('QueueID'),
                 FormID:   $('input[name="FormID"]').val()
             };
 
@@ -488,7 +486,7 @@ Core.UI.RichTextEditor = (function (TargetNS) {
     TargetNS.SetWindowEditor = function ($EditorArea) {
         var EditorID;
 
-        if (typeof ZnunyEditor === 'undefined') {
+        if (typeof BuzzDeskEditor === 'undefined') {
             return false;
         }
 
@@ -541,7 +539,7 @@ Core.UI.RichTextEditor = (function (TargetNS) {
             RTEEditorAreaContent,
             BalloonFlipFixPluginAlreadyAdded;
 
-        if (typeof ZnunyEditor === 'undefined') {
+        if (typeof BuzzDeskEditor === 'undefined') {
             return false;
         }
 
@@ -685,11 +683,11 @@ Core.UI.RichTextEditor = (function (TargetNS) {
                 },
                 onEnterCallback: function(container){
                     $(container).siblings('.ck-body-wrapper').
-                        addClass('ck-znuny-fullscreen');
+                        addClass('ck-buzzdesk-fullscreen');
                 },
                 onLeaveCallback: function(container){
                     $(container).siblings('.ck-body-wrapper').
-                        removeClass('ck-znuny-fullscreen');
+                        removeClass('ck-buzzdesk-fullscreen');
                 },
             };
         }
@@ -830,7 +828,7 @@ Core.UI.RichTextEditor = (function (TargetNS) {
 
         $EditorArea.addClass('CKEInstanceIsLoading');
 
-        ZnunyEditor
+        BuzzDeskEditor
         .create(
             $EditorArea[0],
             $.extend({
@@ -866,7 +864,7 @@ Core.UI.RichTextEditor = (function (TargetNS) {
                 },
                 // Enable html support of legacy tags to not loose
                 // content of systems with previously installed CKEditor4.
-                // Some tags also needs to be possible to display for Znuny requirements.
+                // Some tags also needs to be possible to display for BuzzDesk requirements.
                 htmlSupport: {
                     allow: ContentAllowed,
                     disallow: Core.Config.Get('RichText.ContentDisallowed', []),
@@ -1120,7 +1118,7 @@ Core.UI.RichTextEditor = (function (TargetNS) {
      *      This function initializes as a rich text editor every textarea element that contains the RichText class.
      */
     TargetNS.InitAllEditors = function () {
-        if (typeof ZnunyEditor === 'undefined') {
+        if (typeof BuzzDeskEditor === 'undefined') {
             return;
         }
 
@@ -1137,7 +1135,7 @@ Core.UI.RichTextEditor = (function (TargetNS) {
      *      This function initializes JS functionality.
      */
     TargetNS.Init = function () {
-        if (typeof ZnunyEditor === 'undefined') {
+        if (typeof BuzzDeskEditor === 'undefined') {
             return;
         }
 
@@ -1186,7 +1184,7 @@ Core.UI.RichTextEditor = (function (TargetNS) {
      *      This function check if a rich text editor is enable in this moment.
      */
     TargetNS.IsEnabled = function ($EditorArea) {
-        if (typeof ZnunyEditor === 'undefined') {
+        if (typeof BuzzDeskEditor === 'undefined') {
             return false;
         }
 

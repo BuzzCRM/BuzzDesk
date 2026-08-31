@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -22,7 +21,7 @@ our @ObjectDependencies = (
     'Kernel::System::Valid',
     'Kernel::System::Web::Request',
     'Kernel::System::YAML',
-    'Kernel::System::ZnunyHelper',
+    'Kernel::System::BuzzDeskHelper',
 );
 
 use Kernel::System::VariableCheck qw(:all);
@@ -46,12 +45,12 @@ sub Run {
     my $ParamObject        = $Kernel::OM->Get('Kernel::System::Web::Request');
     my $TimeObject         = $Kernel::OM->Get('Kernel::System::Time');
     my $YAMLObject         = $Kernel::OM->Get('Kernel::System::YAML');
-    my $ZnunyHelperObject  = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject  = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
     my $CacheObject        = $Kernel::OM->Get('Kernel::System::Cache');
 
     $Self->{DynamicFields} = $Self->_GetDynamicFields();
 
-    my $ValidDynamicFieldScreens = $ZnunyHelperObject->_ValidDynamicFieldScreenListGet(
+    my $ValidDynamicFieldScreens = $BuzzDeskHelperObject->_ValidDynamicFieldScreenListGet(
         Result => 'HASH',
     );
 
@@ -139,10 +138,10 @@ sub Run {
             }
 
             if ($OverwriteExistingConfigurations) {
-                $ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFieldConfigurations);
+                $BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFieldConfigurations);
             }
             else {
-                $ZnunyHelperObject->_DynamicFieldsCreateIfNotExists(@DynamicFieldConfigurations);
+                $BuzzDeskHelperObject->_DynamicFieldsCreateIfNotExists(@DynamicFieldConfigurations);
             }
         }
 
@@ -161,7 +160,7 @@ sub Run {
             }
 
             if (%DynamicFieldScreenConfigurations) {
-                $ZnunyHelperObject->_DynamicFieldsScreenConfigImport(
+                $BuzzDeskHelperObject->_DynamicFieldsScreenConfigImport(
                     Config => \%DynamicFieldScreenConfigurations,
                 );
             }
@@ -182,7 +181,7 @@ sub Run {
         my %Data;
 
         if (@SelectedDynamicFieldConfigurations) {
-            $Data{DynamicFields} = $ZnunyHelperObject->_DynamicFieldsConfigExport(
+            $Data{DynamicFields} = $BuzzDeskHelperObject->_DynamicFieldsConfigExport(
                 Format                => 'var',
                 IncludeInternalFields => 1,
                 IncludeAllConfigKeys  => 1,
@@ -192,7 +191,7 @@ sub Run {
         }
 
         if (@SelectedDynamicFieldScreenConfigurations) {
-            %{ $Data{DynamicFieldScreens} } = $ZnunyHelperObject->_DynamicFieldsScreenConfigExport(
+            %{ $Data{DynamicFieldScreens} } = $BuzzDeskHelperObject->_DynamicFieldsScreenConfigExport(
                 DynamicFields => \@SelectedDynamicFieldScreenConfigurations,
             );
         }

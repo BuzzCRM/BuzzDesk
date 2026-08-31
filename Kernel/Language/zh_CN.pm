@@ -1,19 +1,10 @@
 # --
-# Copyright (C) 2005 zuowei <j2ee at hirain-sh.com>
-# Copyright (C) 2008-2010 Never Min <never at qnofae.org>
-# Copyright (C) 2009 Bin Du <bindu2008 at gmail.com>,
-# Copyright (C) 2009 Yiye Huang <yiyehuang at gmail.com>
-# Copyright (C) 2009 Qingjiu Jia <jiaqj at yahoo.com>
-# Copyright (C) 2011 Martin Liu <liuzh66 at gmail.com> http://martinliu.cn
-# Copyright (C) 2013 Michael Shi <micshi at 163.com>
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Translation::JavaScriptStrings)
+## nofilter(TidyAll::Plugin::BuzzDesk::Translation::JavaScriptStrings)
 
 package Kernel::Language::zh_CN;
 
@@ -867,8 +858,8 @@ sub Data {
             '该名称可用于区分不同的错误处理配置。',
         'Please provide a unique name for this web service.' => '请为这个Web服务提供一个唯一的名称。',
         'Error handling module backend' => '错误处理模块后端',
-        'This Znuny error handling backend module will be called internally to process the error handling mechanism.' =>
-            '这个Znuny错误处理后端模块将被内部调用以处理错误处理机制。',
+        'This BuzzDesk error handling backend module will be called internally to process the error handling mechanism.' =>
+            '这个BuzzDesk错误处理后端模块将被内部调用以处理错误处理机制。',
         'Processing options' => '处理选项',
         'Configure filters to control error handling module execution.' =>
             '配置过滤器来控制错误处理模块执行。',
@@ -959,15 +950,15 @@ sub Data {
         'The name is typically used to call up an operation of a remote web service.' =>
             '该名称通常用于调用远程Web服务的操作。',
         'Invoker backend' => '调用程序后端',
-        'This Znuny invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
-            '这个Znuny调用程序后端模块被调用后，负责准备需要发送给远程系统的数据，并处理它的响应数据。',
+        'This BuzzDesk invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
+            '这个BuzzDesk调用程序后端模块被调用后，负责准备需要发送给远程系统的数据，并处理它的响应数据。',
         'Mapping for outgoing request data' => '映射出站请求数据',
         'Configure' => '配置',
-        'The data from the invoker of Znuny will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
-            '这个映射将对Znuny调用程序输出的数据进行处理，将它转换为远程系统所期待的数据。',
+        'The data from the invoker of BuzzDesk will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
+            '这个映射将对BuzzDesk调用程序输出的数据进行处理，将它转换为远程系统所期待的数据。',
         'Mapping for incoming response data' => '映射入站请求数据',
-        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of Znuny expects.' =>
-            '这个映射将对响应数据进行处理，将它转换为Znuny调用程序所期待的数据。',
+        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of BuzzDesk expects.' =>
+            '这个映射将对响应数据进行处理，将它转换为BuzzDesk调用程序所期待的数据。',
         'Asynchronous' => '异步',
         'Condition' => '条件',
         'Edit this event' => '编辑这个事件',
@@ -975,8 +966,8 @@ sub Data {
         'Add Event' => '添加事件',
         'To add a new event select the event object and event name and click on the "+" button' =>
             '要添加新事件，请选择事件对象和事件名称，然后单击“+”按钮',
-        'Asynchronous event triggers are handled by the Znuny Scheduler Daemon in background (recommended).' =>
-            '异步的事件触发器将由后端的Znuny调度程序守护进程处理（推荐）。',
+        'Asynchronous event triggers are handled by the BuzzDesk Scheduler Daemon in background (recommended).' =>
+            '异步的事件触发器将由后端的BuzzDesk调度程序守护进程处理（推荐）。',
         'Synchronous event triggers would be processed directly during the web request.' =>
             '同步的事件触发器则是在web请求期间直接处理的。',
         'Add all attachments' => '',
@@ -1110,11 +1101,11 @@ sub Data {
         'The name is typically used to call up this web service operation from a remote system.' =>
             '这个名称通常用于从一个远程系统调用这个web服务操作。',
         'Operation backend' => '操作后端',
-        'This Znuny operation backend module will be called internally to process the request, generating data for the response.' =>
-            '这个Znuny操作后端模块将被调用，以便处理请求、生成响应数据。',
+        'This BuzzDesk operation backend module will be called internally to process the request, generating data for the response.' =>
+            '这个BuzzDesk操作后端模块将被调用，以便处理请求、生成响应数据。',
         'Mapping for incoming request data' => '映射传入请求数据',
-        'The request data will be processed by this mapping, to transform it to the kind of data Znuny expects.' =>
-            '这个映射将对请求数据进行处理，将它转换为Znuny所期待的数据。',
+        'The request data will be processed by this mapping, to transform it to the kind of data BuzzDesk expects.' =>
+            '这个映射将对请求数据进行处理，将它转换为BuzzDesk所期待的数据。',
         'Mapping for outgoing response data' => '映射出站响应数据',
         'The response data will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
             '这个映射将对响应数据进行处理，以便将它转换成远程系统所期待的数据。',
@@ -1137,8 +1128,8 @@ sub Data {
             '',
         'Maximum message length' => '消息的最大长度',
         'This field should be an integer number.' => '这个字段值应该是一个整数。',
-        'Here you can specify the maximum size (in bytes) of REST messages that Znuny will process.' =>
-            '在这里你可以指定Znuny能够处理的REST消息的最大长度(以字节为单位)。',
+        'Here you can specify the maximum size (in bytes) of REST messages that BuzzDesk will process.' =>
+            '在这里你可以指定BuzzDesk能够处理的REST消息的最大长度(以字节为单位)。',
         'Send Keep-Alive' => '发送Keep-Alive（保持连接）',
         'This configuration defines if incoming connections should get closed or kept alive.' =>
             '此配置定义传入的连接应该关闭还是保持连接。',
@@ -1206,22 +1197,22 @@ sub Data {
         'Client Certificate' => '客户证书',
         'The full path and name of the SSL client certificate file (must be in PEM, DER or PKCS#12 format).' =>
             'SSL客户端证书文件的完整路径和名称（必须为PEM、DER或PKCS＃12格式）。',
-        'e.g. /opt/znuny/var/certificates/SOAP/certificate.pem' => '例如： /opt/znuny/var/certificates/SOAP/certificate.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/certificate.pem' => '例如： /opt/buzzdesk/var/certificates/SOAP/certificate.pem',
         'Client Certificate Key' => '客户证书密钥',
         'The full path and name of the SSL client certificate key file (if not already included in certificate file).' =>
             'SSL客户端证书密钥文件的完整路径和名称（如果尚未包含在证书文件中）。',
-        'e.g. /opt/znuny/var/certificates/SOAP/key.pem' => '例如： /opt/znuny/var/certificates/SOAP/key.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/key.pem' => '例如： /opt/buzzdesk/var/certificates/SOAP/key.pem',
         'Client Certificate Key Password' => '客户端证书密钥密码',
         'The password to open the SSL certificate if the key is encrypted.' =>
             '如果密钥被加密，则此密码用于打开SSL证书。',
         'Certification Authority (CA) Certificate' => '认证机构（CA）证书',
         'The full path and name of the certification authority certificate file that validates SSL certificate.' =>
             '用来验证SSL证书的认证机构证书文件的完整路径和名称。',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA/ca.pem' => '例如：/opt/znuny/var/certificates/SOAP/CA/ca.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem' => '例如：/opt/buzzdesk/var/certificates/SOAP/CA/ca.pem',
         'Certification Authority (CA) Directory' => '认证机构(CA)目录',
         'The full path of the certification authority directory where the CA certificates are stored in the file system.' =>
             '认证机构目录的完整路径，文件系统中存储CA证书的地方。',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA' => '例如：/opt/znuny/var/certificates/SOAP/CA',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA' => '例如：/opt/buzzdesk/var/certificates/SOAP/CA',
         'Controller mapping for Invoker' => '调用程序的控制器映射',
         'The controller that the invoker should send requests to. Variables marked by a \':\' will get replaced by the data value and passed along with the request. (e.g. /Ticket/:TicketID?UserLogin=:UserLogin&Password=:Password).' =>
             '控制器接受调用程序发送的请求。以“:“作为标记的变量将被数据值和其它传递参数替换。',
@@ -1278,13 +1269,13 @@ sub Data {
         'Select how SOAP response function wrapper should be constructed.' =>
             '选择如何构建SOAP回复函数封装器。',
         'Response name free text' => '回复名称自由文本',
-        'Here you can specify the maximum size (in bytes) of SOAP messages that Znuny will process.' =>
-            '在这里你可以指定Znuny能够处理的SOAP消息的最大长度(以字节为单位)。',
+        'Here you can specify the maximum size (in bytes) of SOAP messages that BuzzDesk will process.' =>
+            '在这里你可以指定BuzzDesk能够处理的SOAP消息的最大长度(以字节为单位)。',
         'Fixed namespace prefix' => '',
         'Use a fixed namespace prefix (e. g. myns:) for the root tag of a SOAP message.' =>
             '',
         'Suffix for response tag' => '',
-        'Usually Znuny expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
+        'Usually BuzzDesk expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
             '',
         'Encoding' => '编码',
         'The character encoding for the SOAP message contents.' => 'SOAP消息内容的字符编码。',
@@ -1327,10 +1318,10 @@ sub Data {
         'Provider transport' => '服务提供方传输',
         'Requester transport' => '服务请求方传输',
         'Debug threshold' => '调试阀值',
-        'In provider mode, Znuny offers web services which are used by remote systems.' =>
-            '在提供方模式中，Znuny为远程系统提供Web服务。',
-        'In requester mode, Znuny uses web services of remote systems.' =>
-            '在请求方模式中，Znuny使用远程系统的Web服务。',
+        'In provider mode, BuzzDesk offers web services which are used by remote systems.' =>
+            '在提供方模式中，BuzzDesk为远程系统提供Web服务。',
+        'In requester mode, BuzzDesk uses web services of remote systems.' =>
+            '在请求方模式中，BuzzDesk使用远程系统的Web服务。',
         'Network transport' => '网络传输',
         'Error Handling Modules' => '错误处理模块',
         'Error handling modules are used to react in case of errors during the communication. Those modules are executed in a specific order, which can be changed by drag and drop.' =>
@@ -1448,8 +1439,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportEmailSettings.tt
         'Use comma or semicolon to separate email addresses.' => '使用逗号或分号分隔电子邮件地址。',
-        'You can use Znuny-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
-            '你可以使用诸如<OTRS_TICKET_DynamicField_...>之类的Znuny标签来插入当前工单中的值。',
+        'You can use BuzzDesk-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
+            '你可以使用诸如<OTRS_TICKET_DynamicField_...>之类的BuzzDesk标签来插入当前工单中的值。',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportWebserviceSettings.tt
         'Web service name' => '',
@@ -1516,8 +1507,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminPGP.tt
         'PGP support is disabled' => 'PGP支持已禁用',
-        'To be able to use PGP in Znuny, you have to enable it first.' =>
-            '要在Znuny中使用PGP，你必须首先启用它。',
+        'To be able to use PGP in BuzzDesk, you have to enable it first.' =>
+            '要在BuzzDesk中使用PGP，你必须首先启用它。',
         'Enable PGP support' => '启用PGP支持',
         'Faulty PGP configuration' => '错误的PGP配置',
         'PGP support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -1548,21 +1539,21 @@ sub Data {
         'Do you really want to reinstall this package? Any manual changes will be lost.' =>
             '您真的想要重新安装该软包吗? 所有该模块的手工设置将丢失.',
         'Go to updating instructions' => '转到升级说明',
-        'Go to znuny.org' => '',
+        'Go to buzzdesk.org' => '',
         'package information' => '软件包信息',
-        'Package installation requires a patch level update of Znuny.' =>
-            '安装软件包需要将Znuny补丁级别更新。',
-        'Package update requires a patch level update of Znuny.' => '升级软件包需要将Znuny补丁级别更新。',
-        'Please note that your installed Znuny version is %s.' => '请注意，您安装的Znuny版本是%s。',
-        'To install this package, you need to update Znuny to version %s or newer.' =>
-            '安装这个软件包，你需要升级Znuny版本到%s或者更高。',
-        'This package can only be installed on Znuny version %s or older.' =>
-            '这个软件包只能安装在Znuny版本%s或者更低。',
-        'This package can only be installed on Znuny version %s.' => '',
-        'Why should I keep Znuny up to date?' => '为什么要保持Znuny是最新的？',
+        'Package installation requires a patch level update of BuzzDesk.' =>
+            '安装软件包需要将BuzzDesk补丁级别更新。',
+        'Package update requires a patch level update of BuzzDesk.' => '升级软件包需要将BuzzDesk补丁级别更新。',
+        'Please note that your installed BuzzDesk version is %s.' => '请注意，您安装的BuzzDesk版本是%s。',
+        'To install this package, you need to update BuzzDesk to version %s or newer.' =>
+            '安装这个软件包，你需要升级BuzzDesk版本到%s或者更高。',
+        'This package can only be installed on BuzzDesk version %s or older.' =>
+            '这个软件包只能安装在BuzzDesk版本%s或者更低。',
+        'This package can only be installed on BuzzDesk version %s.' => '',
+        'Why should I keep BuzzDesk up to date?' => '为什么要保持BuzzDesk是最新的？',
         'You will receive updates about relevant security issues.' => '您将收到有关安全问题的更新。',
-        'You will receive updates for all other relevant Znuny issues.' =>
-            '你将收到所有其他有关Znuny问题的更新。',
+        'You will receive updates for all other relevant BuzzDesk issues.' =>
+            '你将收到所有其他有关BuzzDesk问题的更新。',
         'How can I do a patch level update if I don’t have a contract?' =>
             '如果没有合约，我怎么更新补丁级别？',
         'Please find all relevant information within the updating instructions at %s.' =>
@@ -1961,8 +1952,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSMIME.tt
         'SMIME support is disabled' => 'SMIME支持已禁用',
-        'To be able to use SMIME in Znuny, you have to enable it first.' =>
-            '要在Znuny中使用SMIME，你必须首先启用它。',
+        'To be able to use SMIME in BuzzDesk, you have to enable it first.' =>
+            '要在BuzzDesk中使用SMIME，你必须首先启用它。',
         'Enable SMIME support' => '启用SMIME支持',
         'Faulty SMIME configuration' => '错误的SMIME配置',
         'SMIME support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -2155,8 +2146,8 @@ sub Data {
         'Find out how to use the system configuration by reading the %s.' =>
             '通过阅读%s来了解如何使用系统配置。',
         'Search in all settings...' => '在所有设置中搜索...',
-        'There are currently no settings available. Please make sure to run \'znuny.Console.pl Maint::Config::Rebuild\' before using the software.' =>
-            '目前没有可用的设置。 在使用软件之前，请确保运行 \'znuny.Console.pl Maint::Config::Rebuild\'。',
+        'There are currently no settings available. Please make sure to run \'buzzdesk.Console.pl Maint::Config::Rebuild\' before using the software.' =>
+            '目前没有可用的设置。 在使用软件之前，请确保运行 \'buzzdesk.Console.pl Maint::Config::Rebuild\'。',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSystemConfigurationDeployment.tt
         'Help' => '帮助',
@@ -2451,17 +2442,17 @@ sub Data {
         'Customer User Information Center' => '客户用户信息中心',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDaemonInfo.tt
-        'The Znuny Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
-            'Znuny守护进程用来执行异步任务，例如：触发工单升级、发送电子邮件等等。',
-        'A running Znuny Daemon is mandatory for correct system operation.' =>
-            'Znuny守护进程正常运行是正确的系统操作所必需的。',
-        'Starting the Znuny Daemon' => '正在启动Znuny守护进程',
-        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the Znuny Daemon is running and start it if needed.' =>
-            '确保存在文件“%s”（没有.dist扩展名）。这个CRON任务会每5分钟检查一次Znuny守护进程是否在运行，并在需要时启动它。',
-        'Execute \'%s start\' to make sure the cron jobs of the \'znuny\' user are active.' =>
-            '执行\'%s start\'确保\'znuny\'用户的cron任务是活动的。',
-        'After 5 minutes, check that the Znuny Daemon is running in the system (\'bin/znuny.Daemon.pl status\').' =>
-            '5分钟后，在系统中执行\'bin/znuny.Daemon.pl status\'，检查Znuny守护进程是否正常运行。',
+        'The BuzzDesk Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
+            'BuzzDesk守护进程用来执行异步任务，例如：触发工单升级、发送电子邮件等等。',
+        'A running BuzzDesk Daemon is mandatory for correct system operation.' =>
+            'BuzzDesk守护进程正常运行是正确的系统操作所必需的。',
+        'Starting the BuzzDesk Daemon' => '正在启动BuzzDesk守护进程',
+        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the BuzzDesk Daemon is running and start it if needed.' =>
+            '确保存在文件“%s”（没有.dist扩展名）。这个CRON任务会每5分钟检查一次BuzzDesk守护进程是否在运行，并在需要时启动它。',
+        'Execute \'%s start\' to make sure the cron jobs of the \'buzzdesk\' user are active.' =>
+            '执行\'%s start\'确保\'buzzdesk\'用户的cron任务是活动的。',
+        'After 5 minutes, check that the BuzzDesk Daemon is running in the system (\'bin/buzzdesk.Daemon.pl status\').' =>
+            '5分钟后，在系统中执行\'bin/buzzdesk.Daemon.pl status\'，检查BuzzDesk守护进程是否正常运行。',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboard.tt
         'Dashboard' => '仪表板',
@@ -2605,7 +2596,7 @@ sub Data {
         'This setting can currently not be saved' => '此设置目前无法保存',
         'Save setting' => '',
         'Save this setting' => '保存该设置',
-        'Did you know? You can help translating Znuny at %s.' => '',
+        'Did you know? You can help translating BuzzDesk at %s.' => '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentPreferencesOverview.tt
         'Choose from the groups on the left to find the settings you\'d wish to change.' =>
@@ -3144,8 +3135,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBStart.tt
         'Install Type' => '安装类型',
-        'Create a new database for Znuny' => '为Znuny创建新的数据库',
-        'Use an existing database for Znuny' => '使用现有的Znuny数据库',
+        'Create a new database for BuzzDesk' => '为BuzzDesk创建新的数据库',
+        'Use an existing database for BuzzDesk' => '使用现有的BuzzDesk数据库',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBmssql.tt
         'If you have set a root password for your database, it must be entered here. If not, leave this field empty.' =>
@@ -3156,8 +3147,8 @@ sub Data {
         'Database check successful.' => '数据库检查完成。',
         'Database User' => '数据库用户',
         'New' => 'New（新建）',
-        'A new database user with limited permissions will be created for this Znuny system.' =>
-            '已经为Znuny系统创建了新的数据库普通用户。',
+        'A new database user with limited permissions will be created for this BuzzDesk system.' =>
+            '已经为BuzzDesk系统创建了新的数据库普通用户。',
         'Repeat Password' => '重复输入密码',
         'Generated password' => '自动生成的密码',
         'Database' => '数据库',
@@ -3169,10 +3160,10 @@ sub Data {
         'SID' => '实例名',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerFinish.tt
-        'To be able to use Znuny you have to enter the following line in your command line (Terminal/Shell) as root.' =>
-            '为了能够使用Znuny, 您必须以root身份在命令行中(Terminal/Shell)输入以下行。',
+        'To be able to use BuzzDesk you have to enter the following line in your command line (Terminal/Shell) as root.' =>
+            '为了能够使用BuzzDesk, 您必须以root身份在命令行中(Terminal/Shell)输入以下行。',
         'Restart your webserver' => '重启web服务器',
-        'After doing so your Znuny is up and running.' => '完成这些后，您的Znuny系统就启动并运行了。',
+        'After doing so your BuzzDesk is up and running.' => '完成这些后，您的BuzzDesk系统就启动并运行了。',
         'Start page' => '开始页面',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerLicense.tt
@@ -3215,8 +3206,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/MobileNotAvailableWidget.tt
         'Feature not Available' => '功能不可用',
-        'Sorry, but this feature of Znuny is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
-            '抱歉，当前的Znuny不能用于移动终端。如果你想在移动终端上使用，你可以切换到桌面模式或使用普通桌面终端。',
+        'Sorry, but this feature of BuzzDesk is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
+            '抱歉，当前的BuzzDesk不能用于移动终端。如果你想在移动终端上使用，你可以切换到桌面模式或使用普通桌面终端。',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Motd.tt
         'Message of the Day' => '今日消息',
@@ -3255,8 +3246,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/PublicDefault.tt
         'Welcome' => '欢迎',
-        'This is the default public interface of Znuny! There was no action parameter given.' =>
-            '这是Znuny默认的公共界面！没有操作参数。',
+        'This is the default public interface of BuzzDesk! There was no action parameter given.' =>
+            '这是BuzzDesk默认的公共界面！没有操作参数。',
         'You could install a custom public module (via the package manager), for example the FAQ module, which has a public interface.' =>
             '你可以安装一个定制的有公共界面的公共模块（通过软件包管理器），例如FAQ知识库模块。',
 
@@ -3442,7 +3433,7 @@ sub Data {
         'Navigation' => '导航',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Test.tt
-        'Znuny Test Page' => 'Znuny测试页',
+        'BuzzDesk Test Page' => 'BuzzDesk测试页',
         'Unlock' => '解锁',
         'Welcome %s %s' => '欢迎使用%s %s',
         'Counter' => '计数器',
@@ -3537,12 +3528,12 @@ sub Data {
         # Perl Module: Kernel/Modules/AdminACL.pm
         'ACL information from database is not in sync with the system configuration, please deploy all ACLs.' =>
             '数据库中的ACL信息与系统配置不一致，请部署所有ACL。',
-        'ACLs could not be Imported due to a unknown error, please check Znuny logs for more information' =>
-            '由于未知错误不能导入ACL，请检查Znuny日志以获得更多信息',
+        'ACLs could not be Imported due to a unknown error, please check BuzzDesk logs for more information' =>
+            '由于未知错误不能导入ACL，请检查BuzzDesk日志以获得更多信息',
         'The following ACLs have been added successfully: %s' => '下列ACL已经成功添加：%s',
         'The following ACLs have been updated successfully: %s' => '下列ACL已经成功更新：%s',
         'There where errors adding/updating the following ACLs: %s. Please check the log file for more information.' =>
-            '在添加/更新下列ACL：%s 时出现一些错误，请检查Znuny日志以获得更多信息。',
+            '在添加/更新下列ACL：%s 时出现一些错误，请检查BuzzDesk日志以获得更多信息。',
         'This field is required' => '这个字段是必需的',
         'There was an error creating the ACL' => '创建ACL时出现了一个错误',
         'Need ACLID!' => '需要ACLID！',
@@ -3894,12 +3885,12 @@ sub Data {
         'Could not load %s.' => '不能载入 %s。',
         'Could not read %s!' => '不能读取 %s！',
         'Need a file to import!' => '导入需要一个文件！',
-        'The imported file has not valid YAML content! Please check Znuny log for details' =>
-            '导入的文件没有有效的YAML内容！请检查Znuny日志以获取详细信息',
+        'The imported file has not valid YAML content! Please check BuzzDesk log for details' =>
+            '导入的文件没有有效的YAML内容！请检查BuzzDesk日志以获取详细信息',
         'Web service "%s" deleted!' => 'Web服务“%s”已经删除！',
-        'Znuny as provider' => 'Znuny作为服务提供方',
+        'BuzzDesk as provider' => 'BuzzDesk作为服务提供方',
         'Operations' => '操作',
-        'Znuny as requester' => 'Znuny作为服务请求方',
+        'BuzzDesk as requester' => 'BuzzDesk作为服务请求方',
         'Invokers' => '调用程序',
 
         # Perl Module: Kernel/Modules/AdminGenericInterfaceWebserviceHistory.pm
@@ -3948,8 +3939,8 @@ sub Data {
         'Need param Key to download!' => '需要参数“密钥”才能下载！',
 
         # Perl Module: Kernel/Modules/AdminPackageManager.pm
-        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/znuny.Console.pl to install packages!' =>
-            '抱歉，在Apache配置文件中需要Apache::Reload作为PerlModule和PerlInitHandler。另请查看scripts/apache2-httpd.include.conf。或者您也可以使用命令行工具bin/znuny.Console.pl来安装软件包！',
+        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/buzzdesk.Console.pl to install packages!' =>
+            '抱歉，在Apache配置文件中需要Apache::Reload作为PerlModule和PerlInitHandler。另请查看scripts/apache2-httpd.include.conf。或者您也可以使用命令行工具bin/buzzdesk.Console.pl来安装软件包！',
         'No such package!' => '没有这个软件包！',
         'No such file %s in package!' => '软件包中没有%s 文件！',
         'No such file %s in local file system!' => '本地文件系统中没有%s 文件！',
@@ -4171,14 +4162,14 @@ sub Data {
         'You currently don\'t have any favourite settings.' => '你目前没有收藏任何设置。',
         'The following settings could not be found: %s' => '找不到以下设置：%s',
         'Import not allowed!' => '不允许导入！',
-        'System Configuration could not be imported due to an unknown error, please check Znuny logs for more information.' =>
-            '由于一个未知错误不能导入系统配置，请检查Znuny日志以获取更多信息。',
+        'System Configuration could not be imported due to an unknown error, please check BuzzDesk logs for more information.' =>
+            '由于一个未知错误不能导入系统配置，请检查BuzzDesk日志以获取更多信息。',
         'Category Search' => '搜索类别',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationDeployment.pm
         'Quick Deploy by' => '',
-        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the Znuny log for more information.' =>
-            '某些导入的设置不在配置的当前状态中，或者无法进行更新。 请查看Znuny日志了解更多信息。',
+        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the BuzzDesk log for more information.' =>
+            '某些导入的设置不在配置的当前状态中，或者无法进行更新。 请查看BuzzDesk日志了解更多信息。',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationGroup.pm
         'You need to enable the setting before locking!' => '锁定之前需要启用该设置！',
@@ -4603,7 +4594,7 @@ sub Data {
         'Configure "Home" in Kernel/Config.pm first!' => '首先在文件Kernel/Config.pm中配置“Home”！',
         'File "%s/Kernel/Config.pm" not found!' => '没有找到文件“%s/Kernel/Config.pm”！',
         'Directory "%s" not found!' => '没有找到目录“%s”！',
-        'Install Znuny' => '安装Znuny',
+        'Install BuzzDesk' => '安装BuzzDesk',
         'Intro' => '介绍',
         'Kernel/Config.pm isn\'t writable!' => '文件Kernel/Config.pm不可写入！',
         'If you want to use the installer, set the Kernel/Config.pm writable for the webserver user!' =>
@@ -4620,7 +4611,7 @@ sub Data {
         'Unknown database type "%s".' => '未知的数据库类型“%s”。',
         'Please go back.' => '请返回。',
         'Create Database' => '创建数据库',
-        'Install Znuny - Error' => '安装Znuny - 错误',
+        'Install BuzzDesk - Error' => '安装BuzzDesk - 错误',
         'File "%s/%s.xml" not found!' => '没有找到文件“%s/%s.xml”！',
         'Contact your Admin!' => '联系你的系统管理员！',
         'System Settings' => '系统设置',
@@ -4850,7 +4841,7 @@ sub Data {
             '一次系统维护将开始于：%s，预计结束时间为：%s',
 
         # Perl Module: Kernel/Output/HTML/Notification/DaemonCheck.pm
-        'Znuny Daemon is not running.' => 'Znuny守护进程没有运行。',
+        'BuzzDesk Daemon is not running.' => 'BuzzDesk守护进程没有运行。',
 
         # Perl Module: Kernel/Output/HTML/Notification/OAuth2TokenManagementTokenExpired.pm
         'OAuth2 token for "%s" has expired.' => '',
@@ -5229,8 +5220,8 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/InvalidDefaultValues.pm
         'Invalid Default Values' => '无效的默认值',
-        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/znuny.Console.pl Maint::Database::Check --repair' =>
-            '找到具有无效的默认值的表。 为了自动修复它，请运行：bin/znuny.Console.pl Maint::Database::Check --repair',
+        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/buzzdesk.Console.pl Maint::Database::Check --repair' =>
+            '找到具有无效的默认值的表。 为了自动修复它，请运行：bin/buzzdesk.Console.pl Maint::Database::Check --repair',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/MaxAllowedPacket.pm
         'Maximum Query Size' => '最大查询大小',
@@ -5275,15 +5266,15 @@ sub Data {
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/postgresql/Version.pm
         'PostgreSQL 9.2 or higher is required.' => '需要PostgreSQL 9.2或更高版本。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionZnuny.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionBuzzDesk.pm
         'Operating System' => '操作系统',
-        'Znuny Disk Partition' => 'Znuny磁盘分区',
+        'BuzzDesk Disk Partition' => 'BuzzDesk磁盘分区',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpace.pm
         'Disk Usage' => '硬盘使用情况',
-        'The partition where Znuny is located is almost full.' => 'Znuny分区已经快满了。',
-        'The partition where Znuny is located has no disk space problems.' =>
-            'Znuny分区没有磁盘空间问题了。',
+        'The partition where BuzzDesk is located is almost full.' => 'BuzzDesk分区已经快满了。',
+        'The partition where BuzzDesk is located has no disk space problems.' =>
+            'BuzzDesk分区没有磁盘空间问题了。',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpacePartitions.pm
         'Disk Partitions Usage' => '硬盘使用情况',
@@ -5328,8 +5319,8 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/MPMModel.pm
         'MPM model' => 'MPM多路处理模块',
-        'Znuny requires apache to be run with the \'prefork\' MPM model.' =>
-            'Znuny需要apache运行“prefork”MPM多路处理模块。',
+        'BuzzDesk requires apache to be run with the \'prefork\' MPM model.' =>
+            'BuzzDesk需要apache运行“prefork”MPM多路处理模块。',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/Performance.pm
         'CGI Accelerator Usage' => 'CGI加速器用法',
@@ -5359,37 +5350,37 @@ sub Data {
         'Webserver Version' => 'WEB服务器版本',
         'Could not determine webserver version.' => '不能确定WEB服务器版本。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticleSearchIndexStatus.pm
-        'Znuny' => '',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticleSearchIndexStatus.pm
+        'BuzzDesk' => '',
         'Article Search Index Status' => '信件搜索索引状态',
         'Indexed Articles' => '索引过的信件',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticlesPerCommunicationChannel.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticlesPerCommunicationChannel.pm
         'Articles Per Communication Channel' => '信件/通信渠道',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLog.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLog.pm
         'Incoming communications' => '传入的通信',
         'Outgoing communications' => '外发的通信',
         'Failed communications' => '失败的通信',
         'Average processing time of communications (s)' => '通信平均处理时间',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLogAccountStatus.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLogAccountStatus.pm
         'Communication Log Account Status (last 24 hours)' => '通讯日志帐号状态（最近24小时）',
         'No connections found.' => '找不到连接。',
         'ok' => 'OK',
         'permanent connection errors' => '永久性连接错误',
         'intermittent connection errors' => '间歇性连接错误',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ConfigSettings.pm
         'Config Settings' => '配置设置',
         'Could not determine value.' => '不能确定参数值。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DaemonRunning.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DaemonRunning.pm
         'Daemon' => '守护进程',
         'Daemon is running.' => '守护进程正在运行。',
         'Daemon is not running.' => '守护进程没有运行。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DatabaseRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DatabaseRecords.pm
         'Database Records' => '数据库记录',
         'Ticket History Entries' => '工单历史条目',
         'Articles' => '信件',
@@ -5404,31 +5395,31 @@ sub Data {
         'Tickets Per Month (avg)' => '平均每月工单数',
         'Open Tickets' => '处理中的工单',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultSOAPUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultSOAPUser.pm
         'Default SOAP Username And Password' => '默认的SOAP用户名和密码',
         'Security risk: you use the default setting for SOAP::User and SOAP::Password. Please change it.' =>
             '安全风险：你使用了默认的SOAP::User和SOAP::Password设置，请修改。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultUser.pm
         'Default Admin Password' => '默认的系统管理员密码',
         'Security risk: the agent account root@localhost still has the default password. Please change it or invalidate the account.' =>
             '安全风险：服务人员帐户root@localhost还在使用默认密码。请修改密码或禁用此帐户。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/EmailQueue.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/EmailQueue.pm
         'Email Sending Queue' => '电子邮件发送队列',
         'Emails queued for sending' => '已排队准备发送的电子邮件',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FQDN.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FQDN.pm
         'FQDN (domain name)' => '正式域名',
         'Please configure your FQDN setting.' => '请配置您的正式域名。',
         'Domain Name' => '域名',
         'Your FQDN setting is invalid.' => '您的正式域名无效。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FileSystemWritable.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FileSystemWritable.pm
         'File System Writable' => '文件系统是可写的',
-        'The file system on your Znuny partition is not writable.' => 'Znuny分区所有文件系统是不可写的。',
+        'The file system on your BuzzDesk partition is not writable.' => 'BuzzDesk分区所有文件系统是不可写的。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/LegacyConfigBackups.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/LegacyConfigBackups.pm
         'Legacy Configuration Backups' => '遗留的配置备份',
         'No legacy configuration backup files found.' => '找不到遗留的配置备份文件。',
         'Legacy configuration backup files found in Kernel/Config/Backups folder, but they might still be required by some packages.' =>
@@ -5436,12 +5427,12 @@ sub Data {
         'Legacy configuration backup files are no longer needed for the installed packages, please remove them from Kernel/Config/Backups folder.' =>
             '已安装的软件包不再需要旧的配置备份文件，请从 Kernel/Config/Backups 文件夹中删除它们。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/MultipleJSFileLoad.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/MultipleJSFileLoad.pm
         'The following JavaScript files loaded multiple times:' => '',
         'Files' => '',
         'Views with multiple loaded JavaScript files' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageDeployment.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageDeployment.pm
         'Package Installation Status' => '软件包安装状态',
         'Some packages have locally modified files.' => '一些软件包有在本地修改过的文件。',
         'Some packages are not correctly installed.' => '一些软件包没有正确安装。',
@@ -5449,75 +5440,75 @@ sub Data {
         'Some packages are not allowed for the current framework version.' =>
             '一些软件包无法在当前的框架版本中使用。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageList.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageList.pm
         'Package List' => '软件包列表',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SessionConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SessionConfigSettings.pm
         'Session Config Settings' => '会话配置设置',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SpoolMails.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SpoolMails.pm
         'Spooled Emails' => '假脱机邮件',
-        'There are emails in var/spool that Znuny could not process.' => 'var/spool 目录下有一些Znuny无法处理的邮件。',
+        'There are emails in var/spool that BuzzDesk could not process.' => 'var/spool 目录下有一些BuzzDesk无法处理的邮件。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SystemID.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SystemID.pm
         'Your SystemID setting is invalid, it should only contain digits.' =>
             '您的系统ID设置无效，它只能包含数字。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/DefaultType.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/DefaultType.pm
         'Default Ticket Type' => '默认工单类型',
         'The configured default ticket type is invalid or missing. Please change the setting Ticket::Type::Default and select a valid ticket type.' =>
             '配置的默认工单类型无效或缺失，请修改设置Ticket::Type::Default，选择一个有效的工单类型。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/IndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/IndexModule.pm
         'Ticket Index Module' => '工单索引模块',
         'You have more than 60,000 tickets and should use the StaticDB backend. See admin manual (Performance Tuning) for more information.' =>
             '您已经超过60000个工单，应该使用后端静态数据库。请参阅管理员手册（性能调优部分）查阅更多信息。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/InvalidUsersWithLockedTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/InvalidUsersWithLockedTickets.pm
         'Invalid Users with Locked Tickets' => '有锁定的工单的无效用户',
         'There are invalid users with locked tickets.' => '出现了有锁定的工单的无效用户。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/OpenTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/OpenTickets.pm
         'You should not have more than 8,000 open tickets in your system.' =>
             '您的系统不能有超过8000个处理中的工单。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/SearchIndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/SearchIndexModule.pm
         'Ticket Search Index Module' => '工单搜索索引模块',
         'The indexing process forces the storage of the original article text in the article search index, without executing filters or applying stop word lists. This will increase the size of the search index and thus may slow down fulltext searches.' =>
             '索引进程强制将原始信件文本存储在信件搜索索引中，而不执行过滤器或应用停用词列表。 这将增加搜索索引的大小，从而可能减慢全文搜索。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/StaticDBOrphanedRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/StaticDBOrphanedRecords.pm
         'Orphaned Records In ticket_lock_index Table' => 'ticket_lock_index 表中的孤儿记录',
-        'Table ticket_lock_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            'ticket_lock_index 表中包含孤儿记录。请运行bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup"清理静态数据库的索引。',
+        'Table ticket_lock_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            'ticket_lock_index 表中包含孤儿记录。请运行bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup"清理静态数据库的索引。',
         'Orphaned Records In ticket_index Table' => 'ticket_index 表中的孤儿记录',
-        'Table ticket_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            'ticket_index表中包含孤儿记录，请运行bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup"，清理静态数据库的索引。',
+        'Table ticket_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            'ticket_index表中包含孤儿记录，请运行bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup"，清理静态数据库的索引。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/TimeSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/TimeSettings.pm
         'Time Settings' => '时间设置',
         'Server time zone' => '服务器时区',
-        'Znuny time zone' => 'Znuny时区',
-        'Znuny time zone is not set.' => 'Znuny时区未设置。',
+        'BuzzDesk time zone' => 'BuzzDesk时区',
+        'BuzzDesk time zone is not set.' => 'BuzzDesk时区未设置。',
         'User default time zone' => '用户默认时区',
         'User default time zone is not set.' => '用户默认时区未设置。',
         'Calendar time zone is not set.' => '日历时区未设置。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentSkinUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentSkinUsage.pm
         'UI - Agent Skin Usage' => '用户界面 - 服务人员皮肤用法',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentThemeUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentThemeUsage.pm
         'UI - Agent Theme Usage' => '用户界面 - 服务人员主题用法',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/SpecialStats.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/SpecialStats.pm
         'UI - Special Statistics' => '用户界面 - 特殊的统计',
         'Agents using custom main menu ordering' => '服务人员使用定制的主菜单排序',
         'Agents using favourites for the admin overview' => '服务人员在系统管理概览使用收藏夹',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Version.pm
-        'Znuny Version' => 'Znuny版本',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Version.pm
+        'BuzzDesk Version' => 'BuzzDesk版本',
 
-        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/Znuny/ConcurrentUsers.pm
+        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/BuzzDesk/ConcurrentUsers.pm
         'Concurrent Users Details' => '并发用户详细信息',
         'Concurrent Users' => '并发用户数',
 
@@ -5623,8 +5614,8 @@ sub Data {
             '定义链接对象小部件(LinkObject::ViewMode = \"complex\")设置按钮中的操作。请注意，这些操作必须已经在以下JS和CSS文件中注册：Core.AllocationList.css、Core.UI.AllocationList.js、 Core.UI.Table.Sort.js、Core.Agent.TableFilters.js。',
         'Define which columns are shown in the linked appointment widget (LinkObject::ViewMode = "complex"). Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.' =>
             '定义链接的预约小部件(LinkObject::ViewMode = "complex")要显示的列。可用的设置值为：0 = 禁用，1 = 可用， 2 = 默认启用。',
-        'Znuny doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
-            'Znuny不支持对没有结束日期或没有重复次数的预约做循环处理。在导入过程中，可能有ICS文件包含了此类预约。作为替代，系统将所有的此类预约创建为已过去的预约，然后加上接下来的N个月(默认120个月或10年)的重复预约。',
+        'BuzzDesk doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
+            'BuzzDesk不支持对没有结束日期或没有重复次数的预约做循环处理。在导入过程中，可能有ICS文件包含了此类预约。作为替代，系统将所有的此类预约创建为已过去的预约，然后加上接下来的N个月(默认120个月或10年)的重复预约。',
         'Defines the ticket appointment type backend for ticket escalation time.' =>
             '定义工单预约类型后端，用于工单升级时间。',
         'Defines the ticket appointment type backend for ticket pending time.' =>
@@ -5661,14 +5652,14 @@ sub Data {
             '基于某些工单时间添加或更新自动日历预约的触发器。',
 
         # XML Definition: Kernel/Config/Files/XML/Daemon.xml
-        'Defines the module to display a notification in the agent interface if the Znuny Daemon is not running.' =>
-            '定义服务人员界面如果Znuny守护进程没有运行就显示一个通知的模块。',
+        'Defines the module to display a notification in the agent interface if the BuzzDesk Daemon is not running.' =>
+            '定义服务人员界面如果BuzzDesk守护进程没有运行就显示一个通知的模块。',
         'List of CSS files to always be loaded for the agent interface.' =>
             '服务人员界面始终载入的CSS文件列表。',
         'List of JS files to always be loaded for the agent interface.' =>
             '服务人员界面始终载入的JS文件列表。',
-        'Type of daemon log rotation to use: Choose \'Znuny\' to let Znuny system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
-            '要使用的守护程序日志循环类型：选择“Znuny”以使Znuny系统处理文件循环，或选择“外部”以使用第三方循环机制（如logrotate）。 注意：外部循环机制需要使用其自身的配置。',
+        'Type of daemon log rotation to use: Choose \'BuzzDesk\' to let BuzzDesk system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
+            '要使用的守护程序日志循环类型：选择“BuzzDesk”以使BuzzDesk系统处理文件循环，或选择“外部”以使用第三方循环机制（如logrotate）。 注意：外部循环机制需要使用其自身的配置。',
         'If enabled the daemon will use this directory to create its PID files. Note: Please stop the daemon before any change and use this setting only if &lt;$OTRSHome&gt;/var/run/ can not be used.' =>
             '',
         'Defines the number of days to keep the daemon log files.' => '定义保留守护进程日志文件的天数。',
@@ -5729,8 +5720,8 @@ sub Data {
         'Remove closed tickets from agents\' ticket watch lists.' => '',
 
         # XML Definition: Kernel/Config/Files/XML/Framework.xml
-        'Disables the web installer (http://yourhost.example.com/znuny/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
-            '禁用WEB安装程序(http://yourhost.example.com/znuny/installer.pl)，防止系统被劫持。如果不启用，系统能够被重新安装，当前的基本配置将被安装脚本的预设问题替换。如果启用了，还同时禁用了通用代理、软件包管理和SQL查询窗口。',
+        'Disables the web installer (http://yourhost.example.com/buzzdesk/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
+            '禁用WEB安装程序(http://yourhost.example.com/buzzdesk/installer.pl)，防止系统被劫持。如果不启用，系统能够被重新安装，当前的基本配置将被安装脚本的预设问题替换。如果启用了，还同时禁用了通用代理、软件包管理和SQL查询窗口。',
         'Enables or disables the debug mode over frontend interface.' => '启用或禁用前端界面的调试模式。',
         'Delivers extended debugging information in the frontend in case any AJAX errors occur, if enabled.' =>
             '启用后，如果发生了任何的AJAX错误，就在前端传递扩展的调试信息。',
@@ -5742,16 +5733,16 @@ sub Data {
             '控制系统管理员能否在系统配置中导入一个已保存的配置。',
         'Defines the name of the application, shown in the web interface, tabs and title bar of the web browser.' =>
             '定义本应用的名称，显示在WEB界面WEB浏览器的标签页和标题栏。',
-        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of Znuny).' =>
-            '定义本系统的标识符。每个工单编号和HTTP会话字符串均包含这个ID。这确保只有属于本系统的工单才会被跟进处理（在两套Znuny实例间通信时有用）。',
+        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of BuzzDesk).' =>
+            '定义本系统的标识符。每个工单编号和HTTP会话字符串均包含这个ID。这确保只有属于本系统的工单才会被跟进处理（在两套BuzzDesk实例间通信时有用）。',
         'Defines the fully qualified domain name of the system. This setting is used as a variable, OTRS_CONFIG_FQDN which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
             '定义本系统的正式域名。这个设置用于变量OTRS_CONFIG_FQDN，在所有的消息表单中使用，以创建系统内部到工单的链接。',
         'Defines the fully qualified domain name for external IDs generation (i.e. Message-ID, ContentID).' =>
             '',
-        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
-            '使用公共模块 \'PublicSupportDataCollector\' （如用于Znuny守护进程的模块）定义用于搜集支持数据的HTTP主机名。',
-        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
-            '使用公共模块“PublicSupportDataCollector”（例如用于Znuny守护进程的模块）来定义支持数据收集的超时（以秒为单位，最小为20秒）。',
+        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
+            '使用公共模块 \'PublicSupportDataCollector\' （如用于BuzzDesk守护进程的模块）定义用于搜集支持数据的HTTP主机名。',
+        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
+            '使用公共模块“PublicSupportDataCollector”（例如用于BuzzDesk守护进程的模块）来定义支持数据收集的超时（以秒为单位，最小为20秒）。',
         'When support data is collected via SupportDataCollector, certain SysConfig values marked with ValueType="Password" are automatically masked. This prevents passwords from appearing in plain text in the support data. This setting defines the settings that contain complex configuration hashes that should not be masked when generating the support data.' =>
             '',
         'Defines the type of protocol, used by the web server, to serve the application. If https protocol will be used instead of plain http, it must be specified here. Since this has no affect on the web server\'s settings or behavior, it will not change the method of access to the application and, if it is wrong, it will not prevent you from logging into the application. This setting is only used as a variable, OTRS_CONFIG_HttpType which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
@@ -5770,8 +5761,8 @@ sub Data {
             '定义本系统可用的所有语言。在这里只指定语言的英文名称。',
         'Defines all the languages that are available to the application. Specify only native names of languages here.' =>
             '定义本系统可用的所有语言。在这里只指定语言的本地化名称。',
-        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.znuny.org/developer/general_information/themes.html.' =>
-            '定义服务人员和客户使用的默认前端主题（HTML）。如果您喜欢，您可以添加您自己的主题。请参考管理员手册https://doc.znuny.org/developer/general_information/themes.html 。',
+        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.buzzdesk.org/developer/general_information/themes.html.' =>
+            '定义服务人员和客户使用的默认前端主题（HTML）。如果您喜欢，您可以添加您自己的主题。请参考管理员手册https://doc.buzzdesk.org/developer/general_information/themes.html 。',
         'It is possible to configure different themes, for example to distinguish between agents and customers, to be used on a per-domain basis within the application. Using a regular expression (regex), you can configure a Key/Content pair to match a domain. The value in "Key" should match the domain, and the value in "Content" should be a valid theme on your system. Please see the example entries for the proper form of the regex.' =>
             '配置不同主题是可能的，例如：区分系统中基于域名的不同服务人员和客户。您可以使用一个正则表达式配置一个键/内容组合来匹配一个域名。“键”应该匹配域名，“值”是一个系统中有效的皮肤。请参照样例条目修改正则表达式的合适格式。',
         'The headline shown in the customer interface.' => '客户界面显示的标题。',
@@ -5833,8 +5824,8 @@ sub Data {
             '',
         'Global settings for all popup profiles.' => '',
         'Disable autocomplete in the login screen.' => '在登录屏幕中禁用自动完成功能。',
-        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow Znuny to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
-            '禁用HHTP头"X-Frame-Options: SAMEORIGIN" 以便允许Znuny可以包含在其它网址的IFrame框架中。禁用这个HTTP头可能有安全问题！仅在您知道您在干什么时才禁用它！',
+        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow BuzzDesk to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
+            '禁用HHTP头"X-Frame-Options: SAMEORIGIN" 以便允许BuzzDesk可以包含在其它网址的IFrame框架中。禁用这个HTTP头可能有安全问题！仅在您知道您在干什么时才禁用它！',
         'Disable HTTP header "Content-Security-Policy" to allow loading of external script contents. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
             '禁用HHTP头"Content-Security-Policy"以便允许载入扩展的脚本内容。禁用这个HTTP头可能引起安全问题！仅在您知道您在干什么时才禁用它！',
         'Automated line break in text messages after x number of chars.' =>
@@ -5880,8 +5871,8 @@ sub Data {
             '如果日志模块选用了“SysLog”，可以指定记录日志的字符集。',
         'If "file" was selected for LogModule, a logfile must be specified. If the file doesn\'t exist, it will be created by the system.' =>
             '如果日志模块选用了“文件”，必须指定日志文件名。如果文件不存在，系统会创建它。',
-        'Adds a suffix with the actual year and month to the Znuny log file. A logfile for every month will be created.' =>
-            '为Znuny日志文件添加实际年月的后缀，每月创建一个日志文件。',
+        'Adds a suffix with the actual year and month to the BuzzDesk log file. A logfile for every month will be created.' =>
+            '为BuzzDesk日志文件添加实际年月的后缀，每月创建一个日志文件。',
         'Set the minimum log level. If you select \'error\', just errors are logged. With \'debug\' you get all logging messages. The order of log levels is: \'debug\', \'info\', \'notice\' and \'error\'.' =>
             '设置最小日志级别。 如果选择\'error\'，则只会记录错误。 使用\'debug\'可以获取所有日志消息。 日志级别的顺序是：\'debug\'，\'info\'，\'notice\'和\'error\'。',
         'Defines the module to send emails. "DoNotSendEmail" doesn\'t send emails at all. Any of the "SMTP" mechanisms use a specified (external) mailserver. "Sendmail" directly uses the sendmail binary of your operating system. "Test" doesn\'t send emails, but writes them to $OTRS_HOME/var/tmp/CacheFileStorable/EmailTest/ for testing purposes.' =>
@@ -5950,8 +5941,8 @@ sub Data {
             '定义服务人员界面显示一个通用通知的模块。可以是“Text（文本）”-如果配置了-，或者是“File（文件）”的内容将被显示。',
         'Defines the module used to store the session data. With "DB" the frontend server can be splitted from the db server. "FS" is faster.' =>
             '定义存储会话数据的模块。使用“DB（数据库）”则前端服务器能从数据库服务器中拆分出来。“FS（文件系统）”更快一些。',
-        'Defines the name of the session key. E.g. Session, SessionID or Znuny.' =>
-            '定义会话中关键词的名称，如Session、SessionID或Znuny。',
+        'Defines the name of the session key. E.g. Session, SessionID or BuzzDesk.' =>
+            '定义会话中关键词的名称，如Session、SessionID或BuzzDesk。',
         'Defines the name of the key for customer sessions.' => '定义客户会话中关键词的名称。',
         'Turns on the remote ip address check. It should not be enabled if the application is used, for example, via a proxy farm or a dialup connection, because the remote ip address is mostly different for the requests.' =>
             '开启远程IP地址检查。如果通过代理或拨号连接访问系统，应该关闭，因为远程IP在每次请求时可能都不一样。',
@@ -5984,10 +5975,10 @@ sub Data {
         'Defines the period of time (in minutes) before customer is marked as "away" due to inactivity (e.g. in the "Logged-In Users" widget or for the chat).' =>
             '定义由于不活动而将客户标记为“离开”的时间（单位：分钟）（例如：在“已登录的用户”小部件或聊天中）。',
         'This setting is deprecated. Set OTRSTimeZone instead.' => '此设置已弃用。 替代方式是设置OTRSTimeZone。',
-        'Sets the time zone being used internally by Znuny to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
-            '将Znuny内部使用的时区设置如在数据库中存储日期和时间。 警告：此设置一旦设置就不能更改，包含日期/时间的工单或其他数据已据此创建。',
-        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the Znuny time zone and the user\'s time zone.' =>
-            '设置将分配给新创建的用户的时区，并将用于尚未设置时区的用户。 这是默认使用的时区，用于转换Znuny时区与用户时区之间的日期和时间。',
+        'Sets the time zone being used internally by BuzzDesk to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
+            '将BuzzDesk内部使用的时区设置如在数据库中存储日期和时间。 警告：此设置一旦设置就不能更改，包含日期/时间的工单或其他数据已据此创建。',
+        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the BuzzDesk time zone and the user\'s time zone.' =>
+            '设置将分配给新创建的用户的时区，并将用于尚未设置时区的用户。 这是默认使用的时区，用于转换BuzzDesk时区与用户时区之间的日期和时间。',
         'If enabled, users that haven\'t selected a time zone yet will be notified to do so. Note: Notification will not be shown if (1) user has not yet selected a time zone and (2) OTRSTimeZone and UserDefaultTimeZone do match and (3) are not set to UTC.' =>
             '如果启用，那么尚未选择时区的用户将被通知选择时区。 注意：如果（1）用户尚未选择时区，并且（2）OTRSTimeZone和UserDefaultTimeZone相同，（3）未设置为UTC，则不会显示通知。',
         'Maximum Number of a calendar shown in a dropdown.' => '一个日历显示在下拉选择框中的最大数字。',
@@ -6005,8 +5996,8 @@ sub Data {
         'Adds the one time vacation days for the indicated calendar.' => '为指定日历添加一次假期。',
         'Defines the hours and week days of the indicated calendar, to count the working time.' =>
             '定义指定日历每周天数和小时数，以便计算工作时间。',
-        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your Znuny instance to stop working (probably any mask which takes input from the user).' =>
-            '定义通过浏览器上传文件的最大尺寸（单位：字节）。警告：这个选项设置过小将使您的Znuny实例出现许多遮罩屏幕导致停止工作（可能是需要用户输入的任何遮罩屏幕）。',
+        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your BuzzDesk instance to stop working (probably any mask which takes input from the user).' =>
+            '定义通过浏览器上传文件的最大尺寸（单位：字节）。警告：这个选项设置过小将使您的BuzzDesk实例出现许多遮罩屏幕导致停止工作（可能是需要用户输入的任何遮罩屏幕）。',
         'Selects the module to handle uploads via the web interface. "DB" stores all uploads in the database, "FS" uses the file system.' =>
             '选择处理WEB界面上传文件的模块。“数据库”存储所有上传文件到数据库中，“文件系统”存储所有上传文件到文件系统中。',
         'Specifies the text that should appear in the log file to denote a CGI script entry.' =>
@@ -6073,8 +6064,8 @@ sub Data {
             '定义PDF文档中斜体等宽字体的TTF字体文件的路径和文件名。',
         'Defines the path and TTF-File to handle bold italic monospaced font in PDF documents.' =>
             '定义PDF文档中粗斜体等宽字体的TTF字体文件的路径和文件名。',
-        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the Znuny user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
-            '启用PGP支持。当启用PGP签名和加密邮件时，强烈推荐以Znuny用户运行WEB服务器，否则，访问.pnugp目录会有权限问题。',
+        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the BuzzDesk user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
+            '启用PGP支持。当启用PGP签名和加密邮件时，强烈推荐以BuzzDesk用户运行WEB服务器，否则，访问.pnugp目录会有权限问题。',
         'Defines the path to PGP binary.' => '定义PGP程序文件的路径。',
         'Sets the options for PGP binary.' => '设置PGP程序的选项。',
         'Sets the preferred digest to be used for PGP binary.' => '设置要用于PGP二进制文件的首选摘要。',
@@ -6092,10 +6083,10 @@ sub Data {
             '指定存储私有SSL证书的目录。',
         'Cache time in seconds for the SSL certificate attributes.' => 'SSL证书属性的缓存时间（秒）。',
         'Enables fetch S/MIME from CustomerUser backend support.' => '在客户用户后端支持模块启用收取S/MIME（邮件）。',
-        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com).' =>
-            '指定系统发送通知的姓名，这个发件人姓名用于创建通知管理员完整的显示名称（如"Znuny通知"znuny@your.example.com）。',
-        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
-            '指定系统发送通知的邮件地址。这个邮件地址用来创建通知管理员的完整显示名称（如"Znuny通知"znuny@your.example.com），您可以使用配置的变量OTRS_CONFIG_FQDN，或者选择另外的邮件地址。',
+        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com).' =>
+            '指定系统发送通知的姓名，这个发件人姓名用于创建通知管理员完整的显示名称（如"BuzzDesk通知"buzzdesk@your.example.com）。',
+        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
+            '指定系统发送通知的邮件地址。这个邮件地址用来创建通知管理员的完整显示名称（如"BuzzDesk通知"buzzdesk@your.example.com），您可以使用配置的变量OTRS_CONFIG_FQDN，或者选择另外的邮件地址。',
         'Defines the validity period in seconds for password reset tokens. After this time the token expires and a new reset request is required. Default: 3600 (1 hour).' =>
             '定义密码重置令牌的有效期（秒）。超过此时间后令牌失效，需要重新请求。默认值：3600（1 小时）。',
         'Maximum number of password reset requests allowed per IP address or username within the rate limit window. Set to 0 to disable rate limiting. Default: 5.' =>
@@ -6222,8 +6213,8 @@ sub Data {
             '如果Customer::AuthModule（客户认证模块）选择“LDAP”，必须指定BaseDN（基础域名）。',
         'If "LDAP" was selected for Customer::AuthModule, the user identifier must be specified.' =>
             '如果Customer::AuthModule（客户认证模块）选择“LDAP”，必须指定用户标识。',
-        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use Znuny. Specify the group, who may access the system.' =>
-            '如果Customer::AuthModule（客户认证模块）选择“LDAP”，您可以检查在posixGroup组中的用户是否允许认证，例如：用户需要在组xyz才能使用Znuny。指定这个有权访问系统的组名。',
+        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use BuzzDesk. Specify the group, who may access the system.' =>
+            '如果Customer::AuthModule（客户认证模块）选择“LDAP”，您可以检查在posixGroup组中的用户是否允许认证，例如：用户需要在组xyz才能使用BuzzDesk。指定这个有权访问系统的组名。',
         'If "LDAP" was selected for Customer::AuthModule, you can specify access attributes here.' =>
             '如果Customer::AuthModule（客户认证模块）选择“LDAP”，可以在这里指定访问属性。',
         'If "LDAP" was selected for Customer::AuthModule, user attributes can be specified. For LDAP posixGroups use UID, for non LDAP posixGroups use full user DN.' =>
@@ -6277,8 +6268,8 @@ sub Data {
         'Activates the available themes on the system. Value 1 means active, 0 means inactive.' =>
             '激活系统中的可用主题。值1-代表激活，0-代表不激活。',
         'Defines the default value for the action parameter.' => '',
-        'Defines the shown links in the footer area of the customer and public interface of this Znuny system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
-            '定义Znuny系统的客户和公共界面中页脚区域显示的链接。 “Key（键）”中的值是外部网址，“Content（内容）”中的值是显示的文字。',
+        'Defines the shown links in the footer area of the customer and public interface of this BuzzDesk system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
+            '定义BuzzDesk系统的客户和公共界面中页脚区域显示的链接。 “Key（键）”中的值是外部网址，“Content（内容）”中的值是显示的文字。',
         'Defines the default value for the action parameter for the public frontend. The action parameter is used in the scripts of the system.' =>
             '定义公共界面操作参数的默认值。操作参数用于系统中的脚本。',
         'Sets the stats hook.' => '设置统计Hook。',
@@ -6306,8 +6297,8 @@ sub Data {
             '在一个多选框字段中显示所有的客户用户（如果客户用户过多则不好用）。',
         'Defines the default maximum number of X-axis attributes for the time scale.' =>
             '定义X轴时间刻度属性的默认最大数。',
-        'Znuny can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
-            'Znuny能够使用一个或多个只读镜像数据库以扩展操作（如全文搜索或生成统计报表）。您可以在这里指定第一个镜像数据库的DSN（数据源名称）。',
+        'BuzzDesk can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
+            'BuzzDesk能够使用一个或多个只读镜像数据库以扩展操作（如全文搜索或生成统计报表）。您可以在这里指定第一个镜像数据库的DSN（数据源名称）。',
         'Specify the username to authenticate for the first mirror database.' =>
             '指定第一个镜像数据库的认证用户名。',
         'Specify the password to authenticate for the first mirror database.' =>
@@ -6324,24 +6315,24 @@ sub Data {
             '在打开链接对象遮罩屏幕后搜索一次所有活动对象。',
         'Defines a filter to process the text in the articles, in order to highlight predefined keywords.' =>
             '定义信件中处理文本的过滤器，以便高亮预定义的关键词。',
-        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            '定义HTML输出结果中在CVE号码后面添加链接的过滤器。图像元素允许两种输入方式：第一种是用图像的名称（如faq.png），在这种情况下会使用Znuny的图像路径；第二种是插入图像的链接。',
-        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            '定义HTML输出结果中在BUG追踪号码后面添加链接的过滤器。图像元素允许两种输入方式：第一种是用图像的名称（如faq.png），在这种情况下会使用Znuny的图像路径；第二种是插入图像的链接。',
-        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            '定义HTML输出结果中在微软公告号码后面添加链接的过滤器。图像元素允许两种输入方式：第一种是用图像的名称（如faq.png），在这种情况下会使用Znuny的图像路径；第二种是插入图像的链接。',
-        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            '在HTML输出结果中为预定义字符串添加链接的过滤器。图像元素允许两种输入方式：第一种是用图像的名称（例如：faq.png），在这种情况下会使用Znuny的图像路径；第二种是插入图像的链接。',
-        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            '在HTML输出结果中为预定义字符串添加链接的过滤器。图像元素允许两种输入方式：第一种是用图像的名称（如faq.png），在这种情况下会使用Znuny的图像路径；第二种是插入图像的链接。',
-        'If enabled, the Znuny version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
-            '如果启用了此选项，将从WEB界面、HTTP头信息和外发邮件的X-Headers头信息中移除Znuny版本标签。注意：如果你要修改这个选项，请确保清空缓存。',
+        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            '定义HTML输出结果中在CVE号码后面添加链接的过滤器。图像元素允许两种输入方式：第一种是用图像的名称（如faq.png），在这种情况下会使用BuzzDesk的图像路径；第二种是插入图像的链接。',
+        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            '定义HTML输出结果中在BUG追踪号码后面添加链接的过滤器。图像元素允许两种输入方式：第一种是用图像的名称（如faq.png），在这种情况下会使用BuzzDesk的图像路径；第二种是插入图像的链接。',
+        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            '定义HTML输出结果中在微软公告号码后面添加链接的过滤器。图像元素允许两种输入方式：第一种是用图像的名称（如faq.png），在这种情况下会使用BuzzDesk的图像路径；第二种是插入图像的链接。',
+        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            '在HTML输出结果中为预定义字符串添加链接的过滤器。图像元素允许两种输入方式：第一种是用图像的名称（例如：faq.png），在这种情况下会使用BuzzDesk的图像路径；第二种是插入图像的链接。',
+        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            '在HTML输出结果中为预定义字符串添加链接的过滤器。图像元素允许两种输入方式：第一种是用图像的名称（如faq.png），在这种情况下会使用BuzzDesk的图像路径；第二种是插入图像的链接。',
+        'If enabled, the BuzzDesk version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
+            '如果启用了此选项，将从WEB界面、HTTP头信息和外发邮件的X-Headers头信息中移除BuzzDesk版本标签。注意：如果你要修改这个选项，请确保清空缓存。',
         'Default template for notification e-mails (see Kernel/Output/HTML/Templates/Standard/NotificationEvent/Email directory for available templates).' =>
             '',
-        'If enabled, Znuny will deliver all CSS files in minified form.' =>
-            '如果启用，Znuny将以最小化的形式提供所有CSS文件。',
-        'If enabled, Znuny will deliver all JavaScript files in minified form.' =>
-            '如果启用了此选项，Znuny将用压缩格式传送所有的JavaScript文件。',
+        'If enabled, BuzzDesk will deliver all CSS files in minified form.' =>
+            '如果启用，BuzzDesk将以最小化的形式提供所有CSS文件。',
+        'If enabled, BuzzDesk will deliver all JavaScript files in minified form.' =>
+            '如果启用了此选项，BuzzDesk将用压缩格式传送所有的JavaScript文件。',
         'List of responsive CSS files to always be loaded for the agent interface.' =>
             '服务人员界面始终载入的响应CSS文件列表。',
         'List of JS files to always be loaded for the admin interface.' =>
@@ -6567,10 +6558,10 @@ sub Data {
             '设置最小的工单计数器大小（如果工单编号生成器选用“自动增量”）。默认是5（位数），意味着计数器从10000开始。',
         'Enables the minimal ticket counter size (if "Date" was selected as TicketNumberGenerator).' =>
             '启用最小的工单计数器大小（如果TicketNumberGenerator工单编号生成器选择为“日期”）。',
-        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
-            '索引加速器：选择您的后端工单视图加速器模块。“RuntimeDB（运行时数据库）”实时生成每个队列视图（工单总数不超过60000个且系统打开的工单不超过6000个时没有性能问题）。“StaticDB（静态数据库）是最强大的模块，它使用额外的类似于视图的工单索引表（工单总数超过80000且系统打开的工单超过6000时推荐使用），使用命令"bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild"来初始化索引。',
-        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the Znuny user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
-            '保存信件的附件。“数据库”在数据库中存储所有数据（不推荐在存储大容量附件时使用）。“文件系统”在文件系统中保存数据；这个选项更快但WEB服务器要以Znuny用户运行。即使是在生产环境您也可以在这两种模式间切换，而不会丢失数据。备注：使用“文件系统”时不能搜索附件名。',
+        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
+            '索引加速器：选择您的后端工单视图加速器模块。“RuntimeDB（运行时数据库）”实时生成每个队列视图（工单总数不超过60000个且系统打开的工单不超过6000个时没有性能问题）。“StaticDB（静态数据库）是最强大的模块，它使用额外的类似于视图的工单索引表（工单总数超过80000且系统打开的工单超过6000时推荐使用），使用命令"bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild"来初始化索引。',
+        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the BuzzDesk user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
+            '保存信件的附件。“数据库”在数据库中存储所有数据（不推荐在存储大容量附件时使用）。“文件系统”在文件系统中保存数据；这个选项更快但WEB服务器要以BuzzDesk用户运行。即使是在生产环境您也可以在这两种模式间切换，而不会丢失数据。备注：使用“文件系统”时不能搜索附件名。',
         'Specifies whether all storage backends should be checked when looking for attachments. This is only required for installations where some attachments are in the file system, and others in the database.' =>
             '指定在搜索附件时是否检查所有的存储后端。这个选项只在安装时选择了一些附件保存在文件系统、一些附件保存到数据库中时才需要设置。',
         'Specifies the directory to store the data in, if "FS" was selected for ArticleStorage.' =>
@@ -6612,16 +6603,16 @@ sub Data {
             '这个事件模块将客户用户的属性存储为工单动态字段，如何配置这个映射请查看DynamicFieldFromCustomerUser::Mapping设置。',
         'Overloads (redefines) existing functions in Kernel::System::Ticket. Used to easily add customizations.' =>
             '重载（重定义）Kernel::System::Ticket中的函数，以便容易添加定制内容。',
-        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
-            '帮助扩展信件全文搜索（发件人、收件人、抄送、主题和正文搜索）。它将在信件创建后条带化所有信件并建立索引，提升全文搜索50%的效率。可使用命令 "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild" 来创建初始索引。',
+        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
+            '帮助扩展信件全文搜索（发件人、收件人、抄送、主题和正文搜索）。它将在信件创建后条带化所有信件并建立索引，提升全文搜索50%的效率。可使用命令 "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild" 来创建初始索引。',
         'Defines whether to index archived tickets for fulltext searches.' =>
             '定义全文搜索是否索引已归档的工单。',
         'Force the storage of the original article text in the article search index, without executing filters or applying stop word lists. This will increase the size of the search index and thus may slow down fulltext searches.' =>
             '强制将原始信件文本存储在信件搜索索引中，而不执行过滤器或应用停用词列表。 这将增加搜索索引的大小，从而可能减慢全文搜索。',
         'Display a warning and prevent search when using stop words within fulltext search.' =>
             '在全文搜索使用了停止词时显示一个警告并阻止搜索。',
-        'Basic fulltext index settings. Execute "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
-            '基本的全文索引设置。执行 "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild" 以生成一个新索引。',
+        'Basic fulltext index settings. Execute "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
+            '基本的全文索引设置。执行 "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild" 以生成一个新索引。',
         'Fulltext index regex filters to remove parts of the text.' => '全文索引正则表达式过滤器用来删除部分文本。',
         'English stop words for fulltext index. These words will be removed from the search index.' =>
             '全文索引的英语停止词，这些词将从搜索索引中移除。',
@@ -7349,8 +7340,8 @@ sub Data {
             '定义工单能看到的锁定状态。注意：修改这个设置后，请确保删除缓存以便使用新值。默认：未锁定，临时锁定。',
         'Defines the valid state types for a ticket. If a ticket is in a state which have any state type from this setting, this ticket will be considered as open, otherwise as closed.' =>
             '定义工单的有效状态类型。如果一个工单处于此设置中任一状态类型的状态，则该工单将被视为打开，否则将被视为关闭。',
-        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/znuny.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
-            '定义解锁的工单有效的状态。为解锁工单，可以使用脚本"bin/znuny.Console.pl Maint::Ticket::UnlockTimeout"。',
+        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
+            '定义解锁的工单有效的状态。为解锁工单，可以使用脚本"bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout"。',
         'Sends reminder notifications of unlocked ticket after reaching the reminder date (only sent to ticket owner).' =>
             '在到达提醒时间后发送解锁工单的提醒通知（只发送给工单所有者）。',
         'Disables sending reminder notifications to the responsible agent of a ticket (Ticket::Responsible needs to be enabled).' =>
@@ -7736,8 +7727,8 @@ sub Data {
             '收取客户用户传入消息的SMIME证书的模块。',
         'Module to check if a incoming e-mail message is bounce.' => '检查传入的电子邮件是否退回的模块。',
         'Module used to detect if attachments are present.' => '用于检测是否存在附件的模块。',
-        'Executes follow-up checks on Znuny Header \'X-OTRS-Bounce\'.' =>
-            '对Znuny头\'X-OTRS-Bounce\'执行后续检查。',
+        'Executes follow-up checks on BuzzDesk Header \'X-OTRS-Bounce\'.' =>
+            '对BuzzDesk头\'X-OTRS-Bounce\'执行后续检查。',
         'Checks if an E-Mail is a followup to an existing ticket by searching the subject for a valid ticket number.' =>
             '通过搜索主题中的有效工单号，检查一个邮件是否是跟进到已存在的工单。',
         'Executes follow-up checks on In-Reply-To or References headers for mails that don\'t have a ticket number in the subject.' =>
@@ -7895,9 +7886,9 @@ sub Data {
         'Defines the default queue for new tickets in the agent interface.' =>
             '定义服务人员界面新建工单的默认队列。',
 
-        # XML Definition: Kernel/Config/Files/XML/Znuny.xml
+        # XML Definition: Kernel/Config/Files/XML/BuzzDesk.xml
         'Default preferences to set during user creation.' => '',
-        'Enables/disables the Znuny package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
+        'Enables/disables the BuzzDesk package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
             '',
         'Screens for which it is possible to enable or disable dynamic fields.' =>
             '',
@@ -8160,7 +8151,7 @@ sub Data {
             '',
         'Mapping of ticket priority to X-Priority email header for outgoing emails of communication channel "system".' =>
             '',
-        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by Znuny.Form.Input.' =>
+        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by BuzzDesk.Form.Input.' =>
             '',
         'Once limit of watched tickets per user is reached, the oldest entries will be removed from the watch list. Disable this setting or set it to 0 to disable the limit (default).' =>
             '',
@@ -8422,8 +8413,8 @@ sub Data {
         'Currently not possible' => '目前不可能',
         'This is currently disabled because of an ongoing package upgrade.' =>
             '由于正在进行软件包升级，因此目前已被禁用。',
-        'This option is currently disabled because the Znuny Daemon is not running.' =>
-            '由于Znuny守护进程没有运行，这个选项当前被禁用。',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.' =>
+            '由于BuzzDesk守护进程没有运行，这个选项当前被禁用。',
         'Are you sure you want to update all installed packages?' => '您确定要更新所有已安装的软件包吗？',
         'No response from get package upgrade run status.' => '获取软件包升级运行状态时没有响应。',
 
@@ -8553,7 +8544,7 @@ sub Data {
         'Insert selected customer user(s) into the "%s:" field.' => '',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Daemon.js
-        'Information about the Znuny Daemon' => '关于Znuny守护进程的信息',
+        'Information about the BuzzDesk Daemon' => '关于BuzzDesk守护进程的信息',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Dashboard.js
         'Please check the fields marked as red for valid inputs.' => '请检查标记为红色的字段，需要输入有效的值。',
@@ -8941,7 +8932,7 @@ Thanks for your help!
         'Create tickets.' => '创建工单。',
         'Created ticket [%s] in "%s" with priority "%s" and state "%s".' =>
             '已创建工单 [%s]，在 "%s"，优先级为"%s" ，状态为"%s"。',
-        'Creates a unit test file for this ticket and sends it to Znuny.' =>
+        'Creates a unit test file for this ticket and sends it to BuzzDesk.' =>
             '',
         'Creates a unit test file for this ticket.' => '',
         'Croatian' => '克罗地亚语',
@@ -9383,7 +9374,7 @@ Thanks for your help!
             '这是客户界面默认的橙色-黑色皮肤。',
         'This is the default orange - black skin.' => '这是默认的橙色-黑色皮肤。',
         'This key is not certified with a trusted signature!' => '此密钥未使用可信签名进行认证！',
-        'This module is part of the admin area of Znuny.' => '',
+        'This module is part of the admin area of BuzzDesk.' => '',
         'Ticket Close.' => '工单关闭。',
         'Ticket Compose Bounce Email.' => '工单编写退回邮件。',
         'Ticket Compose email Answer.' => '工单编写邮件回复。',
@@ -9470,7 +9461,7 @@ Thanks for your help!
         'Your service selection of your preferred services. You also get notified about those services via email if enabled.' =>
             '你的优先服务中选择的服务，如果启用了，你还会得到有关这些队列的电子邮件通知。',
         'Your username in Mattermost without the leading @' => '',
-        'Znuny.org - News' => '',
+        'BuzzDesk.org - News' => '',
         'Zoom' => '展开',
         'all tickets' => '',
         'archived tickets' => '',
@@ -9661,7 +9652,7 @@ Thanks for your help!
         'Hide EntityIDs',
         'If you now leave this page, all open popup windows will be closed, too!',
         'Import web service',
-        'Information about the Znuny Daemon',
+        'Information about the BuzzDesk Daemon',
         'Insert selected customer user(s) into the "%s:" field.',
         'Invalid date (need a future date)!',
         'Invalid date (need a past date)!',
@@ -9841,7 +9832,7 @@ Thanks for your help!
         'This is a repeating appointment',
         'This is currently disabled because of an ongoing package upgrade.',
         'This item still contains sub items. Are you sure you want to remove this item including its sub items?',
-        'This option is currently disabled because the Znuny Daemon is not running.',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.',
         'This software runs with a huge lists of browsers, please upgrade to one of these.',
         'This window must be called from compose window.',
         'Thu',

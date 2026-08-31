@@ -31,8 +31,8 @@ Have fun!
 
 
 ## Where do I find:
-  * The developer documentation https://doc.znuny.org/developer/
-  * The documentation in general https://doc.znuny.org/znuny/
+  * The developer documentation https://doc.buzzdesk.org/developer/
+  * The documentation in general https://doc.buzzdesk.org/buzzdesk/
 
 
 
@@ -40,7 +40,7 @@ Have fun!
 
 If you find an error or a bug, please follow this steps
 
-* Open an Issue at https://github.com/znuny/znuny/issues
+* Open an Issue at https://github.com/buzzdesk/buzzdesk/issues
 * Use the template we provide. Please don't delete it.
 * Include everything we need to know. Especially how to reproduce the problem.
 
@@ -60,10 +60,10 @@ Note: if you don't reply on questions, we will close the issue after 30 days. Th
 ## Request Support
 
 If you need support / assisitence with your project or just need a helping hand, get in touch:
-- [Project website](https://www.znuny.org)
-- [Community forum](https://community.znuny.org)
+- [Project website](https://www.buzzdesk.org)
+- [Community forum](https://community.buzzdesk.org)
 - [Discord server](https://discord.gg/XTud3WWZTs)
-- [Commercial services](https://www.znuny.com)
+- [Commercial services](https://www.buzzdesk.com)
 
 The community is here to help and you can rely on them. If you need immediate help for an incident,
 you can also request commercial support.
@@ -75,7 +75,7 @@ the community members and the team dont know what you want to achieve or what yo
 
 If you need a new feature, feel free to follow these steps:
 
-* Open an issue in the [feature request repository](https://github.com/znuny/znuny-feature-requests/issues)
+* Open an issue in the [feature request repository](https://github.com/buzzdesk/buzzdesk-feature-requests/issues)
 * Please describe your wish as detailed as possible
 * Keep in mind that it should be a general feature, not one which is only for your specific usecase
 * If similiar features are available, please explain why they won't work for you
@@ -134,6 +134,6 @@ We need help for:
 
 ## Translate the software
 
-To translate missing or incorrect strings, please feel free to create an account in our [Weblate](https://translations.znuny.org/projects/znuny/znuny/). Choose your language, and search for the string to be modified. Provide a suggestion. You can also do this without registering an account, if you desire not to be named.
+To translate missing or incorrect strings, please feel free to create an account in our [Weblate](https://translations.buzzdesk.org/projects/buzzdesk/buzzdesk/). Choose your language, and search for the string to be modified. Provide a suggestion. You can also do this without registering an account, if you desire not to be named.
 
 We look forward to you!

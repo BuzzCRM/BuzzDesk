@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -42,12 +40,12 @@ $Selenium->RunTest(
             "No links in footer area displayed",
         );
 
-        # Display link for Znuny Homepage.
+        # Display link for BuzzDesk Homepage.
         $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'PublicFrontend::FooterLinks',
             Value => {
-                'https://www.znuny.org' => 'Znuny Open-Source Help Desk Platform',
+                'https://www.buzzdesk.org' => 'BuzzDesk Open-Source Help Desk Platform',
             },
         );
 
@@ -60,8 +58,8 @@ $Selenium->RunTest(
         );
 
         $Self->True(
-            index( $Selenium->get_page_source(), 'Znuny Open-Source Help Desk Platform' ) > -1,
-            'Znuny Homepage link is shown',
+            index( $Selenium->get_page_source(), 'BuzzDesk Open-Source Help Desk Platform' ) > -1,
+            'BuzzDesk Homepage link is shown',
         );
 
         # Check public interface as well.
@@ -80,8 +78,8 @@ $Selenium->RunTest(
         );
 
         $Self->True(
-            index( $Selenium->get_page_source(), 'Znuny Open-Source Help Desk Platform' ) > -1,
-            'Znuny Homepage link is shown',
+            index( $Selenium->get_page_source(), 'BuzzDesk Open-Source Help Desk Platform' ) > -1,
+            'BuzzDesk Homepage link is shown',
         );
     }
 );

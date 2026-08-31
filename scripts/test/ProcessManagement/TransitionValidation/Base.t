@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -42,7 +41,7 @@ my @DynamicFields = (
     },
 );
 
-$Kernel::OM->Get('Kernel::System::ZnunyHelper')->_DynamicFieldsCreate(@DynamicFields);
+$Kernel::OM->Get('Kernel::System::BuzzDeskHelper')->_DynamicFieldsCreate(@DynamicFields);
 my $TransitionValidationBaseObject = $Kernel::OM->Get('Kernel::System::ProcessManagement::TransitionValidation::Base');
 
 my @Tests = (

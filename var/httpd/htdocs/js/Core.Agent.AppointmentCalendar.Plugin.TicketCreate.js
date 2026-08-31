@@ -1,5 +1,4 @@
 // --
-// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (AGPL). If you
@@ -9,7 +8,7 @@
 "use strict";
 
 var Core = Core || {},
-    Znuny = Znuny || {};
+    BuzzDesk = BuzzDesk || {};
 
 Core.Agent = Core.Agent || {};
 Core.Agent.AppointmentCalendar = Core.Agent.AppointmentCalendar || {};
@@ -17,13 +16,13 @@ Core.Agent.AppointmentCalendar.Plugin = Core.Agent.AppointmentCalendar.Plugin ||
 Core.Agent.AppointmentCalendar.Plugin.Ticket = Core.Agent.AppointmentCalendar.Plugin.Ticket || {};
 Core.Agent.AppointmentCalendar.Plugin.TicketCreate = Core.Agent.AppointmentCalendar.Plugin.TicketCreate || {};
 
-Znuny.Form = Znuny.Form || {};
-Znuny.Form.Input = Znuny.Form.Input || {};
+BuzzDesk.Form = BuzzDesk.Form || {};
+BuzzDesk.Form.Input = BuzzDesk.Form.Input || {};
 
 /**
  * @namespace Core.Agent.AppointmentCalendar.Plugin.TicketCreate
  * @memberof Core.Agent
- * @author Znuny
+ * @author BuzzDesk
  * @description
  *      This namespace contains the appointment calendar plugin ticket create functions.
  */
@@ -116,22 +115,22 @@ Core.Agent.AppointmentCalendar.Plugin.TicketCreate = (function (TargetNS) {
 
         if ($('#' + PluginKeySelector + 'TicketCreateTimeType').val() !== 'Never') {
             $('#' + PluginKeySelector + 'Attributes').show();
-            Znuny.Form.Input.Mandatory(PluginKeySelector + 'QueueID', true);
-            Znuny.Form.Input.Mandatory(PluginKeySelector + 'TypeID', true);
+            BuzzDesk.Form.Input.Mandatory(PluginKeySelector + 'QueueID', true);
+            BuzzDesk.Form.Input.Mandatory(PluginKeySelector + 'TypeID', true);
 
         }else {
             $('#' + PluginKeySelector + 'Attributes').hide();
-            Znuny.Form.Input.Mandatory(PluginKeySelector + 'QueueID', false);
-            Znuny.Form.Input.Mandatory(PluginKeySelector + 'TypeID', false);
+            BuzzDesk.Form.Input.Mandatory(PluginKeySelector + 'QueueID', false);
+            BuzzDesk.Form.Input.Mandatory(PluginKeySelector + 'TypeID', false);
         }
 
         if ($('#' + PluginKeySelector + 'TicketCreateTimeType').val() === 'Relative') {
             $('#' + PluginKeySelector + 'TicketCreateTimeRelative').show();
-            Znuny.Form.Input.Mandatory(PluginKeySelector + 'TicketCreateOffset', true);
+            BuzzDesk.Form.Input.Mandatory(PluginKeySelector + 'TicketCreateOffset', true);
 
         }else {
             $('#' + PluginKeySelector + 'TicketCreateTimeRelative').hide();
-            Znuny.Form.Input.Mandatory(PluginKeySelector + 'TicketCreateOffset', false);
+            BuzzDesk.Form.Input.Mandatory(PluginKeySelector + 'TicketCreateOffset', false);
         }
 
         Core.UI.InputFields.Init();

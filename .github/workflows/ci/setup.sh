@@ -5,13 +5,13 @@ set -o pipefail
 
 a2dismod mpm_event mpm_worker
 a2enmod perl deflate filter headers mpm_prefork
-useradd -d /opt/znuny -c 'Znuny user' -g www-data -s /bin/bash -M znuny
+useradd -d /opt/buzzdesk -c 'BuzzDesk user' -g www-data -s /bin/bash -M buzzdesk
 
 # link and create files
-ln -sf "$PWD" /opt/znuny
-ln -s /opt/znuny/scripts/apache2-httpd.include.conf /etc/apache2/sites-enabled/zzz_znuny.conf
+ln -sf "$PWD" /opt/buzzdesk
+ln -s /opt/buzzdesk/scripts/apache2-httpd.include.conf /etc/apache2/sites-enabled/zzz_buzzdesk.conf
 cp Kernel/Config.pm.dist Kernel/Config.pm
-mkdir -p /opt/znuny/var/tmp
+mkdir -p /opt/buzzdesk/var/tmp
 
 # start apache
 apachectl start
@@ -22,9 +22,9 @@ if [ "$DB" == "mysql" ]; then
 fi
 
 # run needed scripts
-/opt/znuny/bin/znuny.SetPermissions.pl
-su -c "bin/znuny.CheckSum.pl -a create" - znuny
-touch /opt/znuny/installed
+/opt/buzzdesk/bin/buzzdesk.SetPermissions.pl
+su -c "bin/buzzdesk.CheckSum.pl -a create" - buzzdesk
+touch /opt/buzzdesk/installed
 
 # prepare Selenium tests
 if [[ "$GITHUB_JOB" =~ ^Selenium ]]; then
@@ -32,6 +32,6 @@ if [[ "$GITHUB_JOB" =~ ^Selenium ]]; then
 fi
 
 if [ "$DB" ]; then
-    su -c "bin/znuny.Console.pl Maint::Config::Rebuild" - znuny
-    su -c "bin/znuny.Console.pl Admin::Config::Update --setting-name CheckEmailAddresses --value 0" - znuny
+    su -c "bin/buzzdesk.Console.pl Maint::Config::Rebuild" - buzzdesk
+    su -c "bin/buzzdesk.Console.pl Admin::Config::Update --setting-name CheckEmailAddresses --value 0" - buzzdesk
 fi

@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -368,7 +366,7 @@ returns AutoResponse hashes in an array with data:
 
 Please create a new ticket.
 
-Your Znuny Team
+Your BuzzDesk Team
 ',
             'Comment'    => '',
             'ChangeBy'   => 1,
@@ -394,9 +392,9 @@ You wrote:<br />
 <br />
 Your email will be answered by a human ASAP.<br />
 <br />
-Have fun with Znuny!<br />
+Have fun with BuzzDesk!<br />
 <br />
-Your Znuny Team',
+Your BuzzDesk Team',
             'Comment'    => '',
             'ChangeBy'   => 1,
             'ID'         => 590,
@@ -775,17 +773,17 @@ Return::
     my %QueueAddressData(
 
         # Auto Response Data
-        'Text'            => 'Your ZNUNY TeamZNUNY! answered by a human asap.',
-        'Subject'         => 'New ticket has been created! (RE: <ZNUNY_CUSTOMER_SUBJECT[24]>)',
+        'Text'            => 'Your BUZZDESK TeamBUZZDESK! answered by a human asap.',
+        'Subject'         => 'New ticket has been created! (RE: <BUZZDESK_CUSTOMER_SUBJECT[24]>)',
         'ContentType'     => 'text/plain',
         'SystemAddressID' => '1',
         'AutoResponseID'  => '1',
 
         # System Address Data
         'ID'              => '1',
-        'Name'            => 'znuny@localhost',
-        'Address'         => 'znuny@localhost',
-        'Realname'        => 'ZNUNY System',
+        'Name'            => 'buzzdesk@localhost',
+        'Address'         => 'buzzdesk@localhost',
+        'Realname'        => 'BUZZDESK System',
         'Comment'         => 'Standard Address.',
         'ValidID'         => '1',
         'QueueID'         => '1',
@@ -893,9 +891,9 @@ You wrote:
 
 Your email will be answered by a human ASAP
 
-Have fun with Znuny! :-)
+Have fun with BuzzDesk! :-)
 
-Your Znuny Team
+Your BuzzDesk Team
 ',
         'ChangeBy' => 1,
         'CreateBy' => 1

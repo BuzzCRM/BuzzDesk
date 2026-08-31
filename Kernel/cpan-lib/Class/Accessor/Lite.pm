@@ -236,7 +236,6 @@ L<Class::Accessor::Lite>
 
 =head1 AUTHORS
 
-Copyright (C) 2008 - 2010 Kazuho Oku
 
 =head1 LICENSE
 

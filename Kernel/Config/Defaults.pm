@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -10,8 +8,8 @@
 # Default configuration for OTRS. All changes to this file will be lost after an
 #   update, please use AdminSystemConfiguration to configure your system.
 
-## nofilter(TidyAll::Plugin::Znuny::Perl::LayoutObject)
-## nofilter(TidyAll::Plugin::Znuny::CodeStyle::STDERRCheck)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::LayoutObject)
+## nofilter(TidyAll::Plugin::BuzzDesk::CodeStyle::STDERRCheck)
 
 package Kernel::Config::Defaults;
 
@@ -94,7 +92,7 @@ sub LoadDefaults {
     # ScriptAlias
     # Prefix to index.pl used as ScriptAlias in web config
     # (Used when emailing links to agents).
-    $Self->{ScriptAlias} = 'znuny/';
+    $Self->{ScriptAlias} = 'buzzdesk/';
 
     # AdminEmail
     # (Email of the system admin.)
@@ -107,7 +105,7 @@ sub LoadDefaults {
 
     # ProductName
     # (Application name displayed in frontend.)
-    $Self->{ProductName} = 'Znuny';
+    $Self->{ProductName} = 'BuzzDesk';
 
     # --------------------------------------------------- #
     # database settings                                   #
@@ -118,11 +116,11 @@ sub LoadDefaults {
 
     # Database
     # (The database name.)
-    $Self->{Database} = 'znuny';
+    $Self->{Database} = 'buzzdesk';
 
     # DatabaseUser
     # (The database user.)
-    $Self->{DatabaseUser} = 'znuny';
+    $Self->{DatabaseUser} = 'buzzdesk';
 
     # DatabasePw
     # (The password of database user.)
@@ -287,7 +285,7 @@ sub LoadDefaults {
 
     # Frontend::WebPath
     # (URL base path of icons, CSS and Java Script.)
-    $Self->{'Frontend::WebPath'} = '/znuny-web/';
+    $Self->{'Frontend::WebPath'} = '/buzzdesk-web/';
 
     # Frontend::JavaScriptPath
     # (URL JavaScript path.)
@@ -370,7 +368,7 @@ sub LoadDefaults {
 #    $Self->{'LogModule::SysLog::Charset'} = 'utf-8';
 
     # param for LogModule Kernel::System::Log::File (required!)
-    $Self->{'LogModule::LogFile'} = '<OTRS_CONFIG_Home>/var/log/znuny.log';
+    $Self->{'LogModule::LogFile'} = '<OTRS_CONFIG_Home>/var/log/buzzdesk.log';
 
     # param if the date (yyyy-mm) should be added as suffix to
     # logfile [0|1]
@@ -556,7 +554,7 @@ sub LoadDefaults {
     # $Self->{'AuthModule::SAML::RequestLoginButtonText1'}      = 'Log in via SAML';
     # $Self->{'AuthModule::SAML::RequestAssertionConsumerURL1'} = ( $Self->{HttpType} // '' ) . '://' . $Self->{FQDN} . '/' . $Self->{ScriptAlias} . 'index.pl?Action=Login';
 
-    # $Self->{'AuthModule::SAML::Issuer1'} = "https://some.url/znuny/";
+    # $Self->{'AuthModule::SAML::Issuer1'} = "https://some.url/buzzdesk/";
 
     # # Optional, CACert of the identity provider (IdP)
     # $Self->{'AuthModule::SAML::IdPCACert1'} = '/some/path/cert.pem';
@@ -758,10 +756,10 @@ sub LoadDefaults {
     # $Self->{'AuthSyncModule::SAML::UserSyncGroupsDefinition::Attribute1'} = 'MemberOf';
     # $Self->{'AuthSyncModule::SAML::UserSyncGroupsDefinition1'} = {
     #     Support => {
-    #         ZnunyGroup1 => {
+    #         BuzzDeskGroup1 => {
     #             rw => 1,
     #         },
-    #         ZnunyGroup2 => {
+    #         BuzzDeskGroup2 => {
     #             ro   => 1,
     #             note => 1,
     #         },
@@ -773,7 +771,7 @@ sub LoadDefaults {
 #
 #            # SAML attribute value
 #            SAMLAttributeValue1 => {
-#                # Znuny group
+#                # BuzzDesk group
 #                admin => {
 #                    rw => 1,
 #                    ro => 1,
@@ -797,8 +795,8 @@ sub LoadDefaults {
     # $Self->{'AuthSyncModule::SAML::UserSyncRolesDefinition::Attribute1'} = 'Role';
     # $Self->{'AuthSyncModule::SAML::UserSyncRolesDefinition1'} = {
     #     Operations => {
-    #         ZnunyRole1 => 1,
-    #         ZnunyRole2 => 0,
+    #         BuzzDeskRole1 => 1,
+    #         BuzzDeskRole2 => 0,
     #     },
     # };
 
@@ -807,7 +805,7 @@ sub LoadDefaults {
 #
 #            # SAML attribute value
 #            SAMLAttributeValue1 => {
-#                # Znuny role
+#                # BuzzDesk role
 #                Role1 => 1,
 #                Role2 => 0,
 #            },
@@ -1022,7 +1020,7 @@ sub LoadDefaults {
 #    $Self->{WebUploadCacheModule} = 'Kernel::System::Web::UploadCache::FS';
 
     # CGILogPrefix
-    $Self->{CGILogPrefix} = 'Znuny-CGI';
+    $Self->{CGILogPrefix} = 'BuzzDesk-CGI';
 
     # --------------------------------------------------- #
     # Agent Web Interface
@@ -1256,7 +1254,7 @@ sub LoadDefaults {
         'modules/Module.Notification.js',
         'modules/Module.Alert.js',
         'modules/Module.SidebarWidget.js',
-        'Znuny.App.js'
+        'BuzzDesk.App.js'
     ];
 
     # --------------------------------------------------- #
@@ -1268,13 +1266,13 @@ sub LoadDefaults {
     # Package::RepositoryRoot
     # (get online repository list, use the fist availabe result)
     $Self->{'Package::RepositoryRoot'} = [
-        'https://download.znuny.org/releases/misc/packages/repository.xml',
+        'https://download.buzzdesk.org/releases/misc/packages/repository.xml',
     ];
 
     # Package::RepositoryList
     # (repository list)
 #    $Self->{'Package::RepositoryList'} = {
-#        'ftp://ftp.example.com/pub/znuny/misc/packages/' => '[Example] ftp://ftp.example.com/',
+#        'ftp://ftp.example.com/pub/buzzdesk/misc/packages/' => '[Example] ftp://ftp.example.com/',
 #    };
 
     # Package::Timeout
@@ -1399,14 +1397,14 @@ sub LoadDefaults {
     # --------------------------------------------------- #
 
     # notification sender
-    $Self->{NotificationSenderName}  = 'Znuny Notifications';
-    $Self->{NotificationSenderEmail} = 'znuny@<OTRS_CONFIG_FQDN>';
+    $Self->{NotificationSenderName}  = 'BuzzDesk Notifications';
+    $Self->{NotificationSenderEmail} = 'buzzdesk@<OTRS_CONFIG_FQDN>';
 
     # notification email for new password
-    $Self->{NotificationSubjectLostPassword} = 'Your Znuny password has been reset';
+    $Self->{NotificationSubjectLostPassword} = 'Your BuzzDesk password has been reset';
     $Self->{NotificationBodyLostPassword} = 'Hi <OTRS_USERFIRSTNAME>,
 
-Your Znuny password has been successfully reset.
+Your BuzzDesk password has been successfully reset.
 
 You can log in via the following URL:
 
@@ -1432,7 +1430,7 @@ If you did not make this change, please contact your administrator immediately.
 
     # CustomerGroupSupport (0 = compat. to OTRS 1.1 or lower)
     # (if this is 1, the you need to set the group <-> customer user
-    # relations! http://host/znuny/index.pl?Action=AdminCustomerUserGroup
+    # relations! http://host/buzzdesk/index.pl?Action=AdminCustomerUserGroup
     # otherway, each user is ro/rw in each group!)
     $Self->{CustomerGroupSupport} = 0;
 
@@ -1489,10 +1487,10 @@ If you did not make this change, please contact your administrator immediately.
     # --------------------------------------------------- #
     # notification email about new password               #
     # --------------------------------------------------- #
-    $Self->{CustomerPanelSubjectLostPassword} = 'Your Znuny password has been reset';
+    $Self->{CustomerPanelSubjectLostPassword} = 'Your BuzzDesk password has been reset';
     $Self->{CustomerPanelBodyLostPassword} = 'Hi <OTRS_USERFIRSTNAME>,
 
-Your Znuny password has been successfully reset.
+Your BuzzDesk password has been successfully reset.
 
 You can log in via the following URL:
 
@@ -1504,10 +1502,10 @@ If you did not make this change, please contact your administrator immediately.
     # --------------------------------------------------- #
     # notification email about new account                #
     # --------------------------------------------------- #
-    $Self->{CustomerPanelSubjectNewAccount} = 'New Znuny Account!';
+    $Self->{CustomerPanelSubjectNewAccount} = 'New BuzzDesk Account!';
     $Self->{CustomerPanelBodyNewAccount}    = 'Hi <OTRS_USERFIRSTNAME>,
 
-You or someone impersonating you has created a new Znuny account for
+You or someone impersonating you has created a new BuzzDesk account for
 you.
 
 Full name: <OTRS_USERFIRSTNAME> <OTRS_USERLASTNAME>
@@ -1660,7 +1658,7 @@ via the Preferences button after logging in.
     # $Self->{'Customer::AuthModule::SAML::RequestLoginButtonText1'}      = 'Log in via SAML';
     # $Self->{'Customer::AuthModule::SAML::RequestAssertionConsumerURL1'} = ( $Self->{HttpType} // '' ) . '://' . $Self->{FQDN} . '/' . $Self->{ScriptAlias} . 'customer.pl?Action=Login';
 
-    # $Self->{'Customer::AuthModule::SAML::Issuer1'} = "https://some.url/znuny/";
+    # $Self->{'Customer::AuthModule::SAML::Issuer1'} = "https://some.url/buzzdesk/";
 
     # # Optional, CACert of the identity provider (IdP)
     # $Self->{'Customer::AuthModule::SAML::IdPCACert1'} = '/some/path/cert.pem';
@@ -2346,7 +2344,7 @@ sub Set {
     return 1;
 }
 
-## nofilter(TidyAll::Plugin::Znuny::Perl::Translatable)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Translatable)
 
 # This is a no-op to mark a text as translatable in the Perl code.
 #   We use our own version here instead of importing Language::Translatable to not add a dependency.
@@ -2415,7 +2413,7 @@ sub AutoloadPerlPackages {
             # Don't use the MainObject here to load the file.
             eval {
                 my $FileName = $Package =~ s{::}{/}smxgr;
-                require $FileName . '.pm'; ## nofilter(TidyAll::Plugin::Znuny::Perl::Require)
+                require $FileName . '.pm'; ## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Require)
             };
         }
     }

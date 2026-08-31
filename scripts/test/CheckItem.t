@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -155,10 +153,10 @@ my @Tests = (
     },
 
     # Local part of email address is too long according to RFC.
-    # See http://isemail.info/modperl-uc.1384763750.ffhelkebjhfdihihkbce-michiel.beijen%3Dznuny.com%40perl.apache.org
+    # See http://isemail.info/modperl-uc.1384763750.ffhelkebjhfdihihkbce-michiel.beijen%3Dbuzzdesk.com%40perl.apache.org
     {
         Email =>
-            'modperl-uc.1384763750.ffhelkebjhfdihihkbce-michiel.beijen=znuny.com@perl.apache.org',
+            'modperl-uc.1384763750.ffhelkebjhfdihihkbce-michiel.beijen=buzzdesk.com@perl.apache.org',
         Valid => 0,
     },
 
@@ -694,12 +692,12 @@ $Self->Is(
     "CheckError() - 'some..body\@example.com'",
 );
 
-$Result = $CheckItemObject->CheckEmail( Address => 'somebody123456789@znuny.com' );
+$Result = $CheckItemObject->CheckEmail( Address => 'somebody123456789@buzzdesk.com' );
 
 # Execute unit test.
 $Self->True(
     $Result,
-    "CheckEmail() - 'somebody123456789\@znuny.com'",
+    "CheckEmail() - 'somebody123456789\@buzzdesk.com'",
 );
 
 1;

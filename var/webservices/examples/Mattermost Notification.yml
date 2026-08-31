@@ -26,7 +26,7 @@ Requester:
             extension-element-prefixes=\"date\">\r\n    <xsl:output method=\"xml\"
             encoding=\"utf-8\" indent=\"yes\"/>\r\n    <xsl:template match=\"RootElement\">\r\n
             \       <xsl:copy>\r\n            <username>&lt;OTRS_CONFIG_ProductName&gt;</username>\r\n
-            \           <icon_url>https://www.znuny.org/favicon.ico</icon_url>\r\n
+            \           <icon_url>https://www.buzzdesk.org/favicon.ico</icon_url>\r\n
             \           <channel>@<xsl:value-of select=\"//Recipient/MattermostUsername\"
             /></channel>\r\n            <text>A new ticket has been created in queue&#x20;**<xsl:value-of
             select=\"//Ticket/Queue\" />**&#x20;with the title&#x20;**<xsl:value-of

@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -40,7 +39,7 @@ OUTPUT
         $Output .= <<OUTPUT;
 ## State '$StateData{Name}'
 
-\$ZnunyHelperObject->_StateCreateIfNotExists(
+\$BuzzDeskHelperObject->_StateCreateIfNotExists(
     Name   => '$StateData{Name}',
     TypeID => $StateData{TypeID},
 );

@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -346,8 +344,8 @@ my $ArticleID1 = $ArticleBackendObject->ArticleCreate(
     HistoryComment       => 'Some free text!',
     UserID               => 1,
     From                 => "$CustomerUserLogin\@localunittest.com",
-    To                   => 'test1@znunyexample.com',
-    Cc                   => 'test2@znunyexample.com',
+    To                   => 'test1@buzzdeskexample.com',
+    Cc                   => 'test2@buzzdeskexample.com',
 );
 
 $Self->True(
@@ -368,8 +366,8 @@ my $ArticleID2 = $ArticleBackendObject->ArticleCreate(
     HistoryComment       => 'Some free text!',
     UserID               => 1,
     From                 => "$CustomerUserLogin\@localunittest.com",
-    To                   => 'test3@znunyexample.com',
-    Cc                   => 'test4@znunyexample.com',
+    To                   => 'test3@buzzdeskexample.com',
+    Cc                   => 'test4@buzzdeskexample.com',
 );
 
 $Self->True(
@@ -408,8 +406,8 @@ my $CustomerArticleID1 = $ArticleBackendObject->ArticleCreate(
     HistoryComment       => 'Some free text!',
     UserID               => 1,
     From                 => "$CustomerUserLogin\@localunittest.com",
-    To                   => 'test1@znunyexample.com',
-    Cc                   => 'test2@znunyexample.com',
+    To                   => 'test1@buzzdeskexample.com',
+    Cc                   => 'test2@buzzdeskexample.com',
 );
 
 $Self->True(
@@ -430,8 +428,8 @@ my $CustomerArticleID1InvalidCustomer = $ArticleBackendObject->ArticleCreate(
     HistoryComment       => 'Some free text!',
     UserID               => 1,
     From                 => "$CustomerUserLogin1\@localunittest.com",
-    To                   => 'test1@znunyexample.com',
-    Cc                   => 'test2@znunyexample.com',
+    To                   => 'test1@buzzdeskexample.com',
+    Cc                   => 'test2@buzzdeskexample.com',
 );
 
 $Self->True(
@@ -1016,7 +1014,7 @@ my @Tests = (
         Data => {
             Events          => [ 'TicketDynamicFieldUpdate_DFT1' . $RandomID . 'Update' ],
             RecipientAgents => [$UserID],
-            RecipientEmail  => ['test@znunyexample.com'],
+            RecipientEmail  => ['test@buzzdeskexample.com'],
         },
         Config => {
             Event => 'TicketDynamicFieldUpdate_DFT1' . $RandomID . 'Update',
@@ -1032,7 +1030,7 @@ my @Tests = (
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['test@znunyexample.com'],
+                ToArray => ['test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -1178,7 +1176,7 @@ my @Tests = (
         Name => 'RecipientEmail filter by unchecked dynamic field',
         Data => {
             Events         => [ 'TicketDynamicFieldUpdate_DFT1' . $RandomID . 'Update' ],
-            RecipientEmail => ['test@znunyexample.com'],
+            RecipientEmail => ['test@buzzdeskexample.com'],
 
             # Filter by unchecked checbox dynamic field value. Note that the search value (-1) is
             #   different than the match value (0). See bug#12257 for more information.
@@ -1194,7 +1192,7 @@ my @Tests = (
         },
         ExpectedResults => [
             {
-                ToArray => ['test@znunyexample.com'],
+                ToArray => ['test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -1226,7 +1224,7 @@ my @Tests = (
         Name => 'RecipientEmail additional recipient by dynamic field (first position)',
         Data => {
             Events         => [ 'TicketDynamicFieldUpdate_DFT2' . $RandomID . 'Update' ],
-            RecipientEmail => ["<OTRS_TICKET_DynamicField_DFT2${RandomID}>, test\@znunyexample.com"],
+            RecipientEmail => ["<OTRS_TICKET_DynamicField_DFT2${RandomID}>, test\@buzzdeskexample.com"],
         },
         Config => {
             Event => 'TicketDynamicFieldUpdate_DFT2' . $RandomID . 'Update',
@@ -1242,7 +1240,7 @@ my @Tests = (
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['test@znunyexample.com'],
+                ToArray => ['test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -1252,7 +1250,7 @@ my @Tests = (
         Name => 'RecipientEmail additional recipient by dynamic field (last position)',
         Data => {
             Events         => [ 'TicketDynamicFieldUpdate_DFT2' . $RandomID . 'Update' ],
-            RecipientEmail => ["test\@znunyexample.com, <OTRS_TICKET_DynamicField_DFT2${RandomID}>"],
+            RecipientEmail => ["test\@buzzdeskexample.com, <OTRS_TICKET_DynamicField_DFT2${RandomID}>"],
         },
         Config => {
             Event => 'TicketDynamicFieldUpdate_DFT2' . $RandomID . 'Update',
@@ -1268,7 +1266,7 @@ my @Tests = (
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => ['test@znunyexample.com'],
+                ToArray => ['test@buzzdeskexample.com'],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -1319,7 +1317,7 @@ my @Tests = (
         ExpectedResults => [
             {
                 ToArray =>
-                    [ "$CustomerUserLogin\@localunittest.com", 'test1@znunyexample.com', 'test2@znunyexample.com' ],
+                    [ "$CustomerUserLogin\@localunittest.com", 'test1@buzzdeskexample.com', 'test2@buzzdeskexample.com' ],
                 Body => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -1342,7 +1340,7 @@ my @Tests = (
         ExpectedResults => [
             {
                 ToArray =>
-                    [ "$CustomerUserLogin\@localunittest.com", 'test3@znunyexample.com', 'test4@znunyexample.com' ],
+                    [ "$CustomerUserLogin\@localunittest.com", 'test3@buzzdeskexample.com', 'test4@buzzdeskexample.com' ],
                 Body => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -1365,7 +1363,7 @@ my @Tests = (
         ExpectedResults => [
             {
                 ToArray =>
-                    [ "$CustomerUserLogin\@localunittest.com", 'test1@znunyexample.com', 'test2@znunyexample.com' ],
+                    [ "$CustomerUserLogin\@localunittest.com", 'test1@buzzdeskexample.com', 'test2@buzzdeskexample.com' ],
                 Body => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -1388,7 +1386,7 @@ my @Tests = (
         ExpectedResults => [
             {
                 ToArray =>
-                    [ "$CustomerUserLogin\@localunittest.com", 'test3@znunyexample.com', 'test4@znunyexample.com' ],
+                    [ "$CustomerUserLogin\@localunittest.com", 'test3@buzzdeskexample.com', 'test4@buzzdeskexample.com' ],
                 Body => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],
@@ -1411,11 +1409,11 @@ my @Tests = (
         ExpectedResults => [
             {
                 ToArray =>
-                    [ "$CustomerUserLogin\@localunittest.com", 'test1@znunyexample.com', 'test2@znunyexample.com' ],
+                    [ "$CustomerUserLogin\@localunittest.com", 'test1@buzzdeskexample.com', 'test2@buzzdeskexample.com' ],
                 Body => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
             {
-                ToArray => [ 'test3@znunyexample.com', 'test4@znunyexample.com' ],
+                ToArray => [ 'test3@buzzdeskexample.com', 'test4@buzzdeskexample.com' ],
                 Body    => "JobName $TicketID Kernel::System::Email::Test $UserData{UserFirstname}=\n",
             },
         ],

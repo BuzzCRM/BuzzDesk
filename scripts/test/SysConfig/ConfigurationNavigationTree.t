@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -42,11 +40,11 @@ my $ConfigObject    = $Kernel::OM->Get('Kernel::Config');
                 Files       => [],
             },
             OTRS => {
-                DisplayName => 'Znuny',
+                DisplayName => 'BuzzDesk',
                 Files       => [
                     'Calendar.xml',         'Daemon.xml',            'Framework.xml',
                     'GenericInterface.xml', 'ProcessManagement.xml', 'Ticket.xml',
-                    'Znuny.xml',
+                    'BuzzDesk.xml',
                 ],
             },
             Sample => {
@@ -202,8 +200,8 @@ my $String = '<?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.0">
   <Name>TestPackage1</Name>
   <Version>0.0.1</Version>
-  <Vendor>Znuny GmbH</Vendor>
-  <URL>https://znuny.com/</URL>
+  <Vendor>BuzzDesk GmbH</Vendor>
+  <URL>https://buzzdesk.com/</URL>
   <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
   <ChangeLog>2005-11-10 New package (some test &lt; &gt; &amp;).</ChangeLog>
   <Description Lang="en">A test package (some test &lt; &gt; &amp;).</Description>

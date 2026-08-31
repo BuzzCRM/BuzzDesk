@@ -1,6 +1,5 @@
 # ======================================================================
 #
-# Copyright (C) 2000-2004 Paul Kulchenko (paulclinger@yahoo.com)
 # SOAP::Lite is free software; you can redistribute it
 # and/or modify it under the same terms as Perl itself.
 #
@@ -545,7 +544,6 @@ L<MIME::Tools>, L<DIME::Tools>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2000-2007 Paul Kulchenko. All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

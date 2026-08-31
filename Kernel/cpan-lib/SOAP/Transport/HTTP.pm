@@ -1,6 +1,5 @@
 # ======================================================================
 #
-# Copyright (C) 2000-2004 Paul Kulchenko (paulclinger@yahoo.com)
 # SOAP::Lite is free software; you can redistribute it
 # and/or modify it under the same terms as Perl itself.
 #
@@ -896,7 +895,6 @@ sub configure {
 
 # ======================================================================
 #
-# Copyright (C) 2001 Single Source oy (marko.asplund@kronodoc.fi)
 # a FastCGI transport class for SOAP::Lite.
 # Updated formatting and removed dead code in new() in 2008
 # by Martin Kutter

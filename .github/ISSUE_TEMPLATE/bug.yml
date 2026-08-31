@@ -9,9 +9,9 @@ body:
     attributes:
       value: |
         You are amazing! 🚀
-        Thanks for reporting to the Znuny project!
+        Thanks for reporting to the BuzzDesk project!
 
-        **Important:** If you believe your issue is security related, please follow the [security guidelines](https://github.com/znuny/Znuny/blob/dev/SECURITY.md).
+        **Important:** If you believe your issue is security related, please follow the [security guidelines](https://github.com/buzzdesk/BuzzDesk/blob/dev/SECURITY.md).
 
   - type: checkboxes
     id: security-confirmation
@@ -50,10 +50,10 @@ body:
       required: true
 
   - type: input
-    id: znuny-version
+    id: buzzdesk-version
     attributes:
-      label: Znuny Version
-      description: What version of Znuny are you using?
+      label: BuzzDesk Version
+      description: What version of BuzzDesk are you using?
       placeholder: e.g. 7.0.12
     validations:
       required: true
@@ -63,7 +63,7 @@ body:
     attributes:
       label: Database Type
       multiple: false
-      description: What database are you using with Znuny?
+      description: What database are you using with BuzzDesk?
       options:
         - MySQL 8.0+
         - MariaDB 10.3+

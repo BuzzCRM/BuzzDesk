@@ -70,7 +70,6 @@ Authenticate with the server identifying as C<USER> with OAuth2 access token C<T
 
 =head1 LICENSE
 
-Copyright (C) Kizashi Nagata.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

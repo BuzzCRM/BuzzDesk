@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -8,7 +6,7 @@
 # --
 
 package Kernel::Modules::AdminPackageManager;
-## nofilter(TidyAll::Plugin::Znuny::Perl::DBObject)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::DBObject)
 
 use strict;
 use warnings;
@@ -57,7 +55,7 @@ sub Run {
                 if ( !$ApacheReload ) {
                     return $LayoutObject->ErrorScreen(
                         Message => Translatable(
-                            'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/znuny.Console.pl to install packages!'
+                            'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/buzzdesk.Console.pl to install packages!'
                         ),
                     );
                 }

@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -14,7 +13,7 @@ use warnings;
 use parent qw(Kernel::System::Console::BaseCommand);
 
 our @ObjectDependencies = (
-    'Kernel::System::ZnunyHelper',
+    'Kernel::System::BuzzDeskHelper',
 );
 
 sub Configure {
@@ -52,9 +51,9 @@ sub Configure {
 sub Run {
     my ( $Self, %Param ) = @_;
 
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
-    my $ConfigString = $ZnunyHelperObject->_DynamicFieldsConfigExport(
+    my $ConfigString = $BuzzDeskHelperObject->_DynamicFieldsConfigExport(
         Format                => $Self->GetArgument('format'),
         IncludeInternalFields => $Self->GetOption('include-internal-fields') // 0,
         IncludeAllConfigKeys  => $Self->GetOption('include-all-config-keys') // 0,

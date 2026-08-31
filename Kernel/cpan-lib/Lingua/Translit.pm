@@ -1,11 +1,8 @@
 package Lingua::Translit;
 
 #
-# Copyright (C) 2007-2008 ...
 #   Alex Linke <alinke@lingua-systems.com>
 #   Rona Linke <rlinke@lingua-systems.com>
-# Copyright (C) 2009-2016 Lingua-Systems Software GmbH
-# Copyright (C) 2016-2017 Netzum Sorglos, Lingua-Systems Software GmbH
 #
 
 use strict;
@@ -410,11 +407,8 @@ Rona Linke <rlinke@netzum-sorglos.de>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2007-2008 Alex Linke and Rona Linke
 
-Copyright (C) 2009-2016 Lingua-Systems Software GmbH
 
-Copyright (C) 2016-2017 Netzum Sorglos, Lingua-Systems Software GmbH
 
 This module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.

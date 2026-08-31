@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -46,7 +44,7 @@ sub Configure {
     my @Backends = $Self->_GetStorageBackends();
     if ( @Backends < 2 ) {
         $Self->Print("<red>ERROR: you need at least two storage backends installed!</red>\n");
-        $Self->Print("<red>Please check your installation, Znuny comes with two backends already.</red>\n");
+        $Self->Print("<red>Please check your installation, BuzzDesk comes with two backends already.</red>\n");
         return $Self->ExitCodeError();
     }
     my $BackendHelp
@@ -130,7 +128,7 @@ The <green>$Name</green> command migrates article data from one storage backend 
 The <green>$Name</green> command migrates article data from one storage backend
 to another on the fly, for example from DB to FS:
 
- <green>znuny.Console.pl $Self->{Name} --target ArticleStorageFS</green>
+ <green>buzzdesk.Console.pl $Self->{Name} --target ArticleStorageFS</green>
 
 You can specify limits for the tickets migrated with <yellow>--tickets-closed-before-date</yellow> and <yellow>--tickets-closed-before-days</yellow>.
 You can specify time limits for the tickets to migrate with the
@@ -140,7 +138,7 @@ options above. An ISO datetime can be specified either in full as in
 
 To reduce load on the database for a running system, you can use the <yellow>--micro-sleep</yellow> parameter. The command will pause for the specified amount of microseconds after each ticket.
 
- <green>znuny.Console.pl $Self->{Name} --target ArticleStorageFS --micro-sleep 1000</green>
+ <green>buzzdesk.Console.pl $Self->{Name} --target ArticleStorageFS --micro-sleep 1000</green>
 To reduce load on the database for a running system, you can use the
 <yellow>--micro-sleep</yellow> parameter. The command will pause for the
 specified amount of microseconds after each ticket.

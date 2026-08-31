@@ -12,7 +12,7 @@
 .vstags
 .vscode
 
-# Znuny
+# BuzzDesk
 .procmailrc
 /ARCHIVE
 Kernel/Config/Backups/
@@ -678,7 +678,7 @@ var/httpd/htdocs/js/ITSM.Agent.ConfigItem.UserSearch.js
 var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
 var/httpd/htdocs/js/ITSM.UI.ConfigItemActionRow.js
 var/httpd/htdocs/js/ITSM.UI.ConfigItemActionRow.js
-var/httpd/htdocs/js/Znuny.DynamicField.ConfigItem.js
+var/httpd/htdocs/js/BuzzDesk.DynamicField.ConfigItem.js
 var/httpd/htdocs/skins/Agent/default/css/ITSM.Agent.ConfigItem.Edit.css
 var/packagesetup/ITSMConfigurationManagement.pm
 

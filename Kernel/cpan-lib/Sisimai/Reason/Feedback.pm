@@ -49,7 +49,6 @@ azumakuniyuki
 
 =head1 COPYRIGHT
 
-Copyright (C) 2016 azumakuniyuki, All rights reserved.
 
 =head1 LICENSE
 

@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -7,7 +6,7 @@
 # --
 
 package var::processes::examples::Customer_user_registration_post;
-## nofilter(TidyAll::Plugin::Znuny::Perl::PerlCritic)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::PerlCritic)
 
 use strict;
 use warnings;

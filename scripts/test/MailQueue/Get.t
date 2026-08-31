@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -109,8 +107,8 @@ my $CreateTestData = sub {
 
     my $MailQueueObject = $Kernel::OM->Get('Kernel::System::MailQueue');
     my %ElementData     = (
-        Sender    => 'mailqueue.test@znuny.com',
-        Recipient => ['mailqueue.test@znuny.com'],
+        Sender    => 'mailqueue.test@buzzdesk.com',
+        Recipient => ['mailqueue.test@buzzdesk.com'],
         Message   => {
             'Key1' => 'Value1',
             'Key2' => 'Value2',

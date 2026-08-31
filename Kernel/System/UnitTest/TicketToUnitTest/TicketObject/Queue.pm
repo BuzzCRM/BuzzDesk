@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -40,7 +39,7 @@ OUTPUT
         $Output .= <<OUTPUT;
 ## Queue '$QueueData{Name}'
 
-\$ZnunyHelperObject->_QueueCreateIfNotExists(
+\$BuzzDeskHelperObject->_QueueCreateIfNotExists(
 OUTPUT
 
         for my $Attribute ( sort keys %QueueData ) {

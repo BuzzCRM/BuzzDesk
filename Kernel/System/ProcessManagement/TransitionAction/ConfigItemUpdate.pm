@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -23,7 +22,7 @@ our @ObjectDependencies = (
     'Kernel::System::Ticket',
     'Kernel::System::User',
     'Kernel::System::Util',
-    'Kernel::System::ZnunyHelper',
+    'Kernel::System::BuzzDeskHelper',
 );
 
 =head1 NAME
@@ -214,7 +213,7 @@ sub ConfigItemAttributesSet {
 
     my $LogObject         = $Kernel::OM->Get('Kernel::System::Log');
     my $ConfigItemObject  = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     NEEDED:
     for my $Needed (qw(ConfigItemID UserID)) {
@@ -233,7 +232,7 @@ sub ConfigItemAttributesSet {
     );
     return if !%ConfigItemParams;
 
-    my $VersionID = $ZnunyHelperObject->_ITSMConfigItemVersionAdd(
+    my $VersionID = $BuzzDeskHelperObject->_ITSMConfigItemVersionAdd(
         ConfigItemID => $Param{ConfigItemID},
         %ConfigItemParams,
     );
@@ -313,7 +312,7 @@ sub ConfigItemAttributesGet {
 
     my $LogObject         = $Kernel::OM->Get('Kernel::System::Log');
     my $ConfigItemObject  = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     NEEDED:
     for my $Needed (qw(ConfigItemID UserID)) {
@@ -329,7 +328,7 @@ sub ConfigItemAttributesGet {
     my $Separator = $Param{Separator} || ',';
 
     # get old values which are needed for version add
-    my %Version = $ZnunyHelperObject->_ITSMConfigItemVersionGet(
+    my %Version = $BuzzDeskHelperObject->_ITSMConfigItemVersionGet(
         ConfigItemID    => $Param{ConfigItemID},
         XMLDataMultiple => 1,
     );
@@ -411,8 +410,8 @@ sub ConfigItemAttributesGet {
 
 =head2 XMLData2StringifiedXMLData()
 
-Converts XMLdata structure (used by $ZnunyHelperObject => _ITSMConfigItemVersionAdd()) to stringified XMLData 'CPU::1'.
-This function should be integrated into Znuny::ITSM.
+Converts XMLdata structure (used by $BuzzDeskHelperObject => _ITSMConfigItemVersionAdd()) to stringified XMLData 'CPU::1'.
+This function should be integrated into BuzzDesk::ITSM.
 
     my $StringifiedXMLData = $ConfigItemUpdateObject->XMLData2StringifiedXMLData(
         Prefix  => $Prefix,
@@ -513,8 +512,8 @@ sub XMLData2StringifiedXMLData {
 
 =head2 StringifiedXMLData2XMLData()
 
-Converts stringified XMLData 'CPU::1' for config-item into XMLdata structure (used by $ZnunyHelperObject => _ITSMConfigItemVersionAdd()).
-This function should be integrated into Znuny::ITSM.
+Converts stringified XMLData 'CPU::1' for config-item into XMLdata structure (used by $BuzzDeskHelperObject => _ITSMConfigItemVersionAdd()).
+This function should be integrated into BuzzDesk::ITSM.
 
     my $XMLData = $ConfigItemUpdateObject->StringifiedXMLData2XMLData(
 

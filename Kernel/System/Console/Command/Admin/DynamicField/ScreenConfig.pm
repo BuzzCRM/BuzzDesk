@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -16,7 +15,7 @@ use Kernel::System::VariableCheck qw(:all);
 our @ObjectDependencies = (
     'Kernel::Config',
     'Kernel::System::DynamicField',
-    'Kernel::System::ZnunyHelper',
+    'Kernel::System::BuzzDeskHelper',
 );
 
 sub Configure {
@@ -79,7 +78,7 @@ sub Configure {
 sub Run {
     my ( $Self, %Param ) = @_;
 
-    my $ZnunyHelperObject  = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject  = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
     my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
 
     my $AvailableDynamicFieldNamesByID = $DynamicFieldObject->DynamicFieldList(
@@ -95,7 +94,7 @@ sub Run {
     my @AvailableDynamicFieldNames = sort values %{$AvailableDynamicFieldNamesByID};
     my %AvailableDynamicFieldNames = map { $_ => 1 } @AvailableDynamicFieldNames;
 
-    my $AvailableDynamicFieldScreens = $ZnunyHelperObject->_ValidDynamicFieldScreenListGet();
+    my $AvailableDynamicFieldScreens = $BuzzDeskHelperObject->_ValidDynamicFieldScreenListGet();
     if (
         !IsHashRefWithData($AvailableDynamicFieldScreens)
         || !IsArrayRefWithData( $AvailableDynamicFieldScreens->{DynamicFieldScreens} )
@@ -147,11 +146,11 @@ sub _ListConfigurations {
     my ( $Self, %Param ) = @_;
 
     my $ConfigObject      = $Kernel::OM->Get('Kernel::Config');
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     $Self->Print("<green>Current configurations of dynamic fields and screens:</green>\n");
 
-    my %CurrentDynamicFieldScreenConfigurations = $ZnunyHelperObject->_DefaultColumnsGet(
+    my %CurrentDynamicFieldScreenConfigurations = $BuzzDeskHelperObject->_DefaultColumnsGet(
         @{ $Param{AvailableDynamicFieldScreens} }
     );
 
@@ -185,7 +184,7 @@ sub _ListConfigurations {
 sub _UpdateScreenConfigurations {
     my ( $Self, %Param ) = @_;
 
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     my $SelectedDynamicFieldNames = $Self->GetOption('dynamic-field') // [];
     my $SelectedScreens           = $Self->GetOption('screen')        // [];
@@ -262,10 +261,10 @@ sub _UpdateScreenConfigurations {
     }
 
     if ($RemoveFromScreens) {
-        $ZnunyHelperObject->_DynamicFieldsScreenDisable(%ScreenConfigurations);
+        $BuzzDeskHelperObject->_DynamicFieldsScreenDisable(%ScreenConfigurations);
     }
     else {
-        $ZnunyHelperObject->_DynamicFieldsScreenEnable(%ScreenConfigurations);
+        $BuzzDeskHelperObject->_DynamicFieldsScreenEnable(%ScreenConfigurations);
     }
 
     $Self->Print("<green>Done.</green>\n");

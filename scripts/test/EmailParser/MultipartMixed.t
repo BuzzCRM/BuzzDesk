@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -9,7 +7,7 @@
 
 # This nofilter is in here because it would mess around with the copyright strings
 # contained in the attachment of the last test below.
-## nofilter(TidyAll::Plugin::Znuny::Legal::UpdateZnunyCopyright)
+## nofilter(TidyAll::Plugin::BuzzDesk::Legal::UpdateBuzzDeskCopyright)
 
 use strict;
 use warnings;

@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -72,7 +70,7 @@ run all or some tests located in C<scripts/test/**/*.t> and print the result.
         SubmitAuth             => $SubmitAuth,                  # optional authentication string for unit test result server
         SubmitResultAsExitCode => 1,                            # optional, specify if exit code should not indicate if tests were ok/not ok, but if submission was successful instead
         JobID                  => 12,                           # optional job ID for unit test submission to server
-        Scenario               => 'Znuny 6 git',                # optional scenario identifier for unit test submission to server
+        Scenario               => 'BuzzDesk 6 git',                # optional scenario identifier for unit test submission to server
         PostTestScripts        => ['...'],                      # Script(s) to execute after a test has been run.
                                                                 #  You can specify %File%, %TestOk% and %TestNotOk% as dynamic arguments.
         PreSubmitScripts       => ['...'],                      # Script(s) to execute after all tests have been executed
@@ -436,8 +434,8 @@ sub _SubmitResults {
     $Kernel::OM->Get('Kernel::Config')->Set(
         Key   => 'SupportDataCollector::DisablePlugins',
         Value => [
-            'Kernel::System::SupportDataCollector::Plugin::Znuny::DaemonRunning',
-            'Kernel::System::SupportDataCollector::Plugin::Znuny::DefaultUser',
+            'Kernel::System::SupportDataCollector::Plugin::BuzzDesk::DaemonRunning',
+            'Kernel::System::SupportDataCollector::Plugin::BuzzDesk::DefaultUser',
         ],
     );
 

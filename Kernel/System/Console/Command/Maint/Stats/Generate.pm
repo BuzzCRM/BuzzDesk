@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -34,7 +32,7 @@ sub Configure {
     my ( $Self, %Param ) = @_;
 
     $Self->Description(
-        'Generate (and send, optional) statistics which have been configured previously in the Znuny statistics module.'
+        'Generate (and send, optional) statistics which have been configured previously in the BuzzDesk statistics module.'
     );
 
     $Self->AddOption(
@@ -100,7 +98,7 @@ sub Configure {
     $Self->AddOption(
         Name        => 'language',
         Description =>
-            "Target language (e.g. de) for which the file should be generated (will be Znuny default language or english as fallback if left empty).",
+            "Target language (e.g. de) for which the file should be generated (will be BuzzDesk default language or english as fallback if left empty).",
         Required   => 0,
         HasValue   => 1,
         ValueRegex => qr/.*/smx,

@@ -1,6 +1,4 @@
 // --
-// Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (GPL). If you
@@ -10,7 +8,7 @@
 "use strict";
 
 var Core = Core || {},
-    Znuny = Znuny || {};
+    BuzzDesk = BuzzDesk || {};
 Core.Agent = Core.Agent || {};
 
 /**
@@ -33,7 +31,7 @@ Core.Agent.TicketPhoneCommon = (function (TargetNS) {
 
         var UpdateFields = Core.Config.Get('DynamicFieldNames') || [];
 
-        Znuny.Form.Input.FieldIDMapping('AgentTicketPhoneOutbound',
+        BuzzDesk.Form.Input.FieldIDMapping('AgentTicketPhoneOutbound',
             {
                 Body:       'RichText',
                 StateID:    'NextStateID',

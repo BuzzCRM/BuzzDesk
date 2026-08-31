@@ -1,7 +1,7 @@
-From skywalker@znuny.org Sat Jun  8 21:30:55 2002
+From skywalker@buzzdesk.org Sat Jun  8 21:30:55 2002
 Date: Sat, 8 Jun 2002 21:30:55 +0200
-From: Skywalker Attachment <skywalker@znuny.org>
-To: darthvader@znuny.org
+From: Skywalker Attachment <skywalker@buzzdesk.org>
+To: darthvader@buzzdesk.org
 Subject: Attachment Test
 Message-ID: <20020608193055.GA4593@sex-on-the-beach.my123.de>
 Mime-Version: 1.0
@@ -29,19 +29,19 @@ Hi!
 
 just a email with an attachment and an very long http link in this body.
 
- o http://znuny.org/?Example=ThisIsAVeryShortLink
+ o http://buzzdesk.org/?Example=ThisIsAVeryShortLink
 
- o http://znuny.org/?Example=ThisIsAVeryShortLink And a following text over 80 chars.
+ o http://buzzdesk.org/?Example=ThisIsAVeryShortLink And a following text over 80 chars.
 
- o A leading text http://znuny.org/?Example=ThisIsAVeryShortLink and a following text over 80 chars.
+ o A leading text http://buzzdesk.org/?Example=ThisIsAVeryShortLink and a following text over 80 chars.
 
- o A leading text following by a link http://znuny.org/?Example=ThisIsAVeryShortLink and a following text over 80 chars.
+ o A leading text following by a link http://buzzdesk.org/?Example=ThisIsAVeryShortLink and a following text over 80 chars.
 
- o http://znuny.org/?Example=First http://znuny.org/?Example=Second http://znuny.org/?Example=Third
+ o http://buzzdesk.org/?Example=First http://buzzdesk.org/?Example=Second http://buzzdesk.org/?Example=Third
 
- o http://znuny.org/?Example=ThisIsAVeryLongLinkWhichShouldBeShownInShortFormInTheApplication1ThisIsAVeryLongLinkWhichShouldBeShownInShortFormInTheApplication2ThisIsAVeryLongLinkWhichShouldBeShownInShortFormInTheApplication3 And a following text.
+ o http://buzzdesk.org/?Example=ThisIsAVeryLongLinkWhichShouldBeShownInShortFormInTheApplication1ThisIsAVeryLongLinkWhichShouldBeShownInShortFormInTheApplication2ThisIsAVeryLongLinkWhichShouldBeShownInShortFormInTheApplication3 And a following text.
 
- o http://znuny.org/?Example=ThisIsAVeryLongLinkWhichShouldBeShownInShortFormInTheApplication1ThisIsAVeryLongLinkWhichShouldBeShownInShortFormInTheApplication2ThisIsAVeryLongLinkWhichShouldBeShownInShortFormInTheApplication3
+ o http://buzzdesk.org/?Example=ThisIsAVeryLongLinkWhichShouldBeShownInShortFormInTheApplication1ThisIsAVeryLongLinkWhichShouldBeShownInShortFormInTheApplication2ThisIsAVeryLongLinkWhichShouldBeShownInShortFormInTheApplication3
 
   Martin
 

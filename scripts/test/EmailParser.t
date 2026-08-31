@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -35,13 +33,13 @@ my $EmailParserObject = Kernel::System::EmailParser->new(
 
 $Self->Is(
     $EmailParserObject->GetParam( WHAT => 'To' ),
-    'darthvader@znuny.org',
+    'darthvader@buzzdesk.org',
     "#1 GetParam(WHAT => 'To')",
 );
 
 $Self->Is(
     $EmailParserObject->GetParam( WHAT => 'From' ),
-    'Skywalker Attachment <skywalker@znuny.org>',
+    'Skywalker Attachment <skywalker@buzzdesk.org>',
     "#1 GetParam(WHAT => 'From')",
 );
 

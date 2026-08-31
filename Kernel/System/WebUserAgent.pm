@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -142,7 +140,7 @@ If you need to set credentials
             User     => 'otrs_user',
             Password => 'otrs_password',
             Realm    => 'OTRS Unittests',
-            Location => 'download.znuny.org:80',
+            Location => 'download.buzzdesk.org:80',
         },
         SkipSSLVerification => 1, # (optional)
         NoLog               => 1, # (optional)

@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -39,10 +37,10 @@ my @Tests = (
         RepositoryList => [],
         ExpectedResult => {
             'Freebie Features' => {
-                'URL' => 'https://download.znuny.org/releases/packages',
+                'URL' => 'https://download.buzzdesk.org/releases/packages',
             },
-            'Znuny Open Source Add-ons' => {
-                'URL' => 'https://addons.znuny.com/public',
+            'BuzzDesk Open Source Add-ons' => {
+                'URL' => 'https://addons.buzzdesk.com/public',
             },
         },
     },
@@ -51,29 +49,29 @@ my @Tests = (
         RepositoryList => [
             {
                 Name            => 'Test repository',
-                URL             => 'https://download.znuny.org',
+                URL             => 'https://download.buzzdesk.org',
                 AuthHeaderKey   => 'Authorization',
                 AuthHeaderValue => 'Token token=MyToken',
             },
             {
                 Name => 'Test repository 2',
-                URL  => 'https://download2.znuny.org',
+                URL  => 'https://download2.buzzdesk.org',
             },
         ],
         ExpectedResult => {
             'Freebie Features' => {
-                'URL' => 'https://download.znuny.org/releases/packages',
+                'URL' => 'https://download.buzzdesk.org/releases/packages',
             },
-            'Znuny Open Source Add-ons' => {
-                'URL' => 'https://addons.znuny.com/public',
+            'BuzzDesk Open Source Add-ons' => {
+                'URL' => 'https://addons.buzzdesk.com/public',
             },
             'Test repository' => {
-                URL             => 'https://download.znuny.org',
+                URL             => 'https://download.buzzdesk.org',
                 AuthHeaderKey   => 'Authorization',
                 AuthHeaderValue => 'Token token=MyToken',
             },
             'Test repository 2' => {
-                URL => 'https://download2.znuny.org',
+                URL => 'https://download2.buzzdesk.org',
             },
         },
     },

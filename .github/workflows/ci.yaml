@@ -14,8 +14,8 @@ on:
         type: string
 
 jobs:
-  ZnunyCodePolicy:
-    name: ZnunyCodePolicy
+  BuzzDeskCodePolicy:
+    name: BuzzDeskCodePolicy
     runs-on: ubuntu-latest
     container: debian:12-slim
     steps:
@@ -24,29 +24,29 @@ jobs:
         env:
           fetch-depth: "1"
         with:
-          path: znuny
+          path: buzzdesk
 
       - name: Check out code policy
         uses: actions/checkout@v7
         env:
           fetch-depth: "1"
         with:
-          repository: znuny/ZnunyCodePolicy
+          repository: buzzdesk/BuzzDeskCodePolicy
           path: codepolicy
 
       - name: Install dependencies
-        run: znuny/.github/workflows/ci/dependencies.sh
+        run: buzzdesk/.github/workflows/ci/dependencies.sh
 
       - name: Prepare code policy
         run: |
           cpanm --verbose Algorithm::Diff Code::TidyAll Perl::Critic Perl::Tidy Pod::POM XML::Parser
-          codepolicy/bin/znuny.CodePolicy.pl --install-eslint
+          codepolicy/bin/buzzdesk.CodePolicy.pl --install-eslint
 
       - name: Run code policy
         run: |
-          cd "${GITHUB_WORKSPACE}/znuny"
+          cd "${GITHUB_WORKSPACE}/buzzdesk"
           git init
-          "${GITHUB_WORKSPACE}/codepolicy/bin/znuny.CodePolicy.pl" --all-files --mode ci
+          "${GITHUB_WORKSPACE}/codepolicy/bin/buzzdesk.CodePolicy.pl" --all-files --mode ci
 
   Contributors:
     name: Contributors
@@ -61,14 +61,14 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Check Contributors
         run: |
           git init
           git config --global --add safe.directory ${GITHUB_WORKSPACE}
-          su -c "bin/znuny.Console.pl Dev::Code::ContributorsListUpdate" - znuny
+          su -c "bin/buzzdesk.Console.pl Dev::Code::ContributorsListUpdate" - buzzdesk
           if [ "$(git diff --exit-code AUTHORS.md)" ]; then echo 'The ContributorsList is not updated.' && exit 1; else echo 'The ContributorsList is updated.' && exit 0; fi
 
   Database-Schema:
@@ -84,7 +84,7 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Check Database:Schema
@@ -95,7 +95,7 @@ jobs:
           SCHEMA_FILE_NAME=$(find scripts/database -type f -name '*schema.xml' | cut -d/ -f3- | sed 's/\.xml$//')
           echo "Found schema file $SCHEMA_FILE"
           echo "Found schema file name $SCHEMA_FILE_NAME"
-          su -c "bin/znuny.Console.pl Dev::Tools::Database::XML2SQL --database-type=all --source-path=${SCHEMA_FILE} --target-directory=scripts/database --target-filename=$SCHEMA_FILE_NAME --split-files" - znuny
+          su -c "bin/buzzdesk.Console.pl Dev::Tools::Database::XML2SQL --database-type=all --source-path=${SCHEMA_FILE} --target-directory=scripts/database --target-filename=$SCHEMA_FILE_NAME --split-files" - buzzdesk
           git diff --exit-code scripts/database/*schema*
           if [ "$(git diff --exit-code scripts/database/*schema*)" ]; then echo 'The database schemas are not updated.' && exit 1; else echo 'All database schemas are updated.' && exit 0; fi
 
@@ -112,7 +112,7 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Check Database:InitialInsert
@@ -123,7 +123,7 @@ jobs:
           INITIAL_INSERT_FILE_NAME=$(find scripts/database -type f -name '*initial_insert.xml' | cut -d/ -f3- | sed 's/\.xml$//')
           echo "Found initial insert file $INITIAL_INSERT_FILE"
           echo "Found initial insert file name $INITIAL_INSERT_FILE_NAME"
-          su -c "bin/znuny.Console.pl Dev::Tools::Database::XML2SQL --database-type=all --source-path=$INITIAL_INSERT_FILE --target-directory=scripts/database --target-filename=$INITIAL_INSERT_FILE_NAME" - znuny
+          su -c "bin/buzzdesk.Console.pl Dev::Tools::Database::XML2SQL --database-type=all --source-path=$INITIAL_INSERT_FILE --target-directory=scripts/database --target-filename=$INITIAL_INSERT_FILE_NAME" - buzzdesk
           git diff --exit-code scripts/database/*initial_insert*
           if [ "$(git diff --exit-code scripts/database/*initial_insert*)" ]; then echo 'The database initial inserts are not updated.' && exit 1; else echo 'All database initial inserts are updated.' && exit 0; fi
 
@@ -133,18 +133,18 @@ jobs:
     container: debian:12-slim
     env:
       DB: mysql
-      MYSQL_USER: "znuny"
+      MYSQL_USER: "buzzdesk"
       MYSQL_ROOT_PASSWORD: "secret"
       MYSQL_PASSWORD: "secret"
-      MYSQL_DATABASE: "znuny"
+      MYSQL_DATABASE: "buzzdesk"
     services:
       mariadb:
         image: mariadb:10
         env:
-          MYSQL_USER: "znuny"
+          MYSQL_USER: "buzzdesk"
           MYSQL_ROOT_PASSWORD: "secret"
           MYSQL_PASSWORD: "secret"
-          MYSQL_DATABASE: "znuny"
+          MYSQL_DATABASE: "buzzdesk"
     steps:
       - name: Check out repository code
         uses: actions/checkout@v7
@@ -154,13 +154,13 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Check Migration
         run: |
-          MIGRATEFILE=$(find scripts -type f -name 'MigrateToZnuny*.pl' -or -type f -name 'DBUpdate-to-*.pl')
-          su -c "$MIGRATEFILE --non-interactive" - znuny
+          MIGRATEFILE=$(find scripts -type f -name 'MigrateToBuzzDesk*.pl' -or -type f -name 'DBUpdate-to-*.pl')
+          su -c "$MIGRATEFILE --non-interactive" - buzzdesk
           if [ "$?" -ne 0 ]; then echo "The migration was not successful." && exit 1; else echo "The migration was successful." && exit 0; fi
 
   RPMSpec:
@@ -169,18 +169,18 @@ jobs:
     container: debian:12-slim
     env:
       DB: mysql
-      MYSQL_USER: "znuny"
+      MYSQL_USER: "buzzdesk"
       MYSQL_ROOT_PASSWORD: "secret"
       MYSQL_PASSWORD: "secret"
-      MYSQL_DATABASE: "znuny"
+      MYSQL_DATABASE: "buzzdesk"
     services:
       mariadb:
         image: mariadb:10
         env:
-          MYSQL_USER: "znuny"
+          MYSQL_USER: "buzzdesk"
           MYSQL_ROOT_PASSWORD: "secret"
           MYSQL_PASSWORD: "secret"
-          MYSQL_DATABASE: "znuny"
+          MYSQL_DATABASE: "buzzdesk"
     steps:
       - name: Check out repository code
         uses: actions/checkout@v7
@@ -190,14 +190,14 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Check RPMSpec
         run: |
           git init
           git config --global --add safe.directory ${GITHUB_WORKSPACE}
-          su -c "bin/znuny.Console.pl Dev::Tools::RPMSpecGenerate" - znuny
+          su -c "bin/buzzdesk.Console.pl Dev::Tools::RPMSpecGenerate" - buzzdesk
           git diff --exit-code scripts/auto_build/spec/
           if [ "$(git diff --exit-code scripts/auto_build/spec/)" ]; then echo "The RPMSpec's are not updated." && exit 1; else echo "All RPMSpec's are updated." && exit 0; fi
 
@@ -206,7 +206,7 @@ jobs:
     runs-on: ubuntu-latest
     container: debian:12-slim
     needs: [
-      ZnunyCodePolicy,
+      BuzzDeskCodePolicy,
       Contributors,
       Database-Schema,
       Database-InitialInsert,
@@ -215,18 +215,18 @@ jobs:
     ]
     env:
       DB: mysql
-      MYSQL_USER: "znuny"
+      MYSQL_USER: "buzzdesk"
       MYSQL_ROOT_PASSWORD: "secret"
       MYSQL_PASSWORD: "secret"
-      MYSQL_DATABASE: "znuny"
+      MYSQL_DATABASE: "buzzdesk"
     services:
       mariadb:
         image: mariadb:10
         env:
-          MYSQL_USER: "znuny"
+          MYSQL_USER: "buzzdesk"
           MYSQL_ROOT_PASSWORD: "secret"
           MYSQL_PASSWORD: "secret"
-          MYSQL_DATABASE: "znuny"
+          MYSQL_DATABASE: "buzzdesk"
     steps:
       - name: Check out repository code
         uses: actions/checkout@v7
@@ -236,13 +236,13 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Run UnitTests
         run: |
-          su -c "bin/znuny.CheckSum.pl -a create" - znuny
-          su -c "bin/znuny.Console.pl Dev::UnitTest::Run ${{ inputs.unittest_options }} --exclude-directory Selenium" - znuny
+          su -c "bin/buzzdesk.CheckSum.pl -a create" - buzzdesk
+          su -c "bin/buzzdesk.Console.pl Dev::UnitTest::Run ${{ inputs.unittest_options }} --exclude-directory Selenium" - buzzdesk
 
   Selenium-Base:
     name: Selenium:Base
@@ -251,24 +251,24 @@ jobs:
     needs: UnitTest-MySQL
     env:
       DB: mysql
-      MYSQL_USER: "znuny"
+      MYSQL_USER: "buzzdesk"
       MYSQL_ROOT_PASSWORD: "secret"
       MYSQL_PASSWORD: "secret"
-      MYSQL_DATABASE: "znuny"
+      MYSQL_DATABASE: "buzzdesk"
       SELENIUM_SCREENSHOTS: "true"
     services:
       mariadb:
         image: mariadb:10
         env:
-          MYSQL_USER: "znuny"
+          MYSQL_USER: "buzzdesk"
           MYSQL_ROOT_PASSWORD: "secret"
           MYSQL_PASSWORD: "secret"
-          MYSQL_DATABASE: "znuny"
+          MYSQL_DATABASE: "buzzdesk"
       chrome:
         image: selenium/standalone-chrome:3.141.59-oxygen
         options: --shm-size="2g"
         volumes:
-          - ${{ github.workspace }}:/opt/znuny
+          - ${{ github.workspace }}:/opt/buzzdesk
     steps:
       - name: Check out repository code
         uses: actions/checkout@v7
@@ -278,13 +278,13 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Run UnitTests
         run: |
-          su -c "bin/znuny.CheckSum.pl -a create" - znuny
-          su -c "bin/znuny.Console.pl Dev::UnitTest::Run --directory Selenium/Base" - znuny
+          su -c "bin/buzzdesk.CheckSum.pl -a create" - buzzdesk
+          su -c "bin/buzzdesk.Console.pl Dev::UnitTest::Run --directory Selenium/Base" - buzzdesk
 
       - name: Archive screenshots from selenium
         if: failure()
@@ -292,7 +292,7 @@ jobs:
         with:
           name: Upload Selenium Screenshots - Base
           retention-days: 1
-          path: /opt/znuny/var/httpd/htdocs/SeleniumScreenshots/**/*
+          path: /opt/buzzdesk/var/httpd/htdocs/SeleniumScreenshots/**/*
           if-no-files-found: ignore
 
 
@@ -303,24 +303,24 @@ jobs:
     needs: UnitTest-MySQL
     env:
       DB: mysql
-      MYSQL_USER: "znuny"
+      MYSQL_USER: "buzzdesk"
       MYSQL_ROOT_PASSWORD: "secret"
       MYSQL_PASSWORD: "secret"
-      MYSQL_DATABASE: "znuny"
+      MYSQL_DATABASE: "buzzdesk"
       SELENIUM_SCREENSHOTS: "true"
     services:
       mariadb:
         image: mariadb:10
         env:
-          MYSQL_USER: "znuny"
+          MYSQL_USER: "buzzdesk"
           MYSQL_ROOT_PASSWORD: "secret"
           MYSQL_PASSWORD: "secret"
-          MYSQL_DATABASE: "znuny"
+          MYSQL_DATABASE: "buzzdesk"
       chrome:
         image: selenium/standalone-chrome:3.141.59-oxygen
         options: --shm-size="2g"
         volumes:
-          - ${{ github.workspace }}:/opt/znuny
+          - ${{ github.workspace }}:/opt/buzzdesk
     steps:
       - name: Check out repository code
         uses: actions/checkout@v7
@@ -330,13 +330,13 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Run UnitTests
         run: |
-          su -c "bin/znuny.CheckSum.pl -a create" - znuny
-          su -c "bin/znuny.Console.pl Dev::UnitTest::Run --directory Selenium/Agent/Admin" - znuny
+          su -c "bin/buzzdesk.CheckSum.pl -a create" - buzzdesk
+          su -c "bin/buzzdesk.Console.pl Dev::UnitTest::Run --directory Selenium/Agent/Admin" - buzzdesk
 
       - name: Archive screenshots from selenium
         if: failure()
@@ -344,7 +344,7 @@ jobs:
         with:
           name: Upload Selenium Screenshots - Admin
           retention-days: 1
-          path: /opt/znuny/var/httpd/htdocs/SeleniumScreenshots/**/*
+          path: /opt/buzzdesk/var/httpd/htdocs/SeleniumScreenshots/**/*
           if-no-files-found: ignore
 
 
@@ -355,24 +355,24 @@ jobs:
     needs: UnitTest-MySQL
     env:
       DB: mysql
-      MYSQL_USER: "znuny"
+      MYSQL_USER: "buzzdesk"
       MYSQL_ROOT_PASSWORD: "secret"
       MYSQL_PASSWORD: "secret"
-      MYSQL_DATABASE: "znuny"
+      MYSQL_DATABASE: "buzzdesk"
       SELENIUM_SCREENSHOTS: "true"
     services:
       mariadb:
         image: mariadb:10
         env:
-          MYSQL_USER: "znuny"
+          MYSQL_USER: "buzzdesk"
           MYSQL_ROOT_PASSWORD: "secret"
           MYSQL_PASSWORD: "secret"
-          MYSQL_DATABASE: "znuny"
+          MYSQL_DATABASE: "buzzdesk"
       chrome:
         image: selenium/standalone-chrome:3.141.59-oxygen
         options: --shm-size="2g"
         volumes:
-          - ${{ github.workspace }}:/opt/znuny
+          - ${{ github.workspace }}:/opt/buzzdesk
     steps:
       - name: Check out repository code
         uses: actions/checkout@v7
@@ -382,13 +382,13 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Run UnitTests
         run: |
-          su -c "bin/znuny.CheckSum.pl -a create" - znuny
-          su -c "bin/znuny.Console.pl Dev::UnitTest::Run --directory Selenium/Agent --exclude-directory Selenium/Agent/Admin" - znuny
+          su -c "bin/buzzdesk.CheckSum.pl -a create" - buzzdesk
+          su -c "bin/buzzdesk.Console.pl Dev::UnitTest::Run --directory Selenium/Agent --exclude-directory Selenium/Agent/Admin" - buzzdesk
 
       - name: Archive screenshots from selenium
         if: failure()
@@ -396,7 +396,7 @@ jobs:
         with:
           name: Upload Selenium Screenshots - Agent
           retention-days: 1
-          path: /opt/znuny/var/httpd/htdocs/SeleniumScreenshots/**/*
+          path: /opt/buzzdesk/var/httpd/htdocs/SeleniumScreenshots/**/*
           if-no-files-found: ignore
 
 
@@ -407,24 +407,24 @@ jobs:
     needs: UnitTest-MySQL
     env:
       DB: mysql
-      MYSQL_USER: "znuny"
+      MYSQL_USER: "buzzdesk"
       MYSQL_ROOT_PASSWORD: "secret"
       MYSQL_PASSWORD: "secret"
-      MYSQL_DATABASE: "znuny"
+      MYSQL_DATABASE: "buzzdesk"
       SELENIUM_SCREENSHOTS: "true"
     services:
       mariadb:
         image: mariadb:10
         env:
-          MYSQL_USER: "znuny"
+          MYSQL_USER: "buzzdesk"
           MYSQL_ROOT_PASSWORD: "secret"
           MYSQL_PASSWORD: "secret"
-          MYSQL_DATABASE: "znuny"
+          MYSQL_DATABASE: "buzzdesk"
       chrome:
         image: selenium/standalone-chrome:3.141.59-oxygen
         options: --shm-size="2g"
         volumes:
-          - ${{ github.workspace }}:/opt/znuny
+          - ${{ github.workspace }}:/opt/buzzdesk
     steps:
       - name: Check out repository code
         uses: actions/checkout@v7
@@ -434,13 +434,13 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Run UnitTests
         run: |
-          su -c "bin/znuny.CheckSum.pl -a create" - znuny
-          su -c "bin/znuny.Console.pl Dev::UnitTest::Run --directory Selenium/Customer" - znuny
+          su -c "bin/buzzdesk.CheckSum.pl -a create" - buzzdesk
+          su -c "bin/buzzdesk.Console.pl Dev::UnitTest::Run --directory Selenium/Customer" - buzzdesk
 
       - name: Archive screenshots from selenium
         if: failure()
@@ -448,7 +448,7 @@ jobs:
         with:
           name: Upload Selenium Screenshots - Customer
           retention-days: 1
-          path: /opt/znuny/var/httpd/htdocs/SeleniumScreenshots/**/*
+          path: /opt/buzzdesk/var/httpd/htdocs/SeleniumScreenshots/**/*
           if-no-files-found: ignore
 
 
@@ -459,24 +459,24 @@ jobs:
     needs: UnitTest-MySQL
     env:
       DB: mysql
-      MYSQL_USER: "znuny"
+      MYSQL_USER: "buzzdesk"
       MYSQL_ROOT_PASSWORD: "secret"
       MYSQL_PASSWORD: "secret"
-      MYSQL_DATABASE: "znuny"
+      MYSQL_DATABASE: "buzzdesk"
       SELENIUM_SCREENSHOTS: "true"
     services:
       mariadb:
         image: mariadb:10
         env:
-          MYSQL_USER: "znuny"
+          MYSQL_USER: "buzzdesk"
           MYSQL_ROOT_PASSWORD: "secret"
           MYSQL_PASSWORD: "secret"
-          MYSQL_DATABASE: "znuny"
+          MYSQL_DATABASE: "buzzdesk"
       chrome:
         image: selenium/standalone-chrome:3.141.59-oxygen
         options: --shm-size="2g"
         volumes:
-          - ${{ github.workspace }}:/opt/znuny
+          - ${{ github.workspace }}:/opt/buzzdesk
     steps:
       - name: Check out repository code
         uses: actions/checkout@v7
@@ -486,13 +486,13 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Run UnitTests
         run: |
-          su -c "bin/znuny.CheckSum.pl -a create" - znuny
-          su -c "bin/znuny.Console.pl Dev::UnitTest::Run --directory Selenium/JavaScript" - znuny
+          su -c "bin/buzzdesk.CheckSum.pl -a create" - buzzdesk
+          su -c "bin/buzzdesk.Console.pl Dev::UnitTest::Run --directory Selenium/JavaScript" - buzzdesk
 
       - name: Archive screenshots from selenium
         if: failure()
@@ -500,7 +500,7 @@ jobs:
         with:
           name: Upload Selenium Screenshots - JavaScript
           retention-days: 1
-          path: /opt/znuny/var/httpd/htdocs/SeleniumScreenshots/**/*
+          path: /opt/buzzdesk/var/httpd/htdocs/SeleniumScreenshots/**/*
           if-no-files-found: ignore
 
 
@@ -511,24 +511,24 @@ jobs:
     needs: UnitTest-MySQL
     env:
       DB: mysql
-      MYSQL_USER: "znuny"
+      MYSQL_USER: "buzzdesk"
       MYSQL_ROOT_PASSWORD: "secret"
       MYSQL_PASSWORD: "secret"
-      MYSQL_DATABASE: "znuny"
+      MYSQL_DATABASE: "buzzdesk"
       SELENIUM_SCREENSHOTS: "true"
     services:
       mariadb:
         image: mariadb:10
         env:
-          MYSQL_USER: "znuny"
+          MYSQL_USER: "buzzdesk"
           MYSQL_ROOT_PASSWORD: "secret"
           MYSQL_PASSWORD: "secret"
-          MYSQL_DATABASE: "znuny"
+          MYSQL_DATABASE: "buzzdesk"
       chrome:
         image: selenium/standalone-chrome:3.141.59-oxygen
         options: --shm-size="2g"
         volumes:
-          - ${{ github.workspace }}:/opt/znuny
+          - ${{ github.workspace }}:/opt/buzzdesk
     steps:
       - name: Check out repository code
         uses: actions/checkout@v7
@@ -538,13 +538,13 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Run UnitTests
         run: |
-          su -c "bin/znuny.CheckSum.pl -a create" - znuny
-          su -c "bin/znuny.Console.pl Dev::UnitTest::Run --directory Selenium/Output" - znuny
+          su -c "bin/buzzdesk.CheckSum.pl -a create" - buzzdesk
+          su -c "bin/buzzdesk.Console.pl Dev::UnitTest::Run --directory Selenium/Output" - buzzdesk
 
       - name: Archive screenshots from selenium
         if: failure()
@@ -552,7 +552,7 @@ jobs:
         with:
           name: Upload Selenium Screenshots - Output
           retention-days: 1
-          path: /opt/znuny/var/httpd/htdocs/SeleniumScreenshots/**/*
+          path: /opt/buzzdesk/var/httpd/htdocs/SeleniumScreenshots/**/*
           if-no-files-found: ignore
 
 
@@ -563,24 +563,24 @@ jobs:
     needs: UnitTest-MySQL
     env:
       DB: mysql
-      MYSQL_USER: "znuny"
+      MYSQL_USER: "buzzdesk"
       MYSQL_ROOT_PASSWORD: "secret"
       MYSQL_PASSWORD: "secret"
-      MYSQL_DATABASE: "znuny"
+      MYSQL_DATABASE: "buzzdesk"
       SELENIUM_SCREENSHOTS: "true"
     services:
       mariadb:
         image: mariadb:10
         env:
-          MYSQL_USER: "znuny"
+          MYSQL_USER: "buzzdesk"
           MYSQL_ROOT_PASSWORD: "secret"
           MYSQL_PASSWORD: "secret"
-          MYSQL_DATABASE: "znuny"
+          MYSQL_DATABASE: "buzzdesk"
       chrome:
         image: selenium/standalone-chrome:3.141.59-oxygen
         options: --shm-size="2g"
         volumes:
-          - ${{ github.workspace }}:/opt/znuny
+          - ${{ github.workspace }}:/opt/buzzdesk
     steps:
       - name: Check out repository code
         uses: actions/checkout@v7
@@ -590,13 +590,13 @@ jobs:
       - name: Install dependencies
         run: .github/workflows/ci/dependencies.sh
 
-      - name: Setup Znuny
+      - name: Setup BuzzDesk
         run: .github/workflows/ci/setup.sh
 
       - name: Run UnitTests
         run: |
-          su -c "bin/znuny.CheckSum.pl -a create" - znuny
-          su -c "bin/znuny.Console.pl Dev::UnitTest::Run --directory Selenium/SysConfig" - znuny
+          su -c "bin/buzzdesk.CheckSum.pl -a create" - buzzdesk
+          su -c "bin/buzzdesk.Console.pl Dev::UnitTest::Run --directory Selenium/SysConfig" - buzzdesk
 
       - name: Archive screenshots from selenium
         if: failure()
@@ -605,5 +605,5 @@ jobs:
           name: Upload Selenium Screenshots - SysConfig
           retention-days: 1
           path: |
-            /opt/znuny/var/httpd/htdocs/SeleniumScreenshots/**/*
+            /opt/buzzdesk/var/httpd/htdocs/SeleniumScreenshots/**/*
           if-no-files-found: ignore

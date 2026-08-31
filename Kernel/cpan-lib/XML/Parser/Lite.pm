@@ -1,7 +1,5 @@
 # ======================================================================
 #
-# Copyright (C) 2000-2007 Paul Kulchenko (paulclinger@yahoo.com)
-# Copyright (C) 2008 Martin Kutter (martin.kutter@fen-net.de)
 # XML::Parser::Lite is free software; you can redistribute it
 # and/or modify it under the same terms as Perl itself.
 #
@@ -356,9 +354,7 @@ L<XML::Parser::REX> - another module that parses XML with regular expressions.
 
 =head1 COPYRIGHT
 
-Copyright (C) 2000-2007 Paul Kulchenko. All rights reserved.
 
-Copyright (C) 2008- Martin Kutter. All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

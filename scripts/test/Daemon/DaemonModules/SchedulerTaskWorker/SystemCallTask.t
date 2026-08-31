@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -18,7 +16,7 @@ use vars (qw($Self));
 
 my $Home = $Kernel::OM->Get('Kernel::Config')->Get('Home');
 
-my $Daemon = $Home . '/bin/znuny.Daemon.pl';
+my $Daemon = $Home . '/bin/buzzdesk.Daemon.pl';
 
 # Get current daemon status.
 my $PreviousDaemonStatus = `$Daemon status`;
@@ -237,7 +235,7 @@ $Self->False(
 
 my @TicketIDs = $TicketObject->TicketSearch(
     Result         => 'ARRAY',
-    CustomerUserID => 'skywalker@znuny.org',
+    CustomerUserID => 'skywalker@buzzdesk.org',
     UserID         => 1,
 );
 

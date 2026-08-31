@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -113,7 +111,7 @@
                             <div class="Field">
                                 <input type="text" readonly="readonly" id="InvokerTypeDisplay" value="[% Data.InvokerType | html %]" />
                                 <p class="FieldExplanation">
-                                    [% Translate("This Znuny invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.") | html %]
+                                    [% Translate("This BuzzDesk invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.") | html %]
                                 </p>
                             </div>
                         </div>
@@ -129,7 +127,7 @@
                                 <button type="button" class="HideOnChange CallForAction InLine btn-main btn-primary-ghost btn-width-md" id="MappingOutboundConfigureButton" value="[% Translate("Configure") | html %]"><span>[% Translate("Configure") | html %]</span></button>
 [% RenderBlockEnd("MappingOutboundConfigureButton") %]
                                 <p class="FieldExplanation">
-                                    [% Translate("The data from the invoker of Znuny will be processed by this mapping, to transform it to the kind of data the remote system expects.") | html %]
+                                    [% Translate("The data from the invoker of BuzzDesk will be processed by this mapping, to transform it to the kind of data the remote system expects.") | html %]
                                 </p>
                             </div>
                         </div>
@@ -145,7 +143,7 @@
                                 <button type="button" class="HideOnChange CallForAction InLine btn-main btn-primary-ghost btn-width-md" id="MappingInboundConfigureButton" value="[% Translate("Configure") | html %]"><span>[% Translate("Configure") | html %]</span></button>
 [% RenderBlockEnd("MappingInboundConfigureButton") %]
                                 <p class="FieldExplanation">
-                                    [% Translate("The response data will be processed by this mapping, to transform it to the kind of data the invoker of Znuny expects.") | html %]
+                                    [% Translate("The response data will be processed by this mapping, to transform it to the kind of data the invoker of BuzzDesk expects.") | html %]
                                 </p>
                             </div>
                         </div>
@@ -232,7 +230,7 @@
                                         [% Translate("To add a new event select the event object and event name and click on the \"+\" button") | html %].
                                     </p>
                                     <p class="FieldExplanation">
-                                        [% Translate("Asynchronous event triggers are handled by the Znuny Scheduler Daemon in background (recommended).") | html %]
+                                        [% Translate("Asynchronous event triggers are handled by the BuzzDesk Scheduler Daemon in background (recommended).") | html %]
                                         <br/>
                                         [% Translate("Synchronous event triggers would be processed directly during the web request.") | html %]
                                     </p>

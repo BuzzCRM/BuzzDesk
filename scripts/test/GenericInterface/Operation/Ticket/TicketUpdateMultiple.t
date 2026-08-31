@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -162,7 +160,7 @@ my $TicketID1 = $TicketObject->TicketCreate(
     Priority     => '3 normal',
     State        => 'new',
     CustomerID   => $CustomerUserLogin,
-    CustomerUser => 'unittest@znuny.com',
+    CustomerUser => 'unittest@buzzdesk.com',
     OwnerID      => 1,
     UserID       => 1,
 );
@@ -387,7 +385,7 @@ my @Tests = (
                     IsVisibleForCustomer => 1,
                     CommunicationChannel => 'Email',
                     SenderType           => 'agent',
-                    From                 => 'enjoy@znuny.com',
+                    From                 => 'enjoy@buzzdesk.com',
                     Charset              => 'utf8',
                     MimeType             => 'text/plain',
                     HistoryType          => 'AddNote',
@@ -399,7 +397,7 @@ my @Tests = (
                     IsVisibleForCustomer => 1,
                     CommunicationChannel => 'Phone',
                     SenderType           => 'agent',
-                    From                 => 'foo@znuny.com',
+                    From                 => 'foo@buzzdesk.com',
                     Charset              => 'latin-1',
                     MimeType             => 'text/plain',
                     HistoryType          => 'AddNote',

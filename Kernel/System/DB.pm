@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -8,7 +6,7 @@
 # --
 
 package Kernel::System::DB;
-## nofilter(TidyAll::Plugin::Znuny::Perl::Pod::FunctionPod)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Pod::FunctionPod)
 
 use strict;
 use warnings;
@@ -928,7 +926,7 @@ sub ListTables {
 
 =head2 GetSystemTables
 
-Retrieves tables of Znuny and optionally its installed packages and ignores any other tables that
+Retrieves tables of BuzzDesk and optionally its installed packages and ignores any other tables that
 might have been added manually to the database.
 
     my @SystemTables = $DBObject->GetSystemTables(
@@ -947,7 +945,7 @@ sub GetSystemTables {
     my $XMLObject     = $Kernel::OM->Get('Kernel::System::XML');
 
     #
-    # Assemble Znuny tables.
+    # Assemble BuzzDesk tables.
     #
     my $SQLDirectory   = $ConfigObject->Get('Home') . '/scripts/database';
     my $SchemaFilePath = $SQLDirectory . '/' . 'schema.xml';

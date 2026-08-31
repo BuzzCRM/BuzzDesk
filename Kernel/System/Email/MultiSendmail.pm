@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -58,7 +57,6 @@ sub Send {
         )
     {
         # Check for 'From' is from package MultiSMTP.
-        # Copyright (C) 2013 - 2022 Perl-Services.de, https://perl-services.de
         ( $Param{From} ) = ${ $Param{Header} } =~ m{
             ^ From: \s+
                 (

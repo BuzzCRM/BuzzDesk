@@ -115,7 +115,6 @@ azumakuniyuki
 
 =head1 COPYRIGHT
 
-Copyright (C) 2020,2022 azumakuniyuki, All rights reserved.
 
 =head1 LICENSE
 

@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -10,7 +8,7 @@
 package Kernel::System::CustomerUser::LDAP;
 
 # Throws errors when using LDAP_SIZELIMIT_EXCEEDED constant so disabled for now.
-## nofilter(TidyAll::Plugin::Znuny::Perl::SyntaxCheck)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::SyntaxCheck)
 
 use strict;
 use warnings;
@@ -266,7 +264,7 @@ sub CustomerName {
         if ( $Result->code() == LDAP_SIZELIMIT_EXCEEDED ) {
 
             # LDAP_SIZELIMIT_EXCEEDED result is ok if there
-            # are more items in LDAP than search limit defined in Znuny or
+            # are more items in LDAP than search limit defined in BuzzDesk or
             # in LDAP server. Avoid spamming logs with such errors.
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'debug',
@@ -504,7 +502,7 @@ sub CustomerSearch {
         if ( $Result->code() == LDAP_SIZELIMIT_EXCEEDED ) {
 
             # LDAP_SIZELIMIT_EXCEEDED result is ok if there
-            # are more items in LDAP than search limit defined in Znuny or
+            # are more items in LDAP than search limit defined in BuzzDesk or
             # in LDAP server. Avoid spamming logs with such errors.
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'debug',
@@ -1074,7 +1072,7 @@ sub CustomerSearchDetail {
         if ( $ResultSearch->code() == LDAP_SIZELIMIT_EXCEEDED ) {
 
             # LDAP_SIZELIMIT_EXCEEDED result is ok if there
-            # are more items in LDAP than search limit defined in Znuny or
+            # are more items in LDAP than search limit defined in BuzzDesk or
             # in LDAP server. Avoid spamming logs with such errors.
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'debug',
@@ -1226,7 +1224,7 @@ sub CustomerIDList {
         if ( $Result->code() == LDAP_SIZELIMIT_EXCEEDED ) {
 
             # LDAP_SIZELIMIT_EXCEEDED result is ok if there
-            # are more items in LDAP than search limit defined in Znuny or
+            # are more items in LDAP than search limit defined in BuzzDesk or
             # in LDAP server. Avoid spamming logs with such errors.
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'debug',

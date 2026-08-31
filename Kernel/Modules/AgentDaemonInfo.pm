@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -30,7 +28,7 @@ sub Run {
     my $Home = $Kernel::OM->Get('Kernel::Config')->Get('Home');
 
     my %Data = (
-        DaemonCron     => $Home . '/var/cron/znuny_daemon',
+        DaemonCron     => $Home . '/var/cron/buzzdesk_daemon',
         CronExecutable => $Home . '/bin/Cron.sh',
     );
 

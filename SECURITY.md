@@ -1,4 +1,4 @@
-# Znuny Vulnerability Disclosure Policy
+# BuzzDesk Vulnerability Disclosure Policy
 
 We take the security of our systems seriously, and we value the security community.
 The disclosure of security vulnerabilities helps us ensure the security and privacy of our users.
@@ -14,8 +14,8 @@ another user's data. Avoid degradation of user experience, disruption to
 production systems, and destruction of data.
 - Be patient. Make a good faith effort to clarify and support on
 arising questions. Keep information about any vulnerabilities you’ve
-discovered confidential between yourself and Znuny until we
-resolved the issue with a public Znuny Security Announcement (we plan
+discovered confidential between yourself and BuzzDesk until we
+resolved the issue with a public BuzzDesk Security Announcement (we plan
 to do so within 60 days)
 - Do no harm. Act for the common good through the prompt reporting of
 all found vulnerabilities. Never willfully exploit others without their
@@ -35,20 +35,20 @@ and we make a code or configuration change based on the issue.
 
 ## Scope
 
-- Znuny and features created or forked by Znuny
+- BuzzDesk and features created or forked by BuzzDesk
 - ((OTRS)) Community Edition 6 and open-source features created by the OTRS Group
-- Managed Znuny instances and any tools created or operated by Znuny
+- Managed BuzzDesk instances and any tools created or operated by BuzzDesk
 
 ### Out of scope
 
 Any services hosted by 3rd party providers and services are excluded
 from scope. These services include instances hosted by external
-parties and forks of Znuny or the ((OTRS)) Community Edition.
+parties and forks of BuzzDesk or the ((OTRS)) Community Edition.
 
 ## Supported Versions
 
-The following list shows Znuny versions with their support status for security updates and if they have known vulnerabilities.
-Please see the [Roadmap](https://www.znuny.org/en/roadmap) for an EOL overview.
+The following list shows BuzzDesk versions with their support status for security updates and if they have known vulnerabilities.
+Please see the [Roadmap](https://www.buzzdesk.org/en/roadmap) for an EOL overview.
 
 | Version | Supported          | Known vulnerabilities    |
 | ------- | ------------------ |------------------------- |
@@ -67,7 +67,7 @@ Please see the [Roadmap](https://www.znuny.org/en/roadmap) for an EOL overview.
 
 If you believe you’ve found a security vulnerability in one of our
 products or platforms please send it to us by emailing
-security@znuny.org. Please include the following details with your report:
+security@buzzdesk.org. Please include the following details with your report:
 
 - Description of the location and potential impact of the vulnerability;
 - A detailed description of the steps required to reproduce the

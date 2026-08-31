@@ -1,5 +1,4 @@
 // --
-// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (AGPL). If you
@@ -15,7 +14,7 @@ Core.Agent.Admin = Core.Agent.Admin || {};
 /**
  * @namespace Core.Agent.Admin.TicketAttributeRelations
  * @memberof Core.Agent.Admin
- * @author Znuny GmbH
+ * @author BuzzDesk GmbH
  */
 Core.Agent.Admin.TicketAttributeRelations = (function (TargetNS) {
 

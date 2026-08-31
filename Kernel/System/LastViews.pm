@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -259,7 +258,7 @@ Returns:
 
     $LastViewParams = {
         'LastView' => {
-            'Name' => 'Znuny says hi!'
+            'Name' => 'BuzzDesk says hi!'
         },
         'Params' => {
             'Nummer'   => '2021012710123456',

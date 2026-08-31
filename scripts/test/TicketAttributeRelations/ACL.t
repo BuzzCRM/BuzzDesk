@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -24,7 +23,7 @@ my $HelperObject                   = $Kernel::OM->Get('Kernel::System::UnitTest:
 my $ConfigObject                   = $Kernel::OM->Get('Kernel::Config');
 my $MainObject                     = $Kernel::OM->Get('Kernel::System::Main');
 my $UserObject                     = $Kernel::OM->Get('Kernel::System::User');
-my $ZnunyHelperObject              = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject              = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $TicketAttributeRelationsObject = $Kernel::OM->Get('Kernel::System::TicketAttributeRelations');
 
 my $Home                 = $ConfigObject->Get('Home');
@@ -113,7 +112,7 @@ my @DynamicFieldConfigs = (
     },
 );
 
-$ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFieldConfigs);
+$BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFieldConfigs);
 
 #
 # Execute tests for ACL module Kernel::System::Ticket::Acl::TicketAttributeRelations.

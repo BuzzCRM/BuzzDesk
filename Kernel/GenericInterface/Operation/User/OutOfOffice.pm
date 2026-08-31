@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -266,7 +265,7 @@ sub Run {
     return $Result;
 }
 
-# combined logging for the generic interface and default Znuny log
+# combined logging for the generic interface and default BuzzDesk log
 sub EnhancedLogging {
     my ( $Self, %Param ) = @_;
 

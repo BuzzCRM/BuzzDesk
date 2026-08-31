@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -113,7 +111,7 @@
                             <div class="Field">
                                 <input type="text" readonly="readonly" class="W50pc" id="OperationTypeDisplay" value="[% Data.OperationType | html %]" />
                                 <p class="FieldExplanation">
-                                    [% Translate("This Znuny operation backend module will be called internally to process the request, generating data for the response.") | html %]
+                                    [% Translate("This BuzzDesk operation backend module will be called internally to process the request, generating data for the response.") | html %]
                                 </p>
                             </div>
                         </div>
@@ -129,7 +127,7 @@
                                 <button type="button" class="HideOnChange CallForAction Inline btn-main btn-primary-ghost btn-width-md" id="MappingInboundConfigureButton" value="[% Translate("Configure") | html %]"><span>[% Translate("Configure") | html %]</span></button>
 [% RenderBlockEnd("MappingInboundConfigureButton") %]
                                 <p class="FieldExplanation">
-                                    [% Translate("The request data will be processed by this mapping, to transform it to the kind of data Znuny expects.") | html %]
+                                    [% Translate("The request data will be processed by this mapping, to transform it to the kind of data BuzzDesk expects.") | html %]
                                 </p>
                             </div>
                         </div>

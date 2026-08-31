@@ -1,5 +1,4 @@
 // --
-// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (AGPL). If you
@@ -13,7 +12,7 @@ var Core = Core || {};
 /**
  * @namespace Core.Activity
  * @memberof Core
- * @author Znuny GmbH
+ * @author BuzzDesk GmbH
  * @description
  *      This namespace contains the special module functions for activity.
  */

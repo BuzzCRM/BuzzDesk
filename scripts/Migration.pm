@@ -1,13 +1,11 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Perl::Pod::NamePod)
-## nofilter(TidyAll::Plugin::Znuny::Perl::ObjectManagerDirectCall)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Pod::NamePod)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::ObjectManagerDirectCall)
 
 package scripts::Migration;    ## no critic
 
@@ -25,7 +23,7 @@ our @ObjectDependencies = (
 
 =head1 SYNOPSIS
 
-Migrates Znuny.
+Migrates BuzzDesk.
 
 =head1 PUBLIC INTERFACE
 
@@ -33,7 +31,7 @@ Migrates Znuny.
 
 Don't use the constructor directly, use the ObjectManager instead:
 
-    my $MigrateToZnunyObject = $Kernel::OM->Get('scripts::Migration');
+    my $MigrateToBuzzDeskObject = $Kernel::OM->Get('scripts::Migration');
 
 =cut
 
@@ -241,7 +239,7 @@ sub _TasksGet {
         # 7.3 specific tasks before database migration
         {
             Message => 'Phone state settings migration notice',
-            Module  => 'scripts::Migration::Znuny::MigratePhoneStateSettings',
+            Module  => 'scripts::Migration::BuzzDesk::MigratePhoneStateSettings',
         },
 
         # Base
@@ -251,11 +249,11 @@ sub _TasksGet {
         },
         {
             Message => 'Upgrade database structure',
-            Module  => 'scripts::Migration::Znuny::UpgradeDatabaseStructure',
+            Module  => 'scripts::Migration::BuzzDesk::UpgradeDatabaseStructure',
         },
         {
             Message => 'Migrate database to utf8mb4',
-            Module  => 'scripts::Migration::Znuny::MigrateUTF8MB4',
+            Module  => 'scripts::Migration::BuzzDesk::MigrateUTF8MB4',
         },
         {
             Message => 'Check database charset',
@@ -266,28 +264,28 @@ sub _TasksGet {
         # ...to be added here...
         {
             Message => 'Additional ticket attribute selection settings migration',
-            Module  => 'scripts::Migration::Znuny::MigrateAdditionalTicketAttributeSelectionSettings',
+            Module  => 'scripts::Migration::BuzzDesk::MigrateAdditionalTicketAttributeSelectionSettings',
         },
 
         # Base tasks after database migration
         {
             Message => 'Migrate DBCRUD UUID columns',
-            Module  => 'scripts::Migration::Znuny::MigrateDBCRUDUUIDColumns',
+            Module  => 'scripts::Migration::BuzzDesk::MigrateDBCRUDUUIDColumns',
         },
         {
             Message => 'Deploy custom translations',
-            Module  => 'scripts::Migration::Znuny::DeployCustomTranslations',
+            Module  => 'scripts::Migration::BuzzDesk::DeployCustomTranslations',
         },
         {
             Message => 'Migrate SysConfig settings',
-            Module  => 'scripts::Migration::Znuny::MigrateSysConfigSettings',
+            Module  => 'scripts::Migration::BuzzDesk::MigrateSysConfigSettings',
         },
 
         # NOTE: UninstallMergedPackages has to be called only after
         # SysConfig settings of the merged packages have been migrated.
         {
             Message => 'Uninstall merged packages',
-            Module  => 'scripts::Migration::Znuny::UninstallMergedPackages',
+            Module  => 'scripts::Migration::BuzzDesk::UninstallMergedPackages',
         },
     );
 
@@ -295,7 +293,7 @@ sub _TasksGet {
     if ( $ConfigObject->Get('Ticket::ArchiveSystem') ) {
         push @Tasks, {
             Message => 'Remove mention flag from archived tickets',
-            Module  => 'scripts::Migration::Znuny::RemoveMentionFlagFromArchivedTickets',
+            Module  => 'scripts::Migration::BuzzDesk::RemoveMentionFlagFromArchivedTickets',
         };
     }
 

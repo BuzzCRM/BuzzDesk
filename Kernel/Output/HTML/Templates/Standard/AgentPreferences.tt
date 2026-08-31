@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -265,7 +263,7 @@
                                 <div class="SettingDescription">
                                     [% Translate(Data.Desc) | html %]
                                 [% IF Data.Label == 'Language' %]
-                                    [% Translate("Did you know? You can help translating Znuny at %s.") | html | ReplacePlaceholders('<a href="https://translations.znuny.org" target="_blank">translations.znuny.org</a>') %]
+                                    [% Translate("Did you know? You can help translating BuzzDesk at %s.") | html | ReplacePlaceholders('<a href="https://translations.buzzdesk.org" target="_blank">translations.buzzdesk.org</a>') %]
                                 [% END %]
                                 </div>
                             </div>

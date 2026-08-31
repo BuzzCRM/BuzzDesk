@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -115,7 +113,7 @@ sub Configure {
     $Self->AddOption(
         Name        => 'attachment-path',
         Description =>
-            "Send an additional file to the server, for example to submit the complete command output that has been redirected to a file. You can use wildcards like '/opt/znuny/var/log/*.log' here, but make sure to protect them via '' quotes from shell expansion.",
+            "Send an additional file to the server, for example to submit the complete command output that has been redirected to a file. You can use wildcards like '/opt/buzzdesk/var/log/*.log' here, but make sure to protect them via '' quotes from shell expansion.",
         Required   => 0,
         HasValue   => 1,
         ValueRegex => qr/.*/smx,

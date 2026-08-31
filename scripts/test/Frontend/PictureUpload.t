@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -156,7 +154,7 @@ $Self->IsDeeply(
     'Response check for CKEditor error handler',
 );
 
-## nofilter(TidyAll::Plugin::Znuny::Whitespace::Tabs)
+## nofilter(TidyAll::Plugin::BuzzDesk::Whitespace::Tabs)
 my $ContentSVG = <<'EOF',
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">

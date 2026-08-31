@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -21,7 +19,7 @@ Kernel::System::UnitTest::Selenium::WebElement - Utility functions for Selenium 
 
 =head2 VerifiedSubmit()
 
-Submit a form element, and wait for the page to be fully loaded (works only in Znuny)
+Submit a form element, and wait for the page to be fully loaded (works only in BuzzDesk)
 
     $SeleniumObject->VerifiedSubmit();
 
@@ -35,7 +33,7 @@ sub VerifiedSubmit {
     $Self->driver()->WaitFor(
         JavaScript =>
             'return typeof(Core) == "object" && typeof(Core.App) == "object" && Core.App.PageLoadComplete'
-    ) || die "Znuny API verification failed after element submit.";
+    ) || die "BuzzDesk API verification failed after element submit.";
 
     return;
 }
@@ -43,7 +41,7 @@ sub VerifiedSubmit {
 =head2 VerifiedClick()
 
 click an element that causes a page get/reload/submit and wait for the page to be fully loaded
-(works only in Znuny).
+(works only in BuzzDesk).
 
     $SeleniumObject->VerifiedClick(
         $Button             # optional, see Selenium docs

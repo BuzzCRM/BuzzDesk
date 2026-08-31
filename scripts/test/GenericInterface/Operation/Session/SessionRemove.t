@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -72,7 +71,7 @@ my $WebserviceConfig = {
             Type   => 'HTTP::SOAP',
             Config => {
                 MaxLength => 10000000,
-                NameSpace => 'http://znuny.org/SoapTestInterface/',
+                NameSpace => 'http://buzzdesk.org/SoapTestInterface/',
                 Endpoint  => $RemoteSystem,
             },
         },
@@ -89,7 +88,7 @@ my $WebserviceConfig = {
         Transport => {
             Type   => 'HTTP::SOAP',
             Config => {
-                NameSpace => 'http://znuny.org/SoapTestInterface/',
+                NameSpace => 'http://buzzdesk.org/SoapTestInterface/',
                 Encoding  => 'UTF-8',
                 Endpoint  => $RemoteSystem,
                 Timeout   => 120,

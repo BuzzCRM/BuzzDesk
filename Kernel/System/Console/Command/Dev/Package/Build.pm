@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -34,7 +32,7 @@ sub Configure {
     $Self->AddOption(
         Name        => 'module-directory',
         Description =>
-            "Specify the directory containing the module sources (otherwise the Znuny home directory will be used).",
+            "Specify the directory containing the module sources (otherwise the BuzzDesk home directory will be used).",
         Required   => 0,
         HasValue   => 1,
         ValueRegex => qr/.*/smx,
@@ -112,7 +110,7 @@ sub Run {
         $Structure{Version}->{Content} = $Self->GetOption('version');
     }
 
-    # build from given package directory, if any (otherwise default to Znuny home)
+    # build from given package directory, if any (otherwise default to BuzzDesk home)
     if ( $Self->GetOption('module-directory') ) {
         $Structure{Home} = $Self->GetOption('module-directory');
     }

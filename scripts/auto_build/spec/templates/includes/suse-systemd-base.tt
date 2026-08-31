@@ -1,16 +1,16 @@
 [% INCLUDE 'includes/copyright.tt' -%]
 
-Summary:      The Znuny service desk.
-Name:         znuny
+Summary:      The BuzzDesk service desk.
+Name:         buzzdesk
 Version:      0.0
 License:      GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
 Group:        Applications/Mail
-Provides:     znuny
+Provides:     buzzdesk
 Obsoletes:    otrs <= 6.0.30
 Requires:     [% Requires.join(' ') %]
 AutoReqProv:  no
 Release:      01
-Source0:      znuny-%{version}.tar.bz2
+Source0:      buzzdesk-%{version}.tar.bz2
 BuildArch:    noarch
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 
@@ -29,35 +29,35 @@ SuSE series: ap
 [% '#' %] delete old RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 [% '#' %] set DESTROOT
-export DESTROOT="/opt/znuny/"
+export DESTROOT="/opt/buzzdesk/"
 [% '#' %] create RPM_BUILD_ROOT DESTROOT
 mkdir -p $RPM_BUILD_ROOT/$DESTROOT/
 [% '#' %] copy files
 cp -R . $RPM_BUILD_ROOT/$DESTROOT
 [% '#' %] configure apache
 install -d -m 755 $RPM_BUILD_ROOT/etc/apache2/conf.d
-install -m 644 scripts/apache2-httpd.include.conf $RPM_BUILD_ROOT/etc/apache2/conf.d/zzz_znuny.conf
+install -m 644 scripts/apache2-httpd.include.conf $RPM_BUILD_ROOT/etc/apache2/conf.d/zzz_buzzdesk.conf
 
 [% '#' %] set permission
 [% webgroup = 'www' %]
-export ZNUNYUSER=znuny
-useradd $ZNUNYUSER || :
+export BUZZDESKUSER=buzzdesk
+useradd $BUZZDESKUSER || :
 useradd wwwrun || :
 groupadd www || :
-$RPM_BUILD_ROOT/opt/znuny/bin/znuny.SetPermissions.pl --web-group=www
+$RPM_BUILD_ROOT/opt/buzzdesk/bin/buzzdesk.SetPermissions.pl --web-group=www
 
 %pre
 [% '#' %] useradd
-export ZNUNYUSER=znuny
-echo -n "Check Znuny user ... "
-if id $ZNUNYUSER >/dev/null 2>&1; then
-    echo "$ZNUNYUSER exists."
+export BUZZDESKUSER=buzzdesk
+echo -n "Check BuzzDesk user ... "
+if id $BUZZDESKUSER >/dev/null 2>&1; then
+    echo "$BUZZDESKUSER exists."
     [% '#' %] update groups
-    usermod -g www $ZNUNYUSER
+    usermod -g www $BUZZDESKUSER
     [% '#' %] update home dir
-    usermod -d /opt/znuny $ZNUNYUSER
+    usermod -d /opt/buzzdesk $BUZZDESKUSER
 else
-    useradd $ZNUNYUSER -d /opt/znuny/ -s /bin/bash -g www -c 'Znuny System User' && echo "$ZNUNYUSER added."
+    useradd $BUZZDESKUSER -d /opt/buzzdesk/ -s /bin/bash -g www -c 'BuzzDesk System User' && echo "$BUZZDESKUSER added."
 fi
 echo "Enable apache module mod_perl..."
 a2enmod perl
@@ -78,5 +78,5 @@ a2enmod headers
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%config /etc/apache2/conf.d/zzz_znuny.conf
+%config /etc/apache2/conf.d/zzz_buzzdesk.conf
 [% INCLUDE 'includes/files.tt' -%]

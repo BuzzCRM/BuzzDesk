@@ -1,12 +1,11 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Perl::LayoutObject)
-## nofilter(TidyAll::Plugin::Znuny::Perl::UUID)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::LayoutObject)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::UUID)
 
 package Kernel::System::Util;
 
@@ -141,7 +140,7 @@ Determines the local application user.
 sub ApplicationUserGet {
     my ( $Self, %Param ) = @_;
 
-    my $DefaultApplicationUser = 'znuny';
+    my $DefaultApplicationUser = 'buzzdesk';
 
     my $Home = $Kernel::OM->Get('Kernel::Config')->Get('Home');
     return $DefaultApplicationUser if !$Home;

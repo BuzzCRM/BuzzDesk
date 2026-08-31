@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -184,10 +182,10 @@
                         </li>
 [% RenderBlockStart("DatabaseUninstall") %]
                         <li>
-                            <a href="https://doc.znuny.org/updating/znuny" target="_blank" class="CallForAction btn-main btn-primary-ghost"><span><i class="fa fa-external-link"></i>[% Translate("Go to updating instructions") | html %]</span></a>
+                            <a href="https://doc.buzzdesk.org/updating/buzzdesk" target="_blank" class="CallForAction btn-main btn-primary-ghost"><span><i class="fa fa-external-link"></i>[% Translate("Go to updating instructions") | html %]</span></a>
                         </li>
                         <li>
-                            <a href="https://www.znuny.org/" target="_blank" class="CallForAction btn-main btn-primary-ghost"><span><i class="fa fa-external-link"></i>[% Translate("Go to znuny.org") | html %]</span></a>
+                            <a href="https://www.buzzdesk.org/" target="_blank" class="CallForAction btn-main btn-primary-ghost"><span><i class="fa fa-external-link"></i>[% Translate("Go to buzzdesk.org") | html %]</span></a>
                         </li>
 [% RenderBlockEnd("DatabaseUninstall") %]
                     </ul>
@@ -202,33 +200,33 @@
                 </div>
                 <div class="Content">
                     [% IF Data.Type == 'InstallIncompatible' %]
-                    <h2>[% Translate("Package installation requires a patch level update of Znuny.") | html %]</h2>
+                    <h2>[% Translate("Package installation requires a patch level update of BuzzDesk.") | html %]</h2>
                     [% ELSIF Data.Type =='UpgradeIncompatible' %]
-                    <h2>[% Translate("Package update requires a patch level update of Znuny.") | html %]</h2>
+                    <h2>[% Translate("Package update requires a patch level update of BuzzDesk.") | html %]</h2>
                     [% END %]
-                    <p>[% Translate("Please note that your installed Znuny version is %s.", Config("Version")) | html %]</p>
+                    <p>[% Translate("Please note that your installed BuzzDesk version is %s.", Config("Version")) | html %]</p>
                     [% IF Data.RequiredMinimumVersion %]
-                    <p><span class="MinimumRequired">[% Translate("To install this package, you need to update Znuny to version %s or newer.", Data.RequiredMinimumVersion) | html %]</span></p>
+                    <p><span class="MinimumRequired">[% Translate("To install this package, you need to update BuzzDesk to version %s or newer.", Data.RequiredMinimumVersion) | html %]</span></p>
                     [% END %]
                     [% IF Data.RequiredMaximumVersion %]
-                    <p><span class="MaximumRequired">[% Translate("This package can only be installed on Znuny version %s or older.", Data.RequiredMaximumVersion) | html %] </span></p>
+                    <p><span class="MaximumRequired">[% Translate("This package can only be installed on BuzzDesk version %s or older.", Data.RequiredMaximumVersion) | html %] </span></p>
                     [% END %]
                     [% IF !Data.RequiredMinimumVersion && !Data.RequiredMaximumVersion && Data.RequiredFramework %]
-                    <p><span class="MaximumRequired">[% Translate("This package can only be installed on Znuny version %s.", Data.RequiredFramework) | html %] </span></p>
+                    <p><span class="MaximumRequired">[% Translate("This package can only be installed on BuzzDesk version %s.", Data.RequiredFramework) | html %] </span></p>
                     [% END %]
-                    <h2>[% Translate("Why should I keep Znuny up to date?") | html %]</h2>
+                    <h2>[% Translate("Why should I keep BuzzDesk up to date?") | html %]</h2>
                     <ul class="Default">
                         <li>
                             [% Translate("You will receive updates about relevant security issues.") | html %]
                         </li>
                         <li>
-                            [% Translate("You will receive updates for all other relevant Znuny issues.") | html %]
+                            [% Translate("You will receive updates for all other relevant BuzzDesk issues.") | html %]
                         </li>
                     </ul>
                     <h2>[% Translate("How can I do a patch level update if I don’t have a contract?") | html %]</h2>
                     <p>
                         [% Translate("Please find all relevant information within the updating instructions at %s.") | html
-                        | ReplacePlaceholders('<a href="https://doc.znuny.org/doc/manual/admin/6.0/en/html/updating.html" target="_blank">doc.znuny.org</a>') %]
+                        | ReplacePlaceholders('<a href="https://doc.buzzdesk.org/doc/manual/admin/6.0/en/html/updating.html" target="_blank">doc.buzzdesk.org</a>') %]
                     </p>
                     <p>[% Translate("In case you would have further questions we would be glad to answer them.") | html %] <br />[% Translate("Please visit our customer portal and file a request.") | html %]</p>
                 </div>

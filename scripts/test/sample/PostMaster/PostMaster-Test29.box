@@ -1,18 +1,18 @@
-From rk@znuny.com  Mon Aug 19 11:52:41 2024
+From rk@buzzdesk.com  Mon Aug 19 11:52:41 2024
 Return-Path: <jd@example.com>
-X-Original-To: unittest@unittest.znuny.com
-Delivered-To: unittest@unittest.znuny.com
-Received: from example.znuny.com (example.znuny.com [10.10.10.10])
-	by unittest.internal.znuny.com (Postfix) with ESMTPS id C9CB094021B
-	for <unittest@unittest.znuny.com>; Mon, 19 Aug 2024 11:52:41 +0000 (UTC)
+X-Original-To: unittest@unittest.buzzdesk.com
+Delivered-To: unittest@unittest.buzzdesk.com
+Received: from example.buzzdesk.com (example.buzzdesk.com [10.10.10.10])
+	by unittest.internal.buzzdesk.com (Postfix) with ESMTPS id C9CB094021B
+	for <unittest@unittest.buzzdesk.com>; Mon, 19 Aug 2024 11:52:41 +0000 (UTC)
 From: John Doe <jd@example.com>
 Content-Type: multipart/alternative;
 	boundary="Apple-Mail=_E62CD731-7844-42E7-915C-433666CB7743"
 Mime-Version: 1.0 (Mac OS X Mail 16.0 \(3776.700.51\))
 Subject: Test Inline Image Multipart 2
-Message-Id: <8CD48ACB-0FED-4D9C-8FC3-8A3425138040@znuny.com>
+Message-Id: <8CD48ACB-0FED-4D9C-8FC3-8A3425138040@buzzdesk.com>
 Date: Mon, 19 Aug 2024 13:52:31 +0200
-To: unittest@unittest.znuny.com
+To: unittest@unittest.buzzdesk.com
 
 
 --Apple-Mail=_E62CD731-7844-42E7-915C-433666CB7743

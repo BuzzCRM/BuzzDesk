@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -35,7 +33,7 @@ sub Configure {
     $Self->AdditionalHelp(<<"EOF");
 If no daemon-name is specified as:
 
- <green>znuny.Console.pl $Self->{Name}</green>
+ <green>buzzdesk.Console.pl $Self->{Name}</green>
 
 The command will get the summary of all daemon modules available.
 EOF

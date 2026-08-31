@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -309,7 +308,7 @@ sub DataDelete {
 
 =head2 UsedOAuth2TokenConfigListGet()
 
-DEPRECATED. Remove in Znuny 6.5.
+DEPRECATED. Remove in BuzzDesk 6.5.
 
 Returns a list of used OAuth2 token configs as array.
 

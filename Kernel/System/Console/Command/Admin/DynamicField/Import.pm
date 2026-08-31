@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -20,7 +19,7 @@ our @ObjectDependencies = (
     'Kernel::Config',
     'Kernel::System::Main',
     'Kernel::System::YAML',
-    'Kernel::System::ZnunyHelper',
+    'Kernel::System::BuzzDeskHelper',
 );
 
 sub Configure {
@@ -51,7 +50,7 @@ sub Configure {
 sub Run {
     my ( $Self, %Param ) = @_;
 
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
     my $MainObject        = $Kernel::OM->Get('Kernel::System::Main');
     my $ConfigObject      = $Kernel::OM->Get('Kernel::Config');
     my $YAMLObject        = $Kernel::OM->Get('Kernel::System::YAML');
@@ -103,16 +102,16 @@ sub Run {
         }
 
         if ($OverwriteExistingConfigurations) {
-            $ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFieldConfigurations);
+            $BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFieldConfigurations);
         }
         else {
-            $ZnunyHelperObject->_DynamicFieldsCreateIfNotExists(@DynamicFieldConfigurations);
+            $BuzzDeskHelperObject->_DynamicFieldsCreateIfNotExists(@DynamicFieldConfigurations);
         }
     }
 
     # Import dynamic fields screens
     if ( IsHashRefWithData( $ImportData->{DynamicFieldScreens} ) ) {
-        $ZnunyHelperObject->_DynamicFieldsScreenConfigImport(
+        $BuzzDeskHelperObject->_DynamicFieldsScreenConfigImport(
             Config => $ImportData->{DynamicFieldScreens},
         );
     }

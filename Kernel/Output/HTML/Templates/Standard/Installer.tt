@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -92,7 +90,7 @@
             <div class="LayoutGrid Content">
                 <div class="card">
                     <label>[% Translate("Address") | html %]</label>
-                    <p>Znuny GmbH, Marienstraße 18
+                    <p>BuzzDesk GmbH, Marienstraße 18
                     10117 Berlin, Germany</p>
                 </div>
 
@@ -103,22 +101,22 @@
 
                 <div class="card">
                     <label>[% Translate("Web site") | html %]</label>
-                    <p><a href="https://znuny.org" target="_blank">www.znuny.org</a></p>
+                    <p><a href="https://buzzdesk.org" target="_blank">www.buzzdesk.org</a></p>
                 </div>
 
                 <div class="card">
                     <label>[% Translate("Email") | html %]</label>
-                    <p><a href="mailto:info@znuny.com">info@znuny.com</a></p>
+                    <p><a href="mailto:info@buzzdesk.com">info@buzzdesk.com</a></p>
                 </div>
 
                 <div class="card">
                     <label>[% Translate("Community") | html %]</label>
-                    <p><a href="https://community.znuny.org" target="_blank">community.znuny.org</a></p>
+                    <p><a href="https://community.buzzdesk.org" target="_blank">community.buzzdesk.org</a></p>
                 </div>
 
                 <div class="card">
                     <label>GitHub</label>
-                    <p><a href="https://github.com/znuny/Znuny" target="_blank">github.com/znuny/Znuny</a></p>
+                    <p><a href="https://github.com/buzzdesk/BuzzDesk" target="_blank">github.com/buzzdesk/BuzzDesk</a></p>
                 </div>
 
             </div> <!--Content-->

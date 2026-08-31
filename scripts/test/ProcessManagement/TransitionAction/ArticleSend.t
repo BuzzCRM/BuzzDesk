@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -28,7 +27,7 @@ my $SignatureObject        = $Kernel::OM->Get('Kernel::System::Signature');
 my $StandardTemplateObject = $Kernel::OM->Get('Kernel::System::StandardTemplate');
 my $StdAttachmentObject    = $Kernel::OM->Get('Kernel::System::StdAttachment');
 my $TicketObject           = $Kernel::OM->Get('Kernel::System::Ticket');
-my $ZnunyHelperObject      = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject      = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $SystemAddressObject    = $Kernel::OM->Get('Kernel::System::SystemAddress');
 my $TransitionActionObject = $Kernel::OM->Get('Kernel::System::ProcessManagement::TransitionAction::ArticleSend');
 
@@ -212,7 +211,7 @@ $Text = $TransitionActionObject->FromGet(
 
 $Self->Is(
     $Text,
-    'Znuny System <znuny@localhost>',
+    'BuzzDesk System <buzzdesk@localhost>',
     'FromGet(unkown@example.com)',
 );
 
@@ -230,7 +229,7 @@ $Text = $TransitionActionObject->FromGet(
 
 $Self->Is(
     $Text,
-    'Znuny System <znuny@localhost>',
+    'BuzzDesk System <buzzdesk@localhost>',
     'FromGet(unkown@example.com)',
 );
 

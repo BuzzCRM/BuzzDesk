@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -21,7 +20,7 @@ $Kernel::OM->ObjectParamAdd(
 );
 
 my $DynamicFieldWebserviceObject = $Kernel::OM->Get('Kernel::System::DynamicField::Webservice');
-my $ZnunyHelperObject            = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject            = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $DynamicFieldObject           = $Kernel::OM->Get('Kernel::System::DynamicField');
 my $WebserviceObject             = $Kernel::OM->Get('Kernel::System::GenericInterface::Webservice');
 my $UnitTestWebserviceObject     = $Kernel::OM->Get('Kernel::System::UnitTest::Webservice');
@@ -56,8 +55,8 @@ my %DefaultMock = (
                 Success => 1,
                 Data    => [
                     {
-                        Key   => 'Znuny3',
-                        Value => 'Znuny3',
+                        Key   => 'BuzzDesk3',
+                        Value => 'BuzzDesk3',
                     },
                     {
                         Key   => 'Rocks4',
@@ -73,15 +72,15 @@ my %DefaultMock = (
             Result => {
                 Success => 1,
                 Data    => {
-                    Key   => 'Znuny3',
-                    Value => 'Znuny3',
+                    Key   => 'BuzzDesk3',
+                    Value => 'BuzzDesk3',
                 },
             },
         },
     ],
 );
 
-$ZnunyHelperObject->_WebserviceCreate(
+$BuzzDeskHelperObject->_WebserviceCreate(
     Webservices => {
         $Param{WebserviceName} => 'scripts/test/sample/Webservice/' . $Param{WebserviceName} . '.yml',
     }
@@ -261,7 +260,7 @@ my @DynamicFields = (
         },
     },
 );
-my $Success = $ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFields);
+my $Success = $BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFields);
 
 $Self->True(
     $Success,
@@ -463,8 +462,8 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3'
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3'
             },
             {
                 'Key'   => 'Rocks4',
@@ -473,10 +472,10 @@ my @SearchTest = (
         ],
     },
     {
-        Name => 'Search (succeeding) - (TextInvokerSearch) - Key LIKE Znuny',
+        Name => 'Search (succeeding) - (TextInvokerSearch) - Key LIKE BuzzDesk',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigTextInvokerSearch,
-            SearchTerms        => 'Znuny',
+            SearchTerms        => 'BuzzDesk',
             SearchType         => 'LIKE',                                 # LIKE | EQUALS
             SearchKeys         => 'Key',                                  # id, deepens on webservice
             Attributes         => [
@@ -487,16 +486,16 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3'
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3'
             },
         ],
     },
     {
-        Name => 'Search (succeeding) - (TextInvokerSearch) - Name or Value LIKE Znuny',
+        Name => 'Search (succeeding) - (TextInvokerSearch) - Name or Value LIKE BuzzDesk',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigTextInvokerSearch,
-            SearchTerms        => 'Znuny',
+            SearchTerms        => 'BuzzDesk',
             SearchType         => 'LIKE',                                 # LIKE | EQUALS
             SearchKeys         => [
                 'Name',
@@ -510,8 +509,8 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3'
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3'
             },
         ],
     },
@@ -614,8 +613,8 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3'
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3'
             },
             {
                 'Key'   => 'Rocks4',
@@ -624,10 +623,10 @@ my @SearchTest = (
         ],
     },
     {
-        Name => 'Search (succeeding) - (MultiselectInvokerSearch) - Key LIKE Znuny',
+        Name => 'Search (succeeding) - (MultiselectInvokerSearch) - Key LIKE BuzzDesk',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigMultiselectInvokerSearch,
-            SearchTerms        => 'Znuny',
+            SearchTerms        => 'BuzzDesk',
             SearchType         => 'LIKE',                                        # LIKE | EQUALS
             SearchKeys         => 'Key',                                         # id, deepens on webservice
             Attributes         => [
@@ -638,16 +637,16 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3'
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3'
             },
         ],
     },
     {
-        Name => 'Search (succeeding) - (MultiselectInvokerSearch) - Name or Value LIKE Znuny',
+        Name => 'Search (succeeding) - (MultiselectInvokerSearch) - Name or Value LIKE BuzzDesk',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigMultiselectInvokerSearch,
-            SearchTerms        => 'Znuny',
+            SearchTerms        => 'BuzzDesk',
             SearchType         => 'LIKE',                                        # LIKE | EQUALS
             SearchKeys         => [
                 'Name',
@@ -661,8 +660,8 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3'
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3'
             },
         ],
     },
@@ -765,8 +764,8 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3'
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3'
             },
             {
                 'Key'   => 'Rocks4',
@@ -775,10 +774,10 @@ my @SearchTest = (
         ],
     },
     {
-        Name => 'Search (succeeding) - (TextInvokerGet) - Key LIKE Znuny',
+        Name => 'Search (succeeding) - (TextInvokerGet) - Key LIKE BuzzDesk',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigTextInvokerGet,
-            SearchTerms        => 'Znuny',
+            SearchTerms        => 'BuzzDesk',
             SearchType         => 'LIKE',                              # LIKE | EQUALS
             SearchKeys         => 'Key',                               # id, deepens on webservice
             Attributes         => [
@@ -789,16 +788,16 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3'
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3'
             },
         ],
     },
     {
-        Name => 'Search (succeeding) - (TextInvokerGet) - Name or Value LIKE Znuny',
+        Name => 'Search (succeeding) - (TextInvokerGet) - Name or Value LIKE BuzzDesk',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigTextInvokerGet,
-            SearchTerms        => 'Znuny',
+            SearchTerms        => 'BuzzDesk',
             SearchType         => 'LIKE',                              # LIKE | EQUALS
             SearchKeys         => [
                 'Name',
@@ -812,16 +811,16 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3'
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3'
             },
         ],
     },
     {
-        Name => 'Search (succeeding) - (TextInvokerGet) - Key EQUALS Znuny3',
+        Name => 'Search (succeeding) - (TextInvokerGet) - Key EQUALS BuzzDesk3',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigTextInvokerGet,
-            SearchTerms        => 'Znuny3',
+            SearchTerms        => 'BuzzDesk3',
             SearchType         => 'EQUALS',                            # LIKE | EQUALS
             SearchKeys         => 'Key',                               # id, deepens on webservice
             Attributes         => [
@@ -834,8 +833,8 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3',
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3',
                 'Name'  => '',
                 'ID'    => '',
             },
@@ -859,10 +858,10 @@ my @SearchTest = (
         ExpectedResult => [],
     },
     {
-        Name => 'Search (succeeding) - (TextInvokerGet) - Name or Key EQUALS Znuny3',
+        Name => 'Search (succeeding) - (TextInvokerGet) - Name or Key EQUALS BuzzDesk3',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigTextInvokerGet,
-            SearchTerms        => 'Znuny3',
+            SearchTerms        => 'BuzzDesk3',
             SearchType         => 'EQUALS',                            # LIKE | EQUALS
             SearchKeys         => [
                 'Name',
@@ -878,8 +877,8 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3',
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3',
                 'Name'  => '',
                 'ID'    => '',
             },
@@ -916,8 +915,8 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3'
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3'
             },
             {
                 'Key'   => 'Rocks4',
@@ -926,10 +925,10 @@ my @SearchTest = (
         ],
     },
     {
-        Name => 'Search (succeeding) - (MultiselectInvokerGet) - Key LIKE Znuny',
+        Name => 'Search (succeeding) - (MultiselectInvokerGet) - Key LIKE BuzzDesk',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigMultiselectInvokerGet,
-            SearchTerms        => 'Znuny',
+            SearchTerms        => 'BuzzDesk',
             SearchType         => 'LIKE',                                     # LIKE | EQUALS
             SearchKeys         => 'Key',                                      # id, deepens on webservice
             Attributes         => [
@@ -940,16 +939,16 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3'
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3'
             },
         ],
     },
     {
-        Name => 'Search (succeeding) - (MultiselectInvokerGet) - Name or Value LIKE Znuny',
+        Name => 'Search (succeeding) - (MultiselectInvokerGet) - Name or Value LIKE BuzzDesk',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigMultiselectInvokerGet,
-            SearchTerms        => 'Znuny',
+            SearchTerms        => 'BuzzDesk',
             SearchType         => 'LIKE',                                     # LIKE | EQUALS
             SearchKeys         => [
                 'Name',
@@ -963,16 +962,16 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3'
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3'
             },
         ],
     },
     {
-        Name => 'Search (succeeding) - (MultiselectInvokerGet) - Key EQUALS Znuny3',
+        Name => 'Search (succeeding) - (MultiselectInvokerGet) - Key EQUALS BuzzDesk3',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigMultiselectInvokerGet,
-            SearchTerms        => 'Znuny3',
+            SearchTerms        => 'BuzzDesk3',
             SearchType         => 'EQUALS',                                   # LIKE | EQUALS
             SearchKeys         => 'Key',                                      # id, deepens on webservice
             Attributes         => [
@@ -985,8 +984,8 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3',
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3',
                 'Name'  => '',
                 'ID'    => '',
             },
@@ -1010,10 +1009,10 @@ my @SearchTest = (
         ExpectedResult => [],
     },
     {
-        Name => 'Search (succeeding) - (MultiselectInvokerGet) - Name or Key EQUALS Znuny3',
+        Name => 'Search (succeeding) - (MultiselectInvokerGet) - Name or Key EQUALS BuzzDesk3',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigMultiselectInvokerGet,
-            SearchTerms        => 'Znuny3',
+            SearchTerms        => 'BuzzDesk3',
             SearchType         => 'EQUALS',                                   # LIKE | EQUALS
             SearchKeys         => [
                 'Name',
@@ -1029,8 +1028,8 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3',
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3',
                 'Name'  => '',
                 'ID'    => '',
             },
@@ -1060,7 +1059,7 @@ my @SearchTest = (
         Name => 'Search (succeeding) - (MultiselectInvokerGet) - UserType Agent',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigMultiselectInvokerGet,
-            SearchTerms        => 'Znuny3',
+            SearchTerms        => 'BuzzDesk3',
             SearchType         => 'EQUALS',                                   # LIKE | EQUALS
             SearchKeys         => [
                 'Name',
@@ -1077,8 +1076,8 @@ my @SearchTest = (
         },
         ExpectedResult => [
             {
-                'Key'   => 'Znuny3',
-                'Value' => 'Znuny3',
+                'Key'   => 'BuzzDesk3',
+                'Value' => 'BuzzDesk3',
                 'Name'  => '',
                 'ID'    => '',
             },
@@ -1131,9 +1130,9 @@ my @Tests = (
             ],
             Data => [
                 {
-                    DisplayValue => 'Znuny3|Znuny3',
-                    Key          => 'Znuny3',
-                    Value        => 'Znuny3'
+                    DisplayValue => 'BuzzDesk3|BuzzDesk3',
+                    Key          => 'BuzzDesk3',
+                    Value        => 'BuzzDesk3'
                 },
                 {
                     DisplayValue => 'Rocks4|Rocks4',
@@ -1178,9 +1177,9 @@ my @Tests = (
             ],
             Data => [
                 {
-                    DisplayValue => 'Znuny3|Znuny3',
-                    Key          => 'Znuny3',
-                    Value        => 'Znuny3'
+                    DisplayValue => 'BuzzDesk3|BuzzDesk3',
+                    Key          => 'BuzzDesk3',
+                    Value        => 'BuzzDesk3'
                 },
                 {
                     DisplayValue => 'Rocks4|Rocks4',
@@ -1225,9 +1224,9 @@ my @Tests = (
             ],
             Data => [
                 {
-                    DisplayValue => 'Znuny3|Znuny3',
-                    Key          => 'Znuny3',
-                    Value        => 'Znuny3'
+                    DisplayValue => 'BuzzDesk3|BuzzDesk3',
+                    Key          => 'BuzzDesk3',
+                    Value        => 'BuzzDesk3'
                 },
                 {
                     DisplayValue => 'Rocks4|Rocks4',
@@ -1272,9 +1271,9 @@ my @Tests = (
             ],
             Data => [
                 {
-                    DisplayValue => 'Znuny3|Znuny3',
-                    Key          => 'Znuny3',
-                    Value        => 'Znuny3'
+                    DisplayValue => 'BuzzDesk3|BuzzDesk3',
+                    Key          => 'BuzzDesk3',
+                    Value        => 'BuzzDesk3'
                 },
                 {
                     DisplayValue => 'Rocks4|Rocks4',
@@ -1315,13 +1314,13 @@ my @AdditionalDynamicFieldValuesStoreTest = (
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigTextInvokerSearch,
             DynamicField       => $Param{DynamicFieldTextNameInvokerSearch},
-            Value              => 'Znuny3',
+            Value              => 'BuzzDesk3',
         },
         ExpectedResult => {
             Success                      => 1,
             AdditionalDynamicFieldValues => {
-                TestDynamicField1 => 'Znuny3',
-                TestDynamicField2 => 'Znuny3',
+                TestDynamicField1 => 'BuzzDesk3',
+                TestDynamicField2 => 'BuzzDesk3',
             },
         },
     },
@@ -1345,13 +1344,13 @@ my @AdditionalDynamicFieldValuesStoreTest = (
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigMultiselectInvokerSearch,
             DynamicField       => $Param{DynamicFieldMultiselectNameInvokerSearch},
-            Value              => 'Znuny3',
+            Value              => 'BuzzDesk3',
         },
         ExpectedResult => {
             Success                      => 1,
             AdditionalDynamicFieldValues => {
-                TestDynamicField1 => 'Znuny3',
-                TestDynamicField2 => 'Znuny3',
+                TestDynamicField1 => 'BuzzDesk3',
+                TestDynamicField2 => 'BuzzDesk3',
             },
         },
     },
@@ -1430,33 +1429,33 @@ my @DisplayValueGetTest = (
         Name => 'DisplayValueGet - Text (succeeding)',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigTextInvokerSearch,
-            Value              => 'Znuny3',
+            Value              => 'BuzzDesk3',
         },
-        ExpectedResult => 'Znuny3|Znuny3',
+        ExpectedResult => 'BuzzDesk3|BuzzDesk3',
     },
     {
         Name => 'DisplayValueGet - Text (failing)',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigTextInvokerSearch,
-            Value              => 'Znuny3',
+            Value              => 'BuzzDesk3',
         },
-        ExpectedResult => 'Znuny3|Znuny3',
+        ExpectedResult => 'BuzzDesk3|BuzzDesk3',
     },
     {
         Name => 'DisplayValueGet - Multiselect (succeeding)',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigMultiselectInvokerSearch,
-            Value              => 'Znuny3',
+            Value              => 'BuzzDesk3',
         },
-        ExpectedResult => 'Znuny3|Znuny3',
+        ExpectedResult => 'BuzzDesk3|BuzzDesk3',
     },
     {
         Name => 'DisplayValueGet - Multiselect (failing)',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigMultiselectInvokerSearch,
-            Value              => 'Znuny3',
+            Value              => 'BuzzDesk3',
         },
-        ExpectedResult => 'Znuny3|Znuny3',
+        ExpectedResult => 'BuzzDesk3|BuzzDesk3',
     },
 );
 
@@ -1491,11 +1490,11 @@ my @DisplayValueAssembleTest = (
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigTextInvokerSearch,
             Result             => {
-                Key   => 'Znuny3',
-                Value => 'Znuny3',
+                Key   => 'BuzzDesk3',
+                Value => 'BuzzDesk3',
             },
         },
-        ExpectedResult => 'Znuny3|Znuny3',
+        ExpectedResult => 'BuzzDesk3|BuzzDesk3',
     },
     {
         Name => '_DisplayValueAssemble - Multiselect (succeeding)',
@@ -1513,11 +1512,11 @@ my @DisplayValueAssembleTest = (
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigMultiselectInvokerSearch,
             Result             => {
-                Key   => 'Znuny3',
-                Value => 'Znuny3',
+                Key   => 'BuzzDesk3',
+                Value => 'BuzzDesk3',
             },
         },
-        ExpectedResult => 'Znuny3|Znuny3',
+        ExpectedResult => 'BuzzDesk3|BuzzDesk3',
     },
 );
 
@@ -1583,7 +1582,7 @@ $Self->IsDeeply(
             'Documentation' => "Executes a direct request without any checks before or after.
 Example response:
 {
-    Key   => 'Znuny',
+    Key   => 'BuzzDesk',
     Value => 'Rocks'
 }
 ",
@@ -1602,7 +1601,7 @@ Example response:
     values => [
         {
             ID    => '1',
-            Name  => 'Znuny',
+            Name  => 'BuzzDesk',
             Value => 'Rocks',
         }
     ],
@@ -1612,7 +1611,7 @@ Returns:
 [
     {
         ID    => '1',
-        Name  => 'Znuny',
+        Name  => 'BuzzDesk',
         Value => 'Rocks',
     }
 ]
@@ -1628,14 +1627,14 @@ Returns:
 # Autocomplete
 my @AutocompleteTest = (
     {
-        Name => 'Autocomplete - Text (succeeding) - Name or Value LIKE Znuny',
+        Name => 'Autocomplete - Text (succeeding) - Name or Value LIKE BuzzDesk',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigTextInvokerSearch,
         },
         ExpectedResult => [
             {
-                'DisplayValue' => 'Znuny3|Znuny3',
-                'StoredValue'  => 'Znuny3'
+                'DisplayValue' => 'BuzzDesk3|BuzzDesk3',
+                'StoredValue'  => 'BuzzDesk3'
             },
             {
                 'DisplayValue' => 'Rocks4|Rocks4',
@@ -1644,14 +1643,14 @@ my @AutocompleteTest = (
         ],
     },
     {
-        Name => 'Autocomplete - Multiselect (succeeding) - Name or Value LIKE Znuny',
+        Name => 'Autocomplete - Multiselect (succeeding) - Name or Value LIKE BuzzDesk',
         Data => {
             DynamicFieldConfig => $DynamicFieldConfigMultiselectInvokerSearch,
         },
         ExpectedResult => [
             {
-                'DisplayValue' => 'Znuny3|Znuny3',
-                'StoredValue'  => 'Znuny3'
+                'DisplayValue' => 'BuzzDesk3|BuzzDesk3',
+                'StoredValue'  => 'BuzzDesk3'
             },
             {
                 'DisplayValue' => 'Rocks4|Rocks4',

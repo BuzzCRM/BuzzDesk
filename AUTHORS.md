@@ -1,4 +1,4 @@
-The following persons contributed to Znuny:
+The following persons contributed to BuzzDesk:
 
 * 1soproni <csaba@sopron.hu>
 * akmet <akmet@users.noreply.github.com>
@@ -48,7 +48,7 @@ The following persons contributed to Znuny:
 * Friedrich Delgado <friedel@nomaden.org>
 * Gerald Young <gerald.young@noynim.com>
 * Henning Oschwald <henning.oschwald@otrs.com>
-* Henrik Vetter <hv@znuny.com>
+* Henrik Vetter <hv@buzzdesk.com>
 * Hog Duske <hog.duske@dusketech.de>
 * IB Development Team <dev@ib.pl>
 * Igor Djuric <igor.djuric@otrs.com>
@@ -58,12 +58,12 @@ The following persons contributed to Znuny:
 * JannisKleinrensing <71767611+JannisKleinrensing@users.noreply.github.com>
 * Jaroslav Balaz <jaroslav.balaz@otrs.com>
 * Jens Bothe <jens.bothe@otrs.com>
-* Jens Pfeifer <jp@znuny.com>
+* Jens Pfeifer <jp@buzzdesk.com>
 * Johannes Hörburger <johannes.hoerburger@otrs.com>
-* Johannes Nickel <jn@znuny.com>
+* Johannes Nickel <jn@buzzdesk.com>
 * jsinagowitz <91074418+jsinagowitz@users.noreply.github.com>
 * juanmclavero <juanm.clavero@ibsalut.es>
-* Kai Herlemann <kh@znuny.com>
+* Kai Herlemann <kh@buzzdesk.com>
 * Kamil Furtek <kfurtek@dev.opgksoftware.com>
 * Keith Moore <tenareth@gmail.com>
 * Kevin Janssen <77158891+BuTzZ@users.noreply.github.com>
@@ -85,7 +85,7 @@ The following persons contributed to Znuny:
 * Martin Gross <martin@pc-coholic.de>
 * Martin Gruner <martin.gruner@otrs.com>
 * Mathias Bräunling <mathias.braeunling@otrs.com>
-* Matthias Bethke <mb@znuny.com>
+* Matthias Bethke <mb@buzzdesk.com>
 * meisterheister <35762852+meisterheister@users.noreply.github.com>
 * Michael Tänzer <neo@nhng.de>
 * Michiel Beijen <michiel.beijen@otrs.com>
@@ -95,7 +95,7 @@ The following persons contributed to Znuny:
 * NeverMin <never.min@gmail.com>
 * nhugayme <ynhu19521@gmail.com>
 * Niels Dimmers <niels@nielsdimmers.nl>
-* Niklas Schmitt <ns@znuny.com>
+* Niklas Schmitt <ns@buzzdesk.com>
 * Nils Fiedler <nils.fiedler@otrs.com>
 * Nils Leideck <nils.leideck@otrs.com>
 * Norihiro Tanaka <noritnk@kcn.ne.jp>
@@ -118,14 +118,14 @@ The following persons contributed to Znuny:
 * Robin Naundorf <r.naundorf@fh-muenster.de>
 * Rolf Schmidt <rolf.schmidt@otrs.com>
 * Romain THERRAT <romain42@gmail.com>
-* Roy Kaldung <rk@znuny.com>
+* Roy Kaldung <rk@buzzdesk.com>
 * Rui Patinha <rui.patinha@otrs.com>
 * Rúben Sardinha <ruben.sardinha@outlook.com>
 * s7design <otrs@s7designcreative.com>
 * Samuel Diniz Casimiro <nedmaj@yahoo.com>
 * Sanjin Vik <svik@s7designcreative.com>
 * sergot <filip@sergot.pl>
-* Shawn Beasley <shawn.beasley@znuny.com>
+* Shawn Beasley <shawn.beasley@buzzdesk.com>
 * Sidpatchy <35241490+Sidpatchy@users.noreply.github.com>
 * Stefan Bedorf <stefan.bedorf@otrs.com>
 * Stefan Rother <stefan.rother@otrs.com>
@@ -135,7 +135,7 @@ The following persons contributed to Znuny:
 * Theo van Hoesel <Th.J.v.Hoesel+GitHub@gmail.com>
 * Thomas Raith <thomas.raith@otrs.com>
 * Thomas Wouters <thomas@sijn.org>
-* Thorsten Eckel <te@znuny.com>
+* Thorsten Eckel <te@buzzdesk.com>
 * Tim Püttmanns <tim.puettmanns@maxence.de>
 * Timo Gurr <timo.gurr@gmail.com>
 * Torsten Thau <Torsten.Thau@cape-it.de>
@@ -145,6 +145,6 @@ The following persons contributed to Znuny:
 * Walter Souto <walter.souto@saude.go.gov.br>
 * Wojciech Kuchta <klapi85@gmail.com>
 * Yuri Myasoedov <ymyasoedov@yandex.ru>
-* Zigfield Trotter <zt@znuny.com>
-* Znuny Weblate <do-not-reply@znuny.com>
+* Zigfield Trotter <zt@buzzdesk.com>
+* BuzzDesk Weblate <do-not-reply@buzzdesk.com>
 * Zoran Ilibasic <zilibasic@s7designcreative.com>

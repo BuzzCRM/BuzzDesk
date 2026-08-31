@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -69,7 +68,7 @@ Runs TransitionAction TicketWatchSet
 
             # or
             Action           => 'Subscribe', # Subscribe/Unsubscribe
-            PostMasterSearch => 'UserLogin1@znuny.com, UserLogin2@znuny.com, UserLogin3@znuny.com',
+            PostMasterSearch => 'UserLogin1@buzzdesk.com, UserLogin2@buzzdesk.com, UserLogin3@buzzdesk.com',
 
             # or
             Action  => 'Subscribe', # Subscribe/Unsubscribe

@@ -1,12 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Perl::LayoutObject)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::LayoutObject)
 package Kernel::System::SysConfig;
 
 use strict;
@@ -147,7 +145,7 @@ Returns:
         ChangeTime               => "2016-05-29 11:04:04",
         ChangeBy                 => 1,
         DefaultValue             => 'Old default value',
-        OverriddenFileName        => '/opt/znuny/Kernel/Config/Files/ZZZ.pm',
+        OverriddenFileName        => '/opt/buzzdesk/Kernel/Config/Files/ZZZ.pm',
     );
 
 =cut
@@ -4402,8 +4400,8 @@ Returns:
             Files       => [],
         },
         OTRS => {
-            DisplayName => 'Znuny',
-            Files       => ['Calendar.xml', 'Daemon.xml', 'Framework.xml', 'GenericInterface.xml', 'ProcessManagement.xml', 'Ticket.xml', 'Znuny.xml' ],
+            DisplayName => 'BuzzDesk',
+            Files       => ['Calendar.xml', 'Daemon.xml', 'Framework.xml', 'GenericInterface.xml', 'ProcessManagement.xml', 'Ticket.xml', 'BuzzDesk.xml' ],
         },
         # ...
     );
@@ -4433,11 +4431,11 @@ sub ConfigurationCategoriesGet {
             Files       => [],
         },
         OTRS => {
-            DisplayName => 'Znuny',
+            DisplayName => 'BuzzDesk',
             Files       => [
                 'Calendar.xml',         'Daemon.xml',            'Framework.xml',
                 'GenericInterface.xml', 'ProcessManagement.xml', 'Ticket.xml',
-                'Znuny.xml',
+                'BuzzDesk.xml',
             ],
         },
     );

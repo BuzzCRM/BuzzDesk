@@ -1,5 +1,4 @@
 /*
-Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (AGPL). If you
@@ -388,7 +387,7 @@ did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
         #HeaderToolBar li.logo-navigation-wrapper .logo-navigation {
             width:           120px;
             height:          27px;
-            background:      url(../img/znuny-logo-black.svg) no-repeat;
+            background:      url(../img/buzzdesk-logo-black.svg) no-repeat;
             background-size: contain;
             position:        relative;
             display: flex !important;

@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -36,7 +35,7 @@ my $UserID = 1;
 my $Home            = $Kernel::OM->Get('Kernel::Config')->Get('Home');
 my $HomeStat        = $Home     ? File::stat::stat($Home)    : undef;
 my $ApplicationUser = $HomeStat ? getpwuid( $HomeStat->uid ) : undef;    ## no critic
-$ApplicationUser ||= 'znuny';
+$ApplicationUser ||= 'buzzdesk';
 
 $Self->Is(
     $UtilObject->ApplicationUserGet(),

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_config version="2.0" init="Application">
-    <!-- nofilter(TidyAll::Plugin::Znuny::Config::ACLKeysLevel3Actions) -->
+    <!-- nofilter(TidyAll::Plugin::BuzzDesk::Config::ACLKeysLevel3Actions) -->
     <Setting Name="Frontend::Module###AdminProcessManagement" Required="0" Valid="1">
         <Description Translatable="1">Frontend module registration for the agent interface.</Description>
         <Navigation>Frontend::Admin::ModuleRegistration</Navigation>
@@ -16,7 +16,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Process Management</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -97,7 +97,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Process Management Activity GUI</Item>
                     <Item Key="NavBarName"></Item>
                 </Hash>
@@ -139,7 +139,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Process Management Activity Dialog GUI</Item>
                     <Item Key="NavBarName"></Item>
                 </Hash>
@@ -181,7 +181,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Process Management Transition GUI</Item>
                     <Item Key="NavBarName"></Item>
                 </Hash>
@@ -221,7 +221,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Process Management Transition Action GUI</Item>
                     <Item Key="NavBarName"></Item>
                 </Hash>
@@ -261,7 +261,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Process Management Path GUI</Item>
                     <Item Key="NavBarName"></Item>
                 </Hash>
@@ -815,8 +815,8 @@
                         <Item Key="ReplyTo">(optional) Some Customer B customer-b@example.co</Item>
                         <Item Key="Subject">(* required) some short description</Item>
                         <Item Key="Body">(* required) the message text</Item>
-                        <Item Key="InReplyTo">(optional) mail.1@znuny.org</Item>
-                        <Item Key="References">(optional) mail.1@znuny.org mail.2@znuny.org</Item>
+                        <Item Key="InReplyTo">(optional) mail.1@buzzdesk.org</Item>
+                        <Item Key="References">(optional) mail.1@buzzdesk.org mail.2@buzzdesk.org</Item>
                         <Item Key="Charset">(* required) iso-8859-15</Item>
                         <Item Key="MimeType">(* required) text/plain</Item>
                         <Item Key="Loop">1|0 (used for bulk emails)</Item>
@@ -1027,7 +1027,7 @@
                     <Hash>
                         <Item Key="Action">Subscribe|Unsubscribe|UnsubscribeAll</Item>
                         <Item Key="UserLogin">(* required if both PostMasterSearch and UserIDs are not present) UserLogin1, UserLogin2, UserLogin3</Item>
-                        <Item Key="PostMasterSearch">(* required if both UserLogin and UserIDs are not present) UserLogin1@znuny.com, UserLogin2@znuny.com, UserLogin3@znuny.com</Item>
+                        <Item Key="PostMasterSearch">(* required if both UserLogin and UserIDs are not present) UserLogin1@buzzdesk.com, UserLogin2@buzzdesk.com, UserLogin3@buzzdesk.com</Item>
                         <Item Key="UserIDs">(* required if both UserLogin and PostMasterSearch are not present) 1, 2, 3</Item>
                     </Hash>
                 </Item>

@@ -1,6 +1,4 @@
 // --
-// Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (GPL). If you
@@ -10,11 +8,11 @@
 "use strict";
 
 var Core = Core || {},
-    Znuny = Znuny || {};
+    BuzzDesk = BuzzDesk || {};
 
 Core.Agent = Core.Agent || {};
-Znuny.Form = Znuny.Form || {};
-Znuny.Form.Input = Znuny.Form.Input || {};
+BuzzDesk.Form = BuzzDesk.Form || {};
+BuzzDesk.Form.Input = BuzzDesk.Form.Input || {};
 
 /**
  * @namespace Core.Agent.TicketProcess
@@ -108,7 +106,7 @@ Core.Agent.TicketProcess = (function (TargetNS) {
                             });
                             $ElementToUpdate.fadeIn();
                             Core.UI.InputFields.Activate($ElementToUpdate);
-                            Znuny.Form.Input.Init();
+                            BuzzDesk.Form.Input.Init();
                             try {
                                 /*eslint-disable no-eval */
                                 eval(JavaScriptString);

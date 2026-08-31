@@ -1,69 +1,69 @@
 
-%defattr(-, znuny, [% webgroup %], -)
-%config(noreplace) /opt/znuny/Kernel/Config.pm
-%attr(-, znuny, root,) %config(noreplace) /opt/znuny/.procmailrc
-%config(noreplace) /opt/znuny/.fetchmailrc
-%config(noreplace) /opt/znuny/.mailfilter
+%defattr(-, buzzdesk, [% webgroup %], -)
+%config(noreplace) /opt/buzzdesk/Kernel/Config.pm
+%attr(-, buzzdesk, root,) %config(noreplace) /opt/buzzdesk/.procmailrc
+%config(noreplace) /opt/buzzdesk/.fetchmailrc
+%config(noreplace) /opt/buzzdesk/.mailfilter
 
-%dir /opt/znuny
-/opt/znuny/RELEASE
-/opt/znuny/ARCHIVE
-/opt/znuny/.bash_completion
-/opt/znuny/.procmailrc.dist
-/opt/znuny/.fetchmailrc.dist
-/opt/znuny/.mailfilter.dist
+%dir /opt/buzzdesk
+/opt/buzzdesk/RELEASE
+/opt/buzzdesk/ARCHIVE
+/opt/buzzdesk/.bash_completion
+/opt/buzzdesk/.procmailrc.dist
+/opt/buzzdesk/.fetchmailrc.dist
+/opt/buzzdesk/.mailfilter.dist
 
-%dir /opt/znuny/Custom/
-/opt/znuny/Custom/README
+%dir /opt/buzzdesk/Custom/
+/opt/buzzdesk/Custom/README
 
-%dir /opt/znuny/Kernel/
+%dir /opt/buzzdesk/Kernel/
 
-%dir /opt/znuny/Kernel/Config/
-/opt/znuny/Kernel/Config.pm.dist
-/opt/znuny/Kernel/Config.pod
-/opt/znuny/Kernel/Config/Files/
-/opt/znuny/Kernel/Config/Defaults.pm
+%dir /opt/buzzdesk/Kernel/Config/
+/opt/buzzdesk/Kernel/Config.pm.dist
+/opt/buzzdesk/Kernel/Config.pod
+/opt/buzzdesk/Kernel/Config/Files/
+/opt/buzzdesk/Kernel/Config/Defaults.pm
 
-/opt/znuny/Kernel/GenericInterface*
+/opt/buzzdesk/Kernel/GenericInterface*
 
-/opt/znuny/Kernel/Language.pm
-%dir /opt/znuny/Kernel/Language/
-/opt/znuny/Kernel/Language/*.pm
+/opt/buzzdesk/Kernel/Language.pm
+%dir /opt/buzzdesk/Kernel/Language/
+/opt/buzzdesk/Kernel/Language/*.pm
 
-/opt/znuny/bin*
-/opt/znuny/Kernel/Autoload*
-/opt/znuny/Kernel/Modules*
-/opt/znuny/Kernel/Output*
-/opt/znuny/Kernel/System*
-/opt/znuny/scripts*
-/opt/znuny/i18n/Znuny/*
+/opt/buzzdesk/bin*
+/opt/buzzdesk/Kernel/Autoload*
+/opt/buzzdesk/Kernel/Modules*
+/opt/buzzdesk/Kernel/Output*
+/opt/buzzdesk/Kernel/System*
+/opt/buzzdesk/scripts*
+/opt/buzzdesk/i18n/BuzzDesk/*
 
-%dir /opt/znuny/var/
+%dir /opt/buzzdesk/var/
 # TEMPROARILY DEACTIVATED. There are no packages to embed at present.
-#%dir /opt/znuny/var/packages/
-#/opt/znuny/var/packages/*.opm
-%dir /opt/znuny/var/article/
-/opt/znuny/var/fonts/
-/opt/znuny/var/httpd/
-%dir /opt/znuny/var/cron/
-%dir /opt/znuny/var/log/
-%dir /opt/znuny/var/sessions/
-%dir /opt/znuny/var/spool/
-/opt/znuny/var/cron/*
-%dir /opt/znuny/var/tmp/
-%dir /opt/znuny/var/stats/
-/opt/znuny/var/stats/*.xml
-%dir /opt/znuny/var/stats/formatdefinition/excel/
-/opt/znuny/var/stats/formatdefinition/excel/*
-%dir /opt/znuny/var/processes/examples/
-/opt/znuny/var/processes/examples/*
-%dir /opt/znuny/var/webservices/examples/
-/opt/znuny/var/webservices/examples/*.pm
-/opt/znuny/var/webservices/examples/*.yml
+#%dir /opt/buzzdesk/var/packages/
+#/opt/buzzdesk/var/packages/*.opm
+%dir /opt/buzzdesk/var/article/
+/opt/buzzdesk/var/fonts/
+/opt/buzzdesk/var/httpd/
+%dir /opt/buzzdesk/var/cron/
+%dir /opt/buzzdesk/var/log/
+%dir /opt/buzzdesk/var/sessions/
+%dir /opt/buzzdesk/var/spool/
+/opt/buzzdesk/var/cron/*
+%dir /opt/buzzdesk/var/tmp/
+%dir /opt/buzzdesk/var/stats/
+/opt/buzzdesk/var/stats/*.xml
+%dir /opt/buzzdesk/var/stats/formatdefinition/excel/
+/opt/buzzdesk/var/stats/formatdefinition/excel/*
+%dir /opt/buzzdesk/var/processes/examples/
+/opt/buzzdesk/var/processes/examples/*
+%dir /opt/buzzdesk/var/webservices/examples/
+/opt/buzzdesk/var/webservices/examples/*.pm
+/opt/buzzdesk/var/webservices/examples/*.yml
 
-/opt/znuny/Kernel/cpan-lib*
+/opt/buzzdesk/Kernel/cpan-lib*
 
-%doc /opt/znuny/*.md
-%doc /opt/znuny/COPYING
-%doc /opt/znuny/COPYING-Third-Party
-%doc /opt/znuny/doc*
+%doc /opt/buzzdesk/*.md
+%doc /opt/buzzdesk/COPYING
+%doc /opt/buzzdesk/COPYING-Third-Party
+%doc /opt/buzzdesk/doc*

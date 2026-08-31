@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -46,7 +45,7 @@ OUTPUT
         $Output .= <<OUTPUT;
 ## DynamicField '$DynamicFieldConfig->{Name}'
 
-\$ZnunyHelperObject->_DynamicFieldsCreateIfNotExists(
+\$BuzzDeskHelperObject->_DynamicFieldsCreateIfNotExists(
     {
         Name       => '$DynamicFieldConfig->{Name}',
         Label      => '$DynamicFieldConfig->{Label}',

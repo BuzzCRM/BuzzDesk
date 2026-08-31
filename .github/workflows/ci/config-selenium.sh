@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-chmod 777 -R /opt/znuny/scripts/test/sample
+chmod 777 -R /opt/buzzdesk/scripts/test/sample
 sed -i 's/\(.*\$DIBI\$.*\)/\1                                                 \
     \$Self->{"TestHTTPHostname"} = "172.18.0.2";                              \
     \$Self->{"SecureMode"} = 1;                                               \
@@ -15,4 +15,4 @@ sed -i 's/\(.*\$DIBI\$.*\)/\1                                                 \
                 args => [ "disable-infobars" ],                               \
             },                                                                \
         },                                                                    \
-    },\n/' /opt/znuny/Kernel/Config.pm
+    },\n/' /opt/buzzdesk/Kernel/Config.pm

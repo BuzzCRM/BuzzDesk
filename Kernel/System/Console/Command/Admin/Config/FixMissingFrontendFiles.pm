@@ -1,11 +1,10 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Perl::Dumper)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Dumper)
 
 package Kernel::System::Console::Command::Admin::Config::FixMissingFrontendFiles;
 
@@ -27,7 +26,7 @@ our @ObjectDependencies = (
 sub Configure {
     my ( $Self, %Param ) = @_;
 
-    $Self->Description('Fixes missing JavaScript and CSS configurations between Znuny upgrades.');
+    $Self->Description('Fixes missing JavaScript and CSS configurations between BuzzDesk upgrades.');
     $Self->AddOption(
         Name        => 'dryrun',
         Description => 'Only show the fixes that would be made. No changes will be applied to the configuration.',

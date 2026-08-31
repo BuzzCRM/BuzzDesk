@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -153,7 +152,7 @@ Example response:
     values => [
         {
             ID    => '1',
-            Name  => 'Znuny',
+            Name  => 'BuzzDesk',
             Value => 'Rocks',
         }
     ],
@@ -163,7 +162,7 @@ Returns:
 [
     {
         ID    => '1',
-        Name  => 'Znuny',
+        Name  => 'BuzzDesk',
         Value => 'Rocks',
     }
 ]

@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -37,7 +35,7 @@ my @Tests = (
             'ceeibejd.png' => {
                 Filename           => 'ceeibejd.png',
                 ContentType        => 'image/png; name="ceeibejd.png"',
-                ContentID          => '<part1.02040705.00020608@znuny.com>',
+                ContentID          => '<part1.02040705.00020608@buzzdesk.com>',
                 ContentAlternative => '1',
                 Disposition        => 'inline',
             },
@@ -63,7 +61,7 @@ my @Tests = (
             'ceeibejd.png' => {
                 Filename           => 'ceeibejd.png',
                 ContentType        => 'image/png; name="ceeibejd.png"',
-                ContentID          => '<part1.02040705.00020608@znuny.com>',
+                ContentID          => '<part1.02040705.00020608@buzzdesk.com>',
                 ContentAlternative => '1',
                 Disposition        => 'inline',
             },
@@ -89,7 +87,7 @@ my @Tests = (
             'ceeibejd.png' => {
                 Filename           => 'ceeibejd.png',
                 ContentType        => 'image/png; name="ceeibejd.png"',
-                ContentID          => '<part1.02040705.00020608@znuny.com>',
+                ContentID          => '<part1.02040705.00020608@buzzdesk.com>',
                 ContentAlternative => '1',
                 Disposition        => 'inline',
             },
@@ -103,7 +101,7 @@ my @Tests = (
             'testing.pdf' => {
                 Filename           => 'testing.pdf',
                 ContentType        => 'application/pdf; name="testing.pdf"',
-                ContentID          => '<part1.02040705.0001234@znuny.com>',
+                ContentID          => '<part1.02040705.0001234@buzzdesk.com>',
                 ContentAlternative => '',
                 Disposition        => 'attachment',
             },
@@ -115,7 +113,7 @@ my @Tests = (
             'ceeibejd.png' => {
                 Filename           => 'ceeibejd.png',
                 ContentType        => 'image/png; name="ceeibejd.png"',
-                ContentID          => '<part1.02040705.00020608@znuny.com>',
+                ContentID          => '<part1.02040705.00020608@buzzdesk.com>',
                 ContentAlternative => '1',
                 Disposition        => 'attachment',
             },

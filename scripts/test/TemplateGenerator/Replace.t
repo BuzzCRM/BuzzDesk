@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -492,13 +490,13 @@ my @Tests = (
         },
         RichText => 1,
         Template =>
-            'mailto-Link <a href="mailto:skywalker@znuny.org?subject=From%3A%20%3COTRS_CUSTOMER_From%3E&amp;body=From%3A%20%3COTRS_CUSTOMER_From%3E">E-Mail mit Subject und Body</a><br />
+            'mailto-Link <a href="mailto:skywalker@buzzdesk.org?subject=From%3A%20%3COTRS_CUSTOMER_From%3E&amp;body=From%3A%20%3COTRS_CUSTOMER_From%3E">E-Mail mit Subject und Body</a><br />
 <br />
-mailto-Link <a href="mailto:skywalker@znuny.org?subject=From%3A%20%3COTRS_CUSTOMER_From%3E">E-Mail mit Subject</a><br />
+mailto-Link <a href="mailto:skywalker@buzzdesk.org?subject=From%3A%20%3COTRS_CUSTOMER_From%3E">E-Mail mit Subject</a><br />
 <br />
-mailto-Link <a href="mailto:skywalker@znuny.org?body=From%3A%20%3COTRS_CUSTOMER_From%3E">E-Mail mit Body</a><br />',
+mailto-Link <a href="mailto:skywalker@buzzdesk.org?body=From%3A%20%3COTRS_CUSTOMER_From%3E">E-Mail mit Body</a><br />',
         Result =>
-            'mailto-Link <a href="mailto:skywalker@znuny.org?subject=From%3A%20test%40home.com&amp;body=From%3A%20test%40home.com">E-Mail mit Subject und Body</a><br /><br />mailto-Link <a href="mailto:skywalker@znuny.org?subject=From%3A%20test%40home.com">E-Mail mit Subject</a><br /><br />mailto-Link <a href="mailto:skywalker@znuny.org?body=From%3A%20test%40home.com">E-Mail mit Body</a><br />',
+            'mailto-Link <a href="mailto:skywalker@buzzdesk.org?subject=From%3A%20test%40home.com&amp;body=From%3A%20test%40home.com">E-Mail mit Subject und Body</a><br /><br />mailto-Link <a href="mailto:skywalker@buzzdesk.org?subject=From%3A%20test%40home.com">E-Mail mit Subject</a><br /><br />mailto-Link <a href="mailto:skywalker@buzzdesk.org?body=From%3A%20test%40home.com">E-Mail mit Body</a><br />',
     },
     {
         Name => 'mailto-Links',
@@ -507,17 +505,17 @@ mailto-Link <a href="mailto:skywalker@znuny.org?body=From%3A%20%3COTRS_CUSTOMER_
         },
         RichText => 0,
         Template =>
-            'mailto-Link <a href="mailto:skywalker@znuny.org?subject=From%3A%20%3COTRS_CUSTOMER_From%3E&amp;body=From%3A%20%3COTRS_CUSTOMER_From%3E">E-Mail mit Subject und Body</a><br />
+            'mailto-Link <a href="mailto:skywalker@buzzdesk.org?subject=From%3A%20%3COTRS_CUSTOMER_From%3E&amp;body=From%3A%20%3COTRS_CUSTOMER_From%3E">E-Mail mit Subject und Body</a><br />
 <br />
-mailto-Link <a href="mailto:skywalker@znuny.org?subject=From%3A%20%3COTRS_CUSTOMER_From%3E">E-Mail mit Subject</a><br />
+mailto-Link <a href="mailto:skywalker@buzzdesk.org?subject=From%3A%20%3COTRS_CUSTOMER_From%3E">E-Mail mit Subject</a><br />
 <br />
-mailto-Link <a href="mailto:skywalker@znuny.org?body=From%3A%20%3COTRS_CUSTOMER_From%3E">E-Mail mit Body</a><br />',
+mailto-Link <a href="mailto:skywalker@buzzdesk.org?body=From%3A%20%3COTRS_CUSTOMER_From%3E">E-Mail mit Body</a><br />',
         Result =>
-            'mailto-Link <a href="mailto:skywalker@znuny.org?subject=From%3A%20test%40home.com&amp;body=From%3A%20test%40home.com">E-Mail mit Subject und Body</a><br />
+            'mailto-Link <a href="mailto:skywalker@buzzdesk.org?subject=From%3A%20test%40home.com&amp;body=From%3A%20test%40home.com">E-Mail mit Subject und Body</a><br />
 <br />
-mailto-Link <a href="mailto:skywalker@znuny.org?subject=From%3A%20test%40home.com">E-Mail mit Subject</a><br />
+mailto-Link <a href="mailto:skywalker@buzzdesk.org?subject=From%3A%20test%40home.com">E-Mail mit Subject</a><br />
 <br />
-mailto-Link <a href="mailto:skywalker@znuny.org?body=From%3A%20test%40home.com">E-Mail mit Body</a><br />',
+mailto-Link <a href="mailto:skywalker@buzzdesk.org?body=From%3A%20test%40home.com">E-Mail mit Body</a><br />',
     },
     {
         Name => 'OTRS AGENT + CUSTOMER FROM',    # <OTRS_TICKET_DynamicField_*_Value>

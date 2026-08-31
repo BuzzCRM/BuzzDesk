@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -24,9 +23,9 @@ my @Tests = (
     {
         Name => 'Filename',
         Data => {
-            Filename => 'ZnunyRocks',
+            Filename => 'BuzzDeskRocks',
         },
-        Expected => "ZnunyRocks.png",
+        Expected => "BuzzDeskRocks.png",
     },
 );
 
@@ -59,11 +58,11 @@ my $WebPath = $ConfigObject->Get('Frontend::WebPath');
     {
         Name => 'Additional Directory',
         Data => {
-            Directory => 'ZnunyRocks',
+            Directory => 'BuzzDeskRocks',
         },
         Expected => {
-            WebPath  => $WebPath . 'SeleniumScreenshots/ZnunyRocks',
-            FullPath => $Home . '/var/httpd/htdocs/SeleniumScreenshots/ZnunyRocks',
+            WebPath  => $WebPath . 'SeleniumScreenshots/BuzzDeskRocks',
+            FullPath => $Home . '/var/httpd/htdocs/SeleniumScreenshots/BuzzDeskRocks',
         }
     },
 );
@@ -90,10 +89,10 @@ my $Hostname = $HelperObject->GetTestHTTPHostname();
     {
         Name => 'Default',
         Data => {
-            WebPath  => '/otrs-web/SeleniumScreenshots/ZnunyRocks',
+            WebPath  => '/otrs-web/SeleniumScreenshots/BuzzDeskRocks',
             Filename => 'AgentTicketZoom',
         },
-        Expected => "$HttpType://$Hostname" . "/otrs-web/SeleniumScreenshots/ZnunyRocks/AgentTicketZoom",
+        Expected => "$HttpType://$Hostname" . "/otrs-web/SeleniumScreenshots/BuzzDeskRocks/AgentTicketZoom",
     },
 );
 

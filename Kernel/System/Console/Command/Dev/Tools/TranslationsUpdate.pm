@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -32,7 +30,7 @@ our @ObjectDependencies = (
 sub Configure {
     my ( $Self, %Param ) = @_;
 
-    $Self->Description('Update the Znuny translation files.');
+    $Self->Description('Update the BuzzDesk translation files.');
     $Self->AddOption(
         Name        => 'language',
         Description => "Which language to use, omit to update all languages.",
@@ -42,7 +40,7 @@ sub Configure {
     );
     $Self->AddOption(
         Name        => 'module-directory',
-        Description => "Translate the Znuny module in the given directory.",
+        Description => "Translate the BuzzDesk module in the given directory.",
         Required    => 0,
         HasValue    => 1,
         ValueRegex  => qr/.+/,
@@ -73,17 +71,17 @@ sub Configure {
 
     $Self->AdditionalHelp(<<"EOF");
 
-<yellow>Translating Znuny</yellow>
+<yellow>Translating BuzzDesk</yellow>
 
 Make sure that you have a clean system with a current configuration. No modules may be installed or linked into the system!
 
-    <green>znuny.Console.pl $Name --language de</green>
+    <green>buzzdesk.Console.pl $Name --language de</green>
 
 <yellow>Translating Extension Modules</yellow>
 
 Make sure that you have a clean system with a current configuration. The module that needs to be translated has to be installed or linked into the system, but only this one!
 
-    <green>znuny.Console.pl $Name --language de --module-directory \$PathToDirectory</green>
+    <green>buzzdesk.Console.pl $Name --language de --module-directory \$PathToDirectory</green>
 EOF
 
     return;
@@ -166,8 +164,8 @@ sub Run {
         my %SOPM = $PackageObject->PackageParse( String => $FileContent );
 
         if (%SOPM) {
-            $ModuleCopyrightVendor = 'com' if $SOPM{URL}->{Content} =~ m{\bznuny\.com\b}i;
-            $ModuleCopyrightVendor = 'org' if $SOPM{URL}->{Content} =~ m{\bznuny\.org\b}i;
+            $ModuleCopyrightVendor = 'com' if $SOPM{URL}->{Content} =~ m{\bbuzzdesk\.com\b}i;
+            $ModuleCopyrightVendor = 'org' if $SOPM{URL}->{Content} =~ m{\bbuzzdesk\.org\b}i;
         }
 
     }
@@ -257,8 +255,8 @@ sub HandleLanguage {
     else {
         $LanguageFile  = "$Home/Kernel/Language/$Language.pm";
         $TargetFile    = "$Home/Kernel/Language/$Language.pm";
-        $TargetPOTFile = "$Home/i18n/Znuny/Znuny.pot";
-        $TargetPOFile  = "$Home/i18n/Znuny/Znuny.$WeblateLanguage.po";
+        $TargetPOTFile = "$Home/i18n/BuzzDesk/BuzzDesk.pot";
+        $TargetPOFile  = "$Home/i18n/BuzzDesk/BuzzDesk.$WeblateLanguage.po";
     }
 
     my $WritePOT = $Param{WritePO} || -e $TargetPOTFile;
@@ -327,7 +325,7 @@ sub HandleLanguage {
         );
     }
 
-    # Language file, which only contains the Znuny core translations
+    # Language file, which only contains the BuzzDesk core translations
     my $LanguageCoreObject = Kernel::Language->new(
         UserLanguage    => $Language,
         TranslationFile => 1,
@@ -554,7 +552,7 @@ sub WritePOTFile {
 
     $MainObject->Require('Locale::PO') || die "Could not load Locale::PO";
 
-    my $Package = $Param{Module} // 'Znuny';
+    my $Package = $Param{Module} // 'BuzzDesk';
 
     # build creation date, only YEAR-MO-DA HO:MI is needed without seconds
     my $CreationDate = $Kernel::OM->Create('Kernel::System::DateTime')->Format(
@@ -695,11 +693,10 @@ sub WritePerlLanguageFile {
         # needed for cvs check-in filter
         my $Separator = "# --";
 
-        my $HeaderString = "# Copyright (C) ";
 
         if ( $Param{ModuleCopyrightVendor} ) {
-            $HeaderString .= "2012 Znuny GmbH, https://znuny.com/" if $Param{ModuleCopyrightVendor} eq "com";
-            $HeaderString .= "2021 Znuny GmbH, https://znuny.org/" if $Param{ModuleCopyrightVendor} eq "org";
+            $HeaderString .= "2012 BuzzDesk GmbH, https://buzzdesk.com/" if $Param{ModuleCopyrightVendor} eq "com";
+            $HeaderString .= "2021 BuzzDesk GmbH, https://buzzdesk.org/" if $Param{ModuleCopyrightVendor} eq "org";
         }
 
         $Param{Module} =~ s/\-//gix;

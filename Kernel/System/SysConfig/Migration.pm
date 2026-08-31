@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -53,12 +52,12 @@ The values are taken from a backed up ZZZAAuto.pm which contains the old config.
 
 # Rename
 
-    # changed 'Znuny4OTRSDatabaseBackend###Export###CSV###Separator' to 'DBCRUD###Export###CSV###Separator'
+    # changed 'BuzzDesk4OTRSDatabaseBackend###Export###CSV###Separator' to 'DBCRUD###Export###CSV###Separator'
     my $Success = $SysConfigMigrationObject->MigrateSysConfigSettings(
-        FilePath  => '/opt/znuny/Kernel/Config/Files/ZZZAAuto.pm',
+        FilePath  => '/opt/buzzdesk/Kernel/Config/Files/ZZZAAuto.pm',
         FileClass => 'Kernel::Config::Files::ZZZAAuto',
         Data      => {
-            'Znuny4OTRSDatabaseBackend###Export###CSV###Separator' => {
+            'BuzzDesk4OTRSDatabaseBackend###Export###CSV###Separator' => {
                 UpdateName => 'DBCRUD###Export###CSV###Separator',
             },
         }
@@ -70,7 +69,7 @@ The values are taken from a backed up ZZZAAuto.pm which contains the old config.
         Data => {
             'Ticket::Hook' => {
                 UpdateEffectiveValue => {
-                    'Ticket#' => 'Znuny###',
+                    'Ticket#' => 'BuzzDesk###',
                 },
             }
         }

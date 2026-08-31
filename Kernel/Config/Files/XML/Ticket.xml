@@ -209,14 +209,14 @@
         </Value>
     </Setting>
     <Setting Name="Ticket::IndexModule" Required="1" Valid="1">
-        <Description Translatable="1">IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.</Description>
+        <Description Translatable="1">IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.</Description>
         <Navigation>Core::Ticket</Navigation>
         <Value>
             <Item ValueType="PerlModule" ValueFilter="Kernel/System/Ticket/IndexAccelerator/*.pm">Kernel::System::Ticket::IndexAccelerator::RuntimeDB</Item>
         </Value>
     </Setting>
     <Setting Name="Ticket::Article::Backend::MIMEBase::ArticleStorage" Required="1" Valid="1" ConfigLevel="200">
-        <Description Translatable="1">Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the Znuny user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.</Description>
+        <Description Translatable="1">Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the BuzzDesk user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.</Description>
         <Navigation>Core::CommunicationChannel::MIMEBase</Navigation>
         <Value>
             <Item ValueType="PerlModule" ValueFilter="Kernel/System/Ticket/Article/Backend/MIMEBase/ArticleStorage*.pm">Kernel::System::Ticket::Article::Backend::MIMEBase::ArticleStorageDB</Item>
@@ -425,7 +425,7 @@
         </Value>
     </Setting>
     <Setting Name="Ticket::SearchIndexModule" Required="1" Valid="1" ConfigLevel="200">
-        <Description Translatable="1">Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild".</Description>
+        <Description Translatable="1">Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild".</Description>
         <Navigation>Core::Ticket::FulltextSearch</Navigation>
         <Value>
             <Item ValueType="PerlModule" ValueFilter="Kernel/System/Ticket/ArticleSearchIndex/*.pm">Kernel::System::Ticket::ArticleSearchIndex::DB</Item>
@@ -453,7 +453,7 @@
         </Value>
     </Setting>
     <Setting Name="Ticket::SearchIndex::Attribute" Required="1" Valid="1" ConfigLevel="200">
-        <Description Translatable="1">Basic fulltext index settings. Execute "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.</Description>
+        <Description Translatable="1">Basic fulltext index settings. Execute "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.</Description>
         <Navigation>Core::Ticket::FulltextSearch</Navigation>
         <Value>
             <Hash>
@@ -5457,7 +5457,7 @@
         </Value>
     </Setting>
     <Setting Name="Ticket::UnlockStateType" Required="1" Valid="1">
-        <Description Translatable="1">Defines the valid states for unlocked tickets. To unlock tickets the script "bin/znuny.Console.pl Maint::Ticket::UnlockTimeout" can be used.</Description>
+        <Description Translatable="1">Defines the valid states for unlocked tickets. To unlock tickets the script "bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout" can be used.</Description>
         <Navigation>Core::Ticket</Navigation>
         <Value>
             <Array>
@@ -8928,7 +8928,7 @@
                         <Item>Core.Agent.TableFilters.js</Item>
                         <Item>Core.Agent.Overview.js</Item>
                         <Item>Core.Agent.TicketSplit.js</Item>
-                        <Item>Znuny.Agent.TicketWatch.js</Item>
+                        <Item>BuzzDesk.Agent.TicketWatch.js</Item>
                     </Array>
                 </Item>
             </Hash>
@@ -10002,7 +10002,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Access Control Lists (ACL)</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10077,7 +10077,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Queues</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10148,7 +10148,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Templates</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10218,7 +10218,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Templates ↔ Queues</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10288,7 +10288,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Auto Responses</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10358,7 +10358,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Queues ↔ Auto Responses</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10428,7 +10428,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Attachments</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10498,7 +10498,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Templates ↔ Attachments</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10568,7 +10568,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Salutations</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10638,7 +10638,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Signatures</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10708,7 +10708,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Email Addresses</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10778,7 +10778,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Ticket Notifications</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10853,7 +10853,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Services</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10923,7 +10923,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Service Level Agreements</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -10993,7 +10993,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Types</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -11064,7 +11064,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">States</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -11135,7 +11135,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Priorities</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -11206,7 +11206,7 @@
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">GenericAgent</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -12445,7 +12445,7 @@ Thanks for your help!
         </Value>
     </Setting>
     <Setting Name="PostMaster::CheckFollowUpModule###0000-BounceEmail" Required="0" Valid="1">
-        <Description Translatable="1">Executes follow-up checks on Znuny Header 'X-OTRS-Bounce'.</Description>
+        <Description Translatable="1">Executes follow-up checks on BuzzDesk Header 'X-OTRS-Bounce'.</Description>
         <Navigation>Core::Email::PostMaster</Navigation>
         <Value>
             <Hash>
@@ -12658,7 +12658,7 @@ Thanks for your help!
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Dynamic Fields GUI</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -12761,7 +12761,7 @@ Thanks for your help!
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Dynamic Fields Text Backend GUI</Item>
                     <Item Key="NavBarName"></Item>
                 </Hash>
@@ -12798,7 +12798,7 @@ Thanks for your help!
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Dynamic Fields Checkbox Backend GUI</Item>
                     <Item Key="NavBarName"></Item>
                 </Hash>
@@ -12835,7 +12835,7 @@ Thanks for your help!
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Dynamic Fields Drop-down Backend GUI</Item>
                     <Item Key="NavBarName"></Item>
                 </Hash>
@@ -12877,7 +12877,7 @@ Thanks for your help!
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Dynamic Fields Date Time Backend GUI</Item>
                     <Item Key="NavBarName"></Item>
                 </Hash>
@@ -12919,7 +12919,7 @@ Thanks for your help!
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Dynamic Fields Multiselect Backend GUI</Item>
                     <Item Key="NavBarName"></Item>
                 </Hash>

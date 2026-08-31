@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -50,8 +48,8 @@ $Selenium->RunTest(
               xmlns:slash=\"http://purl.org/rss/1.0/modules/slash/\"  >
               <channel>
                   <title>Some news</title>
-                  <atom:link href=\"https://www.znuny.com/feed/test\" rel=\"self\" type=\"application/rss+xml\" />
-                  <link>https://www.znuny.com</link>
+                  <atom:link href=\"https://www.buzzdesk.com/feed/test\" rel=\"self\" type=\"application/rss+xml\" />
+                  <link>https://www.buzzdesk.com</link>
                   <description>Simple service management</description>
                   <lastBuildDate>Fri, 26 Jan 2018 13:37:52 +0000</lastBuildDate>
                   <language>en-EN</language>
@@ -60,13 +58,13 @@ $Selenium->RunTest(
                   <generator>https://wordpress.org/?v=4.9.2</generator>
                   <item>
                       <title>$RandomRSSTitle</title>
-                      <link>https://www.znuny.com/$RandomRSSTitle</link>
+                      <link>https://www.buzzdesk.com/$RandomRSSTitle</link>
                       <pubDate>Tue, 16 Jan 2018 09:00:07 +0000</pubDate>
-                      <dc:creator><![CDATA[Znuny GmbH]]></dc:creator>
+                      <dc:creator><![CDATA[BuzzDesk GmbH]]></dc:creator>
                       <category><![CDATA[Release and Security Notes]]></category>
                       <category><![CDATA[Some news]]></category>
-                      <guid isPermaLink=\"false\">https://www.znuny.com/?p=61580</guid>
-                      <description><![CDATA[&#160; January 16, 2018 — Znuny, test]]></description>
+                      <guid isPermaLink=\"false\">https://www.buzzdesk.com/?p=61580</guid>
+                      <description><![CDATA[&#160; January 16, 2018 — BuzzDesk, test]]></description>
                       <content:encoded><![CDATA[<div class=\"row box-space-md\"> <div class=\"col-lg-12 col-md-12 col-sm-12 column1\"></div> </div>]]></content:encoded>
                   </item>
               </channel>
@@ -103,7 +101,7 @@ $Selenium->RunTest(
         # Test if RSS feed is shown.
         $Self->True(
             $Selenium->execute_script(
-                "return \$('#Dashboard0442-RSS tbody a[href*=\"www.znuny.com/$RandomRSSTitle\"]').text().trim() === '$RandomRSSTitle'"
+                "return \$('#Dashboard0442-RSS tbody a[href*=\"www.buzzdesk.com/$RandomRSSTitle\"]').text().trim() === '$RandomRSSTitle'"
             ),
             "RSS feed '$RandomRSSTitle' - found",
         );

@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -24,7 +23,7 @@ my $HelperObject              = $Kernel::OM->Get('Kernel::System::UnitTest::Help
 my $DynamicFieldObject        = $Kernel::OM->Get('Kernel::System::DynamicField');
 my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
 my $ConfigObject              = $Kernel::OM->Get('Kernel::Config');
-my $ZnunyHelperObject         = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject         = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $UnitTestWebserviceObject  = $Kernel::OM->Get('Kernel::System::UnitTest::Webservice');
 my $WebserviceObject          = $Kernel::OM->Get('Kernel::System::GenericInterface::Webservice');
 
@@ -42,9 +41,9 @@ $Param{DisplayedValues}          = 'Key,Value';
 $Param{DisplayedValuesSeparator} = '|';
 $Param{Limit}                    = 1;
 $Param{AutocompleteMinLength}    = 3;
-$Param{SearchTerms}              = 'Znuny';
+$Param{SearchTerms}              = 'BuzzDesk';
 
-$ZnunyHelperObject->_WebserviceCreate(
+$BuzzDeskHelperObject->_WebserviceCreate(
     Webservices => {
         $Param{WebserviceName} => 'scripts/test/sample/Webservice/' . $Param{WebserviceName} . '.yml',
     }
@@ -81,13 +80,13 @@ my @Tests = (
                 AutocompleteMinLength    => $Param{AutocompleteMinLength},
                 SearchTerms              => $Param{SearchTerms},
             },
-            Value => 'Znuny',
+            Value => 'BuzzDesk',
         },
         DynamicFieldData => [
             {
                 Name          => 'UnitTestDynamicFieldKey',
                 Key           => 'Key',
-                ExpectedValue => 'Znuny',
+                ExpectedValue => 'BuzzDesk',
             },
         ],
     },
@@ -111,18 +110,18 @@ my @Tests = (
                 AutocompleteMinLength    => $Param{AutocompleteMinLength},
                 SearchTerms              => $Param{SearchTerms},
             },
-            Value => 'Znuny',
+            Value => 'BuzzDesk',
         },
         DynamicFieldData => [
             {
                 Name          => 'UnitTestDynamicFieldKey',
                 Key           => 'Key',
-                ExpectedValue => 'Znuny',
+                ExpectedValue => 'BuzzDesk',
             },
             {
                 Name          => 'UnitTestDynamicFieldValue',
                 Key           => 'Value',
-                ExpectedValue => 'Znuny',
+                ExpectedValue => 'BuzzDesk',
             },
         ],
     },
@@ -149,14 +148,14 @@ my @Tests = (
                 SearchTerms              => $Param{SearchTerms},
             },
             Value => [
-                'Znuny',
+                'BuzzDesk',
             ],
         },
         DynamicFieldData => [
             {
                 Name          => 'UnitTestDynamicFieldKey',
                 Key           => 'Key',
-                ExpectedValue => 'Znuny',
+                ExpectedValue => 'BuzzDesk',
             },
         ],
     },
@@ -181,19 +180,19 @@ my @Tests = (
                 SearchTerms              => $Param{SearchTerms},
             },
             Value => [
-                'Znuny',
+                'BuzzDesk',
             ],
         },
         DynamicFieldData => [
             {
                 Name          => 'UnitTestDynamicFieldKey',
                 Key           => 'Key',
-                ExpectedValue => 'Znuny',
+                ExpectedValue => 'BuzzDesk',
             },
             {
                 Name          => 'UnitTestDynamicFieldValue',
                 Key           => 'Value',
-                ExpectedValue => 'Znuny',
+                ExpectedValue => 'BuzzDesk',
             },
         ],
     },
@@ -207,8 +206,8 @@ $UnitTestWebserviceObject->Mock(
                 Success => 1,
                 Data    => [
                     {
-                        Key   => 'Znuny',
-                        Value => 'Znuny',
+                        Key   => 'BuzzDesk',
+                        Value => 'BuzzDesk',
                     },
                     {
                         Key   => 'Rocks',
@@ -224,8 +223,8 @@ $UnitTestWebserviceObject->Mock(
             Result => {
                 Success => 1,
                 Data    => {
-                    Key   => 'Znuny',
-                    Value => 'Znuny',
+                    Key   => 'BuzzDesk',
+                    Value => 'BuzzDesk',
                 },
             },
         },
@@ -257,7 +256,7 @@ for my $Test (@Tests) {
         $ExpectedResult{$AdditionalDF} = $DynamicField->{ExpectedValue};
     }
 
-    my $DynamicFieldsCreated = $ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFields);
+    my $DynamicFieldsCreated = $BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFields);
     return if !$DynamicFieldsCreated;
 
     my $TicketID = $HelperObject->TicketCreate(
@@ -267,7 +266,7 @@ for my $Test (@Tests) {
     my $DynamicFieldName = $Test->{DynamicField}->{Name};
     $Test->{DynamicField}->{Config}->{AdditionalDFStorage} = \@AdditionalDFStorage;
 
-    $ZnunyHelperObject->_DynamicFieldsCreate(
+    $BuzzDeskHelperObject->_DynamicFieldsCreate(
         {
             %{ $Test->{DynamicField} }
         },

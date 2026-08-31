@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -26,7 +25,7 @@ my $ConfigObject             = $Kernel::OM->Get('Kernel::Config');
 my $HelperObject             = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $UnitTestParamObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Param');
 my $UnitTestWebserviceObject = $Kernel::OM->Get('Kernel::System::UnitTest::Webservice');
-my $ZnunyHelperObject        = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject        = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $WebserviceObject         = $Kernel::OM->Get('Kernel::System::GenericInterface::Webservice');
 my $LayoutObject             = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
 
@@ -38,7 +37,7 @@ my $Result         = $UnitTestWebserviceObject->Result();
 my $WebserviceName = 'DynamicFieldWebservice';
 my $DynamicField   = $WebserviceName . 'AJAX';
 
-$ZnunyHelperObject->_WebserviceCreate(
+$BuzzDeskHelperObject->_WebserviceCreate(
     Webservices => {
         $WebserviceName => 'scripts/test/sample/Webservice/' . $WebserviceName . '.yml',
     }
@@ -125,7 +124,7 @@ my @DynamicFields = (
     },
 );
 
-$ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFields);
+$BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFields);
 
 my @Tests = (
 
@@ -144,11 +143,11 @@ my @Tests = (
         Name  => 'WebserviceDropdown - Autocomplete (succeeding)',
         Param => {
             Subaction        => 'Autocomplete',
-            SearchTerms      => 'Znuny',
+            SearchTerms      => 'BuzzDesk',
             FieldType        => 'WebserviceDropdown',
             DynamicFieldName => $DynamicField . 'Dropdown',
         },
-        ExpectedResult => '[{"StoredValue":"Znuny","DisplayValue":"Znuny"}]',
+        ExpectedResult => '[{"StoredValue":"BuzzDesk","DisplayValue":"BuzzDesk"}]',
     },
     {
         Name  => 'WebserviceDropdown - AutoFill (nothing)',
@@ -164,11 +163,11 @@ my @Tests = (
         Name  => 'WebserviceDropdown - AutoFill (succeeding)',
         Param => {
             Subaction        => 'AutoFill',
-            SearchTerms      => 'Znuny',
+            SearchTerms      => 'BuzzDesk',
             FieldType        => 'WebserviceDropdown',
             DynamicFieldName => $DynamicField . 'Dropdown',
         },
-        ExpectedResult => '"Field1":"Znuny"',
+        ExpectedResult => '"Field1":"BuzzDesk"',
     },
 
     # WebserviceMultiselect
@@ -206,11 +205,11 @@ my @Tests = (
         Name  => 'WebserviceMultiselect - AutoFill (succeeding)',
         Param => {
             Subaction        => 'AutoFill',
-            SearchTerms      => 'Znuny',
+            SearchTerms      => 'BuzzDesk',
             FieldType        => 'WebserviceMultiselect',
             DynamicFieldName => $DynamicField . 'Multiselect',
         },
-        ExpectedResult => '"Field1":"Znuny"',
+        ExpectedResult => '"Field1":"BuzzDesk"',
     },
 );
 
@@ -222,8 +221,8 @@ $UnitTestWebserviceObject->Mock(
                 Success => 1,
                 Data    => [
                     {
-                        Key   => 'Znuny',
-                        Value => 'Znuny',
+                        Key   => 'BuzzDesk',
+                        Value => 'BuzzDesk',
                     },
                     {
                         Key   => 'Rocks',
@@ -239,8 +238,8 @@ $UnitTestWebserviceObject->Mock(
             Result => {
                 Success => 1,
                 Data    => {
-                    Key   => 'Znuny',
-                    Value => 'Znuny',
+                    Key   => 'BuzzDesk',
+                    Value => 'BuzzDesk',
                 },
             },
         },

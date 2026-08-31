@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -74,11 +73,11 @@ sub Run {
         );
     }
 
-    my $IsZnunyFile = $Self->_IsZnunyFile(
+    my $IsBuzzDeskFile = $Self->_IsBuzzDeskFile(
         File => $Param{File}
     );
 
-    if ( $Param{File} && !$IsZnunyFile ) {
+    if ( $Param{File} && !$IsBuzzDeskFile ) {
         return $LayoutObject->ErrorScreen(
             Message => Translatable('File or Directory not found.'),
         );
@@ -335,7 +334,7 @@ Returns:
             'Permissions'  => '0660',
             'State'        => 'OK',
             'Package'      => 'Custom',
-            'FullPath'     => '/workspace/znuny/znuny_70New/Kernel/Config/Files/XML/Custom.xml',
+            'FullPath'     => '/workspace/buzzdesk/buzzdesk_70New/Kernel/Config/Files/XML/Custom.xml',
             'Created'      => '2019-10-28 09:36:03',
             'Changed'      => '2019-10-28 09:36:03'
         },
@@ -348,7 +347,7 @@ Returns:
             'Name'         => 'Ticket.pm',
             'Permissions'  => '0660',
             'State'        => 'OK',
-            'FullPath'     => '/workspace/znuny/znuny_70New/Custom/Kernel/System/Ticket.pm',
+            'FullPath'     => '/workspace/buzzdesk/buzzdesk_70New/Custom/Kernel/System/Ticket.pm',
             'Created'      => '2019-10-28 09:36:03',
             'Changed'      => '2019-10-28 09:36:03'
         },
@@ -387,7 +386,7 @@ Returns:
             'Permissions'  => '0660',
             'State'        => 'OK',
             'Package'      => 'Custom',
-            'FullPath'     => '/workspace/znuny/znuny_70New/Kernel/Config/Files/XML/Custom.xml',
+            'FullPath'     => '/workspace/buzzdesk/buzzdesk_70New/Kernel/Config/Files/XML/Custom.xml',
             'Created'      => '2019-10-28 09:36:03',
             'Changed'      => '2019-10-28 09:36:03'
         },
@@ -486,7 +485,7 @@ Returns:
             'Name'         => 'Ticket.pm',
             'Permissions'  => '0660',
             'State'        => 'OK',
-            'FullPath'     => '/workspace/znuny/znuny_70New/Custom/Kernel/System/Ticket.pm',
+            'FullPath'     => '/workspace/buzzdesk/buzzdesk_70New/Custom/Kernel/System/Ticket.pm',
             'Created'      => '2019-10-28 09:36:03',
             'Changed'      => '2019-10-28 09:36:03'
         },
@@ -560,7 +559,7 @@ Returns:
             'Name'         => 'Ticket.pm',
             'Permissions'  => '0660',
             'State'        => 'OK',
-            'FullPath'     => '/workspace/znuny/znuny_70New/Kernel/Config.pm',
+            'FullPath'     => '/workspace/buzzdesk/buzzdesk_70New/Kernel/Config.pm',
             'Created'      => '2019-10-28 09:36:03',
             'Changed'      => '2019-10-28 09:36:03'
         },
@@ -790,8 +789,8 @@ sub FileDetailsExtended {
             Timeout => 15,
         );
 
-        #  e.g.: https://raw.githubusercontent.com/znuny/znuny/rel-6_5/Kernel/GenericInterface/Event/Handler.pm
-        my $URL      = "https://raw.githubusercontent.com/znuny/znuny/" . $Version . "/" . $Param{Path};
+        #  e.g.: https://raw.githubusercontent.com/buzzdesk/buzzdesk/rel-6_5/Kernel/GenericInterface/Event/Handler.pm
+        my $URL      = "https://raw.githubusercontent.com/buzzdesk/buzzdesk/" . $Version . "/" . $Param{Path};
         my %Response = $WebUserAgentObject->Request(
             URL   => $URL,
             NoLog => 1,
@@ -819,7 +818,7 @@ sub FileDetailsExtended {
     return %Extended;
 }
 
-sub _IsZnunyFile {
+sub _IsBuzzDeskFile {
     my ( $Self, %Param ) = @_;
 
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');

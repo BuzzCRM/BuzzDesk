@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -109,8 +107,8 @@ my $CreateTestData = sub {
 
     my $MailQueueObject = $Kernel::OM->Get('Kernel::System::MailQueue');
     my %ElementData     = (
-        Sender    => 'mailqueue.test@znuny.com',
-        Recipient => 'mailqueue.test@znuny.com',
+        Sender    => 'mailqueue.test@buzzdesk.com',
+        Recipient => 'mailqueue.test@buzzdesk.com',
         Message   => {
             'Key1' => 'Value1',
             'Key2' => 'Value2',
@@ -129,9 +127,9 @@ my $CreateTestData = sub {
             Attempts => 3,
         },
 
-        'Recipient::mailqueue.test2@znuny.com' => {
+        'Recipient::mailqueue.test2@buzzdesk.com' => {
             %ElementData,
-            Recipient => 'mailqueue.test2@znuny.com',
+            Recipient => 'mailqueue.test2@buzzdesk.com',
         }
     );
 
@@ -154,7 +152,7 @@ my $MailQueueObject = $Kernel::OM->Get('Kernel::System::MailQueue');
 my $Result;
 
 my %BaseSearch = (
-    Sender => 'mailqueue.test@znuny.com',
+    Sender => 'mailqueue.test@buzzdesk.com',
 );
 
 my $TestMessage = sub {
@@ -169,10 +167,10 @@ $Self->True(
 );
 
 # Get all the records for the sender X and recipient Y
-$Result = $MailQueueObject->List( %BaseSearch, Recipient => 'mailqueue.test2@znuny.com' );
+$Result = $MailQueueObject->List( %BaseSearch, Recipient => 'mailqueue.test2@buzzdesk.com' );
 $Self->True(
     $Result && scalar( @{$Result} ) == 1,
-    $TestMessage->(q{ and recipient 'mailqueue.test2@znuny.com'}),
+    $TestMessage->(q{ and recipient 'mailqueue.test2@buzzdesk.com'}),
 );
 
 # Get all the records for the sender X and attempts 3
@@ -189,11 +187,11 @@ $Self->True(
     $TestMessage->(" and article-id '$ArticleID'"),
 );
 
-# Get all the records for the sender X and recipent that match '@znuny.com'
-$Result = $MailQueueObject->List( %BaseSearch, Recipient => '@znuny.com' );
+# Get all the records for the sender X and recipent that match '@buzzdesk.com'
+$Result = $MailQueueObject->List( %BaseSearch, Recipient => '@buzzdesk.com' );
 $Self->True(
     $Result && scalar( @{$Result} ) == $TotalTestRecords,
-    $TestMessage->(q{ and recipent that match '@znuny.com'}),
+    $TestMessage->(q{ and recipent that match '@buzzdesk.com'}),
 );
 
 # Get all the records for the sender that match 'mailqueue.test'

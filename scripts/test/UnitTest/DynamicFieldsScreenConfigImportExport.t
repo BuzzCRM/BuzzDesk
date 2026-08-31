@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -20,7 +19,7 @@ $Kernel::OM->ObjectParamAdd(
     },
 );
 
-my $ZnunyHelperObject    = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject    = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $ConfigObject         = $Kernel::OM->Get('Kernel::Config');
 my $SysConfigObject      = $Kernel::OM->Get('Kernel::System::SysConfig');
 my $UnitTestHelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
@@ -83,7 +82,7 @@ my @DynamicFieldConfigs = (
     },
 );
 
-my $DynamicFieldsCreated = $ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFieldConfigs);
+my $DynamicFieldsCreated = $BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFieldConfigs);
 
 $Self->True(
     scalar $DynamicFieldsCreated,
@@ -296,7 +295,7 @@ for my $Test (@Tests) {
         "Start - _DynamicFieldsScreenConfigExport",
     );
 
-    my %Export = $ZnunyHelperObject->_DynamicFieldsScreenConfigExport(
+    my %Export = $BuzzDeskHelperObject->_DynamicFieldsScreenConfigExport(
         DynamicFields => \@DynamicFields,
     );
 
@@ -323,7 +322,7 @@ for my $Test (@Tests) {
         "Start - _DynamicFieldsScreenConfigImport",
     );
 
-    my $Import = $ZnunyHelperObject->_DynamicFieldsScreenConfigImport(
+    my $Import = $BuzzDeskHelperObject->_DynamicFieldsScreenConfigImport(
         Config => $Test->{ImportData},
     );
 
@@ -335,7 +334,7 @@ for my $Test (@Tests) {
         "End - _DynamicFieldsScreenConfigImport - $TimeDiff",
     );
 
-    %Export = $ZnunyHelperObject->_DynamicFieldsScreenConfigExport(
+    %Export = $BuzzDeskHelperObject->_DynamicFieldsScreenConfigExport(
         DynamicFields => \@DynamicFields,
     );
 

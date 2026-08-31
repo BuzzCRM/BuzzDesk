@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -55,7 +53,7 @@ sub Run {
         $Self->PrintError(
             "Table 'ckeditor_migration_4_5' does not exist! Please make sure to execute migration script first\n" .
                 "or create and populate this table with data to migrate!\n" .
-                "Schema of the table can be found in module \"scripts::Migration::Znuny::MigrateCKEditorContent\"."
+                "Schema of the table can be found in module \"scripts::Migration::BuzzDesk::MigrateCKEditorContent\"."
         );
         return $Self->ExitCodeError();
     }

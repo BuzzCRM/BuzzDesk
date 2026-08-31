@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -696,7 +694,7 @@ DTSTAMP:20220209T115627Z
 UID:5ad4aa23-4z81-468f-96f6-5a4ff3bv2376
 SUMMARY:$Summary->{Default}->[0]
 ORGANIZER;PARTSTAT=NEEDS-ACTION;ROLE=REQ-PARTICIPANT:mailto:$Organizer->{Default}->[0]
-ATTENDEE;CN=Znuny System - test;PARTSTAT=NEEDS-ACTION;ROLE=REQ-PARTI
+ATTENDEE;CN=BuzzDesk System - test;PARTSTAT=NEEDS-ACTION;ROLE=REQ-PARTI
  CIPANT:mailto:$Attendee->{Default}->[0]
 DTSTART;TZID=Europe/Warsaw:20220517T130000
 DTEND;TZID=Europe/Warsaw:20220517T140000
@@ -720,7 +718,7 @@ END:VCALENDAR
                 'Events' => [
                     {
                         'Attendee' => [
-                            'Znuny System - test'
+                            'BuzzDesk System - test'
                         ],
                         'Dates' => [
                             {
@@ -1137,7 +1135,7 @@ my $TicketID = $TicketObject->TicketCreate(
     Priority     => '3 normal',
     State        => 'open',
     CustomerNo   => '123465',
-    CustomerUser => 'unittest@znuny.com',
+    CustomerUser => 'unittest@buzzdesk.com',
     OwnerID      => 1,
     UserID       => 1,
 );

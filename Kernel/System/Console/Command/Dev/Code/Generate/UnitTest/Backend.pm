@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -8,7 +6,7 @@
 # --
 
 package Kernel::System::Console::Command::Dev::Code::Generate::UnitTest::Backend;
-## nofilter(TidyAll::Plugin::Znuny::Perl::LayoutObject)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::LayoutObject)
 
 use strict;
 use warnings;
@@ -31,7 +29,7 @@ sub Configure {
     $Self->AddOption(
         Name        => 'module-directory',
         Description =>
-            "Specify the directory containing the module where the new test should be created (otherwise the Znuny home directory will be used).",
+            "Specify the directory containing the module where the new test should be created (otherwise the BuzzDesk home directory will be used).",
         Required   => 0,
         HasValue   => 1,
         ValueRegex => qr/.*/smx,

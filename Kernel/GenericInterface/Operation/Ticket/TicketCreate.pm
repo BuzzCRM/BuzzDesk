@@ -1,7 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
-# Copyright (C) 2021 maxence business consulting GmbH, http://www.maxence.de
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -254,9 +251,9 @@ perform TicketCreate Operation. This will return the created ticket number.
         Success         => 1,                       # 0 or 1
         ErrorMessage    => '',                      # in case of error
         Data            => {                        # result data payload after Operation
-            TicketID    => 123,                     # Ticket ID Znuny
-            TicketNumber => 2324454323322,          # Ticket number in Znuny
-            ArticleID   => 43,                      # Article ID in Znuny
+            TicketID    => 123,                     # Ticket ID BuzzDesk
+            TicketNumber => 2324454323322,          # Ticket number in BuzzDesk
+            ArticleID   => 43,                      # Article ID in BuzzDesk
             Error => {                              # should not return errors
                     ErrorCode    => 'Ticket.Create.ErrorCode',
                     ErrorMessage => 'Error Description'

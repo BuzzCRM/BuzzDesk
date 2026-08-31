@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -7,7 +6,7 @@
 # --
 
 # because of direct open() calls
-## nofilter(TidyAll::Plugin::Znuny::Perl::PerlCritic)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::PerlCritic)
 
 package Kernel::System::DBCRUD;
 
@@ -1791,8 +1790,8 @@ sub CreateMissingUUIDDatabaseTableColumns {
 
 =head2 MigrateUUIDDatabaseTableColumns()
 
-    Renames the UUID column from z4o_database_backend_uuid (used up until Znuny 6.0) or
-    database_backend_uuid (used in Znuny 6.1 and 6.2) to dbcrud_uuid (Znuny 6.3 and up).
+    Renames the UUID column from z4o_database_backend_uuid (used up until BuzzDesk 6.0) or
+    database_backend_uuid (used in BuzzDesk 6.1 and 6.2) to dbcrud_uuid (BuzzDesk 6.3 and up).
     Also includes table from history backend, if present.
 
     my $Success = $DBCRUDObject->MigrateUUIDDatabaseTableColumns();

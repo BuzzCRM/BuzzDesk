@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -125,8 +124,8 @@ sub HandleResponse {
         Success => 1,
         Data    => [
             {
-                Key   => 'Znuny',
-                Value => 'Znuny',
+                Key   => 'BuzzDesk',
+                Value => 'BuzzDesk',
             },
             {
                 Key   => 'Rocks',

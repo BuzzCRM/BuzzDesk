@@ -1,12 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Translation::JavaScriptStrings)
+## nofilter(TidyAll::Plugin::BuzzDesk::Translation::JavaScriptStrings)
 
 package Kernel::Language::id;
 
@@ -860,7 +858,7 @@ sub Data {
             '',
         'Please provide a unique name for this web service.' => 'Berikan nama yang unik untuk layanan web ini',
         'Error handling module backend' => '',
-        'This Znuny error handling backend module will be called internally to process the error handling mechanism.' =>
+        'This BuzzDesk error handling backend module will be called internally to process the error handling mechanism.' =>
             '',
         'Processing options' => '',
         'Configure filters to control error handling module execution.' =>
@@ -952,15 +950,15 @@ sub Data {
         'The name is typically used to call up an operation of a remote web service.' =>
             'Nama ini biasanya digunakan untuk memanggil operasi dari layanan web jarak jauh ',
         'Invoker backend' => 'Invoker backend',
-        'This Znuny invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
-            'Modul backend Invoker Znuny ini akan dipanggil untuk menyiapkan data yang akan dikirim ke sistem remote , dan akan diproses data tanggapannya.',
+        'This BuzzDesk invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
+            'Modul backend Invoker BuzzDesk ini akan dipanggil untuk menyiapkan data yang akan dikirim ke sistem remote , dan akan diproses data tanggapannya.',
         'Mapping for outgoing request data' => 'Pemetaan untuk permintaan data yang keluar`',
         'Configure' => 'Menkonfigurasi`',
-        'The data from the invoker of Znuny will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
-            'Data dari Invoker dari Znuny akan diproses oleh pemetaan ini , untuk mengubahnya dengan jenis data sistem remote yang diharapkan.',
+        'The data from the invoker of BuzzDesk will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
+            'Data dari Invoker dari BuzzDesk akan diproses oleh pemetaan ini , untuk mengubahnya dengan jenis data sistem remote yang diharapkan.',
         'Mapping for incoming response data' => 'Pemetaan untuk data respon yang masuk',
-        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of Znuny expects.' =>
-            'Data respon akan diproses oleh pemetaan ini , untuk mengubahnya dengan jenis data Invoker dari Znuny sesuai harapan.`',
+        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of BuzzDesk expects.' =>
+            'Data respon akan diproses oleh pemetaan ini , untuk mengubahnya dengan jenis data Invoker dari BuzzDesk sesuai harapan.`',
         'Asynchronous' => 'sinkronis',
         'Condition' => 'Syarat',
         'Edit this event' => '',
@@ -968,8 +966,8 @@ sub Data {
         'Add Event' => 'Tambahkan event',
         'To add a new event select the event object and event name and click on the "+" button' =>
             'Untuk menambahkan even baru, pilih objek event dan nama event dan klik tombol "+".',
-        'Asynchronous event triggers are handled by the Znuny Scheduler Daemon in background (recommended).' =>
-            'Asynchronous ditangani oleh Znuny Scheduler Daemon di latar belakang ( dianjurkan ) .',
+        'Asynchronous event triggers are handled by the BuzzDesk Scheduler Daemon in background (recommended).' =>
+            'Asynchronous ditangani oleh BuzzDesk Scheduler Daemon di latar belakang ( dianjurkan ) .',
         'Synchronous event triggers would be processed directly during the web request.' =>
             'Sinkron pemicu akan diproses langsung selama permintaan web.',
         'Add all attachments' => '',
@@ -1103,11 +1101,11 @@ sub Data {
         'The name is typically used to call up this web service operation from a remote system.' =>
             'Nama ini biasanya digunakan untuk memanggil operasi layanan web dari sistem remote',
         'Operation backend' => 'Backend operasi',
-        'This Znuny operation backend module will be called internally to process the request, generating data for the response.' =>
-            'Modul backend operasi Znuny ini akan dipanggil secara internal untuk memproses permintaan tersebut, menghasilkan data untuk respon .',
+        'This BuzzDesk operation backend module will be called internally to process the request, generating data for the response.' =>
+            'Modul backend operasi BuzzDesk ini akan dipanggil secara internal untuk memproses permintaan tersebut, menghasilkan data untuk respon .',
         'Mapping for incoming request data' => 'Pemetaan untuk permintaan data yang masuk',
-        'The request data will be processed by this mapping, to transform it to the kind of data Znuny expects.' =>
-            'Data permintaan akan diproses oleh pemetaan ini , untuk mengubahnya dengan jenis Znuny data tersebut',
+        'The request data will be processed by this mapping, to transform it to the kind of data BuzzDesk expects.' =>
+            'Data permintaan akan diproses oleh pemetaan ini , untuk mengubahnya dengan jenis BuzzDesk data tersebut',
         'Mapping for outgoing response data' => 'Pemetaan untuk mengeluarkan data respon',
         'The response data will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
             'Data respon akan diproses oleh pemetaan ini , untuk mengubahnya dengan jenis data sistem remote tersebut',
@@ -1130,8 +1128,8 @@ sub Data {
             '',
         'Maximum message length' => 'Maksimum pesan panjang',
         'This field should be an integer number.' => 'Bidang ini harus bilangan bulat ',
-        'Here you can specify the maximum size (in bytes) of REST messages that Znuny will process.' =>
-            'Di sini Anda dapat menentukan ukuran maksimum ( dalam byte ) dari pesan SISA dimana Znuny akan memproses ',
+        'Here you can specify the maximum size (in bytes) of REST messages that BuzzDesk will process.' =>
+            'Di sini Anda dapat menentukan ukuran maksimum ( dalam byte ) dari pesan SISA dimana BuzzDesk akan memproses ',
         'Send Keep-Alive' => 'Kirim keep-alive',
         'This configuration defines if incoming connections should get closed or kept alive.' =>
             'Konfigurasi ini mendefinisikan jika koneksi masuk harus bisa ditutup atau tetap hidup ',
@@ -1199,22 +1197,22 @@ sub Data {
         'Client Certificate' => '',
         'The full path and name of the SSL client certificate file (must be in PEM, DER or PKCS#12 format).' =>
             '',
-        'e.g. /opt/znuny/var/certificates/SOAP/certificate.pem' => '',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/certificate.pem' => '',
         'Client Certificate Key' => '',
         'The full path and name of the SSL client certificate key file (if not already included in certificate file).' =>
             '',
-        'e.g. /opt/znuny/var/certificates/SOAP/key.pem' => '',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/key.pem' => '',
         'Client Certificate Key Password' => '',
         'The password to open the SSL certificate if the key is encrypted.' =>
             '',
         'Certification Authority (CA) Certificate' => '',
         'The full path and name of the certification authority certificate file that validates SSL certificate.' =>
             'Path lengkap dan nama berkas otoritas sertifikat yang mengesahkan sertifikat SSL.',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA/ca.pem' => 'Misalnya  /opt/znuny/var/certificates/SOAP/CA/ca.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem' => 'Misalnya  /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem',
         'Certification Authority (CA) Directory' => 'Buku alamat otoritas sertifikasi (CA)',
         'The full path of the certification authority directory where the CA certificates are stored in the file system.' =>
             'Path lengkap direktori otoritas sertifikasi di mana sertifikat CA disimpan dalam berkas sistem ',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA' => 'Misalnya /opt/znuny/var/certificates/SOAP/CA',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA' => 'Misalnya /opt/buzzdesk/var/certificates/SOAP/CA',
         'Controller mapping for Invoker' => 'Kontroler pemetaan untuk invoker',
         'The controller that the invoker should send requests to. Variables marked by a \':\' will get replaced by the data value and passed along with the request. (e.g. /Ticket/:TicketID?UserLogin=:UserLogin&Password=:Password).' =>
             'Kontroler yang Invoker harus mengirim permintaan. Variabel ditandai dengan \' : \' akan diganti dengan nilai data dan diteruskan dengan permintaan . ( contoh /Tiket/:TicketID?UserLogin=:UserLogin&Password=:Password).',
@@ -1271,13 +1269,13 @@ sub Data {
         'Select how SOAP response function wrapper should be constructed.' =>
             'Pilih bagaimana fungsi respon sampul SOAP harus dibangun',
         'Response name free text' => 'Nama respon teks bebas',
-        'Here you can specify the maximum size (in bytes) of SOAP messages that Znuny will process.' =>
-            'Di sini anda dapat menentukan ukuran maksimum (dalam byte) dari pesanan SOAP bahwa Znuny akan diproses',
+        'Here you can specify the maximum size (in bytes) of SOAP messages that BuzzDesk will process.' =>
+            'Di sini anda dapat menentukan ukuran maksimum (dalam byte) dari pesanan SOAP bahwa BuzzDesk akan diproses',
         'Fixed namespace prefix' => '',
         'Use a fixed namespace prefix (e. g. myns:) for the root tag of a SOAP message.' =>
             '',
         'Suffix for response tag' => '',
-        'Usually Znuny expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
+        'Usually BuzzDesk expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
             '',
         'Encoding' => 'Menyandi',
         'The character encoding for the SOAP message contents.' => 'Karakter pengkodean untuk isi pesan SOAP',
@@ -1320,10 +1318,10 @@ sub Data {
         'Provider transport' => 'Transpor penyedia',
         'Requester transport' => 'Transpor pemohon',
         'Debug threshold' => 'Permulaan eror',
-        'In provider mode, Znuny offers web services which are used by remote systems.' =>
-            'Dalam mode penyedia, Znuny menawarkan layanan web yang digunakan oleh sistem remote.',
-        'In requester mode, Znuny uses web services of remote systems.' =>
-            'Dalam mode pemohon, Znuny menggunakan layanan web dari sistem remote.',
+        'In provider mode, BuzzDesk offers web services which are used by remote systems.' =>
+            'Dalam mode penyedia, BuzzDesk menawarkan layanan web yang digunakan oleh sistem remote.',
+        'In requester mode, BuzzDesk uses web services of remote systems.' =>
+            'Dalam mode pemohon, BuzzDesk menggunakan layanan web dari sistem remote.',
         'Network transport' => 'Jaringan transpor',
         'Error Handling Modules' => '',
         'Error handling modules are used to react in case of errors during the communication. Those modules are executed in a specific order, which can be changed by drag and drop.' =>
@@ -1441,7 +1439,7 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportEmailSettings.tt
         'Use comma or semicolon to separate email addresses.' => '',
-        'You can use Znuny-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
+        'You can use BuzzDesk-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
             '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportWebserviceSettings.tt
@@ -1509,8 +1507,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminPGP.tt
         'PGP support is disabled' => 'Dukungan PGP dinonaktifkan',
-        'To be able to use PGP in Znuny, you have to enable it first.' =>
-            'Untuk dapat menggunakan PGP di Znuny, Anda harus mengaktifkannya terlebih dahulu.',
+        'To be able to use PGP in BuzzDesk, you have to enable it first.' =>
+            'Untuk dapat menggunakan PGP di BuzzDesk, Anda harus mengaktifkannya terlebih dahulu.',
         'Enable PGP support' => 'Aktifkan dukungan PGP',
         'Faulty PGP configuration' => 'Konfigurasi PGP rusak',
         'PGP support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -1541,20 +1539,20 @@ sub Data {
         'Do you really want to reinstall this package? Any manual changes will be lost.' =>
             'Apakah anda ingin menginstal ulang paket ini? Semua perubahan manual akan hilang.',
         'Go to updating instructions' => '',
-        'Go to znuny.org' => '',
+        'Go to buzzdesk.org' => '',
         'package information' => 'informasi paket',
-        'Package installation requires a patch level update of Znuny.' =>
+        'Package installation requires a patch level update of BuzzDesk.' =>
             '',
-        'Package update requires a patch level update of Znuny.' => '',
-        'Please note that your installed Znuny version is %s.' => '',
-        'To install this package, you need to update Znuny to version %s or newer.' =>
+        'Package update requires a patch level update of BuzzDesk.' => '',
+        'Please note that your installed BuzzDesk version is %s.' => '',
+        'To install this package, you need to update BuzzDesk to version %s or newer.' =>
             '',
-        'This package can only be installed on Znuny version %s or older.' =>
+        'This package can only be installed on BuzzDesk version %s or older.' =>
             '',
-        'This package can only be installed on Znuny version %s.' => '',
-        'Why should I keep Znuny up to date?' => 'Kenapa Saya harus membuat Znuny selalu terbarukan?',
+        'This package can only be installed on BuzzDesk version %s.' => '',
+        'Why should I keep BuzzDesk up to date?' => 'Kenapa Saya harus membuat BuzzDesk selalu terbarukan?',
         'You will receive updates about relevant security issues.' => 'Anda akan menerima pembaruan terkait isu keamanan yang relevan.',
-        'You will receive updates for all other relevant Znuny issues.' =>
+        'You will receive updates for all other relevant BuzzDesk issues.' =>
             '',
         'How can I do a patch level update if I don’t have a contract?' =>
             '',
@@ -1955,8 +1953,8 @@ EMAILADDRESS:info@example.com dari, kepada atau Cc.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSMIME.tt
         'SMIME support is disabled' => 'Dukungan S MIME dinonaktifkan',
-        'To be able to use SMIME in Znuny, you have to enable it first.' =>
-            'Untuk dapat menggunakan SMIME di Znuny, Anda harus mengaktifkannya terlebih dahulu.',
+        'To be able to use SMIME in BuzzDesk, you have to enable it first.' =>
+            'Untuk dapat menggunakan SMIME di BuzzDesk, Anda harus mengaktifkannya terlebih dahulu.',
         'Enable SMIME support' => 'Aktifkan dukungan SMIME',
         'Faulty SMIME configuration' => 'Konfigurasi SMIME rusak',
         'SMIME support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -2149,7 +2147,7 @@ EMAILADDRESS:info@example.com dari, kepada atau Cc.',
         'Find out how to use the system configuration by reading the %s.' =>
             '',
         'Search in all settings...' => '',
-        'There are currently no settings available. Please make sure to run \'znuny.Console.pl Maint::Config::Rebuild\' before using the software.' =>
+        'There are currently no settings available. Please make sure to run \'buzzdesk.Console.pl Maint::Config::Rebuild\' before using the software.' =>
             '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSystemConfigurationDeployment.tt
@@ -2445,18 +2443,18 @@ EMAILADDRESS:info@example.com dari, kepada atau Cc.',
         'Customer User Information Center' => '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDaemonInfo.tt
-        'The Znuny Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
-            'The Znuny Daemon adalah proses daemon yang melakukan tugas-tugas asynchronous, misalnya eskalasi tiket trigger, pengiriman email, dll.',
-        'A running Znuny Daemon is mandatory for correct system operation.' =>
-            'Menjalankan Daemon Znuny adalah wajib untuk operasi sistem yang benar.',
-        'Starting the Znuny Daemon' => 'Memulai dengan Daemon Znuny',
-        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the Znuny Daemon is running and start it if needed.' =>
-            'Pastikan fail tersebut %s ada (tanpa .dist tambahan). Tugas cron ini akan memeriksa setiap 5 menit jika Znuny Daemon berjalan dan memulainya jika diperlukan.',
-        'Execute \'%s start\' to make sure the cron jobs of the \'znuny\' user are active.' =>
-            'Mengeksekusi \'%s start\' untuk memastikan pekerjaan cron dari pengguna Znuny \'yang aktif.',
-        'After 5 minutes, check that the Znuny Daemon is running in the system (\'bin/znuny.Daemon.pl status\').' =>
-            'Setelah 5 menit, periksa Znuny Daemon menjalankan dengan system (
-bin/znuny.Daemon.pl status\').',
+        'The BuzzDesk Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
+            'The BuzzDesk Daemon adalah proses daemon yang melakukan tugas-tugas asynchronous, misalnya eskalasi tiket trigger, pengiriman email, dll.',
+        'A running BuzzDesk Daemon is mandatory for correct system operation.' =>
+            'Menjalankan Daemon BuzzDesk adalah wajib untuk operasi sistem yang benar.',
+        'Starting the BuzzDesk Daemon' => 'Memulai dengan Daemon BuzzDesk',
+        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the BuzzDesk Daemon is running and start it if needed.' =>
+            'Pastikan fail tersebut %s ada (tanpa .dist tambahan). Tugas cron ini akan memeriksa setiap 5 menit jika BuzzDesk Daemon berjalan dan memulainya jika diperlukan.',
+        'Execute \'%s start\' to make sure the cron jobs of the \'buzzdesk\' user are active.' =>
+            'Mengeksekusi \'%s start\' untuk memastikan pekerjaan cron dari pengguna BuzzDesk \'yang aktif.',
+        'After 5 minutes, check that the BuzzDesk Daemon is running in the system (\'bin/buzzdesk.Daemon.pl status\').' =>
+            'Setelah 5 menit, periksa BuzzDesk Daemon menjalankan dengan system (
+bin/buzzdesk.Daemon.pl status\').',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboard.tt
         'Dashboard' => 'Dasbor',
@@ -2600,7 +2598,7 @@ bin/znuny.Daemon.pl status\').',
         'This setting can currently not be saved' => '',
         'Save setting' => '',
         'Save this setting' => '',
-        'Did you know? You can help translating Znuny at %s.' => '',
+        'Did you know? You can help translating BuzzDesk at %s.' => '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentPreferencesOverview.tt
         'Choose from the groups on the left to find the settings you\'d wish to change.' =>
@@ -3139,8 +3137,8 @@ bin/znuny.Daemon.pl status\').',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBStart.tt
         'Install Type' => 'Jenis instal',
-        'Create a new database for Znuny' => 'Membuat database baru untuk Znuny',
-        'Use an existing database for Znuny' => 'Menggunakan database yang ada untuk Znuny',
+        'Create a new database for BuzzDesk' => 'Membuat database baru untuk BuzzDesk',
+        'Use an existing database for BuzzDesk' => 'Menggunakan database yang ada untuk BuzzDesk',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBmssql.tt
         'If you have set a root password for your database, it must be entered here. If not, leave this field empty.' =>
@@ -3151,8 +3149,8 @@ bin/znuny.Daemon.pl status\').',
         'Database check successful.' => 'Database berhasil diperiksa',
         'Database User' => 'Pengguna database',
         'New' => 'Baru',
-        'A new database user with limited permissions will be created for this Znuny system.' =>
-            'Pengguna database baru dengan hak akses yang terbatas akan dibuat untuk sistem Znuny ini.',
+        'A new database user with limited permissions will be created for this BuzzDesk system.' =>
+            'Pengguna database baru dengan hak akses yang terbatas akan dibuat untuk sistem BuzzDesk ini.',
         'Repeat Password' => 'Ulang kata sandi',
         'Generated password' => 'Mengeluarkan kata sandi',
         'Database' => 'Database',
@@ -3164,10 +3162,10 @@ bin/znuny.Daemon.pl status\').',
         'SID' => 'SID',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerFinish.tt
-        'To be able to use Znuny you have to enter the following line in your command line (Terminal/Shell) as root.' =>
-            'Untuk menggunakan Znuny, anda perlu memasukkan command line berikut (Terminal/Shell) sebagai root',
+        'To be able to use BuzzDesk you have to enter the following line in your command line (Terminal/Shell) as root.' =>
+            'Untuk menggunakan BuzzDesk, anda perlu memasukkan command line berikut (Terminal/Shell) sebagai root',
         'Restart your webserver' => 'Mengulang kembali webserver anda',
-        'After doing so your Znuny is up and running.' => 'Setelah itu Znuny anda akan berjalan',
+        'After doing so your BuzzDesk is up and running.' => 'Setelah itu BuzzDesk anda akan berjalan',
         'Start page' => 'Memulai halaman',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerLicense.tt
@@ -3210,8 +3208,8 @@ bin/znuny.Daemon.pl status\').',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/MobileNotAvailableWidget.tt
         'Feature not Available' => '',
-        'Sorry, but this feature of Znuny is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
-            'Maaf, fitur Znuny saat ini tidak tersedia untuk perangkat mobile. Jika Anda ingin menggunakannya, anda dapat beralih ke mode desktop atau menggunakan perangkat desktop biasa anda.',
+        'Sorry, but this feature of BuzzDesk is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
+            'Maaf, fitur BuzzDesk saat ini tidak tersedia untuk perangkat mobile. Jika Anda ingin menggunakannya, anda dapat beralih ke mode desktop atau menggunakan perangkat desktop biasa anda.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Motd.tt
         'Message of the Day' => 'Pesanan',
@@ -3250,8 +3248,8 @@ bin/znuny.Daemon.pl status\').',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/PublicDefault.tt
         'Welcome' => 'Selamat datang',
-        'This is the default public interface of Znuny! There was no action parameter given.' =>
-            'Ini adalah antarmuka publik default Znuny! Tidak ada parameter tindakan yang diberikan.',
+        'This is the default public interface of BuzzDesk! There was no action parameter given.' =>
+            'Ini adalah antarmuka publik default BuzzDesk! Tidak ada parameter tindakan yang diberikan.',
         'You could install a custom public module (via the package manager), for example the FAQ module, which has a public interface.' =>
             'Anda bisa menginstal modul kustom publik (melalui manajer paket), misalnya FAQ modul, yang memiliki antarmuka publik.',
 
@@ -3437,7 +3435,7 @@ bin/znuny.Daemon.pl status\').',
         'Navigation' => '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Test.tt
-        'Znuny Test Page' => 'Halaman uji Znuny',
+        'BuzzDesk Test Page' => 'Halaman uji BuzzDesk',
         'Unlock' => 'Buka kunci',
         'Welcome %s %s' => 'Selamat datang %s %s',
         'Counter' => 'Konter',
@@ -3532,8 +3530,8 @@ bin/znuny.Daemon.pl status\').',
         # Perl Module: Kernel/Modules/AdminACL.pm
         'ACL information from database is not in sync with the system configuration, please deploy all ACLs.' =>
             'Informasi ACL dari database tidak sinkron dengan konfigurasi sistem, tolong sebarkan semua ACL.',
-        'ACLs could not be Imported due to a unknown error, please check Znuny logs for more information' =>
-            'ACL tidak dapat diimpor karena kesalahan yang tidak diketahui, silahkan cek Znuny log untuk informasi lebih lanjut',
+        'ACLs could not be Imported due to a unknown error, please check BuzzDesk logs for more information' =>
+            'ACL tidak dapat diimpor karena kesalahan yang tidak diketahui, silahkan cek BuzzDesk log untuk informasi lebih lanjut',
         'The following ACLs have been added successfully: %s' => 'ACLs berikutnya telah berhasil ditambah: %s',
         'The following ACLs have been updated successfully: %s' => 'The ACLs berikutnya telah berhasil diperbarui: %s',
         'There where errors adding/updating the following ACLs: %s. Please check the log file for more information.' =>
@@ -3889,12 +3887,12 @@ bin/znuny.Daemon.pl status\').',
         'Could not load %s.' => '',
         'Could not read %s!' => 'Tidak dapat dibaca %s!',
         'Need a file to import!' => 'Butuh sebuah file untuk di impor!',
-        'The imported file has not valid YAML content! Please check Znuny log for details' =>
-            'file yang diimpor memiliki konten YAML tidak valid! Silakan periksa rincian log Znuny ',
+        'The imported file has not valid YAML content! Please check BuzzDesk log for details' =>
+            'file yang diimpor memiliki konten YAML tidak valid! Silakan periksa rincian log BuzzDesk ',
         'Web service "%s" deleted!' => 'layanan web "menghapus!',
-        'Znuny as provider' => 'Znuny sebagai penyedia',
+        'BuzzDesk as provider' => 'BuzzDesk sebagai penyedia',
         'Operations' => '',
-        'Znuny as requester' => 'Znuny sebagai pemohon',
+        'BuzzDesk as requester' => 'BuzzDesk sebagai pemohon',
         'Invokers' => '',
 
         # Perl Module: Kernel/Modules/AdminGenericInterfaceWebserviceHistory.pm
@@ -3943,8 +3941,8 @@ bin/znuny.Daemon.pl status\').',
         'Need param Key to download!' => 'Membutuhkan kunci param untuk memuat turun!',
 
         # Perl Module: Kernel/Modules/AdminPackageManager.pm
-        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/znuny.Console.pl to install packages!' =>
-            'Maaf, Apache::Reload diperlukan sebagai Perl Modul dan PerlInitHandler di Apache file konfigurasi. Lihat scripts/apache2-httpd.include.conf. Atau, Anda dapat menggunakan alat baris perintah bin/znuny.Console.pl untuk menginstal paket!',
+        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/buzzdesk.Console.pl to install packages!' =>
+            'Maaf, Apache::Reload diperlukan sebagai Perl Modul dan PerlInitHandler di Apache file konfigurasi. Lihat scripts/apache2-httpd.include.conf. Atau, Anda dapat menggunakan alat baris perintah bin/buzzdesk.Console.pl untuk menginstal paket!',
         'No such package!' => 'Tidak ada paket!',
         'No such file %s in package!' => 'Tidak ada file seperti %s dalam paket',
         'No such file %s in local file system!' => 'Tidak ada jenis file %s di dalam file sistem lokal!',
@@ -4166,13 +4164,13 @@ bin/znuny.Daemon.pl status\').',
         'You currently don\'t have any favourite settings.' => '',
         'The following settings could not be found: %s' => '',
         'Import not allowed!' => 'Impor tidak diperbolehkan!',
-        'System Configuration could not be imported due to an unknown error, please check Znuny logs for more information.' =>
+        'System Configuration could not be imported due to an unknown error, please check BuzzDesk logs for more information.' =>
             '',
         'Category Search' => '',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationDeployment.pm
         'Quick Deploy by' => '',
-        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the Znuny log for more information.' =>
+        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the BuzzDesk log for more information.' =>
             '',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationGroup.pm
@@ -4598,7 +4596,7 @@ bin/znuny.Daemon.pl status\').',
         'Configure "Home" in Kernel/Config.pm first!' => 'Konfigur "Home" di Kernel/Config.pm first!',
         'File "%s/Kernel/Config.pm" not found!' => 'Fail "%s/Kernel/Config.pm" tidak ditemukan',
         'Directory "%s" not found!' => 'Direktori "%s" tidak ditemukan!',
-        'Install Znuny' => 'Instal Znuny',
+        'Install BuzzDesk' => 'Instal BuzzDesk',
         'Intro' => 'Pendahuluan',
         'Kernel/Config.pm isn\'t writable!' => 'Kernel / Config.pm tidak dapat ditulis!',
         'If you want to use the installer, set the Kernel/Config.pm writable for the webserver user!' =>
@@ -4615,7 +4613,7 @@ bin/znuny.Daemon.pl status\').',
         'Unknown database type "%s".' => 'Diketahui tipe database "%s".',
         'Please go back.' => '',
         'Create Database' => 'Buat database',
-        'Install Znuny - Error' => 'Menginstal Znuny - Kesalahan',
+        'Install BuzzDesk - Error' => 'Menginstal BuzzDesk - Kesalahan',
         'File "%s/%s.xml" not found!' => 'File "%s/%s.xml" tidak ditemukan!',
         'Contact your Admin!' => 'Hubungi Admin Anda!',
         'System Settings' => 'Pengaturan sistem',
@@ -4845,7 +4843,7 @@ bin/znuny.Daemon.pl status\').',
             '',
 
         # Perl Module: Kernel/Output/HTML/Notification/DaemonCheck.pm
-        'Znuny Daemon is not running.' => 'Znuny Daemon tidak berjalan',
+        'BuzzDesk Daemon is not running.' => 'BuzzDesk Daemon tidak berjalan',
 
         # Perl Module: Kernel/Output/HTML/Notification/OAuth2TokenManagementTokenExpired.pm
         'OAuth2 token for "%s" has expired.' => '',
@@ -5224,7 +5222,7 @@ bin/znuny.Daemon.pl status\').',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/InvalidDefaultValues.pm
         'Invalid Default Values' => '',
-        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/znuny.Console.pl Maint::Database::Check --repair' =>
+        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/buzzdesk.Console.pl Maint::Database::Check --repair' =>
             '',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/MaxAllowedPacket.pm
@@ -5270,15 +5268,15 @@ bin/znuny.Daemon.pl status\').',
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/postgresql/Version.pm
         'PostgreSQL 9.2 or higher is required.' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionZnuny.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionBuzzDesk.pm
         'Operating System' => 'Sistem operasi',
-        'Znuny Disk Partition' => 'Znuny Disk Partisi',
+        'BuzzDesk Disk Partition' => 'BuzzDesk Disk Partisi',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpace.pm
         'Disk Usage' => 'Disk yang digunakan',
-        'The partition where Znuny is located is almost full.' => 'Partisi tempat Znuny terletak hampir penuh.',
-        'The partition where Znuny is located has no disk space problems.' =>
-            'Partisi tempat Znuny terletak tidak memiliki masalah diruang disk.',
+        'The partition where BuzzDesk is located is almost full.' => 'Partisi tempat BuzzDesk terletak hampir penuh.',
+        'The partition where BuzzDesk is located has no disk space problems.' =>
+            'Partisi tempat BuzzDesk terletak tidak memiliki masalah diruang disk.',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpacePartitions.pm
         'Disk Partitions Usage' => '',
@@ -5323,8 +5321,8 @@ bin/znuny.Daemon.pl status\').',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/MPMModel.pm
         'MPM model' => 'Model MPM',
-        'Znuny requires apache to be run with the \'prefork\' MPM model.' =>
-            'Znuny membutuhkan apache dijalankan dengan model \'prefork\' MPM.',
+        'BuzzDesk requires apache to be run with the \'prefork\' MPM model.' =>
+            'BuzzDesk membutuhkan apache dijalankan dengan model \'prefork\' MPM.',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/Performance.pm
         'CGI Accelerator Usage' => 'CGI Accelerator Penggunaan',
@@ -5354,37 +5352,37 @@ bin/znuny.Daemon.pl status\').',
         'Webserver Version' => 'Versi Webserver',
         'Could not determine webserver version.' => 'Tidak dapat menentukan versi web server.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticleSearchIndexStatus.pm
-        'Znuny' => '',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticleSearchIndexStatus.pm
+        'BuzzDesk' => '',
         'Article Search Index Status' => '',
         'Indexed Articles' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticlesPerCommunicationChannel.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticlesPerCommunicationChannel.pm
         'Articles Per Communication Channel' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLog.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLog.pm
         'Incoming communications' => '',
         'Outgoing communications' => '',
         'Failed communications' => '',
         'Average processing time of communications (s)' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLogAccountStatus.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLogAccountStatus.pm
         'Communication Log Account Status (last 24 hours)' => '',
         'No connections found.' => '',
         'ok' => '',
         'permanent connection errors' => '',
         'intermittent connection errors' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ConfigSettings.pm
         'Config Settings' => '',
         'Could not determine value.' => 'Tidak dapat menentukan nilai.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DaemonRunning.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DaemonRunning.pm
         'Daemon' => 'Daemon',
         'Daemon is running.' => '',
         'Daemon is not running.' => 'Daemon tidak berjalan',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DatabaseRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DatabaseRecords.pm
         'Database Records' => '',
         'Ticket History Entries' => 'Tiket Sejarah Entries',
         'Articles' => 'Artikel',
@@ -5399,31 +5397,31 @@ bin/znuny.Daemon.pl status\').',
         'Tickets Per Month (avg)' => 'Tiket Per Bulan (avg)',
         'Open Tickets' => 'Buka tiket',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultSOAPUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultSOAPUser.pm
         'Default SOAP Username And Password' => 'Standar SOAP Username dan Password',
         'Security risk: you use the default setting for SOAP::User and SOAP::Password. Please change it.' =>
             'Resiko keamanan: Anda menggunakan pengaturan default untuk SOAP::Pengguna dan SOAP::Password. Silahkan mengubahnya.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultUser.pm
         'Default Admin Password' => 'Katasandi admin default',
         'Security risk: the agent account root@localhost still has the default password. Please change it or invalidate the account.' =>
             'Risiko keamanan: akun agen root@localhost masih memiliki katasandi yang default. Ubah atau membatalkan account.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/EmailQueue.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/EmailQueue.pm
         'Email Sending Queue' => '',
         'Emails queued for sending' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FQDN.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FQDN.pm
         'FQDN (domain name)' => 'FQDN (domain name)',
         'Please configure your FQDN setting.' => 'Konfigurasikan pengaturan FQDN Anda.',
         'Domain Name' => 'Nama domain',
         'Your FQDN setting is invalid.' => 'Pengaturan FQDN Anda tidak valid.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FileSystemWritable.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FileSystemWritable.pm
         'File System Writable' => 'File System ditulis',
-        'The file system on your Znuny partition is not writable.' => 'Sistem file pada partisi Znuny Anda tidak dapat ditulis.',
+        'The file system on your BuzzDesk partition is not writable.' => 'Sistem file pada partisi BuzzDesk Anda tidak dapat ditulis.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/LegacyConfigBackups.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/LegacyConfigBackups.pm
         'Legacy Configuration Backups' => '',
         'No legacy configuration backup files found.' => '',
         'Legacy configuration backup files found in Kernel/Config/Backups folder, but they might still be required by some packages.' =>
@@ -5431,12 +5429,12 @@ bin/znuny.Daemon.pl status\').',
         'Legacy configuration backup files are no longer needed for the installed packages, please remove them from Kernel/Config/Backups folder.' =>
             '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/MultipleJSFileLoad.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/MultipleJSFileLoad.pm
         'The following JavaScript files loaded multiple times:' => '',
         'Files' => '',
         'Views with multiple loaded JavaScript files' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageDeployment.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageDeployment.pm
         'Package Installation Status' => 'Status Instalasi paket',
         'Some packages have locally modified files.' => 'Beberapa paket telah lokal memodifikasi file.',
         'Some packages are not correctly installed.' => 'Beberapa paket tidak terpasang dengan benar.',
@@ -5444,75 +5442,75 @@ bin/znuny.Daemon.pl status\').',
         'Some packages are not allowed for the current framework version.' =>
             '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageList.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageList.pm
         'Package List' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SessionConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SessionConfigSettings.pm
         'Session Config Settings' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SpoolMails.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SpoolMails.pm
         'Spooled Emails' => '',
-        'There are emails in var/spool that Znuny could not process.' => '',
+        'There are emails in var/spool that BuzzDesk could not process.' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SystemID.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SystemID.pm
         'Your SystemID setting is invalid, it should only contain digits.' =>
             'Pengaturan Sistem Anda tidak valid, hanya harus berisi angka.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/DefaultType.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/DefaultType.pm
         'Default Ticket Type' => 'Jenis Tiket ',
         'The configured default ticket type is invalid or missing. Please change the setting Ticket::Type::Default and select a valid ticket type.' =>
             'Jenis tiket default dikonfigurasi tidak valid atau hilang. Silahkan ubah pengaturan Tiket::Jenis::default dan pilih jenis tiket yang sah.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/IndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/IndexModule.pm
         'Ticket Index Module' => 'Indeks tiket Modul',
         'You have more than 60,000 tickets and should use the StaticDB backend. See admin manual (Performance Tuning) for more information.' =>
             'Anda memiliki lebih dari 60.000 tiket dan harus menggunakan backend Static DB. Lihat admin user (Performance Tuning) untuk informasi lebih lanjut.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/InvalidUsersWithLockedTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/InvalidUsersWithLockedTickets.pm
         'Invalid Users with Locked Tickets' => 'Pengguna tidak valid dengan Tiket Terkunci',
         'There are invalid users with locked tickets.' => 'Ada pengguna yang tidak valid dengan tiket terkunci.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/OpenTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/OpenTickets.pm
         'You should not have more than 8,000 open tickets in your system.' =>
             'Anda tidak harus memiliki lebih dari 8.000 tiket yang terbuka di sistem Anda.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/SearchIndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/SearchIndexModule.pm
         'Ticket Search Index Module' => 'Indeks Cari tiket Modul',
         'The indexing process forces the storage of the original article text in the article search index, without executing filters or applying stop word lists. This will increase the size of the search index and thus may slow down fulltext searches.' =>
             '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/StaticDBOrphanedRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/StaticDBOrphanedRecords.pm
         'Orphaned Records In ticket_lock_index Table' => 'Rekaman yatim Dalam ticket_lock_index Table',
-        'Table ticket_lock_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            'Tabel ticket_lock_index berisi catatan yatim. Jalankan bin/znuny.Console.pl "Maint::Ticket::AntrianIndeksCleanup" untuk membersihkan indeks StaticDB.',
+        'Table ticket_lock_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            'Tabel ticket_lock_index berisi catatan yatim. Jalankan bin/buzzdesk.Console.pl "Maint::Ticket::AntrianIndeksCleanup" untuk membersihkan indeks StaticDB.',
         'Orphaned Records In ticket_index Table' => 'Rekaman yatim Dalam Indeks tiket Table',
-        'Table ticket_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+        'Table ticket_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
             '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/TimeSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/TimeSettings.pm
         'Time Settings' => '',
         'Server time zone' => 'Zona waktu server',
-        'Znuny time zone' => '',
-        'Znuny time zone is not set.' => '',
+        'BuzzDesk time zone' => '',
+        'BuzzDesk time zone is not set.' => '',
         'User default time zone' => '',
         'User default time zone is not set.' => '',
         'Calendar time zone is not set.' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentSkinUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentSkinUsage.pm
         'UI - Agent Skin Usage' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentThemeUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentThemeUsage.pm
         'UI - Agent Theme Usage' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/SpecialStats.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/SpecialStats.pm
         'UI - Special Statistics' => '',
         'Agents using custom main menu ordering' => '',
         'Agents using favourites for the admin overview' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Version.pm
-        'Znuny Version' => 'Versi Znuny',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Version.pm
+        'BuzzDesk Version' => 'Versi BuzzDesk',
 
-        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/Znuny/ConcurrentUsers.pm
+        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/BuzzDesk/ConcurrentUsers.pm
         'Concurrent Users Details' => '',
         'Concurrent Users' => 'Pengguna bersamaan',
 
@@ -5618,7 +5616,7 @@ bin/znuny.Daemon.pl status\').',
             'Tentukan Tindakan adalah tombol pengaturan tersedia di objek widget terkait (LinkObject::ViewMode = "complex"). Harap dicatat bahwa Tindakan ini harus telah mendaftarkan berikut JS dan CSS file: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js.',
         'Define which columns are shown in the linked appointment widget (LinkObject::ViewMode = "complex"). Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.' =>
             '',
-        'Znuny doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
+        'BuzzDesk doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
             '',
         'Defines the ticket appointment type backend for ticket escalation time.' =>
             '',
@@ -5656,13 +5654,13 @@ bin/znuny.Daemon.pl status\').',
             '',
 
         # XML Definition: Kernel/Config/Files/XML/Daemon.xml
-        'Defines the module to display a notification in the agent interface if the Znuny Daemon is not running.' =>
-            'Mendefinisikan modul untuk menampilkan pemberitahuan di antarmuka agen jika Znuny Daemon tidak berjalan.',
+        'Defines the module to display a notification in the agent interface if the BuzzDesk Daemon is not running.' =>
+            'Mendefinisikan modul untuk menampilkan pemberitahuan di antarmuka agen jika BuzzDesk Daemon tidak berjalan.',
         'List of CSS files to always be loaded for the agent interface.' =>
             'Daftar file CSS untuk selalu dimuat ke antarmuka agen.',
         'List of JS files to always be loaded for the agent interface.' =>
             'Daftar file JS untuk selalu dimuat untuk antarmuka agen.',
-        'Type of daemon log rotation to use: Choose \'Znuny\' to let Znuny system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
+        'Type of daemon log rotation to use: Choose \'BuzzDesk\' to let BuzzDesk system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
             '',
         'If enabled the daemon will use this directory to create its PID files. Note: Please stop the daemon before any change and use this setting only if &lt;$OTRSHome&gt;/var/run/ can not be used.' =>
             '',
@@ -5724,7 +5722,7 @@ bin/znuny.Daemon.pl status\').',
         'Remove closed tickets from agents\' ticket watch lists.' => '',
 
         # XML Definition: Kernel/Config/Files/XML/Framework.xml
-        'Disables the web installer (http://yourhost.example.com/znuny/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
+        'Disables the web installer (http://yourhost.example.com/buzzdesk/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
             '',
         'Enables or disables the debug mode over frontend interface.' => 'Mengaktifkan atau menonaktifkan mode debug lebih antarmuka front end.',
         'Delivers extended debugging information in the frontend in case any AJAX errors occur, if enabled.' =>
@@ -5737,20 +5735,20 @@ bin/znuny.Daemon.pl status\').',
             'Kontrol jika admin diperbolehkan untuk mengimpor konfigurasi menyelamatkan sistem di sysconfig.',
         'Defines the name of the application, shown in the web interface, tabs and title bar of the web browser.' =>
             'Mendefinisikan nama aplikasi, ditampilkan dalam antarmuka web, tab dan bar judul browser web.',
-        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of Znuny).' =>
-            'Mendefinisikan sistem identifier. Setiap nomor tiket dan sesi http string berisi ID ini. Hal ini memastikan bahwa hanya tiket yang milik sistem anda akan diproses sebagai tindak lanjut (berguna ketika berkomunikasi antara dua contoh Znuny).',
+        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of BuzzDesk).' =>
+            'Mendefinisikan sistem identifier. Setiap nomor tiket dan sesi http string berisi ID ini. Hal ini memastikan bahwa hanya tiket yang milik sistem anda akan diproses sebagai tindak lanjut (berguna ketika berkomunikasi antara dua contoh BuzzDesk).',
         'Defines the fully qualified domain name of the system. This setting is used as a variable, OTRS_CONFIG_FQDN which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
             'Mendefinisikan nama domain berkualifikasi lengkap dari sistem. Pengaturan ini digunakan sebagai variabel, OTRS_CONFIG_FQDN yang ditemukan dalam semua bentuk pesan yang digunakan oleh aplikasi, untuk membangun link ke tiket dalam sistem Anda.',
         'Defines the fully qualified domain name for external IDs generation (i.e. Message-ID, ContentID).' =>
             '',
-        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
+        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
             '',
-        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
+        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
             '',
         'When support data is collected via SupportDataCollector, certain SysConfig values marked with ValueType="Password" are automatically masked. This prevents passwords from appearing in plain text in the support data. This setting defines the settings that contain complex configuration hashes that should not be masked when generating the support data.' =>
             '',
         'Defines the type of protocol, used by the web server, to serve the application. If https protocol will be used instead of plain http, it must be specified here. Since this has no affect on the web server\'s settings or behavior, it will not change the method of access to the application and, if it is wrong, it will not prevent you from logging into the application. This setting is only used as a variable, OTRS_CONFIG_HttpType which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
-            'Mendefinisikan jenis protokol, yang digunakan oleh web server, untuk melayani aplikasi. Jika protokol https akan digunakan bukan http biasa, itu harus ditentukan di sini. Karena ini tidak berpengaruh pada pengaturan atau perilaku web server, itu tidak akan mengubah metode akses ke aplikasi dan, jika salah, tidak akan mencegah Anda dari masuk ke aplikasi. Pengaturan ini hanya digunakan sebagai variabel, Znuny CONFIG Http Jenis yang ditemukan dalam semua bentuk pesan yang digunakan oleh aplikasi, untuk membangun link ke tiket dalam sistem Anda.',
+            'Mendefinisikan jenis protokol, yang digunakan oleh web server, untuk melayani aplikasi. Jika protokol https akan digunakan bukan http biasa, itu harus ditentukan di sini. Karena ini tidak berpengaruh pada pengaturan atau perilaku web server, itu tidak akan mengubah metode akses ke aplikasi dan, jika salah, tidak akan mencegah Anda dari masuk ke aplikasi. Pengaturan ini hanya digunakan sebagai variabel, BuzzDesk CONFIG Http Jenis yang ditemukan dalam semua bentuk pesan yang digunakan oleh aplikasi, untuk membangun link ke tiket dalam sistem Anda.',
         'Whether to force redirect all requests from http to https protocol. Please check that your web server is configured correctly for https protocol before enable this option.' =>
             '',
         'Sets the prefix to the scripts folder on the server, as configured on the web server. This setting is used as a variable, OTRS_CONFIG_ScriptAlias which is found in all forms of messaging used by the application, to build links to the tickets within the system.' =>
@@ -5765,8 +5763,8 @@ bin/znuny.Daemon.pl status\').',
             'Mendefinisikan semua bahasa yang tersedia untuk aplikasi. Tentukan nama Inggris hanya bahasa di sini.',
         'Defines all the languages that are available to the application. Specify only native names of languages here.' =>
             'Mendefinisikan semua bahasa yang tersedia untuk aplikasi. Tentukan hanya nama asli bahasa di sini.',
-        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.znuny.org/developer/general_information/themes.html.' =>
-            'Mendefinisikan default front-end (HTML) tema yang akan digunakan oleh agen dan pelanggan. Jika Anda suka, Anda dapat menambahkan tema Anda sendiri. Silahkan lihat manual administrator yang terletak di https://doc.znuny.org/developer/general_information/themes.html.',
+        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.buzzdesk.org/developer/general_information/themes.html.' =>
+            'Mendefinisikan default front-end (HTML) tema yang akan digunakan oleh agen dan pelanggan. Jika Anda suka, Anda dapat menambahkan tema Anda sendiri. Silahkan lihat manual administrator yang terletak di https://doc.buzzdesk.org/developer/general_information/themes.html.',
         'It is possible to configure different themes, for example to distinguish between agents and customers, to be used on a per-domain basis within the application. Using a regular expression (regex), you can configure a Key/Content pair to match a domain. The value in "Key" should match the domain, and the value in "Content" should be a valid theme on your system. Please see the example entries for the proper form of the regex.' =>
             'Hal ini dimungkinkan untuk mengkonfigurasi tema yang berbeda, misalnya untuk membedakan antara agen dan pelanggan, untuk digunakan pada basis per-domain dalam aplikasi. Menggunakan ekspresi reguler (regex), Anda dapat mengkonfigurasi sepasang Konten / Key untuk mencocokkan domain. Nilai di "Key" harus sesuai domain, dan nilai dalam "Content" harus menjadi tema yang valid pada sistem Anda. Silahkan lihat contoh entri untuk bentuk yang tepat dari regex.',
         'The headline shown in the customer interface.' => 'judul menunjukkan dalam antarmuka pelanggan.',
@@ -5828,7 +5826,7 @@ bin/znuny.Daemon.pl status\').',
             '',
         'Global settings for all popup profiles.' => '',
         'Disable autocomplete in the login screen.' => '',
-        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow Znuny to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
+        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow BuzzDesk to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
             'Nonaktifkan HTTP header "X-Frame-Options: SAMEORIGIN" untuk memungkinkan OTHERS untuk dimasukkan sebagai iFrame di situs-situs lain. Menonaktifkan HTTP header ini bisa menjadi masalah keamanan! Hanya menonaktifkannya, jika Anda tahu apa yang Anda lakukan!',
         'Disable HTTP header "Content-Security-Policy" to allow loading of external script contents. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
             '',
@@ -5875,8 +5873,8 @@ bin/znuny.Daemon.pl status\').',
             'Jika "syslog" dipilih untuk LogModule, yang charset harus digunakan untuk penebangan dapat ditentukan.',
         'If "file" was selected for LogModule, a logfile must be specified. If the file doesn\'t exist, it will be created by the system.' =>
             'Jika "file" dipilih untuk LogModule, file log harus ditentukan. Jika file tidak ada, maka akan dibuat oleh sistem.',
-        'Adds a suffix with the actual year and month to the Znuny log file. A logfile for every month will be created.' =>
-            'Menambahkan akhiran dengan tahun aktual dan bulan ke file log Znuny. Sebuah file log untuk setiap bulan akan dibuat.',
+        'Adds a suffix with the actual year and month to the BuzzDesk log file. A logfile for every month will be created.' =>
+            'Menambahkan akhiran dengan tahun aktual dan bulan ke file log BuzzDesk. Sebuah file log untuk setiap bulan akan dibuat.',
         'Set the minimum log level. If you select \'error\', just errors are logged. With \'debug\' you get all logging messages. The order of log levels is: \'debug\', \'info\', \'notice\' and \'error\'.' =>
             '',
         'Defines the module to send emails. "DoNotSendEmail" doesn\'t send emails at all. Any of the "SMTP" mechanisms use a specified (external) mailserver. "Sendmail" directly uses the sendmail binary of your operating system. "Test" doesn\'t send emails, but writes them to $OTRS_HOME/var/tmp/CacheFileStorable/EmailTest/ for testing purposes.' =>
@@ -5945,8 +5943,8 @@ bin/znuny.Daemon.pl status\').',
             'Mendefinisikan modul yang menunjukkan pemberitahuan generik di antarmuka agen. Baik "Text" - jika dikonfigurasi - atau isi "File" akan ditampilkan.',
         'Defines the module used to store the session data. With "DB" the frontend server can be splitted from the db server. "FS" is faster.' =>
             'Mendefinisikan modul yang digunakan untuk menyimpan data sesi. Dengan "DB" server frontend dapat splitted dari server db. "FS" lebih cepat.',
-        'Defines the name of the session key. E.g. Session, SessionID or Znuny.' =>
-            'Mendefinisikan nama kunci sesi. Misalnya. Sesi, sessionid atau Znuny.',
+        'Defines the name of the session key. E.g. Session, SessionID or BuzzDesk.' =>
+            'Mendefinisikan nama kunci sesi. Misalnya. Sesi, sessionid atau BuzzDesk.',
         'Defines the name of the key for customer sessions.' => 'Mendefinisikan nama kunci untuk sesi pelanggan.',
         'Turns on the remote ip address check. It should not be enabled if the application is used, for example, via a proxy farm or a dialup connection, because the remote ip address is mostly different for the requests.' =>
             '',
@@ -5979,9 +5977,9 @@ bin/znuny.Daemon.pl status\').',
         'Defines the period of time (in minutes) before customer is marked as "away" due to inactivity (e.g. in the "Logged-In Users" widget or for the chat).' =>
             '',
         'This setting is deprecated. Set OTRSTimeZone instead.' => '',
-        'Sets the time zone being used internally by Znuny to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
+        'Sets the time zone being used internally by BuzzDesk to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
             '',
-        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the Znuny time zone and the user\'s time zone.' =>
+        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the BuzzDesk time zone and the user\'s time zone.' =>
             '',
         'If enabled, users that haven\'t selected a time zone yet will be notified to do so. Note: Notification will not be shown if (1) user has not yet selected a time zone and (2) OTRSTimeZone and UserDefaultTimeZone do match and (3) are not set to UTC.' =>
             '',
@@ -6000,8 +5998,8 @@ bin/znuny.Daemon.pl status\').',
         'Adds the one time vacation days for the indicated calendar.' => '',
         'Defines the hours and week days of the indicated calendar, to count the working time.' =>
             'Mendefinisikan jam dan minggu hari kalender menunjukkan, untuk menghitung waktu kerja.',
-        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your Znuny instance to stop working (probably any mask which takes input from the user).' =>
-            'Mendefinisikan ukuran maksimal (dalam byte) untuk upload file melalui browser. Peringatan: Mengatur opsi ini untuk nilai yang terlalu rendah dapat menyebabkan banyak topeng dalam hal Znuny Anda untuk berhenti bekerja (mungkin setiap topeng yang mengambil input dari user).',
+        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your BuzzDesk instance to stop working (probably any mask which takes input from the user).' =>
+            'Mendefinisikan ukuran maksimal (dalam byte) untuk upload file melalui browser. Peringatan: Mengatur opsi ini untuk nilai yang terlalu rendah dapat menyebabkan banyak topeng dalam hal BuzzDesk Anda untuk berhenti bekerja (mungkin setiap topeng yang mengambil input dari user).',
         'Selects the module to handle uploads via the web interface. "DB" stores all uploads in the database, "FS" uses the file system.' =>
             'Memilih modul untuk menangani upload melalui antarmuka web. "DB" toko semua upload dalam database, "FS" menggunakan sistem file.',
         'Specifies the text that should appear in the log file to denote a CGI script entry.' =>
@@ -6068,8 +6066,8 @@ bin/znuny.Daemon.pl status\').',
             'Mendefinisikan jalur dan TTF-File untuk menangani font yang monospace miring di dokumen PDF.',
         'Defines the path and TTF-File to handle bold italic monospaced font in PDF documents.' =>
             'Mendefinisikan jalur dan TTF-File untuk menangani bold font yang monospace miring di dokumen PDF',
-        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the Znuny user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
-            'Memungkinkan dukungan PGP. Ketika dukungan PGP diaktifkan untuk menandatangani dan mengenkripsi email, itu sangat dianjurkan bahwa web server berjalan sebagai pengguna Znuny. Jika tidak, akan ada masalah dengan hak ketika mengakses .gnupg folder.',
+        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the BuzzDesk user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
+            'Memungkinkan dukungan PGP. Ketika dukungan PGP diaktifkan untuk menandatangani dan mengenkripsi email, itu sangat dianjurkan bahwa web server berjalan sebagai pengguna BuzzDesk. Jika tidak, akan ada masalah dengan hak ketika mengakses .gnupg folder.',
         'Defines the path to PGP binary.' => 'Mendefinisikan jalan untuk binari PGP ',
         'Sets the options for PGP binary.' => 'Menetapkan pilihan untuk PGP biner.',
         'Sets the preferred digest to be used for PGP binary.' => '',
@@ -6087,10 +6085,10 @@ bin/znuny.Daemon.pl status\').',
             'Menentukan direktori dimana sertifikat SSL pribadi disimpan.',
         'Cache time in seconds for the SSL certificate attributes.' => 'Waktu cache di detik untuk atribut sertifikat SSL.',
         'Enables fetch S/MIME from CustomerUser backend support.' => '',
-        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com).' =>
-            'Menentukan nama yang harus digunakan oleh aplikasi saat mengirim pemberitahuan. Nama pengirim digunakan untuk membangun nama lengkap tampilan untuk master pemberitahuan (yaitu "Znuny Pemberitahuan" znuny@your.example.com).',
-        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
-            'Menentukan alamat email yang harus digunakan oleh aplikasi saat mengirim pemberitahuan. Alamat email digunakan untuk membangun nama lengkap tampilan untuk master pemberitahuan (yaitu "Znuny Pemberitahuan" znuny@your.example.com). Anda dapat menggunakan variabel OTRS_CONFIG_FQDN sebagai set di configuation Anda, atau memilih alamat email lain.',
+        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com).' =>
+            'Menentukan nama yang harus digunakan oleh aplikasi saat mengirim pemberitahuan. Nama pengirim digunakan untuk membangun nama lengkap tampilan untuk master pemberitahuan (yaitu "BuzzDesk Pemberitahuan" buzzdesk@your.example.com).',
+        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
+            'Menentukan alamat email yang harus digunakan oleh aplikasi saat mengirim pemberitahuan. Alamat email digunakan untuk membangun nama lengkap tampilan untuk master pemberitahuan (yaitu "BuzzDesk Pemberitahuan" buzzdesk@your.example.com). Anda dapat menggunakan variabel OTRS_CONFIG_FQDN sebagai set di configuation Anda, atau memilih alamat email lain.',
         'Defines the validity period in seconds for password reset tokens. After this time the token expires and a new reset request is required. Default: 3600 (1 hour).' =>
             'Menentukan masa berlaku token reset kata sandi dalam detik. Setelah itu token kedaluwarsa dan diperlukan permintaan baru. Default: 3600 (1 jam).',
         'Maximum number of password reset requests allowed per IP address or username within the rate limit window. Set to 0 to disable rate limiting. Default: 5.' =>
@@ -6217,8 +6215,8 @@ bin/znuny.Daemon.pl status\').',
             'Jika "HTTPBasicAuth" dipilih untuk Customer::AuthModule, Basis DN harus ditentukan.',
         'If "LDAP" was selected for Customer::AuthModule, the user identifier must be specified.' =>
             'Jika "HTTPBasicAuth" dipilih untuk Customer::AuthModule, pengidentifikasi pengguna harus ditentukan.',
-        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use Znuny. Specify the group, who may access the system.' =>
-            'Jika "HTTPBasicAuth" dipilih untuk Customer::AuthModule, Anda dapat memeriksa apakah pengguna diijinkan untuk otentikasi karena ia berada dalam posixGroup, misalnya kebutuhan pengguna berada dalam xyz kelompok untuk menggunakan Znuny. Tentukan kelompok, yang dapat mengakses sistem.',
+        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use BuzzDesk. Specify the group, who may access the system.' =>
+            'Jika "HTTPBasicAuth" dipilih untuk Customer::AuthModule, Anda dapat memeriksa apakah pengguna diijinkan untuk otentikasi karena ia berada dalam posixGroup, misalnya kebutuhan pengguna berada dalam xyz kelompok untuk menggunakan BuzzDesk. Tentukan kelompok, yang dapat mengakses sistem.',
         'If "LDAP" was selected for Customer::AuthModule, you can specify access attributes here.' =>
             'Jika "HTTPBasicAuth" dipilih untuk Customer::AuthModule, Anda dapat menentukan atribut akses di sini.',
         'If "LDAP" was selected for Customer::AuthModule, user attributes can be specified. For LDAP posixGroups use UID, for non LDAP posixGroups use full user DN.' =>
@@ -6272,7 +6270,7 @@ bin/znuny.Daemon.pl status\').',
         'Activates the available themes on the system. Value 1 means active, 0 means inactive.' =>
             'Mengaktifkan tema yang tersedia pada sistem. Nilai 1 berarti aktif, 0 berarti tidak aktif.',
         'Defines the default value for the action parameter.' => '',
-        'Defines the shown links in the footer area of the customer and public interface of this Znuny system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
+        'Defines the shown links in the footer area of the customer and public interface of this BuzzDesk system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
             '',
         'Defines the default value for the action parameter for the public frontend. The action parameter is used in the scripts of the system.' =>
             'Mendefinisikan nilai default untuk tindakan parameter frontend publik. Parameter tindakan digunakan dalam skrip dari sistem.',
@@ -6301,8 +6299,8 @@ bin/znuny.Daemon.pl status\').',
             '',
         'Defines the default maximum number of X-axis attributes for the time scale.' =>
             'Mendefinisikan jumlah maksimum default X-axis atribut untuk skala waktu.',
-        'Znuny can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
-            'Znuny dapat menggunakan satu atau lebih database cermin dibaca untuk operasi mahal seperti penuh pencarian teks atau statistik generasi. Di sini Anda dapat menentukan DSN untuk database cermin pertama.',
+        'BuzzDesk can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
+            'BuzzDesk dapat menggunakan satu atau lebih database cermin dibaca untuk operasi mahal seperti penuh pencarian teks atau statistik generasi. Di sini Anda dapat menentukan DSN untuk database cermin pertama.',
         'Specify the username to authenticate for the first mirror database.' =>
             'Tentukan username untuk otentikasi untuk database cermin pertama.',
         'Specify the password to authenticate for the first mirror database.' =>
@@ -6319,24 +6317,24 @@ bin/znuny.Daemon.pl status\').',
             'Memulai pencarian wildcard dari objek aktif setelah link objek topeng dimulai.',
         'Defines a filter to process the text in the articles, in order to highlight predefined keywords.' =>
             'Mendefinisikan sebuah filter untuk memproses teks dalam artikel, dalam rangka untuk menyoroti kata kunci yang telah ditetapkan.',
-        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Mendefinisikan sebuah filter untuk output html untuk menambahkan link balik nomor CVE. Elemen Gambar memungkinkan dua jenis masukan. Sekaligus nama dari suatu gambar (misal faq.png). Dalam hal ini path gambar Znuny akan digunakan. Kemungkinan kedua adalah untuk memasukkan link ke gambar.',
-        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Mendefinisikan sebuah filter untuk output html untuk menambahkan link balik nomor bugtraq. Elemen Gambar memungkinkan dua jenis masukan. Sekaligus nama dari suatu gambar (misal faq.png). Dalam hal ini path gambar Znuny akan digunakan. Kemungkinan keduanya adalah untuk memasukkan link ke gambar',
-        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Mendefinisikan sebuah filter untuk output html untuk menambahkan link balik nomor MS Bulletin. Elemen Gambar memungkinkan dua jenis masukan. Sekaligus nama dari suatu gambar (misalnya faq.png). Dalam hal ini path gambar Znuny akan digunakan. Kemungkinan kedua adalah untuk memasukkan link ke gambar.',
-        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Tentukan filter untuk output html untuk menambahkan link balik string yang didefinisikan. Elemen Gambar memungkinkan dua jenis masukan. Sekaligus nama dari suatu gambar (misalnya faq.png). Dalam hal ini path gambar Znuny akan digunakan. Kemungkinan kedua adalah untuk memasukkan link ke gambar.',
-        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Mendefinisikan sebuah filter untuk output html untuk menambahkan link dimana bisa mendefinisikan string. Elemen Gambar memungkinkan dua jenis masukan. Sekaligus nama dari suatu gambar (misal faq.png). Dalam hal ini path gambar Znuny akan digunakan. Kemungkinan kedua adalah untuk memasukkan link ke gambar.',
-        'If enabled, the Znuny version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
+        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Mendefinisikan sebuah filter untuk output html untuk menambahkan link balik nomor CVE. Elemen Gambar memungkinkan dua jenis masukan. Sekaligus nama dari suatu gambar (misal faq.png). Dalam hal ini path gambar BuzzDesk akan digunakan. Kemungkinan kedua adalah untuk memasukkan link ke gambar.',
+        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Mendefinisikan sebuah filter untuk output html untuk menambahkan link balik nomor bugtraq. Elemen Gambar memungkinkan dua jenis masukan. Sekaligus nama dari suatu gambar (misal faq.png). Dalam hal ini path gambar BuzzDesk akan digunakan. Kemungkinan keduanya adalah untuk memasukkan link ke gambar',
+        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Mendefinisikan sebuah filter untuk output html untuk menambahkan link balik nomor MS Bulletin. Elemen Gambar memungkinkan dua jenis masukan. Sekaligus nama dari suatu gambar (misalnya faq.png). Dalam hal ini path gambar BuzzDesk akan digunakan. Kemungkinan kedua adalah untuk memasukkan link ke gambar.',
+        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Tentukan filter untuk output html untuk menambahkan link balik string yang didefinisikan. Elemen Gambar memungkinkan dua jenis masukan. Sekaligus nama dari suatu gambar (misalnya faq.png). Dalam hal ini path gambar BuzzDesk akan digunakan. Kemungkinan kedua adalah untuk memasukkan link ke gambar.',
+        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Mendefinisikan sebuah filter untuk output html untuk menambahkan link dimana bisa mendefinisikan string. Elemen Gambar memungkinkan dua jenis masukan. Sekaligus nama dari suatu gambar (misal faq.png). Dalam hal ini path gambar BuzzDesk akan digunakan. Kemungkinan kedua adalah untuk memasukkan link ke gambar.',
+        'If enabled, the BuzzDesk version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
             '',
         'Default template for notification e-mails (see Kernel/Output/HTML/Templates/Standard/NotificationEvent/Email directory for available templates).' =>
             '',
-        'If enabled, Znuny will deliver all CSS files in minified form.' =>
+        'If enabled, BuzzDesk will deliver all CSS files in minified form.' =>
             '',
-        'If enabled, Znuny will deliver all JavaScript files in minified form.' =>
-            'Jika diaktifkan, Znuny akan memberikan semua file JavaScript dalam bentuk minified.',
+        'If enabled, BuzzDesk will deliver all JavaScript files in minified form.' =>
+            'Jika diaktifkan, BuzzDesk akan memberikan semua file JavaScript dalam bentuk minified.',
         'List of responsive CSS files to always be loaded for the agent interface.' =>
             'Daftar file CSS responsif untuk selalu dimuat ke antarmuka agen.',
         'List of JS files to always be loaded for the admin interface.' =>
@@ -6562,10 +6560,10 @@ bin/znuny.Daemon.pl status\').',
             'Set ukuran loket tiket minimal "Auto Increment" terpilih sebagai TicketNumberGenerator. Default adalah 5, ini berarti konter dimulai dari 10000.',
         'Enables the minimal ticket counter size (if "Date" was selected as TicketNumberGenerator).' =>
             'Mengaktifkan ukuran minimal tiket (jika "tanggal" telah dipilih sebagai TicketNumberGenerator)',
-        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
-            'IndexAccelerator: untuk memilih modul backend TicketViewAccelerator Anda. "RuntimeDB" menghasilkan setiap tampilan antrian pada terbang dari meja tiket (tidak ada masalah kinerja sampai dengan kira-kira. 60.000 tiket total dan 6.000 tiket terbuka dalam sistem). "StaticDB" adalah modul yang paling kuat, itu menggunakan tiket-indeks tabel tambahan yang bekerja seperti pandangan (dianjurkan jika lebih dari 80.000 dan 6.000 tiket terbuka disimpan dalam sistem). Gunakan perintah "bin / znuny.Console.pl Maint :: Ticket :: QueueIndexRebuild" untuk penciptaan indeks awal.',
-        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the Znuny user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
-            'Menyimpan lampiran dari artikel. "DB" menyimpan semua data dalam database (tidak disarankan untuk menyimpan lampiran besar). "FS" menyimpan data di filesystem; ini lebih cepat tapi webserver harus berjalan di bawah pengguna Znuny. Anda dapat beralih antara modul bahkan pada sistem yang sudah di produksi tanpa kehilangan data. Catatan: Mencari nama lampiran tidak didukung ketika "FS" digunakan.',
+        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
+            'IndexAccelerator: untuk memilih modul backend TicketViewAccelerator Anda. "RuntimeDB" menghasilkan setiap tampilan antrian pada terbang dari meja tiket (tidak ada masalah kinerja sampai dengan kira-kira. 60.000 tiket total dan 6.000 tiket terbuka dalam sistem). "StaticDB" adalah modul yang paling kuat, itu menggunakan tiket-indeks tabel tambahan yang bekerja seperti pandangan (dianjurkan jika lebih dari 80.000 dan 6.000 tiket terbuka disimpan dalam sistem). Gunakan perintah "bin / buzzdesk.Console.pl Maint :: Ticket :: QueueIndexRebuild" untuk penciptaan indeks awal.',
+        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the BuzzDesk user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
+            'Menyimpan lampiran dari artikel. "DB" menyimpan semua data dalam database (tidak disarankan untuk menyimpan lampiran besar). "FS" menyimpan data di filesystem; ini lebih cepat tapi webserver harus berjalan di bawah pengguna BuzzDesk. Anda dapat beralih antara modul bahkan pada sistem yang sudah di produksi tanpa kehilangan data. Catatan: Mencari nama lampiran tidak didukung ketika "FS" digunakan.',
         'Specifies whether all storage backends should be checked when looking for attachments. This is only required for installations where some attachments are in the file system, and others in the database.' =>
             'Menentukan apakah semua backends penyimpanan harus diperiksa ketika mencari lampiran. Ini hanya diperlukan untuk instalasi di mana beberapa lampiran dalam sistem file, dan lain-lain dalam database.',
         'Specifies the directory to store the data in, if "FS" was selected for ArticleStorage.' =>
@@ -6607,7 +6605,7 @@ bin/znuny.Daemon.pl status\').',
             '',
         'Overloads (redefines) existing functions in Kernel::System::Ticket. Used to easily add customizations.' =>
             'Overload (mengubah) fungsi yang ada di Kernel::Sistem::Ticket. Digunakan dengan mudah untuk menambahkan kustomisasi.',
-        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
+        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
             '',
         'Defines whether to index archived tickets for fulltext searches.' =>
             '',
@@ -6615,7 +6613,7 @@ bin/znuny.Daemon.pl status\').',
             '',
         'Display a warning and prevent search when using stop words within fulltext search.' =>
             'Menampilkan peringatan dan mencegah pencarian ketika menggunakan kata-kata berhenti dalam pencarian fulltext.',
-        'Basic fulltext index settings. Execute "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
+        'Basic fulltext index settings. Execute "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
             '',
         'Fulltext index regex filters to remove parts of the text.' => 'Fulltext filter Indeks regex untuk menghapus bagian-bagian dari teks.',
         'English stop words for fulltext index. These words will be removed from the search index.' =>
@@ -7344,8 +7342,8 @@ bin/znuny.Daemon.pl status\').',
             '',
         'Defines the valid state types for a ticket. If a ticket is in a state which have any state type from this setting, this ticket will be considered as open, otherwise as closed.' =>
             '',
-        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/znuny.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
-            'Mendefinisikan negara berlaku untuk tiket dibuka. Untuk membuka tiket script "bin/znuny.Console.pl Maint::Ticket::UnlockTimeout" dapat digunakan',
+        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
+            'Mendefinisikan negara berlaku untuk tiket dibuka. Untuk membuka tiket script "bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout" dapat digunakan',
         'Sends reminder notifications of unlocked ticket after reaching the reminder date (only sent to ticket owner).' =>
             'Mengirimkan pemberitahuan amaran terkunci tiket setelah mencapai tanggal yang ditetapkan (hanya dikirim ke pemilik tiket).',
         'Disables sending reminder notifications to the responsible agent of a ticket (Ticket::Responsible needs to be enabled).' =>
@@ -7731,7 +7729,7 @@ bin/znuny.Daemon.pl status\').',
             '',
         'Module to check if a incoming e-mail message is bounce.' => '',
         'Module used to detect if attachments are present.' => '',
-        'Executes follow-up checks on Znuny Header \'X-OTRS-Bounce\'.' =>
+        'Executes follow-up checks on BuzzDesk Header \'X-OTRS-Bounce\'.' =>
             '',
         'Checks if an E-Mail is a followup to an existing ticket by searching the subject for a valid ticket number.' =>
             'Cek jika E-Mail merupakan tindak lanjut ke tiket yang ada dengan mencari subjek untuk sejumlah tiket yang sah.',
@@ -7891,9 +7889,9 @@ bin/znuny.Daemon.pl status\').',
         'Defines the default queue for new tickets in the agent interface.' =>
             '',
 
-        # XML Definition: Kernel/Config/Files/XML/Znuny.xml
+        # XML Definition: Kernel/Config/Files/XML/BuzzDesk.xml
         'Default preferences to set during user creation.' => '',
-        'Enables/disables the Znuny package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
+        'Enables/disables the BuzzDesk package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
             '',
         'Screens for which it is possible to enable or disable dynamic fields.' =>
             '',
@@ -8156,7 +8154,7 @@ bin/znuny.Daemon.pl status\').',
             '',
         'Mapping of ticket priority to X-Priority email header for outgoing emails of communication channel "system".' =>
             '',
-        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by Znuny.Form.Input.' =>
+        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by BuzzDesk.Form.Input.' =>
             '',
         'Once limit of watched tickets per user is reached, the oldest entries will be removed from the watch list. Disable this setting or set it to 0 to disable the limit (default).' =>
             '',
@@ -8418,7 +8416,7 @@ bin/znuny.Daemon.pl status\').',
         'Currently not possible' => '',
         'This is currently disabled because of an ongoing package upgrade.' =>
             '',
-        'This option is currently disabled because the Znuny Daemon is not running.' =>
+        'This option is currently disabled because the BuzzDesk Daemon is not running.' =>
             '',
         'Are you sure you want to update all installed packages?' => '',
         'No response from get package upgrade run status.' => '',
@@ -8549,7 +8547,7 @@ bin/znuny.Daemon.pl status\').',
         'Insert selected customer user(s) into the "%s:" field.' => '',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Daemon.js
-        'Information about the Znuny Daemon' => 'Informasi yang mengenai Daemon Znuny',
+        'Information about the BuzzDesk Daemon' => 'Informasi yang mengenai Daemon BuzzDesk',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Dashboard.js
         'Please check the fields marked as red for valid inputs.' => 'Silahkan periksa bidang yang ditandai sebagai warna merah untuk pemasukkan yang sah',
@@ -8938,7 +8936,7 @@ Helpdesk Team Anda
         'Create tickets.' => 'Membuat tiket ',
         'Created ticket [%s] in "%s" with priority "%s" and state "%s".' =>
             '',
-        'Creates a unit test file for this ticket and sends it to Znuny.' =>
+        'Creates a unit test file for this ticket and sends it to BuzzDesk.' =>
             '',
         'Creates a unit test file for this ticket.' => '',
         'Croatian' => 'Kroasia',
@@ -9167,7 +9165,7 @@ Helpdesk Team Anda
         'Mentions.' => '',
         'Merge this ticket and all articles into another ticket' => '',
         'Merged Ticket (%s/%s) to (%s/%s).' => '',
-        'Merged Ticket <OTRS_TICKET> to <OTRS_MERGE_TO_TICKET>.' => 'igabung Tiket <Znuny TIKET> ke <Znuny MERGE_TO_TICKET>.',
+        'Merged Ticket <OTRS_TICKET> to <OTRS_MERGE_TO_TICKET>.' => 'igabung Tiket <BuzzDesk TIKET> ke <BuzzDesk MERGE_TO_TICKET>.',
         'Minute' => '',
         'Miscellaneous' => 'bermacam-macam',
         'Module to filter and manipulate incoming messages. Get a 4 digit number to ticket free text, use regex in Match e. g. From => \'(.+?)@.+?\', and use () as [***] in Set =>.' =>
@@ -9380,7 +9378,7 @@ Helpdesk Team Anda
             'Ini adalah oranye standar - kulit hitam untuk antarmuka pelanggan.',
         'This is the default orange - black skin.' => 'Ini adalah oranye standar - kulit hitam.',
         'This key is not certified with a trusted signature!' => '',
-        'This module is part of the admin area of Znuny.' => '',
+        'This module is part of the admin area of BuzzDesk.' => '',
         'Ticket Close.' => 'Tutup tiket.',
         'Ticket Compose Bounce Email.' => 'Tiket Compose Bounce Email.',
         'Ticket Compose email Answer.' => 'Tiket Susun email Jawaban.',
@@ -9467,7 +9465,7 @@ Helpdesk Team Anda
         'Your service selection of your preferred services. You also get notified about those services via email if enabled.' =>
             '',
         'Your username in Mattermost without the leading @' => '',
-        'Znuny.org - News' => '',
+        'BuzzDesk.org - News' => '',
         'Zoom' => 'Zoom',
         'all tickets' => '',
         'archived tickets' => '',
@@ -9658,7 +9656,7 @@ Helpdesk Team Anda
         'Hide EntityIDs',
         'If you now leave this page, all open popup windows will be closed, too!',
         'Import web service',
-        'Information about the Znuny Daemon',
+        'Information about the BuzzDesk Daemon',
         'Insert selected customer user(s) into the "%s:" field.',
         'Invalid date (need a future date)!',
         'Invalid date (need a past date)!',
@@ -9838,7 +9836,7 @@ Helpdesk Team Anda
         'This is a repeating appointment',
         'This is currently disabled because of an ongoing package upgrade.',
         'This item still contains sub items. Are you sure you want to remove this item including its sub items?',
-        'This option is currently disabled because the Znuny Daemon is not running.',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.',
         'This software runs with a huge lists of browsers, please upgrade to one of these.',
         'This window must be called from compose window.',
         'Thu',

@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -48,7 +47,7 @@ my %UserData = $UserObject->GetUserData(
 );
 my $UserID = $UserData{UserID};
 
-my @FieldValue = ( 'aaatest@znuny.com', 'bbbtest@znuny.com', 'ccctest@znuny.com' );
+my @FieldValue = ( 'aaatest@buzzdesk.com', 'bbbtest@buzzdesk.com', 'ccctest@buzzdesk.com' );
 
 my @DynamicFields = (
     {
@@ -143,9 +142,9 @@ my @Tests = (
         Name => 'No RecipientEmail set',
         Data => {
             DynamicField => {
-                'TestText' . $RandomID        => 'aaatest@znuny.com',
-                'TestDropdown' . $RandomID    => 'bbbtest@znuny.com',
-                'TestMultiselect' . $RandomID => 'ccctest@znuny.com',
+                'TestText' . $RandomID        => 'aaatest@buzzdesk.com',
+                'TestDropdown' . $RandomID    => 'bbbtest@buzzdesk.com',
+                'TestMultiselect' . $RandomID => 'ccctest@buzzdesk.com',
             },
             RecipientEmail => '',
         },
@@ -157,50 +156,50 @@ my @Tests = (
         Name => 'RecipientEmail set',
         Data => {
             DynamicField => {
-                'TestText' . $RandomID        => 'aaatest@znuny.com',
-                'TestDropdown' . $RandomID    => 'bbbtest@znuny.com',
-                'TestMultiselect' . $RandomID => 'ccctest@znuny.com',
+                'TestText' . $RandomID        => 'aaatest@buzzdesk.com',
+                'TestDropdown' . $RandomID    => 'bbbtest@buzzdesk.com',
+                'TestMultiselect' . $RandomID => 'ccctest@buzzdesk.com',
             },
-            RecipientEmail => 'info@znuny.com',
+            RecipientEmail => 'info@buzzdesk.com',
         },
         Expected => {
-            RecipientEmail => 'info@znuny.com',
+            RecipientEmail => 'info@buzzdesk.com',
         },
     },
     {
         Name => 'RecipientEmail with text field',
         Data => {
             DynamicField => {
-                'TestText' . $RandomID => 'aaatest@znuny.com',
+                'TestText' . $RandomID => 'aaatest@buzzdesk.com',
             },
-            RecipientEmail => 'info@znuny.com, <OTRS_TICKET_DynamicField_TestText' . $RandomID . '>',
+            RecipientEmail => 'info@buzzdesk.com, <OTRS_TICKET_DynamicField_TestText' . $RandomID . '>',
         },
         Expected => {
-            RecipientEmail => 'info@znuny.com, aaatest@znuny.com',
+            RecipientEmail => 'info@buzzdesk.com, aaatest@buzzdesk.com',
         },
     },
     {
         Name => 'RecipientEmail with dropdown field',
         Data => {
             DynamicField => {
-                'TestDropdown' . $RandomID => 'bbbtest@znuny.com',
+                'TestDropdown' . $RandomID => 'bbbtest@buzzdesk.com',
             },
-            RecipientEmail => 'info@znuny.com, <OTRS_TICKET_DynamicField_TestDropdown' . $RandomID . '>',
+            RecipientEmail => 'info@buzzdesk.com, <OTRS_TICKET_DynamicField_TestDropdown' . $RandomID . '>',
         },
         Expected => {
-            RecipientEmail => 'info@znuny.com, bbbtest@znuny.com',
+            RecipientEmail => 'info@buzzdesk.com, bbbtest@buzzdesk.com',
         },
     },
     {
         Name => 'RecipientEmail with multiselect field',
         Data => {
             DynamicField => {
-                'TestMultiselect' . $RandomID => 'ccctest@znuny.com',
+                'TestMultiselect' . $RandomID => 'ccctest@buzzdesk.com',
             },
-            RecipientEmail => 'info@znuny.com, <OTRS_TICKET_DynamicField_TestMultiselect' . $RandomID . '>',
+            RecipientEmail => 'info@buzzdesk.com, <OTRS_TICKET_DynamicField_TestMultiselect' . $RandomID . '>',
         },
         Expected => {
-            RecipientEmail => 'info@znuny.com, ccctest@znuny.com',
+            RecipientEmail => 'info@buzzdesk.com, ccctest@buzzdesk.com',
         },
     },
     {
@@ -208,15 +207,15 @@ my @Tests = (
         Data => {
             DynamicField => {
                 'TestMultiselect' . $RandomID => [
-                    'aaatest@znuny.com',
-                    'bbbtest@znuny.com',
-                    'ccctest@znuny.com',
+                    'aaatest@buzzdesk.com',
+                    'bbbtest@buzzdesk.com',
+                    'ccctest@buzzdesk.com',
                 ]
             },
-            RecipientEmail => 'info@znuny.com, <OTRS_TICKET_DynamicField_TestMultiselect' . $RandomID . '>',
+            RecipientEmail => 'info@buzzdesk.com, <OTRS_TICKET_DynamicField_TestMultiselect' . $RandomID . '>',
         },
         Expected => {
-            RecipientEmail => 'info@znuny.com, aaatest@znuny.com, bbbtest@znuny.com, ccctest@znuny.com',
+            RecipientEmail => 'info@buzzdesk.com, aaatest@buzzdesk.com, bbbtest@buzzdesk.com, ccctest@buzzdesk.com',
         },
     },
     {
@@ -224,15 +223,15 @@ my @Tests = (
         Data => {
             DynamicField => {
                 'TestMultiselect' . $RandomID => [
-                    'aaatest@znuny.com',
-                    'bbbtest@znuny.com',
-                    'ccctest@znuny.com',
+                    'aaatest@buzzdesk.com',
+                    'bbbtest@buzzdesk.com',
+                    'ccctest@buzzdesk.com',
                 ]
             },
-            RecipientEmail => '<OTRS_TICKET_DynamicField_TestMultiselect' . $RandomID . '>, info@znuny.com',
+            RecipientEmail => '<OTRS_TICKET_DynamicField_TestMultiselect' . $RandomID . '>, info@buzzdesk.com',
         },
         Expected => {
-            RecipientEmail => 'aaatest@znuny.com, bbbtest@znuny.com, ccctest@znuny.com, info@znuny.com',
+            RecipientEmail => 'aaatest@buzzdesk.com, bbbtest@buzzdesk.com, ccctest@buzzdesk.com, info@buzzdesk.com',
         },
     },
 );

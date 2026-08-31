@@ -1,11 +1,10 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Perl::Dumper)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Dumper)
 
 use strict;
 use warnings;
@@ -42,7 +41,7 @@ if ( IsHashRefWithData($OriginalSeleniumConfig) ) {
 }
 
 # do not run for Github
-return 1 if $ENV{PWD} eq '/__w/Znuny/Znuny';
+return 1 if $ENV{PWD} eq '/__w/BuzzDesk/BuzzDesk';
 
 # new with chromeOptions
 $ConfigObject->Set(

@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -28,11 +26,11 @@ $Selenium->RunTest(
         my $UserObject        = $Kernel::OM->Get('Kernel::System::User');
         my $CacheObject       = $Kernel::OM->Get('Kernel::System::Cache');
         my $SysConfigObject   = $Kernel::OM->Get('Kernel::System::SysConfig');
-        my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+        my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
         # create temp process for 160-Ticket::AgentTicketProcess
         my $RandomID = $HelperObject->GetRandomID();
-        $ZnunyHelperObject->_ProcessCreateIfNotExists(
+        $BuzzDeskHelperObject->_ProcessCreateIfNotExists(
             Processes => {
                 'TestProcess'
                     . $RandomID => $ConfigObject->Get('Home')

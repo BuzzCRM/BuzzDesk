@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # $origin: otrs - 0000000000000000000000000000000000000000 - Kernel/System/UnitTest/TicketToUnitTest.pm
 # --
@@ -27,7 +25,7 @@ our @ObjectDependencies = (
     'Kernel::System::Type',
     'Kernel::System::UnitTest::Helper',
     'Kernel::System::User',
-    'Kernel::System::ZnunyHelper',
+    'Kernel::System::BuzzDeskHelper',
 );
 
 =head1 NAME
@@ -124,7 +122,6 @@ sub GetHeader {
 
     my $Header = <<'HEADER';
 # ---
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # ---
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -167,7 +164,7 @@ Returns:
     my $Output = '
         my $HelperObject       = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
         my $TicketObject       = $Kernel::OM->Get('Kernel::System::Ticket');
-        my $ZnunyHelperObject  = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+        my $BuzzDeskHelperObject  = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
         my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
         my $BackendObject      = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
         my $TimeObject         = $Kernel::OM->Get('Kernel::System::Time');
@@ -181,7 +178,7 @@ sub GetNeededObjects {
     my $Objects = <<'OBJECTS';
 my $HelperObject       = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $TicketObject       = $Kernel::OM->Get('Kernel::System::Ticket');
-my $ZnunyHelperObject  = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject  = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
 my $BackendObject      = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
 my $TimeObject         = $Kernel::OM->Get('Kernel::System::Time');
@@ -202,7 +199,7 @@ Returns:
     my $Output = '
         ## Service 'Test'
 
-        $ZnunyHelperObject->_ServiceCreateIfNotExists(
+        $BuzzDeskHelperObject->_ServiceCreateIfNotExists(
             Name => 'Test',
         );
 

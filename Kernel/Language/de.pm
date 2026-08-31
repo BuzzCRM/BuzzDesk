@@ -1,13 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
-# Copyright (C) 2010 Thomas Kaltenbrunner <tkaltenbrunner at opc.de>
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Translation::JavaScriptStrings)
+## nofilter(TidyAll::Plugin::BuzzDesk::Translation::JavaScriptStrings)
 
 package Kernel::Language::de;
 
@@ -861,8 +858,8 @@ sub Data {
             'Der Name kann dazu genutzt werden, um unterschiedliche Konfigurationen zur Fehlerbehandlung voneinander zu unterscheiden.',
         'Please provide a unique name for this web service.' => 'Bitte geben Sie einen eindeutigen Namen für diesen Webservice an.',
         'Error handling module backend' => 'Fehlerbehandlungs-Modul-Backend',
-        'This Znuny error handling backend module will be called internally to process the error handling mechanism.' =>
-            'Das Znuny Fehlerbehandlungs-Modul-Backend wird intern aufgerufen um die Fehlerbehandlung auszuführen.',
+        'This BuzzDesk error handling backend module will be called internally to process the error handling mechanism.' =>
+            'Das BuzzDesk Fehlerbehandlungs-Modul-Backend wird intern aufgerufen um die Fehlerbehandlung auszuführen.',
         'Processing options' => 'Verarbeitungsoptionen',
         'Configure filters to control error handling module execution.' =>
             'Konfigurieren Sie Filter, um die Ausführung des Fehlerbehandlungs-Moduls zu steuern.',
@@ -953,15 +950,15 @@ sub Data {
         'The name is typically used to call up an operation of a remote web service.' =>
             'Der Name wird typischerweise genutzt, um eine Operation eines entfernten Webservices aufzurufen.',
         'Invoker backend' => 'Invoker-Backend',
-        'This Znuny invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
+        'This BuzzDesk invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
             'Dieses Invoker-Backend-Modul wird aufgerufen, um die Daten zum Versand an das entfernte System sowie die zurückgelieferten Daten aufzubereiten.',
         'Mapping for outgoing request data' => 'Mapping für ausgehende Anfragedaten',
         'Configure' => 'Konfigurieren',
-        'The data from the invoker of Znuny will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
-            'Die Daten des Invokers von Znuny werden von diesem Mapping verarbeitet, um sie so umzuformen, wie das entfernte System die Daten benötigt.',
+        'The data from the invoker of BuzzDesk will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
+            'Die Daten des Invokers von BuzzDesk werden von diesem Mapping verarbeitet, um sie so umzuformen, wie das entfernte System die Daten benötigt.',
         'Mapping for incoming response data' => 'Mapping für eingehende Antwortdaten',
-        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of Znuny expects.' =>
-            'Die Antwort-Daten des entfernten Systems werden von diesem Mapping verarbeitet, um sie so umzuformen, wie der Invoker von Znuny sie benötigt.',
+        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of BuzzDesk expects.' =>
+            'Die Antwort-Daten des entfernten Systems werden von diesem Mapping verarbeitet, um sie so umzuformen, wie der Invoker von BuzzDesk sie benötigt.',
         'Asynchronous' => 'Asynchron',
         'Condition' => 'Bedingung',
         'Edit this event' => 'Dieses Ereignis bearbeiten',
@@ -969,8 +966,8 @@ sub Data {
         'Add Event' => 'Event hinzufügen',
         'To add a new event select the event object and event name and click on the "+" button' =>
             'Um einen neues Ereignis hinzuzufügen, wählen Sie bitte das Objekt und den Ereignisnamen und klicken Sie auf den "+"-Schaltfläche',
-        'Asynchronous event triggers are handled by the Znuny Scheduler Daemon in background (recommended).' =>
-            'Asynchrone Ereignisauslöser werden vom Znuny Scheduler Daemon im Hintergrund verarbeitet (empfohlen).',
+        'Asynchronous event triggers are handled by the BuzzDesk Scheduler Daemon in background (recommended).' =>
+            'Asynchrone Ereignisauslöser werden vom BuzzDesk Scheduler Daemon im Hintergrund verarbeitet (empfohlen).',
         'Synchronous event triggers would be processed directly during the web request.' =>
             'Synchrone Ereignisauslöser werden direkt während der laufenden Web-Anfrage verarbeitet.',
         'Add all attachments' => 'Alle Anhänge hinzufügen',
@@ -1104,11 +1101,11 @@ sub Data {
         'The name is typically used to call up this web service operation from a remote system.' =>
             'Der Name wird typischerweise benutzt, um die Webservice-Operation von einem entfernten System aus aufzurufen.',
         'Operation backend' => 'Operation-Backend',
-        'This Znuny operation backend module will be called internally to process the request, generating data for the response.' =>
-            'Dieses Znuny-Operation-Backend-Modul wird intern aufgerufen, um die Anforderung zu bearbeiten und Daten für die Antwort zu generieren.',
+        'This BuzzDesk operation backend module will be called internally to process the request, generating data for the response.' =>
+            'Dieses BuzzDesk-Operation-Backend-Modul wird intern aufgerufen, um die Anforderung zu bearbeiten und Daten für die Antwort zu generieren.',
         'Mapping for incoming request data' => 'Mapping für eingehende Anfragedaten',
-        'The request data will be processed by this mapping, to transform it to the kind of data Znuny expects.' =>
-            'Die Daten der eingehenden Anfrage werden von diesem Mapping verarbeitet, um sie so umzuformen, wie die Znuny-Operation sie benötigt.',
+        'The request data will be processed by this mapping, to transform it to the kind of data BuzzDesk expects.' =>
+            'Die Daten der eingehenden Anfrage werden von diesem Mapping verarbeitet, um sie so umzuformen, wie die BuzzDesk-Operation sie benötigt.',
         'Mapping for outgoing response data' => 'Mapping für ausgehende Antwortdaten',
         'The response data will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
             'Die Antwortdaten werden von diesem Mapping verarbeitet, um sie so umzuformen, wie das entfernte System die Daten benötigt.',
@@ -1131,8 +1128,8 @@ sub Data {
             'Bitte klicken Sie \'Speichern\', nachdem das Parser-Backend geändert wurde, um die entsprechenden Backend-Parameter zu erhalten.',
         'Maximum message length' => 'Maximale Nachrichtenlänge',
         'This field should be an integer number.' => 'Dieses Feld sollte eine Ganzzahl beinhalten.',
-        'Here you can specify the maximum size (in bytes) of REST messages that Znuny will process.' =>
-            'Bestimmen Sie die maximale Größe (in Bytes) für REST-Nachrichten, die Znuny akzeptieren soll.',
+        'Here you can specify the maximum size (in bytes) of REST messages that BuzzDesk will process.' =>
+            'Bestimmen Sie die maximale Größe (in Bytes) für REST-Nachrichten, die BuzzDesk akzeptieren soll.',
         'Send Keep-Alive' => 'Keep-Alive senden',
         'This configuration defines if incoming connections should get closed or kept alive.' =>
             'Bestimmt, ob eingehende Verbindungen geschlossen oder am Leben erhalten werden sollen.',
@@ -1200,22 +1197,22 @@ sub Data {
         'Client Certificate' => 'Client-Zertifikat',
         'The full path and name of the SSL client certificate file (must be in PEM, DER or PKCS#12 format).' =>
             'Der vollständige Pfad und Name der SSL-Client-Zertifikatsdatei (muss im PEM, DER oder PKCS#12-Format vorliegen).',
-        'e.g. /opt/znuny/var/certificates/SOAP/certificate.pem' => 'z.B. /opt/znuny/var/certificates/SOAP/certificate.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/certificate.pem' => 'z.B. /opt/buzzdesk/var/certificates/SOAP/certificate.pem',
         'Client Certificate Key' => 'Client-Zertifikatschlüssel',
         'The full path and name of the SSL client certificate key file (if not already included in certificate file).' =>
             'Der vollständige Pfad und Name der SSL-Client-Zertifikats-Schlüsseldatei (sofern nicht bereits in der Client-Zertifikats-Datei enthalten).',
-        'e.g. /opt/znuny/var/certificates/SOAP/key.pem' => 'z.B. /opt/znuny/var/certificates/SOAP/key.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/key.pem' => 'z.B. /opt/buzzdesk/var/certificates/SOAP/key.pem',
         'Client Certificate Key Password' => 'Passwort für Client-Zertifikatschlüssel',
         'The password to open the SSL certificate if the key is encrypted.' =>
             'Das Passwort für den Zugriff auf das SSL-Zertifikat falls der Schlüssel verschlüsselt ist.',
         'Certification Authority (CA) Certificate' => 'Zertifikat der Certification Authority (CA)',
         'The full path and name of the certification authority certificate file that validates SSL certificate.' =>
             'Voller Pfad und Dateiname der Datei der Certification Authority (CA), welche das Zertifikat signiert hat.',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA/ca.pem' => 'z. B. /opt/znuny/var/certificates/SOAP/CA/ca.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem' => 'z. B. /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem',
         'Certification Authority (CA) Directory' => 'Verzeichnis mit Certification Autorities (CA)',
         'The full path of the certification authority directory where the CA certificates are stored in the file system.' =>
             'Voller Pfad und Dateiname des CA-Verzeichnisses, in dem CA-Zertifikate gespeichert sind.',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA' => 'z. B. /opt/znuny/var/certificates/SOAP/CA',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA' => 'z. B. /opt/buzzdesk/var/certificates/SOAP/CA',
         'Controller mapping for Invoker' => 'Controller-Mapping für Invoker',
         'The controller that the invoker should send requests to. Variables marked by a \':\' will get replaced by the data value and passed along with the request. (e.g. /Ticket/:TicketID?UserLogin=:UserLogin&Password=:Password).' =>
             'Der Controller, an den der Invoker Anfragen senden soll. Variablen, die mit einem \':\' markiert sind, werden durch den Datenwert ersetzt und mit der Anfrage übergeben. (z.B.: /Ticket/:TicketID?UserLogin=:UserLogin&Password=:Password).',
@@ -1272,14 +1269,14 @@ sub Data {
         'Select how SOAP response function wrapper should be constructed.' =>
             'Wählen Sie, wie die SOAP-Antwort konstruiert werden soll.',
         'Response name free text' => 'Freitext für den Antwortnamen',
-        'Here you can specify the maximum size (in bytes) of SOAP messages that Znuny will process.' =>
-            'Hier können Sie eine Maximalgröße für SOAP-Nachrichten (in Bytes) angeben, die Znuny verarbeitet.',
+        'Here you can specify the maximum size (in bytes) of SOAP messages that BuzzDesk will process.' =>
+            'Hier können Sie eine Maximalgröße für SOAP-Nachrichten (in Bytes) angeben, die BuzzDesk verarbeitet.',
         'Fixed namespace prefix' => 'Festes Namespace-Präfix',
         'Use a fixed namespace prefix (e. g. myns:) for the root tag of a SOAP message.' =>
             'Festes Namespace-Präfix (z. B. myns:) im Root-Tag der SOAP-Nachricht verwenden.',
         'Suffix for response tag' => 'Suffix für Response-Tag',
-        'Usually Znuny expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
-            'Normalerweise erwartet Znuny ein Response-Tag in der Form "&lt;Operation&gt;Response". Mit dieser Einstellung kann der "Response"-Teil geändert werden, z. B. zu "Result".',
+        'Usually BuzzDesk expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
+            'Normalerweise erwartet BuzzDesk ein Response-Tag in der Form "&lt;Operation&gt;Response". Mit dieser Einstellung kann der "Response"-Teil geändert werden, z. B. zu "Result".',
         'Encoding' => 'Kodierung',
         'The character encoding for the SOAP message contents.' => 'Die Zeichenkodierung für SOAP-Nachrichteninhalte.',
         'e.g utf-8, latin1, iso-8859-1, cp1250, Etc.' => 'z. B. utf-8, latin1, iso-8859-1, cp1250, usw.',
@@ -1321,10 +1318,10 @@ sub Data {
         'Provider transport' => 'Provider-Transport',
         'Requester transport' => 'Requester-Transport',
         'Debug threshold' => 'Debug-Level',
-        'In provider mode, Znuny offers web services which are used by remote systems.' =>
-            'Im Modus "Provider" bietet Znuny Webservices an, die von externen Systemen genutzt werden.',
-        'In requester mode, Znuny uses web services of remote systems.' =>
-            'Im Modus "Requester" nutzt Znuny selbst Webservices von externen Systemen.',
+        'In provider mode, BuzzDesk offers web services which are used by remote systems.' =>
+            'Im Modus "Provider" bietet BuzzDesk Webservices an, die von externen Systemen genutzt werden.',
+        'In requester mode, BuzzDesk uses web services of remote systems.' =>
+            'Im Modus "Requester" nutzt BuzzDesk selbst Webservices von externen Systemen.',
         'Network transport' => 'Netzwerktransport',
         'Error Handling Modules' => 'Fehlerbehandlungs-Module',
         'Error handling modules are used to react in case of errors during the communication. Those modules are executed in a specific order, which can be changed by drag and drop.' =>
@@ -1442,8 +1439,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportEmailSettings.tt
         'Use comma or semicolon to separate email addresses.' => 'Verwenden Sie Komma oder Semikolon, um E-Mail-Adressen zu trennen.',
-        'You can use Znuny-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
-            'Sie können Znuny-Tags wie <OTRS_TICKET_DynamicField_...> nutzen, um Werte des aktuellen Tickets einzufügen.',
+        'You can use BuzzDesk-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
+            'Sie können BuzzDesk-Tags wie <OTRS_TICKET_DynamicField_...> nutzen, um Werte des aktuellen Tickets einzufügen.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportWebserviceSettings.tt
         'Web service name' => 'Webservice-Name',
@@ -1510,8 +1507,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminPGP.tt
         'PGP support is disabled' => 'Unterstützung für PGP ist deaktiviert',
-        'To be able to use PGP in Znuny, you have to enable it first.' =>
-            'Um PGP in Znuny verwenden zu können, müssen Sie es zuerst aktivieren.',
+        'To be able to use PGP in BuzzDesk, you have to enable it first.' =>
+            'Um PGP in BuzzDesk verwenden zu können, müssen Sie es zuerst aktivieren.',
         'Enable PGP support' => 'PGP-Unterstützung aktivieren',
         'Faulty PGP configuration' => 'Fehlerhafte PGP-Konfiguration',
         'PGP support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -1542,21 +1539,21 @@ sub Data {
         'Do you really want to reinstall this package? Any manual changes will be lost.' =>
             'Möchten Sie dieses Paket wirklich erneut installieren? Alle manuellen Änderungen gehen verloren.',
         'Go to updating instructions' => 'Gehe zur Update-Anweisung',
-        'Go to znuny.org' => 'znuny.org aufrufen',
+        'Go to buzzdesk.org' => 'buzzdesk.org aufrufen',
         'package information' => 'Paketinformation',
-        'Package installation requires a patch level update of Znuny.' =>
-            'Paketinstallation benötigt ein Patchlevel-Update von Znuny.',
-        'Package update requires a patch level update of Znuny.' => 'Paket-Update benötigt ein Patchlevel-Update von Znuny.',
-        'Please note that your installed Znuny version is %s.' => 'Bitte beachten Sie, dass Ihre installierte Znuny-Version %s ist.',
-        'To install this package, you need to update Znuny to version %s or newer.' =>
-            'Um dieses Paket zu installieren, müssen Sie zunächst Znuny auf Version %s oder neuer aktualisieren.',
-        'This package can only be installed on Znuny version %s or older.' =>
-            'Dieses Paket kann nur mit Znuny-Version %s oder älter verwendet werden.',
-        'This package can only be installed on Znuny version %s.' => 'Dieses Paket kann nur mit Znuny-Version %s verwendet werden.',
-        'Why should I keep Znuny up to date?' => 'Warum sollte ich Znuny aktuell halten?',
+        'Package installation requires a patch level update of BuzzDesk.' =>
+            'Paketinstallation benötigt ein Patchlevel-Update von BuzzDesk.',
+        'Package update requires a patch level update of BuzzDesk.' => 'Paket-Update benötigt ein Patchlevel-Update von BuzzDesk.',
+        'Please note that your installed BuzzDesk version is %s.' => 'Bitte beachten Sie, dass Ihre installierte BuzzDesk-Version %s ist.',
+        'To install this package, you need to update BuzzDesk to version %s or newer.' =>
+            'Um dieses Paket zu installieren, müssen Sie zunächst BuzzDesk auf Version %s oder neuer aktualisieren.',
+        'This package can only be installed on BuzzDesk version %s or older.' =>
+            'Dieses Paket kann nur mit BuzzDesk-Version %s oder älter verwendet werden.',
+        'This package can only be installed on BuzzDesk version %s.' => 'Dieses Paket kann nur mit BuzzDesk-Version %s verwendet werden.',
+        'Why should I keep BuzzDesk up to date?' => 'Warum sollte ich BuzzDesk aktuell halten?',
         'You will receive updates about relevant security issues.' => 'Sie erhalten Updates über relevante Sicherheitsprobleme.',
-        'You will receive updates for all other relevant Znuny issues.' =>
-            'Sie erhalten Updates für alle anderen relevanten Probleme im Zusammenhang mit Znuny.',
+        'You will receive updates for all other relevant BuzzDesk issues.' =>
+            'Sie erhalten Updates für alle anderen relevanten Probleme im Zusammenhang mit BuzzDesk.',
         'How can I do a patch level update if I don’t have a contract?' =>
             'Wie kann ich ein Patchlevel-Update durchführen, wenn ich keinen Vertrag habe?',
         'Please find all relevant information within the updating instructions at %s.' =>
@@ -1955,8 +1952,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSMIME.tt
         'SMIME support is disabled' => 'S/MIME-Unterstützung ist deaktiviert',
-        'To be able to use SMIME in Znuny, you have to enable it first.' =>
-            'Um S/MIME in Znuny zu verwenden, müssen Sie es zunächst aktivieren.',
+        'To be able to use SMIME in BuzzDesk, you have to enable it first.' =>
+            'Um S/MIME in BuzzDesk zu verwenden, müssen Sie es zunächst aktivieren.',
         'Enable SMIME support' => 'S/MIME-Unterstützung aktivieren',
         'Faulty SMIME configuration' => 'Fehlerhafte S/MIME-Konfiguration',
         'SMIME support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -2149,8 +2146,8 @@ sub Data {
         'Find out how to use the system configuration by reading the %s.' =>
             'Erfahren Sie mehr zur Nutzung der Systemkonfiguration im %s.',
         'Search in all settings...' => 'In allen Einstellungen suchen...',
-        'There are currently no settings available. Please make sure to run \'znuny.Console.pl Maint::Config::Rebuild\' before using the software.' =>
-            'Aktuell sind keine Einstellungen verfügbar. Bitte führen Sie \'znuny.Console.pl Maint::Config::Rebuild\' aus, bevor Sie die Software nutzen.',
+        'There are currently no settings available. Please make sure to run \'buzzdesk.Console.pl Maint::Config::Rebuild\' before using the software.' =>
+            'Aktuell sind keine Einstellungen verfügbar. Bitte führen Sie \'buzzdesk.Console.pl Maint::Config::Rebuild\' aus, bevor Sie die Software nutzen.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSystemConfigurationDeployment.tt
         'Help' => 'Hilfe',
@@ -2445,17 +2442,17 @@ sub Data {
         'Customer User Information Center' => 'Kundenbenutzer-Informationszentrum',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDaemonInfo.tt
-        'The Znuny Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
-            'Der Znuny Daemon ist ein Daemon-Prozess, welcher asynchrone Aufgaben übernimmt, z.B. das Auslösen von Ticket-Eskalationen oder das Versenden von E-Mails.',
-        'A running Znuny Daemon is mandatory for correct system operation.' =>
-            'Ein laufender Znuny Daemon ist für die korrekte Funktion des Systems erforderlich.',
-        'Starting the Znuny Daemon' => 'Den Znuny Daemon starten',
-        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the Znuny Daemon is running and start it if needed.' =>
-            'Stellen Sie sicher, dass die Datei \'%s\' existiert (ohne die Endung .dist). Dieser Cronjob wird alle 5 Minuten prüfen, ob der Znuny Daemon läuft, und ihn ggf. starten.',
-        'Execute \'%s start\' to make sure the cron jobs of the \'znuny\' user are active.' =>
-            'Führen Sie \'%s start\' aus um sicherzustellen, dass die Cronjobs des \'znuny\'-Nutzers aktiv sind.',
-        'After 5 minutes, check that the Znuny Daemon is running in the system (\'bin/znuny.Daemon.pl status\').' =>
-            'Prüfen Sie nach 5 Minuten, ob der Znuny Daemon läuft (\'bin/znuny.Daemon.pl status\').',
+        'The BuzzDesk Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
+            'Der BuzzDesk Daemon ist ein Daemon-Prozess, welcher asynchrone Aufgaben übernimmt, z.B. das Auslösen von Ticket-Eskalationen oder das Versenden von E-Mails.',
+        'A running BuzzDesk Daemon is mandatory for correct system operation.' =>
+            'Ein laufender BuzzDesk Daemon ist für die korrekte Funktion des Systems erforderlich.',
+        'Starting the BuzzDesk Daemon' => 'Den BuzzDesk Daemon starten',
+        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the BuzzDesk Daemon is running and start it if needed.' =>
+            'Stellen Sie sicher, dass die Datei \'%s\' existiert (ohne die Endung .dist). Dieser Cronjob wird alle 5 Minuten prüfen, ob der BuzzDesk Daemon läuft, und ihn ggf. starten.',
+        'Execute \'%s start\' to make sure the cron jobs of the \'buzzdesk\' user are active.' =>
+            'Führen Sie \'%s start\' aus um sicherzustellen, dass die Cronjobs des \'buzzdesk\'-Nutzers aktiv sind.',
+        'After 5 minutes, check that the BuzzDesk Daemon is running in the system (\'bin/buzzdesk.Daemon.pl status\').' =>
+            'Prüfen Sie nach 5 Minuten, ob der BuzzDesk Daemon läuft (\'bin/buzzdesk.Daemon.pl status\').',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboard.tt
         'Dashboard' => 'Übersicht',
@@ -2599,7 +2596,7 @@ sub Data {
         'This setting can currently not be saved' => 'Diese Einstellung kann derzeit nicht gespeichert werden',
         'Save setting' => 'Einstellung speichern',
         'Save this setting' => 'Einstellung speichern',
-        'Did you know? You can help translating Znuny at %s.' => 'Haben Sie gewusst, dass Sie bei der Übersetzung von Znuny unter %s helfen können?',
+        'Did you know? You can help translating BuzzDesk at %s.' => 'Haben Sie gewusst, dass Sie bei der Übersetzung von BuzzDesk unter %s helfen können?',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentPreferencesOverview.tt
         'Choose from the groups on the left to find the settings you\'d wish to change.' =>
@@ -3138,8 +3135,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBStart.tt
         'Install Type' => 'Installationstyp',
-        'Create a new database for Znuny' => 'Neue Datenbank für Znuny erstellen',
-        'Use an existing database for Znuny' => 'Bestehende Datenbank für Znuny nutzen',
+        'Create a new database for BuzzDesk' => 'Neue Datenbank für BuzzDesk erstellen',
+        'Use an existing database for BuzzDesk' => 'Bestehende Datenbank für BuzzDesk nutzen',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBmssql.tt
         'If you have set a root password for your database, it must be entered here. If not, leave this field empty.' =>
@@ -3150,8 +3147,8 @@ sub Data {
         'Database check successful.' => 'Datenbankprüfung erfolgreich.',
         'Database User' => 'Datenbankbenutzer',
         'New' => 'Neu',
-        'A new database user with limited permissions will be created for this Znuny system.' =>
-            'Ein neuer Datenbank-Benutzer mit beschränkten Rechten wird für dieses Znuny-System erstellt.',
+        'A new database user with limited permissions will be created for this BuzzDesk system.' =>
+            'Ein neuer Datenbank-Benutzer mit beschränkten Rechten wird für dieses BuzzDesk-System erstellt.',
         'Repeat Password' => 'Passwort wiederholen',
         'Generated password' => 'Generiertes Passwort',
         'Database' => 'Datenbank',
@@ -3163,10 +3160,10 @@ sub Data {
         'SID' => 'SID',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerFinish.tt
-        'To be able to use Znuny you have to enter the following line in your command line (Terminal/Shell) as root.' =>
-            'Um Znuny nutzen zu können, müssen die die folgenden Zeilen als root in die Befehlszeile (Terminal/Shell) eingeben.',
+        'To be able to use BuzzDesk you have to enter the following line in your command line (Terminal/Shell) as root.' =>
+            'Um BuzzDesk nutzen zu können, müssen die die folgenden Zeilen als root in die Befehlszeile (Terminal/Shell) eingeben.',
         'Restart your webserver' => 'Starten Sie ihren Webserver neu',
-        'After doing so your Znuny is up and running.' => 'Danach ist Znuny startklar.',
+        'After doing so your BuzzDesk is up and running.' => 'Danach ist BuzzDesk startklar.',
         'Start page' => 'Startseite',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerLicense.tt
@@ -3209,8 +3206,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/MobileNotAvailableWidget.tt
         'Feature not Available' => 'Funktion nicht verfügbar',
-        'Sorry, but this feature of Znuny is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
-            'Entschuldigung, aber dieses Feature von Znuny ist derzeit nicht für Mobilgeräte verfügbar. Bitte wechseln sie in die Desktop-Ansicht oder nutzen sie ein normales Desktop-Gerät, wenn Sie diese Funktion verwenden möchten.',
+        'Sorry, but this feature of BuzzDesk is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
+            'Entschuldigung, aber dieses Feature von BuzzDesk ist derzeit nicht für Mobilgeräte verfügbar. Bitte wechseln sie in die Desktop-Ansicht oder nutzen sie ein normales Desktop-Gerät, wenn Sie diese Funktion verwenden möchten.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Motd.tt
         'Message of the Day' => 'Nachricht des Tages',
@@ -3249,10 +3246,10 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/PublicDefault.tt
         'Welcome' => 'Willkommen',
-        'This is the default public interface of Znuny! There was no action parameter given.' =>
-            'Dies ist die öffentliche Standard-Benutzerschnittstelle von Znuny. Es wurde kein Action-Parameter übergeben.',
+        'This is the default public interface of BuzzDesk! There was no action parameter given.' =>
+            'Dies ist die öffentliche Standard-Benutzerschnittstelle von BuzzDesk. Es wurde kein Action-Parameter übergeben.',
         'You could install a custom public module (via the package manager), for example the FAQ module, which has a public interface.' =>
-            'Sie könnten (mithilfe des Paketmanagers) ein eigenes Modul für den öffentlichen Bereich von Znuny installieren, beispielsweise das FAQ-Modul.',
+            'Sie könnten (mithilfe des Paketmanagers) ein eigenes Modul für den öffentlichen Bereich von BuzzDesk installieren, beispielsweise das FAQ-Modul.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/SmartTags/AdminAppointmentNotificationEvent.tt
         'To get the appointment attribute' => 'Die Termin-Attribute',
@@ -3436,7 +3433,7 @@ sub Data {
         'Navigation' => 'Navigation',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Test.tt
-        'Znuny Test Page' => 'Znuny Testseite',
+        'BuzzDesk Test Page' => 'BuzzDesk Testseite',
         'Unlock' => 'Entsperren',
         'Welcome %s %s' => '%s %s willkommen',
         'Counter' => 'Zähler',
@@ -3531,7 +3528,7 @@ sub Data {
         # Perl Module: Kernel/Modules/AdminACL.pm
         'ACL information from database is not in sync with the system configuration, please deploy all ACLs.' =>
             'Die ACL-Konfiguration ist laut Datenbank nicht synchron mit der Systemkonfiguration, bitte ACLs in Betrieb nehmen.',
-        'ACLs could not be Imported due to a unknown error, please check Znuny logs for more information' =>
+        'ACLs could not be Imported due to a unknown error, please check BuzzDesk logs for more information' =>
             'ACLs konnten aufgrund eines unbekannten Fehlers nicht importiert werden, bitte prüfen Sie das Systemprotokoll für mehr Information',
         'The following ACLs have been added successfully: %s' => 'Die folgenden ACLs wurden erfolgreich hinzugefügt: %s',
         'The following ACLs have been updated successfully: %s' => 'Die folgenden ACLs wurden erfolgreich aktualisiert: %s',
@@ -3888,12 +3885,12 @@ sub Data {
         'Could not load %s.' => '%s konnte nicht geladen werden.',
         'Could not read %s!' => 'Konnte %s nicht lesen!',
         'Need a file to import!' => 'Benötige eine zu importierende Datei!',
-        'The imported file has not valid YAML content! Please check Znuny log for details' =>
+        'The imported file has not valid YAML content! Please check BuzzDesk log for details' =>
             'Die importierte Datei enthält ungültigen YAML-Inhalt. Bitte prüfen Sie das Systemprotokoll für mehr Informationen',
         'Web service "%s" deleted!' => 'Webservice "%s" gelöscht!',
-        'Znuny as provider' => 'Znuny als Provider',
+        'BuzzDesk as provider' => 'BuzzDesk als Provider',
         'Operations' => 'Operationen',
-        'Znuny as requester' => 'Znuny als Requester',
+        'BuzzDesk as requester' => 'BuzzDesk als Requester',
         'Invokers' => 'Invoker',
 
         # Perl Module: Kernel/Modules/AdminGenericInterfaceWebserviceHistory.pm
@@ -3942,8 +3939,8 @@ sub Data {
         'Need param Key to download!' => 'Benötige Parameter "Key" zum herunterladen!',
 
         # Perl Module: Kernel/Modules/AdminPackageManager.pm
-        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/znuny.Console.pl to install packages!' =>
-            'Entschuldigung, Apache::Reload wird als Perl-Modul und PerlInitHandler in der Apache-Konfiguration benötigt (siehe auch scripts/apache2-httpd.include.conf). Alternativ können Sie Pakete auch mithilfe des Kommandozeilen-Tools bin/znuny.Console.pl installieren!',
+        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/buzzdesk.Console.pl to install packages!' =>
+            'Entschuldigung, Apache::Reload wird als Perl-Modul und PerlInitHandler in der Apache-Konfiguration benötigt (siehe auch scripts/apache2-httpd.include.conf). Alternativ können Sie Pakete auch mithilfe des Kommandozeilen-Tools bin/buzzdesk.Console.pl installieren!',
         'No such package!' => 'Kein solches Paket!',
         'No such file %s in package!' => 'Keine solche Datei %s im Paket!',
         'No such file %s in local file system!' => 'Datei %s existiert nicht im Dateisystem!',
@@ -4165,13 +4162,13 @@ sub Data {
         'You currently don\'t have any favourite settings.' => 'Sie haben derzeit keine Einstellungen als Favorit gespeichert.',
         'The following settings could not be found: %s' => 'Die folgenden Einstellungen wurden nicht gefunden: %s',
         'Import not allowed!' => 'Import nicht erlaubt!',
-        'System Configuration could not be imported due to an unknown error, please check Znuny logs for more information.' =>
+        'System Configuration could not be imported due to an unknown error, please check BuzzDesk logs for more information.' =>
             'Systemkonfiguration konnte nicht importiert werden, aufgrund eines unbekannten Fehlers. Bitte überprüfe Sie das Systemprotokoll für weitergehende Informationen.',
         'Category Search' => 'Kategoriesuche',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationDeployment.pm
         'Quick Deploy by' => 'Schnell-Inbetriebnahme durch',
-        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the Znuny log for more information.' =>
+        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the BuzzDesk log for more information.' =>
             'Einige importierte Einstellungen sind im derzeitigen Stand der Konfiguration entweder nicht vorhanden, oder sie konnten nicht aktualisiert werden. Bitte prüfen Sie das Systemprotokoll für weitere Informationen.',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationGroup.pm
@@ -4597,7 +4594,7 @@ sub Data {
         'Configure "Home" in Kernel/Config.pm first!' => 'Konfigurieren Sie zuerst "Home" in Kernel/Config.pm!',
         'File "%s/Kernel/Config.pm" not found!' => 'Datei "%s/Kernel/Config.pm" wurde nicht gefunden!',
         'Directory "%s" not found!' => 'Verzeichnis "%s" nicht gefunden!',
-        'Install Znuny' => 'Znuny installieren',
+        'Install BuzzDesk' => 'BuzzDesk installieren',
         'Intro' => 'Einführung',
         'Kernel/Config.pm isn\'t writable!' => 'Kernel/Config.pm ist nicht schreibbar!',
         'If you want to use the installer, set the Kernel/Config.pm writable for the webserver user!' =>
@@ -4614,7 +4611,7 @@ sub Data {
         'Unknown database type "%s".' => 'Unbekannter Datenbank-Typ "%s".',
         'Please go back.' => 'Bitte gehen Sie zurück.',
         'Create Database' => 'Datenbank erstellen',
-        'Install Znuny - Error' => 'Znuny-Installation - Fehler',
+        'Install BuzzDesk - Error' => 'BuzzDesk-Installation - Fehler',
         'File "%s/%s.xml" not found!' => 'Datei "%s/%s.xml" nicht gefunden!',
         'Contact your Admin!' => 'Kontaktieren Sie Ihren Administrator!',
         'System Settings' => 'System-Einstellungen',
@@ -4844,7 +4841,7 @@ sub Data {
             'Eine Systemwartung beginnt um: %s und endet voraussichtlich um: %s',
 
         # Perl Module: Kernel/Output/HTML/Notification/DaemonCheck.pm
-        'Znuny Daemon is not running.' => 'Der Znuny Daemon läuft nicht.',
+        'BuzzDesk Daemon is not running.' => 'Der BuzzDesk Daemon läuft nicht.',
 
         # Perl Module: Kernel/Output/HTML/Notification/OAuth2TokenManagementTokenExpired.pm
         'OAuth2 token for "%s" has expired.' => 'OAuth2-Token für "%s" ist abgelaufen.',
@@ -5223,8 +5220,8 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/InvalidDefaultValues.pm
         'Invalid Default Values' => 'Ungültige Standardwerte',
-        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/znuny.Console.pl Maint::Database::Check --repair' =>
-            'Tabellen mit ungültigen Standardwerten wurden gefunden. Um diese automatisch zu reparieren, bitte folgendes Kommando ausführen: bin/znuny.Console.pl Maint::Database::Check --repair',
+        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/buzzdesk.Console.pl Maint::Database::Check --repair' =>
+            'Tabellen mit ungültigen Standardwerten wurden gefunden. Um diese automatisch zu reparieren, bitte folgendes Kommando ausführen: bin/buzzdesk.Console.pl Maint::Database::Check --repair',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/MaxAllowedPacket.pm
         'Maximum Query Size' => 'Maximale Anfragegröße',
@@ -5269,15 +5266,15 @@ sub Data {
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/postgresql/Version.pm
         'PostgreSQL 9.2 or higher is required.' => 'PostgreSQL 9.2 oder höher wird benötigt.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionZnuny.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionBuzzDesk.pm
         'Operating System' => 'Betriebssystem',
-        'Znuny Disk Partition' => 'Znuny-Festplattenpartition',
+        'BuzzDesk Disk Partition' => 'BuzzDesk-Festplattenpartition',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpace.pm
         'Disk Usage' => 'Festplatten-Verwendung',
-        'The partition where Znuny is located is almost full.' => 'Die Partition, auf der Znuny sich befindet, ist fast voll.',
-        'The partition where Znuny is located has no disk space problems.' =>
-            'Die Partition, auf der Znuny sich befindet, hat keine Platzprobleme.',
+        'The partition where BuzzDesk is located is almost full.' => 'Die Partition, auf der BuzzDesk sich befindet, ist fast voll.',
+        'The partition where BuzzDesk is located has no disk space problems.' =>
+            'Die Partition, auf der BuzzDesk sich befindet, hat keine Platzprobleme.',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpacePartitions.pm
         'Disk Partitions Usage' => 'Belegung der Festplatten-Partitionen',
@@ -5322,8 +5319,8 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/MPMModel.pm
         'MPM model' => 'MPM-Modell',
-        'Znuny requires apache to be run with the \'prefork\' MPM model.' =>
-            'Znuny benötigt das Apache \'prefork\' MPM Modul.',
+        'BuzzDesk requires apache to be run with the \'prefork\' MPM model.' =>
+            'BuzzDesk benötigt das Apache \'prefork\' MPM Modul.',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/Performance.pm
         'CGI Accelerator Usage' => 'Verwendung CGI-Beschleuniger',
@@ -5353,37 +5350,37 @@ sub Data {
         'Webserver Version' => 'Webserver-Version',
         'Could not determine webserver version.' => 'Konnte Webserver-Version nicht ermitteln.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticleSearchIndexStatus.pm
-        'Znuny' => 'Znuny',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticleSearchIndexStatus.pm
+        'BuzzDesk' => 'BuzzDesk',
         'Article Search Index Status' => 'Ticket-Suchindex-Status',
         'Indexed Articles' => 'Indexierte Artikel',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticlesPerCommunicationChannel.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticlesPerCommunicationChannel.pm
         'Articles Per Communication Channel' => 'Artikel pro Kommunikationskanal',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLog.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLog.pm
         'Incoming communications' => 'Eingehende Kommunikation',
         'Outgoing communications' => 'Ausgehende Kommunikation',
         'Failed communications' => 'Fehlgeschlagene Kommunikation',
         'Average processing time of communications (s)' => 'Durchschnittliche Verarbeitungszeit für Kommunikation (s)',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLogAccountStatus.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLogAccountStatus.pm
         'Communication Log Account Status (last 24 hours)' => 'Kontostatus des Kommunikationsprotokoll (vergangene 24 Stunden)',
         'No connections found.' => 'Keine Verbindungen gefunden.',
         'ok' => 'OK',
         'permanent connection errors' => 'Dauerhafte Verbindungsfehler',
         'intermittent connection errors' => 'Unregelmäßige Verbindungsfehler',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ConfigSettings.pm
         'Config Settings' => 'Konfigurationseinstellungen',
         'Could not determine value.' => 'Konnte Wert nicht ermitteln.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DaemonRunning.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DaemonRunning.pm
         'Daemon' => 'Daemon',
         'Daemon is running.' => 'Daemon läuft.',
         'Daemon is not running.' => 'Daemon läuft nicht.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DatabaseRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DatabaseRecords.pm
         'Database Records' => 'Datenbankeinträge',
         'Ticket History Entries' => 'Ticket-Historieneinträge',
         'Articles' => 'Artikel',
@@ -5398,31 +5395,31 @@ sub Data {
         'Tickets Per Month (avg)' => 'Tickets pro Monat (Durchschnitt)',
         'Open Tickets' => 'Offene Tickets',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultSOAPUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultSOAPUser.pm
         'Default SOAP Username And Password' => 'Standard-Benutzername und -Passwort für SOAP',
         'Security risk: you use the default setting for SOAP::User and SOAP::Password. Please change it.' =>
             'Sicherheitsrisiko: Sie verwenden den Standard-SOAP-Benutzernamen und das Standardpasswort. Bitte ändern Sie diese Einstellungen.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultUser.pm
         'Default Admin Password' => 'Standard-Admin-Passwort',
         'Security risk: the agent account root@localhost still has the default password. Please change it or invalidate the account.' =>
             'Sicherheitsrisiko: Das Agentenpasswort für root@localhost ist das Standardpasswort. Bitte ändern Sie es oder deaktivieren Sie diesen Nutzer.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/EmailQueue.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/EmailQueue.pm
         'Email Sending Queue' => 'Queue für E-Mail-Versand',
         'Emails queued for sending' => 'E-Mails, die zum Senden eingereiht sind',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FQDN.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FQDN.pm
         'FQDN (domain name)' => 'FQDN (Domainname)',
         'Please configure your FQDN setting.' => 'Bitte konfigurieren Sie ihre FQDN-Einstellungen.',
         'Domain Name' => 'Domainname',
         'Your FQDN setting is invalid.' => 'Ihre FQDN-Einstellung ist ungültig.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FileSystemWritable.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FileSystemWritable.pm
         'File System Writable' => 'Dateisystem-Schreibbarkeit',
-        'The file system on your Znuny partition is not writable.' => 'Das Dateisystem auf Ihrer Znuny-Partition ist nicht schreibbar.',
+        'The file system on your BuzzDesk partition is not writable.' => 'Das Dateisystem auf Ihrer BuzzDesk-Partition ist nicht schreibbar.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/LegacyConfigBackups.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/LegacyConfigBackups.pm
         'Legacy Configuration Backups' => 'Alte Konfigurations-Backups',
         'No legacy configuration backup files found.' => 'Keine alten Konfigurations-Backup-Dateien gefunden.',
         'Legacy configuration backup files found in Kernel/Config/Backups folder, but they might still be required by some packages.' =>
@@ -5430,12 +5427,12 @@ sub Data {
         'Legacy configuration backup files are no longer needed for the installed packages, please remove them from Kernel/Config/Backups folder.' =>
             'Alte Konfigurations-Backup-Dateien werden nicht mehr für die installierten Pakete benötigt. Bitte entfernen Sie diese aus dem Verzeichnis Kernel/Config/Backups.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/MultipleJSFileLoad.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/MultipleJSFileLoad.pm
         'The following JavaScript files loaded multiple times:' => 'Die folgenden JavaScript-Dateien werden mehrfach geladen:',
         'Files' => 'Dateien',
         'Views with multiple loaded JavaScript files' => 'Ansichten mit mehrfach geladenen JavaScript Dateien',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageDeployment.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageDeployment.pm
         'Package Installation Status' => 'Paketinstallations-Status',
         'Some packages have locally modified files.' => 'Einige Pakete enthalten lokal angepasste Dateien.',
         'Some packages are not correctly installed.' => 'Es wurden Pakete gefunden, die nicht korrekt installiert sind.',
@@ -5443,75 +5440,75 @@ sub Data {
         'Some packages are not allowed for the current framework version.' =>
             'Einige Pakete sind für die aktuelle Framework-Version nicht geeignet.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageList.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageList.pm
         'Package List' => 'Paketliste',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SessionConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SessionConfigSettings.pm
         'Session Config Settings' => 'Sitzungskonfigurations-Einstellungen',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SpoolMails.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SpoolMails.pm
         'Spooled Emails' => 'Zum Senden anstehende E-Mails',
-        'There are emails in var/spool that Znuny could not process.' => 'In var/spool befinden sich Emails, die Znuny nicht verarbeiten konnte.',
+        'There are emails in var/spool that BuzzDesk could not process.' => 'In var/spool befinden sich Emails, die BuzzDesk nicht verarbeiten konnte.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SystemID.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SystemID.pm
         'Your SystemID setting is invalid, it should only contain digits.' =>
             'Ihre SystemID-Einstellung ist ungültig, sie sollte nur Ziffern enthalten.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/DefaultType.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/DefaultType.pm
         'Default Ticket Type' => 'Standard Ticket-Typ',
         'The configured default ticket type is invalid or missing. Please change the setting Ticket::Type::Default and select a valid ticket type.' =>
             'Der konfigurierte Standard Ticket-Typ fehlt oder ist ungültig. Bitte ändern Sie die Einstellung Ticket::Type::Default und wählen Sie einen gültigen Ticket-Typ.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/IndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/IndexModule.pm
         'Ticket Index Module' => 'Ticket-Indexmodul',
         'You have more than 60,000 tickets and should use the StaticDB backend. See admin manual (Performance Tuning) for more information.' =>
             'Sie haben mehr als 60.000 Tickets und sollten das StaticDB-Backend verwenden. Bitte schauen Sie im Administratorhandbuch (Leistungsverbesserung) nach.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/InvalidUsersWithLockedTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/InvalidUsersWithLockedTickets.pm
         'Invalid Users with Locked Tickets' => 'Ungültige Benutzer mit gesperrten Tickets',
         'There are invalid users with locked tickets.' => 'Es existierten ungültige Benutzer mit gesperrten Tickets.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/OpenTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/OpenTickets.pm
         'You should not have more than 8,000 open tickets in your system.' =>
             'Sie sollten nicht mehr als 8.000 offene Tickets im System haben.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/SearchIndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/SearchIndexModule.pm
         'Ticket Search Index Module' => 'Ticket-Suchindexmodul',
         'The indexing process forces the storage of the original article text in the article search index, without executing filters or applying stop word lists. This will increase the size of the search index and thus may slow down fulltext searches.' =>
             'Der Indizierungsprozess erzwingt die Speicherung der originalen Artikelinhalte im Artikel-Suchindex, ohne dabei Filter und Stopp-Worte anzuwenden. Dadurch wird die Größe des Suchindex erhöht, was Volltextsuchen verlangsamen kann.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/StaticDBOrphanedRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/StaticDBOrphanedRecords.pm
         'Orphaned Records In ticket_lock_index Table' => 'Verwaiste Einträge in der Tabelle ticket_lock_index',
-        'Table ticket_lock_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            'Die Tabelle ticket_lock_index enthält verwaiste Einträge. Bitte führen Sie bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" aus, um den StaticDB-Index zu bereinigen.',
+        'Table ticket_lock_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            'Die Tabelle ticket_lock_index enthält verwaiste Einträge. Bitte führen Sie bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" aus, um den StaticDB-Index zu bereinigen.',
         'Orphaned Records In ticket_index Table' => 'Verwaiste Einträge in der Tabelle ticket_index',
-        'Table ticket_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+        'Table ticket_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
             'Die Tabelle ticket_index enthält verwaiste Einträge. Bitte führen Sie "Maint::Ticket::QueueIndexCleanup" aus, um sie zu entfernen.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/TimeSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/TimeSettings.pm
         'Time Settings' => 'Zeiteinstellungen',
         'Server time zone' => 'Server-Zeitzone',
-        'Znuny time zone' => 'Znuny-Zeitzone',
-        'Znuny time zone is not set.' => 'Znuny-Zeitzone ist nicht gesetzt.',
+        'BuzzDesk time zone' => 'BuzzDesk-Zeitzone',
+        'BuzzDesk time zone is not set.' => 'BuzzDesk-Zeitzone ist nicht gesetzt.',
         'User default time zone' => 'Benutzer-Standard-Zeitzone',
         'User default time zone is not set.' => 'Benutzer-Standard-Zeitzone ist nicht gesetzt.',
         'Calendar time zone is not set.' => 'Kalender-Zeitzone ist nicht gesetzt.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentSkinUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentSkinUsage.pm
         'UI - Agent Skin Usage' => 'UI - Nutzung Agenten-Skins',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentThemeUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentThemeUsage.pm
         'UI - Agent Theme Usage' => 'UI - Nutzung Agenten-Themes',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/SpecialStats.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/SpecialStats.pm
         'UI - Special Statistics' => 'UI - Spezielle Statistiken',
         'Agents using custom main menu ordering' => 'Agenten mit eigener Hauptmenüsortierung',
         'Agents using favourites for the admin overview' => 'Agenten, die Favoriten für die Administrator-Übersicht nutzen',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Version.pm
-        'Znuny Version' => 'Znuny-Version',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Version.pm
+        'BuzzDesk Version' => 'BuzzDesk-Version',
 
-        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/Znuny/ConcurrentUsers.pm
+        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/BuzzDesk/ConcurrentUsers.pm
         'Concurrent Users Details' => 'Details der gleichzeitigen Benutzer',
         'Concurrent Users' => 'Gleichzeitige Benutzer',
 
@@ -5538,11 +5535,11 @@ sub Data {
         'Disabled' => 'Deaktiviert',
 
         # Perl Module: Kernel/System/SysConfig/ValueType/Date.pm
-        'System was not able to calculate user Date in OTRSTimeZone!' => 'Das Datum des Benutzers konnte in der Znuny-Zeitzone nicht berechnet werden!',
+        'System was not able to calculate user Date in OTRSTimeZone!' => 'Das Datum des Benutzers konnte in der BuzzDesk-Zeitzone nicht berechnet werden!',
 
         # Perl Module: Kernel/System/SysConfig/ValueType/DateTime.pm
         'System was not able to calculate user DateTime in OTRSTimeZone!' =>
-            'Das Datum und die Uhrzeit des Benutzers konnte in der Znuny-Zeitzone nicht berechnet werden!',
+            'Das Datum und die Uhrzeit des Benutzers konnte in der BuzzDesk-Zeitzone nicht berechnet werden!',
 
         # Perl Module: Kernel/System/SysConfig/ValueType/FrontendNavigation.pm
         'Value is not correct! Please, consider updating this module.' =>
@@ -5617,8 +5614,8 @@ sub Data {
             'Definieren Sie Actions, in denen im Verknüpfte-Objekte-Widget ein Einstellungen-Knopf verfügbar sein soll (LinkObject::ViewMode = "complex"). Bitte beachten Sie, dass für diese Actions die folgenden JS- und CSS-Dateien registriert sein müssen: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js.',
         'Define which columns are shown in the linked appointment widget (LinkObject::ViewMode = "complex"). Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.' =>
             'Legt fest welche Spalten im Terminverknüpfungs-Widget angezeigt werden (LinkObject::ViewMode = "complex"). Mögliche Einstellungen: 0 = Deaktiviert, 1 = Verfügbar, 2 = Standardmäßig aktiviert.',
-        'Znuny doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
-            'Znuny unterstützt keine wiederholenden Termine ohne Enddatum oder Anzahl der Durchläufe. Während des Importierungsprozesses kann es vorkommen, dass die entsprechende ICS-Datei solche Termin enthält. Stattdessen wird das System alle vergangenen Termine erstellen, sowie zusätzlich Termine für die kommenden n Monate (120 Monate / 10 Jahre standardmäßig).',
+        'BuzzDesk doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
+            'BuzzDesk unterstützt keine wiederholenden Termine ohne Enddatum oder Anzahl der Durchläufe. Während des Importierungsprozesses kann es vorkommen, dass die entsprechende ICS-Datei solche Termin enthält. Stattdessen wird das System alle vergangenen Termine erstellen, sowie zusätzlich Termine für die kommenden n Monate (120 Monate / 10 Jahre standardmäßig).',
         'Defines the ticket appointment type backend for ticket escalation time.' =>
             'Beschreibt den Ticket-Termin-Backend Typ für Ticketeskalationen.',
         'Defines the ticket appointment type backend for ticket pending time.' =>
@@ -5655,14 +5652,14 @@ sub Data {
             'Stößt das Hinzufügen oder Aktualisieren von automatischen Terminen an, basierend auf Ticketzeiten.',
 
         # XML Definition: Kernel/Config/Files/XML/Daemon.xml
-        'Defines the module to display a notification in the agent interface if the Znuny Daemon is not running.' =>
-            'Definiert das Modul, dass eine Benachrichtigung im Agentenbereich anzeigt, wenn der Znuny Daemon nicht läuft.',
+        'Defines the module to display a notification in the agent interface if the BuzzDesk Daemon is not running.' =>
+            'Definiert das Modul, dass eine Benachrichtigung im Agentenbereich anzeigt, wenn der BuzzDesk Daemon nicht läuft.',
         'List of CSS files to always be loaded for the agent interface.' =>
             'Liste der CSS-Dateien, die immer im Agenten-Interface geladen werden sollen.',
         'List of JS files to always be loaded for the agent interface.' =>
             'Liste der JavaScript-Dateien, die immer im Agenten-Interface geladen werden sollen.',
-        'Type of daemon log rotation to use: Choose \'Znuny\' to let Znuny system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
-            'Art der Logrotation, die vom Daemon genutzt werden soll. Wählen Sie "Znuny", um das System die Rotation verwalten zu lassen oder "extern", um eine Drittapplikation dafür zu nutzen (z. B. logrotate). Hinweis: externe Mechanismen erfordern weiterhin eine eigene Konfiguration.',
+        'Type of daemon log rotation to use: Choose \'BuzzDesk\' to let BuzzDesk system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
+            'Art der Logrotation, die vom Daemon genutzt werden soll. Wählen Sie "BuzzDesk", um das System die Rotation verwalten zu lassen oder "extern", um eine Drittapplikation dafür zu nutzen (z. B. logrotate). Hinweis: externe Mechanismen erfordern weiterhin eine eigene Konfiguration.',
         'If enabled the daemon will use this directory to create its PID files. Note: Please stop the daemon before any change and use this setting only if &lt;$OTRSHome&gt;/var/run/ can not be used.' =>
             'Wenn diese Option aktiviert ist, verwendet der Daemon dieses Verzeichnis, um seine PID-Dateien zu erstellen. Hinweis: Bitte stoppen Sie den Daemon vor jeder Änderung und verwenden Sie diese Einstellung nur, wenn <$OTRS_HOME>/var/run/ nicht verwendet werden kann.',
         'Defines the number of days to keep the daemon log files.' => 'Definiert die Aufbewahrungszeit für die Daemon Log-Dateien in Tagen.',
@@ -5723,8 +5720,8 @@ sub Data {
         'Remove closed tickets from agents\' ticket watch lists.' => 'Geschlossene Tickets von den Beobachtungslisten der Agenten entfernen.',
 
         # XML Definition: Kernel/Config/Files/XML/Framework.xml
-        'Disables the web installer (http://yourhost.example.com/znuny/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
-            'Deaktiviert den Web-Installer (http://yourhost.example.com/znuny/installer.pl), um unerwünschte Zugriffe auf das System zu verhindern. Wenn auf "Nein" gesetzt, kann das System neu installiert werden und die aktuelle Basiskonfiguration wird genutzt, um die Fragen des Installationsscripts vorauszufüllen. Wenn nicht aktiv, werden ebenso GenericAgent, die Paketverwaltung und die SQL-Box deaktiviert.',
+        'Disables the web installer (http://yourhost.example.com/buzzdesk/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
+            'Deaktiviert den Web-Installer (http://yourhost.example.com/buzzdesk/installer.pl), um unerwünschte Zugriffe auf das System zu verhindern. Wenn auf "Nein" gesetzt, kann das System neu installiert werden und die aktuelle Basiskonfiguration wird genutzt, um die Fragen des Installationsscripts vorauszufüllen. Wenn nicht aktiv, werden ebenso GenericAgent, die Paketverwaltung und die SQL-Box deaktiviert.',
         'Enables or disables the debug mode over frontend interface.' => 'Aktiviert oder deaktiviert den Debug-Modus für das Frontend.',
         'Delivers extended debugging information in the frontend in case any AJAX errors occur, if enabled.' =>
             'Liefert erweiterte Debugging-Informationen im Frontend im Fall, dass AJAX-Fehler auftreten, wenn aktiviert.',
@@ -5736,16 +5733,16 @@ sub Data {
             'Kontrolliert, ob es dem Admin erlaubt ist, eine gespeicherte Systemkonfiguration in SysConfig zu importieren.',
         'Defines the name of the application, shown in the web interface, tabs and title bar of the web browser.' =>
             'Definiert den Namen der Anwendung, die in der Weboberfläche, in Tabs und in der Titelleiste des Webbrowser angezeigt wird.',
-        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of Znuny).' =>
-            'Definiert die System ID. Jede Ticketnummer und HTTP Sitzung enthält diese ID. Das stellt sicher, dass nur Tickets in das Ticketsystem aufgenommen werden, welche zum eigenen Ticketsystem gehören (nützlich, wenn zwischen zwei Instanzen von Znuny kommuniziert wird).',
+        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of BuzzDesk).' =>
+            'Definiert die System ID. Jede Ticketnummer und HTTP Sitzung enthält diese ID. Das stellt sicher, dass nur Tickets in das Ticketsystem aufgenommen werden, welche zum eigenen Ticketsystem gehören (nützlich, wenn zwischen zwei Instanzen von BuzzDesk kommuniziert wird).',
         'Defines the fully qualified domain name of the system. This setting is used as a variable, OTRS_CONFIG_FQDN which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
-            'Definiert den Full Qualified Domain Name des Znuny Systems. Diese Einstellung wird als Variable OTRS_CONFIG_FQDN genutzt, welche in allen Nachrichten-Formularen zu finden ist oder um Links zu Tickets in Ihrem Znuny System zu generieren.',
+            'Definiert den Full Qualified Domain Name des BuzzDesk Systems. Diese Einstellung wird als Variable OTRS_CONFIG_FQDN genutzt, welche in allen Nachrichten-Formularen zu finden ist oder um Links zu Tickets in Ihrem BuzzDesk System zu generieren.',
         'Defines the fully qualified domain name for external IDs generation (i.e. Message-ID, ContentID).' =>
             'Definiert den voll qualifizierten Domänennamen für die Generierung externer IDs (z. B. Message-ID, ContentID).',
-        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
-            'Legt den HTTP-Hostnamen fest, der für die Sammlung von Supportdaten über das freie Modul \'PublicSupportDataCollector\' genutzt wird (z. B. durch den Znuny-Daemon).',
-        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
-            'Legt den Timeout in Sekunden für die Sammlung von Supportdaten des öffentlichen Moduls \'PublicSupportDataCollector\' fest, das z. B. vom Znuny Daemon genutzt wird (min. 20 Sekunden).',
+        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
+            'Legt den HTTP-Hostnamen fest, der für die Sammlung von Supportdaten über das freie Modul \'PublicSupportDataCollector\' genutzt wird (z. B. durch den BuzzDesk-Daemon).',
+        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
+            'Legt den Timeout in Sekunden für die Sammlung von Supportdaten des öffentlichen Moduls \'PublicSupportDataCollector\' fest, das z. B. vom BuzzDesk Daemon genutzt wird (min. 20 Sekunden).',
         'When support data is collected via SupportDataCollector, certain SysConfig values marked with ValueType="Password" are automatically masked. This prevents passwords from appearing in plain text in the support data. This setting defines the settings that contain complex configuration hashes that should not be masked when generating the support data.' =>
             'Wenn Support-Daten über den SupportDataCollector gesammelt werden, werden bestimmte SysConfig-Werte, die mit ValueType="Password" gekennzeichnet sind, automatisch maskiert. Dadurch wird verhindert, dass Passwörter im Klartext in den Support-Daten erscheinen. Diese Einstellung definiert die Einstellungen, die komplexe Konfigurations-Hashes enthalten, die bei der Generierung der Support-Daten nicht maskiert werden sollten.',
         'Defines the type of protocol, used by the web server, to serve the application. If https protocol will be used instead of plain http, it must be specified here. Since this has no affect on the web server\'s settings or behavior, it will not change the method of access to the application and, if it is wrong, it will not prevent you from logging into the application. This setting is only used as a variable, OTRS_CONFIG_HttpType which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
@@ -5764,8 +5761,8 @@ sub Data {
             'Definiert alle Sprachen, die der Applikation zur Verfügung stehen. Geben Sie nur Englische Sprachnamen an.',
         'Defines all the languages that are available to the application. Specify only native names of languages here.' =>
             'Definiert alle Sprachen, die der Applikation zur Verfügung stehen. Geben Sie nur die einheimischen Sprachnamen an.',
-        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.znuny.org/developer/general_information/themes.html.' =>
-            'Definiert das Standard (HTML)-Theme für das Frontend, das von Agenten und Kunden genutzt wird. Wenn Sie möchten, können Sie Ihr eigenes Theme hinzufügen. Schauen Sie dazu bitte im Administration-Handbuch auf https://doc.znuny.org/developer/general_information/themes.html.',
+        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.buzzdesk.org/developer/general_information/themes.html.' =>
+            'Definiert das Standard (HTML)-Theme für das Frontend, das von Agenten und Kunden genutzt wird. Wenn Sie möchten, können Sie Ihr eigenes Theme hinzufügen. Schauen Sie dazu bitte im Administration-Handbuch auf https://doc.buzzdesk.org/developer/general_information/themes.html.',
         'It is possible to configure different themes, for example to distinguish between agents and customers, to be used on a per-domain basis within the application. Using a regular expression (regex), you can configure a Key/Content pair to match a domain. The value in "Key" should match the domain, and the value in "Content" should be a valid theme on your system. Please see the example entries for the proper form of the regex.' =>
             'Es ist möglich, verschiedene Themes zu konfigurieren, zum Beispiel um zwischen verschiedenen Agenten und Kunden auf Basis der jeweiligen Domain zu unterscheiden. Sie können durch Nutzung von regulären Ausdrücken mithilfe von Schlüssel-/Wert-Paaren auf Domains prüfen. Der Inhalt von "Schlüssel" sollte die Prüfung auf die Domain beinhalten, der Inhalt von "Wert" den Namen des zu selektierenden Themes für diese Domain. Bitte beachten Sie die Einträge mit Beispielen für korrekte reguläre Ausdrücke.',
         'The headline shown in the customer interface.' => 'Die in der Kundenoberfläche angezeigte Überschrift.',
@@ -5827,8 +5824,8 @@ sub Data {
             'Definiert den Inhalt, der für die Verwendung im Rich-Text-Editor nicht erlaubt ist.',
         'Global settings for all popup profiles.' => 'Globale Einstellungen für alle Popup-Profile.',
         'Disable autocomplete in the login screen.' => 'Deaktiviert die Autovervollständigung im Anmeldebildschirm.',
-        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow Znuny to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
-            'Wenn der HTTP-Header "X-Frame-Options: SAMEORIGIN" ausgeschaltet ist, kann Znuny als IFrame in andere Websites integriert werden. Dies stellt eine Sicherheitslücke dar! Daher sollte diese Einstellung nur deaktivieren werden, wenn Sie sich über die Konsequenzen im Klaren sind!',
+        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow BuzzDesk to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
+            'Wenn der HTTP-Header "X-Frame-Options: SAMEORIGIN" ausgeschaltet ist, kann BuzzDesk als IFrame in andere Websites integriert werden. Dies stellt eine Sicherheitslücke dar! Daher sollte diese Einstellung nur deaktivieren werden, wenn Sie sich über die Konsequenzen im Klaren sind!',
         'Disable HTTP header "Content-Security-Policy" to allow loading of external script contents. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
             'Wenn HTTP-Header "Content-Security-Policy" ausgeschaltet ist, können externe Scripts geladen werden. Dies stellt eine Sicherheitslücke dar! Daher sollte diese Einstellung nur deaktivieren werden, wenn Sie sich über die Konsequenzen im Klaren sind!',
         'Automated line break in text messages after x number of chars.' =>
@@ -5874,8 +5871,8 @@ sub Data {
             'Wenn "SysLog" als LogModule konfiguriert wurde, kann hier der Zeichensatz, der für das Logging verwendet werden soll, festgelegt werden.',
         'If "file" was selected for LogModule, a logfile must be specified. If the file doesn\'t exist, it will be created by the system.' =>
             'Wenn "Datei" als LogModule konfiguriert wurde, muss hier eine Log-Datei hinterlegt werden. Existiert die Datei nicht, wird sie automatisch vom System erstellt.',
-        'Adds a suffix with the actual year and month to the Znuny log file. A logfile for every month will be created.' =>
-            'Fügt einen Suffix mit dem aktuellen Jahr und Monat in die Znuny-Protokolldatei hinzu. Für jeden Monat wird eine eigene Log-Datei erstellt.',
+        'Adds a suffix with the actual year and month to the BuzzDesk log file. A logfile for every month will be created.' =>
+            'Fügt einen Suffix mit dem aktuellen Jahr und Monat in die BuzzDesk-Protokolldatei hinzu. Für jeden Monat wird eine eigene Log-Datei erstellt.',
         'Set the minimum log level. If you select \'error\', just errors are logged. With \'debug\' you get all logging messages. The order of log levels is: \'debug\', \'info\', \'notice\' and \'error\'.' =>
             'Legt die minimale Protokoll-Ebene fest. Wählen Sie "error" aus, werden nur Fehler protokolliert. Mit "debug" erhalten Sie alle Einträge. Die Reihenfolge der Ebenen ist debug, info, notice und error.',
         'Defines the module to send emails. "DoNotSendEmail" doesn\'t send emails at all. Any of the "SMTP" mechanisms use a specified (external) mailserver. "Sendmail" directly uses the sendmail binary of your operating system. "Test" doesn\'t send emails, but writes them to $OTRS_HOME/var/tmp/CacheFileStorable/EmailTest/ for testing purposes.' =>
@@ -5944,8 +5941,8 @@ sub Data {
             'Legt das Modul fest, das eine generische Benachrichtigung im Agenten-Bereich anzeigt. Entweder wird "Text" (wenn konfiguriert), oder der Inhalt von "Datei" angezeigt.',
         'Defines the module used to store the session data. With "DB" the frontend server can be splitted from the db server. "FS" is faster.' =>
             'Definiert, welches Modul für das Speichern der Sitzungsdaten verwendet werden soll. Mit "DB" kann der Anzeige Server getrennt vom DB-Server betrieben werden. "FS" ist schneller.',
-        'Defines the name of the session key. E.g. Session, SessionID or Znuny.' =>
-            'Definiert den Namen des Session-Schlüssels. Zum Beispiel: Session, SessionID oder Znuny.',
+        'Defines the name of the session key. E.g. Session, SessionID or BuzzDesk.' =>
+            'Definiert den Namen des Session-Schlüssels. Zum Beispiel: Session, SessionID oder BuzzDesk.',
         'Defines the name of the key for customer sessions.' => 'Definiert den Namen des Schlüssels für die Kunden-Sessions.',
         'Turns on the remote ip address check. It should not be enabled if the application is used, for example, via a proxy farm or a dialup connection, because the remote ip address is mostly different for the requests.' =>
             'Schaltet den Remote-IP-Adressencheck ein. Es sollte ausgeschaltet werden, wenn die Applikation z. B. durch eine Proxy-Farm oder eine Einwahlverbindung genutzt wird, da sich die IP-Adresse bei dieser Nutzung pro Anfrage unterscheiden kann.',
@@ -5978,10 +5975,10 @@ sub Data {
         'Defines the period of time (in minutes) before customer is marked as "away" due to inactivity (e.g. in the "Logged-In Users" widget or for the chat).' =>
             'Legt den Zeitraum in Minuten fest, bevor ein Kunde aufgrund von Inaktivität als "abwesend" markiert wird (z. B. im "Angemeldete Nutzer"-Dashlet oder im Chat).',
         'This setting is deprecated. Set OTRSTimeZone instead.' => 'Diese Einstellung ist veraltet. Bitte nutzen Sie stattdessen die Einstellung OTRSTimeZone.',
-        'Sets the time zone being used internally by Znuny to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
-            'Legt die Zeitzone fest, die intern von Znuny genutzt werden soll (z. B. um Datumsangaben und Zeiten in der Datenbank zu speichern). ACHTUNG: Diese Einstellung darf nicht mehr geändert werden, sobald Tickets und/oder andere Objekte erstellt wurden, die Datumsangaben enthalten.',
-        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the Znuny time zone and the user\'s time zone.' =>
-            'Legt die Zeitzone fest, die als Voreinstellung für neu angelegte Nutzer gelten soll. Diese Zeitzone wird dazu verwendet, um Datumsangaben und Uhrzeiten zwischen der Znuny-Zeitzone und der Nutzer-Zeitzone korrekt zu konvertieren.',
+        'Sets the time zone being used internally by BuzzDesk to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
+            'Legt die Zeitzone fest, die intern von BuzzDesk genutzt werden soll (z. B. um Datumsangaben und Zeiten in der Datenbank zu speichern). ACHTUNG: Diese Einstellung darf nicht mehr geändert werden, sobald Tickets und/oder andere Objekte erstellt wurden, die Datumsangaben enthalten.',
+        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the BuzzDesk time zone and the user\'s time zone.' =>
+            'Legt die Zeitzone fest, die als Voreinstellung für neu angelegte Nutzer gelten soll. Diese Zeitzone wird dazu verwendet, um Datumsangaben und Uhrzeiten zwischen der BuzzDesk-Zeitzone und der Nutzer-Zeitzone korrekt zu konvertieren.',
         'If enabled, users that haven\'t selected a time zone yet will be notified to do so. Note: Notification will not be shown if (1) user has not yet selected a time zone and (2) OTRSTimeZone and UserDefaultTimeZone do match and (3) are not set to UTC.' =>
             'Wenn aktiviert, werden Benutzer, die bislang noch keine Zeitzone ausgewählt haben, benachrichtigt dies zu tun. Hinweis: Die Benachrichtigung wird nicht angezeigt, wenn (1) der Benutzer noch keine Zeitzone ausgewählt hat und (2) OTRSTimeZone und UserDefaultTimeZone identisch sind und (3) nicht auf UTC gesetzt sind.',
         'Maximum Number of a calendar shown in a dropdown.' => 'Maximale Anzahl an Kalendern, die in Auswahlmenüs angezeigt werden.',
@@ -5999,8 +5996,8 @@ sub Data {
         'Adds the one time vacation days for the indicated calendar.' => 'Fügt die einmaligen Urlaubstage für den angegebenen Kalender hinzu.',
         'Defines the hours and week days of the indicated calendar, to count the working time.' =>
             'Definiert die Stunden und Wochentage des angegebenen Kalenders um die Arbeitszeit zu messen.',
-        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your Znuny instance to stop working (probably any mask which takes input from the user).' =>
-            'Definiert die maximale Größe (in Bytes) für das Hochladen von Dateien mit dem Browser. Achtung: Wenn man die Größe zu klein wählt können viele Eingabemasken in ihrer Znuny-Instanz nicht mehr funktionieren (vermutlich jede Maske die Benutzereingaben erwartet).',
+        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your BuzzDesk instance to stop working (probably any mask which takes input from the user).' =>
+            'Definiert die maximale Größe (in Bytes) für das Hochladen von Dateien mit dem Browser. Achtung: Wenn man die Größe zu klein wählt können viele Eingabemasken in ihrer BuzzDesk-Instanz nicht mehr funktionieren (vermutlich jede Maske die Benutzereingaben erwartet).',
         'Selects the module to handle uploads via the web interface. "DB" stores all uploads in the database, "FS" uses the file system.' =>
             'Auswahl wie Uploads über die Web-Oberfläche gehandhabt werden sollen. "DB" speichert alle Uploads in der Datenbank, "FS" nutzt das Dateisystem.',
         'Specifies the text that should appear in the log file to denote a CGI script entry.' =>
@@ -6067,8 +6064,8 @@ sub Data {
             'Definiert den Pfad und die TTF Datei für die Handhabung von kursiv gedruckter nichtproportionaler (monospace) Schrift in PDF Dokumenten.',
         'Defines the path and TTF-File to handle bold italic monospaced font in PDF documents.' =>
             'Definiert den Pfad und die TTF Datei für die Handhabung von fett und kursiv gedruckter nichtproportionaler Schrift in PDF Dokumenten.',
-        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the Znuny user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
-            'Aktiviert PGP-Support. Wenn PGP-Support für das signieren und verschlüsseln von Mails eingeschaltet ist, wird dringend empfohlen, den Webserver unter dem Znuny-Benutzer zu betreiben. Andernfalls werden Probleme mit den Berechtigungen auftreten, wenn auf das .gnupg-Verzeichnis zugegriffen wird.',
+        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the BuzzDesk user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
+            'Aktiviert PGP-Support. Wenn PGP-Support für das signieren und verschlüsseln von Mails eingeschaltet ist, wird dringend empfohlen, den Webserver unter dem BuzzDesk-Benutzer zu betreiben. Andernfalls werden Probleme mit den Berechtigungen auftreten, wenn auf das .gnupg-Verzeichnis zugegriffen wird.',
         'Defines the path to PGP binary.' => 'Bestimmt den Pfad zur PGP-Binärdatei.',
         'Sets the options for PGP binary.' => 'Legt die Optionen für die PGP-Binärdatei fest.',
         'Sets the preferred digest to be used for PGP binary.' => 'Legt den bevorzugten Digest für die PGP-Binärdatei fest.',
@@ -6086,10 +6083,10 @@ sub Data {
             'Legt das Verzeichnis fest, in welchem die privaten SSL Zertifikate gespeichert sind.',
         'Cache time in seconds for the SSL certificate attributes.' => 'Cache-Zeit in Sekunden für SSL-Zertifikatsattribute.',
         'Enables fetch S/MIME from CustomerUser backend support.' => 'Schaltet S/MIME-Unterstützung für das Anfragen von Kundenbenutzer-Backends ein.',
-        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com).' =>
-            'Legt den Namen fest, der beim Versenden von Benachrichtigungen durch die Applikation verwendet werden soll. Der Absendername wird genutzt, um den vollständigen Anzeigenamen des Benachrichtigungs-Masters zu bilden (z. B. "Znuny Notifications znuny@your.example.com).',
-        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
-            'Legt die E-Mail-Adresse fest, die zum Versenden von E-Mails durch die Applikation verwendet werden soll. Die Adresse wird genutzt, um den vollständigen Anzeigenamen des Benachrichtigungs-Masters zu bilden (z. B. "Znuny Notifications znuny@your.example.com). Sie können die OTRS_CONFIG_FQDN-Variable nutzen, die Sie in der Konfiguration festgelegt haben, oder eine andere E-Mail-Adresse wählen.',
+        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com).' =>
+            'Legt den Namen fest, der beim Versenden von Benachrichtigungen durch die Applikation verwendet werden soll. Der Absendername wird genutzt, um den vollständigen Anzeigenamen des Benachrichtigungs-Masters zu bilden (z. B. "BuzzDesk Notifications buzzdesk@your.example.com).',
+        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
+            'Legt die E-Mail-Adresse fest, die zum Versenden von E-Mails durch die Applikation verwendet werden soll. Die Adresse wird genutzt, um den vollständigen Anzeigenamen des Benachrichtigungs-Masters zu bilden (z. B. "BuzzDesk Notifications buzzdesk@your.example.com). Sie können die OTRS_CONFIG_FQDN-Variable nutzen, die Sie in der Konfiguration festgelegt haben, oder eine andere E-Mail-Adresse wählen.',
         'Defines the validity period in seconds for password reset tokens. After this time the token expires and a new reset request is required. Default: 3600 (1 hour).' =>
             'Legt die Gültigkeitsdauer in Sekunden für Passwort-Zurücksetzungs-Token fest. Nach Ablauf dieser Zeit verfällt das Token und eine neue Anfrage ist erforderlich. Standard: 3600 (1 Stunde).',
         'Maximum number of password reset requests allowed per IP address or username within the rate limit window. Set to 0 to disable rate limiting. Default: 5.' =>
@@ -6216,8 +6213,8 @@ sub Data {
             'Wenn "LDAP" als Customer::AuthModule ausgewählt ist, muss das BaseDN hier angegeben werden.',
         'If "LDAP" was selected for Customer::AuthModule, the user identifier must be specified.' =>
             'Wenn "LDAP" als Customer::AuthModule ausgewählt ist, muss der User-Identifier hier angegeben werden.',
-        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use Znuny. Specify the group, who may access the system.' =>
-            'Wenn "LDAP" als Customer::AuthModule ausgewählt ist, können Sie prüfen, ob der Benutzer aufgrund seiner Mitgliedschaft in einer posixGroup Authentifizierungsberechtigt (z.B. wenn ein Nutzer Mitglied der Gruppe xyz sein muss, um Znuny nutzen zu dürfen). Legen Sie diese Gruppe hier fest.',
+        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use BuzzDesk. Specify the group, who may access the system.' =>
+            'Wenn "LDAP" als Customer::AuthModule ausgewählt ist, können Sie prüfen, ob der Benutzer aufgrund seiner Mitgliedschaft in einer posixGroup Authentifizierungsberechtigt (z.B. wenn ein Nutzer Mitglied der Gruppe xyz sein muss, um BuzzDesk nutzen zu dürfen). Legen Sie diese Gruppe hier fest.',
         'If "LDAP" was selected for Customer::AuthModule, you can specify access attributes here.' =>
             'Wenn "LDAP" als Customer::AuthModule ausgewählt ist, können hier Zugangs-Attribute bestimmt werden.',
         'If "LDAP" was selected for Customer::AuthModule, user attributes can be specified. For LDAP posixGroups use UID, for non LDAP posixGroups use full user DN.' =>
@@ -6271,8 +6268,8 @@ sub Data {
         'Activates the available themes on the system. Value 1 means active, 0 means inactive.' =>
             'Aktiviert die verfügbaren Skins auf dem System. Wert 1 bedeutet aktiv, 0 bedeutet inaktiv.',
         'Defines the default value for the action parameter.' => 'Legt den Standardwert für den Aktionsparameter fest.',
-        'Defines the shown links in the footer area of the customer and public interface of this Znuny system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
-            'Definiert die angezeigten Verknüpfungen im Fußbereich des Öffentlichen- und Kunden-Interface dieses Znuny Systems. Der Wert in "Schlüssel" ist die externe URL, der Wert in "Inhalt" das angezeigte Label.',
+        'Defines the shown links in the footer area of the customer and public interface of this BuzzDesk system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
+            'Definiert die angezeigten Verknüpfungen im Fußbereich des Öffentlichen- und Kunden-Interface dieses BuzzDesk Systems. Der Wert in "Schlüssel" ist die externe URL, der Wert in "Inhalt" das angezeigte Label.',
         'Defines the default value for the action parameter for the public frontend. The action parameter is used in the scripts of the system.' =>
             'Definiert den Standard-Wert für den Action-Paramenter im Public-Frontend. Der Action-Paramter wird in System-Skripten vewendet.',
         'Sets the stats hook.' => 'Steuert den Hook für Statistiken.',
@@ -6300,8 +6297,8 @@ sub Data {
             'Zeigt alle Kundenbenutzer-Identifikatoren in einem Mehrfachauswahlfeld (nicht sinnvoll, wenn Sie sehr viele Identifikatoren haben).',
         'Defines the default maximum number of X-axis attributes for the time scale.' =>
             'Definiert die standardmäßig eingestellte maximale Anzahl von Attributen für die x-Achse für die Zeitachse.',
-        'Znuny can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
-            'Znuny kann eine oder mehrere Spiegeldatenbanken für aufwändige Operationen wie Volltextsuchen oder Statistikgenerierungen nutzen. Hier können Sie die DSN für die erste Spiegeldatenbank hinterlegen.',
+        'BuzzDesk can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
+            'BuzzDesk kann eine oder mehrere Spiegeldatenbanken für aufwändige Operationen wie Volltextsuchen oder Statistikgenerierungen nutzen. Hier können Sie die DSN für die erste Spiegeldatenbank hinterlegen.',
         'Specify the username to authenticate for the first mirror database.' =>
             'Geben Sie den Benutzernamen für die Authentifikation mit der ersten Spiegeldatenbank an.',
         'Specify the password to authenticate for the first mirror database.' =>
@@ -6318,24 +6315,24 @@ sub Data {
             'Startet eine Wildcard-Suche innerhalb des aktiven Objekts, nachdem der Verknüpfungs-Bildschirm geöffnet wurde.',
         'Defines a filter to process the text in the articles, in order to highlight predefined keywords.' =>
             'Definiert einen Filter, um den Text in den Artikel zu verarbeiten, um vordefinierte Schlüsselwörter zu markieren.',
-        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Definiert einen Filter für die HTML-Ausgabe um Links hinter CVE-Nummern hinzufügen. Das Element Bild erlaubt zwei Eingabearten. Zum einem den Namen eines Bildes (Beispielsweise faq.png). In diesem Fall wird der Znuny-Bildpfad verwendet. Die zweite Möglichkeit ist, den Link zu dem Bild einzufügen.',
-        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Definiert einen Filter für die HTML-Ausgabe um Links hinter Bugtraq-Nummern hinzufügen. Das Element Bild erlaubt zwei Eingabearten. Zum einem den Namen eines Bildes (Beispielsweise faq.png). In diesem Fall wird der Znuny-Bildpfad verwendet. Die zweite Möglichkeit ist, den Link zu dem Bild einzufügen.',
-        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Definiert einen Filter für die HTML-Ausgabe um Links hinter einer MSBulletin-Nummer hinzufügen. Das Element Bild erlaubt zwei Eingabearten. Zum einem den Namen eines Bildes (Beispielsweise faq.png). In diesem Fall wird der Znuny-Bildpfad verwendet. Die zweite Möglichkeit ist, den Link zu dem Bild einzufügen.',
-        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Definiert einen Filter für die HTML-Ausgabe um Links hinter einer bestimmten Zeichenfolge hinzufügen. Dieses Element erlaubt zwei Eingabearten. Zum einem den Namen eines Bildes (Beispielsweise faq.png). In diesem Fall wird der Znuny-Bildpfad verwendet. Die zweite Möglichkeit ist, den Link zu dem Bild einzufügen.',
-        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'Definiert einen Filter für die HTML-Ausgabe um Links hinter einer bestimmten Zeichenfolge hinzufügen. Das Element Bild erlaubt zwei Eingabearten. Zum einem den Namen eines Bildes (Beispielsweise faq.png). In diesem Fall wird der Znuny-Bildpfad verwendet. Die zweite Möglichkeit ist, den Link zu dem Bild einzufügen.',
-        'If enabled, the Znuny version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
-            'Wenn aktiviert, werden Znuny-Versionsinformationen aus der Oberfläche und HTTP-Headern und X-Headern entfernt. Hinweis: Nach Änderung dieser Option muss der Cache gelöscht werden.',
+        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Definiert einen Filter für die HTML-Ausgabe um Links hinter CVE-Nummern hinzufügen. Das Element Bild erlaubt zwei Eingabearten. Zum einem den Namen eines Bildes (Beispielsweise faq.png). In diesem Fall wird der BuzzDesk-Bildpfad verwendet. Die zweite Möglichkeit ist, den Link zu dem Bild einzufügen.',
+        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Definiert einen Filter für die HTML-Ausgabe um Links hinter Bugtraq-Nummern hinzufügen. Das Element Bild erlaubt zwei Eingabearten. Zum einem den Namen eines Bildes (Beispielsweise faq.png). In diesem Fall wird der BuzzDesk-Bildpfad verwendet. Die zweite Möglichkeit ist, den Link zu dem Bild einzufügen.',
+        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Definiert einen Filter für die HTML-Ausgabe um Links hinter einer MSBulletin-Nummer hinzufügen. Das Element Bild erlaubt zwei Eingabearten. Zum einem den Namen eines Bildes (Beispielsweise faq.png). In diesem Fall wird der BuzzDesk-Bildpfad verwendet. Die zweite Möglichkeit ist, den Link zu dem Bild einzufügen.',
+        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Definiert einen Filter für die HTML-Ausgabe um Links hinter einer bestimmten Zeichenfolge hinzufügen. Dieses Element erlaubt zwei Eingabearten. Zum einem den Namen eines Bildes (Beispielsweise faq.png). In diesem Fall wird der BuzzDesk-Bildpfad verwendet. Die zweite Möglichkeit ist, den Link zu dem Bild einzufügen.',
+        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'Definiert einen Filter für die HTML-Ausgabe um Links hinter einer bestimmten Zeichenfolge hinzufügen. Das Element Bild erlaubt zwei Eingabearten. Zum einem den Namen eines Bildes (Beispielsweise faq.png). In diesem Fall wird der BuzzDesk-Bildpfad verwendet. Die zweite Möglichkeit ist, den Link zu dem Bild einzufügen.',
+        'If enabled, the BuzzDesk version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
+            'Wenn aktiviert, werden BuzzDesk-Versionsinformationen aus der Oberfläche und HTTP-Headern und X-Headern entfernt. Hinweis: Nach Änderung dieser Option muss der Cache gelöscht werden.',
         'Default template for notification e-mails (see Kernel/Output/HTML/Templates/Standard/NotificationEvent/Email directory for available templates).' =>
             'Standardvorlage für Benachrichtigungs-E-Mails (verfügbare Vorlagen finden Sie im Verzeichnis Kernel/Output/HTML/Templates/Standard/NotificationEvent/Email).',
-        'If enabled, Znuny will deliver all CSS files in minified form.' =>
-            'Wenn aktiviert, liefert Znuny CSS-Dateien in minifizierter Form aus.',
-        'If enabled, Znuny will deliver all JavaScript files in minified form.' =>
-            'Wenn aktiviert, liefert Znuny JavaScript-Dateien in minifizierter Form aus.',
+        'If enabled, BuzzDesk will deliver all CSS files in minified form.' =>
+            'Wenn aktiviert, liefert BuzzDesk CSS-Dateien in minifizierter Form aus.',
+        'If enabled, BuzzDesk will deliver all JavaScript files in minified form.' =>
+            'Wenn aktiviert, liefert BuzzDesk JavaScript-Dateien in minifizierter Form aus.',
         'List of responsive CSS files to always be loaded for the agent interface.' =>
             'Liste von Responsive-CSS-Dateien, die im Agenten-Bereich immer geladen werden sollen.',
         'List of JS files to always be loaded for the admin interface.' =>
@@ -6561,10 +6558,10 @@ sub Data {
             'Legt die minimale Größe für den Ticketzähler fest, wenn "AutoIncrement" als TicketNumberGenerator gewählt wurde. Die Standardeinstellung ist 5, was bedeutet, dass der Zähler bei 10000 startet.',
         'Enables the minimal ticket counter size (if "Date" was selected as TicketNumberGenerator).' =>
             'Aktiviert die Minimalgröße für Ticketzähler (wenn "Datum" als TicketNumberGenerator ausgewählt ist).',
-        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
-            'IndexAccelerator: Auswahl des Backend-Moduls für TicketViewAccelerator. "RuntimeDB" generiert jede Queue-Ansicht dynamisch aus der Tickettabelle (keine Performance-Probleme bis zu etwa 60.000 Tickets insgesamt und 6.000 offenen Tickets im System). "StaticDB" ist das stärkste Modul, es benutzt zusätzliche Tabelle für den Ticket-Index, die wie eine Übersicht funktioniert (empfohlen bei mehr als 80.000 Tickets insgesamt und 6.000 offenen Tickets im System). Benutzen Sie das Kommando "bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild" für den initialen Indexaufbau.',
-        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the Znuny user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
-            'Speicherung von Artikel-Anhängen. "DB" legt alle Daten in der Datenbank ab (nicht empfohlen für große Anhänge). "FS" legt alle Daten im Dateisystem ab; dies ist schneller, jedoch sollte der Webserver mit dem Znuny-Benutzer betrieben werden. Sie können im laufenden Betrieb ohne Datenverlust zwischen den Modulen wechseln. Bitte beachten Sie, dass das Suchen nach Anhängen für "FS" nicht unterstützt wird.',
+        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
+            'IndexAccelerator: Auswahl des Backend-Moduls für TicketViewAccelerator. "RuntimeDB" generiert jede Queue-Ansicht dynamisch aus der Tickettabelle (keine Performance-Probleme bis zu etwa 60.000 Tickets insgesamt und 6.000 offenen Tickets im System). "StaticDB" ist das stärkste Modul, es benutzt zusätzliche Tabelle für den Ticket-Index, die wie eine Übersicht funktioniert (empfohlen bei mehr als 80.000 Tickets insgesamt und 6.000 offenen Tickets im System). Benutzen Sie das Kommando "bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild" für den initialen Indexaufbau.',
+        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the BuzzDesk user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
+            'Speicherung von Artikel-Anhängen. "DB" legt alle Daten in der Datenbank ab (nicht empfohlen für große Anhänge). "FS" legt alle Daten im Dateisystem ab; dies ist schneller, jedoch sollte der Webserver mit dem BuzzDesk-Benutzer betrieben werden. Sie können im laufenden Betrieb ohne Datenverlust zwischen den Modulen wechseln. Bitte beachten Sie, dass das Suchen nach Anhängen für "FS" nicht unterstützt wird.',
         'Specifies whether all storage backends should be checked when looking for attachments. This is only required for installations where some attachments are in the file system, and others in the database.' =>
             'Legt fest, ob bei der Suche nach Anhängen alle Storage-Backends geprüft werden sollen. Dies wird nur bei Installationen benötigt, bei denen sich Anhänge sowohl im Dateisystem, als auch in der Datenbank befinden.',
         'Specifies the directory to store the data in, if "FS" was selected for ArticleStorage.' =>
@@ -6606,16 +6603,16 @@ sub Data {
             'Dieses Eventmodul speichert Attribute des Kundenbenutzers als Werte von dynamischen Feldern. Bitte schauen sie sich die DynamicFieldFromCustomerUser::Mapping-Einstellung für die Konfiguration des Mappings an.',
         'Overloads (redefines) existing functions in Kernel::System::Ticket. Used to easily add customizations.' =>
             'Überlädt existierende Funktionen in Kernel::System::Ticket (redefining). Kann genutzt werden, um möglichst einfach Anpassungen vorzunehmen.',
-        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
-            'Hilft beim Erweitern Ihres Artikel-Volltext-Suchindexes (Von-, An-, Cc-, Betreffs- und Text-Suche). Es erstellt einen Index nach Artikelerstellung, wodurch die Geschwindigkeit von Volltextsuchen um rund 50% steigt. Nutzen Sie "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild", um einen initialen Index zu erstellen.',
+        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
+            'Hilft beim Erweitern Ihres Artikel-Volltext-Suchindexes (Von-, An-, Cc-, Betreffs- und Text-Suche). Es erstellt einen Index nach Artikelerstellung, wodurch die Geschwindigkeit von Volltextsuchen um rund 50% steigt. Nutzen Sie "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild", um einen initialen Index zu erstellen.',
         'Defines whether to index archived tickets for fulltext searches.' =>
             'Legt fest, ob archivierte Tickets im Index für Volltextsuchen berücksichtigt werden sollen.',
         'Force the storage of the original article text in the article search index, without executing filters or applying stop word lists. This will increase the size of the search index and thus may slow down fulltext searches.' =>
             'Erzwingt die Speicherung der originalen Artikelinhalte im Artikel-Suchindex, ohne dabei Filter und Stopp-Worte anzuwenden. Dadurch wird die Größe des Suchindex erhöht, was Volltextsuchen verlangsamen kann.',
         'Display a warning and prevent search when using stop words within fulltext search.' =>
             'Zeigt eine Warnung an und verhindert die Suche, wenn Stop-Wörter in der Volltextsuche eingegeben werden.',
-        'Basic fulltext index settings. Execute "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
-            'Basis-Einstellungen für den Volltext-Index. Führen Sie "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild" aus, um den Index neu zu erstellen.',
+        'Basic fulltext index settings. Execute "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
+            'Basis-Einstellungen für den Volltext-Index. Führen Sie "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild" aus, um den Index neu zu erstellen.',
         'Fulltext index regex filters to remove parts of the text.' => 'Volltextindex-Regex-Filter, um Textteile zu entfernen.',
         'English stop words for fulltext index. These words will be removed from the search index.' =>
             'Englische Stopworte für den Volltext-Index. Diese Worte werden aus dem Index entfernt.',
@@ -7343,8 +7340,8 @@ sub Data {
             'Bestimmt die sichtbaren Sperrtypen eines Tickets. Hinweis: Bitte stellen Sie sicher, dass Sie bei Veränderung dieser Einstellung den Cache leeren.',
         'Defines the valid state types for a ticket. If a ticket is in a state which have any state type from this setting, this ticket will be considered as open, otherwise as closed.' =>
             'Definiert die gültigen Statustypen für ein Ticket. Wenn sich ein Ticket in einem Status befindet, der einen Statustyp aus dieser Einstellung hat, gilt dieses Ticket als offen, ansonsten als geschlossen.',
-        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/znuny.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
-            'Bestimmt gültige Status für entsperrte Tickets. Um Tickets zu entsperren, kann das Script "bin/znuny.Console.pl Maint::Ticket::UnlockTimeout" genutzt werden.',
+        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
+            'Bestimmt gültige Status für entsperrte Tickets. Um Tickets zu entsperren, kann das Script "bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout" genutzt werden.',
         'Sends reminder notifications of unlocked ticket after reaching the reminder date (only sent to ticket owner).' =>
             'Sendet eine Erinnerung eines Entsperrten Tickets nachdem das Erinnerungsdatum erreicht wurde. (Nur zum Besitzer des Tickets gesendet).',
         'Disables sending reminder notifications to the responsible agent of a ticket (Ticket::Responsible needs to be enabled).' =>
@@ -7639,13 +7636,13 @@ sub Data {
             'Definiert alle Parameter für das Objekt RefreshTime in den Kundeneinstellungen des Kunden-Interface.',
         'Defines the default used Frontend-Module if no Action parameter given in the url on the agent interface.' =>
             'Definiert das standardmäßig genutzte Frontend-Modul im Agenten-Interface, wenn kein Action-Paramenter in der URL übergeben wurde.',
-        'Default queue ID used by the system in the agent interface.' => 'Standard-Queue-ID welche von Znuny in der Agentenoberfläche verwendet wird.',
+        'Default queue ID used by the system in the agent interface.' => 'Standard-Queue-ID welche von BuzzDesk in der Agentenoberfläche verwendet wird.',
         'Default ticket ID used by the system in the agent interface.' =>
-            'Standard-Ticket-ID welche von Znuny in der Agentenoberfläche verwendet wird.',
+            'Standard-Ticket-ID welche von BuzzDesk in der Agentenoberfläche verwendet wird.',
         'Defines the default used Frontend-Module if no Action parameter given in the url on the customer interface.' =>
             'Definiert das standardmäßig genutzte Frontend-Modul im Kunden-Interface, wenn kein Action-Paramenter in der URL übergeben wurde.',
         'Default ticket ID used by the system in the customer interface.' =>
-            'Standard-Ticket-ID welche von Znuny in der Kundenoberfläche verwendet wird.',
+            'Standard-Ticket-ID welche von BuzzDesk in der Kundenoberfläche verwendet wird.',
         'Module to generate html OpenSearch profile for short ticket search in the customer interface.' =>
             'Modul zum Generieren eines HTML-OpenSearch-Profils für die Ticket-Schnellsuche im Kundenbereich.',
         'Determines the next screen after the ticket is moved. LastScreenOverview will return the last overview screen (e.g. search results, queueview, dashboard). TicketZoom will return to the TicketZoom.' =>
@@ -7730,8 +7727,8 @@ sub Data {
             'Modul zum Ermitteln von SMIME-Zertifikaten des Kundenbenutzers bei eingehenden Nachrichten.',
         'Module to check if a incoming e-mail message is bounce.' => 'Prüfmodul zum Erkennen, ob es sich bei einer eingehenden E-Mail um eine abgelehnte E-Mail handelt.',
         'Module used to detect if attachments are present.' => 'Modul um das Vorhandensein von Anhängen zu prüfen.',
-        'Executes follow-up checks on Znuny Header \'X-OTRS-Bounce\'.' =>
-            'Führt Follow-Up-Checks auf dem Znuny-Header \'X-OTRS-Bounce\' aus.',
+        'Executes follow-up checks on BuzzDesk Header \'X-OTRS-Bounce\'.' =>
+            'Führt Follow-Up-Checks auf dem BuzzDesk-Header \'X-OTRS-Bounce\' aus.',
         'Checks if an E-Mail is a followup to an existing ticket by searching the subject for a valid ticket number.' =>
             'Prüft, ob eine E-Mail ein Follow-Up zu einem bestehenden Ticket ist, indem der Betreff nach einer gültigen Ticketnummer durchsucht wird.',
         'Executes follow-up checks on In-Reply-To or References headers for mails that don\'t have a ticket number in the subject.' =>
@@ -7889,10 +7886,10 @@ sub Data {
         'Defines the default queue for new tickets in the agent interface.' =>
             'Definiert die Standard-Queue für neue Tickets im Agentenbereich fest.',
 
-        # XML Definition: Kernel/Config/Files/XML/Znuny.xml
+        # XML Definition: Kernel/Config/Files/XML/BuzzDesk.xml
         'Default preferences to set during user creation.' => 'Default-Einstellungen, die für einen neuen Benutzer bei dessen Erstellung gesetzt werden.',
-        'Enables/disables the Znuny package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
-            'Aktiviert/deaktiviert die Znuny-Paketverifizierung. Wenn deaktiviert werden alle Pakete als verifiziert angezeigt. Es wird trotzdem empfohlen, nur verifizierte Pakete zu verwenden.',
+        'Enables/disables the BuzzDesk package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
+            'Aktiviert/deaktiviert die BuzzDesk-Paketverifizierung. Wenn deaktiviert werden alle Pakete als verifiziert angezeigt. Es wird trotzdem empfohlen, nur verifizierte Pakete zu verwenden.',
         'Screens for which it is possible to enable or disable dynamic fields.' =>
             'Dialoge, für die es möglich ist, dynamische Felder zu aktivieren oder zu deaktivieren.',
         'Screens for which it is possible to enable or disable default columns.' =>
@@ -8154,8 +8151,8 @@ sub Data {
             'Mapping der Ticketpriorität zum X-Priority E-Mail-Header für ausgehende E-Mails des Kommunikationskanals "Agent".',
         'Mapping of ticket priority to X-Priority email header for outgoing emails of communication channel "system".' =>
             'Mapping der Ticketpriorität zum X-Priority E-Mail-Header für ausgehende E-Mails des Kommunikationskanals "System".',
-        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by Znuny.Form.Input.' =>
-            'Ergänzt Feld-Mapping für AgentTicketActionCommon für unbekannte Action. Wird von Znuny.Form.Input verwendet.',
+        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by BuzzDesk.Form.Input.' =>
+            'Ergänzt Feld-Mapping für AgentTicketActionCommon für unbekannte Action. Wird von BuzzDesk.Form.Input verwendet.',
         'Once limit of watched tickets per user is reached, the oldest entries will be removed from the watch list. Disable this setting or set it to 0 to disable the limit (default).' =>
             'Sobald das Limit der beobachteten Tickets pro Nutzer erreicht ist, werden die ältesten Einträge aus der Beobachtungsliste entfernt. Deaktivieren Sie diese Einstellung oder setzen Sie sie auf 0, um das Limit zu deaktivieren (Standard).',
         'Enables ticket search with admin user (ID 1) instead of the logged in user. Only affects this view.' =>
@@ -8416,8 +8413,8 @@ sub Data {
         'Currently not possible' => 'Derzeit nicht möglich',
         'This is currently disabled because of an ongoing package upgrade.' =>
             'Dies ist derzeit nicht möglich, da eine Paketaktualisierung läuft.',
-        'This option is currently disabled because the Znuny Daemon is not running.' =>
-            'Diese Option ist derzeit deaktiviert, weil der Znuny Daemon nicht läuft.',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.' =>
+            'Diese Option ist derzeit deaktiviert, weil der BuzzDesk Daemon nicht läuft.',
         'Are you sure you want to update all installed packages?' => 'Sind Sie sicher, dass Sie alle installierten Pakete aktualisieren möchten?',
         'No response from get package upgrade run status.' => 'Keine Antwort von package upgrade run status.',
 
@@ -8547,7 +8544,7 @@ sub Data {
         'Insert selected customer user(s) into the "%s:" field.' => 'Ausgewählte(n) Kundenbenutzer in das Feld "%s:" einfügen.',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Daemon.js
-        'Information about the Znuny Daemon' => 'Informationen über den Znuny Daemon',
+        'Information about the BuzzDesk Daemon' => 'Informationen über den BuzzDesk Daemon',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Dashboard.js
         'Please check the fields marked as red for valid inputs.' => 'Bitte prüfen Sie die rot markierten Felder auf gültige Eingaben.',
@@ -8935,8 +8932,8 @@ Ihr Helpdesk-Team
         'Create tickets.' => 'Tickets erstellen.',
         'Created ticket [%s] in "%s" with priority "%s" and state "%s".' =>
             'Ticket erstellt [%s] in "%s" mit Priorität "%s" und Status "%s".',
-        'Creates a unit test file for this ticket and sends it to Znuny.' =>
-            'Erzeugt eine Unit-Test-Datei für dieses Ticket und sendet diese an Znuny.',
+        'Creates a unit test file for this ticket and sends it to BuzzDesk.' =>
+            'Erzeugt eine Unit-Test-Datei für dieses Ticket und sendet diese an BuzzDesk.',
         'Creates a unit test file for this ticket.' => 'Erzeugt eine Unit-Test-Datei für dieses Ticket.',
         'Croatian' => 'Kroatisch',
         'Current action description.' => 'Beschreibung der aktuellen Aktion.',
@@ -9295,7 +9292,7 @@ Ihr Helpdesk-Team
         'Select your personal time zone. All times will be displayed relative to this time zone.' =>
             'Wählen Sie Ihre persönliche Zeitzone aus. Alle Zeiten werden relativ zur eingestellten Zeitzone angezeigt.',
         'Select your preferred layout for the software.' => 'Wählen Sie Ihr bevorzugtes Layout aus.',
-        'Select your preferred theme for OTRS.' => 'Wählen Sie Ihr bevorzugtes Theme für Znuny.',
+        'Select your preferred theme for OTRS.' => 'Wählen Sie Ihr bevorzugtes Theme für BuzzDesk.',
         'Self' => '',
         'Send a unit test file' => 'Unit-Test-Datei versenden',
         'Send new outgoing mail from this ticket' => 'Neue ausgehende E-Mail aus diesem Ticket heraus senden',
@@ -9320,7 +9317,7 @@ Ihr Helpdesk-Team
         'Show the ticket history' => 'Ticket-Historie anzeigen',
         'Shows a preview of the ticket overview (CustomerInfo => 1 - shows also Customer-Info, CustomerInfoMaxSize max. size in characters of Customer-Info).' =>
             'Ermöglicht eine Ticket-Übersicht mit einigen Ticketinformationen (Customer => 1 - zeigt auch die Kundeninformation, CustomerInfoMaxSize steuert die maximale Anzahl an Zeichen der Kundeninformation).',
-        'Shows information on how to start OTRS Daemon' => 'Zeigt Informationen, wie der Znuny-Daemon gestartet wird',
+        'Shows information on how to start OTRS Daemon' => 'Zeigt Informationen, wie der BuzzDesk-Daemon gestartet wird',
         'Shows last mention of tickets.' => 'Zeigt letzte Erwähnung von Tickets.',
         'Signature data.' => 'Signatur-Daten.',
         'Simple' => 'Einfach',
@@ -9377,7 +9374,7 @@ Ihr Helpdesk-Team
             'Der Standard-Skin (grau) für den Kundenbereich.',
         'This is the default orange - black skin.' => 'Dies ist die Standard orange-schwarze Farbgebung.',
         'This key is not certified with a trusted signature!' => 'Dieser Schlüssel ist nicht mit einer vertrauenswürdigen Signatur zertifiziert!',
-        'This module is part of the admin area of Znuny.' => 'Dieses Modul ist Teil des Adminbereichs von Znuny.',
+        'This module is part of the admin area of BuzzDesk.' => 'Dieses Modul ist Teil des Adminbereichs von BuzzDesk.',
         'Ticket Close.' => 'Ticket schließen.',
         'Ticket Compose Bounce Email.' => 'E-Mail-Erstellung für Ticket-Umleitung.',
         'Ticket Compose email Answer.' => 'E-Mail-Erstellung für Ticket-Antwort.',
@@ -9464,7 +9461,7 @@ Ihr Helpdesk-Team
         'Your service selection of your preferred services. You also get notified about those services via email if enabled.' =>
             'Auswahl der bevorzugten Services. Es werden E-Mail-Benachrichtigungen über diesen ausgewählten Services versendet, falls aktiviert.',
         'Your username in Mattermost without the leading @' => 'Ihr Benutzername in Mattermost ohne das führende @',
-        'Znuny.org - News' => 'Znuny.org - News',
+        'BuzzDesk.org - News' => 'BuzzDesk.org - News',
         'Zoom' => 'Inhalt',
         'all tickets' => 'alle Tickets',
         'archived tickets' => 'archivierte Tickets',
@@ -9655,7 +9652,7 @@ Ihr Helpdesk-Team
         'Hide EntityIDs',
         'If you now leave this page, all open popup windows will be closed, too!',
         'Import web service',
-        'Information about the Znuny Daemon',
+        'Information about the BuzzDesk Daemon',
         'Insert selected customer user(s) into the "%s:" field.',
         'Invalid date (need a future date)!',
         'Invalid date (need a past date)!',
@@ -9835,7 +9832,7 @@ Ihr Helpdesk-Team
         'This is a repeating appointment',
         'This is currently disabled because of an ongoing package upgrade.',
         'This item still contains sub items. Are you sure you want to remove this item including its sub items?',
-        'This option is currently disabled because the Znuny Daemon is not running.',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.',
         'This software runs with a huge lists of browsers, please upgrade to one of these.',
         'This window must be called from compose window.',
         'Thu',

@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -22,7 +21,7 @@ $Kernel::OM->ObjectParamAdd(
 
 my $HelperObject             = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $UnitTestWebserviceObject = $Kernel::OM->Get('Kernel::System::UnitTest::Webservice');
-my $ZnunyHelperObject        = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject        = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $ConfigObject             = $Kernel::OM->Get('Kernel::Config');
 my $UserObject               = $Kernel::OM->Get('Kernel::System::User');
 my $ValidObject              = $Kernel::OM->Get('Kernel::System::Valid');
@@ -37,7 +36,7 @@ my %Groups = reverse $GroupObject->GroupList();
 
 my $Home = $ConfigObject->Get('Home');
 
-$ZnunyHelperObject->_WebserviceCreateIfNotExists(
+$BuzzDeskHelperObject->_WebserviceCreateIfNotExists(
     Webservices => {
         OutOfOffice => $Home . '/var/webservices/examples/OutOfOffice.yml',
     },

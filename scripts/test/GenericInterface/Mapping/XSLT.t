@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -200,14 +198,14 @@ my @MappingTests = (
     },
 
     {
-        Name   => 'Test replacement with custom functions (znuny)',
+        Name   => 'Test replacement with custom functions (buzzdesk)',
         Config => {
             Template => qq{<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
- xmlns:znuny="http://znuny.org"
- extension-element-prefixes="znuny">
-<xsl:import href="$Home/Kernel/GenericInterface/Mapping/ZnunyFunctions.xsl" />
+ xmlns:buzzdesk="http://buzzdesk.org"
+ extension-element-prefixes="buzzdesk">
+<xsl:import href="$Home/Kernel/GenericInterface/Mapping/BuzzDeskFunctions.xsl" />
 <xsl:output method="xml" encoding="utf-8" indent="yes"/>
 <xsl:template match="/RootElement">
 <NewRootElement>
@@ -220,11 +218,11 @@ my @MappingTests = (
     <NewStructure>
         <DateFromISO>
             <xsl:variable name="dateiso" select="/RootElement/DateISO" />
-            <xsl:value-of select="znuny:date-iso-to-xsd(\$dateiso)" />
+            <xsl:value-of select="buzzdesk:date-iso-to-xsd(\$dateiso)" />
         </DateFromISO>
         <DateToISO>
             <xsl:variable name="datexsd" select="/RootElement/DateXSD" />
-            <xsl:value-of select="znuny:date-xsd-to-iso(\$datexsd)" />
+            <xsl:value-of select="buzzdesk:date-xsd-to-iso(\$datexsd)" />
         </DateToISO>
         <NewKey1>
             <xsl:value-of select="/RootElement/Key1" />

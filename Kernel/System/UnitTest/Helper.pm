@@ -1,12 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Perl::CacheCleanup)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::CacheCleanup)
 
 package Kernel::System::UnitTest::Helper;
 
@@ -45,7 +43,7 @@ our @ObjectDependencies = (
     'Kernel::System::UnitTest::Driver',
     'Kernel::System::User',
     'Kernel::System::XML',
-    'Kernel::System::ZnunyHelper',
+    'Kernel::System::BuzzDeskHelper',
 );
 
 =head1 NAME
@@ -218,7 +216,7 @@ To get UserLogin and UserID:
 sub TestUserCreate {
     my ( $Self, %Param ) = @_;
 
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     # Disable email checks to create new user.
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
@@ -226,7 +224,7 @@ sub TestUserCreate {
 
     # Create test user.
     my $TestUserLogin = $Self->GetRandomID();
-    my $TestUserID    = $ZnunyHelperObject->_UserCreateIfNotExists(
+    my $TestUserID    = $BuzzDeskHelperObject->_UserCreateIfNotExists(
         UserFirstname => $TestUserLogin,
         UserLastname  => $TestUserLogin,
         UserLogin     => $TestUserLogin,
@@ -307,7 +305,7 @@ Returns:
 sub TestCustomerUserCreate {
     my ( $Self, %Param ) = @_;
 
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     # Disable email checks to create new user.
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
@@ -315,7 +313,7 @@ sub TestCustomerUserCreate {
 
     # Create test customer user.
     my $TestUserLogin = $Self->GetRandomID();
-    my $TestUser      = $ZnunyHelperObject->_CustomerUserCreateIfNotExists(
+    my $TestUser      = $BuzzDeskHelperObject->_CustomerUserCreateIfNotExists(
         Source         => 'CustomerUser',
         UserFirstname  => $TestUserLogin,
         UserLastname   => $TestUserLogin,
@@ -496,7 +494,7 @@ sub FixedTimeAddSeconds {
 }
 
 # See http://perldoc.perl.org/5.10.0/perlsub.html#Overriding-Built-in-Functions
-## nofilter(TidyAll::Plugin::Znuny::Perl::Time)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Time)
 
 sub _MockPerlTimeHandling {
     no warnings 'redefine';    ## no critic
@@ -548,7 +546,7 @@ sub _MockPerlTimeHandling {
         if ( $INC{$FilePath} ) {
             no warnings 'redefine';    ## no critic
             delete $INC{$FilePath};
-            require $FilePath;         ## nofilter(TidyAll::Plugin::Znuny::Perl::Require)
+            require $FilePath;         ## nofilter(TidyAll::Plugin::BuzzDesk::Perl::Require)
         }
     }
 
@@ -703,7 +701,7 @@ sub DESTROY {
     );
 
     my $TicketObject      = $Kernel::OM->Get('Kernel::System::Ticket');
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     if ( IsArrayRefWithData( $Self->{TestTickets} ) ) {
         TICKETID:
@@ -719,7 +717,7 @@ sub DESTROY {
 
     return if !IsArrayRefWithData( $Self->{TestDynamicFields} );
 
-    $ZnunyHelperObject->_DynamicFieldsDelete( @{ $Self->{TestDynamicFields} } );
+    $BuzzDeskHelperObject->_DynamicFieldsDelete( @{ $Self->{TestDynamicFields} } );
 
     return;
 }
@@ -1028,8 +1026,8 @@ All database contents will be automatically dropped when the Helper object is de
         DatabaseXMLString => $XML,      # (optional) database XML schema to execute
                                         # or
         DatabaseXMLFiles => [           # (optional) List of XML files to load and execute
-            '/opt/znuny/scripts/database/schema.xml',
-            '/opt/znuny/scripts/database/initial_insert.xml',
+            '/opt/buzzdesk/scripts/database/schema.xml',
+            '/opt/buzzdesk/scripts/database/initial_insert.xml',
         ],
     );
 
@@ -1746,7 +1744,7 @@ This function activates the given DynamicFields in each agent view.
 sub ActivateDynamicFields {
     my ( $Self, @DynamicFields ) = @_;
 
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     my %ActivateDynamicFields = map { $_ => 1 } @DynamicFields;
 
@@ -1773,7 +1771,7 @@ sub ActivateDynamicFields {
 
     );
 
-    $ZnunyHelperObject->_DynamicFieldsScreenEnable(%Screens);
+    $BuzzDeskHelperObject->_DynamicFieldsScreenEnable(%Screens);
 
     return 1;
 }
@@ -1892,7 +1890,7 @@ This function adds one of each default dynamic fields to the system and activate
 sub ActivateDefaultDynamicFields {
     my ( $Self, %Param ) = @_;
 
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     my @DynamicFields = (
         {
@@ -1997,7 +1995,7 @@ sub ActivateDefaultDynamicFields {
         },
     );
 
-    $ZnunyHelperObject->_DynamicFieldsCreateIfNotExists(@DynamicFields);
+    $BuzzDeskHelperObject->_DynamicFieldsCreateIfNotExists(@DynamicFields);
 
     my @DynamicFieldNames = map { $_->{Name} } @DynamicFields;
 
@@ -2096,7 +2094,7 @@ Default parameters contain various special chars.
 sub FillTestEnvironment {
     my ( $Self, %Param ) = @_;
 
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
     my $ServiceObject     = $Kernel::OM->Get('Kernel::System::Service');
 
     # first the user creation
@@ -2226,7 +2224,7 @@ sub FillTestEnvironment {
                 );
             }
 
-            $AttributeResultData{$AttributeEntry} = $ZnunyHelperObject->$FunctionName(%CreateData);
+            $AttributeResultData{$AttributeEntry} = $BuzzDeskHelperObject->$FunctionName(%CreateData);
         }
 
         $Result{$Attribute} = \%AttributeResultData;
@@ -2649,7 +2647,7 @@ This is a helper function for executing ConsoleCommands without the hassle.
 
     my $Result = $HelperObject->ConsoleCommand(
         CommandModule => 'Kernel::System::Console::Command::Maint::Cache::Delete',
-        Parameter     => [ '--type', 'Znuny' ],
+        Parameter     => [ '--type', 'BuzzDesk' ],
     );
 
     # or

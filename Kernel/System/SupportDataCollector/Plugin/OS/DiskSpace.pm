@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -38,12 +36,12 @@ sub Run {
     #     return $Self->GetResults();
     # }
     #
-    # # find Znuny partition
+    # # find BuzzDesk partition
     # my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
     # my $Home = $ConfigObject->Get('Home');
     #
-    # my $ZnunyPartition = `df -P $Home | tail -1 | cut -d' ' -f 1`;
-    # chomp $ZnunyPartition;
+    # my $BuzzDeskPartition = `df -P $Home | tail -1 | cut -d' ' -f 1`;
+    # chomp $BuzzDeskPartition;
     #
     # my $Commandline = "df -lx tmpfs -x iso9660 -x udf -x squashfs";
     #
@@ -59,7 +57,7 @@ sub Run {
     #
     #     # TODO change from percent to megabytes used.
     #     while (<$In>) {
-    #         if ( $_ =~ /^$ZnunyPartition\s.*/ && $_ =~ /^(.+?)\s.*\s(\d+)%.+?$/ ) {
+    #         if ( $_ =~ /^$BuzzDeskPartition\s.*/ && $_ =~ /^(.+?)\s.*\s(\d+)%.+?$/ ) {
     #             my ( $Partition, $UsedPercent ) = $_ =~ /^(.+?)\s.*?\s(\d+)%.+?$/;
     #             if ( $UsedPercent > 90 ) {
     #                 push @ProblemPartitions, "$Partition \[$UsedPercent%\]";
@@ -76,14 +74,14 @@ sub Run {
     #             $Self->AddResultProblem(
     #                 Label   => Translatable('Disk Usage'),
     #                 Value   => join( ', ', @ProblemPartitions ),
-    #                 Message => Translatable('The partition where Znuny is located is almost full.'),
+    #                 Message => Translatable('The partition where BuzzDesk is located is almost full.'),
     #             );
     #         }
     #         else {
     #             $Self->AddResultWarning(
     #                 Label   => Translatable('Disk Usage'),
     #                 Value   => join( ', ', @ProblemPartitions ),
-    #                 Message => Translatable('The partition where Znuny is located is almost full.'),
+    #                 Message => Translatable('The partition where BuzzDesk is located is almost full.'),
     #             );
     #         }
     #     }
@@ -91,7 +89,7 @@ sub Run {
     #         $Self->AddResultOk(
     #             Label   => Translatable('Disk Usage'),
     #             Value   => '',
-    #             Message => Translatable('The partition where Znuny is located has no disk space problems.'),
+    #             Message => Translatable('The partition where BuzzDesk is located has no disk space problems.'),
     #         );
     #     }
     # }

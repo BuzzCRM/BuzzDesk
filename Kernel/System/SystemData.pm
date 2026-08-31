@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -129,7 +127,7 @@ sub SystemDataAdd {
 get system data for key
 
     my $SystemData = $SystemDataObject->SystemDataGet(
-        Key => 'Znuny Version',
+        Key => 'BuzzDesk Version',
     );
 
 returns value as a simple scalar, or undef if the key does not exist.
@@ -272,7 +270,7 @@ Returns true if update was successful or false if otherwise - for instance
 if key did not exist.
 
     my $Result = $SystemDataObject->SystemDataUpdate(
-        Key    => 'Znuny Version',
+        Key    => 'BuzzDesk Version',
         Value  => 'Some New Value',
         UserID => 123,
     );
@@ -339,7 +337,7 @@ Returns true if delete was successful or false if otherwise - for instance
 if key did not exist.
 
     $SystemDataObject->SystemDataDelete(
-        Key    => 'Znuny Version',
+        Key    => 'BuzzDesk Version',
         UserID => 123,
     );
 

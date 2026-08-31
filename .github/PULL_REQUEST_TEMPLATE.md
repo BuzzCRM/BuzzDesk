@@ -1,13 +1,13 @@
 <!--
   You are amazing! 🚀
-  Thanks for contributing to the Znuny community project!
+  Thanks for contributing to the BuzzDesk community project!
   Please, DO NOT DELETE ANY TEXT from this template (unless instructed)!
 
 ### Licensing, copyright and credits
 
-Znuny is an open fork of an existing software. So we have to respect the already given copyright of the original creators.
+BuzzDesk is an open fork of an existing software. So we have to respect the already given copyright of the original creators.
 
-New files will be licensed using the AGPL Version 3. If you contribute code to the Znuny project you will get mentioned in the pull request incl. the commit, in CHANGES.md and in AUTHORS.md. We will not mention you in the file you provided or changed. Your work is highly appreciated and acknowledged but you contribute it to the project and your copyright will pass on to the fork itself.
+New files will be licensed using the AGPL Version 3. If you contribute code to the BuzzDesk project you will get mentioned in the pull request incl. the commit, in CHANGES.md and in AUTHORS.md. We will not mention you in the file you provided or changed. Your work is highly appreciated and acknowledged but you contribute it to the project and your copyright will pass on to the fork itself.
 -->
 
 ## Proposed change
@@ -20,7 +20,7 @@ New files will be licensed using the AGPL Version 3. If you contribute code to t
 
 ## Type of change
 <!--
-  What type of change does your PR introduce to Znuny?
+  What type of change does your PR introduce to BuzzDesk?
   NOTE: Please add only one label with a starting '1 - ' to this PR!
   If your PR requires multiple labels to be applied, you'll most likely need to
   split it into multiple PRs. This makes things easier and faster for the code review.
@@ -70,12 +70,12 @@ New files will be licensed using the AGPL Version 3. If you contribute code to t
 - [ ] The code change is tested and works locally.(❗)
 - [ ] There is no commented out code in this PR.(❕)
 - [ ] You improved or added new unit tests.(❕)
-- [ ] Local ZnunyCodePolicy passed.(❕)
+- [ ] Local BuzzDeskCodePolicy passed.(❕)
 - [ ] Local UnitTests / Selenium passed.(❕)
 - [ ] GitHub workflow CI (UnitTests / Selenium) passed.(❗)
 
 <!--
   Thank you for contributing ❤
 
-  Znuny @znuny/znuny
+  BuzzDesk @buzzdesk/buzzdesk
 -->

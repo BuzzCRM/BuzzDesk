@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -80,13 +79,13 @@ my @Tests = (
         Data => {
             'EmptyString' => {
                 UpdateEffectiveValue => {
-                    'Ticket#' => 'Znuny###',
+                    'Ticket#' => 'BuzzDesk###',
                 },
             }
         },
         Expected => {
             Name           => 'EmptyString',
-            EffectiveValue => 'Znuny###'
+            EffectiveValue => 'BuzzDesk###'
         }
     },
     {
@@ -115,12 +114,12 @@ my @Tests = (
         },
         Data => {
             'EmptyString' => {
-                EffectiveValue => 'Znuny###',
+                EffectiveValue => 'BuzzDesk###',
             }
         },
         Expected => {
             Name           => 'EmptyString',
-            EffectiveValue => 'Znuny###',
+            EffectiveValue => 'BuzzDesk###',
         }
     },
 

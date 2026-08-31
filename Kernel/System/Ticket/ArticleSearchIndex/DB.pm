@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -135,7 +133,7 @@ sub ArticleSearchIndexBuild {
             $ArticleSearchableContent{$FieldKey}->{String} = lc $ArticleSearchableContent{$FieldKey}->{String};
 
             # Cleanup String and remove newlines
-            # https://github.com/znuny/Znuny/issues/29
+            # https://github.com/buzzdesk/BuzzDesk/issues/29
             $CheckItemObject->StringClean(
                 StringRef             => \$ArticleSearchableContent{$FieldKey}->{String},
                 RemoveAllNewlines     => 1,

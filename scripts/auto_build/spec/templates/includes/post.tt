@@ -1,4 +1,4 @@
-export ZNUNYUSER=znuny
+export BUZZDESKUSER=buzzdesk
 
 [% '#' %] note
 HOST=`hostname -f`
@@ -8,12 +8,12 @@ echo ""
 echo "[restart web server]"
 echo " systemctl restart [% WebServiceName || 'apache2.service' %]"
 echo ""
-echo "[install the Znuny database]"
+echo "[install the BuzzDesk database]"
 echo " Make sure your database server is running."
 echo " Use a web browser and open this link:"
-echo " http://$HOST/znuny/installer.pl"
+echo " http://$HOST/buzzdesk/installer.pl"
 echo ""
-echo "[start Znuny daemon and corresponding watchdog cronjob]"
-echo " /opt/znuny/bin/znuny.Daemon.pl start"
-echo " /opt/znuny/bin/Cron.sh start"
+echo "[start BuzzDesk daemon and corresponding watchdog cronjob]"
+echo " /opt/buzzdesk/bin/buzzdesk.Daemon.pl start"
+echo " /opt/buzzdesk/bin/Cron.sh start"
 echo ""

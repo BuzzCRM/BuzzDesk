@@ -24,7 +24,7 @@ INSERT INTO valid (id, name, create_by, create_time, change_by, change_time)
 # ----------------------------------------------------------
 INSERT INTO users (id, first_name, last_name, login, pw, valid_id, create_by, create_time, change_by, change_time)
     VALUES
-    (1, 'Admin', 'Znuny', 'root@localhost', 'roK20XGbWEsSM', 1, 1, current_timestamp, 1, current_timestamp);
+    (1, 'Admin', 'BuzzDesk', 'root@localhost', 'roK20XGbWEsSM', 1, 1, current_timestamp, 1, current_timestamp);
 # ----------------------------------------------------------
 #  insert into table permission_groups
 # ----------------------------------------------------------
@@ -217,7 +217,7 @@ Your Ticket-Team
 # ----------------------------------------------------------
 INSERT INTO system_address (id, value0, value1, comments, valid_id, queue_id, create_by, create_time, change_by, change_time)
     VALUES
-    (1, 'znuny@localhost', 'Znuny System', 'Standard Address.', 1, 1, 1, current_timestamp, 1, current_timestamp);
+    (1, 'buzzdesk@localhost', 'BuzzDesk System', 'Standard Address.', 1, 1, 1, current_timestamp, 1, current_timestamp);
 # ----------------------------------------------------------
 #  insert into table follow_up_possible
 # ----------------------------------------------------------
@@ -341,9 +341,9 @@ You wrote:
 
 Your email will be answered by a human ASAP
 
-Have fun with Znuny! :-)
+Have fun with BuzzDesk! :-)
 
-Your Znuny Team
+Your BuzzDesk Team
 ', 'RE: <OTRS_CUSTOMER_SUBJECT[24]>', 'text/plain', '', 1, 1, current_timestamp, 1, current_timestamp);
 # ----------------------------------------------------------
 #  insert into table auto_response
@@ -356,7 +356,7 @@ INSERT INTO auto_response (id, type_id, system_address_id, name, text0, text1, c
 
 Please create a new ticket.
 
-Your Znuny Team
+Your BuzzDesk Team
 ', 'Your email has been rejected! (RE: <OTRS_CUSTOMER_SUBJECT[24]>)', 'text/plain', '', 1, 1, current_timestamp, 1, current_timestamp);
 # ----------------------------------------------------------
 #  insert into table auto_response
@@ -370,9 +370,9 @@ You wrote:
 
 Your email will be answered by a human ASAP.
 
-Have fun with Znuny!
+Have fun with BuzzDesk!
 
-Your Znuny Team
+Your BuzzDesk Team
 ', 'RE: <OTRS_CUSTOMER_SUBJECT[24]>', 'text/plain', '', 1, 1, current_timestamp, 1, current_timestamp);
 # ----------------------------------------------------------
 #  insert into table auto_response
@@ -388,9 +388,9 @@ You wrote:
 
 Your email will be answered by a human ASAP.
 
-Have fun with Znuny!
+Have fun with BuzzDesk!
 
-Your Znuny Team
+Your BuzzDesk Team
 ', 'New ticket has been created! (RE: <OTRS_CUSTOMER_SUBJECT[24]>)', 'text/plain', '', 1, 1, current_timestamp, 1, current_timestamp);
 # ----------------------------------------------------------
 #  insert into table ticket_type
@@ -781,7 +781,7 @@ INSERT INTO article_sender_type (id, name, valid_id, create_by, create_time, cha
 # ----------------------------------------------------------
 INSERT INTO ticket (id, tn, queue_id, ticket_lock_id, user_id, responsible_user_id, ticket_priority_id, ticket_state_id, title, timeout, until_time, escalation_time, escalation_response_time, escalation_update_time, escalation_solution_time, create_by, create_time, change_by, change_time)
     VALUES
-    (1, '2021012710123456', 2, 1, 1, 1, 3, 1, 'Znuny says hi!', 0, 0, 0, 0, 0, 0, 1, current_timestamp, 1, current_timestamp);
+    (1, '2021012710123456', 2, 1, 1, 1, 3, 1, 'BuzzDesk says hi!', 0, 0, 0, 0, 0, 0, 1, current_timestamp, 1, current_timestamp);
 # ----------------------------------------------------------
 #  insert into table communication_channel
 # ----------------------------------------------------------
@@ -855,48 +855,48 @@ INSERT INTO article (id, ticket_id, communication_channel_id, article_sender_typ
 # ----------------------------------------------------------
 INSERT INTO article_data_mime (id, article_id, a_from, a_to, a_subject, a_body, a_message_id, incoming_time, content_path, create_by, create_time, change_by, change_time)
     VALUES
-    (1, 1, 'Znuny <hello@znuny.org>', 'Your Znuny service desk <znuny@localhost>', 'Znuny says hi!', 'We welcome you to Znuny, our ticketing solution based on the well-known OTRS ((Community Edition)) which we forked to make things different.
+    (1, 1, 'BuzzDesk <hello@buzzdesk.org>', 'Your BuzzDesk service desk <buzzdesk@localhost>', 'BuzzDesk says hi!', 'We welcome you to BuzzDesk, our ticketing solution based on the well-known OTRS ((Community Edition)) which we forked to make things different.
 
 We are focused on delivering a stable and community influenced software. So if you have something to contribute, whether bug reports, solutions or enhancements, let us know. We will be happy about your participation.
 
 You can get additional information here:
 
-Community forum: https://community.znuny.org/
+Community forum: https://community.buzzdesk.org/
 
-Documentation: https://doc.znuny.org/
+Documentation: https://doc.buzzdesk.org/
 
-GitHub: https://github.com/znuny/Znuny
+GitHub: https://github.com/buzzdesk/BuzzDesk
 
 Have fun and enjoy it.
 
-Your Znuny Team
+Your BuzzDesk Team
 ', '<007@localhost>', 1611745200, '2021/01/27', 1, current_timestamp, 1, current_timestamp);
 # ----------------------------------------------------------
 #  insert into table article_data_mime_plain
 # ----------------------------------------------------------
 INSERT INTO article_data_mime_plain (id, article_id, body, create_by, create_time, change_by, change_time)
     VALUES
-    (1, 1, 'From: Znuny <hello@znuny.org>
-To: Your Znuny service desk <znuny@localhost>
-Subject: Znuny says hi!
+    (1, 1, 'From: BuzzDesk <hello@buzzdesk.org>
+To: Your BuzzDesk service desk <buzzdesk@localhost>
+Subject: BuzzDesk says hi!
 Content-Type: text/plain\; charset=utf-8
 Content-Transfer-Encoding: 8bit
 
-We welcome you to Znuny, our ticketing solution based on the well-known OTRS ((Community Edition)) which we forked to make things different.
+We welcome you to BuzzDesk, our ticketing solution based on the well-known OTRS ((Community Edition)) which we forked to make things different.
 
 We are focused on delivering a stable and community influenced software. So if you have something to contribute, whether bug reports, solutions or enhancements, let us know. We will be happy about your participation.
 
 You can get additional information here:
 
-Community forum: https://community.znuny.org/
+Community forum: https://community.buzzdesk.org/
 
-Documentation: https://doc.znuny.org/
+Documentation: https://doc.buzzdesk.org/
 
-GitHub: https://github.com/znuny/Znuny
+GitHub: https://github.com/buzzdesk/BuzzDesk
 
 Have fun and enjoy it.
 
-Your Znuny Team
+Your BuzzDesk Team
 ', 1, current_timestamp, 1, current_timestamp);
 # ----------------------------------------------------------
 #  insert into table ticket_history

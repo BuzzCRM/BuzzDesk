@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -5524,7 +5523,7 @@ my @Tests = (
     {
         Name => 'ColumnContentFormat - URL',
         Data => {
-            Value => 'https://www.znuny.com/',
+            Value => 'https://www.buzzdesk.com/',
         },
         Expected => {
             ColumnContentFormat => 'URL',
@@ -5533,7 +5532,7 @@ my @Tests = (
     {
         Name => 'ColumnContentFormat - URL',
         Data => {
-            Value => 'http://www.znuny.com/',
+            Value => 'http://www.buzzdesk.com/',
         },
         Expected => {
             ColumnContentFormat => 'URL',
@@ -5542,7 +5541,7 @@ my @Tests = (
     {
         Name => 'ColumnContentFormat - URL = String',
         Data => {
-            Value => 'www.znuny.com',
+            Value => 'www.buzzdesk.com',
         },
         Expected => {
             ColumnContentFormat => 'String',

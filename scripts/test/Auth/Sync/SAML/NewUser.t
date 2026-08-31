@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -27,7 +26,7 @@ my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $ConfigObject      = $Kernel::OM->Get('Kernel::Config');
 my $UserObject        = $Kernel::OM->Get('Kernel::System::User');
 my $GroupObject       = $Kernel::OM->Get('Kernel::System::Group');
-my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
 $ConfigObject->Set(
     Key   => 'CheckEmailAddresses',
@@ -43,9 +42,9 @@ $ConfigObject->Set(
 my %GroupIDByName;
 my %GroupNameByID;
 for my $Count ( 1 .. 8 ) {
-    my $GroupName = "ZnunyGroup$Count";
+    my $GroupName = "BuzzDeskGroup$Count";
 
-    my $GroupID = $ZnunyHelperObject->_GroupCreateIfNotExists(
+    my $GroupID = $BuzzDeskHelperObject->_GroupCreateIfNotExists(
         Name => $GroupName,
     );
 
@@ -57,9 +56,9 @@ for my $Count ( 1 .. 8 ) {
 my %RoleIDByName;
 my %RoleNameByID;
 for my $Count ( 1 .. 8 ) {
-    my $RoleName = "ZnunyRole$Count";
+    my $RoleName = "BuzzDeskRole$Count";
 
-    my $RoleID = $ZnunyHelperObject->_RoleCreateIfNotExists(
+    my $RoleID = $BuzzDeskHelperObject->_RoleCreateIfNotExists(
         Name => $RoleName,
     );
 
@@ -121,7 +120,7 @@ $ConfigObject->Set(
 </md:EntitiesDescriptor>',
 );
 
-my $Issuer = 'https://example.org/znuny/';
+my $Issuer = 'https://example.org/buzzdesk/';
 
 $ConfigObject->Set(
     Key   => 'AuthModule::SAML::Issuer2',
@@ -157,15 +156,15 @@ $ConfigObject->Set(
     Key   => 'AuthSyncModule::SAML::UserSyncGroupsDefinition2',
     Value => {
         SomeGroup => {
-            ZnunyGroup6 => {
+            BuzzDeskGroup6 => {
                 ro => 1,
             },
         },
         Support => {
-            ZnunyGroup1 => {
+            BuzzDeskGroup1 => {
                 rw => 1,
             },
-            ZnunyGroup2 => {
+            BuzzDeskGroup2 => {
                 ro   => 1,
                 note => 1,
             },
@@ -181,19 +180,19 @@ $ConfigObject->Set(
                 admin => {
                     rw => 1,
                 },
-                ZnunyGroup3 => {
+                BuzzDeskGroup3 => {
                     ro => 1,
                 },
             },
         },
         SomeAttribute2 => {
             'Value 2' => {
-                ZnunyGroup4 => {
+                BuzzDeskGroup4 => {
                     rw => 1,
                 },
             },
             'Value 1' => {
-                ZnunyGroup5 => {
+                BuzzDeskGroup5 => {
                     ro => 1,
                 },
             },
@@ -210,8 +209,8 @@ $ConfigObject->Set(
     Key   => 'AuthSyncModule::SAML::UserSyncRolesDefinition2',
     Value => {
         Operations => {
-            ZnunyRole1 => 1,
-            ZnunyRole2 => 0,
+            BuzzDeskRole1 => 1,
+            BuzzDeskRole2 => 0,
         },
     },
 );
@@ -221,15 +220,15 @@ $ConfigObject->Set(
     Value => {
         SomeAttribute1 => {
             'Value 1' => {
-                ZnunyRole3 => 1,
-                ZnunyRole4 => 1,
+                BuzzDeskRole3 => 1,
+                BuzzDeskRole4 => 1,
             },
         },
         SomeAttribute2 => {
             'Value 2' => {
-                ZnunyRole5 => 0,
-                ZnunyRole6 => 1,
-                ZnunyRole7 => 1,
+                BuzzDeskRole5 => 0,
+                BuzzDeskRole6 => 1,
+                BuzzDeskRole7 => 1,
             },
         },
     },
@@ -253,7 +252,7 @@ my $SAMLAuthObject = Kernel::System::Auth::SAML->new(
 my $ExpectedSAMLRequestID = '_54c307de-960b-11f0-b741-ecb5948c096d';
 
 my $SAMLResponseXML = '<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
-    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Destination="https://example.com/znuny/index.pl?Action=Login" ID="ID_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" InResponseTo="'
+    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Destination="https://example.com/buzzdesk/index.pl?Action=Login" ID="ID_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" InResponseTo="'
     . $ExpectedSAMLRequestID
     . '" IssueInstant="2025-09-20T10:19:46.253Z" Version="2.0">
     <saml:Issuer>' . $Issuer . '</saml:Issuer>
@@ -269,7 +268,7 @@ my $SAMLResponseXML = '<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:
             <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
                 <saml:SubjectConfirmationData InResponseTo="'
     . $ExpectedSAMLRequestID
-    . '" NotOnOrAfter="2025-09-20T10:20:44.253Z" Recipient="https://example.com/znuny/index.pl?Action=Login"/>
+    . '" NotOnOrAfter="2025-09-20T10:20:44.253Z" Recipient="https://example.com/buzzdesk/index.pl?Action=Login"/>
             </saml:SubjectConfirmation>
         </saml:Subject>
         <saml:Conditions NotBefore="2025-09-20T10:19:44.253Z" NotOnOrAfter="2035-09-20T10:20:44.253Z">
@@ -479,43 +478,43 @@ for my $Type ( @{ $ConfigObject->Get('System::Permission') } ) {
 
 my %ExpectedGroupsByType = (
     create => {
-        ZnunyGroup1 => 1,
-        ZnunyGroup4 => 1,
+        BuzzDeskGroup1 => 1,
+        BuzzDeskGroup4 => 1,
         admin       => 1
     },
     move_into => {
-        ZnunyGroup1 => 1,
-        ZnunyGroup4 => 1,
+        BuzzDeskGroup1 => 1,
+        BuzzDeskGroup4 => 1,
         admin       => 1
     },
     note => {
-        ZnunyGroup1 => 1,
-        ZnunyGroup2 => 1,
-        ZnunyGroup4 => 1,
+        BuzzDeskGroup1 => 1,
+        BuzzDeskGroup2 => 1,
+        BuzzDeskGroup4 => 1,
         admin       => 1
     },
     owner => {
-        ZnunyGroup1 => 1,
-        ZnunyGroup4 => 1,
+        BuzzDeskGroup1 => 1,
+        BuzzDeskGroup4 => 1,
         admin       => 1
     },
     priority => {
-        ZnunyGroup1 => 1,
-        ZnunyGroup4 => 1,
+        BuzzDeskGroup1 => 1,
+        BuzzDeskGroup4 => 1,
         admin       => 1
     },
     ro => {
-        ZnunyGroup1 => 1,
-        ZnunyGroup2 => 1,
-        ZnunyGroup3 => 1,
-        ZnunyGroup4 => 1,
-        ZnunyGroup5 => 1,
-        ZnunyGroup6 => 1,
+        BuzzDeskGroup1 => 1,
+        BuzzDeskGroup2 => 1,
+        BuzzDeskGroup3 => 1,
+        BuzzDeskGroup4 => 1,
+        BuzzDeskGroup5 => 1,
+        BuzzDeskGroup6 => 1,
         admin       => 1
     },
     rw => {
-        ZnunyGroup1 => 1,
-        ZnunyGroup4 => 1,
+        BuzzDeskGroup1 => 1,
+        BuzzDeskGroup4 => 1,
         admin       => 1
     }
 );
@@ -535,11 +534,11 @@ my %Roles = $GroupObject->PermissionUserRoleGet(
 %Roles = map { $_ => 1 } values %Roles;
 
 my %ExpectedRoles = (
-    ZnunyRole1 => 1,
-    ZnunyRole3 => 1,
-    ZnunyRole4 => 1,
-    ZnunyRole6 => 1,
-    ZnunyRole7 => 1,
+    BuzzDeskRole1 => 1,
+    BuzzDeskRole3 => 1,
+    BuzzDeskRole4 => 1,
+    BuzzDeskRole6 => 1,
+    BuzzDeskRole7 => 1,
 );
 
 $Self->IsDeeply(

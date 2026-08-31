@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -14,7 +13,7 @@ use vars (qw($Self));
 
 my $HelperObject   = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $SeleniumObject = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
-my $ZnunyHelper    = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelper    = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $ArticleObject  = $Kernel::OM->Get('Kernel::System::Ticket::Article');
 
 # create test ticket and articles

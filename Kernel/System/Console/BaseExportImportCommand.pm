@@ -1,11 +1,10 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::CodeStyle::STDERRCheck)
+## nofilter(TidyAll::Plugin::BuzzDesk::CodeStyle::STDERRCheck)
 
 package Kernel::System::Console::BaseExportImportCommand;
 
@@ -145,7 +144,7 @@ sub Execute {
     #   In future we might need to check if it was created and update it on the fly.
     $Kernel::OM->ObjectParamAdd(
         'Kernel::System::Log' => {
-            LogPrefix => 'Znuny-znuny.Console.pl-' . $Self->Name(),
+            LogPrefix => 'BuzzDesk-buzzdesk.Console.pl-' . $Self->Name(),
         },
     );
 
@@ -168,10 +167,10 @@ sub Execute {
     if ( !$Self->{ParsedGlobalOptions}->{'allow-root'} && $CurrentUser ne $ApplicationUser ) {
 
         $Self->PrintError(
-            "You cannot run znuny.Console.pl as user $CurrentUser. Please run it as user $ApplicationUser or with the help of su:"
+            "You cannot run buzzdesk.Console.pl as user $CurrentUser. Please run it as user $ApplicationUser or with the help of su:"
         );
         $Self->Print(
-            qq{  <yellow>su -c "bin/znuny.Console.pl MyCommand" -s /bin/bash $ApplicationUser</yellow>\n}
+            qq{  <yellow>su -c "bin/buzzdesk.Console.pl MyCommand" -s /bin/bash $ApplicationUser</yellow>\n}
         );
         return $Self->ExitCodeError();
     }

@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -27,7 +26,7 @@ my $TransitionActionObject
     = $Kernel::OM->Get('Kernel::System::ProcessManagement::TransitionAction::DynamicFieldPendingTimeSet');
 my $TicketObject      = $Kernel::OM->Get('Kernel::System::Ticket');
 my $TimeObject        = $Kernel::OM->Get('Kernel::System::Time');
-my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
 $HelperObject->FixedTimeSet();
 
@@ -47,7 +46,7 @@ my @DynamicFields = (
     },
 );
 
-my $Success = $ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFields);
+my $Success = $BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFields);
 
 $Self->True(
     $Success,

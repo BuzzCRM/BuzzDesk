@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -1100,13 +1098,13 @@ Get plain article/email from storage. This is a delegate method from active back
 Returns:
 
     $PlainMessage = '
-        From: Znuny Feedback <marketing@znuny.com>
-        To: Your Znuny System <znuny@localhost>
-        Subject: Welcome to Znuny!
+        From: BuzzDesk Feedback <marketing@buzzdesk.com>
+        To: Your BuzzDesk System <buzzdesk@localhost>
+        Subject: Welcome to BuzzDesk!
         Content-Type: text/plain; charset=utf-8
         Content-Transfer-Encoding: 8bit
 
-        Welcome to Znuny!
+        Welcome to BuzzDesk!
         # ...
     ';
 

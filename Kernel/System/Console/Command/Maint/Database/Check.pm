@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -23,7 +21,7 @@ our @ObjectDependencies = (
 sub Configure {
     my ( $Self, %Param ) = @_;
 
-    $Self->Description('Check Znuny database connectivity.');
+    $Self->Description('Check BuzzDesk database connectivity.');
     $Self->AddOption(
         Name        => 'repair',
         Description => 'Repairs invalid database schema (like deleting invalid default values for datetime fields).',
@@ -174,7 +172,7 @@ sub _CheckMySQLInvalidDefaultValues {
     }
     else {
         $Error
-            .= "\n\n *** Please correct these problems manually with the following SQL statements or use 'znuny.Console.pl $Self->{Name} --repair'. *** \n\n";
+            .= "\n\n *** Please correct these problems manually with the following SQL statements or use 'buzzdesk.Console.pl $Self->{Name} --repair'. *** \n\n";
     }
 
     my @SQLRepairStatements;

@@ -1,8 +1,6 @@
 #!/bin/sh
 # --
 # auto_build.sh - build automatically OTRS tar, rpm and src-rpm
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,19 +16,17 @@
 # along with this program. If not, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
 
-echo "auto_build.sh - build Znuny release files"
-echo "Copyright (C) 2001-2021 OTRS AG, https://otrs.com/";
-echo "Copyright (C) 2021 Znuny GmbH, https://znuny.org/";
+echo "auto_build.sh - build BuzzDesk release files"
 
 PATH_TO_CVS_SRC=$1
-PRODUCT="Znuny"
+PRODUCT="BuzzDesk"
 VERSION=$2
 MAJOR_VERSION="$(echo "$VERSION" | cut -d. -f1)"
 MINOR_VERSION="$(echo "$VERSION" | cut -d. -f2)"
 LATEST_VERSION=false
 RELEASE=$3
-ARCHIVE_DIR="znuny-$VERSION"
-PACKAGE=znuny
+ARCHIVE_DIR="buzzdesk-$VERSION"
+PACKAGE=buzzdesk
 PACKAGE_BUILD_DIR="${CI_PROJECT_DIR}/../$PACKAGE-build"
 PACKAGE_DEST_DIR="${CI_PROJECT_DIR}/../$PACKAGE-buildpackages"
 PACKAGE_TMP_SPEC="${CI_PROJECT_DIR}/../$PACKAGE.spec"
@@ -44,7 +40,7 @@ if ! test $PATH_TO_CVS_SRC || ! test $VERSION || ! test $RELEASE; then
     echo ""
     echo "Usage: auto_build.sh <PATH_TO_CVS_SRC> <VERSION> <BUILD>"
     echo ""
-    echo "  Try: auto_build.sh /home/znuny 7.0.1 01"
+    echo "  Try: auto_build.sh /home/buzzdesk 7.0.1 01"
     echo ""
     exit 1;
 else
@@ -52,7 +48,7 @@ else
     # check dir
     # --
     if ! test -e $PATH_TO_CVS_SRC/RELEASE; then
-        echo "Error: $PATH_TO_CVS_SRC is not Znuny directory!"
+        echo "Error: $PATH_TO_CVS_SRC is not BuzzDesk directory!"
         exit 1;
     fi
 fi
@@ -143,7 +139,7 @@ EOF
 
 
 # mk ARCHIVE
-bin/znuny.CheckSum.pl -a create
+bin/buzzdesk.CheckSum.pl -a create
 # Create needed directories
 mkdir -p var/tmp var/article var/log
 
@@ -199,11 +195,11 @@ function CreateRPM() {
     mv $SYSTEM_SRPM_DIR/$PACKAGE*$VERSION*$RELEASE*.src.rpm $PACKAGE_DEST_DIR/SRPMS/$TargetPath
 }
 
-CreateRPM "RHEL 7"    "rhel7-znuny.spec"    "rhel/7"
-CreateRPM "SuSE 12"   "suse12-znuny.spec"   "suse/12/"
-CreateRPM "SuSE 13"   "suse13-znuny.spec"   "suse/13/"
-CreateRPM "Fedora 25" "fedora25-znuny.spec" "fedora/25/"
-CreateRPM "Fedora 26" "fedora26-znuny.spec" "fedora/26/"
+CreateRPM "RHEL 7"    "rhel7-buzzdesk.spec"    "rhel/7"
+CreateRPM "SuSE 12"   "suse12-buzzdesk.spec"   "suse/12/"
+CreateRPM "SuSE 13"   "suse13-buzzdesk.spec"   "suse/13/"
+CreateRPM "Fedora 25" "fedora25-buzzdesk.spec" "fedora/25/"
+CreateRPM "Fedora 26" "fedora26-buzzdesk.spec" "fedora/26/"
 
 echo "-----------------------------------------------------------------";
 echo "You will find your tar.gz, RPMs and SRPMs in $PACKAGE_DEST_DIR";
@@ -218,7 +214,7 @@ if which sha256sum >> /dev/null; then
     do
         sha256sum "$p" > "${p}.sha256"
         sed -i 's|  .*/|  |' "${p}.sha256"
-        sha256_complete="$(sha256sum "$p"| sed -e "s/\.\//https:\/\/download.znuny.org\/releases\//" )"
+        sha256_complete="$(sha256sum "$p"| sed -e "s/\.\//https:\/\/download.buzzdesk.org\/releases\//" )"
         sha256=$(echo "$sha256_complete" | awk {'print $1'})
         url=$(echo "$sha256_complete" | awk {'print $NF'})
         label="Unknown"

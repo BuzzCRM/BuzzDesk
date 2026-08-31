@@ -1604,7 +1604,6 @@ in Lancaster, April 2013.
 
 =head1 LICENSE
 
-Copyright (C) 2013 Chris Williams.  All Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

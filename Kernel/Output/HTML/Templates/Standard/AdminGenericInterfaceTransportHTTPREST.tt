@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -120,7 +118,7 @@
                                     <div id="MaxLengthError" class="TooltipErrorMessage"><p>[% Translate("This field should be an integer number.") | html %]</p></div>
                                     <div id="MaxLengthServerError" class="TooltipErrorMessage"><p>[% Translate(Data.MaxLengthServerErrorMessage) | html %]</p></div>
                                     <p class="FieldExplanation">
-                                        [% Translate("Here you can specify the maximum size (in bytes) of REST messages that Znuny will process.") | html %]
+                                        [% Translate("Here you can specify the maximum size (in bytes) of REST messages that BuzzDesk will process.") | html %]
                                     </p>
                                 </div>
                             </div>
@@ -435,7 +433,7 @@
                                             <p class="FieldExplanation">
                                                 [% Translate("The full path and name of the SSL client certificate file (must be in PEM, DER or PKCS#12 format).") | html %]
                                                 <br/>
-                                                [% Translate("e.g. /opt/znuny/var/certificates/SOAP/certificate.pem") | html %]
+                                                [% Translate("e.g. /opt/buzzdesk/var/certificates/SOAP/certificate.pem") | html %]
                                             </p>
                                         </div>
                                     </div>
@@ -448,7 +446,7 @@
                                             <p class="FieldExplanation">
                                                 [% Translate("The full path and name of the SSL client certificate key file (if not already included in certificate file).") | html %]
                                                 <br/>
-                                                [% Translate("e.g. /opt/znuny/var/certificates/SOAP/key.pem") | html %]
+                                                [% Translate("e.g. /opt/buzzdesk/var/certificates/SOAP/key.pem") | html %]
                                             </p>
                                         </div>
                                     </div>
@@ -471,7 +469,7 @@
                                             <p class="FieldExplanation">
                                                 [% Translate("The full path and name of the certification authority certificate file that validates SSL certificate.") | html %]
                                                 <br/>
-                                                [% Translate("e.g. /opt/znuny/var/certificates/SOAP/CA/ca.pem") | html %]
+                                                [% Translate("e.g. /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem") | html %]
                                             </p>
                                         </div>
                                     </div>
@@ -484,7 +482,7 @@
                                             <p class="FieldExplanation">
                                                 [% Translate("The full path of the certification authority directory where the CA certificates are stored in the file system.") | html %]
                                                 <br/>
-                                                [% Translate("e.g. /opt/znuny/var/certificates/SOAP/CA") | html %]
+                                                [% Translate("e.g. /opt/buzzdesk/var/certificates/SOAP/CA") | html %]
                                             </p>
                                         </div>
                                     </div>

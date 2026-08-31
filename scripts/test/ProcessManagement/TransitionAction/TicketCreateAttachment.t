@@ -1,11 +1,10 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Perl::PerlCritic)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::PerlCritic)
 
 use strict;
 use warnings;
@@ -27,7 +26,7 @@ $Kernel::OM->ObjectParamAdd(
 );
 
 my $HelperObject              = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
-my $ZnunyHelperObject         = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject         = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $TicketObject              = $Kernel::OM->Get('Kernel::System::Ticket');
 my $MainObject                = $Kernel::OM->Get('Kernel::System::Main');
 my $ConfigObject              = $Kernel::OM->Get('Kernel::Config');
@@ -69,7 +68,7 @@ my @DynamicFields = (
         },
     },
 );
-$ZnunyHelperObject->_DynamicFieldsCreateIfNotExists(@DynamicFields);
+$BuzzDeskHelperObject->_DynamicFieldsCreateIfNotExists(@DynamicFields);
 
 # Create a bunch of articles and attachments
 for my $ChannelName (qw(Email Phone Internal)) {
@@ -245,7 +244,7 @@ my $NewCreatedSubTicketConfigData = {
     IsVisibleForCustomer => 0,
     HistoryType          => 'AddNote',
     HistoryComment       => 'Subticket created',
-    From                 => 'znuny',
+    From                 => 'buzzdesk',
     LinkAs               => 'Child',
     SenderType           => 'agent',
     CommunicationChannel => 'Internal',

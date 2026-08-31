@@ -75,7 +75,7 @@ ActivityDialogs:
 #   - Activity-24e205401c4ed840ea56f846091810a9
 #   ChangeTime: 2016-08-12 10:27:18
 #   Config:
-#     Description: ZnunyProcessTest Process
+#     Description: BuzzDeskProcessTest Process
 #     Path:
 #       Activity-1e2242197da3f067e0981143fe9b5f0f:
 #         Transition-c51b4405130e6379f1befe356410af94:
@@ -95,7 +95,7 @@ ActivityDialogs:
 #     Activity-24e205401c4ed840ea56f846091810a9:
 #       left: '229'
 #       top: '5'
-#   Name: ZnunyProcessTest
+#   Name: BuzzDeskProcessTest
 #   State: Active
 #   StateEntityID: S1
 #   TransitionActions: []

@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -49,7 +47,7 @@ sub Run {
         map { chomp; $Authors{$_} = 1 if $_ !~ m/^[^<>]+ \s <>\s?$/smx } @Lines;
 
         my $FileHandle = IO::File->new( 'AUTHORS.md', 'w' );
-        $FileHandle->print("The following persons contributed to Znuny:\n\n");
+        $FileHandle->print("The following persons contributed to BuzzDesk:\n\n");
 
         for my $Author ( sort { lc($a) cmp lc($b) } keys %Authors ) {
             $FileHandle->print("* $Author\n");
@@ -60,7 +58,7 @@ sub Run {
     else {
         # First read existing authors
         my %ExistingAuthors;
-        my $Header = "The following persons contributed to Znuny:\n\n";
+        my $Header = "The following persons contributed to BuzzDesk:\n\n";
 
         if ( -f 'AUTHORS.md' ) {
             my $FileHandle = IO::File->new( 'AUTHORS.md', 'r' );

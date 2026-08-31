@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -120,7 +119,7 @@ Returns a valid URL to the details dialog of the object with the given ID.
 
 Returns:
 
-    my $String = 'http://www.znuny.org/index.pl?Action=AgentTicketZoom;TicketID=1';
+    my $String = 'http://www.buzzdesk.org/index.pl?Action=AgentTicketZoom;TicketID=1';
 
 =cut
 

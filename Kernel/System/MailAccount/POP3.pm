@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -491,14 +489,14 @@ sub Fetch {
                         my $File = $Self->_ProcessFailed( Email => $Lines );
 
                         my $ErrorMessage = "$AuthType: Can't process mail, mail saved ("
-                            . "$File, report it on https://github.com/znuny/Znuny/issues)!";
+                            . "$File, report it on https://github.com/buzzdesk/BuzzDesk/issues)!";
 
                         $CommunicationLogObject->ObjectLog(
                             ObjectLogType => 'Message',
                             Priority      => 'Error',
                             Key           => 'Kernel::System::MailAccount::' . $Self->{MailAccountModuleName},
                             Value         =>
-                                "Could not process message. Raw mail saved ($File, report it on https://github.com/znuny/Znuny/issues)!",
+                                "Could not process message. Raw mail saved ($File, report it on https://github.com/buzzdesk/BuzzDesk/issues)!",
                         );
 
                         $MessageStatus = 'Failed';

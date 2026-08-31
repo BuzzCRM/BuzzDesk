@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -653,9 +651,9 @@ my $GetCertificateDataFromFiles = sub {
 };
 
 # OpenSSL 1.0.0 correct hashes
-my $ZnunyRootCAHash  = 'dfde6898';
-my $ZnunySub1CAHash  = '5fcf9bdc';
-my $ZnunySub2CAHash  = '37de711c';
+my $BuzzDeskRootCAHash  = 'dfde6898';
+my $BuzzDeskSub1CAHash  = '5fcf9bdc';
+my $BuzzDeskSub2CAHash  = '37de711c';
 my $OTRSUserCertHash = '097aa832';
 
 # create certificates table
@@ -663,52 +661,52 @@ my %Certificates;
 
 # get data from files
 my ( $CertificateString, $PrivateString, $PrivateSecret ) = $GetCertificateDataFromFiles->(
-    "SMIMECACertificate-Znuny-Sub1.crt",
-    "SMIMECAPrivateKey-Znuny-Sub1.pem",
-    "SMIMECAPrivateKeyPass-Znuny-Sub1.crt",
+    "SMIMECACertificate-BuzzDesk-Sub1.crt",
+    "SMIMECAPrivateKey-BuzzDesk-Sub1.pem",
+    "SMIMECAPrivateKeyPass-BuzzDesk-Sub1.crt",
 );
 
 # fill certificates table
-$Certificates{ZnunySub1CA} = {
-    Hash          => $ZnunySub1CAHash,
+$Certificates{BuzzDeskSub1CA} = {
+    Hash          => $BuzzDeskSub1CAHash,
     Fingerprint   => '56:6C:2D:6B:4F:DA:F7:6C:73:16:C0:CF:D5:12:17:CB:61:22:83:DF',
     String        => $CertificateString,
     PrivateSecret => $PrivateSecret,
-    PrivateHash   => $ZnunySub1CAHash,
+    PrivateHash   => $BuzzDeskSub1CAHash,
     PrivateString => $PrivateString,
 };
 
 # get data from files
 ( $CertificateString, $PrivateString, $PrivateSecret ) = $GetCertificateDataFromFiles->(
-    "SMIMECACertificate-Znuny-Sub2.crt",
-    "SMIMECAPrivateKey-Znuny-Sub2.pem",
-    "SMIMECAPrivateKeyPass-Znuny-Sub2.crt",
+    "SMIMECACertificate-BuzzDesk-Sub2.crt",
+    "SMIMECAPrivateKey-BuzzDesk-Sub2.pem",
+    "SMIMECAPrivateKeyPass-BuzzDesk-Sub2.crt",
 );
 
 # fill certificates table
-$Certificates{ZnunySub2CA} = {
-    Hash          => $ZnunySub2CAHash,
+$Certificates{BuzzDeskSub2CA} = {
+    Hash          => $BuzzDeskSub2CAHash,
     Fingerprint   => '09:96:79:95:C5:8F:9E:E9:DA:FB:76:7B:E1:F0:FA:89:68:71:AE:E3',
     String        => $CertificateString,
     PrivateSecret => $PrivateSecret,
-    PrivateHash   => $ZnunySub2CAHash,
+    PrivateHash   => $BuzzDeskSub2CAHash,
     PrivateString => $PrivateString,
 };
 
 # get data from files
 ( $CertificateString, $PrivateString, $PrivateSecret ) = $GetCertificateDataFromFiles->(
-    "SMIMECACertificate-Znuny-Root.crt",
-    "SMIMECAPrivateKey-Znuny-Root.pem",
-    "SMIMECAPrivateKeyPass-Znuny-Root.crt",
+    "SMIMECACertificate-BuzzDesk-Root.crt",
+    "SMIMECAPrivateKey-BuzzDesk-Root.pem",
+    "SMIMECAPrivateKeyPass-BuzzDesk-Root.crt",
 );
 
 # fill certificates table
-$Certificates{ZnunyRootCA} = {
-    Hash          => $ZnunyRootCAHash,
+$Certificates{BuzzDeskRootCA} = {
+    Hash          => $BuzzDeskRootCAHash,
     Fingerprint   => '52:1D:E1:0A:78:AC:FB:AE:2C:E9:64:13:5C:8B:73:22:48:70:88:24',
     String        => $CertificateString,
     PrivateSecret => $PrivateSecret,
-    PrivateHash   => $ZnunyRootCAHash,
+    PrivateHash   => $BuzzDeskRootCAHash,
     PrivateString => $PrivateString,
 };
 
@@ -798,8 +796,8 @@ $Certificates{ZnunyRootCA} = {
         'Sign(), failed certificate chain verification with option SMIME::NoVerify disabled, needed CA certificates not embedded',
     );
 
-    # add CA certificates to the local cert storage (ZnunySub2CA)
-    for my $Cert (qw( ZnunySub2CA )) {
+    # add CA certificates to the local cert storage (BuzzDeskSub2CA)
+    for my $Cert (qw( BuzzDeskSub2CA )) {
         $SMIMEObject->CertificateAdd(
             Certificate => $Certificates{$Cert}->{String},
         );
@@ -844,17 +842,17 @@ $Certificates{ZnunyRootCA} = {
 
     # add the root CA cert to the trusted certificates path
     $SMIMEObject->CertificateAdd(
-        Certificate => $Certificates{ZnunyRootCA}->{String},
+        Certificate => $Certificates{BuzzDeskRootCA}->{String},
     );
 
     $SMIMEObject->CertificateAdd(
-        Certificate => $Certificates{ZnunySub1CA}->{String},
+        Certificate => $Certificates{BuzzDeskSub1CA}->{String},
     );
 
     # verify now must works
     %Data = $SMIMEObject->Verify(
         Message => $Sign,
-        CACert  => "$CertPath/$ZnunyRootCAHash.0",
+        CACert  => "$CertPath/$BuzzDeskRootCAHash.0",
     );
 
     # it must work
@@ -897,7 +895,7 @@ $Certificates{ZnunyRootCA} = {
 
     my @TestRelationCertificatesList = $SMIMEObject->CertificateSearch(
         SearchType => 'fingerprint',
-        Search     => $Certificates{ZnunySub2CA}->{Fingerprint},
+        Search     => $Certificates{BuzzDeskSub2CA}->{Fingerprint},
     );
 
     my %TestRelationCertificate = %{ $TestRelationCertificatesList[0] };
@@ -917,7 +915,7 @@ $Certificates{ZnunyRootCA} = {
 
     @TestRelationCertificatesList = $SMIMEObject->CertificateSearch(
         SearchType => 'fingerprint',
-        Search     => $Certificates{ZnunySub1CA}->{Fingerprint},
+        Search     => $Certificates{BuzzDeskSub1CA}->{Fingerprint},
     );
 
     %TestRelationCertificate = %{ $TestRelationCertificatesList[0] };
@@ -941,7 +939,7 @@ $Certificates{ZnunyRootCA} = {
     # verify now must works
     %Data = $SMIMEObject->Verify(
         Message => $Sign,
-        CACert  => "$CertPath/$ZnunyRootCAHash.0",
+        CACert  => "$CertPath/$BuzzDeskRootCAHash.0",
     );
 
     # it must works
@@ -2152,135 +2150,135 @@ HZ4=
 
         # set wrong hashes
         my %WrongHashes = (
-            ZnunyRootCA => 'aaaaaaaa',
-            ZnunySub2CA => 'bbbbbbbb',
-            ZnunySub1CA => 'cccccccc',
+            BuzzDeskRootCA => 'aaaaaaaa',
+            BuzzDeskSub2CA => 'bbbbbbbb',
+            BuzzDeskSub1CA => 'cccccccc',
         );
 
         my @Tests = (
             {
                 Name     => '3 Certs, PKs and PSs',
                 WrongCAs => {
-                    ZnunyRootCA => {
-                        WrongCAFile                     => "$WrongHashes{ZnunyRootCA}.0",
-                        WrongCAFileContent              => $Certificates{ZnunyRootCA}->{String},
-                        WrongCAPrivateKeyFileContent    => $Certificates{ZnunyRootCA}->{PrivateString},
+                    BuzzDeskRootCA => {
+                        WrongCAFile                     => "$WrongHashes{BuzzDeskRootCA}.0",
+                        WrongCAFileContent              => $Certificates{BuzzDeskRootCA}->{String},
+                        WrongCAPrivateKeyFileContent    => $Certificates{BuzzDeskRootCA}->{PrivateString},
                         WrongCAPrivateSecretFileContent =>
-                            $Certificates{ZnunyRootCA}->{PrivateSecret},
+                            $Certificates{BuzzDeskRootCA}->{PrivateSecret},
                         WrongRelations => [
                             {
-                                CertHash        => $WrongHashes{ZnunyRootCA},
-                                CertFingerprint => $Certificates{ZnunyRootCA}->{Fingerprint},
-                                CAHash          => $WrongHashes{ZnunySub2CA},
-                                CAFingerprint   => $Certificates{ZnunySub2CA}->{Fingerprint},
+                                CertHash        => $WrongHashes{BuzzDeskRootCA},
+                                CertFingerprint => $Certificates{BuzzDeskRootCA}->{Fingerprint},
+                                CAHash          => $WrongHashes{BuzzDeskSub2CA},
+                                CAFingerprint   => $Certificates{BuzzDeskSub2CA}->{Fingerprint},
 
                             },
                             {
-                                CertHash        => $WrongHashes{ZnunyRootCA},
-                                CertFingerprint => $Certificates{ZnunyRootCA}->{Fingerprint},
-                                CAHash          => $WrongHashes{ZnunySub1CA},
-                                CAFingerprint   => $Certificates{ZnunySub1CA}->{Fingerprint},
+                                CertHash        => $WrongHashes{BuzzDeskRootCA},
+                                CertFingerprint => $Certificates{BuzzDeskRootCA}->{Fingerprint},
+                                CAHash          => $WrongHashes{BuzzDeskSub1CA},
+                                CAFingerprint   => $Certificates{BuzzDeskSub1CA}->{Fingerprint},
 
                             },
                         ],
                     },
-                    ZnunySub2CA => {
-                        WrongCAFile                     => "$WrongHashes{ZnunySub2CA}.0",
-                        WrongCAFileContent              => $Certificates{ZnunySub2CA}->{String},
-                        WrongCAPrivateKeyFileContent    => $Certificates{ZnunySub2CA}->{PrivateString},
-                        WrongCAPrivateSecretFileContent => $Certificates{ZnunySub2CA}->{PrivateSecret},
+                    BuzzDeskSub2CA => {
+                        WrongCAFile                     => "$WrongHashes{BuzzDeskSub2CA}.0",
+                        WrongCAFileContent              => $Certificates{BuzzDeskSub2CA}->{String},
+                        WrongCAPrivateKeyFileContent    => $Certificates{BuzzDeskSub2CA}->{PrivateString},
+                        WrongCAPrivateSecretFileContent => $Certificates{BuzzDeskSub2CA}->{PrivateSecret},
                         WrongRelations                  => [
                             {
-                                CertHash        => $WrongHashes{ZnunySub2CA},
-                                CertFingerprint => $Certificates{ZnunySub2CA}->{Fingerprint},
-                                CAHash          => $WrongHashes{ZnunyRootCA},
-                                CAFingerprint   => $Certificates{ZnunyRootCA}->{Fingerprint},
+                                CertHash        => $WrongHashes{BuzzDeskSub2CA},
+                                CertFingerprint => $Certificates{BuzzDeskSub2CA}->{Fingerprint},
+                                CAHash          => $WrongHashes{BuzzDeskRootCA},
+                                CAFingerprint   => $Certificates{BuzzDeskRootCA}->{Fingerprint},
 
                             },
                             {
-                                CertHash        => $WrongHashes{ZnunySub2CA},
-                                CertFingerprint => $Certificates{ZnunySub2CA}->{Fingerprint},
-                                CAHash          => $WrongHashes{ZnunySub1CA},
-                                CAFingerprint   => $Certificates{ZnunySub1CA}->{Fingerprint},
+                                CertHash        => $WrongHashes{BuzzDeskSub2CA},
+                                CertFingerprint => $Certificates{BuzzDeskSub2CA}->{Fingerprint},
+                                CAHash          => $WrongHashes{BuzzDeskSub1CA},
+                                CAFingerprint   => $Certificates{BuzzDeskSub1CA}->{Fingerprint},
 
                             },
                         ],
                     },
-                    ZnunySub1CA => {
-                        WrongCAFile                     => "$WrongHashes{ZnunySub1CA}.0",
-                        WrongCAFileContent              => $Certificates{ZnunySub1CA}->{String},
-                        WrongCAPrivateKeyFileContent    => $Certificates{ZnunySub1CA}->{PrivateString},
+                    BuzzDeskSub1CA => {
+                        WrongCAFile                     => "$WrongHashes{BuzzDeskSub1CA}.0",
+                        WrongCAFileContent              => $Certificates{BuzzDeskSub1CA}->{String},
+                        WrongCAPrivateKeyFileContent    => $Certificates{BuzzDeskSub1CA}->{PrivateString},
                         WrongCAPrivateSecretFileContent =>
-                            $Certificates{ZnunyRootCA}->{PrivateSecret},
+                            $Certificates{BuzzDeskRootCA}->{PrivateSecret},
                         WrongRelations => [
                             {
-                                CertHash        => $WrongHashes{ZnunySub1CA},
-                                CertFingerprint => $Certificates{ZnunySub1CA}->{Fingerprint},
-                                CAHash          => $WrongHashes{ZnunyRootCA},
-                                CAFingerprint   => $Certificates{ZnunyRootCA}->{Fingerprint},
+                                CertHash        => $WrongHashes{BuzzDeskSub1CA},
+                                CertFingerprint => $Certificates{BuzzDeskSub1CA}->{Fingerprint},
+                                CAHash          => $WrongHashes{BuzzDeskRootCA},
+                                CAFingerprint   => $Certificates{BuzzDeskRootCA}->{Fingerprint},
 
                             },
                             {
-                                CertHash        => $WrongHashes{ZnunySub1CA},
-                                CertFingerprint => $Certificates{ZnunySub1CA}->{Fingerprint},
-                                CAHash          => $WrongHashes{ZnunySub2CA},
-                                CAFingerprint   => $Certificates{ZnunySub2CA}->{Fingerprint},
+                                CertHash        => $WrongHashes{BuzzDeskSub1CA},
+                                CertFingerprint => $Certificates{BuzzDeskSub1CA}->{Fingerprint},
+                                CAHash          => $WrongHashes{BuzzDeskSub2CA},
+                                CAFingerprint   => $Certificates{BuzzDeskSub2CA}->{Fingerprint},
 
                             },
                         ],
                     },
                 },
                 CorrectCAs => {
-                    ZnunyRootCA => {
+                    BuzzDeskRootCA => {
                         CorrectRelations => [
                             {
-                                CertHash        => $Certificates{ZnunyRootCA}->{Hash},
-                                CertFingerprint => $Certificates{ZnunyRootCA}->{Fingerprint},
-                                CAHash          => $Certificates{ZnunySub2CA}->{Hash},
-                                CAFingerprint   => $Certificates{ZnunySub2CA}->{Fingerprint},
+                                CertHash        => $Certificates{BuzzDeskRootCA}->{Hash},
+                                CertFingerprint => $Certificates{BuzzDeskRootCA}->{Fingerprint},
+                                CAHash          => $Certificates{BuzzDeskSub2CA}->{Hash},
+                                CAFingerprint   => $Certificates{BuzzDeskSub2CA}->{Fingerprint},
 
                             },
                             {
-                                CertHash        => $Certificates{ZnunyRootCA}->{Hash},
-                                CertFingerprint => $Certificates{ZnunyRootCA}->{Fingerprint},
-                                CAHash          => $Certificates{ZnunySub1CA}->{Hash},
-                                CAFingerprint   => $Certificates{ZnunySub1CA}->{Fingerprint},
+                                CertHash        => $Certificates{BuzzDeskRootCA}->{Hash},
+                                CertFingerprint => $Certificates{BuzzDeskRootCA}->{Fingerprint},
+                                CAHash          => $Certificates{BuzzDeskSub1CA}->{Hash},
+                                CAFingerprint   => $Certificates{BuzzDeskSub1CA}->{Fingerprint},
 
                             },
                         ],
                     },
-                    ZnunySub2CA => {
+                    BuzzDeskSub2CA => {
                         CorrectRelations => [
                             {
-                                CertHash        => $Certificates{ZnunySub2CA}->{Hash},
-                                CertFingerprint => $Certificates{ZnunySub2CA}->{Fingerprint},
-                                CAHash          => $Certificates{ZnunyRootCA}->{Hash},
-                                CAFingerprint   => $Certificates{ZnunyRootCA}->{Fingerprint},
+                                CertHash        => $Certificates{BuzzDeskSub2CA}->{Hash},
+                                CertFingerprint => $Certificates{BuzzDeskSub2CA}->{Fingerprint},
+                                CAHash          => $Certificates{BuzzDeskRootCA}->{Hash},
+                                CAFingerprint   => $Certificates{BuzzDeskRootCA}->{Fingerprint},
 
                             },
                             {
-                                CertHash        => $Certificates{ZnunySub2CA}->{Hash},
-                                CertFingerprint => $Certificates{ZnunySub2CA}->{Fingerprint},
-                                CAHash          => $Certificates{ZnunySub1CA}->{Hash},
-                                CAFingerprint   => $Certificates{ZnunySub1CA}->{Fingerprint},
+                                CertHash        => $Certificates{BuzzDeskSub2CA}->{Hash},
+                                CertFingerprint => $Certificates{BuzzDeskSub2CA}->{Fingerprint},
+                                CAHash          => $Certificates{BuzzDeskSub1CA}->{Hash},
+                                CAFingerprint   => $Certificates{BuzzDeskSub1CA}->{Fingerprint},
 
                             },
                         ],
                     },
-                    ZnunySub1CA => {
+                    BuzzDeskSub1CA => {
                         CorrectRelations => [
                             {
-                                CertHash        => $Certificates{ZnunySub1CA}->{Hash},
-                                CertFingerprint => $Certificates{ZnunySub1CA}->{Fingerprint},
-                                CAHash          => $Certificates{ZnunyRootCA}->{Hash},
-                                CAFingerprint   => $Certificates{ZnunyRootCA}->{Fingerprint},
+                                CertHash        => $Certificates{BuzzDeskSub1CA}->{Hash},
+                                CertFingerprint => $Certificates{BuzzDeskSub1CA}->{Fingerprint},
+                                CAHash          => $Certificates{BuzzDeskRootCA}->{Hash},
+                                CAFingerprint   => $Certificates{BuzzDeskRootCA}->{Fingerprint},
 
                             },
                             {
-                                CertHash        => $Certificates{ZnunySub1CA}->{Hash},
-                                CertFingerprint => $Certificates{ZnunySub1CA}->{Fingerprint},
-                                CAHash          => $Certificates{ZnunySub2CA}->{Hash},
-                                CAFingerprint   => $Certificates{ZnunySub2CA}->{Fingerprint},
+                                CertHash        => $Certificates{BuzzDeskSub1CA}->{Hash},
+                                CertFingerprint => $Certificates{BuzzDeskSub1CA}->{Fingerprint},
+                                CAHash          => $Certificates{BuzzDeskSub2CA}->{Hash},
+                                CAFingerprint   => $Certificates{BuzzDeskSub2CA}->{Fingerprint},
                             },
                         ],
                     },
@@ -2293,12 +2291,12 @@ HZ4=
             {
                 Name     => '1 Cert, No PKs No PSs',
                 WrongCAs => {
-                    ZnunyRootCA => {
-                        WrongCAFile                     => "$WrongHashes{ZnunyRootCA}.0",
-                        WrongCAFileContent              => $Certificates{ZnunyRootCA}->{String},
-                        WrongCAPrivateKeyFileContent    => $Certificates{ZnunyRootCA}->{PrivateString},
+                    BuzzDeskRootCA => {
+                        WrongCAFile                     => "$WrongHashes{BuzzDeskRootCA}.0",
+                        WrongCAFileContent              => $Certificates{BuzzDeskRootCA}->{String},
+                        WrongCAPrivateKeyFileContent    => $Certificates{BuzzDeskRootCA}->{PrivateString},
                         WrongCAPrivateSecretFileContent =>
-                            $Certificates{ZnunyRootCA}->{PrivateSecret},
+                            $Certificates{BuzzDeskRootCA}->{PrivateSecret},
                     },
                 },
                 UsePrivateKeys    => 0,
@@ -2309,12 +2307,12 @@ HZ4=
             {
                 Name     => '1 Cert, 1 PKs No PSs',
                 WrongCAs => {
-                    ZnunyRootCA => {
-                        WrongCAFile                     => "$WrongHashes{ZnunyRootCA}.0",
-                        WrongCAFileContent              => $Certificates{ZnunyRootCA}->{String},
-                        WrongCAPrivateKeyFileContent    => $Certificates{ZnunyRootCA}->{PrivateString},
+                    BuzzDeskRootCA => {
+                        WrongCAFile                     => "$WrongHashes{BuzzDeskRootCA}.0",
+                        WrongCAFileContent              => $Certificates{BuzzDeskRootCA}->{String},
+                        WrongCAPrivateKeyFileContent    => $Certificates{BuzzDeskRootCA}->{PrivateString},
                         WrongCAPrivateSecretFileContent =>
-                            $Certificates{ZnunyRootCA}->{PrivateSecret},
+                            $Certificates{BuzzDeskRootCA}->{PrivateSecret},
                     },
                 },
                 UsePrivateKeys    => 1,
@@ -2325,12 +2323,12 @@ HZ4=
             {
                 Name     => '1 Cert, No PKs 1 PSs',
                 WrongCAs => {
-                    ZnunyRootCA => {
-                        WrongCAFile                     => "$WrongHashes{ZnunyRootCA}.0",
-                        WrongCAFileContent              => $Certificates{ZnunyRootCA}->{String},
-                        WrongCAPrivateKeyFileContent    => $Certificates{ZnunyRootCA}->{PrivateString},
+                    BuzzDeskRootCA => {
+                        WrongCAFile                     => "$WrongHashes{BuzzDeskRootCA}.0",
+                        WrongCAFileContent              => $Certificates{BuzzDeskRootCA}->{String},
+                        WrongCAPrivateKeyFileContent    => $Certificates{BuzzDeskRootCA}->{PrivateString},
                         WrongCAPrivateSecretFileContent =>
-                            $Certificates{ZnunyRootCA}->{PrivateSecret},
+                            $Certificates{BuzzDeskRootCA}->{PrivateSecret},
                     },
                 },
                 UsePrivateKeys    => 0,
@@ -2348,7 +2346,7 @@ HZ4=
 
             # CAs have to be in a certain order for this test.
             my @WrongCAs;
-            for my $CA (qw(ZnunySub1CA ZnunySub2CA ZnunyRootCA)) {
+            for my $CA (qw(BuzzDeskSub1CA BuzzDeskSub2CA BuzzDeskRootCA)) {
                 push @WrongCAs, $CA if $Test->{WrongCAs}->{$CA};
             }
 
@@ -2613,7 +2611,7 @@ HZ4=
 {
 
     # add certificates
-    for my $CA (qw( ZnunyRootCA ZnunySub1CA )) {
+    for my $CA (qw( BuzzDeskRootCA BuzzDeskSub1CA )) {
         my %Result = $SMIMEObject->CertificateAdd(
             Certificate => $Certificates{$CA}->{String},
         );
@@ -2635,7 +2633,7 @@ HZ4=
         {
             Name   => 'Wrong Filename',
             Params => {
-                Filename => "$Certificates{ZnunySub2CA}->{Hash}.0",
+                Filename => "$Certificates{BuzzDeskSub2CA}->{Hash}.0",
             },
             Success => 0,
         },
@@ -2643,14 +2641,14 @@ HZ4=
             Name   => 'Missing Hash',
             Params => {
                 Hash        => '',
-                Fingerprint => $Certificates{ZnunyRootCA}->{Fingerprint},
+                Fingerprint => $Certificates{BuzzDeskRootCA}->{Fingerprint},
             },
             Success => 0,
         },
         {
             Name   => 'Missing Fingerprint',
             Params => {
-                Hash        => $Certificates{ZnunyRootCA}->{Hash},
+                Hash        => $Certificates{BuzzDeskRootCA}->{Hash},
                 Fingerprint => '',
             },
             Success => 0,
@@ -2658,31 +2656,31 @@ HZ4=
         {
             Name   => 'Wrong Hash',
             Params => {
-                Hash        => $Certificates{ZnunySub1CA}->{Hash},
-                Fingerprint => $Certificates{ZnunyRootCA}->{Fingerprint},
+                Hash        => $Certificates{BuzzDeskSub1CA}->{Hash},
+                Fingerprint => $Certificates{BuzzDeskRootCA}->{Fingerprint},
             },
             Success => 0,
         },
         {
             Name   => 'Wrong Fingerprint',
             Params => {
-                Hash        => $Certificates{ZnunyRootCA}->{Hash},
-                Fingerprint => $Certificates{ZnunySub1CA}->{Fingerprint},
+                Hash        => $Certificates{BuzzDeskRootCA}->{Hash},
+                Fingerprint => $Certificates{BuzzDeskSub1CA}->{Fingerprint},
             },
             Success => 0,
         },
         {
             Name   => 'Correct Filename',
             Params => {
-                Filename => "$Certificates{ZnunyRootCA}->{Hash}.0",
+                Filename => "$Certificates{BuzzDeskRootCA}->{Hash}.0",
             },
             Success => 1,
         },
         {
             Name   => 'Correct Hash, Fingerprint',
             Params => {
-                Hash        => $Certificates{ZnunyRootCA}->{Hash},
-                Fingerprint => $Certificates{ZnunyRootCA}->{Fingerprint},
+                Hash        => $Certificates{BuzzDeskRootCA}->{Hash},
+                Fingerprint => $Certificates{BuzzDeskRootCA}->{Fingerprint},
             },
             Success => 1,
         },
@@ -2728,11 +2726,11 @@ HZ4=
 
     # compare both methods
     my $CertificateText1 = $SMIMEObject->CertificateRead(
-        Filename => "$Certificates{ZnunyRootCA}->{Hash}.0",
+        Filename => "$Certificates{BuzzDeskRootCA}->{Hash}.0",
     );
     my $CertificateText2 = $SMIMEObject->CertificateRead(
-        Hash        => $Certificates{ZnunyRootCA}->{Hash},
-        Fingerprint => $Certificates{ZnunyRootCA}->{Fingerprint},
+        Hash        => $Certificates{BuzzDeskRootCA}->{Hash},
+        Fingerprint => $Certificates{BuzzDeskRootCA}->{Fingerprint},
     );
 
     $Self->Is(
@@ -2742,7 +2740,7 @@ HZ4=
     );
 
     # clean system, remove certificates
-    for my $CA (qw( ZnunyRootCA ZnunySub1CA )) {
+    for my $CA (qw( BuzzDeskRootCA BuzzDeskSub1CA )) {
         my %Result = $SMIMEObject->CertificateRemove(
             Hash        => $Certificates{$CA}->{Hash},
             Fingerprint => $Certificates{$CA}->{Fingerprint},

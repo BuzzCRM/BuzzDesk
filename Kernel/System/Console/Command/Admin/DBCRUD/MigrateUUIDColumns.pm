@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -23,7 +22,7 @@ sub Configure {
     my ( $Self, %Param ) = @_;
 
     $Self->Description(
-        'Migrates UUID column for every database table of a DBCRUD module for Znuny 6.1 and up. Already migrated columns will not be touched again and reported as success.'
+        'Migrates UUID column for every database table of a DBCRUD module for BuzzDesk 6.1 and up. Already migrated columns will not be touched again and reported as success.'
     );
 
     return;

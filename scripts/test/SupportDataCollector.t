@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -31,14 +29,14 @@ $HelperObject->ConfigSettingChange(
     Valid => 1,
     Key   => 'SupportDataCollector::DisablePlugins',
     Value => [
-        'Kernel::System::SupportDataCollector::Plugin::Znuny::PackageDeployment',
+        'Kernel::System::SupportDataCollector::Plugin::BuzzDesk::PackageDeployment',
     ],
 );
 $HelperObject->ConfigSettingChange(
     Valid => 1,
     Key   => 'SupportDataCollector::IdentifierFilterBlacklist',
     Value => [
-        'Kernel::System::SupportDataCollector::Plugin::Znuny::TimeSettings::UserDefaultTimeZone',
+        'Kernel::System::SupportDataCollector::Plugin::BuzzDesk::TimeSettings::UserDefaultTimeZone',
     ],
 );
 
@@ -150,7 +148,7 @@ for my $ResultEntry ( @{ $Result{Result} || [] } ) {
 
 # Check if the identifier from the disabled plugions are not present.
 for my $DisabledPluginsIdentifier (
-    qw(Kernel::System::SupportDataCollector::Plugin::Znuny::PackageDeployment Kernel::System::SupportDataCollector::Plugin::Znuny::PackageDeployment::Verification Kernel::System::SupportDataCollector::Plugin::Znuny::PackageDeployment::FrameworkVersion)
+    qw(Kernel::System::SupportDataCollector::Plugin::BuzzDesk::PackageDeployment Kernel::System::SupportDataCollector::Plugin::BuzzDesk::PackageDeployment::Verification Kernel::System::SupportDataCollector::Plugin::BuzzDesk::PackageDeployment::FrameworkVersion)
     )
 {
     $Self->False(
@@ -161,8 +159,8 @@ for my $DisabledPluginsIdentifier (
 
 # Check if the identifiers from the identifier filter blacklist are not present.
 $Self->False(
-    $SeenIdentifier{'Kernel::System::SupportDataCollector::Plugin::Znuny::TimeSettings::UserDefaultTimeZone'},
-    "Collect() - SupportDataCollector::IdentifierFilterBlacklist - Kernel::System::SupportDataCollector::Plugin::Znuny::TimeSettings::UserDefaultTimeZone should not be present"
+    $SeenIdentifier{'Kernel::System::SupportDataCollector::Plugin::BuzzDesk::TimeSettings::UserDefaultTimeZone'},
+    "Collect() - SupportDataCollector::IdentifierFilterBlacklist - Kernel::System::SupportDataCollector::Plugin::BuzzDesk::TimeSettings::UserDefaultTimeZone should not be present"
 );
 
 # cache tests

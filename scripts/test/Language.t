@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -27,7 +26,7 @@ my $LanguageObject = $Kernel::OM->Get('Kernel::Language');
 
 my $DefaultTheme = $ConfigObject->Get('DefaultTheme');
 my $TempDir      = $ConfigObject->Get('TempDir');
-my $ModuleDir    = "$TempDir/ZnunyLanguage";
+my $ModuleDir    = "$TempDir/BuzzDeskLanguage";
 
 if ( !-d $ModuleDir ) {
     File::Path::make_path( $ModuleDir, { chmod => 0770 } );    ## no critic
@@ -36,16 +35,16 @@ if ( !-d $ModuleDir ) {
 # GetTTTemplateTranslatableStrings
 my @Tests = (
     {
-        Name => '1. [% Translate("GetTTTemplateTranslatableStrings - Znuny rocks") | html %]',
+        Name => '1. [% Translate("GetTTTemplateTranslatableStrings - BuzzDesk rocks") | html %]',
         Data => {
             Filename  => 'Template.tt',
-            Content   => '<h1>[% Translate("GetTTTemplateTranslatableStrings - Znuny rocks") | html %]</h1>',
+            Content   => '<h1>[% Translate("GetTTTemplateTranslatableStrings - BuzzDesk rocks") | html %]</h1>',
             Directory => "$ModuleDir/Kernel/Output/HTML/Templates/$DefaultTheme",
         },
         Expected => [
             {
                 'Location' => 'TT Template: Kernel/Output/HTML/Templates/Standard/Template.tt',
-                'Source'   => 'GetTTTemplateTranslatableStrings - Znuny rocks',
+                'Source'   => 'GetTTTemplateTranslatableStrings - BuzzDesk rocks',
             }
         ],
     },
@@ -77,16 +76,16 @@ for my $Test (@Tests) {
 # GetJSTemplateTranslatableStrings
 @Tests = (
     {
-        Name => '1. <span>{{ "GetJSTemplateTranslatableStrings - Znuny rocks" | Translate }}</span>',
+        Name => '1. <span>{{ "GetJSTemplateTranslatableStrings - BuzzDesk rocks" | Translate }}</span>',
         Data => {
             Filename  => 'Template.html.tmpl',
-            Content   => '<span>{{ "GetJSTemplateTranslatableStrings - Znuny rocks" | Translate }}</span>',
+            Content   => '<span>{{ "GetJSTemplateTranslatableStrings - BuzzDesk rocks" | Translate }}</span>',
             Directory => "$ModuleDir/Kernel/Output/JavaScript/Templates/$DefaultTheme",
         },
         Expected => [
             {
                 'Location' => 'JS Template: Kernel/Output/JavaScript/Templates/Standard/Template.html.tmpl',
-                'Source'   => 'GetJSTemplateTranslatableStrings - Znuny rocks',
+                'Source'   => 'GetJSTemplateTranslatableStrings - BuzzDesk rocks',
             }
         ],
     },
@@ -118,16 +117,16 @@ for my $Test (@Tests) {
 # GetPerlModuleTranslatableStrings
 @Tests = (
     {
-        Name => '1. Translatable("GetPerlModuleTranslatableStrings - Znuny rocks")',
+        Name => '1. Translatable("GetPerlModuleTranslatableStrings - BuzzDesk rocks")',
         Data => {
             Filename  => 'Nanok.pm',
-            Content   => 'my $Strin = Translatable("GetPerlModuleTranslatableStrings - Znuny rocks");',
+            Content   => 'my $Strin = Translatable("GetPerlModuleTranslatableStrings - BuzzDesk rocks");',
             Directory => "$ModuleDir/Kernel/",
         },
         Expected => [
             {
                 'Location' => 'Perl Module: Kernel/Nanok.pm',
-                'Source'   => 'GetPerlModuleTranslatableStrings - Znuny rocks',
+                'Source'   => 'GetPerlModuleTranslatableStrings - BuzzDesk rocks',
             }
         ],
     },
@@ -159,16 +158,16 @@ for my $Test (@Tests) {
 # GetXMLTranslatableStrings
 @Tests = (
     {
-        Name => '1. <Description Translatable="1">GetXMLTranslatableStrings - Znuny rocks</Description>',
+        Name => '1. <Description Translatable="1">GetXMLTranslatableStrings - BuzzDesk rocks</Description>',
         Data => {
-            Filename  => 'Znuny.sopm',
-            Content   => '<Description Translatable="1">GetXMLTranslatableStrings - Znuny rocks</Description>',
-            Directory => "$ModuleDir/Znuny/",
+            Filename  => 'BuzzDesk.sopm',
+            Content   => '<Description Translatable="1">GetXMLTranslatableStrings - BuzzDesk rocks</Description>',
+            Directory => "$ModuleDir/BuzzDesk/",
         },
         Expected => [
             {
-                'Location' => 'XML Definition: Znuny.sopm',
-                'Source'   => 'GetXMLTranslatableStrings - Znuny rocks',
+                'Location' => 'XML Definition: BuzzDesk.sopm',
+                'Source'   => 'GetXMLTranslatableStrings - BuzzDesk rocks',
             }
         ],
     },
@@ -200,16 +199,16 @@ for my $Test (@Tests) {
 # GetJSTranslatableStrings
 @Tests = (
     {
-        Name => '1. [% Translate("GetJSTranslatableStrings - Znuny rocks") | html %]',
+        Name => '1. [% Translate("GetJSTranslatableStrings - BuzzDesk rocks") | html %]',
         Data => {
-            Filename  => 'Znuny.App.js',
-            Content   => "Core.Language.Translate('GetJSTranslatableStrings - Znuny rocks')",
+            Filename  => 'BuzzDesk.App.js',
+            Content   => "Core.Language.Translate('GetJSTranslatableStrings - BuzzDesk rocks')",
             Directory => "$ModuleDir/var/httpd/htdocs/js",
         },
         Expected => [
             {
-                'Location' => 'JS File: var/httpd/htdocs/js/Znuny.App.js',
-                'Source'   => 'GetJSTranslatableStrings - Znuny rocks',
+                'Location' => 'JS File: var/httpd/htdocs/js/BuzzDesk.App.js',
+                'Source'   => 'GetJSTranslatableStrings - BuzzDesk rocks',
             }
         ],
     },

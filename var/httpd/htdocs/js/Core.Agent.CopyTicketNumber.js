@@ -1,5 +1,4 @@
 // --
-// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (AGPL). If you
@@ -15,7 +14,7 @@ Core.Agent = Core.Agent || {};
  * @namespace
  * @exports TargetNS as Core.Agent.CopyTicketNumber
  * @description
- *      This namespace contains the special functions for ZnunyCopyTicketNumber.
+ *      This namespace contains the special functions for BuzzDeskCopyTicketNumber.
  */
 Core.Agent.CopyTicketNumber = (function (TargetNS) {
 

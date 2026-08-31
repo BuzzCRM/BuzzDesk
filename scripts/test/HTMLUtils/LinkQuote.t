@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -86,9 +84,9 @@ my @Tests = (
     },
     {
         Input =>
-            'Some text with a complicated url http://example.com/znuny/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631',
+            'Some text with a complicated url http://example.com/buzzdesk/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631',
         Result =>
-            'Some text with a complicated url <a href="http://example.com/znuny/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631" title="http://example.com/znuny/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631">http://example.com/znuny/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631</a>',
+            'Some text with a complicated url <a href="http://example.com/buzzdesk/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631" title="http://example.com/buzzdesk/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631">http://example.com/buzzdesk/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631</a>',
         Name   => 'LinkQuote - complicated',
         Target => '',
     },
@@ -150,9 +148,9 @@ my @Tests = (
     },
     {
         Input =>
-            'Some text with a full url http://example.com/znuny/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631',
+            'Some text with a full url http://example.com/buzzdesk/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631',
         Result =>
-            'Some text with a full url <a href="http://example.com/znuny/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631" title="http://example.com/znuny/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631">http://example.com/znuny/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631</a>',
+            'Some text with a full url <a href="http://example.com/buzzdesk/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631" title="http://example.com/buzzdesk/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631">http://example.com/buzzdesk/index.pl?Action=AgentTicketZoom&TicketID=256868&ArticleID=696631&ZoomExpand=0#696631</a>',
         Name   => 'LinkQuote – full url',
         Target => '',
     },
@@ -323,9 +321,9 @@ my @Tests = (
     },
     {
         Input =>
-            '<br />http://cuba/znuny/index.pl?Action=AgentTicketZoom&amp;TicketID=4348<br /><br />Your Znuny Notification Master',
+            '<br />http://cuba/buzzdesk/index.pl?Action=AgentTicketZoom&amp;TicketID=4348<br /><br />Your BuzzDesk Notification Master',
         Result =>
-            '<br /><a href="http://cuba/znuny/index.pl?Action=AgentTicketZoom&amp;TicketID=4348" title="http://cuba/znuny/index.pl?Action=AgentTicketZoom&amp;TicketID=4348">http://cuba/znuny/index.pl?Action=AgentTicketZoom&amp;TicketID=4348</a><br /><br />Your Znuny Notification Master',
+            '<br /><a href="http://cuba/buzzdesk/index.pl?Action=AgentTicketZoom&amp;TicketID=4348" title="http://cuba/buzzdesk/index.pl?Action=AgentTicketZoom&amp;TicketID=4348">http://cuba/buzzdesk/index.pl?Action=AgentTicketZoom&amp;TicketID=4348</a><br /><br />Your BuzzDesk Notification Master',
         Name   => 'LinkQuote - just TLD given;',
         Target => '',
     },

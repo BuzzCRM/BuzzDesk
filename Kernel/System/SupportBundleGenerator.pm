@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -438,7 +436,7 @@ sub GeneratePackageList {
 
 =head2 GenerateConfigurationDump()
 
-Generates a C<.yml> file with the Znuny system configuration information
+Generates a C<.yml> file with the BuzzDesk system configuration information
 
     my ( $Content, $Filename ) = $SupportBundleGeneratorObject->GenerateConfigurationDump();
 

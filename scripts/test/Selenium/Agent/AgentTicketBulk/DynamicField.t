@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -20,9 +19,9 @@ if ( !$SeleniumObject->{SeleniumTestsActive} ) {
     return 1;
 }
 
-my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
-$ZnunyHelperObject->_RebuildConfig();
+$BuzzDeskHelperObject->_RebuildConfig();
 
 my $Success;
 
@@ -42,7 +41,7 @@ $Self->True(
     scalar keys %UserData,
     "Test User created successfully.",
 );
-my $QueueID = $ZnunyHelperObject->_QueueCreateIfNotExists(
+my $QueueID = $BuzzDeskHelperObject->_QueueCreateIfNotExists(
     Name    => 'UT' . $HelperObject->GetRandomNumber(),
     GroupID => 1,
 );
@@ -169,7 +168,7 @@ my %Screens = (
     AgentTicketBulk => \%DynamicFieldsForEnabling,
 );
 
-$Success = $ZnunyHelperObject->_DynamicFieldsScreenEnable(%Screens);
+$Success = $BuzzDeskHelperObject->_DynamicFieldsScreenEnable(%Screens);
 
 $Self->True(
     $Success,
@@ -207,10 +206,10 @@ for my $TicketID (@TicketIDs) {
 
 my $SeleniumTest = sub {
 
-    # initialize Znuny4OTRS Helpers and other needed objects
+    # initialize BuzzDesk4OTRS Helpers and other needed objects
     my $UserObject        = $Kernel::OM->Get('Kernel::System::User');
     my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     #     # setup a full featured test environment
     #     my $TestEnvironmentData = $HelperObject->SetupTestEnvironment();

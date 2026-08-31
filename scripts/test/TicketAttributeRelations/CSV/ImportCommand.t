@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -26,7 +25,7 @@ my $HelperObject                   = $Kernel::OM->Get('Kernel::System::UnitTest:
 my $ConfigObject                   = $Kernel::OM->Get('Kernel::Config');
 my $TicketAttributeRelationsObject = $Kernel::OM->Get('Kernel::System::TicketAttributeRelations');
 my $MainObject                     = $Kernel::OM->Get('Kernel::System::Main');
-my $ZnunyHelperObject              = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject              = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $DynamicFieldObject             = $Kernel::OM->Get('Kernel::System::DynamicField');
 
 my $UserID = 1;
@@ -66,7 +65,7 @@ my @DynamicFields = (
     },
 );
 
-my $DynamicFieldsCreated = $ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFields);
+my $DynamicFieldsCreated = $BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFields);
 
 $Self->True(
     scalar $DynamicFieldsCreated,
@@ -77,12 +76,12 @@ $Self->True(
 # Import new file
 #
 
-my $Content = <<'ZNUNY';
+my $Content = <<'BUZZDESK';
 "DynamicField_UnitTestDropdown1";"DynamicField_UnitTestDropdown2"
 "a";"1"
 "b";"2"
 "c";"3"
-ZNUNY
+BUZZDESK
 
 my $FilePath = $MainObject->FileWrite(
     Location => $UnitTestFilePath,
@@ -164,12 +163,12 @@ $Self->IsDeeply(
 # Update imported ticket attribute relations
 #
 
-$Content = <<'ZNUNY';
+$Content = <<'BUZZDESK';
 "DynamicField_UnitTestDropdown1";"DynamicField_UnitTestDropdown2"
 "a";"4"
 "b";"5"
 "c";"6"
-ZNUNY
+BUZZDESK
 
 $FilePath = $MainObject->FileWrite(
     Location => $UnitTestFilePath,
@@ -276,12 +275,12 @@ for my $DynamicFieldName ( sort keys %ExpectedDynamicFieldPossibleValues ) {
 # Update with dynamic field config update
 #
 
-$Content = <<'ZNUNY';
+$Content = <<'BUZZDESK';
 "DynamicField_UnitTestDropdown1";"DynamicField_UnitTestDropdown2"
 "a";"7"
 "b";"8"
 "c";"9"
-ZNUNY
+BUZZDESK
 
 $FilePath = $MainObject->FileWrite(
     Location => $UnitTestFilePath,
@@ -396,12 +395,12 @@ for my $DynamicFieldName ( sort keys %ExpectedDynamicFieldPossibleValues ) {
 my $SecondUnitTestFilename = 'UnitTestTicketAttributeRelationsConsoleCommand2.csv';
 my $SecondUnitTestFilePath = $Home . '/var/tmp/' . $SecondUnitTestFilename;
 
-my $SecondContent = <<'ZNUNY';
+my $SecondContent = <<'BUZZDESK';
 "DynamicField_UnitTestDropdown1";"DynamicField_UnitTestDropdown2"
 "d";"10"
 "e";"11"
 "f";"12"
-ZNUNY
+BUZZDESK
 
 my $SecondFilePath = $MainObject->FileWrite(
     Location => $SecondUnitTestFilePath,

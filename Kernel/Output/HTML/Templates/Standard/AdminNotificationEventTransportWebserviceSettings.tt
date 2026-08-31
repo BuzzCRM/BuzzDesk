@@ -1,11 +1,10 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::TT::Breadcrumb)
+## nofilter(TidyAll::Plugin::BuzzDesk::TT::Breadcrumb)
 
 <div class="field-wrapper">
     <label for="TransportWebserviceID">[% Translate("Web service name") | html %]</label>
@@ -40,7 +39,7 @@
         <div id="TransportWebserviceAdditionalRecipientsError" class="TooltipErrorMessage"><p>[% Translate("This field must have less then 200 characters.") | html %]</p></div>
         <div id="TransportWebserviceAdditionalRecipientsServerError" class="TooltipErrorMessage"><p>[% Translate("This field must have less then 200 characters.") | html %]</p></div>
         <p class="FieldExplanation">[% Translate("Use comma or semicolon to separate email addresses.") | html %]</p>
-        <p class="FieldExplanation">[% Translate("You can use Znuny-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.") | html %]</p>
+        <p class="FieldExplanation">[% Translate("You can use BuzzDesk-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.") | html %]</p>
     </div>
 </div>
 

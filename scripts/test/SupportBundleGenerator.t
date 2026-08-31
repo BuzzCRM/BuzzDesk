@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -50,7 +48,7 @@ $HelperObject->ConfigSettingChange(
     Valid => 1,
     Key   => 'SupportDataCollector::DisablePlugins',
     Value => [
-        'Kernel::System::SupportDataCollector::Plugin::Znuny::PackageDeployment',
+        'Kernel::System::SupportDataCollector::Plugin::BuzzDesk::PackageDeployment',
     ],
 );
 
@@ -81,7 +79,7 @@ else {
 }
 
 # create an ARCHIVE file on developer systems to continue working
-my $ArchiveGeneratorTool = $Home . '/bin/znuny.CheckSum.pl';
+my $ArchiveGeneratorTool = $Home . '/bin/buzzdesk.CheckSum.pl';
 
 # if tool is not present we can't continue
 if ( !-e $ArchiveGeneratorTool ) {
@@ -144,8 +142,8 @@ my $TestPackage = '<?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.0">
   <Name>Test - ' . $RandomNumber . '</Name>
   <Version>0.0.1</Version>
-  <Vendor>Znuny GmbH</Vendor>
-  <URL>https://znuny.com/</URL>
+  <Vendor>BuzzDesk GmbH</Vendor>
+  <URL>https://buzzdesk.com/</URL>
   <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
   <ChangeLog>2005-11-10 New package (some test &lt; &gt; &amp;).</ChangeLog>
   <Description Lang="en">A test package (some test &lt; &gt; &amp;).</Description>

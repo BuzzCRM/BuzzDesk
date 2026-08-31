@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -38,7 +36,7 @@ sub Run {
 
     my $UsageText = "<green>$ProductName</green> (<yellow>$ProductVersion</yellow>)\n\n";
     $UsageText .= "<yellow>Usage:</yellow>\n";
-    $UsageText .= " znuny.Console.pl command [options] [arguments]\n";
+    $UsageText .= " buzzdesk.Console.pl command [options] [arguments]\n";
     $UsageText .= "\n<yellow>Options:</yellow>\n";
 
     OPTION:

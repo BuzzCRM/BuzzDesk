@@ -60,7 +60,7 @@
         <Description Translatable="1">Entity test - SystemAddress.</Description>
         <Navigation>Development::SysConfig::ValueType::Entity</Navigation>
         <Value>
-            <Item ValueType="Entity" ValueEntityType="SystemAddress" ValueRegex="">znuny@localhost</Item>
+            <Item ValueType="Entity" ValueEntityType="SystemAddress" ValueRegex="">buzzdesk@localhost</Item>
         </Value>
     </Setting>
     <Setting Name="Type" Required="0" Valid="1">

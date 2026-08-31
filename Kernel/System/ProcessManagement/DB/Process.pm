@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -1047,7 +1045,7 @@ ActivityDialogs, Transitions and TransitionActions
 
     my $ProcessDump = $ProcessObject->ProcessDump(
         ResultType  => 'SCALAR'                     # 'SCALAR' || 'HASH' || 'FILE'
-        Location    => '/opt/znuny/var/myfile.txt'   # mandatory for ResultType = 'FILE'
+        Location    => '/opt/buzzdesk/var/myfile.txt'   # mandatory for ResultType = 'FILE'
         UserID      => 1,
     );
 
@@ -1157,7 +1155,7 @@ Returns:
 
     my $ProcessDump = $ProcessObject->ProcessDump(
         ResultType  => 'HASH'                       # 'SCALAR' || 'HASH' || 'FILE'
-        Location    => '/opt/znuny/var/myfile.txt'   # mandatory for ResultType = 'FILE'
+        Location    => '/opt/buzzdesk/var/myfile.txt'   # mandatory for ResultType = 'FILE'
         UserID      => 1,
     );
 
@@ -1269,13 +1267,13 @@ Returns:
 
     my $ProcessDump = $ProcessObject->ProcessDump(
         ResultType  => 'Location'                     # 'SCALAR' || 'HASH' || 'FILE'
-        Location    => '/opt/znuny/var/myfile.txt'     # mandatory for ResultType = 'FILE'
+        Location    => '/opt/buzzdesk/var/myfile.txt'     # mandatory for ResultType = 'FILE'
         UserID      => 1,
     );
 
 Returns:
 
-    $ProcessDump = '/opt/znuny/var/myfile.txt';      # or undef if can't write the file
+    $ProcessDump = '/opt/buzzdesk/var/myfile.txt';      # or undef if can't write the file
 
 =cut
 

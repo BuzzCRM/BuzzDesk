@@ -1,6 +1,4 @@
 // --
-// Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (GPL). If you
@@ -10,10 +8,10 @@
 "use strict";
 
 var Core = Core || {},
-    Znuny = Znuny || {};
+    BuzzDesk = BuzzDesk || {};
 
-Znuny.Form = Znuny.Form || {};
-Znuny.Form.Input = Znuny.Form.Input || {};
+BuzzDesk.Form = BuzzDesk.Form || {};
+BuzzDesk.Form.Input = BuzzDesk.Form.Input || {};
 
 /**
  * @namespace Core.TicketProcess
@@ -133,8 +131,8 @@ Core.TicketProcess = (function (TargetNS) {
         // if StandardTemplateAutoFill is enabled
         if (Core.Config.Get('StandardTemplateAutoFill')){
             Values = [];
-            RawValues = Znuny.Form.Input.Get('StandardTemplateID', { PossibleValues: true }) || [];
-            FieldID   = Znuny.Form.Input.FieldID('StandardTemplateID');
+            RawValues = BuzzDesk.Form.Input.Get('StandardTemplateID', { PossibleValues: true }) || [];
+            FieldID   = BuzzDesk.Form.Input.FieldID('StandardTemplateID');
 
             if (!FieldID) return true;
             if (!RawValues.length) return true;
@@ -152,7 +150,7 @@ Core.TicketProcess = (function (TargetNS) {
             if (Values.length != 1) return true;
 
             // select the one option
-            Znuny.Form.Input.Set('StandardTemplateID', Values[0]);
+            BuzzDesk.Form.Input.Set('StandardTemplateID', Values[0]);
         }
 
     };

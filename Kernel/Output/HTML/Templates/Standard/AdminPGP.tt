@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -23,7 +21,7 @@
                     <h3><span class="Warning">[% Translate("PGP support is disabled") | html %]</span></h3>
                     <fieldset>
                         <p class="FieldExplanation">
-                            [% Translate("To be able to use PGP in Znuny, you have to enable it first.") | html %]
+                            [% Translate("To be able to use PGP in BuzzDesk, you have to enable it first.") | html %]
                         </p>
                         <div class="Field">
                             <button class="CallForAction btn-main btn-primary-ghost" type="submit" value="[% Translate("Enable it here!") | html %]">

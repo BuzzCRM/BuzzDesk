@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -23,7 +22,7 @@ $Kernel::OM->ObjectParamAdd(
 my $HelperObject             = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $UnitTestWebserviceObject = $Kernel::OM->Get('Kernel::System::UnitTest::Webservice');
 my $ConfigObject             = $Kernel::OM->Get('Kernel::Config');
-my $ZnunyHelperObject        = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject        = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $UnitTestEmailObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Email');
 my $QueueObject              = $Kernel::OM->Get('Kernel::System::Queue');
 
@@ -50,7 +49,7 @@ my %UserData = $HelperObject->TestUserDataGet(
 
 my $Home = $ConfigObject->Get('Home');
 
-$ZnunyHelperObject->_WebserviceCreate(
+$BuzzDeskHelperObject->_WebserviceCreate(
     Webservices => {
         TicketCreateAndUpdateWithArticleSend => $Home
             . '/scripts/test/sample/Webservice/TicketCreateAndUpdateWithArticleSend.yml',
@@ -77,15 +76,15 @@ my $Response = $UnitTestWebserviceObject->Process(
             IsVisibleForCustomer => 1,
             CommunicationChannel => 'Email',
             SenderType           => 'agent',
-            From                 => 'hello@znuny.org',
+            From                 => 'hello@buzzdesk.org',
             Charset              => 'utf8',
             MimeType             => 'text/plain',
             HistoryType          => 'NewTicket',
             HistoryComment       => '% % ',
             ArticleSend          => 1,
-            To                   => 'rs+TicketCreateAndUpdateWithArticleSend@znuny.org',
-            Cc                   => 'jp+TicketCreateAndUpdateWithArticleSend@znuny.org',
-            Bcc                  => 'jp2+TicketCreateAndUpdateWithArticleSend@znuny.org',
+            To                   => 'rs+TicketCreateAndUpdateWithArticleSend@buzzdesk.org',
+            Cc                   => 'jp+TicketCreateAndUpdateWithArticleSend@buzzdesk.org',
+            Bcc                  => 'jp2+TicketCreateAndUpdateWithArticleSend@buzzdesk.org',
         },
         Attachment => [
             {
@@ -114,7 +113,7 @@ my $CcFound;
 EMAIL:
 for my $Email (@Emails) {
     next EMAIL if !$Email->{Header};
-    next EMAIL if $Email->{Header} !~ m{^CC:\s*jp\+TicketCreateAndUpdateWithArticleSend\@znuny\.org$}sm;
+    next EMAIL if $Email->{Header} !~ m{^CC:\s*jp\+TicketCreateAndUpdateWithArticleSend\@buzzdesk\.org$}sm;
 
     $CcFound = 1;
     last EMAIL;
@@ -130,9 +129,9 @@ $UnitTestEmailObject->EmailValidate(
     Message        => 'ticket update triggered ArticleSend functionality.',
     Email          => \@Emails,
     ToArray        => [
-        'rs+TicketCreateAndUpdateWithArticleSend@znuny.org',     # To
-        'jp+TicketCreateAndUpdateWithArticleSend@znuny.org',     # Cc
-        'jp2+TicketCreateAndUpdateWithArticleSend@znuny.org',    # Bcc (not testable like Cc above)
+        'rs+TicketCreateAndUpdateWithArticleSend@buzzdesk.org',     # To
+        'jp+TicketCreateAndUpdateWithArticleSend@buzzdesk.org',     # Cc
+        'jp2+TicketCreateAndUpdateWithArticleSend@buzzdesk.org',    # Bcc (not testable like Cc above)
     ],
     Body => qr{Your Ticket-Team}m,
 );
@@ -153,7 +152,7 @@ $Response = $UnitTestWebserviceObject->Process(
             IsVisibleForCustomer => 1,
             CommunicationChannel => 'Email',
             SenderType           => 'agent',
-            From                 => 'hello@znuny.org',
+            From                 => 'hello@buzzdesk.org',
             Charset              => 'utf8',
             MimeType             => 'text/plain',
             HistoryType          => 'NewTicket',

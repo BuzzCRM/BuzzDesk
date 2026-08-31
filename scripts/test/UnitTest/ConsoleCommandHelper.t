@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -35,7 +34,7 @@ my @Tests = (
         CommandModule => 'Kernel::System::Console::Command::Help',
         Parameter     => 'Help',
         ExitCode      => 0,
-        STDOUT        => 'znuny.Console.pl Help command',
+        STDOUT        => 'buzzdesk.Console.pl Help command',
     },
     {
         Name          => "Functional 'Parameter'",
@@ -54,7 +53,7 @@ my @Tests = (
     {
         Name          => "Expected list 'Parameter'",
         CommandModule => 'Kernel::System::Console::Command::Maint::Cache::Delete',
-        Parameter     => [ '--type', 'Znuny' ],
+        Parameter     => [ '--type', 'BuzzDesk' ],
         ExitCode      => 0,
         STDOUT        => 'Deleting cache...',
     },

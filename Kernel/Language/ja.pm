@@ -1,16 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
-# Copyright (C) 2010-2011 Kaz Kamimura <kamypus at yahoo.co.jp>
-# Copyright (C) 2011/12/08 Kaoru Hayama TIS Inc.
-# Copyright (C) 2014 Norihiro Tanaka NTT Data Intellilink Corp.
-# Copyright (C) 2014 Toshihiro Takehara Cloud ASIA Co., Ltd.
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Translation::JavaScriptStrings)
+## nofilter(TidyAll::Plugin::BuzzDesk::Translation::JavaScriptStrings)
 
 package Kernel::Language::ja;
 
@@ -864,7 +858,7 @@ sub Data {
             '',
         'Please provide a unique name for this web service.' => 'Webサービスの名称として一意の名前を指定してください。',
         'Error handling module backend' => 'エラー処理モジュールのバックエンド',
-        'This Znuny error handling backend module will be called internally to process the error handling mechanism.' =>
+        'This BuzzDesk error handling backend module will be called internally to process the error handling mechanism.' =>
             '',
         'Processing options' => '処理中オプション',
         'Configure filters to control error handling module execution.' =>
@@ -958,15 +952,15 @@ sub Data {
         'The name is typically used to call up an operation of a remote web service.' =>
             'この名称は、一般的にリモートWebサービスの呼び出しに用いられます。',
         'Invoker backend' => 'API実行元のバックエンド',
-        'This Znuny invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
-            'このZnunyのAPI実行元のバックエンドモジュールは、リモートシステムに送信されるデータを準備し、その応答データを処理するために呼び出されます。',
+        'This BuzzDesk invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
+            'このBuzzDeskのAPI実行元のバックエンドモジュールは、リモートシステムに送信されるデータを準備し、その応答データを処理するために呼び出されます。',
         'Mapping for outgoing request data' => '送信要求データのマッピング',
         'Configure' => '設定',
-        'The data from the invoker of Znuny will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
-            'ZnunyのAPI実行元からのデータは、このマッピングによって処理され、リモートシステムが予期している種類のデータに変換されます。',
+        'The data from the invoker of BuzzDesk will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
+            'BuzzDeskのAPI実行元からのデータは、このマッピングによって処理され、リモートシステムが予期している種類のデータに変換されます。',
         'Mapping for incoming response data' => '着信応答データのマッピング',
-        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of Znuny expects.' =>
-            'レスポンスデータをこのマッピングにのっとって Znuny のAPI実行元が期待するデータの種類に変換します。',
+        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of BuzzDesk expects.' =>
+            'レスポンスデータをこのマッピングにのっとって BuzzDesk のAPI実行元が期待するデータの種類に変換します。',
         'Asynchronous' => '非同期',
         'Condition' => '条件',
         'Edit this event' => 'このイベントを修正',
@@ -974,8 +968,8 @@ sub Data {
         'Add Event' => 'イベントを追加',
         'To add a new event select the event object and event name and click on the "+" button' =>
             '新しいイベントを追加するには、イベントオブジェクトをイベント名を選択してから"+"ボタンをクリックしてください',
-        'Asynchronous event triggers are handled by the Znuny Scheduler Daemon in background (recommended).' =>
-            '非同期型イベントトリガーは、Znunyスケジューラー・デーモンによってバックグラウンドで実行されます（推奨）。',
+        'Asynchronous event triggers are handled by the BuzzDesk Scheduler Daemon in background (recommended).' =>
+            '非同期型イベントトリガーは、BuzzDeskスケジューラー・デーモンによってバックグラウンドで実行されます（推奨）。',
         'Synchronous event triggers would be processed directly during the web request.' =>
             '同期型イベントトリガーは直接Web画面上のリクエストから実行されます。',
         'Add all attachments' => '',
@@ -1109,10 +1103,10 @@ sub Data {
         'The name is typically used to call up this web service operation from a remote system.' =>
             'この名称は、一般的にリモートシステムからのWebサービスの呼び出しに用いられます。',
         'Operation backend' => 'オペレーション・バックエンド',
-        'This Znuny operation backend module will be called internally to process the request, generating data for the response.' =>
+        'This BuzzDesk operation backend module will be called internally to process the request, generating data for the response.' =>
             '',
         'Mapping for incoming request data' => '受信したデータのマッピング',
-        'The request data will be processed by this mapping, to transform it to the kind of data Znuny expects.' =>
+        'The request data will be processed by this mapping, to transform it to the kind of data BuzzDesk expects.' =>
             '',
         'Mapping for outgoing response data' => '送信データのマッピング',
         'The response data will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
@@ -1136,7 +1130,7 @@ sub Data {
             '',
         'Maximum message length' => 'メッセージの最長値',
         'This field should be an integer number.' => 'この領域は整数値である必要があります。',
-        'Here you can specify the maximum size (in bytes) of REST messages that Znuny will process.' =>
+        'Here you can specify the maximum size (in bytes) of REST messages that BuzzDesk will process.' =>
             '',
         'Send Keep-Alive' => 'Keep-Aliveを送信',
         'This configuration defines if incoming connections should get closed or kept alive.' =>
@@ -1205,22 +1199,22 @@ sub Data {
         'Client Certificate' => 'クライアント証明書',
         'The full path and name of the SSL client certificate file (must be in PEM, DER or PKCS#12 format).' =>
             'SSLクライアント証明書ファイルの完全パスと名前（PEM、DERまたはPKCS＃12形式である必要があります）。',
-        'e.g. /opt/znuny/var/certificates/SOAP/certificate.pem' => '例 /opt/znuny/var/certificates/SOAP/certificate.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/certificate.pem' => '例 /opt/buzzdesk/var/certificates/SOAP/certificate.pem',
         'Client Certificate Key' => 'クライアント認証キー',
         'The full path and name of the SSL client certificate key file (if not already included in certificate file).' =>
             'SSLクライアント証明書キーファイルの完全パスと名前（まだ証明書ファイルに含まれていない場合）。',
-        'e.g. /opt/znuny/var/certificates/SOAP/key.pem' => '例 /opt/znuny/var/certificates/SOAP/key.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/key.pem' => '例 /opt/buzzdesk/var/certificates/SOAP/key.pem',
         'Client Certificate Key Password' => 'クライアント認証キーのパスワード',
         'The password to open the SSL certificate if the key is encrypted.' =>
             '',
         'Certification Authority (CA) Certificate' => '',
         'The full path and name of the certification authority certificate file that validates SSL certificate.' =>
             '',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA/ca.pem' => '例… /opt/znuny/var/certificates/SOAP/CA/ca.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem' => '例… /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem',
         'Certification Authority (CA) Directory' => '',
         'The full path of the certification authority directory where the CA certificates are stored in the file system.' =>
             '',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA' => '例… /opt/znuny/var/certificates/SOAP/CA',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA' => '例… /opt/buzzdesk/var/certificates/SOAP/CA',
         'Controller mapping for Invoker' => 'API実行元に対するコントローラ・マッピング',
         'The controller that the invoker should send requests to. Variables marked by a \':\' will get replaced by the data value and passed along with the request. (e.g. /Ticket/:TicketID?UserLogin=:UserLogin&Password=:Password).' =>
             '',
@@ -1277,13 +1271,13 @@ sub Data {
         'Select how SOAP response function wrapper should be constructed.' =>
             '',
         'Response name free text' => '',
-        'Here you can specify the maximum size (in bytes) of SOAP messages that Znuny will process.' =>
+        'Here you can specify the maximum size (in bytes) of SOAP messages that BuzzDesk will process.' =>
             '',
         'Fixed namespace prefix' => '',
         'Use a fixed namespace prefix (e. g. myns:) for the root tag of a SOAP message.' =>
             '',
         'Suffix for response tag' => '',
-        'Usually Znuny expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
+        'Usually BuzzDesk expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
             '',
         'Encoding' => 'エンコーディング',
         'The character encoding for the SOAP message contents.' => 'SOAPメッセージコンテントの文字エンコード',
@@ -1326,10 +1320,10 @@ sub Data {
         'Provider transport' => '供給者のトランスポート',
         'Requester transport' => '依頼者のトランスポート',
         'Debug threshold' => 'デバックの閾値',
-        'In provider mode, Znuny offers web services which are used by remote systems.' =>
-            'Provider(供給者)モードでは、Znunyは他の外部システムにウェブサービスを提供します。',
-        'In requester mode, Znuny uses web services of remote systems.' =>
-            'Requester(要求者)モードでは、Znunyは他の外部システのウェブサービスを使用します。',
+        'In provider mode, BuzzDesk offers web services which are used by remote systems.' =>
+            'Provider(供給者)モードでは、BuzzDeskは他の外部システムにウェブサービスを提供します。',
+        'In requester mode, BuzzDesk uses web services of remote systems.' =>
+            'Requester(要求者)モードでは、BuzzDeskは他の外部システのウェブサービスを使用します。',
         'Network transport' => 'ネットワーク・トランスポート',
         'Error Handling Modules' => '',
         'Error handling modules are used to react in case of errors during the communication. Those modules are executed in a specific order, which can be changed by drag and drop.' =>
@@ -1447,7 +1441,7 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportEmailSettings.tt
         'Use comma or semicolon to separate email addresses.' => '',
-        'You can use Znuny-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
+        'You can use BuzzDesk-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
             '<OTRS_TICKET_DynamicField_...> を指定することで、現在のチケットの値を参照することができます。',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportWebserviceSettings.tt
@@ -1515,8 +1509,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminPGP.tt
         'PGP support is disabled' => 'PGPサポート機能は無効化されています',
-        'To be able to use PGP in Znuny, you have to enable it first.' =>
-            'ZnunyでPGPを使用するにはまず有効にする必要があります。',
+        'To be able to use PGP in BuzzDesk, you have to enable it first.' =>
+            'BuzzDeskでPGPを使用するにはまず有効にする必要があります。',
         'Enable PGP support' => 'PGPサポートの有効化',
         'Faulty PGP configuration' => '',
         'PGP support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -1547,20 +1541,20 @@ sub Data {
         'Do you really want to reinstall this package? Any manual changes will be lost.' =>
             'このパッケージを本当に再インストールしますか？ 全ての手動変更点は失われます。',
         'Go to updating instructions' => '',
-        'Go to znuny.org' => '',
+        'Go to buzzdesk.org' => '',
         'package information' => 'パッケージ情報',
-        'Package installation requires a patch level update of Znuny.' =>
+        'Package installation requires a patch level update of BuzzDesk.' =>
             '',
-        'Package update requires a patch level update of Znuny.' => '',
-        'Please note that your installed Znuny version is %s.' => 'インストールされているZnunyのバージョンは%sです。',
-        'To install this package, you need to update Znuny to version %s or newer.' =>
-            'このパッケージをインストールするには、Znunyのバージョンを%s以上にアップデートする必要があります。',
-        'This package can only be installed on Znuny version %s or older.' =>
-            'このパッケージはZnunyのバージョンが%sかそれより古い必要があります。',
-        'This package can only be installed on Znuny version %s.' => '',
-        'Why should I keep Znuny up to date?' => 'Znunyのバージョンを最新に保つことが必要な理由',
+        'Package update requires a patch level update of BuzzDesk.' => '',
+        'Please note that your installed BuzzDesk version is %s.' => 'インストールされているBuzzDeskのバージョンは%sです。',
+        'To install this package, you need to update BuzzDesk to version %s or newer.' =>
+            'このパッケージをインストールするには、BuzzDeskのバージョンを%s以上にアップデートする必要があります。',
+        'This package can only be installed on BuzzDesk version %s or older.' =>
+            'このパッケージはBuzzDeskのバージョンが%sかそれより古い必要があります。',
+        'This package can only be installed on BuzzDesk version %s.' => '',
+        'Why should I keep BuzzDesk up to date?' => 'BuzzDeskのバージョンを最新に保つことが必要な理由',
         'You will receive updates about relevant security issues.' => '',
-        'You will receive updates for all other relevant Znuny issues.' =>
+        'You will receive updates for all other relevant BuzzDesk issues.' =>
             '',
         'How can I do a patch level update if I don’t have a contract?' =>
             '',
@@ -1960,7 +1954,7 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSMIME.tt
         'SMIME support is disabled' => 'SMIMEのサポートが無効になっています',
-        'To be able to use SMIME in Znuny, you have to enable it first.' =>
+        'To be able to use SMIME in BuzzDesk, you have to enable it first.' =>
             '',
         'Enable SMIME support' => 'SMIMEサポートを有効にする',
         'Faulty SMIME configuration' => '無効なSMIME設定',
@@ -2154,7 +2148,7 @@ sub Data {
         'Find out how to use the system configuration by reading the %s.' =>
             '%sを読んでシステム設定を使い方を確認して下さい。',
         'Search in all settings...' => '全ての設定で検索...',
-        'There are currently no settings available. Please make sure to run \'znuny.Console.pl Maint::Config::Rebuild\' before using the software.' =>
+        'There are currently no settings available. Please make sure to run \'buzzdesk.Console.pl Maint::Config::Rebuild\' before using the software.' =>
             '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSystemConfigurationDeployment.tt
@@ -2450,16 +2444,16 @@ sub Data {
         'Customer User Information Center' => '顧客ユーザー情報センター',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDaemonInfo.tt
-        'The Znuny Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
+        'The BuzzDesk Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
             '',
-        'A running Znuny Daemon is mandatory for correct system operation.' =>
+        'A running BuzzDesk Daemon is mandatory for correct system operation.' =>
             '',
-        'Starting the Znuny Daemon' => 'Znuny デーモンを起動しています。',
-        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the Znuny Daemon is running and start it if needed.' =>
+        'Starting the BuzzDesk Daemon' => 'BuzzDesk デーモンを起動しています。',
+        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the BuzzDesk Daemon is running and start it if needed.' =>
             '',
-        'Execute \'%s start\' to make sure the cron jobs of the \'znuny\' user are active.' =>
+        'Execute \'%s start\' to make sure the cron jobs of the \'buzzdesk\' user are active.' =>
             '',
-        'After 5 minutes, check that the Znuny Daemon is running in the system (\'bin/znuny.Daemon.pl status\').' =>
+        'After 5 minutes, check that the BuzzDesk Daemon is running in the system (\'bin/buzzdesk.Daemon.pl status\').' =>
             '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboard.tt
@@ -2604,7 +2598,7 @@ sub Data {
         'This setting can currently not be saved' => 'この設定は現在保存できません。',
         'Save setting' => '',
         'Save this setting' => 'この設定を保存',
-        'Did you know? You can help translating Znuny at %s.' => '',
+        'Did you know? You can help translating BuzzDesk at %s.' => '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentPreferencesOverview.tt
         'Choose from the groups on the left to find the settings you\'d wish to change.' =>
@@ -3143,8 +3137,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBStart.tt
         'Install Type' => 'インストールタイプ',
-        'Create a new database for Znuny' => '新規にZnunyデータベースを作成する',
-        'Use an existing database for Znuny' => '既存のZnunyデータベースを使用する',
+        'Create a new database for BuzzDesk' => '新規にBuzzDeskデータベースを作成する',
+        'Use an existing database for BuzzDesk' => '既存のBuzzDeskデータベースを使用する',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBmssql.tt
         'If you have set a root password for your database, it must be entered here. If not, leave this field empty.' =>
@@ -3155,8 +3149,8 @@ sub Data {
         'Database check successful.' => 'データベースチェックに成功しました。',
         'Database User' => 'データベース・ユーザー',
         'New' => '新規',
-        'A new database user with limited permissions will be created for this Znuny system.' =>
-            'このZnunyシステム用に限られた権限の新規データベースユーザーが作成されます。',
+        'A new database user with limited permissions will be created for this BuzzDesk system.' =>
+            'このBuzzDeskシステム用に限られた権限の新規データベースユーザーが作成されます。',
         'Repeat Password' => 'パスワードを再度入力',
         'Generated password' => 'パスワードを生成しました。',
         'Database' => 'データベース',
@@ -3168,10 +3162,10 @@ sub Data {
         'SID' => 'SID',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerFinish.tt
-        'To be able to use Znuny you have to enter the following line in your command line (Terminal/Shell) as root.' =>
-            'Znunyを使用するには、rootでコマンドライン上 (ターミナル／シェル) から次の行を入力する必要があります。',
+        'To be able to use BuzzDesk you have to enter the following line in your command line (Terminal/Shell) as root.' =>
+            'BuzzDeskを使用するには、rootでコマンドライン上 (ターミナル／シェル) から次の行を入力する必要があります。',
         'Restart your webserver' => 'Webサーバを再起動してください。',
-        'After doing so your Znuny is up and running.' => 'その後、Znunyの起動を実行してください。',
+        'After doing so your BuzzDesk is up and running.' => 'その後、BuzzDeskの起動を実行してください。',
         'Start page' => 'スタートページ',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerLicense.tt
@@ -3214,7 +3208,7 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/MobileNotAvailableWidget.tt
         'Feature not Available' => '',
-        'Sorry, but this feature of Znuny is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
+        'Sorry, but this feature of BuzzDesk is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
             '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Motd.tt
@@ -3254,7 +3248,7 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/PublicDefault.tt
         'Welcome' => 'ようこそ',
-        'This is the default public interface of Znuny! There was no action parameter given.' =>
+        'This is the default public interface of BuzzDesk! There was no action parameter given.' =>
             '',
         'You could install a custom public module (via the package manager), for example the FAQ module, which has a public interface.' =>
             '',
@@ -3441,7 +3435,7 @@ sub Data {
         'Navigation' => 'ナビゲーション',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Test.tt
-        'Znuny Test Page' => 'Znuny テストページ',
+        'BuzzDesk Test Page' => 'BuzzDesk テストページ',
         'Unlock' => 'ロック解除',
         'Welcome %s %s' => 'ようこそ %s %s',
         'Counter' => 'カウンター',
@@ -3536,7 +3530,7 @@ sub Data {
         # Perl Module: Kernel/Modules/AdminACL.pm
         'ACL information from database is not in sync with the system configuration, please deploy all ACLs.' =>
             'データベースから取得したACLの情報はシステム設定と同期していません。全てのACLをデプロイしてください。',
-        'ACLs could not be Imported due to a unknown error, please check Znuny logs for more information' =>
+        'ACLs could not be Imported due to a unknown error, please check BuzzDesk logs for more information' =>
             '',
         'The following ACLs have been added successfully: %s' => '次のACLは、無事に追加されました。: %s',
         'The following ACLs have been updated successfully: %s' => '次のACLは、無事に更新されました。: %s',
@@ -3894,12 +3888,12 @@ sub Data {
         'Could not load %s.' => '',
         'Could not read %s!' => '%s を読み込めません！',
         'Need a file to import!' => 'インポートするファイルを指定してください！',
-        'The imported file has not valid YAML content! Please check Znuny log for details' =>
+        'The imported file has not valid YAML content! Please check BuzzDesk log for details' =>
             '',
         'Web service "%s" deleted!' => 'Webサービス "%s" を削除しました。',
-        'Znuny as provider' => 'プロバイダーとしてのZnuny',
+        'BuzzDesk as provider' => 'プロバイダーとしてのBuzzDesk',
         'Operations' => 'オペレーション',
-        'Znuny as requester' => 'リクエスターとしてのZnuny',
+        'BuzzDesk as requester' => 'リクエスターとしてのBuzzDesk',
         'Invokers' => 'API実行元',
 
         # Perl Module: Kernel/Modules/AdminGenericInterfaceWebserviceHistory.pm
@@ -3948,7 +3942,7 @@ sub Data {
         'Need param Key to download!' => 'ダウンロードを行うには、キーを入力する必要があります！',
 
         # Perl Module: Kernel/Modules/AdminPackageManager.pm
-        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/znuny.Console.pl to install packages!' =>
+        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/buzzdesk.Console.pl to install packages!' =>
             '',
         'No such package!' => 'そのようなパッケージはありません！',
         'No such file %s in package!' => 'パッケージ内にファイル %s はありません！',
@@ -4171,13 +4165,13 @@ sub Data {
         'You currently don\'t have any favourite settings.' => '',
         'The following settings could not be found: %s' => '',
         'Import not allowed!' => 'インポートは許可されていません!',
-        'System Configuration could not be imported due to an unknown error, please check Znuny logs for more information.' =>
+        'System Configuration could not be imported due to an unknown error, please check BuzzDesk logs for more information.' =>
             '',
         'Category Search' => 'カテゴリ検索',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationDeployment.pm
         'Quick Deploy by' => '',
-        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the Znuny log for more information.' =>
+        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the BuzzDesk log for more information.' =>
             '',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationGroup.pm
@@ -4603,7 +4597,7 @@ sub Data {
         'Configure "Home" in Kernel/Config.pm first!' => 'まず、 ”Kernel/Config.pm” ファイルの "Home" を設定してください！',
         'File "%s/Kernel/Config.pm" not found!' => '"%s/Kernel/Config.pm" ファイルが見つかりません！',
         'Directory "%s" not found!' => 'ディレクトリ "%s" が見つかりません！',
-        'Install Znuny' => 'Znunyをインストール',
+        'Install BuzzDesk' => 'BuzzDeskをインストール',
         'Intro' => 'イントロ',
         'Kernel/Config.pm isn\'t writable!' => '"Kernel/Config.pm" ファイルに書き込み権限がありません！',
         'If you want to use the installer, set the Kernel/Config.pm writable for the webserver user!' =>
@@ -4620,7 +4614,7 @@ sub Data {
         'Unknown database type "%s".' => '"%s"は不明なデータベース形式です。',
         'Please go back.' => '戻って下さい。',
         'Create Database' => 'データベース作成',
-        'Install Znuny - Error' => 'Znunyをインストール － エラーが発生しました',
+        'Install BuzzDesk - Error' => 'BuzzDeskをインストール － エラーが発生しました',
         'File "%s/%s.xml" not found!' => 'ファイル "%s/%s.xml" が見つかりません！',
         'Contact your Admin!' => '管理者に連絡してください！',
         'System Settings' => 'システム設定',
@@ -4850,7 +4844,7 @@ sub Data {
             '',
 
         # Perl Module: Kernel/Output/HTML/Notification/DaemonCheck.pm
-        'Znuny Daemon is not running.' => 'Znunyデーモンが起動していません。',
+        'BuzzDesk Daemon is not running.' => 'BuzzDeskデーモンが起動していません。',
 
         # Perl Module: Kernel/Output/HTML/Notification/OAuth2TokenManagementTokenExpired.pm
         'OAuth2 token for "%s" has expired.' => '',
@@ -5229,7 +5223,7 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/InvalidDefaultValues.pm
         'Invalid Default Values' => 'デフォルト値は不正です',
-        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/znuny.Console.pl Maint::Database::Check --repair' =>
+        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/buzzdesk.Console.pl Maint::Database::Check --repair' =>
             '',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/MaxAllowedPacket.pm
@@ -5275,18 +5269,18 @@ sub Data {
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/postgresql/Version.pm
         'PostgreSQL 9.2 or higher is required.' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionZnuny.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionBuzzDesk.pm
         'Operating System' => 'オペレーションシステム',
-        'Znuny Disk Partition' => 'Znuny ディスクパーティション',
+        'BuzzDesk Disk Partition' => 'BuzzDesk ディスクパーティション',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpace.pm
         'Disk Usage' => 'ディスク利用率',
-        'The partition where Znuny is located is almost full.' => 'Znuny がインストールされているディスクパーティションがもうすぐいっぱいになります',
-        'The partition where Znuny is located has no disk space problems.' =>
-            'Znuny がインストールされているディスクパーティションはディスクスペースの問題は起こっていません',
+        'The partition where BuzzDesk is located is almost full.' => 'BuzzDesk がインストールされているディスクパーティションがもうすぐいっぱいになります',
+        'The partition where BuzzDesk is located has no disk space problems.' =>
+            'BuzzDesk がインストールされているディスクパーティションはディスクスペースの問題は起こっていません',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpacePartitions.pm
-        'Disk Partitions Usage' => 'Znuny ディスクパーティション使用率',
+        'Disk Partitions Usage' => 'BuzzDesk ディスクパーティション使用率',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/Distribution.pm
         'Distribution' => 'ディストリビューション',
@@ -5328,8 +5322,8 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/MPMModel.pm
         'MPM model' => 'MPMモデル',
-        'Znuny requires apache to be run with the \'prefork\' MPM model.' =>
-            'ZnunyはapacheがMPMモデルがpreforkで実行されている必要があります。',
+        'BuzzDesk requires apache to be run with the \'prefork\' MPM model.' =>
+            'BuzzDeskはapacheがMPMモデルがpreforkで実行されている必要があります。',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/Performance.pm
         'CGI Accelerator Usage' => 'CGIアクセラレータの有無',
@@ -5359,37 +5353,37 @@ sub Data {
         'Webserver Version' => 'Webサイトバージョン',
         'Could not determine webserver version.' => 'WEBサーバのバージョンを決定できません。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticleSearchIndexStatus.pm
-        'Znuny' => '',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticleSearchIndexStatus.pm
+        'BuzzDesk' => '',
         'Article Search Index Status' => '記事検索インデックスのステータス',
         'Indexed Articles' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticlesPerCommunicationChannel.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticlesPerCommunicationChannel.pm
         'Articles Per Communication Channel' => 'コミュニケーション・チャンネルごとの記事',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLog.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLog.pm
         'Incoming communications' => '着信コミュニケーション',
         'Outgoing communications' => '発信コミュニケーション',
         'Failed communications' => 'コミュニケーションの失敗',
         'Average processing time of communications (s)' => 'コミュニケーションの平均処理時間(s)',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLogAccountStatus.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLogAccountStatus.pm
         'Communication Log Account Status (last 24 hours)' => 'コミュニケーション・ログのアカウント・ステータス（24時間以内）',
         'No connections found.' => '',
         'ok' => '',
         'permanent connection errors' => '',
         'intermittent connection errors' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ConfigSettings.pm
         'Config Settings' => 'Config 設定',
         'Could not determine value.' => 'value を特定できませんでした',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DaemonRunning.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DaemonRunning.pm
         'Daemon' => 'デーモン',
         'Daemon is running.' => 'デーモンは稼働中です。',
         'Daemon is not running.' => 'デーモンは稼働していません。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DatabaseRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DatabaseRecords.pm
         'Database Records' => 'データーベースレコード',
         'Ticket History Entries' => 'チケット履歴エントリ',
         'Articles' => '記事',
@@ -5404,31 +5398,31 @@ sub Data {
         'Tickets Per Month (avg)' => '月毎のチケット数(平均)',
         'Open Tickets' => '対応中チケット',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultSOAPUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultSOAPUser.pm
         'Default SOAP Username And Password' => 'デフォルトのSOAPユーザ名とパスワード',
         'Security risk: you use the default setting for SOAP::User and SOAP::Password. Please change it.' =>
             'セキュリティーリスク: SOAP::User 及び SOAP::Password のデフォルト設定を利用しています、変更を行ってください。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultUser.pm
         'Default Admin Password' => '管理者のデフォルトパスワード',
         'Security risk: the agent account root@localhost still has the default password. Please change it or invalidate the account.' =>
             'セキュリティーリスク: エージェントアカウント root@localhost はいまだにデフォルトパスワードを利用しています、変更を行ってください。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/EmailQueue.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/EmailQueue.pm
         'Email Sending Queue' => 'Eメール送信キュー',
         'Emails queued for sending' => '送信待ちのEメール',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FQDN.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FQDN.pm
         'FQDN (domain name)' => 'FQDN (ドメインネーム)',
         'Please configure your FQDN setting.' => 'FQDNの設定を確認して下さい。',
         'Domain Name' => 'ドメインネーム',
         'Your FQDN setting is invalid.' => 'FQDNの設定が不正です',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FileSystemWritable.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FileSystemWritable.pm
         'File System Writable' => '書き込み可能なファイルシステム',
-        'The file system on your Znuny partition is not writable.' => 'Znunyパーティション上のファイルシステムは書き込み可能ではありません。',
+        'The file system on your BuzzDesk partition is not writable.' => 'BuzzDeskパーティション上のファイルシステムは書き込み可能ではありません。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/LegacyConfigBackups.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/LegacyConfigBackups.pm
         'Legacy Configuration Backups' => '従来構成のバックアップ',
         'No legacy configuration backup files found.' => '従来構成のバックアップファイルは見つかりませんでした。',
         'Legacy configuration backup files found in Kernel/Config/Backups folder, but they might still be required by some packages.' =>
@@ -5436,12 +5430,12 @@ sub Data {
         'Legacy configuration backup files are no longer needed for the installed packages, please remove them from Kernel/Config/Backups folder.' =>
             '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/MultipleJSFileLoad.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/MultipleJSFileLoad.pm
         'The following JavaScript files loaded multiple times:' => '',
         'Files' => '',
         'Views with multiple loaded JavaScript files' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageDeployment.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageDeployment.pm
         'Package Installation Status' => 'パッケージの導入状態',
         'Some packages have locally modified files.' => 'いくつかのパッケージがローカルで修正されています。',
         'Some packages are not correctly installed.' => '正常にインストールされていないパッケージが存在します',
@@ -5449,75 +5443,75 @@ sub Data {
         'Some packages are not allowed for the current framework version.' =>
             'いくつかのパッケージは現在のフレームワークのバージョンに対応していません。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageList.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageList.pm
         'Package List' => 'パッケージリスト',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SessionConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SessionConfigSettings.pm
         'Session Config Settings' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SpoolMails.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SpoolMails.pm
         'Spooled Emails' => 'スプールされたメール',
-        'There are emails in var/spool that Znuny could not process.' => 'Znunyが処理できなかったメールがvar/spool以下に存在しています。',
+        'There are emails in var/spool that BuzzDesk could not process.' => 'BuzzDeskが処理できなかったメールがvar/spool以下に存在しています。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SystemID.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SystemID.pm
         'Your SystemID setting is invalid, it should only contain digits.' =>
             'あなたのSystemID設定は不正です。数字以外は利用できません。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/DefaultType.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/DefaultType.pm
         'Default Ticket Type' => '標準のチケットタイプ',
         'The configured default ticket type is invalid or missing. Please change the setting Ticket::Type::Default and select a valid ticket type.' =>
             '設定された標準のチケットタイプは不正か存在していません。Ticket::Type::Default設定を確認し、正しいチケットタイプを指定してください。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/IndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/IndexModule.pm
         'Ticket Index Module' => 'チケットインデクスモジュール',
         'You have more than 60,000 tickets and should use the StaticDB backend. See admin manual (Performance Tuning) for more information.' =>
             'システムにチケットが60,000以上あるため、バックエンドにはStaticDBを利用するべきです。詳細は管理者マニュアル(パフォーマンスチューニング)を参照してください。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/InvalidUsersWithLockedTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/InvalidUsersWithLockedTickets.pm
         'Invalid Users with Locked Tickets' => '',
         'There are invalid users with locked tickets.' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/OpenTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/OpenTickets.pm
         'You should not have more than 8,000 open tickets in your system.' =>
             'システム内にチケットが 8,000以上オープンにしないでください',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/SearchIndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/SearchIndexModule.pm
         'Ticket Search Index Module' => 'チケット検索インデックス・モジュール',
         'The indexing process forces the storage of the original article text in the article search index, without executing filters or applying stop word lists. This will increase the size of the search index and thus may slow down fulltext searches.' =>
             '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/StaticDBOrphanedRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/StaticDBOrphanedRecords.pm
         'Orphaned Records In ticket_lock_index Table' => 'ticket_lock_indexテーブルに孤立したレコード',
-        'Table ticket_lock_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            'テーブル ticket_lock_indexに孤立したレコードが存在しています。 StaticDBのインデックスを正しくするためにbin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup"を実行してください。',
+        'Table ticket_lock_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            'テーブル ticket_lock_indexに孤立したレコードが存在しています。 StaticDBのインデックスを正しくするためにbin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup"を実行してください。',
         'Orphaned Records In ticket_index Table' => 'ticket_indexテーブルに孤立したレコード',
-        'Table ticket_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            'テーブル ticket_indexに孤立したレコードが存在しています。 StaticDBのインデックスを正しくするためにbin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" を実行してください。',
+        'Table ticket_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            'テーブル ticket_indexに孤立したレコードが存在しています。 StaticDBのインデックスを正しくするためにbin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" を実行してください。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/TimeSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/TimeSettings.pm
         'Time Settings' => '時刻設定',
         'Server time zone' => 'サーバのタイムゾーン',
-        'Znuny time zone' => 'Znunyのタイムゾーン',
-        'Znuny time zone is not set.' => 'Znunyのタイムゾーンが設定されていません。',
+        'BuzzDesk time zone' => 'BuzzDeskのタイムゾーン',
+        'BuzzDesk time zone is not set.' => 'BuzzDeskのタイムゾーンが設定されていません。',
         'User default time zone' => 'ユーザーのデフォルトタイムゾーン',
         'User default time zone is not set.' => 'ユーザーのデフォルトのタイムゾーンが設定されていません。',
         'Calendar time zone is not set.' => 'カレンダーのタイムゾーンが設定されていません。',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentSkinUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentSkinUsage.pm
         'UI - Agent Skin Usage' => 'UI - 担当者スキンの使用状況',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentThemeUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentThemeUsage.pm
         'UI - Agent Theme Usage' => 'UI - 担当者のテーマ使用状況',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/SpecialStats.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/SpecialStats.pm
         'UI - Special Statistics' => 'UI - 特殊レポート',
         'Agents using custom main menu ordering' => 'カスタムメインメニューのオーダーを使用する担当者',
         'Agents using favourites for the admin overview' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Version.pm
-        'Znuny Version' => 'Znunyバージョン',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Version.pm
+        'BuzzDesk Version' => 'BuzzDeskバージョン',
 
-        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/Znuny/ConcurrentUsers.pm
+        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/BuzzDesk/ConcurrentUsers.pm
         'Concurrent Users Details' => '同時接続ユーザー詳細',
         'Concurrent Users' => '同時実行ユーザー',
 
@@ -5623,7 +5617,7 @@ sub Data {
             '',
         'Define which columns are shown in the linked appointment widget (LinkObject::ViewMode = "complex"). Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.' =>
             '',
-        'Znuny doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
+        'BuzzDesk doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
             '',
         'Defines the ticket appointment type backend for ticket escalation time.' =>
             '',
@@ -5661,13 +5655,13 @@ sub Data {
             '',
 
         # XML Definition: Kernel/Config/Files/XML/Daemon.xml
-        'Defines the module to display a notification in the agent interface if the Znuny Daemon is not running.' =>
+        'Defines the module to display a notification in the agent interface if the BuzzDesk Daemon is not running.' =>
             '',
         'List of CSS files to always be loaded for the agent interface.' =>
             '担当者インタフェースに対して、常にロードされるCSSファイルのリストです。',
         'List of JS files to always be loaded for the agent interface.' =>
             '担当者インタフェースに対して、常にロードされるJSファイルのリストです。',
-        'Type of daemon log rotation to use: Choose \'Znuny\' to let Znuny system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
+        'Type of daemon log rotation to use: Choose \'BuzzDesk\' to let BuzzDesk system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
             '',
         'If enabled the daemon will use this directory to create its PID files. Note: Please stop the daemon before any change and use this setting only if &lt;$OTRSHome&gt;/var/run/ can not be used.' =>
             '',
@@ -5729,7 +5723,7 @@ sub Data {
         'Remove closed tickets from agents\' ticket watch lists.' => '',
 
         # XML Definition: Kernel/Config/Files/XML/Framework.xml
-        'Disables the web installer (http://yourhost.example.com/znuny/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
+        'Disables the web installer (http://yourhost.example.com/buzzdesk/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
             '',
         'Enables or disables the debug mode over frontend interface.' => '',
         'Delivers extended debugging information in the frontend in case any AJAX errors occur, if enabled.' =>
@@ -5742,15 +5736,15 @@ sub Data {
             '',
         'Defines the name of the application, shown in the web interface, tabs and title bar of the web browser.' =>
             'ウェブ・インタフェース、ウェブ・ブラウザのタブおよびタイトル・バーに表示されるアプリケーション名を定義します。',
-        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of Znuny).' =>
-            'システム識別子を定義します。すべてのチケット番号とHTTPセッションの文字列は、このIDが含まれています。これはをシステムに属している唯一のチケットがフォローアップとして処理されることを確実にします。（2つのZnunyのインスタンス間で通信する場合に便利です）',
+        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of BuzzDesk).' =>
+            'システム識別子を定義します。すべてのチケット番号とHTTPセッションの文字列は、このIDが含まれています。これはをシステムに属している唯一のチケットがフォローアップとして処理されることを確実にします。（2つのBuzzDeskのインスタンス間で通信する場合に便利です）',
         'Defines the fully qualified domain name of the system. This setting is used as a variable, OTRS_CONFIG_FQDN which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
             'フルに認定されたシステムのドメイン名を定義します。この設定は変数OTRS_CONFIG_FQDNとして使用され、アプリケーションによって使用されるメッセージングの全てのフォームに存在し、ご利用のシステム内のチケットへのリンクを作成することとなります。',
         'Defines the fully qualified domain name for external IDs generation (i.e. Message-ID, ContentID).' =>
             '',
-        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
+        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
             '',
-        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
+        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
             '',
         'When support data is collected via SupportDataCollector, certain SysConfig values marked with ValueType="Password" are automatically masked. This prevents passwords from appearing in plain text in the support data. This setting defines the settings that contain complex configuration hashes that should not be masked when generating the support data.' =>
             '',
@@ -5770,7 +5764,7 @@ sub Data {
             '',
         'Defines all the languages that are available to the application. Specify only native names of languages here.' =>
             '',
-        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.znuny.org/developer/general_information/themes.html.' =>
+        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.buzzdesk.org/developer/general_information/themes.html.' =>
             '',
         'It is possible to configure different themes, for example to distinguish between agents and customers, to be used on a per-domain basis within the application. Using a regular expression (regex), you can configure a Key/Content pair to match a domain. The value in "Key" should match the domain, and the value in "Content" should be a valid theme on your system. Please see the example entries for the proper form of the regex.' =>
             '異なるテーマを、担当者と顧客の間で異なるように、アプリケーション内でドメインごとの単位で使用されるように、設定することができます。regular expression (regex)を使用することにより、ドメインにマッチするようにKey/Contentを設定することが可能です。“Key”の値はドメインにマッチさせるべきであり、“Content”の値はご利用のシステムで有効なテーマとしてください。regrexの適切な形式のための入力例を確認してください。',
@@ -5833,8 +5827,8 @@ sub Data {
             '',
         'Global settings for all popup profiles.' => '',
         'Disable autocomplete in the login screen.' => '',
-        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow Znuny to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
-            'HTTPヘッダ"X-Frame-Options: SAMEORIGIN”を無効化し、Znunyを外部のWebサイトの一部としてiframeに埋め込むことを許可します。 このHTTPヘッダを無効にすることにより、セキュリティ上の問題が生じることがあります! 変更内容をよく理解している場合に限り無効化を実行してください!',
+        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow BuzzDesk to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
+            'HTTPヘッダ"X-Frame-Options: SAMEORIGIN”を無効化し、BuzzDeskを外部のWebサイトの一部としてiframeに埋め込むことを許可します。 このHTTPヘッダを無効にすることにより、セキュリティ上の問題が生じることがあります! 変更内容をよく理解している場合に限り無効化を実行してください!',
         'Disable HTTP header "Content-Security-Policy" to allow loading of external script contents. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
             'HTTPヘッダ"Content-Security-Policy”を無効化し、外部のスクリプトコンテンツの読み込みを許可します。 このHTTPヘッダを無効にすることにより、セキュリティ上の問題が生じることがあります! 変更内容をよく理解している場合に限り無効化を実行してください!',
         'Automated line break in text messages after x number of chars.' =>
@@ -5880,8 +5874,8 @@ sub Data {
             'もしログ・モジュールに関して"SysLog"が選択されていた場合、ロギングで使用されるべき文字セットが特定されます。',
         'If "file" was selected for LogModule, a logfile must be specified. If the file doesn\'t exist, it will be created by the system.' =>
             'もしログ・モジュールに関して"File"が選択されていた場合、ログ・ファイルが必ず特定されます。もしファイルが存在しなければ、システムにより作成されます。',
-        'Adds a suffix with the actual year and month to the Znuny log file. A logfile for every month will be created.' =>
-            'Znunyログ・ファイルに対して、実際の年と月による接尾辞を追加します。毎月のログファイルが作成されます。',
+        'Adds a suffix with the actual year and month to the BuzzDesk log file. A logfile for every month will be created.' =>
+            'BuzzDeskログ・ファイルに対して、実際の年と月による接尾辞を追加します。毎月のログファイルが作成されます。',
         'Set the minimum log level. If you select \'error\', just errors are logged. With \'debug\' you get all logging messages. The order of log levels is: \'debug\', \'info\', \'notice\' and \'error\'.' =>
             '',
         'Defines the module to send emails. "DoNotSendEmail" doesn\'t send emails at all. Any of the "SMTP" mechanisms use a specified (external) mailserver. "Sendmail" directly uses the sendmail binary of your operating system. "Test" doesn\'t send emails, but writes them to $OTRS_HOME/var/tmp/CacheFileStorable/EmailTest/ for testing purposes.' =>
@@ -5950,8 +5944,8 @@ sub Data {
             '',
         'Defines the module used to store the session data. With "DB" the frontend server can be splitted from the db server. "FS" is faster.' =>
             'セッション・データを格納するために使用されるモジュールを定義します。"DB"により、フロント・エンドのサーバをdbサーバから分離させることができます。"FS"はより速いものです。',
-        'Defines the name of the session key. E.g. Session, SessionID or Znuny.' =>
-            'セッション・キーの名前を定義します。つまり、Session、SessionID、Znunyです。',
+        'Defines the name of the session key. E.g. Session, SessionID or BuzzDesk.' =>
+            'セッション・キーの名前を定義します。つまり、Session、SessionID、BuzzDeskです。',
         'Defines the name of the key for customer sessions.' => '顧客セッションのためのキーの名前を定義します。',
         'Turns on the remote ip address check. It should not be enabled if the application is used, for example, via a proxy farm or a dialup connection, because the remote ip address is mostly different for the requests.' =>
             '',
@@ -5984,9 +5978,9 @@ sub Data {
         'Defines the period of time (in minutes) before customer is marked as "away" due to inactivity (e.g. in the "Logged-In Users" widget or for the chat).' =>
             '顧客が非アクティブのために「不在」としてマークされるまでの期間（分単位）を定義します（たとえば、「ログインユーザー」ウィジェット内またはチャット用）。',
         'This setting is deprecated. Set OTRSTimeZone instead.' => '',
-        'Sets the time zone being used internally by Znuny to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
+        'Sets the time zone being used internally by BuzzDesk to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
             '',
-        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the Znuny time zone and the user\'s time zone.' =>
+        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the BuzzDesk time zone and the user\'s time zone.' =>
             '',
         'If enabled, users that haven\'t selected a time zone yet will be notified to do so. Note: Notification will not be shown if (1) user has not yet selected a time zone and (2) OTRSTimeZone and UserDefaultTimeZone do match and (3) are not set to UTC.' =>
             '',
@@ -6005,8 +5999,8 @@ sub Data {
         'Adds the one time vacation days for the indicated calendar.' => '',
         'Defines the hours and week days of the indicated calendar, to count the working time.' =>
             '',
-        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your Znuny instance to stop working (probably any mask which takes input from the user).' =>
-            'ブラウザからZnunyへファイルアップロードする最大サイズ（バイト単位）を定義します。 警告：このオプションを低すぎる値に設定すると、Znunyインスタンス内の多くのインプット機能が機能しなくなる可能性があります。',
+        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your BuzzDesk instance to stop working (probably any mask which takes input from the user).' =>
+            'ブラウザからBuzzDeskへファイルアップロードする最大サイズ（バイト単位）を定義します。 警告：このオプションを低すぎる値に設定すると、BuzzDeskインスタンス内の多くのインプット機能が機能しなくなる可能性があります。',
         'Selects the module to handle uploads via the web interface. "DB" stores all uploads in the database, "FS" uses the file system.' =>
             'ウェブ・インタフェースを通じてアップロードを取り扱うための、モジュールを選択します。"DB"は全てのアップロードをデータベースに格納し、"FS"はファイル・システムを使用します。',
         'Specifies the text that should appear in the log file to denote a CGI script entry.' =>
@@ -6073,8 +6067,8 @@ sub Data {
             'PDFドキュメントで、イタリックの等幅フォントを扱うための、パスおよびTTF-Fileを定義します。',
         'Defines the path and TTF-File to handle bold italic monospaced font in PDF documents.' =>
             'PDFドキュメントで、太字でイタリックの等幅のフォントを扱うための、パスおよびTTF-Fileを定義します。',
-        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the Znuny user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
-            'PGPを有効化します。PGPサポートでメールの署名と暗号化が有効になっている場合は、.gnupgフォルダにアクセスする際の権限問題を回避するため、WebサーバーをZnunyユーザーとして実行することを強くお勧めします。 ',
+        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the BuzzDesk user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
+            'PGPを有効化します。PGPサポートでメールの署名と暗号化が有効になっている場合は、.gnupgフォルダにアクセスする際の権限問題を回避するため、WebサーバーをBuzzDeskユーザーとして実行することを強くお勧めします。 ',
         'Defines the path to PGP binary.' => 'PGPバイナリへのパスを定義します。',
         'Sets the options for PGP binary.' => 'PGPバイナリのためのオプションを設定します。',
         'Sets the preferred digest to be used for PGP binary.' => '',
@@ -6092,9 +6086,9 @@ sub Data {
             '秘密SSL認証が格納されるディレクトリを特定します。',
         'Cache time in seconds for the SSL certificate attributes.' => '',
         'Enables fetch S/MIME from CustomerUser backend support.' => '顧客ユーザー情報サポートからS / MIME設定を取得できるようにします。',
-        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com).' =>
+        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com).' =>
             '',
-        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
+        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
             '',
         'Defines the validity period in seconds for password reset tokens. After this time the token expires and a new reset request is required. Default: 3600 (1 hour).' =>
             'パスワードリセットトークンの有効期間（秒）を定義します。この時間を過ぎるとトークンは失効し、新しいリクエストが必要です。デフォルト: 3600（1時間）。',
@@ -6222,8 +6216,8 @@ sub Data {
             'Customer::AuthModuleに関して、“LDAP”が選択されていた場合、BaseDNを特定する必要があります。',
         'If "LDAP" was selected for Customer::AuthModule, the user identifier must be specified.' =>
             'Customer::AuthModuleに関して、“LDAP”が選択されていた場合、ユーザ識別子を特定する必要があります。',
-        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use Znuny. Specify the group, who may access the system.' =>
-            'Customer::AuthModuleに関して“LDAP”が選択されていた場合、ユーザについて、例えばZnunyを利用するためグループxyzにいる必要がある場合に、posixGroupにいるという理由で認証することを許可されるかどうかを、確認することができます。システムにアクセスする可能性があるグループを特定してください。',
+        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use BuzzDesk. Specify the group, who may access the system.' =>
+            'Customer::AuthModuleに関して“LDAP”が選択されていた場合、ユーザについて、例えばBuzzDeskを利用するためグループxyzにいる必要がある場合に、posixGroupにいるという理由で認証することを許可されるかどうかを、確認することができます。システムにアクセスする可能性があるグループを特定してください。',
         'If "LDAP" was selected for Customer::AuthModule, you can specify access attributes here.' =>
             'Customer::AuthModuleに関して、“LDAP”が選択されていた場合、ここにおいてアクセス属性を特定することができます。',
         'If "LDAP" was selected for Customer::AuthModule, user attributes can be specified. For LDAP posixGroups use UID, for non LDAP posixGroups use full user DN.' =>
@@ -6277,7 +6271,7 @@ sub Data {
         'Activates the available themes on the system. Value 1 means active, 0 means inactive.' =>
             'システムで利用可能なテーマをアクティベートします。値1がアクティブ、0が非アクティブを意味します。',
         'Defines the default value for the action parameter.' => '',
-        'Defines the shown links in the footer area of the customer and public interface of this Znuny system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
+        'Defines the shown links in the footer area of the customer and public interface of this BuzzDesk system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
             '',
         'Defines the default value for the action parameter for the public frontend. The action parameter is used in the scripts of the system.' =>
             '',
@@ -6306,8 +6300,8 @@ sub Data {
             '',
         'Defines the default maximum number of X-axis attributes for the time scale.' =>
             'タイム・スケールに関するX軸属性の、デフォルト最大数を定義します。',
-        'Znuny can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
-            'Znunyは、フルテキスト検索や統計生成などの高価な操作に、1つまたは複数の読み取り専用ミラーデータベースを使用できます。 ここでは、最初のミラーデータベースのDSNを指定できます。',
+        'BuzzDesk can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
+            'BuzzDeskは、フルテキスト検索や統計生成などの高価な操作に、1つまたは複数の読み取り専用ミラーデータベースを使用できます。 ここでは、最初のミラーデータベースのDSNを指定できます。',
         'Specify the username to authenticate for the first mirror database.' =>
             '',
         'Specify the password to authenticate for the first mirror database.' =>
@@ -6324,24 +6318,24 @@ sub Data {
             '',
         'Defines a filter to process the text in the articles, in order to highlight predefined keywords.' =>
             '事前定義されたキーワードをハイライトするため、項目の中のテキストを処理するフィルタを定義します。',
-        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'CVEナンバーの後ろにリンクを追加するhtmlアウトプットのための、フィルタを定義します。エレメント・イメージは、2種類のインプットを許可します。すぐに、イメージの名前です（つまりfaq.png）。この場合、Znunyイメージ・パスが使用されます。2つめの可能性は、イメージにリンクを挿入することです。',
-        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'バグトラック・ナンバーの後ろにリンクを追加するhtmlアウトプットのための、フィルタを定義します。エレメント・イメージは、2種類のインプットを許可します。すぐに、イメージの名前です（つまりfaq.png）。この場合、Znunyイメージ・パスが使用されます。2つめの可能性は、イメージにリンクを挿入することです。',
-        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'MSBulletinナンバーの後ろにリンクを追加するhtmlアウトプットのための、フィルタを定義します。エレメント・イメージは、2種類のインプットを許可します。すぐに、イメージの名前です（つまりfaq.png）。この場合、Znunyイメージ・パスが使用されます。2つめの可能性は、イメージにリンクを挿入することです。',
-        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            '定義された文字列（string）の後ろにリンクを追加するhtmlアウトプットのための、フィルタを定義します。エレメント・イメージは、2種類のインプットを許可します。すぐに、イメージの名前です（つまりfaq.png）。この場合、Znunyイメージ・パスが使用されます。2つめの可能性は、イメージにリンクを挿入することです。',
-        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            '定義された文字列（string）の後ろにリンクを追加するhtmlアウトプットのための、フィルタを定義します。エレメント・イメージは、2種類のインプットを許可します。すぐに、イメージの名前です（つまりfaq.png）。この場合、Znunyイメージ・パスが使用されます。2つめの可能性は、イメージにリンクを挿入することです。',
-        'If enabled, the Znuny version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
+        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'CVEナンバーの後ろにリンクを追加するhtmlアウトプットのための、フィルタを定義します。エレメント・イメージは、2種類のインプットを許可します。すぐに、イメージの名前です（つまりfaq.png）。この場合、BuzzDeskイメージ・パスが使用されます。2つめの可能性は、イメージにリンクを挿入することです。',
+        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'バグトラック・ナンバーの後ろにリンクを追加するhtmlアウトプットのための、フィルタを定義します。エレメント・イメージは、2種類のインプットを許可します。すぐに、イメージの名前です（つまりfaq.png）。この場合、BuzzDeskイメージ・パスが使用されます。2つめの可能性は、イメージにリンクを挿入することです。',
+        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'MSBulletinナンバーの後ろにリンクを追加するhtmlアウトプットのための、フィルタを定義します。エレメント・イメージは、2種類のインプットを許可します。すぐに、イメージの名前です（つまりfaq.png）。この場合、BuzzDeskイメージ・パスが使用されます。2つめの可能性は、イメージにリンクを挿入することです。',
+        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            '定義された文字列（string）の後ろにリンクを追加するhtmlアウトプットのための、フィルタを定義します。エレメント・イメージは、2種類のインプットを許可します。すぐに、イメージの名前です（つまりfaq.png）。この場合、BuzzDeskイメージ・パスが使用されます。2つめの可能性は、イメージにリンクを挿入することです。',
+        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            '定義された文字列（string）の後ろにリンクを追加するhtmlアウトプットのための、フィルタを定義します。エレメント・イメージは、2種類のインプットを許可します。すぐに、イメージの名前です（つまりfaq.png）。この場合、BuzzDeskイメージ・パスが使用されます。2つめの可能性は、イメージにリンクを挿入することです。',
+        'If enabled, the BuzzDesk version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
             '',
         'Default template for notification e-mails (see Kernel/Output/HTML/Templates/Standard/NotificationEvent/Email directory for available templates).' =>
             '',
-        'If enabled, Znuny will deliver all CSS files in minified form.' =>
+        'If enabled, BuzzDesk will deliver all CSS files in minified form.' =>
             '',
-        'If enabled, Znuny will deliver all JavaScript files in minified form.' =>
-            '有効にすると、Znunyは全JavaScriptファイルを縮小した形式で配信します。',
+        'If enabled, BuzzDesk will deliver all JavaScript files in minified form.' =>
+            '有効にすると、BuzzDeskは全JavaScriptファイルを縮小した形式で配信します。',
         'List of responsive CSS files to always be loaded for the agent interface.' =>
             '',
         'List of JS files to always be loaded for the admin interface.' =>
@@ -6567,9 +6561,9 @@ sub Data {
             '',
         'Enables the minimal ticket counter size (if "Date" was selected as TicketNumberGenerator).' =>
             '',
-        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
+        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
             '',
-        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the Znuny user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
+        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the BuzzDesk user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
             '',
         'Specifies whether all storage backends should be checked when looking for attachments. This is only required for installations where some attachments are in the file system, and others in the database.' =>
             '',
@@ -6612,7 +6606,7 @@ sub Data {
             '',
         'Overloads (redefines) existing functions in Kernel::System::Ticket. Used to easily add customizations.' =>
             'Kernel::System::Ticketに既に存在している機能を多重定義（再定義）します。簡単にカスタマイズを追加したい場合に使用されます。',
-        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
+        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
             '',
         'Defines whether to index archived tickets for fulltext searches.' =>
             '',
@@ -6620,7 +6614,7 @@ sub Data {
             '',
         'Display a warning and prevent search when using stop words within fulltext search.' =>
             '',
-        'Basic fulltext index settings. Execute "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
+        'Basic fulltext index settings. Execute "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
             '',
         'Fulltext index regex filters to remove parts of the text.' => '',
         'English stop words for fulltext index. These words will be removed from the search index.' =>
@@ -7349,7 +7343,7 @@ sub Data {
             '',
         'Defines the valid state types for a ticket. If a ticket is in a state which have any state type from this setting, this ticket will be considered as open, otherwise as closed.' =>
             '',
-        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/znuny.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
+        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
             '',
         'Sends reminder notifications of unlocked ticket after reaching the reminder date (only sent to ticket owner).' =>
             'リマインダ日付を迎えたら、アンロック・チケットのリマインダ通知を送信します（チケット所有者だけに送信されます）。',
@@ -7365,7 +7359,7 @@ sub Data {
         'Defines the target attribute in the link to external customer database. E.g. \'target="cdb"\'.' =>
             '外部顧客データベースへのリンクにおける、ターゲット属性を定義します。例：\'target="cdb"\'',
         'Defines the target attribute in the link to external customer database. E.g. \'AsPopup PopupType_TicketAction\'.' =>
-            'システム識別子を定義します。すべてのチケット番号とHTTPセッションの文字列は、このIDが含まれています。これはをシステムに属している唯一のチケットがフォローアップとして処理されることを確実にします。（2つのZnunyのインスタンス間で通信する場合に便利です）',
+            'システム識別子を定義します。すべてのチケット番号とHTTPセッションの文字列は、このIDが含まれています。これはをシステムに属している唯一のチケットがフォローアップとして処理されることを確実にします。（2つのBuzzDeskのインスタンス間で通信する場合に便利です）',
         'Toolbar Item for a shortcut. Additional access control to show or not show this link can be done by using Key "Group" and Content like "rw:group1;move_into:group2".' =>
             '',
         'Agent interface notification module to see the number of tickets an agent is responsible for. Additional access control to show or not show this link can be done by using Key "Group" and Content like "rw:group1;move_into:group2".' =>
@@ -7736,7 +7730,7 @@ sub Data {
             '',
         'Module to check if a incoming e-mail message is bounce.' => '',
         'Module used to detect if attachments are present.' => '',
-        'Executes follow-up checks on Znuny Header \'X-OTRS-Bounce\'.' =>
+        'Executes follow-up checks on BuzzDesk Header \'X-OTRS-Bounce\'.' =>
             '',
         'Checks if an E-Mail is a followup to an existing ticket by searching the subject for a valid ticket number.' =>
             '',
@@ -7904,9 +7898,9 @@ Contentはダイナミック・フィールドの形式によって設定内容�
         'Defines the default queue for new tickets in the agent interface.' =>
             '',
 
-        # XML Definition: Kernel/Config/Files/XML/Znuny.xml
+        # XML Definition: Kernel/Config/Files/XML/BuzzDesk.xml
         'Default preferences to set during user creation.' => '',
-        'Enables/disables the Znuny package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
+        'Enables/disables the BuzzDesk package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
             '',
         'Screens for which it is possible to enable or disable dynamic fields.' =>
             '',
@@ -8169,7 +8163,7 @@ Contentはダイナミック・フィールドの形式によって設定内容�
             '',
         'Mapping of ticket priority to X-Priority email header for outgoing emails of communication channel "system".' =>
             '',
-        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by Znuny.Form.Input.' =>
+        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by BuzzDesk.Form.Input.' =>
             '',
         'Once limit of watched tickets per user is reached, the oldest entries will be removed from the watch list. Disable this setting or set it to 0 to disable the limit (default).' =>
             '',
@@ -8431,8 +8425,8 @@ Contentはダイナミック・フィールドの形式によって設定内容�
         'Currently not possible' => '現在は未対応です',
         'This is currently disabled because of an ongoing package upgrade.' =>
             'こちらは現在パッケージの更新中のため無効化されています。',
-        'This option is currently disabled because the Znuny Daemon is not running.' =>
-            'こちらは現在 Znuny デーモンが停止中のため無効化されています。',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.' =>
+            'こちらは現在 BuzzDesk デーモンが停止中のため無効化されています。',
         'Are you sure you want to update all installed packages?' => '全てのパッケージを更新します。よろしいですか？',
         'No response from get package upgrade run status.' => '',
 
@@ -8562,7 +8556,7 @@ Contentはダイナミック・フィールドの形式によって設定内容�
         'Insert selected customer user(s) into the "%s:" field.' => '',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Daemon.js
-        'Information about the Znuny Daemon' => 'Znuny デーモンの紹介',
+        'Information about the BuzzDesk Daemon' => 'BuzzDesk デーモンの紹介',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Dashboard.js
         'Please check the fields marked as red for valid inputs.' => '',
@@ -8949,7 +8943,7 @@ Thanks for your help!
         'Create tickets.' => 'チケットの作成',
         'Created ticket [%s] in "%s" with priority "%s" and state "%s".' =>
             '',
-        'Creates a unit test file for this ticket and sends it to Znuny.' =>
+        'Creates a unit test file for this ticket and sends it to BuzzDesk.' =>
             '',
         'Creates a unit test file for this ticket.' => '',
         'Croatian' => 'クロアチア',
@@ -9392,7 +9386,7 @@ Thanks for your help!
             'これは、デフォルトの黒地と橙色をモチーフにした、顧客インタフェース向けのスキンです。',
         'This is the default orange - black skin.' => 'これは、デフォルトの黒地と橙色をモチーフにしたスキンです。',
         'This key is not certified with a trusted signature!' => '',
-        'This module is part of the admin area of Znuny.' => '',
+        'This module is part of the admin area of BuzzDesk.' => '',
         'Ticket Close.' => 'チケットをクローズする',
         'Ticket Compose Bounce Email.' => 'バウンスメールを送信する',
         'Ticket Compose email Answer.' => '',
@@ -9479,7 +9473,7 @@ Thanks for your help!
         'Your service selection of your preferred services. You also get notified about those services via email if enabled.' =>
             '優先サービスの選択。有効になっている場合は、電子メールでこれらのサービスについての通知を受け取ります。',
         'Your username in Mattermost without the leading @' => '',
-        'Znuny.org - News' => '',
+        'BuzzDesk.org - News' => '',
         'Zoom' => 'ズーム',
         'all tickets' => '',
         'archived tickets' => '',
@@ -9670,7 +9664,7 @@ Thanks for your help!
         'Hide EntityIDs',
         'If you now leave this page, all open popup windows will be closed, too!',
         'Import web service',
-        'Information about the Znuny Daemon',
+        'Information about the BuzzDesk Daemon',
         'Insert selected customer user(s) into the "%s:" field.',
         'Invalid date (need a future date)!',
         'Invalid date (need a past date)!',
@@ -9850,7 +9844,7 @@ Thanks for your help!
         'This is a repeating appointment',
         'This is currently disabled because of an ongoing package upgrade.',
         'This item still contains sub items. Are you sure you want to remove this item including its sub items?',
-        'This option is currently disabled because the Znuny Daemon is not running.',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.',
         'This software runs with a huge lists of browsers, please upgrade to one of these.',
         'This window must be called from compose window.',
         'Thu',

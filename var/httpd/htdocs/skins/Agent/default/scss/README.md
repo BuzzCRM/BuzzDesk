@@ -1,6 +1,6 @@
 # Agent Interface SCSS Framework
 
-This directory contains the SCSS files for the Znuny Agent interface default skin. The architecture follows a modular approach with clear separation of concerns.
+This directory contains the SCSS files for the BuzzDesk Agent interface default skin. The architecture follows a modular approach with clear separation of concerns.
 
 ## Directory Structure
 
@@ -126,11 +126,10 @@ Use CSS custom properties for theming:
 
 ## File Headers
 
-All SCSS files should include the standard Znuny license header:
+All SCSS files should include the standard BuzzDesk license header:
 
 ```scss
 /*
-Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (AGPL). If you

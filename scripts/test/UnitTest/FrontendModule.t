@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -20,7 +19,7 @@ $Kernel::OM->ObjectParamAdd(
 
 use Kernel::System::VariableCheck qw(:all);
 
-my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $ConfigObject      = $Kernel::OM->Get('Kernel::Config');
 my $SysConfigObject   = $Kernel::OM->Get('Kernel::System::SysConfig');
 my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
@@ -86,7 +85,7 @@ for my $Test (@Tests) {
     # Add
     #
 
-    my $AddResult = $ZnunyHelperObject->_ModuleGroupAdd(
+    my $AddResult = $BuzzDeskHelperObject->_ModuleGroupAdd(
         %{ $Test->{Parameter} },
     );
     $AddResult = $AddResult ? 1 : 0;
@@ -120,7 +119,7 @@ for my $Test (@Tests) {
     # Remove
     #
 
-    my $RemoveResult = $ZnunyHelperObject->_ModuleGroupRemove(
+    my $RemoveResult = $BuzzDeskHelperObject->_ModuleGroupRemove(
         %{ $Test->{Parameter} },
     );
     $RemoveResult = $RemoveResult ? 1 : 0;

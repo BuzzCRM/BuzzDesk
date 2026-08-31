@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -68,7 +66,7 @@ sub _HandleError {
         my $Sent = $Kernel::OM->Get('Kernel::System::Email')->Send(
             From     => $From,
             To       => $To,
-            Subject  => "Znuny Scheduler Daemon $Param{TaskType}: $Param{TaskName}",
+            Subject  => "BuzzDesk Scheduler Daemon $Param{TaskType}: $Param{TaskName}",
             Charset  => 'utf-8',
             MimeType => 'text/plain',
             Body     => $Param{ErrorMessage},

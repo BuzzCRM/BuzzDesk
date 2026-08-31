@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -24,7 +23,7 @@ $Kernel::OM->ObjectParamAdd(
 
 my $ConfigObject             = $Kernel::OM->Get('Kernel::Config');
 my $HelperObject             = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
-my $ZnunyHelperObject        = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject        = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $UnitTestWebserviceObject = $Kernel::OM->Get('Kernel::System::UnitTest::Webservice');
 my $CustomerCompanyObject    = $Kernel::OM->Get('Kernel::System::CustomerCompany');
 my $TicketObject             = $Kernel::OM->Get('Kernel::System::Ticket');
@@ -48,9 +47,9 @@ $ConfigObject->Set(
     },
 );
 
-$ZnunyHelperObject->_WebserviceCreate(
+$BuzzDeskHelperObject->_WebserviceCreate(
     Webservices => {
-        Generic => $Home . '/scripts/test/sample/Webservice/ZnunyGeneric.yml',
+        Generic => $Home . '/scripts/test/sample/Webservice/BuzzDeskGeneric.yml',
     },
 );
 
@@ -66,7 +65,7 @@ my @DynamicFields = (
     },
 );
 
-$ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFields);
+$BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFields);
 
 my %CustomerUserData = $HelperObject->TestCustomerUserDataGet(
     Language => 'de',
@@ -90,19 +89,19 @@ $CustomerCompanyObject->CustomerCompanyAdd(
     UserID                 => 1,
 );
 
-my $ServiceID = $ZnunyHelperObject->_ServiceCreateIfNotExists(
+my $ServiceID = $BuzzDeskHelperObject->_ServiceCreateIfNotExists(
     Name => 'ttt-service',
 );
 
-my $TypeID = $ZnunyHelperObject->_TypeCreateIfNotExists(
+my $TypeID = $BuzzDeskHelperObject->_TypeCreateIfNotExists(
     Name => 'ttt-type',
 );
 
-my $SLAID = $ZnunyHelperObject->_SLACreateIfNotExists(
+my $SLAID = $BuzzDeskHelperObject->_SLACreateIfNotExists(
     Name => 'ttt-sla',
 );
 
-my $QueueID = $ZnunyHelperObject->_QueueCreateIfNotExists(
+my $QueueID = $BuzzDeskHelperObject->_QueueCreateIfNotExists(
     Name    => 'ttt-queue',
     GroupID => 1,
 );

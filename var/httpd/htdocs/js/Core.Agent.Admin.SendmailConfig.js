@@ -1,5 +1,4 @@
 // --
-// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (AGPL). If you
@@ -9,13 +8,13 @@
 "use strict";
 
 var Core  = Core || {},
-    Znuny = Znuny || {};
+    BuzzDesk = BuzzDesk || {};
 
 Core.Agent = Core.Agent || {};
 Core.Agent.Admin = Core.Agent.Admin || {};
 
-Znuny.Form       = Znuny.Form || {};
-Znuny.Form.Input = Znuny.Form.Input || {};
+BuzzDesk.Form       = BuzzDesk.Form || {};
+BuzzDesk.Form.Input = BuzzDesk.Form.Input || {};
 
 /**
  * @namespace Core.Agent.Admin.SendmailConfig
@@ -51,16 +50,16 @@ Znuny.Form.Input = Znuny.Form.Input || {};
             SendmailModules = Core.Config.Get('SendmailModules');
 
         function ShowField(FieldID) {
-            Znuny.Form.Input.Show(FieldID);
+            BuzzDesk.Form.Input.Show(FieldID);
 
-            // Workaround: Znuny.Form.Input does not handle the outer field-wrapper div
+            // Workaround: BuzzDesk.Form.Input does not handle the outer field-wrapper div
             $('#' + FieldID).closest('div.field-wrapper').show();
         }
 
         function HideField(FieldID) {
-            Znuny.Form.Input.Hide(FieldID);
+            BuzzDesk.Form.Input.Hide(FieldID);
 
-            // Workaround: Znuny.Form.Input does not handle the outer field-wrapper div
+            // Workaround: BuzzDesk.Form.Input does not handle the outer field-wrapper div
             $('#' + FieldID).closest('div.field-wrapper').hide();
         }
 
@@ -72,7 +71,7 @@ Znuny.Form.Input = Znuny.Form.Input || {};
 
             $.each(FieldIDs, function(Index, FieldID) {
                 HideField(FieldID);
-                Znuny.Form.Input.Mandatory(FieldID, false);
+                BuzzDesk.Form.Input.Mandatory(FieldID, false);
             });
 
             // Reset available options for authentication types
@@ -103,16 +102,16 @@ Znuny.Form.Input = Znuny.Form.Input || {};
                     });
                 }
 
-                CurrentValue = Znuny.Form.Input.Get(FieldID);
+                CurrentValue = BuzzDesk.Form.Input.Get(FieldID);
                 if (
                     ConfigOptions['DefaultValue']
                     && !CurrentValue
                 ) {
-                    Znuny.Form.Input.Set(FieldID, ConfigOptions.DefaultValue);
+                    BuzzDesk.Form.Input.Set(FieldID, ConfigOptions.DefaultValue);
                 }
 
                 if (ConfigOptions.Required) {
-                    Znuny.Form.Input.Mandatory(FieldID, true);
+                    BuzzDesk.Form.Input.Mandatory(FieldID, true);
                 }
 
                 ShowField(FieldID);
@@ -141,7 +140,7 @@ Znuny.Form.Input = Znuny.Form.Input || {};
 
             $.each(['AuthUser', 'AuthPassword', 'OAuth2TokenConfigID'], function(Index, FieldID) {
                 HideField(FieldID);
-                Znuny.Form.Input.Mandatory(FieldID, false);
+                BuzzDesk.Form.Input.Mandatory(FieldID, false);
             });
 
             if (!ConfigOptions) return;
@@ -155,7 +154,7 @@ Znuny.Form.Input = Znuny.Form.Input || {};
                 ShowField(FieldID);
 
                 if (ConfigOptions.Required) {
-                    Znuny.Form.Input.Mandatory(FieldID, true);
+                    BuzzDesk.Form.Input.Mandatory(FieldID, true);
                 }
             });
 
@@ -168,14 +167,14 @@ Znuny.Form.Input = Znuny.Form.Input || {};
 
             if (IsFallbackConfig) {
                 HideField('EmailAddresses');
-                Znuny.Form.Input.Mandatory('EmailAddresses', false);
+                BuzzDesk.Form.Input.Mandatory('EmailAddresses', false);
             }
             else {
                 ShowField('EmailAddresses');
 
                 // Somehow does not work if set directly to true the first time.
-                Znuny.Form.Input.Mandatory('EmailAddresses', false);
-                Znuny.Form.Input.Mandatory('EmailAddresses', true);
+                BuzzDesk.Form.Input.Mandatory('EmailAddresses', false);
+                BuzzDesk.Form.Input.Mandatory('EmailAddresses', true);
             }
 
             Core.UI.InputFields.Activate();

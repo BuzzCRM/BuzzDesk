@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -29,8 +27,8 @@ my $String = '<?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>TestPackage1</Name>
     <Version>0.0.1</Version>
-    <Vendor>Znuny GmbH</Vendor>
-    <URL>https://znuny.com/</URL>
+    <Vendor>BuzzDesk GmbH</Vendor>
+    <URL>https://buzzdesk.com/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
     <Description Lang="en">TestPackage1.</Description>
     <Framework>' . $Version . '</Framework>
@@ -46,8 +44,8 @@ my $String2 = '<?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>TestPackage2</Name>
     <Version>0.0.1</Version>
-    <Vendor>Znuny GmbH</Vendor>
-    <URL>https://znuny.com/</URL>
+    <Vendor>BuzzDesk GmbH</Vendor>
+    <URL>https://buzzdesk.com/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
     <Description Lang="en">TestPackage2.</Description>
     <Framework>' . $Version . '</Framework>

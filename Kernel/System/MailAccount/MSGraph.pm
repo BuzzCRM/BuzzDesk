@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -336,7 +335,7 @@ sub _FetchMessages {
             );
 
             my $ErrorMessage = "$Self->{MailAccountModuleName}: Can't process message, see log sub system ("
-                . "$File, report it on https://github.com/znuny/Znuny/issues)!";
+                . "$File, report it on https://github.com/buzzdesk/BuzzDesk/issues)!";
 
             $CommunicationLogObject->ObjectLog(
                 ObjectLogType => 'Message',

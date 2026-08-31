@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -64,8 +63,8 @@ Adds a new sendmail config.
         AuthPassword        => undef,
         OAuth2TokenConfigID => 2,
         EmailAddresses      => [ # Only stored/needed if IsFallbackConfig is false
-            'znuny@example.org',
-            'znuny2@example.org',
+            'buzzdesk@example.org',
+            'buzzdesk2@example.org',
         ],
         Comments => 'Comment', # optional
         ValidID  => 1,
@@ -230,8 +229,8 @@ Updates a sendmail config.
         AuthPassword        => undef,
         OAuth2TokenConfigID => 2,
         EmailAddresses      => [ # Only stored/needed if IsFallbackConfig is false
-            'znuny@example.org',
-            'znuny2@example.org',
+            'buzzdesk@example.org',
+            'buzzdesk2@example.org',
         ],
         Comments => 'Comment', # optional
         ValidID  => 1,
@@ -399,8 +398,8 @@ Returns:
         OAuth2TokenConfigID   => 2,
         OAuth2TokenConfigName => '...',
         EmailAddresses        => [
-            'znuny@example.org',
-            'znuny2@example.org',
+            'buzzdesk@example.org',
+            'buzzdesk2@example.org',
         ],
         Comments   => 'Comment',
         ValidID    => 1,
@@ -536,8 +535,8 @@ Returns:
             OAuth2TokenConfigID   => 2,
             OAuth2TokenConfigName => '...',
             EmailAddresses        => [
-                'znuny@example.org',
-                'znuny2@example.org',
+                'buzzdesk@example.org',
+                'buzzdesk2@example.org',
             ],
             Comments   => 'Comment',
             ValidID    => 1,
@@ -640,7 +639,7 @@ sub GetAll {
 Returns the sendmail config for the given email address.
 
     my $SendmailConfig = $SendmailConfigObject->GetByEmailAddress(
-        EmailAddress => 'znuny@example.org',
+        EmailAddress => 'buzzdesk@example.org',
 
         # optional, defaults to 0:
         # Return fallback config (if any) if no config found for email address
@@ -663,8 +662,8 @@ Returns:
         AuthPassword        => undef,
         OAuth2TokenConfigID => 2,
         EmailAddresses      => [
-            'znuny@example.org',
-            'znuny2@example.org',
+            'buzzdesk@example.org',
+            'buzzdesk2@example.org',
         ],
         Comments   => 'Comment',
         ValidID    => 1,
@@ -840,7 +839,7 @@ Optionally only returns those not yet used in any sendmail config.
     );
 
     my $EmailAddresses = {
-        'system@example.org' => 'system@example.org (Admin Znuny)',
+        'system@example.org' => 'system@example.org (Admin BuzzDesk)',
         # ...
     };
 
@@ -964,8 +963,8 @@ depending on given combination of params.
         AuthPassword        => undef,
         OAuth2TokenConfigID => 2,
         EmailAddresses      => [ # Only stored/needed if IsFallbackConfig is false
-            'znuny@example.org',
-            'znuny2@example.org',
+            'buzzdesk@example.org',
+            'buzzdesk2@example.org',
         ],
         Comments => 'Comment', # optional
         ValidID  => 1,

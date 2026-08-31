@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -27,7 +26,7 @@ $ConfigObject->Set(
 );
 
 my $HelperObject              = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
-my $ZnunyHelperObject         = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject         = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $LayoutObject              = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
 my $DynamicFieldObject        = $Kernel::OM->Get('Kernel::System::DynamicField');
 my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
@@ -38,7 +37,7 @@ my $WebserviceObject          = $Kernel::OM->Get('Kernel::System::GenericInterfa
 my $WebserviceName = 'DynamicFieldWebservice';
 my $DynamicField   = $WebserviceName . 'Driver';
 
-$ZnunyHelperObject->_WebserviceCreate(
+$BuzzDeskHelperObject->_WebserviceCreate(
     Webservices => {
         $WebserviceName => 'scripts/test/sample/Webservice/' . $WebserviceName . '.yml',
     }
@@ -60,8 +59,8 @@ $UnitTestWebserviceObject->Mock(
                 Success => 1,
                 Data    => [
                     {
-                        Key   => 'Znuny',
-                        Value => 'Znuny',
+                        Key   => 'BuzzDesk',
+                        Value => 'BuzzDesk',
                     },
                     {
                         Key   => 'Rocks',
@@ -77,8 +76,8 @@ $UnitTestWebserviceObject->Mock(
             Result => {
                 Success => 1,
                 Data    => {
-                    Key   => 'Znuny',
-                    Value => 'Znuny',
+                    Key   => 'BuzzDesk',
+                    Value => 'BuzzDesk',
                 },
             },
         },
@@ -122,7 +121,7 @@ my @DynamicFields = (
         },
     },
 );
-my $Success = $ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFields);
+my $Success = $BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFields);
 
 $Self->True(
     $Success,

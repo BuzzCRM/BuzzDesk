@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -97,7 +95,7 @@ $Self->IsNot(
 
 my $SystemAddressID = $Kernel::OM->Get('Kernel::System::SystemAddress')->SystemAddressAdd(
     Name     => $RandomID,
-    Realname => $RandomID . '@znuny.com',
+    Realname => $RandomID . '@buzzdesk.com',
     ValidID  => 1,
     QueueID  => 1,
     Comment  => $RandomID,
@@ -107,14 +105,14 @@ my $SystemAddressID = $Kernel::OM->Get('Kernel::System::SystemAddress')->SystemA
 $Self->IsNot(
     $SystemAddressID,
     undef,
-    "SystemAddressAdd() for system address ID $RandomID \@znuny.com - ID $SystemAddressID",
+    "SystemAddressAdd() for system address ID $RandomID \@buzzdesk.com - ID $SystemAddressID",
 );
 
 my $UserID = $Kernel::OM->Get('Kernel::System::User')->UserAdd(
     UserFirstname => 'Mr',
-    UserLastname  => 'Znuny',
-    UserLogin     => $RandomID . 'znuny',
-    UserEmail     => $RandomID . '@znuny.com',
+    UserLastname  => 'BuzzDesk',
+    UserLogin     => $RandomID . 'buzzdesk',
+    UserEmail     => $RandomID . '@buzzdesk.com',
     ValidID       => 1,
     ChangeUserID  => 1,
 );
@@ -122,7 +120,7 @@ my $UserID = $Kernel::OM->Get('Kernel::System::User')->UserAdd(
 $Self->IsNot(
     $UserID,
     undef,
-    "UserAdd() for user $RandomID znuny - ID $UserID",
+    "UserAdd() for user $RandomID buzzdesk - ID $UserID",
 );
 
 my $ServiceID = $Kernel::OM->Get('Kernel::System::Service')->ServiceAdd(
@@ -284,7 +282,7 @@ my @Tests = (
         QueryString   => "Action=AdminUser;Subaction=Change;ID=$UserID",
         EntityType    => 'User',
         Success       => 1,
-        ExpectedValue => $RandomID . 'znuny',
+        ExpectedValue => $RandomID . 'buzzdesk',
     },
     {
         Name          => 'Correct type entity type',

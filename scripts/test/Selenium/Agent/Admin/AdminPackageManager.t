@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -213,7 +211,7 @@ $Selenium->RunTest(
         # Check if info for incompatible package is shown.
         $Self->True(
             $Selenium->execute_script(
-                "return \$('.WidgetSimple .Content h2:contains(\"Package installation requires a patch level update of Znuny\")').length;"
+                "return \$('.WidgetSimple .Content h2:contains(\"Package installation requires a patch level update of BuzzDesk\")').length;"
             ),
             'Info for incompatible package is shown'
         );
@@ -227,7 +225,7 @@ $Selenium->RunTest(
             Value => [
                 {
                     Name => "Example repository 1",
-                    URL  => "https://addons.znuny.com/api/addon_repos/NOPACKAGES",
+                    URL  => "https://addons.buzzdesk.com/api/addon_repos/NOPACKAGES",
                 }
             ],
         );

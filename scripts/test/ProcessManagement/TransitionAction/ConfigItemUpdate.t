@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -23,7 +22,7 @@ $Kernel::OM->ObjectParamAdd(
 my $HelperObject              = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $TicketObject              = $Kernel::OM->Get('Kernel::System::Ticket');
 my $ValidObject               = $Kernel::OM->Get('Kernel::System::Valid');
-my $ZnunyHelperObject         = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject         = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $UtilObject                = $Kernel::OM->Get('Kernel::System::Util');
 my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
 my $DynamicFieldObject        = $Kernel::OM->Get('Kernel::System::DynamicField');
@@ -439,7 +438,7 @@ my @DynamicFields = (
     },
 );
 
-my $Success = $ZnunyHelperObject->_DynamicFieldsCreate(@DynamicFields);
+my $Success = $BuzzDeskHelperObject->_DynamicFieldsCreate(@DynamicFields);
 
 $Self->True(
     $Success,
@@ -648,7 +647,7 @@ $Self->True(
     'TransitionActionObject->Run() must have been executed successfully.',
 );
 
-my %LatestConfigItemVersion = $ZnunyHelperObject->_ITSMConfigItemVersionGet(
+my %LatestConfigItemVersion = $BuzzDeskHelperObject->_ITSMConfigItemVersionGet(
     ConfigItemID    => $ConfigItemID,
     XMLDataMultiple => 1,
 );
@@ -732,7 +731,7 @@ $Self->True(
     'TransitionActionObject->Run() must have been executed successfully.',
 );
 
-%LatestConfigItemVersion = $ZnunyHelperObject->_ITSMConfigItemVersionGet(
+%LatestConfigItemVersion = $BuzzDeskHelperObject->_ITSMConfigItemVersionGet(
     ConfigItemID    => $ConfigItemID,
     XMLDataMultiple => 1,
 );
@@ -775,7 +774,7 @@ $Self->IsDeeply(
     'multiple ConfigItemID - Check latest StringifiedXMLData',
 );
 
-%LatestConfigItemVersion = $ZnunyHelperObject->_ITSMConfigItemVersionGet(
+%LatestConfigItemVersion = $BuzzDeskHelperObject->_ITSMConfigItemVersionGet(
     ConfigItemID    => $ConfigItemID2,
     XMLDataMultiple => 1,
 );

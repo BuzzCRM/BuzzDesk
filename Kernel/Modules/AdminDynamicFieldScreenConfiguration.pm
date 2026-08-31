@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -21,7 +20,7 @@ our @ObjectDependencies = (
     'Kernel::System::Log',
     'Kernel::System::SysConfig',
     'Kernel::System::Web::Request',
-    'Kernel::System::ZnunyHelper',
+    'Kernel::System::BuzzDeskHelper',
 );
 
 use Kernel::System::VariableCheck qw(:all);
@@ -34,7 +33,7 @@ sub new {
     bless( $Self, $Type );
 
     my $DynamicFieldScreenConfigurationObject = $Kernel::OM->Get('Kernel::System::DynamicField::ScreenConfiguration');
-    my $ZnunyHelperObject                     = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject                     = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
     my $DynamicFieldObject                    = $Kernel::OM->Get('Kernel::System::DynamicField');
     my $ConfigObject                          = $Kernel::OM->Get('Kernel::Config');
 
@@ -58,7 +57,7 @@ sub new {
         $Self->{DynamicFields}->{ $DynamicFieldConfig->{Name} } = $DynamicFieldConfig->{Label};
     }
 
-    my $ValidDynamicFieldScreens = $ZnunyHelperObject->_ValidDynamicFieldScreenListGet(
+    my $ValidDynamicFieldScreens = $BuzzDeskHelperObject->_ValidDynamicFieldScreenListGet(
         Result => 'HASH',
     );
 
@@ -75,7 +74,7 @@ sub Run {
     my $ConfigObject                          = $Kernel::OM->Get('Kernel::Config');
     my $LogObject                             = $Kernel::OM->Get('Kernel::System::Log');
     my $SysConfigObject                       = $Kernel::OM->Get('Kernel::System::SysConfig');
-    my $ZnunyHelperObject                     = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject                     = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
     my $LayoutObject                          = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
     my $ParamObject                           = $Kernel::OM->Get('Kernel::System::Web::Request');
     my $LanguageObject                        = $Kernel::OM->Get('Kernel::Language');
@@ -134,7 +133,7 @@ sub Run {
         if ( $Param{Type} eq 'DynamicField' ) {
             $ScreenConfig{ $Param{Element} } = \%Config;
 
-            $Success = $ZnunyHelperObject->_DynamicFieldsScreenConfigImport(
+            $Success = $BuzzDeskHelperObject->_DynamicFieldsScreenConfigImport(
                 Config => \%ScreenConfig,
             );
         }
@@ -143,14 +142,14 @@ sub Run {
                 $ScreenConfig{ $Param{Element} }->{$DynamicField} = $Config{$DynamicField};
             }
 
-            $Success = $ZnunyHelperObject->_DynamicFieldsScreenEnable(%ScreenConfig);
+            $Success = $BuzzDeskHelperObject->_DynamicFieldsScreenEnable(%ScreenConfig);
         }
         elsif ( $Param{Type} eq 'DefaultColumnsScreen' ) {
             for my $DynamicField ( sort keys %Config ) {
                 $ScreenConfig{ $Param{Element} }->{ 'DynamicField_' . $DynamicField } = $Config{$DynamicField};
             }
 
-            $Success = $ZnunyHelperObject->_DefaultColumnsEnable(%ScreenConfig);
+            $Success = $BuzzDeskHelperObject->_DefaultColumnsEnable(%ScreenConfig);
         }
 
         $Param{Priority} = 'Info';
@@ -242,7 +241,7 @@ sub Run {
             DefaultID => $Setting{DefaultID},
         );
 
-        $Success = $ZnunyHelperObject->_RebuildConfig();
+        $Success = $BuzzDeskHelperObject->_RebuildConfig();
 
         $Param{Priority} = 'Info';
         $Param{Message}  = $LanguageObject->Translate(
@@ -537,28 +536,28 @@ sub _ShowEdit {
 sub _GetConfig {
     my ( $Self, %Param ) = @_;
 
-    my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     my %Config;
     return %Config if !defined $Param{Type};
 
     # get config of element
     if ( $Param{Type} eq 'DynamicField' ) {
-        my %ConfigItemConfig = $ZnunyHelperObject->_DynamicFieldsScreenConfigExport(
+        my %ConfigItemConfig = $BuzzDeskHelperObject->_DynamicFieldsScreenConfigExport(
             DynamicFields => [ $Param{Element} ],
         );
 
         %Config = %{ $ConfigItemConfig{ $Param{Element} } || {} };
     }
     elsif ( $Param{Type} eq 'DynamicFieldScreen' ) {
-        my %ConfigItemConfig = $ZnunyHelperObject->_DynamicFieldsScreenGet(
+        my %ConfigItemConfig = $BuzzDeskHelperObject->_DynamicFieldsScreenGet(
             ConfigItems => [ $Param{Element} ],
         );
 
         %Config = %{ $ConfigItemConfig{ $Param{Element} } || {} };
     }
     elsif ( $Param{Type} eq 'DefaultColumnsScreen' ) {
-        my %ConfigItemConfig = $ZnunyHelperObject->_DynamicFieldsDefaultColumnsGet(
+        my %ConfigItemConfig = $BuzzDeskHelperObject->_DynamicFieldsDefaultColumnsGet(
             ConfigItems => [ $Param{Element} ],
         );
 

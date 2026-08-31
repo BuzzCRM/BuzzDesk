@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -15,7 +14,7 @@ our @ObjectDependencies = (
     'Kernel::System::GeneralCatalog',
     'Kernel::System::ITSMConfigItem',
     'Kernel::System::Valid',
-    'Kernel::System::ZnunyHelper',
+    'Kernel::System::BuzzDeskHelper',
 );
 
 =head1 NAME
@@ -52,7 +51,7 @@ sub new {
 Creates a config item and adds an initial version.
 
     my $VersionRef = $UnitTestITSMConfigItemObject->ConfigItemCreate(
-        Name          => 'Znuny Rack 42',
+        Name          => 'BuzzDesk Rack 42',
         ClassName     => 'Server',
         DeplStateName => 'Production',
         InciStateName => 'Operational',
@@ -100,7 +99,7 @@ sub ConfigItemCreate {
     my $ValidObject          = $Kernel::OM->Get('Kernel::System::Valid');
     my $ConfigItemObject     = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
     my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
-    my $ZnunyHelperObject    = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+    my $BuzzDeskHelperObject    = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 
     my $ValidID = $ValidObject->ValidLookup(
         Valid => 'valid',
@@ -117,7 +116,7 @@ sub ConfigItemCreate {
         UserID  => $Param{UserID} || 1,
     );
 
-    $ZnunyHelperObject->_ITSMVersionAdd(
+    $BuzzDeskHelperObject->_ITSMVersionAdd(
         %Param,
         ConfigItemID => $ConfigItemID,
     );

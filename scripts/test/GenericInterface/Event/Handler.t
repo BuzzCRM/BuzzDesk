@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -42,7 +40,7 @@ $Self->Is(
 );
 
 my $Home   = $ConfigObject->Get('Home');
-my $Daemon = $Home . '/bin/znuny.Daemon.pl';
+my $Daemon = $Home . '/bin/buzzdesk.Daemon.pl';
 
 # get daemon status (stop if necessary to reload configuration with planner daemon disabled)
 my $PreviousDaemonStatus = `perl $Daemon status`;
@@ -465,7 +463,7 @@ for my $Test (@Tests) {
             Priority     => '3 normal',
             State        => 'closed successful',
             CustomerID   => '123465',
-            CustomerUser => 'unittest@znuny.com',
+            CustomerUser => 'unittest@buzzdesk.com',
             OwnerID      => 1,
             UserID       => 1,
         );
@@ -593,7 +591,7 @@ my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
 # cleanup ticket database
 my @DeleteTicketList = $TicketObject->TicketSearch(
     Result            => 'ARRAY',
-    CustomerUserLogin => 'unittest@znuny.com',
+    CustomerUserLogin => 'unittest@buzzdesk.com',
     UserID            => 1,
 );
 for my $TicketID (@DeleteTicketList) {

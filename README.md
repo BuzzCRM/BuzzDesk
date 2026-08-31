@@ -1,33 +1,33 @@
 <div align="center">
-  <a href="https://www.znuny.org">
+  <a href="https://www.buzzdesk.org">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://www.znuny.com/assets/znuny-logo.svg">
-      <img alt="Znuny" src="https://www.znuny.com/assets/znuny-logo-black.svg" width="300">
+      <source media="(prefers-color-scheme: dark)" srcset="https://www.buzzdesk.com/assets/buzzdesk-logo.svg">
+      <img alt="BuzzDesk" src="https://www.buzzdesk.com/assets/buzzdesk-logo-black.svg" width="300">
     </picture>
   </a>
 </div>
 
 <p align="center">
-    <a href="https://download.znuny.org/releases/znuny-latest-7.3.tar.gz"><img src="https://img.shields.io/github/v/tag/znuny/Znuny?filter=rel-7_3_*&label=latest%20release&color=ff9b00"></a>
+    <a href="https://download.buzzdesk.org/releases/buzzdesk-latest-7.3.tar.gz"><img src="https://img.shields.io/github/v/tag/buzzdesk/BuzzDesk?filter=rel-7_3_*&label=latest%20release&color=ff9b00"></a>
     <br>
-    <a href="https://github.com/znuny/Znuny/actions"><img src="https://img.shields.io/github/actions/workflow/status/znuny/Znuny/ci.yaml?label=CI"></a>
-    <a href="https://github.com/znuny/Znuny/actions"><img src="https://badge.proxy.znuny.com/Znuny/rel-7_3"></a>
-    <a href="https://translations.znuny.org/engage/znuny/"><img src="https://translations.znuny.org/widgets/znuny/-/znuny/svg-badge.svg" alt="Translation status"></a>
+    <a href="https://github.com/buzzdesk/BuzzDesk/actions"><img src="https://img.shields.io/github/actions/workflow/status/buzzdesk/BuzzDesk/ci.yaml?label=CI"></a>
+    <a href="https://github.com/buzzdesk/BuzzDesk/actions"><img src="https://badge.proxy.buzzdesk.com/BuzzDesk/rel-7_3"></a>
+    <a href="https://translations.buzzdesk.org/engage/buzzdesk/"><img src="https://translations.buzzdesk.org/widgets/buzzdesk/-/buzzdesk/svg-badge.svg" alt="Translation status"></a>
     <br>
-    <a href="https://github.com/znuny/Znuny/issues"><img src="https://img.shields.io/github/issues-raw/znuny/Znuny?"></a>
-    <a href="https://github.com/znuny/Znuny/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/znuny/Znuny?color=#44CC44"></a>
-    <a href="https://github.com/znuny/Znuny/pulls"><img src="https://img.shields.io/github/issues-pr-raw/znuny/Znuny?"></a>
-    <a href="https://github.com/znuny/Znuny/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/znuny/Znuny?color=brightgreen"></a>
+    <a href="https://github.com/buzzdesk/BuzzDesk/issues"><img src="https://img.shields.io/github/issues-raw/buzzdesk/BuzzDesk?"></a>
+    <a href="https://github.com/buzzdesk/BuzzDesk/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/buzzdesk/BuzzDesk?color=#44CC44"></a>
+    <a href="https://github.com/buzzdesk/BuzzDesk/pulls"><img src="https://img.shields.io/github/issues-pr-raw/buzzdesk/BuzzDesk?"></a>
+    <a href="https://github.com/buzzdesk/BuzzDesk/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/buzzdesk/BuzzDesk?color=brightgreen"></a>
     <br>
-    <a href="https://github.com/znuny/Znuny"><img src="https://img.shields.io/github/languages/count/znuny/Znuny?style=flat&label=languages&color=brightgreen"></a>
-    <a href="https://github.com/znuny/Znuny/graphs/contributors"><img src="https://img.shields.io/github/contributors/znuny/Znuny?"></a>
+    <a href="https://github.com/buzzdesk/BuzzDesk"><img src="https://img.shields.io/github/languages/count/buzzdesk/BuzzDesk?style=flat&label=languages&color=brightgreen"></a>
+    <a href="https://github.com/buzzdesk/BuzzDesk/graphs/contributors"><img src="https://img.shields.io/github/contributors/buzzdesk/BuzzDesk?"></a>
     <a href="https://discord.gg/XTud3WWZTs"><img src="https://img.shields.io/discord/836533233885773825?style=flat"></a>
 </p>
 <hr>
 
-Znuny
+BuzzDesk
 =======
-Znuny is a continuation of the ((OTRS)) Community Edition (version 6.0.30) which was declared end of life (EOL) at the end of December 2020.
+BuzzDesk is a continuation of the ((OTRS)) Community Edition (version 6.0.30) which was declared end of life (EOL) at the end of December 2020.
 
 The primary goal for this project is to provide a maintained and stable version of the well known ticket system and improve it with new features.
 
@@ -40,14 +40,14 @@ If you need more details you can have a look [here](https://snyk.io/learn/what-i
 
 Documentation
 =============
-You can find documentation [here](https://doc.znuny.org/).
-The source code of Znuny is publicly available on [GitHub](https://github.com/znuny/znuny).
+You can find documentation [here](https://doc.buzzdesk.org/).
+The source code of BuzzDesk is publicly available on [GitHub](https://github.com/buzzdesk/buzzdesk).
 
 You want to get in touch?
-- [Project website](https://www.znuny.org)
-- [Community forum](https://community.znuny.org)
+- [Project website](https://www.buzzdesk.org)
+- [Community forum](https://community.buzzdesk.org)
 - [Discord Server](https://discord.gg/XTud3WWZTs)
-- [Commercial services](https://www.znuny.com)
+- [Commercial services](https://www.buzzdesk.com)
 
 Software requirements
 =====================
@@ -73,7 +73,7 @@ Browsers
 
 Vendor
 =======
-This project is mainly funded by Znuny GmbH, Berlin.
+This project is mainly funded by BuzzDesk GmbH, Berlin.
 If you need professional support or consulting, feel free to contact us.
 
-[Znuny Website](https://www.znuny.com)
+[BuzzDesk Website](https://www.buzzdesk.com)

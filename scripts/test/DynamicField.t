@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -253,7 +251,7 @@ my @Tests = (
             Config => {
                 Name        => 'Test12',
                 Description => 'Description for Dynamic Field.',
-                Link        => 'https://www.znuny.org/[% Data.Link %]',
+                Link        => 'https://www.buzzdesk.org/[% Data.Link %]',
             },
             Label      => 'something for label',
             FieldOrder => 10000,
@@ -266,7 +264,7 @@ my @Tests = (
             Config => {
                 Name        => 'Test12',
                 Description => 'Description for Dynamic Field.',
-                Link        => 'https://www.znuny.org/',
+                Link        => 'https://www.buzzdesk.org/',
             },
             Label      => 'something for label',
             FieldOrder => 10000,
@@ -285,7 +283,7 @@ my @Tests = (
                 Name        => 'Test13',
                 Description => 'Description for Dynamic Field.',
                 Link        =>
-                    'https://www.znuny.org/[% Data.Link %]/[% Data.LinkPreview %]/[% Data.Title %]/[% Data.Value %]',
+                    'https://www.buzzdesk.org/[% Data.Link %]/[% Data.LinkPreview %]/[% Data.Title %]/[% Data.Value %]',
             },
             Label      => 'something for label',
             FieldOrder => 10000,
@@ -298,7 +296,7 @@ my @Tests = (
             Config => {
                 Name        => 'Test13',
                 Description => 'Description for Dynamic Field.',
-                Link        => 'https://www.znuny.org////',
+                Link        => 'https://www.buzzdesk.org////',
             },
             Label      => 'something for label',
             FieldOrder => 10000,

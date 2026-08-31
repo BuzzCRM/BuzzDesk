@@ -1,12 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Perl::LayoutObject)
+## nofilter(TidyAll::Plugin::BuzzDesk::Perl::LayoutObject)
 
 package Kernel::System::Calendar::Plugin::Ticket::Link;
 use parent qw(Kernel::System::Calendar::Plugin::Base);
@@ -300,7 +298,7 @@ returns a hash of linked tickets to an appointment
     my $Success = $TicketLinkPluginObject->LinkList(
         AppointmentID => 123,
         UserID        => 1,
-        URL           => 'http://znuny.local/index.pl?Action=AgentTicketZoom;TicketID=%s' # optional
+        URL           => 'http://buzzdesk.local/index.pl?Action=AgentTicketZoom;TicketID=%s' # optional
     );
 
 =cut

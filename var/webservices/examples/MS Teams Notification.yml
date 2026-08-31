@@ -66,12 +66,12 @@ Requester:
                                     </facts>
                                 </body>
 
-                                <!-- Action button: opens ticket in Znuny -->
+                                <!-- Action button: opens ticket in BuzzDesk -->
                                 <body>
                                     <type>ActionSet</type>
                                     <actions>
                                         <type>Action.OpenUrl</type>
-                                        <title>View ticket in Znuny</title>
+                                        <title>View ticket in BuzzDesk</title>
                                         <url>&lt;OTRS_CONFIG_HttpType&gt;://&lt;OTRS_CONFIG_FQDN&gt;/&lt;OTRS_CONFIG_ScriptAlias&gt;/index.pl?Action=AgentTicketZoom;TicketID=<xsl:value-of select="//Ticket/TicketID"/></url>
                                     </actions>
                                 </body>

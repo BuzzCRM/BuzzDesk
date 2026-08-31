@@ -1,15 +1,10 @@
 # --
-# Copyright (C) 2006-2009 Amir Shams Parsa <a.parsa at gmail.com>
-# Copyright (C) 2008 Hooman Mesgary <info at mesgary.com>
-# Copyright (C) 2009 Afshar Mohebbi <afshar.mohebbi at gmail.com>
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::Translation::JavaScriptStrings)
+## nofilter(TidyAll::Plugin::BuzzDesk::Translation::JavaScriptStrings)
 
 package Kernel::Language::fa;
 
@@ -866,7 +861,7 @@ sub Data {
             '',
         'Please provide a unique name for this web service.' => 'لطفا یک نام منحصر به فرد برای این وب سرویس ارائه دهید .',
         'Error handling module backend' => '',
-        'This Znuny error handling backend module will be called internally to process the error handling mechanism.' =>
+        'This BuzzDesk error handling backend module will be called internally to process the error handling mechanism.' =>
             '',
         'Processing options' => '',
         'Configure filters to control error handling module execution.' =>
@@ -958,15 +953,15 @@ sub Data {
         'The name is typically used to call up an operation of a remote web service.' =>
             'نام معمولا برای پاسخ یک عملیات از یک وب سرویس از راه دور.',
         'Invoker backend' => 'باطن Invoker',
-        'This Znuny invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
-            'این invoker ماژول باطن Znuny خواهد شد به نام برای آماده سازی داده ها به سیستم از راه دور ارسال می شود، و برای پردازش داده ها پاسخ آن است.',
+        'This BuzzDesk invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data.' =>
+            'این invoker ماژول باطن BuzzDesk خواهد شد به نام برای آماده سازی داده ها به سیستم از راه دور ارسال می شود، و برای پردازش داده ها پاسخ آن است.',
         'Mapping for outgoing request data' => 'نقشه برداری برای درخواست داده های خروجی',
         'Configure' => 'تنظیمات',
-        'The data from the invoker of Znuny will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
-            'داده ها از فراخواننده Znuny خواهد شد این نقشه برداری پردازش، آن را تبدیل به نوع داده سیستم از راه دور انتظار.',
+        'The data from the invoker of BuzzDesk will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
+            'داده ها از فراخواننده BuzzDesk خواهد شد این نقشه برداری پردازش، آن را تبدیل به نوع داده سیستم از راه دور انتظار.',
         'Mapping for incoming response data' => 'نگاشت برای پاسخ داده های ورودی ',
-        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of Znuny expects.' =>
-            'پاسخ داده خواهد شد این نقشه برداری پردازش، آن را تبدیل به نوع داده فراخواننده Znuny انتظار.',
+        'The response data will be processed by this mapping, to transform it to the kind of data the invoker of BuzzDesk expects.' =>
+            'پاسخ داده خواهد شد این نقشه برداری پردازش، آن را تبدیل به نوع داده فراخواننده BuzzDesk انتظار.',
         'Asynchronous' => 'ناهمگام',
         'Condition' => 'وضعیت',
         'Edit this event' => '',
@@ -974,8 +969,8 @@ sub Data {
         'Add Event' => 'اضافه کردن رویداد',
         'To add a new event select the event object and event name and click on the "+" button' =>
             'برای اضافه کردن یک رویداد جدید انتخاب موضوع رویداد و نام  رویداد و کلیک بر روی  دکمه \ "+ " میباشد',
-        'Asynchronous event triggers are handled by the Znuny Scheduler Daemon in background (recommended).' =>
-            'باعث رویداد آسنکرون توسط Znuny زمانبند شبح در پس زمینه به کار گرفته (توصیه می شود).',
+        'Asynchronous event triggers are handled by the BuzzDesk Scheduler Daemon in background (recommended).' =>
+            'باعث رویداد آسنکرون توسط BuzzDesk زمانبند شبح در پس زمینه به کار گرفته (توصیه می شود).',
         'Synchronous event triggers would be processed directly during the web request.' =>
             'باعث رویداد همزمان می تواند به طور مستقیم در طول درخواست وب پردازش شده است.',
         'Add all attachments' => '',
@@ -1109,11 +1104,11 @@ sub Data {
         'The name is typically used to call up this web service operation from a remote system.' =>
             ' نام بطور معمول از یک سیستم از راه دور برای تماس با این وب سرویس استفاده میشود . ',
         'Operation backend' => 'باطن عمل',
-        'This Znuny operation backend module will be called internally to process the request, generating data for the response.' =>
-            'این عملیات ماژول باطن Znuny صورت داخلی نامیده خواهد شد به پردازش درخواست، تولید داده ها را برای پاسخ.',
+        'This BuzzDesk operation backend module will be called internally to process the request, generating data for the response.' =>
+            'این عملیات ماژول باطن BuzzDesk صورت داخلی نامیده خواهد شد به پردازش درخواست، تولید داده ها را برای پاسخ.',
         'Mapping for incoming request data' => 'نگاشت برای درخواست داده های ورودی',
-        'The request data will be processed by this mapping, to transform it to the kind of data Znuny expects.' =>
-            'داده درخواست خواهد شد این نقشه برداری پردازش، آن را تبدیل به نوع Znuny داده انتظار دارد.',
+        'The request data will be processed by this mapping, to transform it to the kind of data BuzzDesk expects.' =>
+            'داده درخواست خواهد شد این نقشه برداری پردازش، آن را تبدیل به نوع BuzzDesk داده انتظار دارد.',
         'Mapping for outgoing response data' => 'نگاشت برای پاسخ خروجی داده ',
         'The response data will be processed by this mapping, to transform it to the kind of data the remote system expects.' =>
             'پاسخ داده خواهد شد این نقشه برداری پردازش، آن را تبدیل به نوع داده سیستم از راه دور انتظار.',
@@ -1136,8 +1131,8 @@ sub Data {
             '',
         'Maximum message length' => 'حداکثر طول پیام',
         'This field should be an integer number.' => 'در این زمینه باید یک عدد صحیح باشد.',
-        'Here you can specify the maximum size (in bytes) of REST messages that Znuny will process.' =>
-            'اینجا شما می توانید حداکثر اندازه (در بایت) از پیام های REST که Znuny پردازش را مشخص کنید.',
+        'Here you can specify the maximum size (in bytes) of REST messages that BuzzDesk will process.' =>
+            'اینجا شما می توانید حداکثر اندازه (در بایت) از پیام های REST که BuzzDesk پردازش را مشخص کنید.',
         'Send Keep-Alive' => 'ارسال حفظ',
         'This configuration defines if incoming connections should get closed or kept alive.' =>
             'این تنظیمات را تعریف می کند اگر اتصالات ورودی باید بسته شدن و یا زنده نگه داشت.',
@@ -1205,22 +1200,22 @@ sub Data {
         'Client Certificate' => '',
         'The full path and name of the SSL client certificate file (must be in PEM, DER or PKCS#12 format).' =>
             '',
-        'e.g. /opt/znuny/var/certificates/SOAP/certificate.pem' => '',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/certificate.pem' => '',
         'Client Certificate Key' => '',
         'The full path and name of the SSL client certificate key file (if not already included in certificate file).' =>
             '',
-        'e.g. /opt/znuny/var/certificates/SOAP/key.pem' => '',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/key.pem' => '',
         'Client Certificate Key Password' => '',
         'The password to open the SSL certificate if the key is encrypted.' =>
             '',
         'Certification Authority (CA) Certificate' => '',
         'The full path and name of the certification authority certificate file that validates SSL certificate.' =>
             'مسیر کامل و نام فایل گواهی اقتدار صدور گواهینامه که تایید گواهینامه SSL.',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA/ca.pem' => 'به عنوان مثال /opt/znuny/var/certificates/SOAP/CA/ca.pem',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem' => 'به عنوان مثال /opt/buzzdesk/var/certificates/SOAP/CA/ca.pem',
         'Certification Authority (CA) Directory' => 'مجوز (CA) راهنمای',
         'The full path of the certification authority directory where the CA certificates are stored in the file system.' =>
             'مسیر کامل دایرکتوری که در آن اقتدار صدور گواهینامه گواهی CA ها در سیستم فایل ذخیره می شود.',
-        'e.g. /opt/znuny/var/certificates/SOAP/CA' => 'به عنوان مثال / انتخاب کردن / Znuny / ور / گواهی / SOAP / CA',
+        'e.g. /opt/buzzdesk/var/certificates/SOAP/CA' => 'به عنوان مثال / انتخاب کردن / BuzzDesk / ور / گواهی / SOAP / CA',
         'Controller mapping for Invoker' => ' برای  کنترل نگاشت Invoker',
         'The controller that the invoker should send requests to. Variables marked by a \':\' will get replaced by the data value and passed along with the request. (e.g. /Ticket/:TicketID?UserLogin=:UserLogin&Password=:Password).' =>
             'کنترل که فراخواننده باید درخواست برای ارسال. متغیرهای مشخص شده توسط \':\' خواهد شد با مقدار داده جایگزین و سرانجام همراه با درخواست. (به عنوان مثال / درخواست /: TicketID صفحهی =: صفحهی و رمز عبور =: رمز عبور).',
@@ -1257,7 +1252,7 @@ sub Data {
         'Namespace' => 'فضای نام',
         'URI to give SOAP methods a context, reducing ambiguities.' => 'URI به روش SOAP زمینه ای، کاهش ابهامات.',
         'e.g urn:example-com:soap:functions or http://www.example.com/GenericInterface/actions' =>
-            'به عنوان مثال کوزه: Znuny-COM: صابون: توابع و یا http://www.example.com/GenericInterface/actions',
+            'به عنوان مثال کوزه: BuzzDesk-COM: صابون: توابع و یا http://www.example.com/GenericInterface/actions',
         'Omit namespace prefix' => '',
         'Omits the namespace prefix (e. g. namesp1:) in root tag of SOAP message.' =>
             '',
@@ -1277,13 +1272,13 @@ sub Data {
         'Select how SOAP response function wrapper should be constructed.' =>
             'انتخاب کنید که چگونه تابع پاسخ SOAP لفاف بسته بندی باید ساخته شود.',
         'Response name free text' => 'نام پاسخ های متنی رایگان',
-        'Here you can specify the maximum size (in bytes) of SOAP messages that Znuny will process.' =>
-            'اینجا شما می توانید حداکثر اندازه (در بایت) از پیام های SOAP که Znuny پردازش می کند را مشخص کنید.',
+        'Here you can specify the maximum size (in bytes) of SOAP messages that BuzzDesk will process.' =>
+            'اینجا شما می توانید حداکثر اندازه (در بایت) از پیام های SOAP که BuzzDesk پردازش می کند را مشخص کنید.',
         'Fixed namespace prefix' => '',
         'Use a fixed namespace prefix (e. g. myns:) for the root tag of a SOAP message.' =>
             '',
         'Suffix for response tag' => '',
-        'Usually Znuny expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
+        'Usually BuzzDesk expects a response tag like "&lt;Operation&gt;Response". This setting can change the "Response" part, e. g. to "Result".' =>
             '',
         'Encoding' => 'کدگذاری',
         'The character encoding for the SOAP message contents.' => 'رمزگذاری کاراکتر برای محتویات پیام SOAP.',
@@ -1326,10 +1321,10 @@ sub Data {
         'Provider transport' => 'ارائه دهنده حمل و نقل ',
         'Requester transport' => ' درخواست حمل و نقل',
         'Debug threshold' => 'آستانه اشکال زدایی',
-        'In provider mode, Znuny offers web services which are used by remote systems.' =>
-            'در حالت ارائه دهنده، Znuny ارائه می دهد خدمات وب که توسط سیستم های راه دور استفاده می شود.',
-        'In requester mode, Znuny uses web services of remote systems.' =>
-            'در حالت درخواست، Znuny با استفاده از خدمات وب سیستم های از راه دور.',
+        'In provider mode, BuzzDesk offers web services which are used by remote systems.' =>
+            'در حالت ارائه دهنده، BuzzDesk ارائه می دهد خدمات وب که توسط سیستم های راه دور استفاده می شود.',
+        'In requester mode, BuzzDesk uses web services of remote systems.' =>
+            'در حالت درخواست، BuzzDesk با استفاده از خدمات وب سیستم های از راه دور.',
         'Network transport' => 'انتقال شبکه ای',
         'Error Handling Modules' => '',
         'Error handling modules are used to react in case of errors during the communication. Those modules are executed in a specific order, which can be changed by drag and drop.' =>
@@ -1447,7 +1442,7 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportEmailSettings.tt
         'Use comma or semicolon to separate email addresses.' => '',
-        'You can use Znuny-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
+        'You can use BuzzDesk-tags like <OTRS_TICKET_DynamicField_...> to insert values from the current ticket.' =>
             '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminNotificationEventTransportWebserviceSettings.tt
@@ -1515,8 +1510,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminPGP.tt
         'PGP support is disabled' => 'پشتیبانی PGP غیر فعال است',
-        'To be able to use PGP in Znuny, you have to enable it first.' =>
-            'برای اینکه قادر به استفاده از PGP در Znuny باشید، شما باید برای اولین بار آن را فعال کنید .',
+        'To be able to use PGP in BuzzDesk, you have to enable it first.' =>
+            'برای اینکه قادر به استفاده از PGP در BuzzDesk باشید، شما باید برای اولین بار آن را فعال کنید .',
         'Enable PGP support' => 'فعال کردن پشتیبانی از PGP',
         'Faulty PGP configuration' => 'پیکربندی PGP معیوب',
         'PGP support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -1547,20 +1542,20 @@ sub Data {
         'Do you really want to reinstall this package? Any manual changes will be lost.' =>
             'آیا واقعا می‌خواهید این بسته را مجددا نصب نمایید؟ تمام تغییرات دستی از بین خواهد رفت.',
         'Go to updating instructions' => '',
-        'Go to znuny.org' => '',
+        'Go to buzzdesk.org' => '',
         'package information' => '',
-        'Package installation requires a patch level update of Znuny.' =>
+        'Package installation requires a patch level update of BuzzDesk.' =>
             '',
-        'Package update requires a patch level update of Znuny.' => '',
-        'Please note that your installed Znuny version is %s.' => '',
-        'To install this package, you need to update Znuny to version %s or newer.' =>
+        'Package update requires a patch level update of BuzzDesk.' => '',
+        'Please note that your installed BuzzDesk version is %s.' => '',
+        'To install this package, you need to update BuzzDesk to version %s or newer.' =>
             '',
-        'This package can only be installed on Znuny version %s or older.' =>
+        'This package can only be installed on BuzzDesk version %s or older.' =>
             '',
-        'This package can only be installed on Znuny version %s.' => '',
-        'Why should I keep Znuny up to date?' => '',
+        'This package can only be installed on BuzzDesk version %s.' => '',
+        'Why should I keep BuzzDesk up to date?' => '',
         'You will receive updates about relevant security issues.' => '',
-        'You will receive updates for all other relevant Znuny issues.' =>
+        'You will receive updates for all other relevant BuzzDesk issues.' =>
             '',
         'How can I do a patch level update if I don’t have a contract?' =>
             '',
@@ -1960,8 +1955,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSMIME.tt
         'SMIME support is disabled' => 'پشتیبانی SMIME غیر فعال است',
-        'To be able to use SMIME in Znuny, you have to enable it first.' =>
-            'برای اینکه قادر به استفاده از SMIME در Znuny، شما باید آن را فعال کنید برای اولین بار.',
+        'To be able to use SMIME in BuzzDesk, you have to enable it first.' =>
+            'برای اینکه قادر به استفاده از SMIME در BuzzDesk، شما باید آن را فعال کنید برای اولین بار.',
         'Enable SMIME support' => 'فعال کردن پشتیبانی SMIME',
         'Faulty SMIME configuration' => 'پیکربندی SMIME معیوب',
         'SMIME support is enabled, but the relevant configuration contains errors. Please check the configuration using the button below.' =>
@@ -2154,7 +2149,7 @@ sub Data {
         'Find out how to use the system configuration by reading the %s.' =>
             '',
         'Search in all settings...' => '',
-        'There are currently no settings available. Please make sure to run \'znuny.Console.pl Maint::Config::Rebuild\' before using the software.' =>
+        'There are currently no settings available. Please make sure to run \'buzzdesk.Console.pl Maint::Config::Rebuild\' before using the software.' =>
             '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AdminSystemConfigurationDeployment.tt
@@ -2450,17 +2445,17 @@ sub Data {
         'Customer User Information Center' => '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDaemonInfo.tt
-        'The Znuny Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
-            'Znuny شبح یک فرایند شبح که انجام وظایف ناهمزمان، به عنوان مثال تشدید بلیط تحریک، ارسال ایمیل، و غیره است',
-        'A running Znuny Daemon is mandatory for correct system operation.' =>
-            'یک شبح Znuny در حال اجرا برای عملیات سیستم درست الزامی است.',
-        'Starting the Znuny Daemon' => 'شروع Znuny دیمون',
-        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the Znuny Daemon is running and start it if needed.' =>
-            'مطمئن شوید که فایل \' %s \' وجود دارد (بدون .dist پسوند). این cron در هر 5 دقیقه اگر Znuny دیمون در حال اجرا است را بررسی کنید و شروع به آن در صورت نیاز.',
-        'Execute \'%s start\' to make sure the cron jobs of the \'znuny\' user are active.' =>
-            'اعدام %s شروع به مطمئن شوید که به cron job از کاربر Znuny، فعال هستند.',
-        'After 5 minutes, check that the Znuny Daemon is running in the system (\'bin/znuny.Daemon.pl status\').' =>
-            'پس از 5 دقیقه، بررسی کنید که Znuny دیمون در حال اجرا در سیستم ( \'وضعیت بن / znuny.Daemon.pl\').',
+        'The BuzzDesk Daemon is a daemon process that performs asynchronous tasks, e.g. ticket escalation triggering, email sending, etc.' =>
+            'BuzzDesk شبح یک فرایند شبح که انجام وظایف ناهمزمان، به عنوان مثال تشدید بلیط تحریک، ارسال ایمیل، و غیره است',
+        'A running BuzzDesk Daemon is mandatory for correct system operation.' =>
+            'یک شبح BuzzDesk در حال اجرا برای عملیات سیستم درست الزامی است.',
+        'Starting the BuzzDesk Daemon' => 'شروع BuzzDesk دیمون',
+        'Make sure that the file \'%s\' exists (without .dist extension). This cron job will check every 5 minutes if the BuzzDesk Daemon is running and start it if needed.' =>
+            'مطمئن شوید که فایل \' %s \' وجود دارد (بدون .dist پسوند). این cron در هر 5 دقیقه اگر BuzzDesk دیمون در حال اجرا است را بررسی کنید و شروع به آن در صورت نیاز.',
+        'Execute \'%s start\' to make sure the cron jobs of the \'buzzdesk\' user are active.' =>
+            'اعدام %s شروع به مطمئن شوید که به cron job از کاربر BuzzDesk، فعال هستند.',
+        'After 5 minutes, check that the BuzzDesk Daemon is running in the system (\'bin/buzzdesk.Daemon.pl status\').' =>
+            'پس از 5 دقیقه، بررسی کنید که BuzzDesk دیمون در حال اجرا در سیستم ( \'وضعیت بن / buzzdesk.Daemon.pl\').',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboard.tt
         'Dashboard' => 'داشبورد',
@@ -2604,7 +2599,7 @@ sub Data {
         'This setting can currently not be saved' => '',
         'Save setting' => '',
         'Save this setting' => '',
-        'Did you know? You can help translating Znuny at %s.' => '',
+        'Did you know? You can help translating BuzzDesk at %s.' => '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/AgentPreferencesOverview.tt
         'Choose from the groups on the left to find the settings you\'d wish to change.' =>
@@ -3143,8 +3138,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBStart.tt
         'Install Type' => ' نوع نصب',
-        'Create a new database for Znuny' => 'ایجاد یک پایگاه داده جدید برای Znuny',
-        'Use an existing database for Znuny' => 'استفاده از یک پایگاه داده موجود برای Znuny',
+        'Create a new database for BuzzDesk' => 'ایجاد یک پایگاه داده جدید برای BuzzDesk',
+        'Use an existing database for BuzzDesk' => 'استفاده از یک پایگاه داده موجود برای BuzzDesk',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerDBmssql.tt
         'If you have set a root password for your database, it must be entered here. If not, leave this field empty.' =>
@@ -3155,7 +3150,7 @@ sub Data {
         'Database check successful.' => 'کنترل پایگاه داده با موفقیت انجام شد.',
         'Database User' => 'پایگاه داده کاربر',
         'New' => 'جدید',
-        'A new database user with limited permissions will be created for this Znuny system.' =>
+        'A new database user with limited permissions will be created for this BuzzDesk system.' =>
             'یک کاربر برای پایگاه داده با دسترسی‌های محدود برای این سیستم ساخته خواهند شد.',
         'Repeat Password' => 'تکرار رمز عبور ',
         'Generated password' => 'رمز عبور تولید شده',
@@ -3168,10 +3163,10 @@ sub Data {
         'SID' => 'SID',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerFinish.tt
-        'To be able to use Znuny you have to enter the following line in your command line (Terminal/Shell) as root.' =>
+        'To be able to use BuzzDesk you have to enter the following line in your command line (Terminal/Shell) as root.' =>
             'برای استفاده از سیستم خط زیر را در Command Prompt اجرا نمائید.',
         'Restart your webserver' => 'سرور وب خود را راه اندازی مجدد نمائید',
-        'After doing so your Znuny is up and running.' => 'بعد از انجام سیستم قابل استفاده خواهد بود',
+        'After doing so your BuzzDesk is up and running.' => 'بعد از انجام سیستم قابل استفاده خواهد بود',
         'Start page' => 'صفحه شروع',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/InstallerLicense.tt
@@ -3214,8 +3209,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/MobileNotAvailableWidget.tt
         'Feature not Available' => '',
-        'Sorry, but this feature of Znuny is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
-            'با عرض پوزش، اما این ویژگی از Znuny در حال حاضر برای دستگاه های تلفن همراه در دسترس نیست. اگر شما می خواهم به استفاده از آن، شما می توانید هر دو سوئیچ به حالت دسکتاپ و یا استفاده از دستگاه دسکتاپ خود را به طور منظم.',
+        'Sorry, but this feature of BuzzDesk is currently not available for mobile devices. If you\'d like to use it, you can either switch to desktop mode or use your regular desktop device.' =>
+            'با عرض پوزش، اما این ویژگی از BuzzDesk در حال حاضر برای دستگاه های تلفن همراه در دسترس نیست. اگر شما می خواهم به استفاده از آن، شما می توانید هر دو سوئیچ به حالت دسکتاپ و یا استفاده از دستگاه دسکتاپ خود را به طور منظم.',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Motd.tt
         'Message of the Day' => 'پیام روز',
@@ -3254,8 +3249,8 @@ sub Data {
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/PublicDefault.tt
         'Welcome' => 'خوش آمدید',
-        'This is the default public interface of Znuny! There was no action parameter given.' =>
-            'این به طور پیش فرض رابط عمومی Znuny موجود است! هیچ پارامتر action داده شده وجود دارد.',
+        'This is the default public interface of BuzzDesk! There was no action parameter given.' =>
+            'این به طور پیش فرض رابط عمومی BuzzDesk موجود است! هیچ پارامتر action داده شده وجود دارد.',
         'You could install a custom public module (via the package manager), for example the FAQ module, which has a public interface.' =>
             'شما می توانید یک ماژول سفارشی عمومی (از طریق مدیر بسته) نصب، به عنوان مثال ماژول پرسش و پاسخ، که دارای یک رابط عمومی است.',
 
@@ -3441,7 +3436,7 @@ sub Data {
         'Navigation' => '',
 
         # TT Template: Kernel/Output/HTML/Templates/Standard/Test.tt
-        'Znuny Test Page' => 'صفحه آزمایش سیستم',
+        'BuzzDesk Test Page' => 'صفحه آزمایش سیستم',
         'Unlock' => 'تحویل دادن',
         'Welcome %s %s' => '%s - %s',
         'Counter' => 'شمارنده',
@@ -3536,8 +3531,8 @@ sub Data {
         # Perl Module: Kernel/Modules/AdminACL.pm
         'ACL information from database is not in sync with the system configuration, please deploy all ACLs.' =>
             'اطلاعات ACL از پایگاه اطلاع داده  هماهنگی با پیکربندی سیستم نیست، لطفا تمام ACL ها را مستقر کنید . ',
-        'ACLs could not be Imported due to a unknown error, please check Znuny logs for more information' =>
-            'ACL ها نمی تواند به دلیل یک خطای ناشناخته وارد شود، لطفابرای اطلاعات بیشتر Znuny سیاهه های مربوط را بررسی کنید ',
+        'ACLs could not be Imported due to a unknown error, please check BuzzDesk logs for more information' =>
+            'ACL ها نمی تواند به دلیل یک خطای ناشناخته وارد شود، لطفابرای اطلاعات بیشتر BuzzDesk سیاهه های مربوط را بررسی کنید ',
         'The following ACLs have been added successfully: %s' => 'استفاده از ACL زیر با موفقیت اضافه شده است: %s',
         'The following ACLs have been updated successfully: %s' => 'استفاده از ACL زیر با موفقیت به روز شده است: %s',
         'There where errors adding/updating the following ACLs: %s. Please check the log file for more information.' =>
@@ -3893,12 +3888,12 @@ sub Data {
         'Could not load %s.' => '',
         'Could not read %s!' => 'قادر به خواندن نیست %s !',
         'Need a file to import!' => 'نیاز به یک فایل برای دریافت است .',
-        'The imported file has not valid YAML content! Please check Znuny log for details' =>
-            'فایل وارد شده است محتوای YAML معتبر نیست! لطفا وارد سیستم شوید Znuny برای جزئیات بیشتر',
+        'The imported file has not valid YAML content! Please check BuzzDesk log for details' =>
+            'فایل وارد شده است محتوای YAML معتبر نیست! لطفا وارد سیستم شوید BuzzDesk برای جزئیات بیشتر',
         'Web service "%s" deleted!' => 'وب سرویس \ " %s " حذف!',
-        'Znuny as provider' => 'Znuny به عنوان ارائه دهنده',
+        'BuzzDesk as provider' => 'BuzzDesk به عنوان ارائه دهنده',
         'Operations' => '',
-        'Znuny as requester' => 'Znuny به عنوان درخواست',
+        'BuzzDesk as requester' => 'BuzzDesk به عنوان درخواست',
         'Invokers' => '',
 
         # Perl Module: Kernel/Modules/AdminGenericInterfaceWebserviceHistory.pm
@@ -3947,8 +3942,8 @@ sub Data {
         'Need param Key to download!' => 'نیاز کلید param برای دانلود!',
 
         # Perl Module: Kernel/Modules/AdminPackageManager.pm
-        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/znuny.Console.pl to install packages!' =>
-            'با عرض پوزش، آپاچی :: بازنگری به عنوان PerlModule و PerlInitHandler در فایل پیکربندی آپاچی مورد نیاز است. همچنین نگاه اسکریپت / apache2 را-httpd.include.conf. متناوبا، شما می توانید از دستور ابزار خط بن / znuny.Console.pl برای نصب بستههای استفاده کنید!',
+        'Sorry, Apache::Reload is needed as PerlModule and PerlInitHandler in Apache config file. See also scripts/apache2-httpd.include.conf. Alternatively, you can use the command line tool bin/buzzdesk.Console.pl to install packages!' =>
+            'با عرض پوزش، آپاچی :: بازنگری به عنوان PerlModule و PerlInitHandler در فایل پیکربندی آپاچی مورد نیاز است. همچنین نگاه اسکریپت / apache2 را-httpd.include.conf. متناوبا، شما می توانید از دستور ابزار خط بن / buzzdesk.Console.pl برای نصب بستههای استفاده کنید!',
         'No such package!' => 'بدون چنین بسته!',
         'No such file %s in package!' => 'بدون چنین فایل %s در بسته!',
         'No such file %s in local file system!' => 'بدون چنین فایلی  %s در فایل سیستم محلی!',
@@ -4170,13 +4165,13 @@ sub Data {
         'You currently don\'t have any favourite settings.' => '',
         'The following settings could not be found: %s' => '',
         'Import not allowed!' => 'دریافت مجاز نیست!',
-        'System Configuration could not be imported due to an unknown error, please check Znuny logs for more information.' =>
+        'System Configuration could not be imported due to an unknown error, please check BuzzDesk logs for more information.' =>
             '',
         'Category Search' => '',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationDeployment.pm
         'Quick Deploy by' => '',
-        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the Znuny log for more information.' =>
+        'Some imported settings are not present in the current state of the configuration or it was not possible to update them. Please check the BuzzDesk log for more information.' =>
             '',
 
         # Perl Module: Kernel/Modules/AdminSystemConfigurationGroup.pm
@@ -4602,7 +4597,7 @@ sub Data {
         'Configure "Home" in Kernel/Config.pm first!' => 'پیکربندی \ "خانه " در هسته / Config.pm برای اولین بار!',
         'File "%s/Kernel/Config.pm" not found!' => 'فایل \ " %s /Kernel/Config.pm " یافت نشد!',
         'Directory "%s" not found!' => 'راهنمای \ " %s " یافت نشد!',
-        'Install Znuny' => 'نصب  Znuny',
+        'Install BuzzDesk' => 'نصب  BuzzDesk',
         'Intro' => 'معرفی',
         'Kernel/Config.pm isn\'t writable!' => 'هسته / Config.pm قابل نوشتن نیست!',
         'If you want to use the installer, set the Kernel/Config.pm writable for the webserver user!' =>
@@ -4619,7 +4614,7 @@ sub Data {
         'Unknown database type "%s".' => 'نامشخص نوع پایگاه داده \ " %s ".',
         'Please go back.' => 'لطفا برگردید.',
         'Create Database' => 'ایجاد بانک',
-        'Install Znuny - Error' => 'نصب Znuny - خطا',
+        'Install BuzzDesk - Error' => 'نصب BuzzDesk - خطا',
         'File "%s/%s.xml" not found!' => 'فایل \ " %s / %s .XML " یافت نشد!',
         'Contact your Admin!' => 'تماس با مدیریت خود !',
         'System Settings' => 'تنظیمات سیستم',
@@ -4849,7 +4844,7 @@ sub Data {
             '',
 
         # Perl Module: Kernel/Output/HTML/Notification/DaemonCheck.pm
-        'Znuny Daemon is not running.' => 'سرویس Znuny در حال اجرا نیست.',
+        'BuzzDesk Daemon is not running.' => 'سرویس BuzzDesk در حال اجرا نیست.',
 
         # Perl Module: Kernel/Output/HTML/Notification/OAuth2TokenManagementTokenExpired.pm
         'OAuth2 token for "%s" has expired.' => '',
@@ -5228,7 +5223,7 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/InvalidDefaultValues.pm
         'Invalid Default Values' => '',
-        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/znuny.Console.pl Maint::Database::Check --repair' =>
+        'Tables with invalid default values were found. In order to fix it automatically, please run: bin/buzzdesk.Console.pl Maint::Database::Check --repair' =>
             '',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/mysql/MaxAllowedPacket.pm
@@ -5274,15 +5269,15 @@ sub Data {
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Database/postgresql/Version.pm
         'PostgreSQL 9.2 or higher is required.' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionZnuny.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskPartitionBuzzDesk.pm
         'Operating System' => 'سیستم عامل',
-        'Znuny Disk Partition' => 'پارتیشن Znuny دیسک',
+        'BuzzDesk Disk Partition' => 'پارتیشن BuzzDesk دیسک',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpace.pm
         'Disk Usage' => 'کاربرد دیسک',
-        'The partition where Znuny is located is almost full.' => 'پارتیشن که در آن واقع شده است Znuny تقریبا کامل است.',
-        'The partition where Znuny is located has no disk space problems.' =>
-            'پارتیشن که در آن واقع شده است Znuny هیچ مشکلی روی هارد دیسک ندارد.',
+        'The partition where BuzzDesk is located is almost full.' => 'پارتیشن که در آن واقع شده است BuzzDesk تقریبا کامل است.',
+        'The partition where BuzzDesk is located has no disk space problems.' =>
+            'پارتیشن که در آن واقع شده است BuzzDesk هیچ مشکلی روی هارد دیسک ندارد.',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/OS/DiskSpacePartitions.pm
         'Disk Partitions Usage' => 'دیسک پارتیشن طریقه استفاده',
@@ -5327,8 +5322,8 @@ sub Data {
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/MPMModel.pm
         'MPM model' => 'مدل MPM',
-        'Znuny requires apache to be run with the \'prefork\' MPM model.' =>
-            'Znuny به Apache به با "prefork را مدل MPM اجرا می شود.',
+        'BuzzDesk requires apache to be run with the \'prefork\' MPM model.' =>
+            'BuzzDesk به Apache به با "prefork را مدل MPM اجرا می شود.',
 
         # Perl Module: Kernel/System/SupportDataCollector/Plugin/Webserver/Apache/Performance.pm
         'CGI Accelerator Usage' => 'CGI استفاده از شتاب دهنده ',
@@ -5358,37 +5353,37 @@ sub Data {
         'Webserver Version' => ' نسخه وب سرور',
         'Could not determine webserver version.' => ' نسخه وب سرور مشخص نیست.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticleSearchIndexStatus.pm
-        'Znuny' => '',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticleSearchIndexStatus.pm
+        'BuzzDesk' => '',
         'Article Search Index Status' => '',
         'Indexed Articles' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ArticlesPerCommunicationChannel.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ArticlesPerCommunicationChannel.pm
         'Articles Per Communication Channel' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLog.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLog.pm
         'Incoming communications' => '',
         'Outgoing communications' => '',
         'Failed communications' => '',
         'Average processing time of communications (s)' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/CommunicationLogAccountStatus.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/CommunicationLogAccountStatus.pm
         'Communication Log Account Status (last 24 hours)' => '',
         'No connections found.' => '',
         'ok' => '',
         'permanent connection errors' => '',
         'intermittent connection errors' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/ConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/ConfigSettings.pm
         'Config Settings' => 'تنظیمات پیکربندی',
         'Could not determine value.' => 'نمی تواند ارزش را تعیین  کند.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DaemonRunning.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DaemonRunning.pm
         'Daemon' => 'سرویس',
         'Daemon is running.' => 'شبح در حال اجرا است.',
         'Daemon is not running.' => 'سرویس در حال اجرا نیست.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DatabaseRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DatabaseRecords.pm
         'Database Records' => 'سوابق پایگاه داده',
         'Ticket History Entries' => 'درخواست تاریخچه مطالب',
         'Articles' => 'مقالات',
@@ -5403,31 +5398,31 @@ sub Data {
         'Tickets Per Month (avg)' => 'درخواست در هر ماه (AVG)',
         'Open Tickets' => 'درخواست باز',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultSOAPUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultSOAPUser.pm
         'Default SOAP Username And Password' => 'به طور پیش فرض SOAP نام کاربری و رمز',
         'Security risk: you use the default setting for SOAP::User and SOAP::Password. Please change it.' =>
             'خطر امنیتی:  با استفاده از تنظیمات پیش فرض برای SOAP :: کاربر و SOAP :: رمز عبور. لطفا آن را تغییر دهید.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/DefaultUser.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/DefaultUser.pm
         'Default Admin Password' => 'به طور پیش فرض کلمه عبور کاربر admin',
         'Security risk: the agent account root@localhost still has the default password. Please change it or invalidate the account.' =>
             'خطر امنیتی: حساب عامل ریشه @ localhost را هنوز رمز عبور به طور پیش فرض. لطفا آن را تغییر دهید و یا از درجه اعتبار ساقط حساب.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/EmailQueue.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/EmailQueue.pm
         'Email Sending Queue' => '',
         'Emails queued for sending' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FQDN.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FQDN.pm
         'FQDN (domain name)' => 'FQDN (نام دامنه)',
         'Please configure your FQDN setting.' => 'لطفا تنظیمات FQDN خود را پیکربندی کنید.',
         'Domain Name' => 'نام دامنه',
         'Your FQDN setting is invalid.' => 'تنظیم FQDN شما نامعتبر است.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/FileSystemWritable.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/FileSystemWritable.pm
         'File System Writable' => 'سیستم فایل قابل نوشتن',
-        'The file system on your Znuny partition is not writable.' => 'سیستم فایل در پارتیشن Znuny  قابل نوشتن نیست.',
+        'The file system on your BuzzDesk partition is not writable.' => 'سیستم فایل در پارتیشن BuzzDesk  قابل نوشتن نیست.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/LegacyConfigBackups.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/LegacyConfigBackups.pm
         'Legacy Configuration Backups' => '',
         'No legacy configuration backup files found.' => '',
         'Legacy configuration backup files found in Kernel/Config/Backups folder, but they might still be required by some packages.' =>
@@ -5435,12 +5430,12 @@ sub Data {
         'Legacy configuration backup files are no longer needed for the installed packages, please remove them from Kernel/Config/Backups folder.' =>
             '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/MultipleJSFileLoad.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/MultipleJSFileLoad.pm
         'The following JavaScript files loaded multiple times:' => '',
         'Files' => '',
         'Views with multiple loaded JavaScript files' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageDeployment.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageDeployment.pm
         'Package Installation Status' => 'وضعیت بسته نصب و راه اندازی',
         'Some packages have locally modified files.' => 'برخی از بسته های به صورت محلی فایل ها اصلاح شده.',
         'Some packages are not correctly installed.' => 'برخی از بسته ها به درستی نصب نشده است.',
@@ -5448,75 +5443,75 @@ sub Data {
         'Some packages are not allowed for the current framework version.' =>
             'برخی از بسته های برای نسخه چارچوب فعلی مجاز نیست.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/PackageList.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/PackageList.pm
         'Package List' => 'فهرست پکیج ها',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SessionConfigSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SessionConfigSettings.pm
         'Session Config Settings' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SpoolMails.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SpoolMails.pm
         'Spooled Emails' => 'ایمیل Spooled',
-        'There are emails in var/spool that Znuny could not process.' => 'هستند ایمیل در مسیر var / قرقره که Znuny نمی تواند فرآیند وجود دارد.',
+        'There are emails in var/spool that BuzzDesk could not process.' => 'هستند ایمیل در مسیر var / قرقره که BuzzDesk نمی تواند فرآیند وجود دارد.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/SystemID.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/SystemID.pm
         'Your SystemID setting is invalid, it should only contain digits.' =>
             'تنظیم سیستم شما نامعتبر است، آن تنها باید شامل ارقام باشد.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/DefaultType.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/DefaultType.pm
         'Default Ticket Type' => 'به طور پیش فرض نوع درخواست',
         'The configured default ticket type is invalid or missing. Please change the setting Ticket::Type::Default and select a valid ticket type.' =>
             'پیکربندی پیش فرض نوع درخواست نامعتبر است و یا از دست رفته است. لطفا تنظیمات درخواست:: نوع :: پیش فرض را تغییر دهید و یک نوع درخواست معتبر را انتخاب کنید.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/IndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/IndexModule.pm
         'Ticket Index Module' => 'درخواست شاخص ماژول',
         'You have more than 60,000 tickets and should use the StaticDB backend. See admin manual (Performance Tuning) for more information.' =>
             'شما باید بیش از 60،000درخواست از باطن StaticDB استفاده کنید. کتابچه راهنمای کاربر مدیر (تنظیم عملکرد)  را برای اطلاعات بیشتر ببینید.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/InvalidUsersWithLockedTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/InvalidUsersWithLockedTickets.pm
         'Invalid Users with Locked Tickets' => 'کاربران نامعتبر با درخواست قفل شده',
         'There are invalid users with locked tickets.' => 'کاربران نامعتبر با درخواست قفل شده وجود دارد.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/OpenTickets.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/OpenTickets.pm
         'You should not have more than 8,000 open tickets in your system.' =>
             'نباید بیش از 8000 درخواست باز در سیستم شما وجود داشته باشد.',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/SearchIndexModule.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/SearchIndexModule.pm
         'Ticket Search Index Module' => 'درخواست جستجوی شاخص ماژول',
         'The indexing process forces the storage of the original article text in the article search index, without executing filters or applying stop word lists. This will increase the size of the search index and thus may slow down fulltext searches.' =>
             '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Ticket/StaticDBOrphanedRecords.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Ticket/StaticDBOrphanedRecords.pm
         'Orphaned Records In ticket_lock_index Table' => 'سوابق یتیم در جدول ticket_lock_index',
-        'Table ticket_lock_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
-            'ticket_lock_index جدول شامل سوابق یتیم. لطفا اجرا بن / znuny.Console.pl \ "سیستم maint :: بلیط :: QueueIndexCleanup " برای تمیز کردن شاخص StaticDB.',
+        'Table ticket_lock_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+            'ticket_lock_index جدول شامل سوابق یتیم. لطفا اجرا بن / buzzdesk.Console.pl \ "سیستم maint :: بلیط :: QueueIndexCleanup " برای تمیز کردن شاخص StaticDB.',
         'Orphaned Records In ticket_index Table' => 'سوابق یتیم در جدول ticket_index',
-        'Table ticket_index contains orphaned records. Please run bin/znuny.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
+        'Table ticket_index contains orphaned records. Please run bin/buzzdesk.Console.pl "Maint::Ticket::QueueIndexCleanup" to clean the StaticDB index.' =>
             '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/TimeSettings.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/TimeSettings.pm
         'Time Settings' => 'تنظیمات زمان',
         'Server time zone' => 'منطقه زمانی سرور',
-        'Znuny time zone' => '',
-        'Znuny time zone is not set.' => '',
+        'BuzzDesk time zone' => '',
+        'BuzzDesk time zone is not set.' => '',
         'User default time zone' => '',
         'User default time zone is not set.' => '',
         'Calendar time zone is not set.' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentSkinUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentSkinUsage.pm
         'UI - Agent Skin Usage' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/AgentThemeUsage.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/AgentThemeUsage.pm
         'UI - Agent Theme Usage' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/UI/SpecialStats.pm
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/UI/SpecialStats.pm
         'UI - Special Statistics' => '',
         'Agents using custom main menu ordering' => '',
         'Agents using favourites for the admin overview' => '',
 
-        # Perl Module: Kernel/System/SupportDataCollector/Plugin/Znuny/Version.pm
-        'Znuny Version' => 'Znuny نسخه',
+        # Perl Module: Kernel/System/SupportDataCollector/Plugin/BuzzDesk/Version.pm
+        'BuzzDesk Version' => 'BuzzDesk نسخه',
 
-        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/Znuny/ConcurrentUsers.pm
+        # Perl Module: Kernel/System/SupportDataCollector/PluginAsynchronous/BuzzDesk/ConcurrentUsers.pm
         'Concurrent Users Details' => 'کاربران همزمان اطلاعات',
         'Concurrent Users' => 'کاربران موازی',
 
@@ -5622,7 +5617,7 @@ sub Data {
             'تعریف عملیات که در آن یک دکمه تنظیمات در دسترس است در اشیاء مرتبط ویجت (LinkObject :: ViewMode = \ "پیچیده "). لطفا توجه داشته باشید که این اقدامات باید در بر داشت زیر JS و CSS فایل های ثبت نام کرده اند: Core.AllocationList.css، Core.UI.AllocationList.js، Core.UI.Table.Sort.js، Core.Agent.TableFilters.js.',
         'Define which columns are shown in the linked appointment widget (LinkObject::ViewMode = "complex"). Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.' =>
             '',
-        'Znuny doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
+        'BuzzDesk doesn\'t support recurring Appointments without end date or number of iterations. During import process, it might happen that ICS file contains such Appointments. Instead, system creates all Appointments in the past, plus Appointments for the next N months (120 months/10 years by default).' =>
             '',
         'Defines the ticket appointment type backend for ticket escalation time.' =>
             '',
@@ -5660,13 +5655,13 @@ sub Data {
             '',
 
         # XML Definition: Kernel/Config/Files/XML/Daemon.xml
-        'Defines the module to display a notification in the agent interface if the Znuny Daemon is not running.' =>
-            'تعریف می کند که ماژول برای نمایش اطلاع رسانی در رابط عامل اگر Znuny شبح حال اجرا نیست.',
+        'Defines the module to display a notification in the agent interface if the BuzzDesk Daemon is not running.' =>
+            'تعریف می کند که ماژول برای نمایش اطلاع رسانی در رابط عامل اگر BuzzDesk شبح حال اجرا نیست.',
         'List of CSS files to always be loaded for the agent interface.' =>
             'لیستی از فایل های CSS برای همیشه برای رابط عامل بارگذاری می شود.',
         'List of JS files to always be loaded for the agent interface.' =>
             'لیستی از فایل های JS برای همیشه برای رابط عامل بارگذاری می شود.',
-        'Type of daemon log rotation to use: Choose \'Znuny\' to let Znuny system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
+        'Type of daemon log rotation to use: Choose \'BuzzDesk\' to let BuzzDesk system to handle the file rotation, or choose \'External\' to use a 3rd party rotation mechanism (i.e. logrotate). Note: External rotation mechanism requires its own and independent configuration.' =>
             '',
         'If enabled the daemon will use this directory to create its PID files. Note: Please stop the daemon before any change and use this setting only if &lt;$OTRSHome&gt;/var/run/ can not be used.' =>
             '',
@@ -5728,7 +5723,7 @@ sub Data {
         'Remove closed tickets from agents\' ticket watch lists.' => '',
 
         # XML Definition: Kernel/Config/Files/XML/Framework.xml
-        'Disables the web installer (http://yourhost.example.com/znuny/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
+        'Disables the web installer (http://yourhost.example.com/buzzdesk/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.' =>
             '',
         'Enables or disables the debug mode over frontend interface.' => 'فعال یا غیر فعال کردن حالت اشکال زدایی بیش از رابط ظاهر.',
         'Delivers extended debugging information in the frontend in case any AJAX errors occur, if enabled.' =>
@@ -5741,15 +5736,15 @@ sub Data {
             'کنترل اگر مدیر مجاز به واردات یک پیکربندی سیستم ذخیره شده در SysConfig. است',
         'Defines the name of the application, shown in the web interface, tabs and title bar of the web browser.' =>
             'تعریف می کند که نام برنامه، نشان داده شده در رابط وب، زبانه ها و نوار عنوان مرورگر وب.',
-        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of Znuny).' =>
-            'تعریف می کند شناسه سیستم. هر عدد بلیط و جلسه HTTP رشته شامل این ID. این تضمین می کند که تنها بلیط که متعلق به سیستم شما خواهد شد به شرح زیر یو پی اس (در هنگام برقراری ارتباط بین دو نمونه از Znuny مفید) پردازش شده است.',
+        'Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of BuzzDesk).' =>
+            'تعریف می کند شناسه سیستم. هر عدد بلیط و جلسه HTTP رشته شامل این ID. این تضمین می کند که تنها بلیط که متعلق به سیستم شما خواهد شد به شرح زیر یو پی اس (در هنگام برقراری ارتباط بین دو نمونه از BuzzDesk مفید) پردازش شده است.',
         'Defines the fully qualified domain name of the system. This setting is used as a variable, OTRS_CONFIG_FQDN which is found in all forms of messaging used by the application, to build links to the tickets within your system.' =>
             'تعریف می کند که نام مناسب دامنه از سیستم. این تنظیم به عنوان یک متغیر، OTRS_CONFIG_FQDN است که در تمام اشکال پیام استفاده شده توسط برنامه، برای ساخت لینک به بلیط در سیستم شما یافت استفاده می شود.',
         'Defines the fully qualified domain name for external IDs generation (i.e. Message-ID, ContentID).' =>
             '',
-        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
-            'تعریف می کند نام میزبان HTTP برای جمع آوری داده ها پشتیبانی با ماژول عمومی PublicSupportDataCollector، (به عنوان مثال استفاده از Znuny شبح).',
-        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the Znuny Daemon).' =>
+        'Defines the HTTP hostname for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
+            'تعریف می کند نام میزبان HTTP برای جمع آوری داده ها پشتیبانی با ماژول عمومی PublicSupportDataCollector، (به عنوان مثال استفاده از BuzzDesk شبح).',
+        'Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module \'PublicSupportDataCollector\' (e.g. used from the BuzzDesk Daemon).' =>
             '',
         'When support data is collected via SupportDataCollector, certain SysConfig values marked with ValueType="Password" are automatically masked. This prevents passwords from appearing in plain text in the support data. This setting defines the settings that contain complex configuration hashes that should not be masked when generating the support data.' =>
             '',
@@ -5769,8 +5764,8 @@ sub Data {
             'تعریف می کند تمام زبان هایی که در دسترس  برنامه می باشد. تنها نام انگلیسی از زبان را در اینجا مشخص کنید.',
         'Defines all the languages that are available to the application. Specify only native names of languages here.' =>
             'تعریف می کند تمام زبان های که در دسترس  برنامه می باشد. تنها نام بومی زبان را در اینجا مشخص کنید.',
-        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.znuny.org/developer/general_information/themes.html.' =>
-            'تعریف می کند که تم پیش فرض جلویی (HTML) به توسط عوامل و مشتریان استفاده می شود. اگر دوست دارید، شما می توانید موضوع خود را اضافه کنید. لطفا کتابچه راهنمای کاربر مدیر واقع در https://doc.znuny.org/developer/general_information/themes.html مراجعه کنید.',
+        'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.buzzdesk.org/developer/general_information/themes.html.' =>
+            'تعریف می کند که تم پیش فرض جلویی (HTML) به توسط عوامل و مشتریان استفاده می شود. اگر دوست دارید، شما می توانید موضوع خود را اضافه کنید. لطفا کتابچه راهنمای کاربر مدیر واقع در https://doc.buzzdesk.org/developer/general_information/themes.html مراجعه کنید.',
         'It is possible to configure different themes, for example to distinguish between agents and customers, to be used on a per-domain basis within the application. Using a regular expression (regex), you can configure a Key/Content pair to match a domain. The value in "Key" should match the domain, and the value in "Content" should be a valid theme on your system. Please see the example entries for the proper form of the regex.' =>
             'ممکن است که به پیکربندی تم های مختلف، به عنوان مثال برای تمایز بین عوامل و مشتریان، به بر اساس هر دامنه در داخل نرم افزار استفاده می شود. با استفاده از یک عبارت منظم (عبارت منظم)، شما می توانید یک جفت محتوا / کلیدی برای مطابقت با یک دامنه پیکربندی کنید. ارزش در \ "کلید " باید دامنه مطابقت، و ارزش در \ "محتوا " باید یک موضوع معتبر بر روی سیستم شما می شود. لطفا برای فرم مناسب از عبارت منظم مشاهده نوشته های مثال.',
         'The headline shown in the customer interface.' => 'تیتر نشان داده شده در رابط مشتری.',
@@ -5832,8 +5827,8 @@ sub Data {
             '',
         'Global settings for all popup profiles.' => '',
         'Disable autocomplete in the login screen.' => '',
-        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow Znuny to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
-            'غیر فعال کردن HTTP هدر \ "X-قاب گزینه ها: SAMEORIGIN " اجازه می دهد Znuny به عنوان یک iframe در وب سایت های دیگر گنجانده شده است. غیر فعال کردن این هدر HTTP می تواند یک مسئله امنیتی! فقط آن را غیر فعال کنید، اگر شما می دانید آنچه شما انجام می دهند!',
+        'Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow BuzzDesk to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
+            'غیر فعال کردن HTTP هدر \ "X-قاب گزینه ها: SAMEORIGIN " اجازه می دهد BuzzDesk به عنوان یک iframe در وب سایت های دیگر گنجانده شده است. غیر فعال کردن این هدر HTTP می تواند یک مسئله امنیتی! فقط آن را غیر فعال کنید، اگر شما می دانید آنچه شما انجام می دهند!',
         'Disable HTTP header "Content-Security-Policy" to allow loading of external script contents. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!' =>
             'غیر فعال کردن HTTP هدر "Content-Security-Policy" اجازه می دهد تا بارگذاری محتویات اسکریپت های خارجی. غیر فعال کردن این هدر HTTP می تواند یک مسئله امنیتی! فقط آن را غیر فعال کنید، اگر شما می دانید آنچه شما انجام می دهند!',
         'Automated line break in text messages after x number of chars.' =>
@@ -5879,7 +5874,7 @@ sub Data {
             'اگر \ "syslog را " برای LogModule انتخاب شد، مجموعه کاراکتر است که باید برای ورود به سیستم استفاده می شود می تواند مشخص شود.',
         'If "file" was selected for LogModule, a logfile must be specified. If the file doesn\'t exist, it will be created by the system.' =>
             'اگر \ "فایل " برای LogModule انتخاب شد، یک فایل تاریخچه ثبت باید مشخص شود. اگر فایل وجود ندارد، از آن خواهد شد توسط سیستم ایجاد شده است.',
-        'Adds a suffix with the actual year and month to the Znuny log file. A logfile for every month will be created.' =>
+        'Adds a suffix with the actual year and month to the BuzzDesk log file. A logfile for every month will be created.' =>
             'پسوند سال و ماه به فایل ثبت وقایع می‌افزاید. برای هر ماه یک فایل ساخته خواهد شد.',
         'Set the minimum log level. If you select \'error\', just errors are logged. With \'debug\' you get all logging messages. The order of log levels is: \'debug\', \'info\', \'notice\' and \'error\'.' =>
             '',
@@ -5949,8 +5944,8 @@ sub Data {
             'تعریف می کند که نشان می دهد یک ماژول است که اطلاع رسانی عمومی در رابط عامل. در هر دو صورت \ "متن " - در صورت پیکربندی - و یا محتویات \ "فایل " نمایش داده خواهد شد.',
         'Defines the module used to store the session data. With "DB" the frontend server can be splitted from the db server. "FS" is faster.' =>
             'تعریف می کند ماژول استفاده می شود برای ذخیره داده ها جلسه. با \ "DB " سرور ظاهر می توانید از سرور دسیبل برابر خرد. \ "FS " سریع تر است.',
-        'Defines the name of the session key. E.g. Session, SessionID or Znuny.' =>
-            'تعریف می کند که نام کلید جلسه. به عنوان مثال جلسه، SESSIONID یا Znuny.',
+        'Defines the name of the session key. E.g. Session, SessionID or BuzzDesk.' =>
+            'تعریف می کند که نام کلید جلسه. به عنوان مثال جلسه، SESSIONID یا BuzzDesk.',
         'Defines the name of the key for customer sessions.' => 'تعریف می کند که نام کلید برای جلسات مشتری می باشد.',
         'Turns on the remote ip address check. It should not be enabled if the application is used, for example, via a proxy farm or a dialup connection, because the remote ip address is mostly different for the requests.' =>
             '',
@@ -5983,9 +5978,9 @@ sub Data {
         'Defines the period of time (in minutes) before customer is marked as "away" due to inactivity (e.g. in the "Logged-In Users" widget or for the chat).' =>
             '',
         'This setting is deprecated. Set OTRSTimeZone instead.' => '',
-        'Sets the time zone being used internally by Znuny to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
+        'Sets the time zone being used internally by BuzzDesk to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.' =>
             '',
-        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the Znuny time zone and the user\'s time zone.' =>
+        'Sets the time zone that will be assigned to newly created users and will be used for users that haven\'t yet set a time zone. This is the time zone being used as default to convert date and time between the BuzzDesk time zone and the user\'s time zone.' =>
             '',
         'If enabled, users that haven\'t selected a time zone yet will be notified to do so. Note: Notification will not be shown if (1) user has not yet selected a time zone and (2) OTRSTimeZone and UserDefaultTimeZone do match and (3) are not set to UTC.' =>
             '',
@@ -6004,8 +5999,8 @@ sub Data {
         'Adds the one time vacation days for the indicated calendar.' => '',
         'Defines the hours and week days of the indicated calendar, to count the working time.' =>
             'تعریف می کند که ساعت و روز هفته  برای شمارش زمان کاردر تقویم نشان داده میشود.',
-        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your Znuny instance to stop working (probably any mask which takes input from the user).' =>
-            'تعریف می کند به اندازه حداکثر (در بایت) برای ارسال فایل از طریق مرورگر. هشدار: تنظیم این گزینه بر یک ارزش است که خیلی کم می تواند از ماسک های بسیاری در مثال Znuny شما می شود برای جلوگیری از کار (احتمالا هر ماسک که طول می کشد ورودی از کاربر).',
+        'Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your BuzzDesk instance to stop working (probably any mask which takes input from the user).' =>
+            'تعریف می کند به اندازه حداکثر (در بایت) برای ارسال فایل از طریق مرورگر. هشدار: تنظیم این گزینه بر یک ارزش است که خیلی کم می تواند از ماسک های بسیاری در مثال BuzzDesk شما می شود برای جلوگیری از کار (احتمالا هر ماسک که طول می کشد ورودی از کاربر).',
         'Selects the module to handle uploads via the web interface. "DB" stores all uploads in the database, "FS" uses the file system.' =>
             'ماژول که مسئولیت رسیدگی به ارسال از طریق رابط وب انتخاب می کند. \ "DB " فروشگاه های ارسال همه در پایگاه داده، \ "FS " با استفاده از سیستم فایل.',
         'Specifies the text that should appear in the log file to denote a CGI script entry.' =>
@@ -6072,8 +6067,8 @@ sub Data {
             'تعریف می کند که مسیر و TTF-فایل که مسئولیت رسیدگی به قلم تکفاصله کج در اسناد PDF. را دارد',
         'Defines the path and TTF-File to handle bold italic monospaced font in PDF documents.' =>
             'تعریف می کند که مسیر و TTF-فایل که مسئولیت رسیدگی به جسورانه قلم تکفاصله کج در اسناد PDF.',
-        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the Znuny user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
-            'پشتیبانی PGP را قادر می سازد. زمانی که حمایت PGP برای امضای و رمزنگاری ایمیل فعال، آن را بسیار توصیه می شود که وب سرور به عنوان کاربر Znuny اجرا می شود. در غیر این صورت، وجود خواهد داشت مشکلات با امتیازات زمانی که دسترسی به .gnupg پوشه.',
+        'Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the BuzzDesk user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.' =>
+            'پشتیبانی PGP را قادر می سازد. زمانی که حمایت PGP برای امضای و رمزنگاری ایمیل فعال، آن را بسیار توصیه می شود که وب سرور به عنوان کاربر BuzzDesk اجرا می شود. در غیر این صورت، وجود خواهد داشت مشکلات با امتیازات زمانی که دسترسی به .gnupg پوشه.',
         'Defines the path to PGP binary.' => 'تعریف می کند که مسیر به باینری PGP.',
         'Sets the options for PGP binary.' => 'مجموعه گزینه برای باینری PGP.',
         'Sets the preferred digest to be used for PGP binary.' => '',
@@ -6091,10 +6086,10 @@ sub Data {
             ' دایرکتوری که در آن گواهینامه های SSL خصوصی ذخیره شده است را مشخص میکند.',
         'Cache time in seconds for the SSL certificate attributes.' => 'زمان کش در ثانیه برای ویژگی گواهینامه SSL.',
         'Enables fetch S/MIME from CustomerUser backend support.' => 'را قادر می سازد واکشی S / MIME از پشتیبانی باطن CustomerUser.',
-        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com).' =>
-            'نامی است که باید توسط نرم افزار در هنگام ارسال اطلاعیه استفاده می شود مشخص می کند. نام فرستنده استفاده می شود برای ساخت نام صفحه نمایش کامل برای کارشناسی ارشد اطلاع رسانی (یعنی \ "Znuny اطلاعیه " znuny@your.example.com).',
-        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
-            'آدرس ایمیل که باید توسط نرم افزار در هنگام ارسال اطلاعیه استفاده می شود مشخص می کند. آدرس ایمیل استفاده می شود برای ساخت نام صفحه نمایش کامل برای کارشناسی ارشد اطلاع رسانی (یعنی \ "Znuny اطلاعیه " znuny@your.example.com). شما می توانید متغیر OTRS_CONFIG_FQDN به عنوان مجموعه ای در configuation خود استفاده کنید، یا آدرس ایمیل دیگر را انتخاب کنید.',
+        'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com).' =>
+            'نامی است که باید توسط نرم افزار در هنگام ارسال اطلاعیه استفاده می شود مشخص می کند. نام فرستنده استفاده می شود برای ساخت نام صفحه نمایش کامل برای کارشناسی ارشد اطلاع رسانی (یعنی \ "BuzzDesk اطلاعیه " buzzdesk@your.example.com).',
+        'Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.' =>
+            'آدرس ایمیل که باید توسط نرم افزار در هنگام ارسال اطلاعیه استفاده می شود مشخص می کند. آدرس ایمیل استفاده می شود برای ساخت نام صفحه نمایش کامل برای کارشناسی ارشد اطلاع رسانی (یعنی \ "BuzzDesk اطلاعیه " buzzdesk@your.example.com). شما می توانید متغیر OTRS_CONFIG_FQDN به عنوان مجموعه ای در configuation خود استفاده کنید، یا آدرس ایمیل دیگر را انتخاب کنید.',
         'Defines the validity period in seconds for password reset tokens. After this time the token expires and a new reset request is required. Default: 3600 (1 hour).' =>
             'مدت اعتبار توکن‌های بازنشانی رمز عبور را بر حسب ثانیه تعیین می‌کند. پس از این زمان توکن منقضی می‌شود و درخواست جدید لازم است. پیش‌فرض: 3600 (1 ساعت).',
         'Maximum number of password reset requests allowed per IP address or username within the rate limit window. Set to 0 to disable rate limiting. Default: 5.' =>
@@ -6221,8 +6216,8 @@ sub Data {
             'اگر \ "LDAP " برای مشتریان :: AuthModule انتخاب شد، BaseDN باید مشخص شود.',
         'If "LDAP" was selected for Customer::AuthModule, the user identifier must be specified.' =>
             'اگر \ "LDAP " برای مشتریان :: AuthModule انتخاب شد، شناسه کاربر باید مشخص شود.',
-        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use Znuny. Specify the group, who may access the system.' =>
-            'اگر \ "LDAP " برای ضوابط Authmodule انتخاب شد ::، شما می توانید در صورتی که کاربر مجاز به تصدیق چرا که او در یک posixGroup است، به عنوان مثال کاربر نیاز به در یک XYZ گروه به استفاده از Znuny شود تیک بزنید. مشخص گروه، که ممکن است سیستم دسترسی داشته باشید.',
+        'If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use BuzzDesk. Specify the group, who may access the system.' =>
+            'اگر \ "LDAP " برای ضوابط Authmodule انتخاب شد ::، شما می توانید در صورتی که کاربر مجاز به تصدیق چرا که او در یک posixGroup است، به عنوان مثال کاربر نیاز به در یک XYZ گروه به استفاده از BuzzDesk شود تیک بزنید. مشخص گروه، که ممکن است سیستم دسترسی داشته باشید.',
         'If "LDAP" was selected for Customer::AuthModule, you can specify access attributes here.' =>
             'اگر \ "LDAP " برای ضوابط AuthModule انتخاب شد ::.، شما می توانید ویژگی های دسترسی، اینجا را مشخص کنید.',
         'If "LDAP" was selected for Customer::AuthModule, user attributes can be specified. For LDAP posixGroups use UID, for non LDAP posixGroups use full user DN.' =>
@@ -6276,7 +6271,7 @@ sub Data {
         'Activates the available themes on the system. Value 1 means active, 0 means inactive.' =>
             'پوسته‌های ظاهری را در سیستم فعال می‌کند. مقدار ۱ یعنی فعال و مقدار ۰ یعنی غیرفعال.',
         'Defines the default value for the action parameter.' => '',
-        'Defines the shown links in the footer area of the customer and public interface of this Znuny system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
+        'Defines the shown links in the footer area of the customer and public interface of this BuzzDesk system. The value in "Key" is the external URL, the value in "Content" is the shown label.' =>
             '',
         'Defines the default value for the action parameter for the public frontend. The action parameter is used in the scripts of the system.' =>
             'مقدار پیش فرض برای پارامتر عمل برای ظاهر عمومی است. پارامتر عمل در اسکریپت از سیستم استفاده می شود.',
@@ -6305,8 +6300,8 @@ sub Data {
             '',
         'Defines the default maximum number of X-axis attributes for the time scale.' =>
             'تعریف می کند که به طور پیش فرض حداکثر تعداد محور X ویژگی برای مقیاس زمانی.',
-        'Znuny can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
-            'Znuny می توانید یک یا چند پایگاه داده آینه فقط خواندنی برای عملیات گران قیمت مانند جستجو و یا آمار نسل متن استفاده کنید. در اینجا شما می توانید DSN برای پایگاه داده آینه اول را مشخص کنید.',
+        'BuzzDesk can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.' =>
+            'BuzzDesk می توانید یک یا چند پایگاه داده آینه فقط خواندنی برای عملیات گران قیمت مانند جستجو و یا آمار نسل متن استفاده کنید. در اینجا شما می توانید DSN برای پایگاه داده آینه اول را مشخص کنید.',
         'Specify the username to authenticate for the first mirror database.' =>
             'نام مشخص کاربری برای تأیید هویت برای پایگاه داده آینه است.',
         'Specify the password to authenticate for the first mirror database.' =>
@@ -6323,24 +6318,24 @@ sub Data {
             'جستجوی کلمات از جسم فعال پس از ماسک لینک شی آغاز شده است.',
         'Defines a filter to process the text in the articles, in order to highlight predefined keywords.' =>
             'تعریف می کند یک فیلتر برای پردازش متن در مقالات، به منظور برجسته کلمات کلیدی از پیش تعریف شده.',
-        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'تعریف می کند یک فیلتر برای خروجی HTML برای اضافه کردن لینک در پشت اعداد CVE. عنصر تصویر اجازه می دهد تا دو نوع ورودی. در یک بار نام یک تصویر (به عنوان مثال faq.png). در این مورد مسیر تصویر Znuny استفاده خواهد شد. احتمال و امکان دوم است برای قرار دادن لینک به تصویر.',
-        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'تعریف می کند یک فیلتر برای خروجی HTML برای اضافه کردن لینک در پشت اعداد BUGTRAQ. عنصر تصویر اجازه می دهد تا دو نوع ورودی. در یک بار نام یک تصویر (به عنوان مثال faq.png). در این مورد مسیر تصویر Znuny استفاده خواهد شد. احتمال و امکان دوم است برای قرار دادن لینک به تصویر.',
-        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'تعریف می کند یک فیلتر برای خروجی HTML برای اضافه کردن لینک در پشت اعداد MSBulletin. عنصر تصویر اجازه می دهد تا دو نوع ورودی. در یک بار نام یک تصویر (به عنوان مثال faq.png). در این مورد مسیر تصویر Znuny استفاده خواهد شد. احتمال و امکان دوم است برای قرار دادن لینک به تصویر.',
-        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'تعریف یک فیلتر برای خروجی HTML برای اضافه کردن لینک پشت یک رشته تعریف شده است. عنصر تصویر اجازه می دهد تا دو نوع ورودی. در یک بار نام یک تصویر (به عنوان مثال faq.png). در این مورد مسیر تصویر Znuny استفاده خواهد شد. احتمال و امکان دوم است برای قرار دادن لینک به تصویر.',
-        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.' =>
-            'تعریف می کند یک فیلتر برای خروجی HTML برای اضافه کردن لینک پشت یک رشته تعریف شده است. عنصر تصویر اجازه می دهد تا دو نوع ورودی. در یک بار نام یک تصویر (به عنوان مثال faq.png). در این مورد مسیر تصویر Znuny استفاده خواهد شد. احتمال و امکان دوم است برای قرار دادن لینک به تصویر.',
-        'If enabled, the Znuny version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
-            'اگر فعال باشد، نسخه برچسب Znuny خواهد شد از Webinterface، هدر HTTP و X-هدر از ایمیل های خروجی حذف خواهند شد. توجه: اگر شما این گزینه را تغییر دهید، لطفا مطمئن شوید که به حذف کش.',
+        'Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'تعریف می کند یک فیلتر برای خروجی HTML برای اضافه کردن لینک در پشت اعداد CVE. عنصر تصویر اجازه می دهد تا دو نوع ورودی. در یک بار نام یک تصویر (به عنوان مثال faq.png). در این مورد مسیر تصویر BuzzDesk استفاده خواهد شد. احتمال و امکان دوم است برای قرار دادن لینک به تصویر.',
+        'Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'تعریف می کند یک فیلتر برای خروجی HTML برای اضافه کردن لینک در پشت اعداد BUGTRAQ. عنصر تصویر اجازه می دهد تا دو نوع ورودی. در یک بار نام یک تصویر (به عنوان مثال faq.png). در این مورد مسیر تصویر BuzzDesk استفاده خواهد شد. احتمال و امکان دوم است برای قرار دادن لینک به تصویر.',
+        'Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'تعریف می کند یک فیلتر برای خروجی HTML برای اضافه کردن لینک در پشت اعداد MSBulletin. عنصر تصویر اجازه می دهد تا دو نوع ورودی. در یک بار نام یک تصویر (به عنوان مثال faq.png). در این مورد مسیر تصویر BuzzDesk استفاده خواهد شد. احتمال و امکان دوم است برای قرار دادن لینک به تصویر.',
+        'Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'تعریف یک فیلتر برای خروجی HTML برای اضافه کردن لینک پشت یک رشته تعریف شده است. عنصر تصویر اجازه می دهد تا دو نوع ورودی. در یک بار نام یک تصویر (به عنوان مثال faq.png). در این مورد مسیر تصویر BuzzDesk استفاده خواهد شد. احتمال و امکان دوم است برای قرار دادن لینک به تصویر.',
+        'Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.' =>
+            'تعریف می کند یک فیلتر برای خروجی HTML برای اضافه کردن لینک پشت یک رشته تعریف شده است. عنصر تصویر اجازه می دهد تا دو نوع ورودی. در یک بار نام یک تصویر (به عنوان مثال faq.png). در این مورد مسیر تصویر BuzzDesk استفاده خواهد شد. احتمال و امکان دوم است برای قرار دادن لینک به تصویر.',
+        'If enabled, the BuzzDesk version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.' =>
+            'اگر فعال باشد، نسخه برچسب BuzzDesk خواهد شد از Webinterface، هدر HTTP و X-هدر از ایمیل های خروجی حذف خواهند شد. توجه: اگر شما این گزینه را تغییر دهید، لطفا مطمئن شوید که به حذف کش.',
         'Default template for notification e-mails (see Kernel/Output/HTML/Templates/Standard/NotificationEvent/Email directory for available templates).' =>
             '',
-        'If enabled, Znuny will deliver all CSS files in minified form.' =>
+        'If enabled, BuzzDesk will deliver all CSS files in minified form.' =>
             '',
-        'If enabled, Znuny will deliver all JavaScript files in minified form.' =>
-            'اگر فعال باشد، Znuny تمام فایل های جاوا اسکریپت را در فرم های Minified ارائه کرده است.',
+        'If enabled, BuzzDesk will deliver all JavaScript files in minified form.' =>
+            'اگر فعال باشد، BuzzDesk تمام فایل های جاوا اسکریپت را در فرم های Minified ارائه کرده است.',
         'List of responsive CSS files to always be loaded for the agent interface.' =>
             'لیستی از فایل های CSS پاسخگو برای همیشه برای رابط عامل بارگذاری می شود.',
         'List of JS files to always be loaded for the admin interface.' =>
@@ -6566,10 +6561,10 @@ sub Data {
             'مجموعه حداقل اندازه بلیط ضد اگر \ "AUTOINCREMENT " به عنوان TicketNumberGenerator انتخاب شد. به طور پیش فرض 5 است، این به معنای ضد از 10،000 شروع می شود.',
         'Enables the minimal ticket counter size (if "Date" was selected as TicketNumberGenerator).' =>
             'حداقل اندازه بلیط ضد قادر می سازد (در صورت \ "تاریخ " به عنوان TicketNumberGenerator انتخاب شد).',
-        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/znuny.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
-            'IndexAccelerator: برای انتخاب ماژول باطن TicketViewAccelerator خود را. \ "RuntimeDB " تولید هر نظر صف در پرواز از جدول بلیط (بدون مشکل در عملکرد تا حدود 60.000 بلیط در کل و 6.000 بلیط باز در سیستم). \ "StaticDB " است که ماژول قدرتمند ترین، آن را با استفاده از یک جدول بلیط شاخص های اضافی است که مانند یک کار می کند (توصیه می شود اگر بیش از 80.000 و 6.000 بلیط باز در سیستم ذخیره می شود). استفاده از دستور \ "بن / znuny.Console.pl سیستم maint :: بلیط :: QueueIndexRebuild " برای ایجاد شاخص اولیه.',
-        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the Znuny user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
-            'موجب صرفه جویی در فایل پیوست مقالات. \ "DB " فروشگاه تمام اطلاعات در پایگاه داده (برای ذخیره سازی فایل پیوست بزرگ توصیه نمی شود). \ "FS " ذخیره اطلاعات در فایل سیستم. این است سریع تر اما وب سرور باید تحت کاربر Znuny اجرا کنید. شما می توانید بین ماژول حتی در یک سیستم است که در حال حاضر در تولید بدون از دست دادن داده ها تغییر دهید. توجه داشته باشید: جستجو برای نام دلبستگی پشتیبانی نمی که \ "FS " استفاده شده است.',
+        'IndexAccelerator: to choose your backend TicketViewAccelerator module. "RuntimeDB" generates each queue view on the fly from ticket table (no performance problems up to approx. 60.000 tickets in total and 6.000 open tickets in the system). "StaticDB" is the most powerful module, it uses an extra ticket-index table that works like a view (recommended if more than 80.000 and 6.000 open tickets are stored in the system). Use the command "bin/buzzdesk.Console.pl Maint::Ticket::QueueIndexRebuild" for initial index creation.' =>
+            'IndexAccelerator: برای انتخاب ماژول باطن TicketViewAccelerator خود را. \ "RuntimeDB " تولید هر نظر صف در پرواز از جدول بلیط (بدون مشکل در عملکرد تا حدود 60.000 بلیط در کل و 6.000 بلیط باز در سیستم). \ "StaticDB " است که ماژول قدرتمند ترین، آن را با استفاده از یک جدول بلیط شاخص های اضافی است که مانند یک کار می کند (توصیه می شود اگر بیش از 80.000 و 6.000 بلیط باز در سیستم ذخیره می شود). استفاده از دستور \ "بن / buzzdesk.Console.pl سیستم maint :: بلیط :: QueueIndexRebuild " برای ایجاد شاخص اولیه.',
+        'Saves the attachments of articles. "DB" stores all data in the database (not recommended for storing big attachments). "FS" stores the data on the filesystem; this is faster but the webserver should run under the BuzzDesk user. You can switch between the modules even on a system that is already in production without any loss of data. Note: Searching for attachment names is not supported when "FS" is used.' =>
+            'موجب صرفه جویی در فایل پیوست مقالات. \ "DB " فروشگاه تمام اطلاعات در پایگاه داده (برای ذخیره سازی فایل پیوست بزرگ توصیه نمی شود). \ "FS " ذخیره اطلاعات در فایل سیستم. این است سریع تر اما وب سرور باید تحت کاربر BuzzDesk اجرا کنید. شما می توانید بین ماژول حتی در یک سیستم است که در حال حاضر در تولید بدون از دست دادن داده ها تغییر دهید. توجه داشته باشید: جستجو برای نام دلبستگی پشتیبانی نمی که \ "FS " استفاده شده است.',
         'Specifies whether all storage backends should be checked when looking for attachments. This is only required for installations where some attachments are in the file system, and others in the database.' =>
             'مشخص میکند که آیا تمام پایانه (Backend) ذخیره سازی باید چک شود که دنبال فایل پیوست کنید. این فقط برای نصب و راه اندازی که در آن برخی از فایل پیوست در فایل سیستم، و دیگران در پایگاه داده مورد نیاز است.',
         'Specifies the directory to store the data in, if "FS" was selected for ArticleStorage.' =>
@@ -6611,7 +6606,7 @@ sub Data {
             '',
         'Overloads (redefines) existing functions in Kernel::System::Ticket. Used to easily add customizations.' =>
             'اضافه بار (باز تعریف) توابع موجود در هسته :: :: سیستم بلیط. استفاده به راحتی سفارشی اضافه کنید.',
-        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
+        'Helps to extend your articles full-text search (From, To, Cc, Subject and Body search). It will strip all articles and will build an index after article creation, increasing fulltext searches about 50%. To create an initial index use "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild".' =>
             '',
         'Defines whether to index archived tickets for fulltext searches.' =>
             '',
@@ -6619,7 +6614,7 @@ sub Data {
             '',
         'Display a warning and prevent search when using stop words within fulltext search.' =>
             'نمایش اخطار و جلوگیری از جستجو زمانی که با استفاده از کلمات در درون جستجوی متن هست.',
-        'Basic fulltext index settings. Execute "bin/znuny.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
+        'Basic fulltext index settings. Execute "bin/buzzdesk.Console.pl Maint::Ticket::FulltextIndex --rebuild" in order to generate a new index.' =>
             '',
         'Fulltext index regex filters to remove parts of the text.' => 'متن فیلتر شاخص عبارت منظم به حذف بخش هایی از متن.',
         'English stop words for fulltext index. These words will be removed from the search index.' =>
@@ -7348,8 +7343,8 @@ sub Data {
             'تعریف می کند که قفل قابل مشاهده یک بلیط. توجه: وقتی که این تنظیم را تغییر دهید، مطمئن شوید که به حذف کش به منظور استفاده از ارزش های جدید است. به طور پیش فرض: باز کردن، tmp_lock.',
         'Defines the valid state types for a ticket. If a ticket is in a state which have any state type from this setting, this ticket will be considered as open, otherwise as closed.' =>
             '',
-        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/znuny.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
-            'تعریف می کند که ایالات معتبر برای بلیط باز شده است. برای باز کردن قفل بلیط اسکریپت \ "بن / znuny.Console.pl سیستم maint :: بلیط :: UnlockTimeout " می تواند استفاده شود.',
+        'Defines the valid states for unlocked tickets. To unlock tickets the script "bin/buzzdesk.Console.pl Maint::Ticket::UnlockTimeout" can be used.' =>
+            'تعریف می کند که ایالات معتبر برای بلیط باز شده است. برای باز کردن قفل بلیط اسکریپت \ "بن / buzzdesk.Console.pl سیستم maint :: بلیط :: UnlockTimeout " می تواند استفاده شود.',
         'Sends reminder notifications of unlocked ticket after reaching the reminder date (only sent to ticket owner).' =>
             'می فرستد اطلاعیه یادآور بلیط قفل پس از رسیدن به تاریخ یادآوری (فقط به صاحب بلیط ارسال).',
         'Disables sending reminder notifications to the responsible agent of a ticket (Ticket::Responsible needs to be enabled).' =>
@@ -7735,7 +7730,7 @@ sub Data {
             'ماژول به بهانه کاربران مشتری SMIME گواهی از پیام های دریافتی.',
         'Module to check if a incoming e-mail message is bounce.' => '',
         'Module used to detect if attachments are present.' => '',
-        'Executes follow-up checks on Znuny Header \'X-OTRS-Bounce\'.' =>
+        'Executes follow-up checks on BuzzDesk Header \'X-OTRS-Bounce\'.' =>
             '',
         'Checks if an E-Mail is a followup to an existing ticket by searching the subject for a valid ticket number.' =>
             'چک اگر یک ایمیل پیگیری بلیط های موجود به با جستجو در موضوع برای یک تعداد بلیط معتبر است.',
@@ -7894,9 +7889,9 @@ sub Data {
         'Defines the default queue for new tickets in the agent interface.' =>
             '',
 
-        # XML Definition: Kernel/Config/Files/XML/Znuny.xml
+        # XML Definition: Kernel/Config/Files/XML/BuzzDesk.xml
         'Default preferences to set during user creation.' => '',
-        'Enables/disables the Znuny package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
+        'Enables/disables the BuzzDesk package verification. If disabled, all packages are shown as verified. It\'s still recommended to use only verified packages.' =>
             '',
         'Screens for which it is possible to enable or disable dynamic fields.' =>
             '',
@@ -8159,7 +8154,7 @@ sub Data {
             '',
         'Mapping of ticket priority to X-Priority email header for outgoing emails of communication channel "system".' =>
             '',
-        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by Znuny.Form.Input.' =>
+        'Adds the field mapping for AgentTicketActionCommon for an unknown action. Used by BuzzDesk.Form.Input.' =>
             '',
         'Once limit of watched tickets per user is reached, the oldest entries will be removed from the watch list. Disable this setting or set it to 0 to disable the limit (default).' =>
             '',
@@ -8421,7 +8416,7 @@ sub Data {
         'Currently not possible' => '',
         'This is currently disabled because of an ongoing package upgrade.' =>
             '',
-        'This option is currently disabled because the Znuny Daemon is not running.' =>
+        'This option is currently disabled because the BuzzDesk Daemon is not running.' =>
             '',
         'Are you sure you want to update all installed packages?' => '',
         'No response from get package upgrade run status.' => '',
@@ -8552,7 +8547,7 @@ sub Data {
         'Insert selected customer user(s) into the "%s:" field.' => '',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Daemon.js
-        'Information about the Znuny Daemon' => 'اطلاعات در مورد Znuny دیمون',
+        'Information about the BuzzDesk Daemon' => 'اطلاعات در مورد BuzzDesk دیمون',
 
         # JS File: var/httpd/htdocs/js/Core.Agent.Dashboard.js
         'Please check the fields marked as red for valid inputs.' => 'لطفا فیلدهای مشخص شده به عنوان قرمز برای ورودی های معتبر را بررسی کنید.',
@@ -8941,7 +8936,7 @@ Thanks for your help!
         'Create tickets.' => 'ساختن درخواست',
         'Created ticket [%s] in "%s" with priority "%s" and state "%s".' =>
             '',
-        'Creates a unit test file for this ticket and sends it to Znuny.' =>
+        'Creates a unit test file for this ticket and sends it to BuzzDesk.' =>
             '',
         'Creates a unit test file for this ticket.' => '',
         'Croatian' => 'کرواتی',
@@ -9383,7 +9378,7 @@ Thanks for your help!
             'پوست سیاه و سفید برای رابط مشتری - این به طور پیش فرض نارنجی است.',
         'This is the default orange - black skin.' => 'پوست سیاه و سفید - این به طور پیش فرض نارنجی است.',
         'This key is not certified with a trusted signature!' => '',
-        'This module is part of the admin area of Znuny.' => '',
+        'This module is part of the admin area of BuzzDesk.' => '',
         'Ticket Close.' => 'درخواست نزدیک ',
         'Ticket Compose Bounce Email.' => 'درخواست نوشتن پرش ایمیل.',
         'Ticket Compose email Answer.' => 'درخواست نوشتن برای پاسخ ایمیل.',
@@ -9470,7 +9465,7 @@ Thanks for your help!
         'Your service selection of your preferred services. You also get notified about those services via email if enabled.' =>
             'انتخاب خدمات خود را از خدمات مورد نظر خود را. شما همچنین دریافت در مورد کسانی که خدمات از طریق ایمیل مطلع اگر فعال باشد.',
         'Your username in Mattermost without the leading @' => '',
-        'Znuny.org - News' => '',
+        'BuzzDesk.org - News' => '',
         'Zoom' => 'نمایش کامل',
         'all tickets' => '',
         'archived tickets' => '',
@@ -9661,7 +9656,7 @@ Thanks for your help!
         'Hide EntityIDs',
         'If you now leave this page, all open popup windows will be closed, too!',
         'Import web service',
-        'Information about the Znuny Daemon',
+        'Information about the BuzzDesk Daemon',
         'Insert selected customer user(s) into the "%s:" field.',
         'Invalid date (need a future date)!',
         'Invalid date (need a past date)!',
@@ -9841,7 +9836,7 @@ Thanks for your help!
         'This is a repeating appointment',
         'This is currently disabled because of an ongoing package upgrade.',
         'This item still contains sub items. Are you sure you want to remove this item including its sub items?',
-        'This option is currently disabled because the Znuny Daemon is not running.',
+        'This option is currently disabled because the BuzzDesk Daemon is not running.',
         'This software runs with a huge lists of browsers, please upgrade to one of these.',
         'This window must be called from compose window.',
         'Thu',

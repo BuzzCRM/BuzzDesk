@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -25,8 +23,8 @@ my $CreateMailQueueElement = sub {
 
     my $MailQueueObject = $Kernel::OM->Get('Kernel::System::MailQueue');
     my %ElementData     = (
-        Sender    => 'mailqueue.test@znuny.com',
-        Recipient => 'mailqueue.test@znuny.com',
+        Sender    => 'mailqueue.test@buzzdesk.com',
+        Recipient => 'mailqueue.test@buzzdesk.com',
         Message   => {
             'Key1' => 'Value1',
             'Key2' => 'Value2',
@@ -83,7 +81,7 @@ $Self->False(
 
 # Pass an invalid Recipient address (array)
 $Result = $CreateMailQueueElement->(
-    Recipient => [ 'mailqueue.test@znuny.com', 'dummy' ],
+    Recipient => [ 'mailqueue.test@buzzdesk.com', 'dummy' ],
 );
 $Self->False(
     $Result,
@@ -99,7 +97,7 @@ $Self->True(
 
 # ArrayRef recipient
 $Result = $CreateMailQueueElement->(
-    Recipient => [ 'mailqueue.test@znuny.com', 'mailqueue.test@znuny.com' ],
+    Recipient => [ 'mailqueue.test@buzzdesk.com', 'mailqueue.test@buzzdesk.com' ],
 );
 $Self->True(
     $Result,

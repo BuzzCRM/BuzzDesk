@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -14,7 +13,7 @@ use vars (qw($Self));
 
 use Kernel::System::VariableCheck qw(:all);
 
-my $ZnunyHelperObject    = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject    = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $ConfigObject         = $Kernel::OM->Get('Kernel::Config');
 my $SysConfigObject      = $Kernel::OM->Get('Kernel::System::SysConfig');
 my $UnitTestHelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
@@ -26,7 +25,7 @@ if ( $DBObject->{Backend}->{'DB::CaseSensitive'} ) {
 }
 
 # Tests for _ItemReverseListGet function
-my $ResultItemReverseListGet = $ZnunyHelperObject->_ItemReverseListGet(
+my $ResultItemReverseListGet = $BuzzDeskHelperObject->_ItemReverseListGet(
     $Value, ( 'Test' => 1 )
 );
 
@@ -36,11 +35,11 @@ $Self->True(
 );
 
 # Tests for _EventAdd function
-my $ResultEventAdd = $ZnunyHelperObject->_EventAdd(
+my $ResultEventAdd = $BuzzDeskHelperObject->_EventAdd(
     Object => 'Ticket',
     Event  => [
-        'ZnunyEvent1',
-        'ZnunyEvent2',
+        'BuzzDeskEvent1',
+        'BuzzDeskEvent2',
     ],
 );
 
@@ -50,11 +49,11 @@ $Self->True(
 );
 
 # Tests for _EventRemove function
-my $ResultEventRemove = $ZnunyHelperObject->_EventRemove(
+my $ResultEventRemove = $BuzzDeskHelperObject->_EventRemove(
     Object => 'Ticket',
     Event  => [
-        'ZnunyEvent1',
-        'ZnunyEvent2',
+        'BuzzDeskEvent1',
+        'BuzzDeskEvent2',
     ],
 );
 
@@ -95,7 +94,7 @@ my %DefaultColumnsConfigs = (
 );
 
 # Tests for _DefaultColumnsEnable function
-$Success = $ZnunyHelperObject->_DefaultColumnsEnable(%DefaultColumnsConfigs);
+$Success = $BuzzDeskHelperObject->_DefaultColumnsEnable(%DefaultColumnsConfigs);
 
 $Self->True(
     $Success,
@@ -103,7 +102,7 @@ $Self->True(
 );
 
 # Tests for _DefaultColumnsDisable function
-$Success = $ZnunyHelperObject->_DefaultColumnsDisable(%DefaultColumnsConfigs);
+$Success = $BuzzDeskHelperObject->_DefaultColumnsDisable(%DefaultColumnsConfigs);
 
 $Self->True(
     $Success,
@@ -116,7 +115,7 @@ my %DynamicFieldsScreen = (
 );
 
 # Tests for _DynamicFieldsScreenEnable function
-my $ResultDynamicFieldsScreenEnable = $ZnunyHelperObject->_DynamicFieldsScreenEnable(
+my $ResultDynamicFieldsScreenEnable = $BuzzDeskHelperObject->_DynamicFieldsScreenEnable(
     'AgentTicketFreeText' => \%DynamicFieldsScreen
 );
 
@@ -125,7 +124,7 @@ $Self->True(
     'Test basic function call of _DynamicFieldsScreenEnable()',
 );
 
-$ZnunyHelperObject->_RebuildConfig();
+$BuzzDeskHelperObject->_RebuildConfig();
 $SysConfigObject = $Kernel::OM->Get('Kernel::System::SysConfig');
 $ConfigObject    = $Kernel::OM->Get('Kernel::Config');
 
@@ -140,7 +139,7 @@ for my $DynamicFieldScreen ( sort keys %DynamicFieldsScreen ) {
 }
 
 # Tests for _DynamicFieldsScreenDisable function
-my $ResultDynamicFieldsScreenDisable = $ZnunyHelperObject->_DynamicFieldsScreenDisable(
+my $ResultDynamicFieldsScreenDisable = $BuzzDeskHelperObject->_DynamicFieldsScreenDisable(
     'AgentTicketFreeText' => \%DynamicFieldsScreen,
 );
 
@@ -149,7 +148,7 @@ $Self->True(
     'Test basic function call of _DynamicFieldsScreenDisable()',
 );
 
-$ZnunyHelperObject->_RebuildConfig();
+$BuzzDeskHelperObject->_RebuildConfig();
 $SysConfigObject = $Kernel::OM->Get('Kernel::System::SysConfig');
 $ConfigObject    = $Kernel::OM->Get('Kernel::Config');
 
@@ -163,7 +162,7 @@ for my $DynamicFieldScreen ( sort keys %DynamicFieldsScreen ) {
 }
 
 # Tests for _DynamicFieldsCreateIfNotExists function
-my $ResultDynamicFieldsCreateIfNotExists = $ZnunyHelperObject->_DynamicFieldsCreateIfNotExists(
+my $ResultDynamicFieldsCreateIfNotExists = $BuzzDeskHelperObject->_DynamicFieldsCreateIfNotExists(
     {
         Name       => 'TestDynamicField1',
         Label      => "TestDynamicField1",
@@ -181,7 +180,7 @@ $Self->True(
 );
 
 # Tests for _DynamicFieldsDisable function
-my $ResultDynamicFieldsDisable = $ZnunyHelperObject->_DynamicFieldsDisable(
+my $ResultDynamicFieldsDisable = $BuzzDeskHelperObject->_DynamicFieldsDisable(
     'TestDynamicField1',
 );
 
@@ -191,7 +190,7 @@ $Self->True(
 );
 
 # Tests for _DynamicFieldsDelete function
-my $ResultDynamicFieldsDelete = $ZnunyHelperObject->_DynamicFieldsDelete(
+my $ResultDynamicFieldsDelete = $BuzzDeskHelperObject->_DynamicFieldsDelete(
     'TestDynamicField1',
 );
 
@@ -201,7 +200,7 @@ $Self->True(
 );
 
 # Tests for _GroupCreateIfNotExists function
-my $ResultGroupCreateIfNotExists = $ZnunyHelperObject->_GroupCreateIfNotExists(
+my $ResultGroupCreateIfNotExists = $BuzzDeskHelperObject->_GroupCreateIfNotExists(
     Name => 'Some Group Name',
 );
 
@@ -211,7 +210,7 @@ $Self->True(
 );
 
 # Tests for _RoleCreateIfNotExists function
-my $ResultRoleCreateIfNotExists = $ZnunyHelperObject->_RoleCreateIfNotExists(
+my $ResultRoleCreateIfNotExists = $BuzzDeskHelperObject->_RoleCreateIfNotExists(
     Name => 'Some Role Name',
 );
 
@@ -221,7 +220,7 @@ $Self->True(
 );
 
 # Tests for _TypeCreateIfNotExists function
-my $ResultTypeCreateIfNotExists = $ZnunyHelperObject->_TypeCreateIfNotExists(
+my $ResultTypeCreateIfNotExists = $BuzzDeskHelperObject->_TypeCreateIfNotExists(
     Name => 'Some Type Name',
 );
 
@@ -231,7 +230,7 @@ $Self->True(
 );
 
 # Tests for _StateCreateIfNotExists function
-my $ResultStateCreateIfNotExists = $ZnunyHelperObject->_StateCreateIfNotExists(
+my $ResultStateCreateIfNotExists = $BuzzDeskHelperObject->_StateCreateIfNotExists(
     Name   => 'Some State Name',
     TypeID => 1,
 );
@@ -242,7 +241,7 @@ $Self->True(
 );
 
 # Tests for _StateDisable function
-my $ResultStateDisable = $ZnunyHelperObject->_StateDisable(
+my $ResultStateDisable = $BuzzDeskHelperObject->_StateDisable(
     'Some State Name',
 );
 
@@ -252,7 +251,7 @@ $Self->True(
 );
 
 # Tests for _ServiceCreateIfNotExists function
-my $ResultServiceCreateIfNotExists = $ZnunyHelperObject->_ServiceCreateIfNotExists(
+my $ResultServiceCreateIfNotExists = $BuzzDeskHelperObject->_ServiceCreateIfNotExists(
     Name => 'Some ServiceName',
 );
 
@@ -262,7 +261,7 @@ $Self->True(
 );
 
 # Tests for _SLACreateIfNotExists function
-my $ResultSLACreateIfNotExists = $ZnunyHelperObject->_SLACreateIfNotExists(
+my $ResultSLACreateIfNotExists = $BuzzDeskHelperObject->_SLACreateIfNotExists(
     Name => 'Some SLAName',
 );
 
@@ -272,7 +271,7 @@ $Self->True(
 );
 
 # Tests for _QueueCreateIfNotExists function
-my $ResultQueueCreateIfNotExists = $ZnunyHelperObject->_QueueCreateIfNotExists(
+my $ResultQueueCreateIfNotExists = $BuzzDeskHelperObject->_QueueCreateIfNotExists(
     Name    => 'Some Queue Name',
     GroupID => 1,
 );
@@ -283,8 +282,8 @@ $Self->True(
 );
 
 # Tests for _WebserviceCreateIfNotExists function
-my $ResultWebserviceCreateIfNotExists = $ZnunyHelperObject->_WebserviceCreateIfNotExists(
-    SubDir => 'Znuny',
+my $ResultWebserviceCreateIfNotExists = $BuzzDeskHelperObject->_WebserviceCreateIfNotExists(
+    SubDir => 'BuzzDesk',
 );
 
 $Self->True(
@@ -293,8 +292,8 @@ $Self->True(
 );
 
 # Tests for _WebservicesGet function
-my $ResultWebservicesGet = $ZnunyHelperObject->_WebservicesGet(
-    SubDir => 'Znuny',
+my $ResultWebservicesGet = $BuzzDeskHelperObject->_WebservicesGet(
+    SubDir => 'BuzzDesk',
 );
 
 $Self->True(
@@ -303,8 +302,8 @@ $Self->True(
 );
 
 # Tests for _WebserviceDelete function
-my $ResultWebserviceDelete = $ZnunyHelperObject->_WebserviceDelete(
-    SubDir => 'Znuny',
+my $ResultWebserviceDelete = $BuzzDeskHelperObject->_WebserviceDelete(
+    SubDir => 'BuzzDesk',
 );
 
 $Self->True(
@@ -337,13 +336,13 @@ my @GenericAgents = (
     },
 );
 
-my $ResultGenericAgentCreate = $ZnunyHelperObject->_GenericAgentCreate(@GenericAgents);
+my $ResultGenericAgentCreate = $BuzzDeskHelperObject->_GenericAgentCreate(@GenericAgents);
 $Self->True(
     $ResultGenericAgentCreate,
     'Test basic function call of _GenericAgentCreate()',
 );
 
-my $ResultGenericAgentCreateIfNotExists = $ZnunyHelperObject->_GenericAgentCreateIfNotExists(@GenericAgents);
+my $ResultGenericAgentCreateIfNotExists = $BuzzDeskHelperObject->_GenericAgentCreateIfNotExists(@GenericAgents);
 $Self->True(
     $ResultGenericAgentCreateIfNotExists,
     'Test basic function call of _GenericAgentCreateIfNotExists()',

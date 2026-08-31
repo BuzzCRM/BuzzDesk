@@ -1,6 +1,6 @@
 # 7.3.7 2026-??-??
  - 2026-08-20 Changed: Admin::Package::List now always reports package deployment status and warns about local modifications.
- - 2026-08-20 Fixed: Multiselect dynamic field values rendered without proper spacing in customer interface. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#836](https://github.com/znuny/Znuny/pull/836).
+ - 2026-08-20 Fixed: Multiselect dynamic field values rendered without proper spacing in customer interface. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#836](https://github.com/buzzdesk/BuzzDesk/pull/836).
  - 2026-08-20 Fixed: agent/customer re-direction after accepting initial information dialog (AgentInfo/CustomerAccept).
 
 # 7.3.6 2026-08-19
@@ -9,19 +9,19 @@
  - 2026-08-14 Added: Split Quote and Remove Quote buttons for CKEditor 5.
  - 2026-08-12 Fixed: Article pagination was displayed incorrectly.
  - 2026-08-12 Fixed: CustomerSelector losing the customer key for numeric customer user logins. Added a new function to completely set new customer users in field for component "CustomerSelector".
- - 2026-08-10 Fixed: Marked LinkTarget options as translatable. Thanks to @urbalazs (Balázs Úr) [PR#814](https://github.com/znuny/Znuny/pull/814).
+ - 2026-08-10 Fixed: Marked LinkTarget options as translatable. Thanks to @urbalazs (Balázs Úr) [PR#814](https://github.com/buzzdesk/BuzzDesk/pull/814).
  - 2026-08-05 Changed: REST transport module now keeps query parameters that don't contain placeholders.
  - 2026-07-27 Fixed: Migration follow-up step for removing mention flags from archived tickets was shown even when Ticket::ArchiveSystem is disabled.
  - 2026-07-24 Changed: Cc and Bcc will now also be set when article will only be created instead of sent in generic interface operation TicketCreate.
  - 2026-07-01 CVE-2025-25977: Updated JavaScript library canvg to version 4.0.3.
 
 # 7.3.5 2026-07-22
- - 2026-07-17 Fixed: Documentation links in config options. Thanks to @bjinthahouse for reporting the issue. [#763](https://github.com/znuny/Znuny/issues/763)
+ - 2026-07-17 Fixed: Documentation links in config options. Thanks to @bjinthahouse for reporting the issue. [#763](https://github.com/buzzdesk/BuzzDesk/issues/763)
  - 2026-07-13 Fixed: Submenus not visible in customer interface.
  - 2026-07-09 Fixed: Console root execution hint now suggests the detected application user instead of a hard-coded user.
- - 2026-07-08 Fixed: Issue with CKEditor full-screen not able to work after switching view to full-screen 3 times. Thanks to @LuBroering (Lukas Bröring, Sector Nord AG) for reporting the issue. [#747](https://github.com/znuny/Znuny/issues/747)
- - 2026-07-07 Fixed: Removed green bg-color for .MainBox. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#824](https://github.com/znuny/Znuny/pull/824).
- - 2026-07-07 Fixed: Swapped sn and givenName default mapping in znuny.SyncLDAP2DB.pl. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#825](https://github.com/znuny/Znuny/pull/825).
+ - 2026-07-08 Fixed: Issue with CKEditor full-screen not able to work after switching view to full-screen 3 times. Thanks to @LuBroering (Lukas Bröring, Sector Nord AG) for reporting the issue. [#747](https://github.com/buzzdesk/BuzzDesk/issues/747)
+ - 2026-07-07 Fixed: Removed green bg-color for .MainBox. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#824](https://github.com/buzzdesk/BuzzDesk/pull/824).
+ - 2026-07-07 Fixed: Swapped sn and givenName default mapping in buzzdesk.SyncLDAP2DB.pl. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#825](https://github.com/buzzdesk/BuzzDesk/pull/825).
  - 2026-07-07 Fixed: Main form width expands over boundaries when RTE line width is greater than width of RTE.
  - 2026-07-06 Added: delete-by-status option for Maint::Log::CommunicationLog console command.
  - 2026-07-04 Fixed: Agent ticket move dialog: The "create article" checkbox is not automatically enabled when the communication section is expanded.
@@ -31,27 +31,27 @@
  - 2026-07-01 CVE-2026-6659: Updated CPAN module Crypt::PasswdMD5 (1.40 to 1.44).
  - 2026-07-01 CVE-2026-8368: Updated CPAN module LWP (6.53 to 6.83).
  - 2026-06-29 Fixed: Applying CKEditor width via system configuration option Frontend::RichText::Settings###Width or module specific options, e.g. Ticket::Frontend::AgentTicketEmail###RichTextWidth.
- - 2026-06-25 Changed: Password reset: Replaced sending of random password via email with sending a one-time link to change the password. Thanks to @besendorf for suggesting this feature. [#56](https://github.com/znuny/znuny-feature-requests/issues/56)
- - 2026-06-25 Fixed: Errors executing ticket search in AgentTicketService if user has no queues or services assigned. Thanks to Paweł Bogusławski for reporting the issue. [#803](https://github.com/znuny/Znuny/issues/803)
- - 2026-06-24 Fixed: Command Maint::Ticket::ArchiveCleanup not deleting article flags correctly. Thanks to @parkingups69-netizen for reporting the issue. [#780](https://github.com/znuny/Znuny/issues/780)
+ - 2026-06-25 Changed: Password reset: Replaced sending of random password via email with sending a one-time link to change the password. Thanks to @besendorf for suggesting this feature. [#56](https://github.com/buzzdesk/buzzdesk-feature-requests/issues/56)
+ - 2026-06-25 Fixed: Errors executing ticket search in AgentTicketService if user has no queues or services assigned. Thanks to Paweł Bogusławski for reporting the issue. [#803](https://github.com/buzzdesk/BuzzDesk/issues/803)
+ - 2026-06-24 Fixed: Command Maint::Ticket::ArchiveCleanup not deleting article flags correctly. Thanks to @parkingups69-netizen for reporting the issue. [#780](https://github.com/buzzdesk/BuzzDesk/issues/780)
  - 2026-06-19 Fixed: Dialog to resend an email (AgentTicketEmailResend) is now only usable for articles in channel Email with previous transmission failure.
  - 2026-06-19 Changed: "Out-of-office enabled" notification can be dismissed now for the time of the current session without being shown again.
 
 # 7.3.4 2026-06-24
- - 2026-06-22 Fixed: Sorting by dynamic field columns in dashboard ticket widgets could fall back to age and process tickets without articles could be hidden. Thanks to @sergiykhan for reporting the issue. [#811](https://github.com/znuny/Znuny/issues/811)
+ - 2026-06-22 Fixed: Sorting by dynamic field columns in dashboard ticket widgets could fall back to age and process tickets without articles could be hidden. Thanks to @sergiykhan for reporting the issue. [#811](https://github.com/buzzdesk/BuzzDesk/issues/811)
  - 2026-06-16 Fixed: Process tickets without articles are not displayed in dashboard widget Running Process Tickets.
- - 2026-06-16 Fixed: System configuration hash key duplication for keys containing ###. Thanks to @FloFaber (Flo Faber) for reporting the issue. [#789](https://github.com/znuny/Znuny/issues/789).
+ - 2026-06-16 Fixed: System configuration hash key duplication for keys containing ###. Thanks to @FloFaber (Flo Faber) for reporting the issue. [#789](https://github.com/buzzdesk/BuzzDesk/issues/789).
  - 2026-06-16 Fixed: Missing translation in date picker week header. Thanks to @urbalazs (Balázs Úr) for reporting the issue.
  - 2026-06-13 Added: Multiselect column filters for agent ticket overview screens and dashboard ticket widgets.
  - 2026-06-12 Fixed: Applied GUI design changes to dialog AgentTicketEmailResend.
  - 2026-06-12 Fixed: Issue with mentioning out of office users via group mention.
  - 2026-06-12 Fixed: Column filter dropdowns in ticket overviews showed entries for ticket attributes marked as invalid.
- - 2026-06-12 Fixed: Missing translation in AdminTranslation screen. Thanks to @urbalazs (Balázs Úr) [PR#800](https://github.com/znuny/Znuny/pull/800).
+ - 2026-06-12 Fixed: Missing translation in AdminTranslation screen. Thanks to @urbalazs (Balázs Úr) [PR#800](https://github.com/buzzdesk/BuzzDesk/pull/800).
  - 2026-06-04 Fixed: Search via search toolbar cannot be executed with mouse click.
  - 2026-06-03 Added: Extended generic interface invoker configuration by configurable fields (per invoker) that will be omitted and/or encoded as Base64.
  - 2026-06-01 Fixed: Notification about changed system configuration in dialog AdminSystemConfiguration.
  - 2026-06-01 Fixed: Attachments can no longer be assigned to Snippet templates in AdminTemplateAttachment.
- - 2026-06-01 Fixed: Copy ticket number icon missing when Ticket::Hook is customized. Thanks to @mamojdick for reporting the issue. [#805](https://github.com/znuny/Znuny/issues/805)
+ - 2026-06-01 Fixed: Copy ticket number icon missing when Ticket::Hook is customized. Thanks to @mamojdick for reporting the issue. [#805](https://github.com/buzzdesk/BuzzDesk/issues/805)
  - 2026-05-30 Fixed: Web service notification recipient payloads could include sensitive password fields.
  - 2026-05-30 Added: Confirmation if database entries of packages are to be deleted on uninstallation.
  - 2026-05-28 Added: Agent and customer error pages now show configurable link for next action.
@@ -66,32 +66,32 @@
  - 2026-05-19 Fixed: Deployment of custom translations during migration.
  - 2026-05-19 Fixed: Default RTE label "Rich Text Editor" is shown in some dialogs additionally to the intended field label.
  - 2026-05-08 Added: Missing primary key for database table pm_process_preferences.
- - 2026-05-06 Fixed: Use of char O instead of digit 0 in hexcolor. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) for reporting the issue. [#790](https://github.com/znuny/Znuny/issues/790)
- - 2026-05-05 Fixed: Missing whitespace between HTML attributes results in invalid markup. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) for reporting the issue. [#792](https://github.com/znuny/Znuny/issues/792)
+ - 2026-05-06 Fixed: Use of char O instead of digit 0 in hexcolor. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) for reporting the issue. [#790](https://github.com/buzzdesk/BuzzDesk/issues/790)
+ - 2026-05-05 Fixed: Missing whitespace between HTML attributes results in invalid markup. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) for reporting the issue. [#792](https://github.com/buzzdesk/BuzzDesk/issues/792)
  - 2026-05-04 Changed Name of User with ID 1.
  - 2026-05-01 CVE-2025-59490: Follow-up fix for scrambled script tags.
- - 2026-04-30 Fixed: Security option for sending mails cannot be removed manually in compose dialog when queue has a default signing key configured. Thanks for reporting to @LSI-BassdScho. [#766](https://github.com/znuny/Znuny/issues/766).
- - 2026-04-30 Added: Extend Calendar::GetTextColor for RGBA hex and fix #RGB blue parsing. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) for reporting the issue. [#786](https://github.com/znuny/Znuny/issues/786)
- - 2026-04-30 Removed IIS 6. Znuny does not officially support IIS 6.0.
+ - 2026-04-30 Fixed: Security option for sending mails cannot be removed manually in compose dialog when queue has a default signing key configured. Thanks for reporting to @LSI-BassdScho. [#766](https://github.com/buzzdesk/BuzzDesk/issues/766).
+ - 2026-04-30 Added: Extend Calendar::GetTextColor for RGBA hex and fix #RGB blue parsing. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) for reporting the issue. [#786](https://github.com/buzzdesk/BuzzDesk/issues/786)
+ - 2026-04-30 Removed IIS 6. BuzzDesk does not officially support IIS 6.0.
  - 2026-04-30 Fixed: Archiving tickets removes flags for mentions and "seen".
  - 2026-04-21 Security: Fixed: XSS via JavaScript in URL parameters in communication log admin view.
  - 2026-03-25 Security: Fixed: XSS in user preferences DB.
 
 # 7.3.2 2026-04-29
- - 2026-04-22 Added: EmailSecurity section from Article to GenericInterface. Thanks to @DonMarlowne. [PR#612](https://github.com/znuny/Znuny/pull/612)
+ - 2026-04-22 Added: EmailSecurity section from Article to GenericInterface. Thanks to @DonMarlowne. [PR#612](https://github.com/buzzdesk/BuzzDesk/pull/612)
  - 2026-04-21 Fixed: Process management: Field help tooltip not fully visible for long descriptions.
- - 2026-04-21 Changed: Renamed system configuration definition for Daemon::Log::RotationType to Znuny.
+ - 2026-04-21 Changed: Renamed system configuration definition for Daemon::Log::RotationType to BuzzDesk.
  - 2026-04-15 Fixed: Field order in "ticket data" card.
  - 2026-04-13 Changed: Ticket list views for "escalation", "locked", "mention", "owner", "responsible", "status" and "watch" now each have a config option TicketSearchWithAdminUser to decide if the tickets will be searched with admin user or the logged in user.
  - 2026-04-13 Fixed: Link text does not fit button size in dialog AdminGenericInterfaceTransportHTTPREST.
- - 2026-04-10 Fixed: Sorting in ticket overview modes "Medium" and "Preview" throws an error. Thanks for reporting to @przemekrzyzanski-cmyk. [#779](https://github.com/znuny/Znuny/issues/779)
+ - 2026-04-10 Fixed: Sorting in ticket overview modes "Medium" and "Preview" throws an error. Thanks for reporting to @przemekrzyzanski-cmyk. [#779](https://github.com/buzzdesk/BuzzDesk/issues/779)
  - 2026-04-10 PostMaster/Filter/ExternalTicketNumberRecognition: Added support of the SysConfig setting “Ticket::SubjectFormat”.
- - 2026-04-08 Fixed: Dashboard queue column filter offers inaccessible queues. Thanks to @BuilderNSV for reporting the issue. [#603](https://github.com/znuny/Znuny/issues/603)
- - 2026-04-02 Fixed: StandardTemplates are not usable in AgentTicketEmailOutbound, AgentTicketPhoneOutbound and AgentTicketPhoneInbound (TicketPhoneCommon). Thanks for reporting to @AVONON-DST (Dennis) [#776](https://github.com/znuny/Znuny/issues/776).
+ - 2026-04-08 Fixed: Dashboard queue column filter offers inaccessible queues. Thanks to @BuilderNSV for reporting the issue. [#603](https://github.com/buzzdesk/BuzzDesk/issues/603)
+ - 2026-04-02 Fixed: StandardTemplates are not usable in AgentTicketEmailOutbound, AgentTicketPhoneOutbound and AgentTicketPhoneInbound (TicketPhoneCommon). Thanks for reporting to @AVONON-DST (Dennis) [#776](https://github.com/buzzdesk/BuzzDesk/issues/776).
  - 2026-04-02 Changed: Log level of "missing user" message in HTTP basic auth.
  - 2026-04-02 Added: A link to CUIC to edit customer user `AgentCustomerUserInformationCenter::MainMenu###010-EditCustomerUser`.
  - 2026-04-02 Fixed: Visibility of dynamic fields in some views.
- - 2026-04-01 Fixed: Broken File list for non-installed packages. Thanks for reporting to @urbalazs (Balázs Úr) [#771](https://github.com/znuny/Znuny/issues/771).
+ - 2026-04-01 Fixed: Broken File list for non-installed packages. Thanks for reporting to @urbalazs (Balázs Úr) [#771](https://github.com/buzzdesk/BuzzDesk/issues/771).
  - 2026-03-31 Fixed: Template selection in agent ticket details view (AgentTicketZoom) does not open when clicking "Reply" or "Reply All".
  - 2026-03-31 Changed: AgentTicketMerge: Card "Inform Sender" will initially be shown collapsed and disabled. Will be enabled automatically when user expands the card.
  - 2026-03-31 Fixed: Missing email security options in dialog for new email ticket (AgentTicketEmail).
@@ -106,10 +106,10 @@
  - 2026-03-19 Fixed: Form submit not being triggered when pressing Enter after entering the new draft's title.
  - 2026-03-18 Fixed: Misleading popup message when opening more than one ticket from overviews by using a shortcut to open it in a new tab/window.
  - 2026-03-18 Fixed: Issue with invisible ticket pagination count when there is only one page.
- - 2026-03-17 Changed mentions feature to work only if symbol before trigger symbol does not exist or is a space character - mostly to prevent displaying selection options while typing e-mail address. Thanks for reporting to @Dherlou. [#738](https://github.com/znuny/Znuny/issues/738).
- - 2026-03-09 Added Znuny XSLT helper and update mappings to use it.
+ - 2026-03-17 Changed mentions feature to work only if symbol before trigger symbol does not exist or is a space character - mostly to prevent displaying selection options while typing e-mail address. Thanks for reporting to @Dherlou. [#738](https://github.com/buzzdesk/BuzzDesk/issues/738).
+ - 2026-03-09 Added BuzzDesk XSLT helper and update mappings to use it.
  - 2026-03-06 Fixed: Text in the dropdown menu of the dashboard is overlaid by other text in mobile mode.
- - 2026-03-05 Integrated package Znuny-AdditionalTicketAttributeSelection.
+ - 2026-03-05 Integrated package BuzzDesk-AdditionalTicketAttributeSelection.
  - 2026-02-26 Changed: Reply function in agent ticket compose dialog now is not available anymore if the article is internal and was created by an agent or if the article was created by the system.
  - 2026-02-26 Fixed: Missing locale sensitivity in VacationDay config type.
  - 2026-02-24 Added Sender column support for dashboard ticket widgets.
@@ -117,42 +117,42 @@
  - 2026-02-18 Improved commandline parameter parsing in Admin::Article::StorageSwitch console command.
  - 2026-02-17 Added parameter FormID to AJAX requests of autocompletion modules (needed for inserting FAQ entries with inline images into RTE via autocompletion).
  - 2026-02-11 Fixed: Issue with sorting dropdown elements when setting Ticket::Frontend::AccountTimeType is set to Dropdown.
- - 2026-02-10 Fixed: Console command Admin::Group::UserLink and Admin::Group::RoleLink with inconsistent available permissions. Thanks for reporting to @BuilderNSV. [#756](https://github.com/znuny/Znuny/issues/756).
+ - 2026-02-10 Fixed: Console command Admin::Group::UserLink and Admin::Group::RoleLink with inconsistent available permissions. Thanks for reporting to @BuilderNSV. [#756](https://github.com/buzzdesk/BuzzDesk/issues/756).
  - 2026-02-10 Fixed: Sender address for process tickets is not assigned properly in CustomerInterface.
  - 2026-02-09 Fixed: The attachment dialog displays a preview for non-presentable items. Removed application/octet-stream.
  - 2026-02-06 Added AgentSession module to store UserClosedMessages in current UserSession (AuthSession). This allows previously defined keys to be set in the session.
  - 2026-02-02 Fixed: Restored breadcrumb rendering on the AdminTicketAttributeRelations Edit and Add views.
- - 2026-02-02 Fixed: SLA cache now clears after service assignments change so data stays current. Thanks to @dkmonaghan for reporting [#643](https://github.com/znuny/Znuny/issues/643).
+ - 2026-02-02 Fixed: SLA cache now clears after service assignments change so data stays current. Thanks to @dkmonaghan for reporting [#643](https://github.com/buzzdesk/BuzzDesk/issues/643).
  - 2026-01-26 Fixed issues after GUI redesign: Added widget functions to AgentTicketActionCommon. Fixed unlock notification after GUI redesign. Added UndoClosePopup class. Change to "Unlock and close popup" button.
- - 2026-01-23 Fixed: Znuny re-directs after login to default view even if there is specified ExternalURL parameter with the Action encoded in the link.
+ - 2026-01-23 Fixed: BuzzDesk re-directs after login to default view even if there is specified ExternalURL parameter with the Action encoded in the link.
  - 2026-01-23 Added preview and download function to AttachmentList.
  - 2026-01-23 Improved handling of read-only fields for the backend of CustomerUser::DB and CustomerCompany::DB.
- - 2026-01-23 System configuration: Added `NotificationEmailDefaultTemplate` option. Thanks to Paweł Bogusławski (@pboguslawski) [PR#382](https://github.com/znuny/Znuny/pull/382).
+ - 2026-01-23 System configuration: Added `NotificationEmailDefaultTemplate` option. Thanks to Paweł Bogusławski (@pboguslawski) [PR#382](https://github.com/buzzdesk/BuzzDesk/pull/382).
  - 2026-01-23 Increased length of the password column for users, customer_user, and mail_account.
  - 2026-01-22 Fixed: Process ticket submission validates Responsible field client-side.
  - 2026-01-22 Fixed: URL parameters were not used to pre-fill new email and phone ticket forms.
- - 2026-01-21 Fixed: The tags <OTRS_TICKET> and <OTRS_MERGE_TO_TICKET> can only be used once in the text of the configuration Ticket::Frontend::AutomaticMergeText. The 'global' flag is missing. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#753](https://github.com/znuny/Znuny/pull/753)
+ - 2026-01-21 Fixed: The tags <OTRS_TICKET> and <OTRS_MERGE_TO_TICKET> can only be used once in the text of the configuration Ticket::Frontend::AutomaticMergeText. The 'global' flag is missing. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#753](https://github.com/buzzdesk/BuzzDesk/pull/753)
  - 2026-01-19 Fixed: Customer interface uses layout "PopupClose" function that loads agent interface header and footer which results in referencing features that are not supported - such as popup profiles. Added CustomerPopupClose function.
  - 2026-01-19 Fixed: Missing translation for 'last-search' in ToolBar/TicketSearchProfile.
  - 2026-01-13 Fixed: Date check regex for config option ICSParser::StartDate actually matches YYYYMMDD.
  - 2025-12-19 Fixed: Dynamic field labels are capitalized via CSS in AgentTicketProcess.
  - 2025-12-16 Fixed: In certain settings, only greyscale can be selected in the color picker. Updated thirdparty lib jscolor to 2.5.2. Alters database table calendar and article_color size of column color to 25.
- - 2025-12-15 Sector Nord AG: Fixed: Wrong Subaction for TranslationDeployment in AdminTranslation. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#741](https://github.com/znuny/Znuny/pull/741).
- - 2025-12-12 Fixed typo in '--regenerate' command option 'Dev/Tools/TranslationsUpdate'. Thanks to @urbalazs (Balázs Úr) [PR#751](https://github.com/znuny/Znuny/pull/751).
- - 2025-12-12 Sector Nord AG: ArticleRender - Added title to ArticleFields for MIMEBase. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#577](https://github.com/znuny/Znuny/pull/577).
+ - 2025-12-15 Sector Nord AG: Fixed: Wrong Subaction for TranslationDeployment in AdminTranslation. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#741](https://github.com/buzzdesk/BuzzDesk/pull/741).
+ - 2025-12-12 Fixed typo in '--regenerate' command option 'Dev/Tools/TranslationsUpdate'. Thanks to @urbalazs (Balázs Úr) [PR#751](https://github.com/buzzdesk/BuzzDesk/pull/751).
+ - 2025-12-12 Sector Nord AG: ArticleRender - Added title to ArticleFields for MIMEBase. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#577](https://github.com/buzzdesk/BuzzDesk/pull/577).
  - 2025-12-11 Added support for SAML authentication.
  - 2025-12-10 CVE-2025-59393: Support bundle generator: Improved password masking in configuration dumps using ValueType metadata.
  - 2025-12-09 Fixed: Issue with cache being applied incorrectly to "My last changed tickets" widget.
  - 2025-12-09 Migration refactoring: Added new Component 'FollowUp'. Migration order: CheckPreviousRequirement, Run and FollowUp. Improved Steps for CheckPreviousRequirement. Removed empty CheckPreviousRequirement and Run functions.
- - 2025-12-09 Integrated package Znuny-AgentTicketActionCommonCustomer.
+ - 2025-12-09 Integrated package BuzzDesk-AgentTicketActionCommonCustomer.
  - 2025-12-09 Fixed: Article overview text difficult to read in Dark Skin due to double filter inversion.
  - 2025-12-08 Console command 'Admin::Package::RepositoryList' now indicates which of the displayed packages are installed.
- - 2025-12-01 Integrated package Znuny-MultiSendmail.
+ - 2025-12-01 Integrated package BuzzDesk-MultiSendmail.
  - 2025-11-28 Added new GUI-Redesign. Thanks to Tim Binder stbt.de.
  - 2025-11-26 Fixed: MariaDB/MySQL throwing error regarding foreign keys when converting character set of tables to UTF8MB4.
  - 2025-11-25 CVE-2025-52204: Fixed XSS issue with session ID in URL parameter. Thanks to Miguel P. for reporting this issue.
  - 2025-11-25 AdminSystemConfiguration: Added "Quick Deploy" in SysConfig to apply pending changes faster.
- - 2025-11-21 Fixed: Wrong description text in personal preference. Thanks for reporting to @BuilderNSV. [#712](https://github.com/znuny/Znuny/issues/712).
+ - 2025-11-21 Fixed: Wrong description text in personal preference. Thanks for reporting to @BuilderNSV. [#712](https://github.com/buzzdesk/BuzzDesk/issues/712).
  - 2025-11-21 Fixed: Resource module displays deactivated Agents.
  - 2025-11-19 Fixed: Checkbox to optionally create an article in AgentTicketActionCommon views does not collapse article widget after enabling it.
  - 2025-11-17 Fixed: Added rule to fix Firefox browser that does not wrap overflow text by default while displaying article content in AgentTicketZoom.
@@ -160,12 +160,12 @@
  - 2025-11-13 Fixed: Unexpected rate limit is being applied when config option SendmailModule::RateLimit is disabled.
  - 2025-11-12 Sped up UUID creation for DBCRUD modules.
  - 2025-11-07 Added configurable filter for ticket search to ticket merge dialog (AgentTicketMerge).
- - 2025-11-06 Fixed: CustomerShortcutIconCustom config not working. Thanks to Daylton Rodrigues (@dayltonr) for reporting. [#737](https://github.com/znuny/Znuny/issues/737).
- - 2025-11-06 Fixed: Images in articles are inverted in Dark Skin. Thanks for reporting to @Vocta1310 [#724](https://github.com/znuny/Znuny/issues/724).
+ - 2025-11-06 Fixed: CustomerShortcutIconCustom config not working. Thanks to Daylton Rodrigues (@dayltonr) for reporting. [#737](https://github.com/buzzdesk/BuzzDesk/issues/737).
+ - 2025-11-06 Fixed: Images in articles are inverted in Dark Skin. Thanks for reporting to @Vocta1310 [#724](https://github.com/buzzdesk/BuzzDesk/issues/724).
  - 2025-11-05 Number of stored activities per user is now limited for performance reasons. User activities will now be loaded asynchronously.
  - 2025-11-05 Fixed: No styles when printing process in the admin interface.
  - 2025-11-05 Fixed: Customer ticket details screen now redirects to overview of tickets if a ticket is accessed without permissions.
- - 2025-11-05 Integrated package Znuny-CopyTicketNumber.
+ - 2025-11-05 Integrated package BuzzDesk-CopyTicketNumber.
  - 2025-10-31 Fixed: The link to a specific article in a ticket does not work if users have different settings for “Show all articles”. Article links now handle both display modes: 'Show one article' and 'Show all articles'.
  - 2025-10-31 Fixed: ProcessPrint. When printing the process, it produces empty results.
  - 2025-10-29 Fixed: Ticket age was displayed in seconds (instead of human readable) in agent ticket zoom (when ticket information widget was configured as asynchronous) and ticket list (view mode L).
@@ -175,19 +175,19 @@
  - 2025-10-21 Fixed: Issue with "Title" field on customer login screen where it wasn't set for new customer user at all.
  - 2025-10-21 Added wildcard `*` support to system configuration setting search.
  - 2025-10-21 Fixed: Console commands are not loaded/listed if they are located in the /Custom directory.
- - 2025-10-20 Fixed: Removed unnecessary synchronization of hidden text area with RTE instance due to performance issues. Thanks for reporting to @PrimeYeti. [#721](https://github.com/znuny/Znuny/issues/721).
+ - 2025-10-20 Fixed: Removed unnecessary synchronization of hidden text area with RTE instance due to performance issues. Thanks for reporting to @PrimeYeti. [#721](https://github.com/buzzdesk/BuzzDesk/issues/721).
  - 2025-10-14 Added new ToolBarModule 161-Ticket::AgentTicketProcessCategory.
- - 2025-10-02 PostMaster: Assign multiselect dynamic fields. Thanks to Christian Ullrich (@chrullrich). [PR#699](https://github.com/znuny/Znuny/pull/699)
- - 2025-10-02 Sector Nord AG: Fixed: Web Channel Actions. Thanks to @ArthurRitscher (Arthur Ritscher Sector Nord AG) [PR#717](https://github.com/znuny/Znuny/pull/717). Thanks for reporting to @MadsDane [#729](https://github.com/znuny/Znuny/issues/729).
+ - 2025-10-02 PostMaster: Assign multiselect dynamic fields. Thanks to Christian Ullrich (@chrullrich). [PR#699](https://github.com/buzzdesk/BuzzDesk/pull/699)
+ - 2025-10-02 Sector Nord AG: Fixed: Web Channel Actions. Thanks to @ArthurRitscher (Arthur Ritscher Sector Nord AG) [PR#717](https://github.com/buzzdesk/BuzzDesk/pull/717). Thanks for reporting to @MadsDane [#729](https://github.com/buzzdesk/BuzzDesk/issues/729).
  - 2025-10-01 Fixed: Improved error logging when fetching emails.
  - 2025-10-01 Fixed: RichTextEditor uses wrong Instance in Core.Agent.TicketAction.js.
  - 2025-09-29 CVE-2025-59490: Fixed: XSS issue with unfiltered URL parameters given to backend.
  - 2025-09-29 Fixed: Source view for richtext editor has been deactivated in customer frontend due to possibility to inject arbitrary code.
  - 2025-09-25 Fixed: For security reasons, detailed error messages are now not shown anymore in the GUI.
  - 2025-09-25 Fixed: Queue selection in customer ticket dialog now cannot be set empty anymore.
- - 2025-09-25 Sector Nord AG: Fixed misplaced attachment tooltip. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#692](https://github.com/znuny/Znuny/pull/692).
- - 2025-09-25 SectorNord AG: Fixed: Problem filtering by Owner in the ticket view. Thanks for reporting to @giovanna-bolsoni [#698](https://github.com/znuny/Znuny/issues/698). Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#703](https://github.com/znuny/Znuny/pull/703).
- - 2025-09-25 Added 'Prio' Param to AgentTicketZoom MenuModules for individual sorting. Thanks for reporting and fixing to @itweserems [#646](https://github.com/znuny/Znuny/issues/646) [PR#647](https://github.com/znuny/Znuny/pull/647).
+ - 2025-09-25 Sector Nord AG: Fixed misplaced attachment tooltip. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#692](https://github.com/buzzdesk/BuzzDesk/pull/692).
+ - 2025-09-25 SectorNord AG: Fixed: Problem filtering by Owner in the ticket view. Thanks for reporting to @giovanna-bolsoni [#698](https://github.com/buzzdesk/BuzzDesk/issues/698). Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#703](https://github.com/buzzdesk/BuzzDesk/pull/703).
+ - 2025-09-25 Added 'Prio' Param to AgentTicketZoom MenuModules for individual sorting. Thanks for reporting and fixing to @itweserems [#646](https://github.com/buzzdesk/BuzzDesk/issues/646) [PR#647](https://github.com/buzzdesk/BuzzDesk/pull/647).
  - 2025-09-23 Fixed: Improved content security policy HTTP header.
  - 2025-09-15 Fixed: Only able to delete Signatures, Salutations and Auto Responses after accepting popup.
  - 2025-06-30 Improved date formatting on language level.
@@ -202,8 +202,8 @@
  - 2025-09-05 Fixed: Double Breadcrumb in SysConfig.
  - 2025-09-05 Fixed: Deleting a valid Webservice should not be possible.
  - 2025-09-03 Fixed: Installer was not able to check email account settings.
- - 2025-09-01 Sector Nord AG: Fixed: Duplicate favorites in AdminMenu. Thanks to Lukas Bröring (@LuBroering). [PR#705](https://github.com/znuny/Znuny/pull/705)
- - 2025-09-01 Sector Nord AG: Fixed: Enter/Ctrl+Enter leads to saving the draft instead of submitting the form. Thanks to Lukas Bröring (@LuBroering). [PR#704](https://github.com/znuny/Znuny/pull/704)
+ - 2025-09-01 Sector Nord AG: Fixed: Duplicate favorites in AdminMenu. Thanks to Lukas Bröring (@LuBroering). [PR#705](https://github.com/buzzdesk/BuzzDesk/pull/705)
+ - 2025-09-01 Sector Nord AG: Fixed: Enter/Ctrl+Enter leads to saving the draft instead of submitting the form. Thanks to Lukas Bröring (@LuBroering). [PR#704](https://github.com/buzzdesk/BuzzDesk/pull/704)
  - 2025-08-29 AdminSystemConfiguration: Current value of the settings key has been added to the HTML title attribute in the settings list when hovering over it.
  - 2025-08-28 Fixed: Table article_color color size to small if system is migrated.
  - 2025-08-26 Fixed: Body of selected plain-text article not visible in customer ticket zoom.
@@ -216,21 +216,21 @@
  - 2025-08-13 CVE-2025-3573: Updated jquery-validate to 1.21.0.
  - 2025-08-18 Fixed: Calendar bug in Kernel/System/Calendar/Plugin.pm uninitialized value and fixed module check for calendar plugin.
  - 2025-08-12 Disabled CKEditor5 "FullPage" plugin due to causing problems with "empty" text.
- - 2025-08-11 Fixed: Popup profiles with percentage values for width and height not working correctly. Thanks for reporting to Tim Püttmanns (maxence). [#634](https://github.com/znuny/Znuny/issues/634)
+ - 2025-08-11 Fixed: Popup profiles with percentage values for width and height not working correctly. Thanks for reporting to Tim Püttmanns (maxence). [#634](https://github.com/buzzdesk/BuzzDesk/issues/634)
  - 2025-08-11 Fixed: Changed "Blockquote" CKEditor feature toolbar icon to be rendered also when enhanced mode of editor is disabled.
- - 2025-08-11 Fixed: Date/time of state change in AgentTicketBulk will now only be checked if a (pending) state has been selected instead of logging an error. Also fixed similar check for "watch ticket" selection. Thanks for reporting to @BuilderNSV. [#685](https://github.com/znuny/Znuny/issues/685)
- - 2025-08-11 Fixed: Generic interface invoker Ticket::Generic now always base-64-decodes article attachment content of the response. Thanks for reporting to @lis975. [#694](https://github.com/znuny/Znuny/issues/694)
+ - 2025-08-11 Fixed: Date/time of state change in AgentTicketBulk will now only be checked if a (pending) state has been selected instead of logging an error. Also fixed similar check for "watch ticket" selection. Thanks for reporting to @BuilderNSV. [#685](https://github.com/buzzdesk/BuzzDesk/issues/685)
+ - 2025-08-11 Fixed: Generic interface invoker Ticket::Generic now always base-64-decodes article attachment content of the response. Thanks for reporting to @lis975. [#694](https://github.com/buzzdesk/BuzzDesk/issues/694)
  - 2025-07-25 Fixed: Order of toolbar icons for mentioned tickets (new and total) differed from other toolbar icons.
  - 2025-07-25 Fixed: Wrong priority of ticket owner toolbar could lead to the icon(s) not being shown.
- - 2025-07-24 Fixed: An archived ticket is shown in mentions list (AgentTicketMentionView). Archived tickets should not be counted in the mention icon, nor be visible in AgentTicketMentionView. Thanks for reporting to @Fainsy. [#620](https://github.com/znuny/Znuny/issues/620)
- - 2025-07-23 Fixed: Installer testing the database connection with wrong credentials. Thanks to Pedro Buffon for reporting the issue. [#695](https://github.com/znuny/Znuny/issues/695)
+ - 2025-07-24 Fixed: An archived ticket is shown in mentions list (AgentTicketMentionView). Archived tickets should not be counted in the mention icon, nor be visible in AgentTicketMentionView. Thanks for reporting to @Fainsy. [#620](https://github.com/buzzdesk/BuzzDesk/issues/620)
+ - 2025-07-23 Fixed: Installer testing the database connection with wrong credentials. Thanks to Pedro Buffon for reporting the issue. [#695](https://github.com/buzzdesk/BuzzDesk/issues/695)
  - 2025-07-23 Added CodeMirror 6 as editor for XSLT mappings in web service configurations.
  - 2025-07-21 Fixed: Users mentioned in quoted text will not be notified again.
  - 2025-07-21 Added missing SysConfig settings `SortBy::Default` and `Order::Default`.
- - 2025-07-17 Fixed: The “btn-cancel-ghost” class is duplicated for the button in the ‘Article filter’ dialogue box. Thanks for reporting to @BuilderNSV. [#614](https://github.com/znuny/Znuny/issues/614)
- - 2025-07-14 Fixed: ACLs of ticket attribute relations could lead to empty selection fields. Thanks for reporting to @lis975. [#675](https://github.com/znuny/Znuny/issues/675)
- - 2025-07-14 Sector Nord AG: Allow table row highlighting for even rows in all DataTables. Thanks to Ziggy Trotter (@ZTrotter). [PR#683](https://github.com/znuny/Znuny/pull/683)
- - 2025-07-14 Fixed: The ticket menu is not available if only one ticket with activated bulk function has been selected in the small mode of the ticket view. Thanks for reporting to @BuilderNSV. [#687](https://github.com/znuny/Znuny/issues/687)
+ - 2025-07-17 Fixed: The “btn-cancel-ghost” class is duplicated for the button in the ‘Article filter’ dialogue box. Thanks for reporting to @BuilderNSV. [#614](https://github.com/buzzdesk/BuzzDesk/issues/614)
+ - 2025-07-14 Fixed: ACLs of ticket attribute relations could lead to empty selection fields. Thanks for reporting to @lis975. [#675](https://github.com/buzzdesk/BuzzDesk/issues/675)
+ - 2025-07-14 Sector Nord AG: Allow table row highlighting for even rows in all DataTables. Thanks to Ziggy Trotter (@ZTrotter). [PR#683](https://github.com/buzzdesk/BuzzDesk/pull/683)
+ - 2025-07-14 Fixed: The ticket menu is not available if only one ticket with activated bulk function has been selected in the small mode of the ticket view. Thanks for reporting to @BuilderNSV. [#687](https://github.com/buzzdesk/BuzzDesk/issues/687)
  - 2025-07-14 Fixed: Avatar area in agent preferences should disappear if no Avatar Engine is in use.
  - 2025-07-07 Added new views ProcessShop (AgentTicketProcessCategory/CustomerTicketProcessCategory) - The possible processes are arranged in tiles and divided by categories. Category, LinkTarget and Icon can now be defined per process.
  - 2025-07-04 Upgraded CKEditor to version 5.0.
@@ -239,38 +239,38 @@
  - 2025-07-02 Added import/export/copy function for postmaster filters and generic agents.
  - 2025-07-02 Fixed: CustomerProcessTicket is not fully styled.
  - 2025-06-30 Added support for process preferences.
- - 2025-06-24 Fixed: Wrong otrs.Daemon.pl exit code after valid termination. Thanks to Paweł Bogusławski (@pboguslawski). [#401](https://github.com/znuny/Znuny/pull/401)
- - 2025-06-24 Updated DatePicker - Keep icon displayed but not clickable for disabled DatePicker. Thanks for reporting to @BuilderNSV. [#670](https://github.com/znuny/Znuny/issues/670)
- - 2025-06-23 Added config option SendmailModule::Timeout to configure a timeout for mail server connections. Thanks to Paweł Bogusławski (@pboguslawski). [PR#677](https://github.com/znuny/Znuny/pull/677)
- - 2025-06-23 Sector Nord AG: Update entry for AgentPreferences::AJAXUpdate::AllowedKeys. Thanks to Lukas Bröring (@LuBroering). [PR#688](https://github.com/znuny/Znuny/pull/688)
+ - 2025-06-24 Fixed: Wrong otrs.Daemon.pl exit code after valid termination. Thanks to Paweł Bogusławski (@pboguslawski). [#401](https://github.com/buzzdesk/BuzzDesk/pull/401)
+ - 2025-06-24 Updated DatePicker - Keep icon displayed but not clickable for disabled DatePicker. Thanks for reporting to @BuilderNSV. [#670](https://github.com/buzzdesk/BuzzDesk/issues/670)
+ - 2025-06-23 Added config option SendmailModule::Timeout to configure a timeout for mail server connections. Thanks to Paweł Bogusławski (@pboguslawski). [PR#677](https://github.com/buzzdesk/BuzzDesk/pull/677)
+ - 2025-06-23 Sector Nord AG: Update entry for AgentPreferences::AJAXUpdate::AllowedKeys. Thanks to Lukas Bröring (@LuBroering). [PR#688](https://github.com/buzzdesk/BuzzDesk/pull/688)
  - 2025-06-23 Added and updated FormElements templates.
  - 2025-06-23 Added Download and Preview function to Kernel/Modules/AJAXAttachment.pm.
  - 2025-06-23 Fixed: The agent toolbar does not remain expanded.
- - 2025-06-17 Integrated package Znuny-MSGraphMail.
+ - 2025-06-17 Integrated package BuzzDesk-MSGraphMail.
  - 2025-06-17 Fixed AgentTicketBulk MarkTicketsAs selection- MarkTicketsAsSeen and MarkTicketsAsUnseen can be set simultaneously. This makes handling complicated and unnecessarily confusing.
  - 2025-06-17 Fixed: Added missing parameter TwoFactorToken in Kernel::GenericInterface::Operation::Session::Common->CreateSessionID() to Perldoc.
- - 2025-06-17 Improve error message when exiting due to PackageIsDownloadable = 0. Thanks for reporting to Darko (@dpalic). [#684](https://github.com/znuny/Znuny/issues/684)
+ - 2025-06-17 Improve error message when exiting due to PackageIsDownloadable = 0. Thanks for reporting to Darko (@dpalic). [#684](https://github.com/buzzdesk/BuzzDesk/issues/684)
  - 2025-06-14 Added new communication channel Web.
  - 2025-06-13 Renamed the perl module Kernel::Modules::AjaxAttachment to Kernel::Modules::AJAXAttachment to follow the coding standards for naming modules.
- - 2025-06-06 Fixed: Some HTTP headers have a semicolon at the end of the value. Thanks to Paweł Bogusławski (@pboguslawski) for reporting. [#653](https://github.com/znuny/Znuny/issues/653)
- - 2025-06-06 Fixed: TLD of email address in S/MIME certificates is limited in length to two to four characters. Thanks for reporting to @dsm-museum-it. [#674](https://github.com/znuny/Znuny/issues/674)
- - 2025-06-05 Integrated package Znuny-SMTPRateLimit. Adds configuration options 'SendmailModule::RateLimit' and 'SendmailModule::RateLimitPerSenderAddress' to limit amount of sent emails per batch.
+ - 2025-06-06 Fixed: Some HTTP headers have a semicolon at the end of the value. Thanks to Paweł Bogusławski (@pboguslawski) for reporting. [#653](https://github.com/buzzdesk/BuzzDesk/issues/653)
+ - 2025-06-06 Fixed: TLD of email address in S/MIME certificates is limited in length to two to four characters. Thanks for reporting to @dsm-museum-it. [#674](https://github.com/buzzdesk/BuzzDesk/issues/674)
+ - 2025-06-05 Integrated package BuzzDesk-SMTPRateLimit. Adds configuration options 'SendmailModule::RateLimit' and 'SendmailModule::RateLimitPerSenderAddress' to limit amount of sent emails per batch.
  - 2025-06-05 Fixed: Added missing required parameter UserType in Kernel::System::AuthSession->() to Perldoc. Added optional parameter SessionSource to Perldoc.
  - 2025-05-27 Added AgentTicketNoteToLinkedTicket to ACLKeysLevel3::Actions###100-Default.
  - 2025-05-26 Added missing ProcessManagement::TransitionAction::DefaultParameters for TicketCreate, TicketArticleCreate, and ArticleSend.
  - 2025-05-26 Added AgentTicketMarkSeenUnseen to ACLKeysLevel3::Actions###100-Default.
- - 2025-05-22 Fixed: Generic interface operation Session::SessionRemove requires a user login instead of just a valid session ID. [#638](https://github.com/znuny/Znuny/issues/638).
- - 2025-05-21 Fixed: AdminACL: Wrong fallback for ACLKeysLevel3::Actions variable. Thanks for reporting to Stefan Härter (@stefanhaerter). [#629](https://github.com/znuny/Znuny/issues/629)
- - 2025-05-21 Sector Nord AG: Added missing Action for AgentTicketMarkSeenUnseen in Ticket::Frontend::MenuModule. Thanks to Lukas Bröring (@LuBroering). [PR#654](https://github.com/znuny/Znuny/pull/654)
- - 2025-05-21 Integrated package Znuny-ArticleColors: Admin module to edit article colors directly in Znuny.
+ - 2025-05-22 Fixed: Generic interface operation Session::SessionRemove requires a user login instead of just a valid session ID. [#638](https://github.com/buzzdesk/BuzzDesk/issues/638).
+ - 2025-05-21 Fixed: AdminACL: Wrong fallback for ACLKeysLevel3::Actions variable. Thanks for reporting to Stefan Härter (@stefanhaerter). [#629](https://github.com/buzzdesk/BuzzDesk/issues/629)
+ - 2025-05-21 Sector Nord AG: Added missing Action for AgentTicketMarkSeenUnseen in Ticket::Frontend::MenuModule. Thanks to Lukas Bröring (@LuBroering). [PR#654](https://github.com/buzzdesk/BuzzDesk/pull/654)
+ - 2025-05-21 Integrated package BuzzDesk-ArticleColors: Admin module to edit article colors directly in BuzzDesk.
  - 2025-05-20 Fixed: Multiple spaces in templates not replaced correctly when using placeholders (e.g. OTRS_CUSTOMER_BODY).
- - 2025-05-19 Integrated package Znuny-Translations: Admin module to edit translations directly in Znuny.
+ - 2025-05-19 Integrated package BuzzDesk-Translations: Admin module to edit translations directly in BuzzDesk.
  - 2025-05-16 Process Management: Removed obsolete JS code in Core.Agent.TicketProcess.js and Core.Customer.TicketProcess.js.
  - 2025-05-14 Added convenience logging functions
- - 2025-05-12 Fixed: Dashboard widget filter 'all' not selected on click. [#665](https://github.com/znuny/Znuny/issues/665)
+ - 2025-05-12 Fixed: Dashboard widget filter 'all' not selected on click. [#665](https://github.com/buzzdesk/BuzzDesk/issues/665)
  - 2025-05-09 Fixed: Breadcrumb disappears in SystemConfiguration when SystemConfiguration/SettingsList is displayed via SettingNavigation.
- - 2025-05-09 Fixed: Incorrect path is used in apache conf files. Thanks for reporting to @BuilderNSV. [#664](https://github.com/znuny/Znuny/issues/664)
- - 2025-05-07 Integrated package Znuny-DynamicFieldAdminAutoConfig - Administration backend for dynamic fields without configuration.
+ - 2025-05-09 Fixed: Incorrect path is used in apache conf files. Thanks for reporting to @BuilderNSV. [#664](https://github.com/buzzdesk/BuzzDesk/issues/664)
+ - 2025-05-07 Integrated package BuzzDesk-DynamicFieldAdminAutoConfig - Administration backend for dynamic fields without configuration.
  - 2025-05-07 Added source (subroutine) and line to AdminLog / Log Object.
  - 2025-05-06 The console command Dev::TranslationUpdate can now remove unused strings from PO files.
  - 2025-05-06 Added DefaultPageShown setting to every DashboardBackend SysConfig that uses the module `Kernel::Output::HTML::Dashboard::TicketGeneric`. This allows the number of items shown per page to be defined and extended for each dashboard widget.
@@ -283,15 +283,15 @@
 
 # 7.1.7 2025-04-30
  - 2025-04-24 Fixed bug - Setting the password does not reset preferences UserLoginFailed and UserLastPwChangeTime.
- - 2025-04-16 Updated Net::IMAP::Simple to latest version from GitHub. Thanks to @dandanpena. [PR#155](https://github.com/znuny/Znuny/pull/155)
- - 2025-04-16 Fixed bug - $LayoutObject->BuildDateSelection() does not deactivate the DatePicker and DatePickerIcon if Disabled is 1. Thanks for reporting to @BuilderNSV. [#649](https://github.com/znuny/Znuny/issues/649)
- - 2025-04-16 Fixed bug - Page selector not available in mobile view. Thanks for reporting to @MIPMHannes. [#617](https://github.com/znuny/Znuny/issues/617)
+ - 2025-04-16 Updated Net::IMAP::Simple to latest version from GitHub. Thanks to @dandanpena. [PR#155](https://github.com/buzzdesk/BuzzDesk/pull/155)
+ - 2025-04-16 Fixed bug - $LayoutObject->BuildDateSelection() does not deactivate the DatePicker and DatePickerIcon if Disabled is 1. Thanks for reporting to @BuilderNSV. [#649](https://github.com/buzzdesk/BuzzDesk/issues/649)
+ - 2025-04-16 Fixed bug - Page selector not available in mobile view. Thanks for reporting to @MIPMHannes. [#617](https://github.com/buzzdesk/BuzzDesk/issues/617)
  - 2025-04-11 Added option CcAddressRegExp to postmaster filter ExternalTicketNumberRecognition.
  - 2025-04-10 Fixed bug - Color inversion in inline attachment with dark mode activated is not working.
  - 2025-04-04 Fixed bug - Incomplete error message in Stats.
  - 2025-04-02 Fixed bug - In AdminRoles comment display for roles is too short. Changed Truncation to 80.
  - 2025-03-28 Fixed 'ticket-locked' message and position. Change button size for 'Undo & close'.
- - 2025-03-28 Fixed memoverflow in CalendarEvents (TicketZoom).Thanks to @DonMarlowne. [PR#652](https://github.com/znuny/Znuny/pull/652)
+ - 2025-03-28 Fixed memoverflow in CalendarEvents (TicketZoom).Thanks to @DonMarlowne. [PR#652](https://github.com/buzzdesk/BuzzDesk/pull/652)
  - 2025-03-27 Added option ToAddressRegExp to postmaster filter ExternalTicketNumberRecognition.
  - 2025-03-27 Fixed bug - GUI Table thead width in Admin Area is much too big. Removed static width 100px for 'thead tr th'.
  - 2025-03-26 Added German message for ticket event notification "ticket email delivery failure".
@@ -321,73 +321,73 @@
  - 2025-02-13 Fixed ticket filter for new mentions.
 
 # 7.1.5 2025-02-13
- - 2025-02-13 Fixed content security policy HTTP header. Thanks for reporting to @nixahnung. [#641](https://github.com/znuny/Znuny/issues/641)
+ - 2025-02-13 Fixed content security policy HTTP header. Thanks for reporting to @nixahnung. [#641](https://github.com/buzzdesk/BuzzDesk/issues/641)
 
 # 7.1.4 2025-02-12
- - 2025-02-06 Added SortBy and SortOrder options to Znuny.Form.Input.Set to sort select field options by key or value.
+ - 2025-02-06 Added SortBy and SortOrder options to BuzzDesk.Form.Input.Set to sort select field options by key or value.
  - 2025-02-05 Fixed event check in ticket event module Kernel::System::Ticket::Event::TicketDynamicFieldDefault.
  - 2025-01-29 Added HTTP headers for more safety.
  - 2025-01-28 Fixed permission check in generic interface operation TicketUpdate.
  - 2025-01-27 Added user check to scripts/backup.pl and scripts/restore.pl to prevent these scripts from being executed with root permissions. Thanks to Diego Tellaroli for reporting this issue.
  - 2025-01-27 Added GetColumnMaxLengths function to DB Object and improved maxlength for customer id on AdminCustomerCompany and for user login on AdminCustomerUser.
  - 2025-01-22 Fixed uninitialized value bug. TicketZoom/Agent/MIMEBase.pm - Added special handling for 'undef' values in the arrayref $Event->{$Property}.
- - 2025-01-21 Fixed Bug - Problem when handling errors in the owner field in the activity dialog. Thanks to Daylton Rodrigues (@dayltonr) for reporting. [#627](https://github.com/znuny/Znuny/issues/627).
+ - 2025-01-21 Fixed Bug - Problem when handling errors in the owner field in the activity dialog. Thanks to Daylton Rodrigues (@dayltonr) for reporting. [#627](https://github.com/buzzdesk/BuzzDesk/issues/627).
  - 2025-01-16 Increased size of columns profile_key and profile_value of database table search_profile.
- - 2025-01-15 Sector Nord AG: Fixed module check for calendar plugin. Thanks to Sector Nord AG (@jsinagowitz). [PR#623](https://github.com/znuny/Znuny/pull/623)
+ - 2025-01-15 Sector Nord AG: Fixed module check for calendar plugin. Thanks to Sector Nord AG (@jsinagowitz). [PR#623](https://github.com/buzzdesk/BuzzDesk/pull/623)
  - 2025-01-14 Fixed setting of HTTP type attribute in cookie on agent and customer user login.
  - 2025-01-08 Added config option DynamicFields::Driver::BaseSelect::EnableHistoricalValues to enable/disable evaluation of historical values for dynamic field types based on BaseSelect.
  - 2024-12-23 Improved ACL checks in ticket overview modules.
  - 2024-12-17 Fixed time zone handling for cron events.
  - 2024-12-10 System configuration option SendmailEncodingForce is now a selection instead of a text field.
- - 2024-12-10 Fixed "From" and "To" not being expandable for an article in ticket zoom. Thanks to Oliver Freyermuth (@olifre) for reporting. [#605](https://github.com/znuny/Znuny/issues/605)
+ - 2024-12-10 Fixed "From" and "To" not being expandable for an article in ticket zoom. Thanks to Oliver Freyermuth (@olifre) for reporting. [#605](https://github.com/buzzdesk/BuzzDesk/issues/605)
  - 2024-12-09 Fixed multiple notifications being sent for empty process tickets (event NotificationNewTicket).
  - 2024-12-06 Fixed data evaluation in ICS calendar event.
  - 2024-12-02 Added Filter for Admin->Export DynamicFields.
  - 2024-11-28 Fixed Server Error, when Frontend::Template::GenerateBlockHooks###NAME has no valid data structure.
  - 2024-11-27 Fixed user cache being cleared for all users whenever a user logs in/out.
  - 2024-11-22 Added new system configuration option 'User::DefaultPreferences'. These preferences will automatically be set during user (agent) creation.
- - 2024-11-01 Fixed Bug - Added missing template toolkit translations. Translate the ticket state in PDF search result (AgentTicketSearch|CustomerTicketSearch). Thanks to @BuilderNSV for reporting the issue. [#615](https://github.com/znuny/Znuny/issues/615)
- - 2024-11-01 Sector Nord AG: Fixed uninitialized value in AdminSelectBox. Thanks to Sector Nord AG (@jsinagowitz). [PR#611](https://github.com/znuny/Znuny/pull/611)
- - 2024-11-01 Fixed link in INSTALL.md / UPDATING.md. Thanks to @Sidpatchy. [PR#589](https://github.com/znuny/Znuny/pull/589)
- - 2024-11-01 Added configurable InputFields::ModernizedSelection::MaxNumberOfOptions. Thanks to @itweserems. [PR#576](https://github.com/znuny/Znuny/pull/576)
- - 2024-10-31 Fixed Bug - Missing translation 'mark as seen'. Thanks to @LuBroering (Lukas Bröring SectorNord AG) for reporting the issue. [#613](https://github.com/znuny/Znuny/issues/613)
- - 2024-10-31 Fixed Bug - Missing translation 'mark as seen'. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) for reporting the issue. [#613](https://github.com/znuny/Znuny/issues/613)
+ - 2024-11-01 Fixed Bug - Added missing template toolkit translations. Translate the ticket state in PDF search result (AgentTicketSearch|CustomerTicketSearch). Thanks to @BuilderNSV for reporting the issue. [#615](https://github.com/buzzdesk/BuzzDesk/issues/615)
+ - 2024-11-01 Sector Nord AG: Fixed uninitialized value in AdminSelectBox. Thanks to Sector Nord AG (@jsinagowitz). [PR#611](https://github.com/buzzdesk/BuzzDesk/pull/611)
+ - 2024-11-01 Fixed link in INSTALL.md / UPDATING.md. Thanks to @Sidpatchy. [PR#589](https://github.com/buzzdesk/BuzzDesk/pull/589)
+ - 2024-11-01 Added configurable InputFields::ModernizedSelection::MaxNumberOfOptions. Thanks to @itweserems. [PR#576](https://github.com/buzzdesk/BuzzDesk/pull/576)
+ - 2024-10-31 Fixed Bug - Missing translation 'mark as seen'. Thanks to @LuBroering (Lukas Bröring SectorNord AG) for reporting the issue. [#613](https://github.com/buzzdesk/BuzzDesk/issues/613)
+ - 2024-10-31 Fixed Bug - Missing translation 'mark as seen'. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) for reporting the issue. [#613](https://github.com/buzzdesk/BuzzDesk/issues/613)
  - 2024-10-31 Template generator will now keep `&nbsp;` in a template when in rich text mode and won't replace them with spaces anymore. This lead to multiple `&nbsp;` reduced to one space being shown in the editor.
  - 2024-10-28 S/MIME verification: Added fallback option to disable verification of the signer's certificate after initial verification failed. Activated by new config option SMIME::NoVerify.
- - 2024-10-24 Fixed Bug - 'Use of uninitialized value' warning on build custom package and there are no permissions to write to the target directory. Thanks to @BuilderNSV for reporting the issue. [#610](https://github.com/znuny/Znuny/issues/610)
- - 2024-10-22 Perl Module Hash::Merge is now be listed in znuny.CheckModules.pl/otrs.CheckModules.pl as mandatory.
- - 2024-10-21 Sector Nord AG: Fixed #571 AgentTicketProcess Mobile-View is not showing all elements of ActivityDialog. Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [PR#553](https://github.com/znuny/Znuny/pull/553)
+ - 2024-10-24 Fixed Bug - 'Use of uninitialized value' warning on build custom package and there are no permissions to write to the target directory. Thanks to @BuilderNSV for reporting the issue. [#610](https://github.com/buzzdesk/BuzzDesk/issues/610)
+ - 2024-10-22 Perl Module Hash::Merge is now be listed in buzzdesk.CheckModules.pl/otrs.CheckModules.pl as mandatory.
+ - 2024-10-21 Sector Nord AG: Fixed #571 AgentTicketProcess Mobile-View is not showing all elements of ActivityDialog. Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [PR#553](https://github.com/buzzdesk/BuzzDesk/pull/553)
  - 2024-10-16 AdminSystemConfiguration: Addon name is no longer translated.
- - 2024-10-15 Ticket search for customer ID in customer interface now searches for the raw ID. Thanks to @BuilderNSV for reporting the issue. [#602](https://github.com/znuny/Znuny/issues/602)
+ - 2024-10-15 Ticket search for customer ID in customer interface now searches for the raw ID. Thanks to @BuilderNSV for reporting the issue. [#602](https://github.com/buzzdesk/BuzzDesk/issues/602)
  - 2024-10-15 Added additional PageNavBar to bottom in AdminDynamicField.
  - 2024-10-10 Updated MIME::Decoder::QuotedPrint from 5.509 to 5.515.
  - 2024-10-07 Updated jstree from version 3.3.7 to 3.3.8.
  - 2024-10-07 Updated nunjucks from version 3.2.2 to 3.2.3.
  - 2024-09-27 Added missing tooltip to show complete email address of sender/recipient when hovering article email header in ticket zoom.
- - 2024-09-27 Fixed dynamic date fields being validated even if not selected for form submit. Thanks to @BuilderNSV for reporting the issue. [#596](https://github.com/znuny/Znuny/issues/596)
+ - 2024-09-27 Fixed dynamic date fields being validated even if not selected for form submit. Thanks to @BuilderNSV for reporting the issue. [#596](https://github.com/buzzdesk/BuzzDesk/issues/596)
 
 # 7.1.3 2024-10-02
  - 2024-09-26 Removed regex from Kernel::System::HTMLUtils::DocumentCleanup that could lead to a security issue. It replaced HTML of Microsoft Word. Thanks for reporting to Emin Yazi (@eyazi), Efflux.
- - 2024-09-26 Fixed duplicate database record insert attempts for ticket flags. Thanks to @lukasdebaum for reporting. [#531](https://github.com/znuny/Znuny/issues/531)
+ - 2024-09-26 Fixed duplicate database record insert attempts for ticket flags. Thanks to @lukasdebaum for reporting. [#531](https://github.com/buzzdesk/BuzzDesk/issues/531)
  - 2024-09-25 Fixed link to customer information center in agent ticket zoom.
- - 2024-09-24 Updated CKEditor to version 4.25.1-znuny.
+ - 2024-09-24 Updated CKEditor to version 4.25.1-buzzdesk.
  - 2024-09-24 Fixed bug - ArticleStorageSwitch creates duplicate files with an additional file extension '-1'.
  - 2024-09-18 Fixed exit code of migration script.
  - 2024-09-18 Fixed bug - In the AgentDashboard: Statistics widgets are always displayed, regardless of which DashboardWidgetExpand is currently set.
- - 2024-09-11 Fixed Bug - Duplicate value 'ArticleAgentNotification' in Ticket.xml 'Events###Article'. Thanks for reporting (@BuilderNSV). [#594](https://github.com/znuny/Znuny/issues/594)
+ - 2024-09-11 Fixed Bug - Duplicate value 'ArticleAgentNotification' in Ticket.xml 'Events###Article'. Thanks for reporting (@BuilderNSV). [#594](https://github.com/buzzdesk/BuzzDesk/issues/594)
  - 2024-09-10 Fixed sorting of translated list entries in dropdown elements.
  - 2024-09-09 Improved performance regarding dynamic field values when fetching tickets.
  - 2024-09-03 Fixed DialogModalClass in Core.UI.Dialog.js.
  - 2024-09-02 Updated schema.xml - Added needed dbcrud_uuid columns.
  - 2024-08-30 Added HTML filter to ProcessManagement/SLA template. Converts the characters <, >, & and " to &lt;, &gt;, &amp;, and &quot; respectively, protecting them from being interpreted as representing HTML tags or entities.
  - 2024-08-27 Fixed console command Admin::Service::Add - does not work after ITSMCore is installed.
- - 2024-08-26 Added auto mapping for unknown actions to Znuny.Form.Input.FieldIDMapping.
+ - 2024-08-26 Added auto mapping for unknown actions to BuzzDesk.Form.Input.FieldIDMapping.
  - 2024-08-23 Fixed evaluation of ticket ID parameter in generic interface operation TicketGet.
- - 2024-08-22 Console command Admin::PostMasterFilter::Import now will also update existing filters instead of only create new ones. Thanks to @meisterheister for reporting the issue. [#527](https://github.com/znuny/Znuny/issues/527)
+ - 2024-08-22 Console command Admin::PostMasterFilter::Import now will also update existing filters instead of only create new ones. Thanks to @meisterheister for reporting the issue. [#527](https://github.com/buzzdesk/BuzzDesk/issues/527)
  - 2024-08-22 Added '--single-transaction' option to scripts/backup.pl for MySQL/MariaDB. The --single-transaction flag will start a transaction before running.
- - 2024-08-21 Improved CSS for skin 'Dark'. [#584](https://github.com/znuny/Znuny/issues/584)
- - 2024-08-21 Sector Nord AG: Fixed overflow of dynamic field groups in AgentTicketZoom process widget. Thanks to Sector Nord AG (@jsinagowitz). [PR#553](https://github.com/znuny/Znuny/pull/553)
- - 2024-06-26 Fixed wrong inversion of avatar image when using skin 'Dark'. [#584](https://github.com/znuny/Znuny/issues/584)
+ - 2024-08-21 Improved CSS for skin 'Dark'. [#584](https://github.com/buzzdesk/BuzzDesk/issues/584)
+ - 2024-08-21 Sector Nord AG: Fixed overflow of dynamic field groups in AgentTicketZoom process widget. Thanks to Sector Nord AG (@jsinagowitz). [PR#553](https://github.com/buzzdesk/BuzzDesk/pull/553)
+ - 2024-06-26 Fixed wrong inversion of avatar image when using skin 'Dark'. [#584](https://github.com/buzzdesk/BuzzDesk/issues/584)
 
 # 7.1.2 2024-07-24
  - 2024-07-24 Fixed migration for databases other than MySQL and MariaDB.
@@ -397,13 +397,13 @@
  - 2024-07-17 Removed ArticlePreViewModules from Medium.pm view. No articles are displayed at this point.
  - 2024-07-16 Added filtering and cache deletion to AdminSupportDataCollector.
  - 2024-07-11 Updated Moment.js to 2.30.1 and jQueryUI to 1.13.3.
- - 2024-07-11 Added a start and finish log message to Znuny daemon tasks. Thanks to Paweł Bogusławski (@pboguslawski). [#392](https://github.com/znuny/Znuny/pull/392)
+ - 2024-07-11 Added a start and finish log message to BuzzDesk daemon tasks. Thanks to Paweł Bogusławski (@pboguslawski). [#392](https://github.com/buzzdesk/BuzzDesk/pull/392)
  - 2024-07-11 Fixed ticket list filter selection in agent dashboard and ticket list views.
- - 2024-07-09 Added configurable timeout for DNS resolver queries. Thanks to Paweł Bogusławski (@pboguslawski). [#390](https://github.com/znuny/Znuny/pull/390)
+ - 2024-07-09 Added configurable timeout for DNS resolver queries. Thanks to Paweł Bogusławski (@pboguslawski). [#390](https://github.com/buzzdesk/BuzzDesk/pull/390)
  - 2024-07-08 Invoker Ticket::Generic: Configured fields will now also be removed and encoded from/for given data (payload).
  - 2024-07-05 Added a notification to ticket dialogs for the case when a form draft already exists for the current action.
- - 2024-07-05 Improved and fixed links to customer and also customer user information center in several widgets and overview pages. [#558](https://github.com/znuny/Znuny/issues/558)
- - 2024-07-05 Added a foreground option to run the Znuny daemon without detaching. Thanks to Paweł Bogusławski (@pboguslawski). [#399](https://github.com/znuny/Znuny/pull/399)
+ - 2024-07-05 Improved and fixed links to customer and also customer user information center in several widgets and overview pages. [#558](https://github.com/buzzdesk/BuzzDesk/issues/558)
+ - 2024-07-05 Added a foreground option to run the BuzzDesk daemon without detaching. Thanks to Paweł Bogusławski (@pboguslawski). [#399](https://github.com/buzzdesk/BuzzDesk/pull/399)
  - 2024-07-04 Improved rendering of dynamic fields on AdminGenericAgent, AdminNotificationEvent, AdminACL and AdminDynamicFieldScreenConfiguration.
  - 2024-07-02 Updated required minimum database versions. Refactored database version checks and added them to the installer.
  - 2024-07-01 Fixed autocompletion search for dynamic field types WebserviceDropdown and WebserviceMultiselect in AgentTicketSearch dialog.
@@ -413,16 +413,16 @@
  - 2024-06-18 Postmaster now also supports IDs for state, priority, type, queue, SLA and service in X-OTRS headers (e.g. X-OTRS-QueueID).
  - 2024-05-14 Added configurable X-Priority email header for outgoing emails.
  - 2024-05-07 Added missing primary keys to database tables.
- - 2024-05-06 Integration of Znuny-MarkTicketSeenUnseen into Framework.
+ - 2024-05-06 Integration of BuzzDesk-MarkTicketSeenUnseen into Framework.
  - 2024-05-03 Icons for shortcut and Apple touch are now configurable.
  - 2024-05-02 Added a bulk function to watch tickets.
  - 2024-04-30 Added a function to bulk-unwatch tickets in the overview of watched tickets.
- - 2024-04-12 Fixed event registration regular expressions in config options. Thanks to Paweł Bogusławski (@pboguslawski) for reporting. [#440](https://github.com/znuny/Znuny/issues/440)
+ - 2024-04-12 Fixed event registration regular expressions in config options. Thanks to Paweł Bogusławski (@pboguslawski) for reporting. [#440](https://github.com/buzzdesk/BuzzDesk/issues/440)
  - 2023-10-11 Added user preferences backend DBJSON.
 
 # 7.0.19 2024-06-26
  - 2024-06-19 Fixed home directory check in AdminSystemFiles to work with symbolic links.
- - 2024-06-07 Fixed value used for owner lookup in AgentTicketProcess. Thanks to Falko Saller (@falkos). [#556](https://github.com/znuny/Znuny/pull/556)
+ - 2024-06-07 Fixed value used for owner lookup in AgentTicketProcess. Thanks to Falko Saller (@falkos). [#556](https://github.com/buzzdesk/BuzzDesk/pull/556)
  - 2024-06-03 Fixed CSS problem with displaying articles in ticket details view.
  - 2024-05-28 Fixed caching for queue updates.
  - 2024-04-29 Added a daemon task to delete orphaned session records.
@@ -431,33 +431,33 @@
 # 7.0.18 2024-05-29
  - 2024-05-10 Fixed session handling while saving user preferences.
  - 2024-04-24 InnoDB is now the required default storage engine.
- - 2024-04-22 Integrated package Znuny4OTRS-BugfixCustomerUserDBPasswordCryptType.
- - 2024-04-19 Added support for two factor auth token parameter to generic interface. Thanks to Flávio Marta (@CallMeFlanby). [#502](https://github.com/znuny/Znuny/pull/502)
+ - 2024-04-22 Integrated package BuzzDesk4OTRS-BugfixCustomerUserDBPasswordCryptType.
+ - 2024-04-19 Added support for two factor auth token parameter to generic interface. Thanks to Flávio Marta (@CallMeFlanby). [#502](https://github.com/buzzdesk/BuzzDesk/pull/502)
  - 2024-04-18 Fixed smart tag replacement for article subjects in process activity dialogs.
  - 2024-04-18 Improved AJAX subactions for AgentTicketEmailOutbound.
  - 2024-04-16 Fixed CSS class used for showing sort order of dynamic fields in customer ticket overview.
  - 2024-04-04 Removed links to unsupported user modification functions from system configuration settings dialog.
 
 # 7.0.17 2024-04-17
- - 2024-04-10 Fixed mixed usage of database objects in customer and customer user database backend. [#540](https://github.com/znuny/Znuny/issues/540)
+ - 2024-04-10 Fixed mixed usage of database objects in customer and customer user database backend. [#540](https://github.com/buzzdesk/BuzzDesk/issues/540)
  - 2024-04-09 Fixed session handling while saving user preferences.
  - 2024-04-08 CVE-2024-32492: Fixed security issue with JavaScript in body of article being executed in customer ticket zoom. Thanks to Martino Spagnuolo for reporting this issue.
  - 2024-04-05 CVE-2024-32493: Fixed SQL injection issue regarding Form IDs when cleaning up drafts. Thanks to Martino Spagnuolo for reporting the issue.
  - 2024-04-05 CVE-2024-32491: Fixed security issue with uploading files that could be placed to any writable location and used for remote code execution. Thanks to Martino Spagnuolo for reporting and providing the fix.
 
 # 7.0.16 2024-04-03
- - 2024-03-22 Fixed dynamic field smart tag support for snippets. [#537](https://github.com/znuny/Znuny/issues/537)
- - 2024-03-19 Fixed button to edit customer user in widget of customer information center. [#543](https://github.com/znuny/Znuny/issues/543)
- - 2024-03-13 Fixed usage of sysconfig setting `Ticket::Frontend::Overview::PreviewArticleSenderTypes`. [#542](https://github.com/znuny/Znuny/issues/542)
+ - 2024-03-22 Fixed dynamic field smart tag support for snippets. [#537](https://github.com/buzzdesk/BuzzDesk/issues/537)
+ - 2024-03-19 Fixed button to edit customer user in widget of customer information center. [#543](https://github.com/buzzdesk/BuzzDesk/issues/543)
+ - 2024-03-13 Fixed usage of sysconfig setting `Ticket::Frontend::Overview::PreviewArticleSenderTypes`. [#542](https://github.com/buzzdesk/BuzzDesk/issues/542)
  - 2024-03-11 Split Blink feature from VisualAlarms feature.
  - 2024-03-05 Hide ticket zoom widgets when no data is available to show.
  - 2024-03-04 Hide mentions widget on ticket zoom when no mentions are available.
  - 2024-02-29 Hide unknown content-type on article attachments.
  - 2024-02-29 Fixed js error in process management while editing a transition within a process if it is not linked to two activities.
  - 2024-02-28 Process management: Transition actions TicketCreate, TicketArticleCreate, ArticleSend now skip on invalid attachment IDs.
- - 2024-02-27 Fixed a variable for sha512 in Auth::DB. [#379](https://github.com/znuny/Znuny/issues/379)
- - 2024-02-22 Fix for generic agent: Scheduled job immediate executed after schedule was changed. Thanks to Paweł Bogusławski (@pboguslawski). [#406](https://github.com/znuny/Znuny/pull/406)
- - 2022-02-22 Removed initial insert of `TransportEmailTemplate` in `notification_event_item` table for mention notification and ticket email delivery failure notification. Thanks to Paweł Bogusławski (@pboguslawski). [#397](https://github.com/znuny/Znuny/pull/397)
+ - 2024-02-27 Fixed a variable for sha512 in Auth::DB. [#379](https://github.com/buzzdesk/BuzzDesk/issues/379)
+ - 2024-02-22 Fix for generic agent: Scheduled job immediate executed after schedule was changed. Thanks to Paweł Bogusławski (@pboguslawski). [#406](https://github.com/buzzdesk/BuzzDesk/pull/406)
+ - 2022-02-22 Removed initial insert of `TransportEmailTemplate` in `notification_event_item` table for mention notification and ticket email delivery failure notification. Thanks to Paweł Bogusławski (@pboguslawski). [#397](https://github.com/buzzdesk/BuzzDesk/pull/397)
  - 2024-02-14 Fixed popup profiles only being loaded on login.
  - 2024-02-14 Implemented features 'VisualAlarms' and 'Blink' into AgentTicketService like already done in AgentTicketQueue.
  - 2024-02-13 Dashboard widget "My last changed tickets": Increased performance of database query.
@@ -469,23 +469,23 @@
  - 2024-02-05 AdminOAuth2TokenManagement: Added filter for (in)valid entries.
  - 2024-02-02 Fixed form parameter evaluation in dialog for assignment of dynamic fields to screens (AdminDynamicFieldScreenConfiguration).
  - 2024-02-02 Removed session data from support bundle generator.
- - 2024-02-02 Prevent error message 'MissingTicketID' of ArticleList in inbound phone call screen. Thanks to Jannis Kleinrensing (@JannisKleinrensing), maxence. [PR#346](https://github.com/znuny/Znuny/pull/346)
- - 2024-02-02 Add html comment end tag into template file. Thanks to @kolbma. [PR#528](https://github.com/znuny/Znuny/pull/528)
+ - 2024-02-02 Prevent error message 'MissingTicketID' of ArticleList in inbound phone call screen. Thanks to Jannis Kleinrensing (@JannisKleinrensing), maxence. [PR#346](https://github.com/buzzdesk/BuzzDesk/pull/346)
+ - 2024-02-02 Add html comment end tag into template file. Thanks to @kolbma. [PR#528](https://github.com/buzzdesk/BuzzDesk/pull/528)
  - 2024-01-24 Fixed layout of error message in customer interface.
 
 # 7.0.15 2024-01-31
  - 2024-01-25 Fixed migration of mention notification.
- - 2024-01-18 Exchanged CKEditor 4.22.1 source version with minified version to improve browser loading times. [#533](https://github.com/znuny/Znuny/issues/533)
+ - 2024-01-18 Exchanged CKEditor 4.22.1 source version with minified version to improve browser loading times. [#533](https://github.com/buzzdesk/BuzzDesk/issues/533)
  - 2024-01-15 Updated Transition Action Default Parameters.
  - 2024-01-19 Fixed slow regular expression in postmaster attachment detection.
  - 2024-01-11 Fixed appointment notifications not being sent if crypting/signing options were configured.
  - 2024-01-10 Adjusted styling of file list of an installed package on AdminPackageManager.
- - 2024-01-10 Fixed setting default value for time units when using dropdown fields. [#464](https://github.com/znuny/Znuny/issues/464)
+ - 2024-01-10 Fixed setting default value for time units when using dropdown fields. [#464](https://github.com/buzzdesk/BuzzDesk/issues/464)
  - 2024-01-08 Updated AdminSystemFiles: Added additional file check.
  - 2024-01-08 Adjustment of Login form.
- - 2024-01-08 Fixed rich text editor's field height problems by disabling CKEditor's autogrow plugin. Thanks to Paweł Bogusławski (@pboguslawski). [#526](https://github.com/znuny/Znuny/pull/526)
- - 2024-01-02 Fixed Bug - Error in Daemon Scheduler Task Worker (Task: PluginAsynchronous::ConcurrentUser). [#524](https://github.com/znuny/Znuny/issues/524)
- - 2024-01-02 Fixed Bug - Empty block (horizontal line) dynamic field group process management. [#513](https://github.com/znuny/Znuny/issues/513)
+ - 2024-01-08 Fixed rich text editor's field height problems by disabling CKEditor's autogrow plugin. Thanks to Paweł Bogusławski (@pboguslawski). [#526](https://github.com/buzzdesk/BuzzDesk/pull/526)
+ - 2024-01-02 Fixed Bug - Error in Daemon Scheduler Task Worker (Task: PluginAsynchronous::ConcurrentUser). [#524](https://github.com/buzzdesk/BuzzDesk/issues/524)
+ - 2024-01-02 Fixed Bug - Empty block (horizontal line) dynamic field group process management. [#513](https://github.com/buzzdesk/BuzzDesk/issues/513)
  - 2023-12-28 Fixed AdminACL: Text in MessageBox Notice should link to acl deployment.
  - 2023-12-22 Deactivated CKE 4 plugin embedsemantic because it showed the content of a link instead of just the link.
  - 2023-10-24 Kernel::System::MailQueue::Send now increases number of attempts before sending an email. This prevents the attempts not being increased if the process dies while trying to send an email.
@@ -493,10 +493,10 @@
 # 7.0.14 2023-12-13
  - 2023-12-11 Increased size of user_id column in table customer_user_customer.
  - 2023-12-07 Customer detail search cache for dynamic field values will now be cleared if a customer will be added or updated.
- - 2023-12-01 Fixed SearchInArchive parameter not used in the fulltext search of the toolbar. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#479](https://github.com/znuny/Znuny/pull/479)
- - 2023-11-30 Fixed URL for CustomerID in AgentTicketOverviewMedium. [#506](https://github.com/znuny/Znuny/issues/506)
- - 2023-11-28 Fixed hidden text area of RTE not being updated. [#507](https://github.com/znuny/Znuny/issues/507).
- - 2023-11-17 Increased size of text columns for standard templates and notification event messages. Thanks for reporting to @BurtGummer. [#504](https://github.com/znuny/Znuny/issues/504)
+ - 2023-12-01 Fixed SearchInArchive parameter not used in the fulltext search of the toolbar. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#479](https://github.com/buzzdesk/BuzzDesk/pull/479)
+ - 2023-11-30 Fixed URL for CustomerID in AgentTicketOverviewMedium. [#506](https://github.com/buzzdesk/BuzzDesk/issues/506)
+ - 2023-11-28 Fixed hidden text area of RTE not being updated. [#507](https://github.com/buzzdesk/BuzzDesk/issues/507).
+ - 2023-11-17 Increased size of text columns for standard templates and notification event messages. Thanks for reporting to @BurtGummer. [#504](https://github.com/buzzdesk/BuzzDesk/issues/504)
  - 2023-11-17 Pending dashboards now show all pending tickets.
  - 2023-11-13 Added option 'send-timeout' to console command Maint::Email::MailQueue.
  - 2023-11-10 Sessions will now be removed immediately (instead of by daemon task) if a user will be renamed, leading to a direct logout if a user renames himself.
@@ -505,13 +505,13 @@
 # 7.0.13 2023-11-15
  - 2023-11-09 Added missing links to widget on CustomerUserInformationCenter: create phone ticket, create email ticket, switch to customer.
  - 2023-11-08 Fixed CustomerAccept module.
- - 2023-11-06 Added SysConfig Setting to configure timeout for DNS resolver queries. Thanks to Paweł Bogusławski (@pboguslawski). [PR#390](https://github.com/znuny/Znuny/pull/390)
- - 2023-11-06 Sector Nord AG: Fixed encoding of shown changes on subaction ViewDiff of AdminPackageManager. Thanks to Ziggy Trotter (@ZTrotter), Sector Nord AG. [PR#486](https://github.com/znuny/Znuny/pull/486)
- - 2023-11-06 Sector Nord AG: Fixed CTRL+left click in ticket overviews. Thanks to Ziggy Trotter (@ZTrotter), Sector Nord AG. [PR#487](https://github.com/znuny/Znuny/pull/487)
- - 2023-11-06 Sector Nord AG: Textarea element now expands in both directions. Thanks to Ziggy Trotter (@ZTrotter), Sector Nord AG. [PR#489](https://github.com/znuny/Znuny/pull/489)
- - 2023-11-06 Fixed queue_id in ticket history for the initial ticket. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#299](https://github.com/znuny/Znuny/pull/299)
+ - 2023-11-06 Added SysConfig Setting to configure timeout for DNS resolver queries. Thanks to Paweł Bogusławski (@pboguslawski). [PR#390](https://github.com/buzzdesk/BuzzDesk/pull/390)
+ - 2023-11-06 Sector Nord AG: Fixed encoding of shown changes on subaction ViewDiff of AdminPackageManager. Thanks to Ziggy Trotter (@ZTrotter), Sector Nord AG. [PR#486](https://github.com/buzzdesk/BuzzDesk/pull/486)
+ - 2023-11-06 Sector Nord AG: Fixed CTRL+left click in ticket overviews. Thanks to Ziggy Trotter (@ZTrotter), Sector Nord AG. [PR#487](https://github.com/buzzdesk/BuzzDesk/pull/487)
+ - 2023-11-06 Sector Nord AG: Textarea element now expands in both directions. Thanks to Ziggy Trotter (@ZTrotter), Sector Nord AG. [PR#489](https://github.com/buzzdesk/BuzzDesk/pull/489)
+ - 2023-11-06 Fixed queue_id in ticket history for the initial ticket. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#299](https://github.com/buzzdesk/BuzzDesk/pull/299)
  - 2023-11-02 Added pagination for ArticlePages on AgentTicketZoom.
- - 2023-10-30 Fixed Bug - Customer Portal Header Toolbar sub-menu not working [#493](https://github.com/znuny/Znuny/issues/493).
+ - 2023-10-30 Fixed Bug - Customer Portal Header Toolbar sub-menu not working [#493](https://github.com/buzzdesk/BuzzDesk/issues/493).
  - 2023-10-25 Fixed AgentInfo module.
  - 2023-10-23 Fixed used email address to decrypt S/MIME messages in Kernel::System::PostMaster::Filter::Decrypt.
  - 2023-10-23 Switched back to d3.min.js because of problems with minifier module JavaScript::Minifier::XS.
@@ -520,112 +520,112 @@
 # 7.0.12 2023-10-18
  - 2023-10-13 Updated CKEditor to version 4.22.1.
  - 2023-09-29 Added optional caching to web service requests of dynamic field types WebserviceDropdown and WebserviceMultiselect.
- - 2023-09-26 Fixed Bug - Alert dialog position too low to be interactable [#483](https://github.com/znuny/Znuny/issues/483).
+ - 2023-09-26 Fixed Bug - Alert dialog position too low to be interactable [#483](https://github.com/buzzdesk/BuzzDesk/issues/483).
  - 2023-09-22 Fixed some errors in the customer interface being shown with the agent interface's header navigation. Thanks for reporting/hints to Tim Püttmanns, maxence.
  - 2023-09-22 AgentStatistics Overview - Added filter in/valid entries.
  - 2023-09-19 Fixed mixed up content types for article body and signature in generic interface operations TicketCreate and TicketUpdate.
- - 2023-09-21 Updated maximum length of generic agent job database fields and their input fields in dialog AdminGenericAgent to prevent errors storing values too long for the database. [#474](https://github.com/znuny/Znuny/issues/474)
+ - 2023-09-21 Updated maximum length of generic agent job database fields and their input fields in dialog AdminGenericAgent to prevent errors storing values too long for the database. [#474](https://github.com/buzzdesk/BuzzDesk/issues/474)
 
 # 7.0.11 2023-09-20
- - 2023-08-28 Fixed duplicate usage of render block 'AdditionalHeaders' in dialog AdminGenericInterfaceTransportHTTPREST. Increased maximum length of additional header keys and values from 150 to 2000 characters in dialogs AdminGenericInterfaceTransportHTTPREST and AdminGenericInterfaceTransportHTTPSOAP. [#321](https://github.com/znuny/Znuny/issues/321)
+ - 2023-08-28 Fixed duplicate usage of render block 'AdditionalHeaders' in dialog AdminGenericInterfaceTransportHTTPREST. Increased maximum length of additional header keys and values from 150 to 2000 characters in dialogs AdminGenericInterfaceTransportHTTPREST and AdminGenericInterfaceTransportHTTPSOAP. [#321](https://github.com/buzzdesk/BuzzDesk/issues/321)
  - 2023-08-28 Fixed - display of empty "dynamic fields" area when dynamic field from object type article is configured.
  - 2023-08-23 Added parameter to enforce account selection for the Microsoft OAuth2 template.
 
 # 7.0.10 2023-08-23
  - 2023-08-22 Fixed - Customer note is not visible when queue follow-up option is 'reject' or 'new ticket'.
  - 2023-08-22 Fixed - Option 'Customer User' should have no breadcrumb and should not show actions.
- - 2023-08-22 Fixed - Complete footer is an `<a href>` in Customer-Interface. Znuny-Pacman is not animated like in the Agent-Interface.
- - 2023-08-21 Fixed - Blocked Content is loaded incorrectly in AgentTicketZoom. https://github.com/znuny/Znuny/issues/454
- - 2023-08-21 Fixed extra space causing uninitialized value error. (#485) Thanks to Ziggy Trotter (@ZTrotter). [PR#485](https://github.com/znuny/Znuny/pull/485)
- - 2023-08-21 Fixed removing filter parameters not working correctly in AgentCustomerUserAddressBook. (#481) Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#481](https://github.com/znuny/Znuny/pull/481)
- - 2023-08-21 Fixed AdminPGP missing breadcrumb entry and failing Selenium test. (#480) Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#480](https://github.com/znuny/Znuny/pull/480)
+ - 2023-08-22 Fixed - Complete footer is an `<a href>` in Customer-Interface. BuzzDesk-Pacman is not animated like in the Agent-Interface.
+ - 2023-08-21 Fixed - Blocked Content is loaded incorrectly in AgentTicketZoom. https://github.com/buzzdesk/BuzzDesk/issues/454
+ - 2023-08-21 Fixed extra space causing uninitialized value error. (#485) Thanks to Ziggy Trotter (@ZTrotter). [PR#485](https://github.com/buzzdesk/BuzzDesk/pull/485)
+ - 2023-08-21 Fixed removing filter parameters not working correctly in AgentCustomerUserAddressBook. (#481) Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#481](https://github.com/buzzdesk/BuzzDesk/pull/481)
+ - 2023-08-21 Fixed AdminPGP missing breadcrumb entry and failing Selenium test. (#480) Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#480](https://github.com/buzzdesk/BuzzDesk/pull/480)
  - 2023-08-21 Improved SupportDataCollector plugin MultipleJSFileLoad. Better representation of multiple loaded files.
  - 2023-08-21 Fixed AdminProcessManagement - Button "Show EntityIDs" and extend the width/height of the canvas is not working.
  - 2023-08-21 Fixed - Support Data Collector show wrong section name.
- - 2023-08-18 Fixed - Dropdown arrow does not drop down dropdown box [#466](https://github.com/znuny/Znuny/issues/466).
+ - 2023-08-18 Fixed - Dropdown arrow does not drop down dropdown box [#466](https://github.com/buzzdesk/BuzzDesk/issues/466).
  - 2023-08-17 Fixed XSS issue with customer ID in AdminCustomerUser dialog. Thanks to Tim Püttmanns (@tipue-dev), maxence, for reporting.
  - 2023-08-17 Updated JS libraries jQuery, jQuery UI and Moment.js.
- - 2023-08-17 Fixed Selenium test AdminCustomerUserService.t (#482). Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#482](https://github.com/znuny/Znuny/pull/482)
- - 2023-08-17 Fixed Selenium tests for AgentStatistics (#484). Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#484](https://github.com/znuny/Znuny/pull/484)
+ - 2023-08-17 Fixed Selenium test AdminCustomerUserService.t (#482). Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#482](https://github.com/buzzdesk/BuzzDesk/pull/482)
+ - 2023-08-17 Fixed Selenium tests for AgentStatistics (#484). Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#484](https://github.com/buzzdesk/BuzzDesk/pull/484)
  - 2023-08-17 Added missing default search for Responsible Ticket::Frontend::AgentTicketSearch###Defaults###ResponsibleID.
  - 2023-08-17 Added NaviagionBar to Layout output functions. Prettify Templates - Added better style.
- - 2023-08-17 Fixed some Selenium tests (#478). Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#478](https://github.com/znuny/Znuny/pull/478)
+ - 2023-08-17 Fixed some Selenium tests (#478). Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#478](https://github.com/buzzdesk/BuzzDesk/pull/478)
  - 2023-08-11 Fixed - Header misaligned in (Agent/Customer)TicketProcess. If you have a long activity dialog name, and a long description, the header is broken. The activity and dialog name needs to be above the text.
  - 2023-08-11 Fixed SelectAll function in AdminDynamicFieldScreenConfiguration. Select only all visible elements.
  - 2023-08-11 Added additional note to DynamicFields::ScreenConfiguration::ConfigKeysOfScreensByObjectType###Framework for AgentTicketSearch (DynamicField|DefaultColumns).
  - 2023-08-11 Refactored AgentTicketNoteToLinkedTicket. Fixed AgentTicketNoteToLinkedTicket Ticket settings not styled. Added AgentTicketNoteToLinkedTicket to DynamicFieldScreens###Framework. Added SysConfig `Ticket::Frontend::AgentTicketNoteToLinkedTicket###DynamicField` to use DynamicFields.
  - 2023-08-11 Fixed - Installing a package with dependency not possible - Added additional check if any problem exists - means if any package or module is not installed.
- - 2023-08-09 Fixed display of pending time selection. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#469](https://github.com/znuny/Znuny/pull/469)
+ - 2023-08-09 Fixed display of pending time selection. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#469](https://github.com/buzzdesk/BuzzDesk/pull/469)
  - 2023-08-08 Updated protocol to https for a secured communitation with gravatar.com. Updated CustomerInterface so that SysConfig Frontend::AvatarEngine will be respected.
  - 2023-08-08 Changed default value of Frontend::AvatarEngine to None.
- - 2023-08-07 Fixed missing $ on StartDateTimeObject -> $StartDateTimeObject (#475). Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [PR#475](https://github.com/znuny/Znuny/pull/475).
+ - 2023-08-07 Fixed missing $ on StartDateTimeObject -> $StartDateTimeObject (#475). Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [PR#475](https://github.com/buzzdesk/BuzzDesk/pull/475).
  - 2023-08-07 Fixed description for SysConfig Setting 'Stats::UseAgentElementInStats' and 'Stats::UseInvalidAgentInStats'.
- - 2023-08-07 Fixed message subject prefill on Activity dialog only works for Agent. [#363](https://github.com/znuny/Znuny/issues/363).
+ - 2023-08-07 Fixed message subject prefill on Activity dialog only works for Agent. [#363](https://github.com/buzzdesk/BuzzDesk/issues/363).
  - 2023-08-07 Changed default spacing in process ProcessWidgetDynamicFieldGroups - reduced padding.
  - 2023-08-07 Fixed - Screens containing 'To:' 'Cc:' and 'Bcc:' doubles the labels.
  - 2023-08-04 Fixed auto-selection of first found element in dynamic field web service single-select dropdown.
- - 2023-08-03 Fixed Bug - Snippets not sorted by name in search results. [#473](https://github.com/znuny/Znuny/issues/473)
- - 2023-08-02 Fixed Mentions CSS bug. https://github.com/znuny/Znuny/issues/419.
- - 2023-08-02 Fixed Popup profile positioning. Thanks to Paweł Bogusławski (@pboguslawski). [#433](https://github.com/znuny/Znuny/pull/433)
- - 2023-08-02 Fixed some minor spelling mistakes. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#377](https://github.com/znuny/Znuny/pull/377)
- - 2023-08-02 Fixed handling whitespaces around '=' in Content-Type/charset token. Thanks to Paweł Bogusławski (@pboguslawski). [#75](https://github.com/znuny/Znuny/pull/75)
+ - 2023-08-03 Fixed Bug - Snippets not sorted by name in search results. [#473](https://github.com/buzzdesk/BuzzDesk/issues/473)
+ - 2023-08-02 Fixed Mentions CSS bug. https://github.com/buzzdesk/BuzzDesk/issues/419.
+ - 2023-08-02 Fixed Popup profile positioning. Thanks to Paweł Bogusławski (@pboguslawski). [#433](https://github.com/buzzdesk/BuzzDesk/pull/433)
+ - 2023-08-02 Fixed some minor spelling mistakes. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#377](https://github.com/buzzdesk/BuzzDesk/pull/377)
+ - 2023-08-02 Fixed handling whitespaces around '=' in Content-Type/charset token. Thanks to Paweł Bogusławski (@pboguslawski). [#75](https://github.com/buzzdesk/BuzzDesk/pull/75)
  - 2023-07-31 Fixed Draft Issue - Using the draft fails if there are any dynamic fields configured as mandatory for the screen where the draft is used.
- - 2023-07-27 Fixed remove of mention and unnecessary errors in the log. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#295](https://github.com/znuny/Znuny/pull/295)
- - 2023-07-27 Sector Nord AG: Fixed responsible user id during appointment ticket creation. Thanks to Marc Pahnke (@MarcPahnke), Sector Nord AG. [#325](https://github.com/znuny/Znuny/pull/325)
+ - 2023-07-27 Fixed remove of mention and unnecessary errors in the log. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#295](https://github.com/buzzdesk/BuzzDesk/pull/295)
+ - 2023-07-27 Sector Nord AG: Fixed responsible user id during appointment ticket creation. Thanks to Marc Pahnke (@MarcPahnke), Sector Nord AG. [#325](https://github.com/buzzdesk/BuzzDesk/pull/325)
  - 2023-07-26 Fixed encoding problem with URL parameters in AdminPostMasterFilter and AdminGenericAgent.
 
 # 7.0.9 2023-07-26
  - 2023-07-26 Fixed removal of all permissions of a user if LDAP auth sync is being executed without any configured group or role definition.
- - 2023-07-25 Fixed search limitations for AgentTicketWatchView. [#372](https://github.com/znuny/Znuny/issues/372)
+ - 2023-07-25 Fixed search limitations for AgentTicketWatchView. [#372](https://github.com/buzzdesk/BuzzDesk/issues/372)
  - 2023-07-24 Added system address check for customer email address given in AgentTicketPhone.
- - 2023-07-21 Fixed double encoding for dynamic field values in linked-tickets-table. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#300](https://github.com/znuny/Znuny/pull/300)
- - 2023-07-21 Clear orphaned session records. Thanks to Markus Raulf (@markusraulf). [PR#368](https://github.com/znuny/Znuny/pull/368)
+ - 2023-07-21 Fixed double encoding for dynamic field values in linked-tickets-table. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#300](https://github.com/buzzdesk/BuzzDesk/pull/300)
+ - 2023-07-21 Clear orphaned session records. Thanks to Markus Raulf (@markusraulf). [PR#368](https://github.com/buzzdesk/BuzzDesk/pull/368)
  - 2023-07-13 Fixed calendar appointment creation: Missing scrollbar at low resolution / high zoom.
 
 # 7.0.8 2023-07-12
- - 2023-07-11 Fixed mentions for deleted tickets. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#458](https://github.com/znuny/Znuny/pull/458)
+ - 2023-07-11 Fixed mentions for deleted tickets. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#458](https://github.com/buzzdesk/BuzzDesk/pull/458)
  - 2023-07-10 Added console command to import dynamic fields and dynamic field screens configuration.
  - 2023-07-07 Fixed email address shown in user's avatar preferences when editing the preferences of another user (not the own user).
  - 2023-07-07 Added SysConfig/ValueType/Entity/Webservice.pm.
  - 2023-07-07 Improved popup profiles and Frontend::RichText::Settings###Width.
- - 2023-07-07 Fixed template for article details. [#415](https://github.com/znuny/Znuny/issues/415)
+ - 2023-07-07 Fixed template for article details. [#415](https://github.com/buzzdesk/BuzzDesk/issues/415)
  - 2023-07-05 Added new type 'HTML' to AgentTicketZoom TicketMenu. This allows additional HTML elements to be added using 'Ticket::Frontend::MenuModule###*'.
- - 2023-07-05 Fixed deletion dialogs in AdminGenericAgent. Thanks to Mohd Azfar (@mo-azfar). [#448](https://github.com/znuny/Znuny/issues/448)
+ - 2023-07-05 Fixed deletion dialogs in AdminGenericAgent. Thanks to Mohd Azfar (@mo-azfar). [#448](https://github.com/buzzdesk/BuzzDesk/issues/448)
  - 2023-07-05 Added information about invalid settings to AgentTicketZoom 'Ticket Information'.
- - 2023-07-04 Fixed - Incorrect display of empty HTML article body. Thanks to Paweł Bogusławski (@pboguslawski). [#438](https://github.com/znuny/Znuny/pull/438)
- - 2023-07-04 Sector Nord AG: Fixed Calendar appointment plugin AppointmentID data type. Thanks to Sector Nord AG (@LuBroering - Lukas Bröring). [#308](https://github.com/znuny/Znuny/pull/308)
- - 2023-07-04 Fixed - Line breaks in processes when richtext disabled. Used ->{BrowserRichText}. Thanks to Timotheus Pokorra (@tpokorra). [#447](https://github.com/znuny/Znuny/issues/447)
- - 2023-06-30 LDAP auth sync: Fixed permissions removed in LDAP not being reliably removed from users in Znuny.
- - 2023-06-29 Added missing salutation and signature to notification for user mentions. Thanks to Paweł Bogusławski (@pboguslawski). [#420](https://github.com/znuny/Znuny/issues/420)
+ - 2023-07-04 Fixed - Incorrect display of empty HTML article body. Thanks to Paweł Bogusławski (@pboguslawski). [#438](https://github.com/buzzdesk/BuzzDesk/pull/438)
+ - 2023-07-04 Sector Nord AG: Fixed Calendar appointment plugin AppointmentID data type. Thanks to Sector Nord AG (@LuBroering - Lukas Bröring). [#308](https://github.com/buzzdesk/BuzzDesk/pull/308)
+ - 2023-07-04 Fixed - Line breaks in processes when richtext disabled. Used ->{BrowserRichText}. Thanks to Timotheus Pokorra (@tpokorra). [#447](https://github.com/buzzdesk/BuzzDesk/issues/447)
+ - 2023-06-30 LDAP auth sync: Fixed permissions removed in LDAP not being reliably removed from users in BuzzDesk.
+ - 2023-06-29 Added missing salutation and signature to notification for user mentions. Thanks to Paweł Bogusławski (@pboguslawski). [#420](https://github.com/buzzdesk/BuzzDesk/issues/420)
  - 2023-06-19 Dynamic field type "Webservice": Selected value in a dynamic field can now be removed with 'x' button. Fixed admin dialog test field being read-only and not usable.
  - 2023-06-02 Fixed initialization of dynamic fields of type 'web service'.
 
 # 7.0.7 2023-06-28
- - 2023-06-27 Fixed CSS for attachments with long filenames. [#416](https://github.com/znuny/Znuny/issues/416)
+ - 2023-06-27 Fixed CSS for attachments with long filenames. [#416](https://github.com/buzzdesk/BuzzDesk/issues/416)
  - 2023-06-26 AdminState: Added color code validation.
- - 2023-06-26 Fixed warning about missing article ID in AgentTicketNoteToLinkedTicket. Thanks to Paweł Bogusławski (@pboguslawski). [#431](https://github.com/znuny/Znuny/issues/431)
+ - 2023-06-26 Fixed warning about missing article ID in AgentTicketNoteToLinkedTicket. Thanks to Paweł Bogusławski (@pboguslawski). [#431](https://github.com/buzzdesk/BuzzDesk/issues/431)
  - 2023-06-21 Extend TicketArticleCreate transition action for a possibility to set a dynamic field of object type article and ticket.
  - 2023-06-21 GUI-Redesign changes - CSS, TT and JS.
- - 2023-06-20 Added ExternalFQDN parameter for better security. Thanks to Paweł Bogusławski (@pboguslawski). [PR#73](https://github.com/znuny/Znuny/pull/73)
- - 2023-06-20 Changed AgentTicketProcess to always fill rich text editor configs. Thanks to Samuel Diniz Casimiro (@samueldc). [PR#266](https://github.com/znuny/Znuny/pull/266)
- - 2023-06-20 Added Translate() to CustomerTicketProcess PageTitle. Thanks to Renée Bäcker (@reneeb). [PR#446](https://github.com/znuny/Znuny/pull/446)
+ - 2023-06-20 Added ExternalFQDN parameter for better security. Thanks to Paweł Bogusławski (@pboguslawski). [PR#73](https://github.com/buzzdesk/BuzzDesk/pull/73)
+ - 2023-06-20 Changed AgentTicketProcess to always fill rich text editor configs. Thanks to Samuel Diniz Casimiro (@samueldc). [PR#266](https://github.com/buzzdesk/BuzzDesk/pull/266)
+ - 2023-06-20 Added Translate() to CustomerTicketProcess PageTitle. Thanks to Renée Bäcker (@reneeb). [PR#446](https://github.com/buzzdesk/BuzzDesk/pull/446)
  - 2023-06-02 S/MIME: Increased size of column 'email_address' of table 'smime_keys'.
 
 # 7.0.6 2023-06-14
- - 2023-06-07 Fixed ticket priority and state color. [#443](https://github.com/znuny/Znuny/issues/443)
+ - 2023-06-07 Fixed ticket priority and state color. [#443](https://github.com/buzzdesk/BuzzDesk/issues/443)
  - 2023-05-31 Added removal of protocol-relative URLs to Kernel::System::HTMLUtils::Safety. Thanks to Tim Püttmanns (@tipue-dev), maxence, for reporting the issue.
  - 2023-05-31 Added security relevant check for content type of article and attachments to generic interface operations TicketCreate and TicketUpdate. Thanks to Tim Püttmanns (@tipue-dev), maxence, for reporting the issue.
  - 2023-05-31 Process management: Added missing scope filter for transition actions.
- - 2023-05-30 Updated CPAN library Sisimai to version 4.25.16. [#391](https://github.com/znuny/Znuny/issues/391)
+ - 2023-05-30 Updated CPAN library Sisimai to version 4.25.16. [#391](https://github.com/buzzdesk/BuzzDesk/issues/391)
  - 2023-05-25 Changed article action 'note to linked ticket' to only be visible/usable in agent ticket zoom.
  - 2023-05-23 Fixed event handling for DBCRUD history entries.
 
 # 7.0.5 2023-05-17
  - 2023-05-17 GUI-Redesign changes - CSS, TT and JS.
  - 2023-05-17 Updated 'Cancel' buttons in dialogs.
- - 2023-05-11 Fixed ReplyAll in ArticleActionMenu template. [#410](https://github.com/znuny/Znuny/issues/410)
- - 2023-05-09 Fixed item color in AgentAppointmentCalendarOverview. [#411](https://github.com/znuny/Znuny/issues/411)
- - 2023-05-04 Fixed CSS for custom logos. [#357](https://github.com/znuny/Znuny/issues/357)
+ - 2023-05-11 Fixed ReplyAll in ArticleActionMenu template. [#410](https://github.com/buzzdesk/BuzzDesk/issues/410)
+ - 2023-05-09 Fixed item color in AgentAppointmentCalendarOverview. [#411](https://github.com/buzzdesk/BuzzDesk/issues/411)
+ - 2023-05-04 Fixed CSS for custom logos. [#357](https://github.com/buzzdesk/BuzzDesk/issues/357)
 
 # 7.0.4 2023-05-03
  - 2023-05-03 GUI-Redesign changes - CSS, TT and JS.
@@ -634,10 +634,10 @@
 # 7.0.3 2023-04-19
  - 2023-04-05 Fixed format of returned filename in function Kernel::System::Stats::StringAndTimestamp2Filename.
  - 2023-04-05 AdminSLA: Sub-services will now be shown as invalid if SLA is set to invalid.
- - 2023-04-04 Translatable buttons for AdminValidFilter. Thanks to Renée Bäcker @reneeb. [PR#358](https://github.com/znuny/Znuny/pull/358)
+ - 2023-04-04 Translatable buttons for AdminValidFilter. Thanks to Renée Bäcker @reneeb. [PR#358](https://github.com/buzzdesk/BuzzDesk/pull/358)
  - 2023-04-03 GUI-Redesign changes - CSS, TT and JS.
  - 2023-04-03 Updated Agent/Notification.html.tmpl and changed position of agent notifications.
- - 2023-04-03 Fixed issue 'Ticket notifications not sent'. Fixed return value of GetTransportRecipients. [#361](https://github.com/znuny/Znuny/issues/361)
+ - 2023-04-03 Fixed issue 'Ticket notifications not sent'. Fixed return value of GetTransportRecipients. [#361](https://github.com/buzzdesk/BuzzDesk/issues/361)
  - 2023-03-02 Fixed handling of time zone for DateTime objects created with string in ISO 8601 format (e.g. '2017-05-09T07:00:09+0400').
 
 # 7.0.2 2023-03-30
@@ -648,7 +648,7 @@
  - 2023-03-20 Fixed handling of article attachments in generic interface operations TicketCreate and TicketUpdate.
  - 2023-02-01 Removed Business Solution code.
  - 2023-02-01 Added additional IconClass for Notifications (Notify's).
- - 2023-01-26 Integrated Znuny4OTRS-AdminValidFilter into Framework. Filters invalid entries in the admin area.
+ - 2023-01-26 Integrated BuzzDesk4OTRS-AdminValidFilter into Framework. Filters invalid entries in the admin area.
  - 2023-01-25 Flattened customer menu to single level.
  - 2023-01-20 Dashboard Widget Expand - There are now dashboard widget filters that display the selected widget alone and if possible with a larger number of tickets. This way the focus is concentrated on one widget.
  - 2022-12-21 Removed too bright colors from the default selection (AppointmentCalendar::CalendarColors).
@@ -681,20 +681,20 @@
  - 2026-07-01 CVE-2025-25977: Updated JavaScript library canvg to version 4.0.3.
 
 # 6.5.23 2026-07-22
- - 2026-07-17 Fixed: Documentation links in config options. Thanks to @bjinthahouse for reporting the issue. [#763](https://github.com/znuny/Znuny/issues/763)
- - 2026-07-07 Fixed: Swapped sn and givenName default mapping in znuny.SyncLDAP2DB.pl. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#825](https://github.com/znuny/Znuny/pull/825).
+ - 2026-07-17 Fixed: Documentation links in config options. Thanks to @bjinthahouse for reporting the issue. [#763](https://github.com/buzzdesk/BuzzDesk/issues/763)
+ - 2026-07-07 Fixed: Swapped sn and givenName default mapping in buzzdesk.SyncLDAP2DB.pl. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#825](https://github.com/buzzdesk/BuzzDesk/pull/825).
  - 2026-07-01 CVE-2026-6659: Updated CPAN module Crypt::PasswdMD5 (1.40 to 1.44).
  - 2026-07-01 CVE-2026-8368: Updated CPAN module LWP (6.53 to 6.83).
- - 2026-06-25 Fixed: Errors executing ticket search in AgentTicketService if user has no queues or services assigned. Thanks to Paweł Bogusławski for reporting the issue. [#803](https://github.com/znuny/Znuny/issues/803)
- - 2026-06-24 Fixed: Command Maint::Ticket::ArchiveCleanup not deleting article flags correctly. Thanks to @parkingups69-netizen for reporting the issue. [#780](https://github.com/znuny/Znuny/issues/780)
+ - 2026-06-25 Fixed: Errors executing ticket search in AgentTicketService if user has no queues or services assigned. Thanks to Paweł Bogusławski for reporting the issue. [#803](https://github.com/buzzdesk/BuzzDesk/issues/803)
+ - 2026-06-24 Fixed: Command Maint::Ticket::ArchiveCleanup not deleting article flags correctly. Thanks to @parkingups69-netizen for reporting the issue. [#780](https://github.com/buzzdesk/BuzzDesk/issues/780)
  - 2026-06-19 Fixed: Dialog to resend an email (AgentTicketEmailResend) is now only usable for articles in channel Email with previous transmission failure.
 
 # 6.5.22 2026-06-24
- - 2026-06-22 Fixed: Sorting by dynamic field columns in dashboard ticket widgets could fall back to age and process tickets without articles could be hidden. Thanks to @sergiykhan for reporting the issue. [#811](https://github.com/znuny/Znuny/issues/811)
+ - 2026-06-22 Fixed: Sorting by dynamic field columns in dashboard ticket widgets could fall back to age and process tickets without articles could be hidden. Thanks to @sergiykhan for reporting the issue. [#811](https://github.com/buzzdesk/BuzzDesk/issues/811)
  - 2026-06-17 Security: Added missing HTML filters to template AgentTicketEmailResend.tt. Thanks to Jan Kahmen (turingpoint.de) for reporting the issue.
  - 2026-06-17 Fixed: AgentTicketEmailResend throwing JavaScript error for missing Bcc input field values.
  - 2026-06-16 Fixed: Process tickets without articles are not displayed in dashboard widget Running Process Tickets.
- - 2026-06-16 Fixed: System configuration hash key duplication for keys containing ###. Thanks to @FloFaber (Flo Faber) for reporting the issue. [#789](https://github.com/znuny/Znuny/issues/789).
+ - 2026-06-16 Fixed: System configuration hash key duplication for keys containing ###. Thanks to @FloFaber (Flo Faber) for reporting the issue. [#789](https://github.com/buzzdesk/BuzzDesk/issues/789).
  - 2026-06-12 Fixed: Issue with mentioning out of office users via group mention.
  - 2026-06-01 Added: Agent and customer error pages now show configurable link for next action.
  - 2026-06-01 Fixed: Attachments can no longer be assigned to Snippet templates in AdminTemplateAttachment.
@@ -709,9 +709,9 @@
  - 2026-03-25 Security: Fixed: XSS in user preferences DB.
 
 # 6.5.20 2026-04-29
- - 2026-04-22 Added: EmailSecurity section from Article to GenericInterface. Thanks to @DonMarlowne. [PR#612](https://github.com/znuny/Znuny/pull/612)
+ - 2026-04-22 Added: EmailSecurity section from Article to GenericInterface. Thanks to @DonMarlowne. [PR#612](https://github.com/buzzdesk/BuzzDesk/pull/612)
  - 2026-04-13 Changed: Ticket list views for "escalation", "locked", "mention", "owner", "responsible", "status" and "watch" now each have a config option TicketSearchWithAdminUser to decide if the tickets will be searched with admin user or the logged in user.
- - 2026-04-10 Fixed: Sorting in ticket overview modes "Medium" and "Preview" throws an error. Thanks for reporting to @przemekrzyzanski-cmyk. [#779](https://github.com/znuny/Znuny/issues/779)
+ - 2026-04-10 Fixed: Sorting in ticket overview modes "Medium" and "Preview" throws an error. Thanks for reporting to @przemekrzyzanski-cmyk. [#779](https://github.com/buzzdesk/BuzzDesk/issues/779)
  - 2026-04-10 PostMaster/Filter/ExternalTicketNumberRecognition: Added support of the SysConfig setting “Ticket::SubjectFormat”.
  - 2026-04-02 Changed: Log level of "missing user" message in HTTP basic auth.
  - 2026-03-25 Fixed: AgentTicketOwnerView missing in dynamic field screen selection.
@@ -730,14 +730,14 @@
  - 2026-02-11 Fixed: Issue with sorting dropdown elements when setting Ticket::Frontend::AccountTimeType is set to Dropdown.
  - 2026-02-10 Fixed: Console command Admin::Group::UserLink and Admin::Group::RoleLink with inconsistent available permissions.
  - 2026-02-10 Fixed: Sender address for process tickets is not assigned properly in CustomerInterface.
- - 2026-01-26 Fixed: Znuny re-directs after login to default view even if there is specified ExternalURL parameter with the Action encoded in the link.
+ - 2026-01-26 Fixed: BuzzDesk re-directs after login to default view even if there is specified ExternalURL parameter with the Action encoded in the link.
  - 2026-01-23 Improved handling of read-only fields for the backend of CustomerUser::DB and CustomerCompany::DB.
  - 2026-01-23 Increased length of the password column for users, customer_user, and mail_account.
  - 2026-01-23 Fixed: TemplateGenerator is broken when using RichText.
  - 2026-01-22 Fixed: Customer interface uses layout "PopupClose" function that loads agent interface header and footer which results in referencing features that are not supported - such as popup profiles. Added CustomerPopupClose function.
- - 2026-01-21 Fixed: The tags <OTRS_TICKET> and <OTRS_MERGE_TO_TICKET> can only be used once in the text of the configuration Ticket::Frontend::AutomaticMergeText. The 'global' flag is missing. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#753](https://github.com/znuny/Znuny/pull/753)
+ - 2026-01-21 Fixed: The tags <OTRS_TICKET> and <OTRS_MERGE_TO_TICKET> can only be used once in the text of the configuration Ticket::Frontend::AutomaticMergeText. The 'global' flag is missing. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#753](https://github.com/buzzdesk/BuzzDesk/pull/753)
  - 2026-01-13 Fixed: Date check regex for config option ICSParser::StartDate actually matches YYYYMMDD.
- - 2025-12-12 Sector Nord AG: Added support for multiple RichText instances. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#736](https://github.com/znuny/Znuny/pull/736).
+ - 2025-12-12 Sector Nord AG: Added support for multiple RichText instances. Thanks to @LuBroering (Lukas Bröring Sector Nord AG) [PR#736](https://github.com/buzzdesk/BuzzDesk/pull/736).
  - 2025-11-28 Changed ticket zoom information widget to count only open tickets with the same customer after enabling config option Ticket::Frontend::ZoomCustomerTickets.
  - 2025-11-25 CVE-2025-52204: Fixed XSS issue with session ID in URL parameter. Thanks to Miguel P. for reporting this issue.
  - 2025-11-25 Fixed: Unexpected rate limit is being applied when config option SendmailModule::RateLimit is disabled.
@@ -773,38 +773,38 @@
 # 6.5.16 2025-08-20
  - 2025-08-18 Fixed: Calendar bug in Kernel/System/Calendar/Plugin.pm uninitialized value and fixed module check for calendar plugin.
  - 2025-08-13 CVE-2025-3573: Updated jquery-validate to 1.21.0.
- - 2025-08-11 Fixed: Popup profiles with percentage values for width and height not working correctly. Thanks for reporting to Tim Püttmanns (maxence). [#634](https://github.com/znuny/Znuny/issues/634)
- - 2025-08-11 Fixed: Date/time of state change in AgentTicketBulk will now only be checked if a (pending) state has been selected instead of logging an error. Thanks for reporting to @BuilderNSV. [#685](https://github.com/znuny/Znuny/issues/685)
- - 2025-08-11 Fixed: Generic interface invoker Ticket::Generic now always base-64-decodes article attachment content of the response. Thanks for reporting to @lis975. [#694](https://github.com/znuny/Znuny/issues/694)
+ - 2025-08-11 Fixed: Popup profiles with percentage values for width and height not working correctly. Thanks for reporting to Tim Püttmanns (maxence). [#634](https://github.com/buzzdesk/BuzzDesk/issues/634)
+ - 2025-08-11 Fixed: Date/time of state change in AgentTicketBulk will now only be checked if a (pending) state has been selected instead of logging an error. Thanks for reporting to @BuilderNSV. [#685](https://github.com/buzzdesk/BuzzDesk/issues/685)
+ - 2025-08-11 Fixed: Generic interface invoker Ticket::Generic now always base-64-decodes article attachment content of the response. Thanks for reporting to @lis975. [#694](https://github.com/buzzdesk/BuzzDesk/issues/694)
  - 2025-07-25 Fixed: Order of toolbar icons for mentioned tickets (new and total) differed from other toolbar icons.
  - 2025-07-25 Fixed: Wrong priority of ticket owner toolbar could lead to the icon(s) not being shown.
- - 2025-07-24 Fixed: An archived ticket is shown in mentions list (AgentTicketMentionView). Archived tickets should not be counted in the mention icon, nor be visible in AgentTicketMentionView. Thanks for reporting to @Fainsy. [#620](https://github.com/znuny/Znuny/issues/620)
+ - 2025-07-24 Fixed: An archived ticket is shown in mentions list (AgentTicketMentionView). Archived tickets should not be counted in the mention icon, nor be visible in AgentTicketMentionView. Thanks for reporting to @Fainsy. [#620](https://github.com/buzzdesk/BuzzDesk/issues/620)
  - 2025-07-21 Added missing value 'UserNavBarItemsOrder' to AgentPreferences::AJAXUpdate::AllowedKeys###Framework.
  - 2025-07-21 Added missing SysConfig settings `SortBy::Default` and `Order::Default`.
- - 2025-07-21 Fixed: CKEDITOR is not defined when CKEDITOR is disabled and the window is too small when loading the text template. Thanks to @VeldoraTheDragon. [#609](https://github.com/znuny/Znuny/issues/609)
+ - 2025-07-21 Fixed: CKEDITOR is not defined when CKEDITOR is disabled and the window is too small when loading the text template. Thanks to @VeldoraTheDragon. [#609](https://github.com/buzzdesk/BuzzDesk/issues/609)
  - 2025-07-16 Fixed: Users mentioned in quoted text will not be notified again.
- - 2025-07-15 Sector Nord AG: Update entry for AgentPreferences::AJAXUpdate::AllowedKeys. Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [PR#688](https://github.com/znuny/Znuny/pull/688)
- - 2025-07-14 Fixed: ACLs of ticket attribute relations could lead to empty selection fields. Thanks for reporting to @lis975. [#675](https://github.com/znuny/Znuny/issues/675)
+ - 2025-07-15 Sector Nord AG: Update entry for AgentPreferences::AJAXUpdate::AllowedKeys. Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [PR#688](https://github.com/buzzdesk/BuzzDesk/pull/688)
+ - 2025-07-14 Fixed: ACLs of ticket attribute relations could lead to empty selection fields. Thanks for reporting to @lis975. [#675](https://github.com/buzzdesk/BuzzDesk/issues/675)
  - 2025-07-09 Fixed: Avatar area in agent preferences should disappear if no Avatar Engine is in use.
  - 2025-07-03 Fixed: Admin interface of generic agent loses some of the submitted form data if any errors occur.
- - 2025-06-24 Fixed: Wrong otrs.Daemon.pl exit code after valid termination. Thanks to Paweł Bogusławski (@pboguslawski). [#401](https://github.com/znuny/Znuny/pull/401)
+ - 2025-06-24 Fixed: Wrong otrs.Daemon.pl exit code after valid termination. Thanks to Paweł Bogusławski (@pboguslawski). [#401](https://github.com/buzzdesk/BuzzDesk/pull/401)
  - 2025-06-17 Fixed: Added missing parameter TwoFactorToken in Kernel::GenericInterface::Operation::Session::Common->CreateSessionID() to Perldoc.
- - 2025-06-06 Fixed: Some HTTP headers have a semicolon at the end of the value. Thanks to Paweł Bogusławski (@pboguslawski) for reporting. [#653](https://github.com/znuny/Znuny/issues/653)
- - 2025-06-06 Fixed: TLD of email address in S/MIME certificates is limited in length to two to four characters. Thanks for reporting to @dsm-museum-it. [#674](https://github.com/znuny/Znuny/issues/674)
- - 2025-06-05 Integrated package Znuny-SMTPRateLimit. Adds configuration options 'SendmailModule::RateLimit' and 'SendmailModule::RateLimitPerSenderAddress' to limit amount of sent emails per batch.
+ - 2025-06-06 Fixed: Some HTTP headers have a semicolon at the end of the value. Thanks to Paweł Bogusławski (@pboguslawski) for reporting. [#653](https://github.com/buzzdesk/BuzzDesk/issues/653)
+ - 2025-06-06 Fixed: TLD of email address in S/MIME certificates is limited in length to two to four characters. Thanks for reporting to @dsm-museum-it. [#674](https://github.com/buzzdesk/BuzzDesk/issues/674)
+ - 2025-06-05 Integrated package BuzzDesk-SMTPRateLimit. Adds configuration options 'SendmailModule::RateLimit' and 'SendmailModule::RateLimitPerSenderAddress' to limit amount of sent emails per batch.
  - 2025-06-05 Fixed: Added missing required parameter UserType in Kernel::System::AuthSession->() to Perldoc. Added optional parameter SessionSource to Perldoc.
- - 2025-05-22 Fixed: Generic interface operation Session::SessionRemove requires a user login instead of just a valid session ID. [#638](https://github.com/znuny/Znuny/issues/638).
+ - 2025-05-22 Fixed: Generic interface operation Session::SessionRemove requires a user login instead of just a valid session ID. [#638](https://github.com/buzzdesk/BuzzDesk/issues/638).
  - 2025-05-20 Fixed: Multiple spaces in templates not replaced correctly when using placeholders (e.g. OTRS_CUSTOMER_BODY).
  - 2025-05-15 Fixed: Process Management: Dynamic field long description is on the wrong side of Label.
- - 2025-05-05 Fixed: Memory overflow in calendar event when displayed in the ticket detail view. Thanks to @DonMarlowne. [PR#652](https://github.com/znuny/Znuny/pull/652)
+ - 2025-05-05 Fixed: Memory overflow in calendar event when displayed in the ticket detail view. Thanks to @DonMarlowne. [PR#652](https://github.com/buzzdesk/BuzzDesk/pull/652)
  - 2025-04-30 Fixed: broken OTRS_CUSTOMER_REALNAME placeholder expansion in AgentTicketMerge.
  - 2025-03-26 Fixed: Tree view icon not showing up for dynamic field types Dropdown and Multiselect.
  - 2025-03-25 Generic interface operation TicketUpdate now checks detailed ticket permissions of customer user.
 
 # 6.5.15 2025-04-30
  - 2025-04-24 Fixed bug - Setting the password does not reset preferences UserLoginFailed and UserLastPwChangeTime.
- - 2025-04-16 Updated Net::IMAP::Simple to latest version from GitHub. Thanks to @dandanpena. [PR#155](https://github.com/znuny/Znuny/pull/155)
- - 2025-04-16 Fixed bug - $LayoutObject->BuildDateSelection() does not deactivate the DatePicker and DatePickerIcon if Disabled is 1. Thanks for reporting to @BuilderNSV. [#649](https://github.com/znuny/Znuny/issues/649)
+ - 2025-04-16 Updated Net::IMAP::Simple to latest version from GitHub. Thanks to @dandanpena. [PR#155](https://github.com/buzzdesk/BuzzDesk/pull/155)
+ - 2025-04-16 Fixed bug - $LayoutObject->BuildDateSelection() does not deactivate the DatePicker and DatePickerIcon if Disabled is 1. Thanks for reporting to @BuilderNSV. [#649](https://github.com/buzzdesk/BuzzDesk/issues/649)
  - 2025-04-11 Added option CcAddressRegExp to postmaster filter ExternalTicketNumberRecognition.
  - 2025-03-27 Added option ToAddressRegExp to postmaster filter ExternalTicketNumberRecognition.
  - 2025-03-26 Added German message for ticket event notification "ticket email delivery failure".
@@ -831,16 +831,16 @@
  - 2025-02-13 Fixed ticket filter for new mentions.
 
 # 6.5.13 2025-02-13
- - 2025-02-13 Fixed content security policy HTTP header. Thanks for reporting to @nixahnung. [#641](https://github.com/znuny/Znuny/issues/641)
+ - 2025-02-13 Fixed content security policy HTTP header. Thanks for reporting to @nixahnung. [#641](https://github.com/buzzdesk/BuzzDesk/issues/641)
 
 # 6.5.12 2025-02-12
- - 2025-02-06 Added SortBy and SortOrder options to Znuny.Form.Input.Set to sort select field options by key or value.
+ - 2025-02-06 Added SortBy and SortOrder options to BuzzDesk.Form.Input.Set to sort select field options by key or value.
  - 2025-02-05 Fixed event check in ticket event module Kernel::System::Ticket::Event::TicketDynamicFieldDefault.
  - 2025-01-29 Added HTTP headers for more safety.
  - 2025-01-28 Fixed permission check in generic interface operation TicketUpdate.
  - 2025-01-27 Added user check to scripts/backup.pl and scripts/restore.pl to prevent these scripts from being executed with root permissions. Thanks to Diego Tellaroli for reporting this issue.
  - 2025-01-22 Fixed uninitialized value bug. TicketZoom/Agent/MIMEBase.pm - Added special handling for 'undef' values in the arrayref $Event->{$Property}.
- - 2025-01-21 Fixed Bug - Problem when handling errors in the owner field in the activity dialog. Thanks to Daylton Rodrigues (@dayltonr) for reporting. [#627](https://github.com/znuny/Znuny/issues/627).
+ - 2025-01-21 Fixed Bug - Problem when handling errors in the owner field in the activity dialog. Thanks to Daylton Rodrigues (@dayltonr) for reporting. [#627](https://github.com/buzzdesk/BuzzDesk/issues/627).
  - 2025-01-16 Increased size of columns profile_key and profile_value of database table search_profile.
  - 2025-01-14 Fixed setting of HTTP type attribute in cookie on agent and customer user login.
  - 2025-01-08 Added config option DynamicFields::Driver::BaseSelect::EnableHistoricalValues to enable/disable evaluation of historical values for dynamic field types based on BaseSelect.
@@ -851,13 +851,13 @@
  - 2024-12-06 Fixed data evaluation in ICS calendar event.
  - 2024-11-28 Fixed Server Error, when Frontend::Template::GenerateBlockHooks###NAME has no valid data structure.
  - 2024-11-27 Fixed user cache being cleared for all users whenever a user logs in/out.
- - 2024-11-01 Fixed Bug - Translate the ticket state in PDF search result (AgentTicketSearch and CustomerTicketSearch). Thanks to @BuilderNSV for reporting the issue. [#615](https://github.com/znuny/Znuny/issues/615)
- - 2024-11-01 Sector Nord AG: Fixed uninitialized value in AdminSelectBox. Thanks to Sector Nord AG (@jsinagowitz). [PR#611](https://github.com/znuny/Znuny/pull/611)
+ - 2024-11-01 Fixed Bug - Translate the ticket state in PDF search result (AgentTicketSearch and CustomerTicketSearch). Thanks to @BuilderNSV for reporting the issue. [#615](https://github.com/buzzdesk/BuzzDesk/issues/615)
+ - 2024-11-01 Sector Nord AG: Fixed uninitialized value in AdminSelectBox. Thanks to Sector Nord AG (@jsinagowitz). [PR#611](https://github.com/buzzdesk/BuzzDesk/pull/611)
  - 2024-10-31 Template generator will now keep &nbsp; in a template when in rich text mode and won't replace them with spaces anymore. This lead to multiple &nbsp; reduced to one space being shown in the editor.
  - 2024-10-28 S/MIME verification: Added fallback option to disable verification of the signer's certificate after initial verification failed. Activated by new config option SMIME::NoVerify.
- - 2024-10-24 Fixed Bug - 'Use of uninitialized value' warning on build custom package and there are no permissions to write to the target directory. Thanks to @BuilderNSV for reporting the issue. [#610](https://github.com/znuny/Znuny/issues/610)
+ - 2024-10-24 Fixed Bug - 'Use of uninitialized value' warning on build custom package and there are no permissions to write to the target directory. Thanks to @BuilderNSV for reporting the issue. [#610](https://github.com/buzzdesk/BuzzDesk/issues/610)
  - 2024-10-22 Perl Module Hash::Merge is now be listed in otrs.CheckModules.pl as mandatory.
- - 2024-10-15 Ticket search for customer ID in customer interface now searches for the raw ID. Thanks to @BuilderNSV for reporting the issue. [#602](https://github.com/znuny/Znuny/issues/602)
+ - 2024-10-15 Ticket search for customer ID in customer interface now searches for the raw ID. Thanks to @BuilderNSV for reporting the issue. [#602](https://github.com/buzzdesk/BuzzDesk/issues/602)
  - 2024-10-10 Updated MIME::Decoder::QuotedPrint from 5.509 to 5.515.
  - 2024-10-07 Updated jstree from version 3.3.7 to 3.3.8.
  - 2024-10-07 Updated nunjucks from version 3.2.2 to 3.2.3.
@@ -866,14 +866,14 @@
  - 2024-10-02 Added HTML filter to ProcessManagement/SLA template. Converts the characters <, >, & and " to <, >, &, and " respectively, protecting them from being interpreted as representing HTML tags or entities.
  - 2024-09-26 Removed regex from Kernel::System::HTMLUtils::DocumentCleanup that could lead to a security issue. It replaced HTML of Microsoft Word. Thanks for reporting to Emin Yazi (@eyazi), Efflux.
  - 2024-09-25 Fixed link to customer information center in agent ticket zoom.
- - 2024-09-24 Updated CKEditor to version 4.25.1-znuny.
+ - 2024-09-24 Updated CKEditor to version 4.25.1-buzzdesk.
  - 2024-09-24 Fixed bug - ArticleStorageSwitch creates duplicate files with an additional file extension '-1'.
  - 2024-09-18 Fixed exit code of migration script.
  - 2024-09-10 Fixed sorting of translated list entries in dropdown elements.
  - 2024-09-09 Improved performance regarding dynamic field values when fetching tickets.
  - 2024-09-09 Improved error logging in OAuth2 token overview. Fixed token error message reset.
  - 2024-08-27 Fixed console command Admin::Service::Add - does not work after ITSMCore is installed.
- - 2024-08-27 Added auto mapping for unknown actions to Znuny.Form.Input.FieldIDMapping.
+ - 2024-08-27 Added auto mapping for unknown actions to BuzzDesk.Form.Input.FieldIDMapping.
  - 2024-08-23 Fixed duplicate database record insert attempts for ticket flags. Thanks to @lukasdebaum for reporting. #531
  - 2024-08-22 Added '--single-transaction' option to scripts/backup.pl for MySQL/MariaDB. The --single-transaction flag will start a transaction before running.
  - 2024-07-29 Fixed evaluation of ticket ID parameter in generic interface operation TicketGet.
@@ -884,18 +884,18 @@
  - 2024-07-08 Improved and fixed links to customer and customer user information center in several widgets and overview pages.
  - 2024-07-08 Invoker Ticket::Generic: Configured fields will now also be removed and encoded from/for given data (payload).
  - 2024-06-20 Fixed output of last mention date in dashboard widget "Last mentions".
- - 2024-04-12 Fixed event registration regular expressions in config options. Thanks to Paweł Bogusławski (@pboguslawski) for reporting. [#440](https://github.com/znuny/Znuny/issues/440)
+ - 2024-04-12 Fixed event registration regular expressions in config options. Thanks to Paweł Bogusławski (@pboguslawski) for reporting. [#440](https://github.com/buzzdesk/BuzzDesk/issues/440)
  - 2024-02-13 Fixed autocompletion search for dynamic field types WebserviceDropdown and WebserviceMultiselect in AgentTicketSearch dialog.
 
 # 6.5.9 2024-06-26
  - 2024-06-19 Fixed home directory check in AdminSystemFiles to work with symbolic links.
- - 2024-06-07 Fixed value used for owner lookup in AgentTicketProcess. Thanks to Falko Saller (@falkos). [#556](https://github.com/znuny/Znuny/pull/556)
+ - 2024-06-07 Fixed value used for owner lookup in AgentTicketProcess. Thanks to Falko Saller (@falkos). [#556](https://github.com/buzzdesk/BuzzDesk/pull/556)
  - 2024-05-28 Fixed caching for queue updates.
  - 2024-05-17 Fixed session handling while saving user preferences.
  - 2024-04-29 Updated default values of PublicFrontend::FooterLinks.
  - 2024-04-24 Fixed regular expression in Kernel::System::HTMLUtils::LinkQuote which could lead to long execution times.
- - 2024-04-22 Integrated package Znuny4OTRS-BugfixCustomerUserDBPasswordCryptType.
- - 2024-04-19 Added support for two factor auth token parameter to generic interface. Thanks to Flávio Marta (@CallMeFlanby). [#502](https://github.com/znuny/Znuny/pull/502)
+ - 2024-04-22 Integrated package BuzzDesk4OTRS-BugfixCustomerUserDBPasswordCryptType.
+ - 2024-04-19 Added support for two factor auth token parameter to generic interface. Thanks to Flávio Marta (@CallMeFlanby). [#502](https://github.com/buzzdesk/BuzzDesk/pull/502)
  - 2024-04-18 Fixed smart tag replacement for article subjects in process activity dialogs.
  - 2024-04-18 Improved AJAX subactions for AgentTicketEmailOutbound.
  - 2024-04-16 Fixed CSS class used for showing sort order of dynamic fields in customer ticket overview.
@@ -903,51 +903,51 @@
 
 # 6.5.8 2024-04-17
  - 2024-04-11 Fixed session handling while saving user preferences.
- - 2024-04-10 Fixed mixed usage of database objects in customer and customer user database backend. [#540](https://github.com/znuny/Znuny/issues/540)
+ - 2024-04-10 Fixed mixed usage of database objects in customer and customer user database backend. [#540](https://github.com/buzzdesk/BuzzDesk/issues/540)
  - 2024-04-05 CVE-2024-32493: Fixed SQL injection issue regarding Form IDs when cleaning up drafts. Thanks to Martino Spagnuolo for reporting the issue.
  - 2024-04-05 CVE-2024-32491: Fixed security issue with uploading files that could be placed to any writable location and used for remote code execution. Thanks to Martino Spagnuolo for reporting and providing the fix.
 
 # 6.5.7 2024-04-03
- - 2024-03-22 Fixed dynamic field smart tag support for snippets. [#537](https://github.com/znuny/Znuny/issues/537)
- - 2024-03-13 Fixed usage of sysconfig setting `Ticket::Frontend::Overview::PreviewArticleSenderTypes`. [#542](https://github.com/znuny/Znuny/issues/542)
+ - 2024-03-22 Fixed dynamic field smart tag support for snippets. [#537](https://github.com/buzzdesk/BuzzDesk/issues/537)
+ - 2024-03-13 Fixed usage of sysconfig setting `Ticket::Frontend::Overview::PreviewArticleSenderTypes`. [#542](https://github.com/buzzdesk/BuzzDesk/issues/542)
  - 2024-03-04 Hide mentions widget on ticket zoom when no mentions are available.
  - 2024-02-29 Hide unknown content-type on article attachments.
  - 2024-02-28 Process management: Transition actions TicketCreate, TicketArticleCreate, ArticleSend now skip on invalid attachment IDs.
  - 2024-02-13 Dashboard widget "My last changed tickets": Increased performance of database query.
- - 2024-02-27 Fixed a variable for sha512 in Auth::DB. [#379](https://github.com/znuny/Znuny/issues/379)
- - 2024-02-22 Fix for generic agent: Scheduled job immediate executed after schedule was changed. Thanks to Paweł Bogusławski (@pboguslawski). [#406](https://github.com/znuny/Znuny/pull/406)
- - 2022-02-22 Removed initial insert of `TransportEmailTemplate` in `notification_event_item` table for mention notification and ticket email delivery failure notification. Thanks to Paweł Bogusławski (@pboguslawski). [#397](https://github.com/znuny/Znuny/pull/397)
+ - 2024-02-27 Fixed a variable for sha512 in Auth::DB. [#379](https://github.com/buzzdesk/BuzzDesk/issues/379)
+ - 2024-02-22 Fix for generic agent: Scheduled job immediate executed after schedule was changed. Thanks to Paweł Bogusławski (@pboguslawski). [#406](https://github.com/buzzdesk/BuzzDesk/pull/406)
+ - 2022-02-22 Removed initial insert of `TransportEmailTemplate` in `notification_event_item` table for mention notification and ticket email delivery failure notification. Thanks to Paweł Bogusławski (@pboguslawski). [#397](https://github.com/buzzdesk/BuzzDesk/pull/397)
  - 2024-02-08 Process management: Fixed js error while editing activity dialog.
  - 2024-02-07 Fixed js error in process management while editing a transition within a process if it is not linked to two activities.
  - 2024-02-06 Fixed handling of (un)selecting checkboxes on permissions table for AdminCustomerUserGroup.
  - 2024-02-02 Fixed form parameter evaluation in dialog for assignment of dynamic fields to screens (AdminDynamicFieldScreenConfiguration).
  - 2024-02-02 Removed session data from support bundle generator.
- - 2024-02-02 Add html comment end tag into template file. Thanks to @kolbma. [PR#530](https://github.com/znuny/Znuny/pull/530)
+ - 2024-02-02 Add html comment end tag into template file. Thanks to @kolbma. [PR#530](https://github.com/buzzdesk/BuzzDesk/pull/530)
  - 2024-02-01 Added ACL checks to ticket process toolbar entry.
 
 # 6.5.6 2024-01-31
  - 2024-01-25 Fixed migration of mention notification.
  - 2024-01-19 Fixed slow regular expression in postmaster attachment detection.
- - 2024-01-18 Exchanged CKEditor 4.22.1 source version with minified version to improve browser loading times. [#533](https://github.com/znuny/Znuny/issues/533)
+ - 2024-01-18 Exchanged CKEditor 4.22.1 source version with minified version to improve browser loading times. [#533](https://github.com/buzzdesk/BuzzDesk/issues/533)
  - 2024-01-11 Fixed appointment notifications not being sent if crypting/signing options were configured.
- - 2024-01-10 Fixed setting default value for time units when using dropdown fields. [#464](https://github.com/znuny/Znuny/issues/464)
+ - 2024-01-10 Fixed setting default value for time units when using dropdown fields. [#464](https://github.com/buzzdesk/BuzzDesk/issues/464)
  - 2024-01-08 Updated AdminSystemFiles: Added additional file check.
- - 2024-01-08 Fixed rich text editor's field height problems by disabling CKEditor's autogrow plugin. Thanks to Paweł Bogusławski (@pboguslawski). [#526](https://github.com/znuny/Znuny/pull/526)
+ - 2024-01-08 Fixed rich text editor's field height problems by disabling CKEditor's autogrow plugin. Thanks to Paweł Bogusławski (@pboguslawski). [#526](https://github.com/buzzdesk/BuzzDesk/pull/526)
  - 2023-12-22 Deactivated CKE 4 plugin embedsemantic because it showed the content of a link instead of just the link.
  - 2023-10-24 Kernel::System::MailQueue::Send now increases number of attempts before sending an email. This prevents the attempts not being increased if the process dies while trying to send an email.
 
 # 6.5.5 2023-12-13
  - 2023-12-11 Increased size of user_id column in table customer_user_customer.
  - 2023-12-07 Customer detail search cache for dynamic field values will now be cleared if a customer will be added or updated.
- - 2023-11-30 Fixed URL for CustomerID in AgentTicketOverviewMedium. [#506](https://github.com/znuny/Znuny/issues/506)
+ - 2023-11-30 Fixed URL for CustomerID in AgentTicketOverviewMedium. [#506](https://github.com/buzzdesk/BuzzDesk/issues/506)
  - 2023-11-30 Added missing links to widget on CustomerUserInformationCenter: create phone ticket, create email ticket, switch to customer.
- - 2023-11-17 Increased size of text columns for standard templates and notification event messages. Thanks for reporting to @BurtGummer. [#504](https://github.com/znuny/Znuny/issues/504)
+ - 2023-11-17 Increased size of text columns for standard templates and notification event messages. Thanks for reporting to @BurtGummer. [#504](https://github.com/buzzdesk/BuzzDesk/issues/504)
  - 2023-11-17 Pending dashboards now show all pending tickets.
  - 2023-11-13 Added option 'send-timeout' to console command Maint::Email::MailQueue.
  - 2023-11-10 Sessions will now be removed immediately (instead of by daemon task) if a user will be renamed, leading to a direct logout if a user renames himself.
- - 2023-11-06 Sector Nord AG: Fixed encoding of shown changes on subaction ViewDiff of AdminPackageManager. Thanks to Ziggy Trotter (@ZTrotter), Sector Nord AG. [PR#486](https://github.com/znuny/Znuny/pull/486)
- - 2023-11-06 Sector Nord AG: Fixed CTRL+left click in ticket overviews. Thanks to Ziggy Trotter (@ZTrotter), Sector Nord AG. [PR#487](https://github.com/znuny/Znuny/pull/487)
- - 2023-11-06 Fixed queue_id in ticket history for the initial ticket. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#299](https://github.com/znuny/Znuny/pull/299)
+ - 2023-11-06 Sector Nord AG: Fixed encoding of shown changes on subaction ViewDiff of AdminPackageManager. Thanks to Ziggy Trotter (@ZTrotter), Sector Nord AG. [PR#486](https://github.com/buzzdesk/BuzzDesk/pull/486)
+ - 2023-11-06 Sector Nord AG: Fixed CTRL+left click in ticket overviews. Thanks to Ziggy Trotter (@ZTrotter), Sector Nord AG. [PR#487](https://github.com/buzzdesk/BuzzDesk/pull/487)
+ - 2023-11-06 Fixed queue_id in ticket history for the initial ticket. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#299](https://github.com/buzzdesk/BuzzDesk/pull/299)
  - 2023-10-26 Added pagination for ArticlePages on AgentTicketZoom.
  - 2023-10-25 Fixed error handling in invoker Ticket::Generic.
  - 2023-10-23 Fixed used email address to decrypt S/MIME messages in Kernel::System::PostMaster::Filter::Decrypt.
@@ -955,7 +955,7 @@
  - 2023-09-29 Added optional caching to web service requests of dynamic field types WebserviceDropdown and WebserviceMultiselect.
  - 2023-09-22 Fixed some errors in the customer interface being shown with the agent interface's header navigation. Thanks for reporting/hints to Tim Püttmanns, maxence.
  - 2023-09-19 Fixed mixed up content types for article body and signature in generic interface operations TicketCreate and TicketUpdate.
- - 2023-08-29 Updated maximum length of generic agent job database fields and their input fields in dialog AdminGenericAgent to prevent errors storing values too long for the database. [#474](https://github.com/znuny/Znuny/issues/474)
+ - 2023-08-29 Updated maximum length of generic agent job database fields and their input fields in dialog AdminGenericAgent to prevent errors storing values too long for the database. [#474](https://github.com/buzzdesk/BuzzDesk/issues/474)
  - 2023-08-23 Added parameter to enforce account selection for the Microsoft OAuth2 template.
 
 # 6.5.4 2023-08-23
@@ -968,31 +968,31 @@
  - 2023-08-11 Added additional note to DynamicFields::ScreenConfiguration::ConfigKeysOfScreensByObjectType###Framework for AgentTicketSearch (DynamicField|DefaultColumns).
  - 2023-08-11 Fixed - Installing a package with dependency not possible - Added additional check if any problem exists - means if any package or module is not installed.
  - 2023-08-11 Changed default value of Frontend::AvatarEngine to None.
- - 2023-08-07 Fixed missing $ on StartDateTimeObject -> $StartDateTimeObject (#475). Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [PR#475](https://github.com/znuny/Znuny/pull/475).
+ - 2023-08-07 Fixed missing $ on StartDateTimeObject -> $StartDateTimeObject (#475). Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [PR#475](https://github.com/buzzdesk/BuzzDesk/pull/475).
  - 2023-08-07 Fixed description for SysConfig Setting 'Stats::UseAgentElementInStats' and 'Stats::UseInvalidAgentInStats'.
- - 2023-08-07 Fixed message subject prefill on Activity dialog only works for Agent. https://github.com/znuny/Znuny/issues/363
+ - 2023-08-07 Fixed message subject prefill on Activity dialog only works for Agent. https://github.com/buzzdesk/BuzzDesk/issues/363
  - 2023-08-04 Fixed auto-selection of first found element in dynamic field web service single-select dropdown.
- - 2023-08-03 Fixed Bug - Snippets not sorted by name in search results. [#473](https://github.com/znuny/Znuny/issues/473)
- - 2023-08-02 Fixed Popup profile positioning. Thanks to Paweł Bogusławski (@pboguslawski). [#432](https://github.com/znuny/Znuny/pull/432)
+ - 2023-08-03 Fixed Bug - Snippets not sorted by name in search results. [#473](https://github.com/buzzdesk/BuzzDesk/issues/473)
+ - 2023-08-02 Fixed Popup profile positioning. Thanks to Paweł Bogusławski (@pboguslawski). [#432](https://github.com/buzzdesk/BuzzDesk/pull/432)
  - 2023-07-31 Fixed Draft Issue - Using the draft fails if there are any dynamic fields configured as mandatory for the screen where the draft is used.
- - 2023-07-27 Fixed remove of mention and unnecessary errors in the log. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#295](https://github.com/znuny/Znuny/pull/295)
- - 2023-07-27 Sector Nord AG: Fixed responsible user id during appointment ticket creation. Thanks to Marc Pahnke (@MarcPahnke), Sector Nord AG. [#325](https://github.com/znuny/Znuny/pull/325)
+ - 2023-07-27 Fixed remove of mention and unnecessary errors in the log. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#295](https://github.com/buzzdesk/BuzzDesk/pull/295)
+ - 2023-07-27 Sector Nord AG: Fixed responsible user id during appointment ticket creation. Thanks to Marc Pahnke (@MarcPahnke), Sector Nord AG. [#325](https://github.com/buzzdesk/BuzzDesk/pull/325)
  - 2023-07-26 Fixed encoding problem with URL parameters in AdminPostMasterFilter and AdminGenericAgent.
- - 2023-07-25 Fixed search limitations for AgentTicketWatchView. [#372](https://github.com/znuny/Znuny/issues/372)
+ - 2023-07-25 Fixed search limitations for AgentTicketWatchView. [#372](https://github.com/buzzdesk/BuzzDesk/issues/372)
  - 2023-07-24 Fixed removal of all permissions of a user if LDAP auth sync is being executed without any configured group or role definition.
- - 2023-07-21 Fixed double encoding for dynamic field values in linked-tickets-table. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#300](https://github.com/znuny/Znuny/pull/300)
+ - 2023-07-21 Fixed double encoding for dynamic field values in linked-tickets-table. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#300](https://github.com/buzzdesk/BuzzDesk/pull/300)
  - 2023-07-20 Fixed select fields not being modernized in ticket overview dialogs.
  - 2023-07-20 Added system address check for customer email address given in AgentTicketPhone.
  - 2023-07-13 Fixed calendar appointment creation: Missing scrollbar at low resolution / high zoom.
- - 2023-07-11 Fixed mentions for deleted tickets. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#458](https://github.com/znuny/Znuny/pull/458)
+ - 2023-07-11 Fixed mentions for deleted tickets. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#458](https://github.com/buzzdesk/BuzzDesk/pull/458)
  - 2023-07-10 Added console command to import dynamic fields and dynamic field screens configuration.
  - 2023-07-07 Fixed email address shown in user's avatar preferences when editing the preferences of another user (not the own user).
- - 2023-07-04 Fixed - Incorrect display of empty HTML article body. Thanks to Paweł Bogusławski (@pboguslawski). [#438](https://github.com/znuny/Znuny/pull/438)
- - 2023-07-04 Sector Nord AG: Fixed Calendar appointment plugin AppointmentID data type. Thanks to Sector Nord AG (@LuBroering - Lukas Bröring). [#308](https://github.com/znuny/Znuny/pull/308)
- - 2023-07-04 Fixed - Line breaks in processes when richtext disabled. Used ->{BrowserRichText}. Thanks to Timotheus Pokorra (@tpokorra). [#447](https://github.com/znuny/Znuny/issues/447)
- - 2023-06-30 LDAP auth sync: Fixed permissions removed in LDAP not being reliably removed from users in Znuny.
- - 2023-06-29 Added missing salutation and signature to notification for user mentions. Thanks to Paweł Bogusławski (@pboguslawski). [#420](https://github.com/znuny/Znuny/issues/420)
- - 2023-06-26 Fixed warning about missing article ID in AgentTicketNoteToLinkedTicket. Thanks to Paweł Bogusławski (@pboguslawski). [#431](https://github.com/znuny/Znuny/issues/431)
+ - 2023-07-04 Fixed - Incorrect display of empty HTML article body. Thanks to Paweł Bogusławski (@pboguslawski). [#438](https://github.com/buzzdesk/BuzzDesk/pull/438)
+ - 2023-07-04 Sector Nord AG: Fixed Calendar appointment plugin AppointmentID data type. Thanks to Sector Nord AG (@LuBroering - Lukas Bröring). [#308](https://github.com/buzzdesk/BuzzDesk/pull/308)
+ - 2023-07-04 Fixed - Line breaks in processes when richtext disabled. Used ->{BrowserRichText}. Thanks to Timotheus Pokorra (@tpokorra). [#447](https://github.com/buzzdesk/BuzzDesk/issues/447)
+ - 2023-06-30 LDAP auth sync: Fixed permissions removed in LDAP not being reliably removed from users in BuzzDesk.
+ - 2023-06-29 Added missing salutation and signature to notification for user mentions. Thanks to Paweł Bogusławski (@pboguslawski). [#420](https://github.com/buzzdesk/BuzzDesk/issues/420)
+ - 2023-06-26 Fixed warning about missing article ID in AgentTicketNoteToLinkedTicket. Thanks to Paweł Bogusławski (@pboguslawski). [#431](https://github.com/buzzdesk/BuzzDesk/issues/431)
  - 2023-06-21 Extend TicketArticleCreate transition action for a possibility to set a dynamic field of object type article and ticket.
  - 2023-06-19 Fixed dynamic field type 'Webservice' admin dialog test field being read-only and not usable.
  - 2023-06-02 S/MIME: Increased size of column 'email_address' of table 'smime_keys'.
@@ -1001,46 +1001,46 @@
  - 2023-05-31 Added removal of protocol-relative URLs to Kernel::System::HTMLUtils::Safety. Thanks to Tim Püttmanns (@tipue-dev), maxence, for reporting the issue.
  - 2023-05-31 Added security relevant check for content type of article and attachments to generic interface operations TicketCreate and TicketUpdate. Thanks to Tim Püttmanns (@tipue-dev), maxence, for reporting the issue.
  - 2023-05-31 Process management: Added missing scope filter for transition actions.
- - 2023-05-30 Updated CPAN library Sisimai to version 4.25.16. [#391](https://github.com/znuny/Znuny/issues/391)
+ - 2023-05-30 Updated CPAN library Sisimai to version 4.25.16. [#391](https://github.com/buzzdesk/BuzzDesk/issues/391)
  - 2023-05-25 Changed article action 'note to linked ticket' to only be visible/usable in agent ticket zoom.
  - 2023-05-24 Selected value in a dynamic field web service dropdown field can now be removed with 'x' button.
  - 2023-05-23 Fixed event handling for DBCRUD history entries.
- - 2023-05-05 Fixed html element id of forward templates in AgentTicketZoom. [#351](https://github.com/znuny/Znuny/issues/351)
+ - 2023-05-05 Fixed html element id of forward templates in AgentTicketZoom. [#351](https://github.com/buzzdesk/BuzzDesk/issues/351)
 
 # 6.5.2 2023-04-19
  - 2023-04-13 Activated information section and modal dialog for ICS calendar events in AgentTicketZoom view.
  - 2023-04-05 Fixed format of returned filename in function Kernel::System::Stats::StringAndTimestamp2Filename.
  - 2023-04-03 AdminSLA: Sub-services will now be shown as invalid if SLA is set to invalid.
  - 2023-03-20 Fixed handling of article attachments in generic interface operations TicketCreate and TicketUpdate.
- - 2023-03-16 Added Appointment::EventModulePost Entry in XML. Thanks to Kevin Janssen (@BuTzZ). [PR#315](https://github.com/znuny/Znuny/pull/315)
+ - 2023-03-16 Added Appointment::EventModulePost Entry in XML. Thanks to Kevin Janssen (@BuTzZ). [PR#315](https://github.com/buzzdesk/BuzzDesk/pull/315)
  - 2023-03-10 Fixed notification about empty subject for article drafts in AgentTicketCompose and AgentTicketEmailOutbound.
- - 2023-03-09 Fixed duplicate usage of render block 'AdditionalHeaders' in dialog AdminGenericInterfaceTransportHTTPREST. Increased maximum length of additional header keys and values from 150 to 2000 characters in dialogs AdminGenericInterfaceTransportHTTPREST and AdminGenericInterfaceTransportHTTPSOAP. [#321](https://github.com/znuny/Znuny/issues/321)
+ - 2023-03-09 Fixed duplicate usage of render block 'AdditionalHeaders' in dialog AdminGenericInterfaceTransportHTTPREST. Increased maximum length of additional header keys and values from 150 to 2000 characters in dialogs AdminGenericInterfaceTransportHTTPREST and AdminGenericInterfaceTransportHTTPSOAP. [#321](https://github.com/buzzdesk/BuzzDesk/issues/321)
  - 2023-03-02 Fixed handling of time zone for DateTime objects created with string in ISO 8601 format (e.g. '2017-05-09T07:00:09+0400').
 
 # 6.5.1 2023-03-09
  - 2023-02-28 Added options tickets-created-before-date and tickets-created-before-days to console command Admin::Article::StorageSwitch.
  - 2023-02-28 Fixed encoding of postmaster filter name in AdminPostMasterFilter.
  - 2023-02-28 Fixed encoding of profile name in AdminGenericAgent.
- - 2023-02-23 Fixed "Inline images in drafts will not display for more than 24 hours". [#309](https://github.com/znuny/Znuny/issues/309)
+ - 2023-02-23 Fixed "Inline images in drafts will not display for more than 24 hours". [#309](https://github.com/buzzdesk/BuzzDesk/issues/309)
  - 2023-02-21 Fixed - Agent Calendar Import: Import of a calendar file does not work.
- - 2023-02-20 Removed maxlength for field short description in ActivityDialog (#335). Thanks to Sector Nord AG (@paulfolkers). [PR#335](https://github.com/znuny/Znuny/pull/335)
- - 2023-02-17 Moved code of ITSMIncidentProblemManagement to Znuny Framework that will only be executed if ITSM actually is installed.
+ - 2023-02-20 Removed maxlength for field short description in ActivityDialog (#335). Thanks to Sector Nord AG (@paulfolkers). [PR#335](https://github.com/buzzdesk/BuzzDesk/pull/335)
+ - 2023-02-17 Moved code of ITSMIncidentProblemManagement to BuzzDesk Framework that will only be executed if ITSM actually is installed.
  - 2023-02-17 Removed CPAN::Audit as a required Perl module.
- - 2023-02-16 Integrated package Znuny-NoteToLinkedTicket.
+ - 2023-02-16 Integrated package BuzzDesk-NoteToLinkedTicket.
  - 2023-02-13 Added support for smart tags to process activity dialog article field.
  - 2023-01-25 Added Dashboard element filter: My owned tickets.
  - 2023-01-23 Added new event module to store customer company data in ticket dynamic fields: Ticket::EventModulePost DynamicFieldFromCustomerCompany.
- - 2023-01-23 Sort screens in AdminDynamicFieldScreenConfiguration by values (#327). Thanks to Emin Yazi (@eyazi), Efflux. [PR#327](https://github.com/znuny/Znuny/pull/327)
- - 2023-01-20 Added SysConfig setting to configure format tags in rich text editor. Thanks to Daniel Sprenger (@sprengerdaniel). [PR#334](https://github.com/znuny/Znuny/pull/334)
- - 2023-01-20 Fixed "NoPermission" screen to use "CustomerNoPermission" for ACL checking. Thanks to Sector Nord AG (@paulfolkers). [PR#333](https://github.com/znuny/Znuny/pull/333)
- - 2023-01-20 Fixed reloading of the toolbar modules. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#317](https://github.com/znuny/Znuny/pull/317)
- - 2023-01-20 Fixed hidden TicketOverview filters for Medium and Preview. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#301](https://github.com/znuny/Znuny/pull/301)
- - 2023-01-20 Fixed uninitialized value warning in AdminSystemMaintenance. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#298](https://github.com/znuny/Znuny/pull/298)
+ - 2023-01-23 Sort screens in AdminDynamicFieldScreenConfiguration by values (#327). Thanks to Emin Yazi (@eyazi), Efflux. [PR#327](https://github.com/buzzdesk/BuzzDesk/pull/327)
+ - 2023-01-20 Added SysConfig setting to configure format tags in rich text editor. Thanks to Daniel Sprenger (@sprengerdaniel). [PR#334](https://github.com/buzzdesk/BuzzDesk/pull/334)
+ - 2023-01-20 Fixed "NoPermission" screen to use "CustomerNoPermission" for ACL checking. Thanks to Sector Nord AG (@paulfolkers). [PR#333](https://github.com/buzzdesk/BuzzDesk/pull/333)
+ - 2023-01-20 Fixed reloading of the toolbar modules. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#317](https://github.com/buzzdesk/BuzzDesk/pull/317)
+ - 2023-01-20 Fixed hidden TicketOverview filters for Medium and Preview. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#301](https://github.com/buzzdesk/BuzzDesk/pull/301)
+ - 2023-01-20 Fixed uninitialized value warning in AdminSystemMaintenance. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#298](https://github.com/buzzdesk/BuzzDesk/pull/298)
  - 2023-01-12 Fixed use of unavailable CKEditor autocomplete plugin when editor is in "CodeMirror" mode (e.g. web service XSLT configuration dialog).
  - 2023-01-10 JavaScript code will now be removed from href attributes in function Kernel::System::HTMLUtils::ToAscii. Thanks for hints to Tim Püttmanns, maxence.
- - 2023-01-10 Sector Nord AG: Fixed popup description long were cut off in Customer Interface. Thanks to Sector Nord AG (@jsinagowitz). [PR#331](https://github.com/znuny/Znuny/pull/331)
- - 2023-01-09 Integrated package Znuny4OTRS-UserMaxArticlesPerPage.
- - 2023-01-06 Fixed 'ACL misbehaviour in processes' - ActivityEntityID is missing in AgentTicketProcess.pm. [#316](https://github.com/znuny/Znuny/issues/316)
+ - 2023-01-10 Sector Nord AG: Fixed popup description long were cut off in Customer Interface. Thanks to Sector Nord AG (@jsinagowitz). [PR#331](https://github.com/buzzdesk/BuzzDesk/pull/331)
+ - 2023-01-09 Integrated package BuzzDesk4OTRS-UserMaxArticlesPerPage.
+ - 2023-01-06 Fixed 'ACL misbehaviour in processes' - ActivityEntityID is missing in AgentTicketProcess.pm. [#316](https://github.com/buzzdesk/BuzzDesk/issues/316)
  - 2023-01-05 Added missing group check to Kernel/System/Auth/Sync/LDAP.pm.
  - 2023-01-05 Fixed JavaScript error in edit-mode in AdminACL.
  - 2023-01-05 Changed JS alert function to Core.UI.Dialog.ShowAlert.
@@ -1055,9 +1055,9 @@
  - 2022-12-12 Fixed bulk un-mention action via mention view link.
  - 2022-12-07 Added independent ToolBar::TicketProcess. This is only visible when a valid process exists.
  - 2022-11-30 Replaced dynamic field type WebserviceText with WebserviceDropdown.
- - 2022-11-25 Moved code of ITSMCore to Znuny Framework that will only be executed if ITSM actually is installed.
+ - 2022-11-25 Moved code of ITSMCore to BuzzDesk Framework that will only be executed if ITSM actually is installed.
  - 2022-11-24 Fixed handling of empty result for frontend autocompletion of dynamic field type WebserviceMultiselect.
- - 2022-11-24 SOAP::Lite: Data of elements with attribute 'xsi:type' now will be returned as a hash or array instead of an arbitrary object that Znuny cannot handle.
+ - 2022-11-24 SOAP::Lite: Data of elements with attribute 'xsi:type' now will be returned as a hash or array instead of an arbitrary object that BuzzDesk cannot handle.
  - 2022-09-20 Added config level check to SysConfig admin dialog. Thanks for hints to Tim Püttmanns, maxence.
  - 2022-09-16 Auto responses now will not be sent if the recipient would be a system address.
 
@@ -1066,22 +1066,22 @@
 
 # 6.4.4 2022-11-23
  - 2022-11-10 Fixed overlapping input list in search dialog.
- - 2022-11-09 Fixed displayed value for dynamic field type WebserviceText when template placeholder <OTRS_TICKET_DynamicField_*_Value> is being used. [#297](https://github.com/znuny/Znuny/issues/297)
- - 2022-11-02 Added missing migration for generic interface mapping module Znuny4OTRSAdvanced.
- - 2022-10-28 Sector Nord AG: Processmanagement AppointmentCreate - removed unnecessary filter on read permission for CalendarName. Thanks to Sector Nord AG (@LuBroering - Lukas Bröring). [PR#302](https://github.com/znuny/Znuny/pull/302)
- - 2022-10-27 Fixed "Invalid date/time string" errors in otrs.Daemon.pl. Thanks to Paweł Bogusławski (@pboguslawski). [PR#311](https://github.com/znuny/Znuny/pull/311)
+ - 2022-11-09 Fixed displayed value for dynamic field type WebserviceText when template placeholder <OTRS_TICKET_DynamicField_*_Value> is being used. [#297](https://github.com/buzzdesk/BuzzDesk/issues/297)
+ - 2022-11-02 Added missing migration for generic interface mapping module BuzzDesk4OTRSAdvanced.
+ - 2022-10-28 Sector Nord AG: Processmanagement AppointmentCreate - removed unnecessary filter on read permission for CalendarName. Thanks to Sector Nord AG (@LuBroering - Lukas Bröring). [PR#302](https://github.com/buzzdesk/BuzzDesk/pull/302)
+ - 2022-10-27 Fixed "Invalid date/time string" errors in otrs.Daemon.pl. Thanks to Paweł Bogusławski (@pboguslawski). [PR#311](https://github.com/buzzdesk/BuzzDesk/pull/311)
  - 2022-10-26 Fixed sorting of SysConfig entity value types.
  - 2022-10-25 Added migration module to add dynamic fields 'TicketCalendarStartTime' and 'TicketCalendarEndTime'.
  - 2022-10-21 Agent error screen now shows navigation bar if possible.
  - 2022-10-13 Fixed SQL condition in Kernel::System::CustomerUser::DB::CustomerSearch.
- - 2022-10-12 S/MIME certificates will now be reindexed during Znuny migration.
+ - 2022-10-12 S/MIME certificates will now be reindexed during BuzzDesk migration.
  - 2022-10-12 Increased size of column "subject" of table "smime_keys".
  - 2022-10-11 Added input field for OAuth2 token scope to admin dialog.
- - 2022-10-07 Integrated DashboardMyLastChangedTickets. Thanks to Renée Bäcker (@reneeb). [PR#177](https://github.com/znuny/Znuny/pull/177)
- - 2022-10-07 Renamed changed settings from FrontendRichText::Path to Frontend::RichText::Path. Thanks to Emin Yazi (@eyazi), Efflux. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#304](https://github.com/znuny/Znuny/pull/304)
+ - 2022-10-07 Integrated DashboardMyLastChangedTickets. Thanks to Renée Bäcker (@reneeb). [PR#177](https://github.com/buzzdesk/BuzzDesk/pull/177)
+ - 2022-10-07 Renamed changed settings from FrontendRichText::Path to Frontend::RichText::Path. Thanks to Emin Yazi (@eyazi), Efflux. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#304](https://github.com/buzzdesk/BuzzDesk/pull/304)
  - 2022-10-05 Improved usability - AgentTicketBulk - Set DynamicField_NAMEUsed checkbox to true if it is set before or if dynamic field is mandatory.
- - 2022-09-29 Fixed bug - hour 0 is not possible in the default settings for TimeWorkingHours. Thanks to Sector Nord AG (@LuBroering - Lukas Bröring). [PR#296](https://github.com/znuny/Znuny/pull/296)
- - 2022-09-28 Sector Nord AG: Added Sysconfig options to control more settings of CKEditor. Thanks to Sector Nord AG (@jsinagowitz). [PR#285](https://github.com/znuny/Znuny/pull/285)
+ - 2022-09-29 Fixed bug - hour 0 is not possible in the default settings for TimeWorkingHours. Thanks to Sector Nord AG (@LuBroering - Lukas Bröring). [PR#296](https://github.com/buzzdesk/BuzzDesk/pull/296)
+ - 2022-09-28 Sector Nord AG: Added Sysconfig options to control more settings of CKEditor. Thanks to Sector Nord AG (@jsinagowitz). [PR#285](https://github.com/buzzdesk/BuzzDesk/pull/285)
  - 2022-09-27 Fixed TransitionValidation CheckValueGet() - Added already replaced value 'FieldValue'.
  - 2022-09-27 Added FilterViews for FilterAppointments function.
  - 2022-09-27 Changed way of ticket acl checking for AgentTicketActionCommon from name to login.
@@ -1092,58 +1092,58 @@
 
 # 6.4.3 2022-09-21
  - 2022-09-20 Misc. improvements for user mentions.
- - 2022-09-19 Added input fields for OAuth2 token request URLs to admin dialog. [#294](https://github.com/znuny/Znuny/issues/294)
+ - 2022-09-19 Added input fields for OAuth2 token request URLs to admin dialog. [#294](https://github.com/buzzdesk/BuzzDesk/issues/294)
  - 2022-09-16 Fixed handling of out-of-office flag in generic interface operation User::OutOfOffice.
  - 2022-09-15 Fixed option "add all attachments" not being available in dialog AdminGenericInterfaceInvokerDefault and not being evaluated in invoker Ticket::Generic.
- - 2022-09-13 Fixed visible PluginContainer (AppointmentCalendar) when empty. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#292](https://github.com/znuny/Znuny/pull/292)
- - 2022-09-12 Fixed time units always mandatory in AgentTicketBulk. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#290](https://github.com/znuny/Znuny/pull/290)
- - 2022-09-12 Fixed activity dialog error on missing templates (StandardTemplate). Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#291](https://github.com/znuny/Znuny/pull/291)
- - 2022-09-09 Increased size of columns of database tables oauth2_token_config and oauth2_token. [#289](https://github.com/znuny/Znuny/issues/289)
- - 2022-09-08 Added AppointmentFilter to AgentAppointmentCalendarOverview. Thanks to Kevin Janssen (@BuTzZ). [PR#181](https://github.com/znuny/Znuny/pull/181)
- - 2022-09-08 Fixed LDAP user sync. Fixes undef/empty string comparisons that may occur between data stored in DB and data coming from LDAP. Thanks to Paweł Bogusławski (@pboguslawski). [PR#74](https://github.com/znuny/Znuny/pull/74)
- - 2022-09-08 Changed previous upstream name to 'Internal' channel name. Thanks to Paweł Bogusławski (@pboguslawski). [PR#95](https://github.com/znuny/Znuny/pull/95)
- - 2022-09-07 Fixed log flooding via Net::LDAP. Reduction of LDAP_SIZELIMIT_EXCEEDED messages. Thanks to Paweł Bogusławski (@pboguslawski). [PR#178](https://github.com/znuny/Znuny/pull/178)
- - 2022-09-05 Added 'AdditionalSearchParameters' to Toolbar TicketSearchFulltext to define the standard search more precisely. Thanks to Tim Püttmanns (@tipue-dev), maxence. [#284](https://github.com/znuny/Znuny/pull/284)
+ - 2022-09-13 Fixed visible PluginContainer (AppointmentCalendar) when empty. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#292](https://github.com/buzzdesk/BuzzDesk/pull/292)
+ - 2022-09-12 Fixed time units always mandatory in AgentTicketBulk. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#290](https://github.com/buzzdesk/BuzzDesk/pull/290)
+ - 2022-09-12 Fixed activity dialog error on missing templates (StandardTemplate). Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#291](https://github.com/buzzdesk/BuzzDesk/pull/291)
+ - 2022-09-09 Increased size of columns of database tables oauth2_token_config and oauth2_token. [#289](https://github.com/buzzdesk/BuzzDesk/issues/289)
+ - 2022-09-08 Added AppointmentFilter to AgentAppointmentCalendarOverview. Thanks to Kevin Janssen (@BuTzZ). [PR#181](https://github.com/buzzdesk/BuzzDesk/pull/181)
+ - 2022-09-08 Fixed LDAP user sync. Fixes undef/empty string comparisons that may occur between data stored in DB and data coming from LDAP. Thanks to Paweł Bogusławski (@pboguslawski). [PR#74](https://github.com/buzzdesk/BuzzDesk/pull/74)
+ - 2022-09-08 Changed previous upstream name to 'Internal' channel name. Thanks to Paweł Bogusławski (@pboguslawski). [PR#95](https://github.com/buzzdesk/BuzzDesk/pull/95)
+ - 2022-09-07 Fixed log flooding via Net::LDAP. Reduction of LDAP_SIZELIMIT_EXCEEDED messages. Thanks to Paweł Bogusławski (@pboguslawski). [PR#178](https://github.com/buzzdesk/BuzzDesk/pull/178)
+ - 2022-09-05 Added 'AdditionalSearchParameters' to Toolbar TicketSearchFulltext to define the standard search more precisely. Thanks to Tim Püttmanns (@tipue-dev), maxence. [#284](https://github.com/buzzdesk/BuzzDesk/pull/284)
  - 2022-09-02 Fixed moved elements not being shown when filter is active in AdminDynamicFieldScreenConfiguration.
  - 2022-09-02 Fixed default display value for dynamic fields of type 'Webservice'.
- - 2022-09-02 Bugfix and Feature for 0050-CIC-CustomerUserList. Thanks to Kevin Janssen (@BuTzZ). [PR#147](https://github.com/znuny/Znuny/pull/147)
- - 2022-09-01 Added missing 'Translatable' flag for 'Message sending error'.Thanks to Paweł Bogusławski (@pboguslawski). [PR#131](https://github.com/znuny/Znuny/pull/131)
- - 2022-08-31 Bugfix for process and process templates. Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [PR#276](https://github.com/znuny/Znuny/pull/276). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#277](https://github.com/znuny/Znuny/pull/277)
- - 2022-08-31 Added events for article email backend transmission errors. Thanks to Renée Bäcker. [PR#176](https://github.com/znuny/Znuny/pull/176)
- - 2022-08-26 Fixed encoding of log output. Thanks to Roland Jäger and Bernhard Schmalhofer. [#286](https://github.com/znuny/Znuny/issues/286)
- - 2022-08-24 Enabled pending time selection for process ticket dialogs depending on selected ticket state. Thanks to Tim Püttmanns, maxence. [PR#271](https://github.com/znuny/Znuny/pull/271)
+ - 2022-09-02 Bugfix and Feature for 0050-CIC-CustomerUserList. Thanks to Kevin Janssen (@BuTzZ). [PR#147](https://github.com/buzzdesk/BuzzDesk/pull/147)
+ - 2022-09-01 Added missing 'Translatable' flag for 'Message sending error'.Thanks to Paweł Bogusławski (@pboguslawski). [PR#131](https://github.com/buzzdesk/BuzzDesk/pull/131)
+ - 2022-08-31 Bugfix for process and process templates. Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [PR#276](https://github.com/buzzdesk/BuzzDesk/pull/276). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#277](https://github.com/buzzdesk/BuzzDesk/pull/277)
+ - 2022-08-31 Added events for article email backend transmission errors. Thanks to Renée Bäcker. [PR#176](https://github.com/buzzdesk/BuzzDesk/pull/176)
+ - 2022-08-26 Fixed encoding of log output. Thanks to Roland Jäger and Bernhard Schmalhofer. [#286](https://github.com/buzzdesk/BuzzDesk/issues/286)
+ - 2022-08-24 Enabled pending time selection for process ticket dialogs depending on selected ticket state. Thanks to Tim Püttmanns, maxence. [PR#271](https://github.com/buzzdesk/BuzzDesk/pull/271)
  - 2022-08-22 Turned logging in Kernel::System::LinkObject::LinkAdd() from 'error' to 'notice' for certain cases. Thanks for hint to Paweł Bogusławski.
- - 2022-08-22 Fixed evaluation of parameter TicketID in Kernel::Output::HTML::Article::Base::ArticleActions. Thanks to @LotharZok, maxence. [PR#278](https://github.com/znuny/Znuny/pull/278)
+ - 2022-08-22 Fixed evaluation of parameter TicketID in Kernel::Output::HTML::Article::Base::ArticleActions. Thanks to @LotharZok, maxence. [PR#278](https://github.com/buzzdesk/BuzzDesk/pull/278)
  - 2022-08-22 Added check to prevent infinite loop to Core.UI.InputFields.js.
- - 2022-08-18 Fixed usage of time zones that have become obsolete. Thanks to Christian Ullrich. [#281](https://github.com/znuny/Znuny/issues/281)
- - 2022-08-17 Sector Nord AG: Added support for HTML content of dynamic fields to transition action TicketCreate (analog to TicketArticleCreate). Thanks to Sector Nord AG (Lukas Bröring). [#235](https://github.com/znuny/Znuny/pull/235)
+ - 2022-08-18 Fixed usage of time zones that have become obsolete. Thanks to Christian Ullrich. [#281](https://github.com/buzzdesk/BuzzDesk/issues/281)
+ - 2022-08-17 Sector Nord AG: Added support for HTML content of dynamic fields to transition action TicketCreate (analog to TicketArticleCreate). Thanks to Sector Nord AG (Lukas Bröring). [#235](https://github.com/buzzdesk/BuzzDesk/pull/235)
  - 2022-08-17 Added OAuth2 token support to HTTP::REST generic interface requester.
  - 2022-08-10 Fixed accounted time field missing in AgentTicketBulk action.
- - 2022-08-02 Changed user of mention notification in the ticket history to the one triggering the notification. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#273](https://github.com/znuny/Znuny/pull/273)
+ - 2022-08-02 Changed user of mention notification in the ticket history to the one triggering the notification. Thanks to Tim Püttmanns (@tipue-dev), maxence. [PR#273](https://github.com/buzzdesk/BuzzDesk/pull/273)
 
 # 6.4.2 2022-07-28
- - 2022-07-28 Fixed check for recipients in mention notifications. [#270)(https://github.com/znuny/Znuny/issues/270)
+ - 2022-07-28 Fixed check for recipients in mention notifications. [#270)(https://github.com/buzzdesk/BuzzDesk/issues/270)
  - 2022-07-28 Added missing module registration to customer interface.
  - 2022-07-28 Fixed content type of output of AJAX backend modules Kernel/Modules/AJAXRichTextAutocompletion.pm and Kernel/Modules/Mentions.pm.
- - 2022-07-28 Package Znuny-SMIME will now be uninstalled on Znuny upgrade.
+ - 2022-07-28 Package BuzzDesk-SMIME will now be uninstalled on BuzzDesk upgrade.
 
 # 6.4.1 2022-07-27
  - 2022-07-21 Fixed creation of tickets for recurring appointments.
  - 2022-07-20 Other users now can be referenced/mentioned in rich text editor and will be notified about it.
  - 2022-07-05 Attachment filenames in ticket zoom will now be truncated if they are too long to be displayed correctly.
- - 2022-06-29 Added support for nested group search to LDAP modules based on [PR#11](https://github.com/znuny/Znuny/pull/11). Thanks to Frank Wall (@fraenki).
+ - 2022-06-29 Added support for nested group search to LDAP modules based on [PR#11](https://github.com/buzzdesk/BuzzDesk/pull/11). Thanks to Frank Wall (@fraenki).
  - 2022-06-23 Fixed issue with high CPU load on parsing e-mails in PostMaster filter DetectAttachment.
- - 2022-06-22 Fixed OAuth2 authentication when using POP3 with Microsoft Office 365 or Outlook. [#259](https://github.com/znuny/Znuny/issues/259)
+ - 2022-06-22 Fixed OAuth2 authentication when using POP3 with Microsoft Office 365 or Outlook. [#259](https://github.com/buzzdesk/BuzzDesk/issues/259)
  - 2022-06-21 Added support for tag OTRS_TicketArticleCreateEvent and attachments to invoker Ticket::Generic.
  - 2022-06-21 Added support for JSON web tokens (JWT).
  - 2022-06-20 Improved S/MIME key storage.
  - 2022-06-17 Added support for autocompletion to CKEditor.
- - 2022-06-09 Added S/MIME check for sender header. Thanks to @akmet [PR#68](https://github.com/znuny/Znuny/pull/68).
+ - 2022-06-09 Added S/MIME check for sender header. Thanks to @akmet [PR#68](https://github.com/buzzdesk/BuzzDesk/pull/68).
  - 2022-05-31 Maximum number of lines of quote in body of a message now can be limited in AgentTicketForward and AgentTicketCompose.
  - 2022-05-30 Fixed use of URL parameter in Kernel::System::Calendar::Plugin::Ticket::Link::LinkList and Kernel::System::Calendar::Export::ICal::Export.
  - 2022-05-25 Initial search in dialog AgentLinkObject is now limited to tickets which belong to the same customer ID.
  - 2022-05-24 Sanitized output of ACL Perl config file when dumping and deploying it to avoid unexpected execution of arbitrary Perl code.
- - 2022-05-19 Sector Nord AG: Fixed transition action for recurring appointments with specific recurrence frequency. Thanks to Sector Nord AG (@jsinagowitz). [#219](https://github.com/znuny/Znuny/pull/219)
+ - 2022-05-19 Sector Nord AG: Fixed transition action for recurring appointments with specific recurrence frequency. Thanks to Sector Nord AG (@jsinagowitz). [#219](https://github.com/buzzdesk/BuzzDesk/pull/219)
  - 2022-05-10 Mandatory fields in expanded bulk action widgets now will be handled correctly as mandatory.
  - 2022-05-04 Fixed select fields not being shown in modernized mode after submit with input errors.
  - 2022-04-21 Added standard templates to [Agent/Customer]TicketProcess.
@@ -1161,9 +1161,9 @@
 
 # 6.3.2 2022-04-20
  - 2022-04-20 Removed unwanted line breaks from base64 encoded authorization header in Kernel::GenericInterface::Transport::HTTP::REST.
- - 2022-04-13 Fixed refresh in overviews if fulltext search in toolbar is not enabled. [#237](https://github.com/znuny/Znuny/issues/237)
+ - 2022-04-13 Fixed refresh in overviews if fulltext search in toolbar is not enabled. [#237](https://github.com/buzzdesk/BuzzDesk/issues/237)
  - 2022-04-01 Fixed encoding for autocompletion in dynamic field edit view of type Webservice.
- - 2022-03-31 Fixed check of UntilTime in Kernel::System::Ticket::Event::TicketPendingTimeReset. [#221)(https://github.com/znuny/Znuny/issues/221)
+ - 2022-03-31 Fixed check of UntilTime in Kernel::System::Ticket::Event::TicketPendingTimeReset. [#221)(https://github.com/buzzdesk/BuzzDesk/issues/221)
  - 2022-03-28 Added support for online package repositories again.
  - 2022-03-24 Fixed XSS vulnerability in package manager GUI (CVE-2022-0475).
  - 2022-03-24 Deactivated support for execution of configurable system commands from Sendmail and PostMaster pre-filter configurations (CVE-2021-36100).
@@ -1176,56 +1176,56 @@
  - 2022-03-17 Added PreRun function to Dev/Tools/TranslationsUpdate to check for symbolic links.
  - 2022-03-15 Added new SysConfig option LibXML::EnableHugeXMLDataSupport to enable support for huge XML data in load_xml calls of CPAN library XML::LibXML.
  - 2022-03-11 Removed 'send support bundle' to OTRS Group.
- - 2022-03-11 CPAN module Mail::IMAPClient will now be correctly reported as required by bin/otrs.CheckModules.pl [#222](https://github.com/znuny/Znuny/issues/222).
+ - 2022-03-11 CPAN module Mail::IMAPClient will now be correctly reported as required by bin/otrs.CheckModules.pl [#222](https://github.com/buzzdesk/BuzzDesk/issues/222).
 
 # 6.3.1 2022-03-09
- - 2022-03-07 Integrated package Znuny4OTRS-CalendarBasedTicketCreation.
+ - 2022-03-07 Integrated package BuzzDesk4OTRS-CalendarBasedTicketCreation.
  - 2022-03-07 Original owners of tickets will now be set again when cancelling a ticket bulk action.
- - 2022-03-02 Sector Nord AG: Fixed AgentAppointmentCalendarOverview AppointmentTooltip (#216). Thanks to Sector Nord AG (@jsinagowitz). [#216](https://github.com/znuny/Znuny/pull/216)
- - 2022-03-02 Integrated package Znuny4OTRS-OwnerToolbar.
- - 2022-02-25 Fixed Bug - Since version 6.0.31 the size of embedded images within the RTE cannot be changed via click & drag anymore [#98](https://github.com/znuny/Znuny/issues/98).
+ - 2022-03-02 Sector Nord AG: Fixed AgentAppointmentCalendarOverview AppointmentTooltip (#216). Thanks to Sector Nord AG (@jsinagowitz). [#216](https://github.com/buzzdesk/BuzzDesk/pull/216)
+ - 2022-03-02 Integrated package BuzzDesk4OTRS-OwnerToolbar.
+ - 2022-02-25 Fixed Bug - Since version 6.0.31 the size of embedded images within the RTE cannot be changed via click & drag anymore [#98](https://github.com/buzzdesk/BuzzDesk/issues/98).
  - 2022-02-25 Fixed Bug - Fixed subject regex for rfc822 attachments on email parsing operation. No error will be thrown anymore if subject is missing/empty.
- - 2022-02-21 Integrated package Znuny4OTRS-AdvancedTimeUnit.
+ - 2022-02-21 Integrated package BuzzDesk4OTRS-AdvancedTimeUnit.
  - 2022-02-21 Added scope flag to AdminProcessManagement to reduce possible overflow selection. Thanks to Michel Rodriguez [@mirod](https://github.com/mirod).
  - 2022-02-18 Added 'autolink' extraPlugin to CKEditor.
  - 2022-02-18 Added 'textwatcher', 'autocomplete' and 'textmatch' as extraPlugins to CKEditor global config.
- - 2022-02-17 Integrated package Znuny4OTRS-MailAccounts.
- - 2022-02-17 Integrated package Znuny4OTRS-OAuth2TokenManagement.
+ - 2022-02-17 Integrated package BuzzDesk4OTRS-MailAccounts.
+ - 2022-02-17 Integrated package BuzzDesk4OTRS-OAuth2TokenManagement.
  - 2022-02-17 Updated CKEditor from version 4.16.0 to 4.17.1.
- - 2022-02-16 Sector Nord AG: Added ProcessManagement TransitionAction - AppointmentUpdate and AppointmentRemove. Thanks to Sector Nord AG (@jsinagowitz). [#196](https://github.com/znuny/Znuny/pull/196)
- - 2022-02-15 Fixed config navigation path for customer frontend module AJAXDynamicFieldWebservice. Thanks to Renée Bäcker (@reneeb). [#193](https://github.com/znuny/Znuny/pull/193)
- - 2022-02-14 Integrated package Znuny-DatabaseBackend.
- - 2022-02-11 Fixed Bug - Show menu items when showing the error screen. [#210](https://github.com/znuny/Znuny/issues/210)
+ - 2022-02-16 Sector Nord AG: Added ProcessManagement TransitionAction - AppointmentUpdate and AppointmentRemove. Thanks to Sector Nord AG (@jsinagowitz). [#196](https://github.com/buzzdesk/BuzzDesk/pull/196)
+ - 2022-02-15 Fixed config navigation path for customer frontend module AJAXDynamicFieldWebservice. Thanks to Renée Bäcker (@reneeb). [#193](https://github.com/buzzdesk/BuzzDesk/pull/193)
+ - 2022-02-14 Integrated package BuzzDesk-DatabaseBackend.
+ - 2022-02-11 Fixed Bug - Show menu items when showing the error screen. [#210](https://github.com/buzzdesk/BuzzDesk/issues/210)
  - 2022-02-07 Added clear log action to AdminLog.
- - 2022-02-03 Fixed Bug - Dashboard-TicketQueueOverview refresh [#156](https://github.com/znuny/Znuny/issues/156).
+ - 2022-02-03 Fixed Bug - Dashboard-TicketQueueOverview refresh [#156](https://github.com/buzzdesk/BuzzDesk/issues/156).
  - 2022-02-03 Updated jQuery UI from 1.12.1 to 1.13.1.
  - 2022-02-03 Fixed unnecessary error message - 'Use of uninitialized value in pattern match...'
  - 2022-02-03 Fixed link detection matches trailing dot.
  - 2022-02-01 Fixed description of option Kernel::System::Ticket::Number::Random in SysConfig.
- - 2022-01-22 Updated third party jquery to 3.6.0. [#168](https://git.znuny.com/Znuny/Public/Znuny/-/issues/168)
- - 2022-01-18 List all configured calendars in support data collector (#185). Thanks to Renée Bäcker (@reneeb). [#185](https://github.com/znuny/Znuny/pull/185)
- - 2022-01-18 Fixed broken SmartTag example CUSTOMER_BODY (#191). Thanks to Shawn Beasley (@dignin). [#191](https://github.com/znuny/Znuny/pull/191)
+ - 2022-01-22 Updated third party jquery to 3.6.0. [#168](https://git.buzzdesk.com/BuzzDesk/Public/BuzzDesk/-/issues/168)
+ - 2022-01-18 List all configured calendars in support data collector (#185). Thanks to Renée Bäcker (@reneeb). [#185](https://github.com/buzzdesk/BuzzDesk/pull/185)
+ - 2022-01-18 Fixed broken SmartTag example CUSTOMER_BODY (#191). Thanks to Shawn Beasley (@dignin). [#191](https://github.com/buzzdesk/BuzzDesk/pull/191)
  - 2022-01-13 Added jq function also for regex matches in GenericInterface/Event/Handler.
  - 2022-01-11 Fixed Bug - Email overwritten when editing an agent.
- - 2022-01-07 Integrated package Znuny4OTRS-RandomTicketNumberGenerator.
- - 2022-01-07 Parameter %Param are now passed to function Kernel::System::Email::Check. Thanks to Renée Bäcker (@reneeb). [#26](https://github.com/znuny/Znuny/pull/26)
- - 2022-01-07 Integrated package Znuny4OTRS-AdvancedBulkAction.
- - 2022-01-06 Fixed Bug - The page refresh stops the fulltext search via toolbar. [#182](https://github.com/znuny/Znuny/issues/182)
- - 2021-12-27 Integrated package Znuny4OTRS-ExcelStats.
+ - 2022-01-07 Integrated package BuzzDesk4OTRS-RandomTicketNumberGenerator.
+ - 2022-01-07 Parameter %Param are now passed to function Kernel::System::Email::Check. Thanks to Renée Bäcker (@reneeb). [#26](https://github.com/buzzdesk/BuzzDesk/pull/26)
+ - 2022-01-07 Integrated package BuzzDesk4OTRS-AdvancedBulkAction.
+ - 2022-01-06 Fixed Bug - The page refresh stops the fulltext search via toolbar. [#182](https://github.com/buzzdesk/BuzzDesk/issues/182)
+ - 2021-12-27 Integrated package BuzzDesk4OTRS-ExcelStats.
  - 2021-12-27 Added ITSMConfigurationManagement compatibility.
  - 2021-12-14 Added ProcessListTreeView in AgentTicketProcess and CustomerTicketProcess.
  - 2021-12-14 Added missing translation for process and activity in CustomerTicketZoom.tt.
  - 2021-12-14 Removed translation for process in AdminProcessManagement.
  - 2021-12-14 Fixed bug, too long process / activity names are not translated.
  - 2021-12-03 Fixed - Links in dynamic fields are shortened so that the link no longer works (CustomerTicketZoom).
- - 2021-12-01 Fixed Bug - Avoidable error message / entry in logfiles (#123). [#123](https://github.com/znuny/Znuny/issues/123)
- - 2021-11-26 Fixed error "Parameter 'Config' must be a hash ref with data!" (#173). Thanks to @meisterheister. [#173](https://github.com/znuny/Znuny/issues/173)
+ - 2021-12-01 Fixed Bug - Avoidable error message / entry in logfiles (#123). [#123](https://github.com/buzzdesk/BuzzDesk/issues/123)
+ - 2021-11-26 Fixed error "Parameter 'Config' must be a hash ref with data!" (#173). Thanks to @meisterheister. [#173](https://github.com/buzzdesk/BuzzDesk/issues/173)
  - 2021-11-25 Removed error log if !IsHashRefWithData( Config ) in `SanitizeConfig`. This is to strict and not needed.
- - 2021-11-25 Sector Nord AG: Replaced hardcoded attributes with a dynamic Sysconfig in Kernel/System/Ticket/Event/NotificationEvent.pm (#171). Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [#171](https://github.com/znuny/Znuny/pull/171)
- - 2021-11-25 Add option '--no-tablespaces' to scripts/backup.pl (#136). Thanks to @meisterheister. [#136](https://github.com/znuny/Znuny/pull/136)
- - 2021-11-25 Prevents error message "no TicketID" on sending an answer if no TicketID exists (#133). Thanks to Renée Bäcker (@reneeb). [#133](https://github.com/znuny/Znuny/pull/133)
- - 2021-11-25 Fixed - "No TicketID is given!" on each outgoing reply (#170). Thanks to Renée Bäcker (@reneeb). [#170](https://github.com/znuny/Znuny/issues/170)
- - 2021-11-25 Fixed - Bug - Regression Error Message in Log (#126). Thanks to Renée Bäcker (@reneeb). [#126](https://github.com/znuny/Znuny/issues/126)
+ - 2021-11-25 Sector Nord AG: Replaced hardcoded attributes with a dynamic Sysconfig in Kernel/System/Ticket/Event/NotificationEvent.pm (#171). Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [#171](https://github.com/buzzdesk/BuzzDesk/pull/171)
+ - 2021-11-25 Add option '--no-tablespaces' to scripts/backup.pl (#136). Thanks to @meisterheister. [#136](https://github.com/buzzdesk/BuzzDesk/pull/136)
+ - 2021-11-25 Prevents error message "no TicketID" on sending an answer if no TicketID exists (#133). Thanks to Renée Bäcker (@reneeb). [#133](https://github.com/buzzdesk/BuzzDesk/pull/133)
+ - 2021-11-25 Fixed - "No TicketID is given!" on each outgoing reply (#170). Thanks to Renée Bäcker (@reneeb). [#170](https://github.com/buzzdesk/BuzzDesk/issues/170)
+ - 2021-11-25 Fixed - Bug - Regression Error Message in Log (#126). Thanks to Renée Bäcker (@reneeb). [#126](https://github.com/buzzdesk/BuzzDesk/issues/126)
 
 # 6.2.2 2021-12-15
  - 2021-12-14 Added ProcessListTreeView in AgentTicketProcess and CustomerTicketProcess.
@@ -1233,48 +1233,48 @@
  - 2021-12-14 Removed translation for process in AdminProcessManagement.
  - 2021-12-14 Fixed bug, too long process / activity names are not translated.
  - 2021-12-03 Fixed - Links in dynamic fields are shortened so that the link no longer works (CustomerTicketZoom).
- - 2021-12-02 Fixed Bug - Avoidable error message / entry in logfiles (#123). [#123](https://github.com/znuny/Znuny/issues/123)
+ - 2021-12-02 Fixed Bug - Avoidable error message / entry in logfiles (#123). [#123](https://github.com/buzzdesk/BuzzDesk/issues/123)
  - 2021-12-02 Fixed wrong POD of TransitionAction::AppointmentCreate.
  - 2021-11-30 Added _ReplaceAdditionalAttributes to ProcessManagement/TransitionAction.
  - 2021-11-29 Fixed POD of Kernel::System::ProcessManagement::TransitionAction::DynamicFieldRemove::Run.
- - 2021-11-26 Fixed error "Parameter 'Config' must be a hash ref with data!" (#173). Thanks to @meisterheister. [#173](https://github.com/znuny/Znuny/issues/173)
+ - 2021-11-26 Fixed error "Parameter 'Config' must be a hash ref with data!" (#173). Thanks to @meisterheister. [#173](https://github.com/buzzdesk/BuzzDesk/issues/173)
  - 2021-11-25 Removed error log if !IsHashRefWithData( Config ) in `SanitizeConfig`. This is to strict and not needed.
- - 2021-11-25 Sector Nord AG: Replaced hardcoded attributes with a dynamic Sysconfig in Kernel/System/Ticket/Event/NotificationEvent.pm (#171). Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [#171](https://github.com/znuny/Znuny/issues/171)
- - 2021-11-25 Add option '--no-tablespaces' to scripts/backup.pl (#136). Thanks to @meisterheister. [#136](https://github.com/znuny/Znuny/issues/136)
- - 2021-11-25 Prevents error message "no TicketID" on sending an answer if no TicketID exists (#133). Thanks to @Reedu. [#133](https://github.com/znuny/Znuny/issues/133)
- - 2021-11-25 Fixed - "No TicketID is given!" on each outgoing reply (#170). Thanks to Renée Bäcker (@reneeb). [#170](https://github.com/znuny/Znuny/issues/170)
- - 2021-11-25 Fixed - Bug - Regression Error Message in Log (#126). Thanks to Renée Bäcker (@reneeb). [#126](https://github.com/znuny/Znuny/issues/126)
- - 2021-11-15 Fixed CPANUpdate console command to also work on FreeBSD. Thanks to @papeng. [#162](https://github.com/znuny/Znuny/issues/162)
+ - 2021-11-25 Sector Nord AG: Replaced hardcoded attributes with a dynamic Sysconfig in Kernel/System/Ticket/Event/NotificationEvent.pm (#171). Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [#171](https://github.com/buzzdesk/BuzzDesk/issues/171)
+ - 2021-11-25 Add option '--no-tablespaces' to scripts/backup.pl (#136). Thanks to @meisterheister. [#136](https://github.com/buzzdesk/BuzzDesk/issues/136)
+ - 2021-11-25 Prevents error message "no TicketID" on sending an answer if no TicketID exists (#133). Thanks to @Reedu. [#133](https://github.com/buzzdesk/BuzzDesk/issues/133)
+ - 2021-11-25 Fixed - "No TicketID is given!" on each outgoing reply (#170). Thanks to Renée Bäcker (@reneeb). [#170](https://github.com/buzzdesk/BuzzDesk/issues/170)
+ - 2021-11-25 Fixed - Bug - Regression Error Message in Log (#126). Thanks to Renée Bäcker (@reneeb). [#126](https://github.com/buzzdesk/BuzzDesk/issues/126)
+ - 2021-11-15 Fixed CPANUpdate console command to also work on FreeBSD. Thanks to @papeng. [#162](https://github.com/buzzdesk/BuzzDesk/issues/162)
 
 # 6.2.1 2021-10-27
- - 2021-10-26 Fixed call to encode_base64 in Kernel::System::Ticket. Thanks to @Reedu. [#160](https://github.com/znuny/Znuny/issues/160)
+ - 2021-10-26 Fixed call to encode_base64 in Kernel::System::Ticket. Thanks to @Reedu. [#160](https://github.com/buzzdesk/BuzzDesk/issues/160)
  - 2021-10-25 Console command Dev::Code::CPANUpdate now uses proxy and SSL settings of SysConfig options WebUserAgent::Proxy, WebUserAgent::NoProxy and WebUserAgent::DisableSSLVerification.
- - 2021-10-22 Integrated package Znuny4OTRS-TicketAttributeRelations.
- - 2021-10-21 Fixed error log message for missing days in Kernel::System::SysConfig::ValueType::WorkingHours::ModifiedValueGet(). [#122](https://github.com/znuny/Znuny/issues/122)
- - 2021-10-21 Fixed "Need Ticket ID" error when switching templates in AgentTicketCommon modules. [#127](https://github.com/znuny/Znuny/issues/127)
+ - 2021-10-22 Integrated package BuzzDesk4OTRS-TicketAttributeRelations.
+ - 2021-10-21 Fixed error log message for missing days in Kernel::System::SysConfig::ValueType::WorkingHours::ModifiedValueGet(). [#122](https://github.com/buzzdesk/BuzzDesk/issues/122)
+ - 2021-10-21 Fixed "Need Ticket ID" error when switching templates in AgentTicketCommon modules. [#127](https://github.com/buzzdesk/BuzzDesk/issues/127)
  - 2021-10-19 Console command Dev::Code::CPANUpdate now uses proxy and SSL settings of SysConfig options WebUserAgent::Proxy and WebUserAgent::DisableSSLVerification.
  - 2021-10-18 Generic interface HTTP SOAP transport: Added SSL environment variables for Crypt::SSLeay and fixed operation name in response evaluation.
- - 2021-10-15 Fixed "Need ticket ID" error in Kernel::Modules::AgentTicketEmailOutbound. [#130](https://github.com/znuny/Znuny/issues/130)
- - 2021-10-14 Integrated package Znuny4OTRS-NotifyOnEmptyProcessTickets.
+ - 2021-10-15 Fixed "Need ticket ID" error in Kernel::Modules::AgentTicketEmailOutbound. [#130](https://github.com/buzzdesk/BuzzDesk/issues/130)
+ - 2021-10-14 Integrated package BuzzDesk4OTRS-NotifyOnEmptyProcessTickets.
  - 2021-10-13 Added thirdparty/jscolor-2.4.6 js lib - colorpicker (used in GeneralCatalog).
  - 2021-10-12 Fixed translation bug in Kernel::Output::HTML::Layout::_BuildSelectionDataRefCreate.
  - 2021-10-11 Updated CPAN package Mozilla/CA.
- - 2021-10-11 Integrated package Znuny4OTRS-AdvancedProcessManagement.
- - 2021-10-07 Sector Nord AG: Added Attachments to TransitionAction TicketCreate. Thanks to Sector Nord AG (@LuBroering ). [#149](https://github.com/znuny/Znuny/pull/149)
+ - 2021-10-11 Integrated package BuzzDesk4OTRS-AdvancedProcessManagement.
+ - 2021-10-07 Sector Nord AG: Added Attachments to TransitionAction TicketCreate. Thanks to Sector Nord AG (@LuBroering ). [#149](https://github.com/buzzdesk/BuzzDesk/pull/149)
  - 2021-10-06 Added support for content type application/xml to generic interface REST transport.
  - 2021-10-06 Added option to keep attributes of XML in generic interface XSLT mapping.
- - 2021-10-06 Sector Nord AG: Added optional check condition in TransitionActions. Thanks to Sector Nord AG (@paulfolkers). [#144](https://github.com/znuny/Znuny/pull/144)
- - 2021-10-06 Sector Nord AG: Added TransitionAction parameter placeholder. Thanks to Sector Nord AG (@jsinagowitz). [#145](https://github.com/znuny/Znuny/pull/145)
- - 2021-10-05 Sector Nord AG: Added ticket event and event module TicketAllChildrenClosed. Thanks to Sector Nord AG (@paulfolkers). [#143](https://github.com/znuny/Znuny/pull/143)
- - 2021-10-01 Added initial config for Frontend::Navigation###AdminCustomerUserCustomer###001-Framework. Thanks to Kevin Janssen (@BuTzZ). [#146](https://github.com/znuny/Znuny/pull/146)
+ - 2021-10-06 Sector Nord AG: Added optional check condition in TransitionActions. Thanks to Sector Nord AG (@paulfolkers). [#144](https://github.com/buzzdesk/BuzzDesk/pull/144)
+ - 2021-10-06 Sector Nord AG: Added TransitionAction parameter placeholder. Thanks to Sector Nord AG (@jsinagowitz). [#145](https://github.com/buzzdesk/BuzzDesk/pull/145)
+ - 2021-10-05 Sector Nord AG: Added ticket event and event module TicketAllChildrenClosed. Thanks to Sector Nord AG (@paulfolkers). [#143](https://github.com/buzzdesk/BuzzDesk/pull/143)
+ - 2021-10-01 Added initial config for Frontend::Navigation###AdminCustomerUserCustomer###001-Framework. Thanks to Kevin Janssen (@BuTzZ). [#146](https://github.com/buzzdesk/BuzzDesk/pull/146)
  - 2021-10-01 Disabled connection to external RSS during unit testing.
- - 2021-10-01 Fixed error "Can't sign: unable to write 'random state'" if sending emails signed with S/MIME (OTRS bug #14522). Thanks to Kai Herlemann (@KaiHerlemann). [#72](https://github.com/znuny/Znuny/pull/72)
- - 2021-08-31 Added generic interface operation SessionRemove. Thanks to Kevin Janssen (@BuTzZ). [#120](https://github.com/znuny/Znuny/pull/120)
- - 2021-08-20 Added SysConfig option to enable week numbers in the datepicker widget. Thanks to Renée Bäcker (@reneeb). [#89](https://github.com/znuny/Znuny/pull/89)
- - 2021-08-20 Added new autocomplete values to input fields. Thanks to Tim Püttmanns (@tipue-dev), maxence. [#67](https://github.com/znuny/Znuny/pull/67)
+ - 2021-10-01 Fixed error "Can't sign: unable to write 'random state'" if sending emails signed with S/MIME (OTRS bug #14522). Thanks to Kai Herlemann (@KaiHerlemann). [#72](https://github.com/buzzdesk/BuzzDesk/pull/72)
+ - 2021-08-31 Added generic interface operation SessionRemove. Thanks to Kevin Janssen (@BuTzZ). [#120](https://github.com/buzzdesk/BuzzDesk/pull/120)
+ - 2021-08-20 Added SysConfig option to enable week numbers in the datepicker widget. Thanks to Renée Bäcker (@reneeb). [#89](https://github.com/buzzdesk/BuzzDesk/pull/89)
+ - 2021-08-20 Added new autocomplete values to input fields. Thanks to Tim Püttmanns (@tipue-dev), maxence. [#67](https://github.com/buzzdesk/BuzzDesk/pull/67)
 
 # 6.1.2 2021-09-29
- - 2021-09-28 Added missing migration module scripts::MigrateToZnuny6_1::InitializeDefaultCronjobs.
+ - 2021-09-28 Added missing migration module scripts::MigrateToBuzzDesk6_1::InitializeDefaultCronjobs.
  - 2021-09-28 Removed MySQL performance check module from support data collector. It only tests for the now deprecated MySQL setting 'query_cache_size'. Thanks for the hint to GitHub user arndkeyz.
  - 2021-09-27 Fixed problem with daylight saving time switch for recurrent appointments and date/time in general.
  - 2021-09-27 JavaScript in the error message of regular expression checks for dynamic field values now will be removed instead of being executed when showing the error message. Thanks to Stefan Härter (OTOBO) for reporting the issue.
@@ -1282,66 +1282,66 @@
  - 2021-09-14 Fixed use of undefined config value in Kernel::System::GenericInterface::Webservice::WebserviceConfigReplace.
  - 2021-09-09 Fixed handling of database query results in Kernel::System::Ticket::_TicketGetClosed.
  - 2021-09-01 Fixed permission check in generic interface operation User::OutOfOffice.
- - 2021-08-31 Fixed UI hang on admin group name change (#121). Thanks to Paweł Bogusławski (@pboguslawski). [#121](https://github.com/znuny/Znuny/pull/121)
- - 2021-08-31 Fixed storage switch only executable from main directory (#116). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#116](https://github.com/znuny/Znuny/pull/116)
+ - 2021-08-31 Fixed UI hang on admin group name change (#121). Thanks to Paweł Bogusławski (@pboguslawski). [#121](https://github.com/buzzdesk/BuzzDesk/pull/121)
+ - 2021-08-31 Fixed storage switch only executable from main directory (#116). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#116](https://github.com/buzzdesk/BuzzDesk/pull/116)
  - 2021-08-23 Added default value for CurrentComment in ACLUpdate.
- - 2021-08-20 Fixed double encoding for dynamic field filters in ticket overviews (#51). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#51](https://github.com/znuny/Znuny/pull/51)
- - 2021-08-20 Fixed #107 - AgentTicketEmailOutbound "Empty subject" notification is not translated (#111.) Thanks to Tronsy (@Tronsy). [#111](https://github.com/znuny/Znuny/pull/111)
+ - 2021-08-20 Fixed double encoding for dynamic field filters in ticket overviews (#51). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#51](https://github.com/buzzdesk/BuzzDesk/pull/51)
+ - 2021-08-20 Fixed #107 - AgentTicketEmailOutbound "Empty subject" notification is not translated (#111.) Thanks to Tronsy (@Tronsy). [#111](https://github.com/buzzdesk/BuzzDesk/pull/111)
 
 # 6.1.1 2021-08-05
  - 2021-08-03 Integrated package WebserviceNotification.
- - 2021-07-30 Integrated package Znuny4OTRS-AdvancedOutOfOffice.
+ - 2021-07-30 Integrated package BuzzDesk4OTRS-AdvancedOutOfOffice.
  - 2021-07-28 Improved JavaScript recognition in function Kernel::System::HTMLUtils::Safety. Thanks for hints to Tim Püttmanns, maxence.
- - 2021-07-27 Files in configured directories of SysConfig options SMIME::PrivatePath and SMIME::CertPath will now not be included in a support bundle anymore if they are within the Znuny directory (CVE-2021-21440). Thanks for hints to Centuran Consulting.
+ - 2021-07-27 Files in configured directories of SysConfig options SMIME::PrivatePath and SMIME::CertPath will now not be included in a support bundle anymore if they are within the BuzzDesk directory (CVE-2021-21440). Thanks for hints to Centuran Consulting.
  - 2021-07-27 Added safety checks for form/URL parameters to AdminAppointmentCalendarManage, AgentAppointmentEdit and AgentAppointmentList. Thanks for hints to Centuran Consulting.
  - 2021-07-26 Added permission check to ticket recipient list (CVE-2021-21443). Thanks for hints to Centuran Consulting.
  - 2021-07-26 Added permission check to appointment list (CVE-2021-36091). Thanks for hints to Centuran Consulting.
  - 2021-07-22 Added index for column article_id to table time_accounting.
- - 2021-07-21 Integrated package Znuny4OTRS-AdvancedDynamicFields.
+ - 2021-07-21 Integrated package BuzzDesk4OTRS-AdvancedDynamicFields.
  - 2021-07-16 Renamed database table 'groups' to 'permission_groups' (keyword in MySQL >= 8).
- - 2021-07-16 Integrated package Znuny4OTRS-LastViews.
- - 2021-07-05 Integrated package Znuny4OTRS-AutoCheckbox.
- - 2021-07-02 Integrated package Znuny4OTRS-ShowPendingTimeIfNeeded.
- - 2021-07-02 Integrated package Znuny4OTRS-WebUserAgent.
- - 2021-06-25 Added fix for #29 - linebreak breaks fulltext search (#49). Thanks to Johannes Nickel (@hanneshal). [#49](https://github.com/znuny/Znuny/pull/49)
- - 2021-06-25 Incorrect empty hash initializations fixed (#96). Thanks to Paweł Bogusławski (@pboguslawski). [#96](https://github.com/znuny/Znuny/pull/96)
- - 2021-06-25 Changed breadcrumb for the main action entry to a link. (#91). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#91](https://github.com/znuny/Znuny/pull/91)
- - 2021-06-25 Integrated package Znuny4OTRS-TimeAccountingWebservice.
- - 2021-06-23 Integrated package Znuny4OTRS-DynamicFieldWebservice.
- - 2021-06-23 Integrated package Znuny4OTRS-GIArticleSend.
- - 2021-06-18 Integrated package Znuny4OTRS-AdvancedGI.
- - 2021-06-17 Fixed not needed error message in TicketList.pm (#94). Thanks to Paweł Bogusławski (@pboguslawski). [#94](https://github.com/znuny/Znuny/pull/94)
- - 2021-06-17 Integrated package Znuny4OTRS-GenericInterfaceREST.
- - 2021-06-16 Integrated package Znuny4OTRS-Repo.
- - 2021-06-15 Do not warn agents about empty article subjects by default (#88). Thanks to Renée Bäcker (@reneeb). [#88](https://github.com/znuny/Znuny/pull/88)
- - 2021-06-15 Improvements for Dev::Code::CPANUpdate (#38). Thanks to Renée Bäcker (@reneeb). [#38](https://github.com/znuny/Znuny/pull/38)
- - 2021-06-15 Use ticket title as the default appointment title (#90). Thanks to Renée Bäcker (@reneeb). [#90](https://github.com/znuny/Znuny/pull/90)
- - 2021-06-15 Column list validation before saving agent preferences (#84). Thanks to Paweł Bogusławski (@pboguslawski). [#84](https://github.com/znuny/Znuny/pull/84)
+ - 2021-07-16 Integrated package BuzzDesk4OTRS-LastViews.
+ - 2021-07-05 Integrated package BuzzDesk4OTRS-AutoCheckbox.
+ - 2021-07-02 Integrated package BuzzDesk4OTRS-ShowPendingTimeIfNeeded.
+ - 2021-07-02 Integrated package BuzzDesk4OTRS-WebUserAgent.
+ - 2021-06-25 Added fix for #29 - linebreak breaks fulltext search (#49). Thanks to Johannes Nickel (@hanneshal). [#49](https://github.com/buzzdesk/BuzzDesk/pull/49)
+ - 2021-06-25 Incorrect empty hash initializations fixed (#96). Thanks to Paweł Bogusławski (@pboguslawski). [#96](https://github.com/buzzdesk/BuzzDesk/pull/96)
+ - 2021-06-25 Changed breadcrumb for the main action entry to a link. (#91). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#91](https://github.com/buzzdesk/BuzzDesk/pull/91)
+ - 2021-06-25 Integrated package BuzzDesk4OTRS-TimeAccountingWebservice.
+ - 2021-06-23 Integrated package BuzzDesk4OTRS-DynamicFieldWebservice.
+ - 2021-06-23 Integrated package BuzzDesk4OTRS-GIArticleSend.
+ - 2021-06-18 Integrated package BuzzDesk4OTRS-AdvancedGI.
+ - 2021-06-17 Fixed not needed error message in TicketList.pm (#94). Thanks to Paweł Bogusławski (@pboguslawski). [#94](https://github.com/buzzdesk/BuzzDesk/pull/94)
+ - 2021-06-17 Integrated package BuzzDesk4OTRS-GenericInterfaceREST.
+ - 2021-06-16 Integrated package BuzzDesk4OTRS-Repo.
+ - 2021-06-15 Do not warn agents about empty article subjects by default (#88). Thanks to Renée Bäcker (@reneeb). [#88](https://github.com/buzzdesk/BuzzDesk/pull/88)
+ - 2021-06-15 Improvements for Dev::Code::CPANUpdate (#38). Thanks to Renée Bäcker (@reneeb). [#38](https://github.com/buzzdesk/BuzzDesk/pull/38)
+ - 2021-06-15 Use ticket title as the default appointment title (#90). Thanks to Renée Bäcker (@reneeb). [#90](https://github.com/buzzdesk/BuzzDesk/pull/90)
+ - 2021-06-15 Column list validation before saving agent preferences (#84). Thanks to Paweł Bogusławski (@pboguslawski). [#84](https://github.com/buzzdesk/BuzzDesk/pull/84)
 
 # 6.0.48 2022-12-20
  - 2022-12-13 Fixed SQL injection in TicketSearch.pm (CVE-2022-4427). Thanks for hints to Tim Püttmanns, maxence.
 
 # 6.0.47 2022-11-23
  - 2022-11-10 Fixed overlapping input list in search dialog.
- - 2022-10-27 Fixed "Invalid date/time string" errors in otrs.Daemon.pl. Thanks to Paweł Bogusławski (@pboguslawski). [PR#311](https://github.com/znuny/Znuny/pull/311)
+ - 2022-10-27 Fixed "Invalid date/time string" errors in otrs.Daemon.pl. Thanks to Paweł Bogusławski (@pboguslawski). [PR#311](https://github.com/buzzdesk/BuzzDesk/pull/311)
  - 2022-10-21 Agent error screen now shows navigation bar if possible.
  - 2022-10-13 Fixed SQL condition in Kernel::System::CustomerUser::DB::CustomerSearch.
- - 2022-09-29 Fixed bug - hour 0 is not possible in the default settings for TimeWorkingHours. Thanks to Sector Nord AG (@LuBroering - Lukas Bröring). [PR#296](https://github.com/znuny/Znuny/pull/296)
+ - 2022-09-29 Fixed bug - hour 0 is not possible in the default settings for TimeWorkingHours. Thanks to Sector Nord AG (@LuBroering - Lukas Bröring). [PR#296](https://github.com/buzzdesk/BuzzDesk/pull/296)
  - 2022-09-26 Added missing HTML filter to AgentTicketActionCommon template.
 
 # 6.0.46 2022-09-21
- - 2022-09-07 Fixed log flooding via Net::LDAP. Reduction of LDAP_SIZELIMIT_EXCEEDED messages. Thanks to Paweł Bogusławski (@pboguslawski). [PR#178](https://github.com/znuny/Znuny/pull/178)
- - 2022-09-07 Improved nonexistent and invalid service names handling in postmaster filters. Thanks to Paweł Bogusławski (@pboguslawski). [PR#197](https://github.com/znuny/Znuny/pull/197)
- - 2022-08-26 Fixed encoding of log output. Thanks to Roland Jäger and Bernhard Schmalhofer. [#286](https://github.com/znuny/Znuny/issues/286)
+ - 2022-09-07 Fixed log flooding via Net::LDAP. Reduction of LDAP_SIZELIMIT_EXCEEDED messages. Thanks to Paweł Bogusławski (@pboguslawski). [PR#178](https://github.com/buzzdesk/BuzzDesk/pull/178)
+ - 2022-09-07 Improved nonexistent and invalid service names handling in postmaster filters. Thanks to Paweł Bogusławski (@pboguslawski). [PR#197](https://github.com/buzzdesk/BuzzDesk/pull/197)
+ - 2022-08-26 Fixed encoding of log output. Thanks to Roland Jäger and Bernhard Schmalhofer. [#286](https://github.com/buzzdesk/BuzzDesk/issues/286)
  - 2022-08-22 Added check to prevent infinite loop to Core.UI.InputFields.js.
- - 2022-08-18 Fixed usage of time zones that have become obsolete. Thanks to Christian Ullrich. [#281](https://github.com/znuny/Znuny/issues/281)
+ - 2022-08-18 Fixed usage of time zones that have become obsolete. Thanks to Christian Ullrich. [#281](https://github.com/buzzdesk/BuzzDesk/issues/281)
 
 # 6.0.45 2022-07-27
  - 2022-07-05 Attachment filenames in ticket zoom will now be truncated if they are too long to be displayed correctly.
  - 2022-06-23 Fixed issue with high CPU load on parsing e-mails in PostMaster filter DetectAttachment.
 
 # 6.0.44 2022-06-15
- - 2022-06-09 Added S/MIME check for sender header. Thanks to @akmet [PR#68](https://github.com/znuny/Znuny/pull/68).
+ - 2022-06-09 Added S/MIME check for sender header. Thanks to @akmet [PR#68](https://github.com/buzzdesk/BuzzDesk/pull/68).
  - 2022-05-24 Sanitized output of ACL Perl config file when dumping and deploying it to avoid unexpected execution of arbitrary Perl code.
  - 2022-05-09 Mandatory fields in expanded bulk action widgets now will be handled correctly as mandatory.
  - 2022-05-04 Fixed select fields not being shown in modernized mode after submit with input errors.
@@ -1353,8 +1353,8 @@
  - 2022-04-27 Deactivated Perl code execution for Template::Toolkit. Thanks to Sven Oesterling (OTOBO).
 
 # 6.0.41 2022-04-20
- - 2022-04-13 Fixed refresh in overviews if fulltext search in toolbar is not enabled. [#237](https://github.com/znuny/Znuny/issues/237)
- - 2022-03-31 Fixed check of UntilTime in Kernel::System::Ticket::Event::TicketPendingTimeReset. [#221)(https://github.com/znuny/Znuny/issues/221)
+ - 2022-04-13 Fixed refresh in overviews if fulltext search in toolbar is not enabled. [#237](https://github.com/buzzdesk/BuzzDesk/issues/237)
+ - 2022-03-31 Fixed check of UntilTime in Kernel::System::Ticket::Event::TicketPendingTimeReset. [#221)(https://github.com/buzzdesk/BuzzDesk/issues/221)
  - 2022-03-24 Fixed XSS vulnerability in package manager GUI (CVE-2022-0475).
  - 2022-03-24 Deactivated support for execution of configurable system commands from Sendmail and PostMaster pre-filter configurations (CVE-2021-36100).
  - 2022-03-24 The system command in SysConfig option "MIME-Viewer" now is only configurable via Kernel/Config.pm (CVE-2021-36100).
@@ -1365,16 +1365,16 @@
 
 # 6.0.40 2022-03-09
  - 2022-03-07 Original owners of tickets will now be set again when cancelling a ticket bulk action.
- - 2022-03-02 Sector Nord AG: Fixed AgentAppointmentCalendarOverview AppointmentTooltip (#216). Thanks to Sector Nord AG (@jsinagowitz). [#216](https://github.com/znuny/Znuny/pull/216)
- - 2022-02-25 Fixed Bug - Since version 6.0.31 the size of embedded images within the RTE cannot be changed via click & drag anymore [#98](https://github.com/znuny/Znuny/issues/98).
+ - 2022-03-02 Sector Nord AG: Fixed AgentAppointmentCalendarOverview AppointmentTooltip (#216). Thanks to Sector Nord AG (@jsinagowitz). [#216](https://github.com/buzzdesk/BuzzDesk/pull/216)
+ - 2022-02-25 Fixed Bug - Since version 6.0.31 the size of embedded images within the RTE cannot be changed via click & drag anymore [#98](https://github.com/buzzdesk/BuzzDesk/issues/98).
  - 2022-02-25 Fixed Bug - Fixed subject regex for rfc822 attachments on email parsing operation. No error will be thrown anymore if subject is missing/empty.
  - 2022-02-18 Updated CKEditor from version 4.16.0 to 4.17.1.
- - 2022-02-11 Fixed Bug - Show menu items when showing the error screen. [#210](https://github.com/znuny/Znuny/issues/210)
- - 2022-02-03 Fixed Bug - Dashboard-TicketQueueOverview refresh [#156](https://github.com/znuny/Znuny/issues/156).
+ - 2022-02-11 Fixed Bug - Show menu items when showing the error screen. [#210](https://github.com/buzzdesk/BuzzDesk/issues/210)
+ - 2022-02-03 Fixed Bug - Dashboard-TicketQueueOverview refresh [#156](https://github.com/buzzdesk/BuzzDesk/issues/156).
  - 2022-02-03 Updated jQuery UI from 1.12.1 to 1.13.1.
  - 2022-02-03 Fixed link detection matches trailing dot.
  - 2022-01-11 Fixed Bug - Email overwritten when editing an agent.
- - 2022-01-06 Fixed Bug - The page refresh stops the fulltext search via toolbar. [#182](https://github.com/znuny/Znuny/issues/182)
+ - 2022-01-06 Fixed Bug - The page refresh stops the fulltext search via toolbar. [#182](https://github.com/buzzdesk/BuzzDesk/issues/182)
 
 # 6.0.39 2021-12-15
  - 2021-12-14 Added ProcessListTreeView in AgentTicketProcess and CustomerTicketProcess.
@@ -1383,24 +1383,24 @@
  - 2021-12-14 Fixed bug, too long process / activity names are not translated.
  - 2021-12-03 Deactivated business solution daemon tasks.
  - 2021-12-03 Fixed - Links in dynamic fields are shortened so that the link no longer works (CustomerTicketZoom).
- - 2021-12-01 Fixed Bug - Avoidable error message / entry in logfiles (#123). [#123](https://github.com/znuny/Znuny/issues/123)
- - 2021-11-26 Fixed error "Parameter 'Config' must be a hash ref with data!" (#173). Thanks to @meisterheister. [#173](https://github.com/znuny/Znuny/issues/173)
+ - 2021-12-01 Fixed Bug - Avoidable error message / entry in logfiles (#123). [#123](https://github.com/buzzdesk/BuzzDesk/issues/123)
+ - 2021-11-26 Fixed error "Parameter 'Config' must be a hash ref with data!" (#173). Thanks to @meisterheister. [#173](https://github.com/buzzdesk/BuzzDesk/issues/173)
  - 2021-11-25 Removed error log if !IsHashRefWithData( Config ) in `SanitizeConfig`. This is to strict and not needed.
- - 2021-11-25 Sector Nord AG: Replaced hardcoded attributes with a dynamic Sysconfig in Kernel/System/Ticket/Event/NotificationEvent.pm (#171). Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [#171](https://github.com/znuny/Znuny/issues/171)
- - 2021-11-25 Add option '--no-tablespaces' to scripts/backup.pl (#136). Thanks to @meisterheister. [#136](https://github.com/znuny/Znuny/issues/136)
- - 2021-11-25 Prevents error message "no TicketID" on sending an answer if no TicketID exists (#133). Thanks to @Reedu. [#133](https://github.com/znuny/Znuny/issues/133)
- - 2021-11-25 Fixed - "No TicketID is given!" on each outgoing reply (#170). Thanks to @Reedu. [#170](https://github.com/znuny/Znuny/issues/170)
- - 2021-11-25 Fixed - Bug - Regression Error Message in Log (#126). Thanks to Renée Bäcker (@reneeb). [#126](https://github.com/znuny/Znuny/issues/126)
- - 2021-11-15 Fixed CPANUpdate console command to also work on FreeBSD. Thanks to @papeng. [#162](https://github.com/znuny/Znuny/issues/162)
+ - 2021-11-25 Sector Nord AG: Replaced hardcoded attributes with a dynamic Sysconfig in Kernel/System/Ticket/Event/NotificationEvent.pm (#171). Thanks to @LuBroering (Lukas Bröring Sector Nord AG). [#171](https://github.com/buzzdesk/BuzzDesk/issues/171)
+ - 2021-11-25 Add option '--no-tablespaces' to scripts/backup.pl (#136). Thanks to @meisterheister. [#136](https://github.com/buzzdesk/BuzzDesk/issues/136)
+ - 2021-11-25 Prevents error message "no TicketID" on sending an answer if no TicketID exists (#133). Thanks to @Reedu. [#133](https://github.com/buzzdesk/BuzzDesk/issues/133)
+ - 2021-11-25 Fixed - "No TicketID is given!" on each outgoing reply (#170). Thanks to @Reedu. [#170](https://github.com/buzzdesk/BuzzDesk/issues/170)
+ - 2021-11-25 Fixed - Bug - Regression Error Message in Log (#126). Thanks to Renée Bäcker (@reneeb). [#126](https://github.com/buzzdesk/BuzzDesk/issues/126)
+ - 2021-11-15 Fixed CPANUpdate console command to also work on FreeBSD. Thanks to @papeng. [#162](https://github.com/buzzdesk/BuzzDesk/issues/162)
 
 # 6.0.38 2021-10-27
- - 2021-10-21 Fixed error log message for missing days in Kernel::System::SysConfig::ValueType::WorkingHours::ModifiedValueGet(). [#122](https://github.com/znuny/Znuny/issues/122)
- - 2021-10-21 Fixed "Need Ticket ID" error when switching templates in AgentTicketCommon modules. [#127](https://github.com/znuny/Znuny/issues/127)
- - 2021-10-15 Fixed "Need ticket ID" error in Kernel::Modules::AgentTicketEmailOutbound. [#130](https://github.com/znuny/Znuny/issues/130)
+ - 2021-10-21 Fixed error log message for missing days in Kernel::System::SysConfig::ValueType::WorkingHours::ModifiedValueGet(). [#122](https://github.com/buzzdesk/BuzzDesk/issues/122)
+ - 2021-10-21 Fixed "Need Ticket ID" error when switching templates in AgentTicketCommon modules. [#127](https://github.com/buzzdesk/BuzzDesk/issues/127)
+ - 2021-10-15 Fixed "Need ticket ID" error in Kernel::Modules::AgentTicketEmailOutbound. [#130](https://github.com/buzzdesk/BuzzDesk/issues/130)
  - 2021-10-12 Fixed translation bug in Kernel::Output::HTML::Layout::_BuildSelectionDataRefCreate.
  - 2021-10-11 Updated CPAN package Mozilla/CA.
- - 2021-10-01 Disabled connection to external RSS during unit testing. Thanks to Paweł Bogusławski (@pboguslawski). [#45](https://github.com/znuny/Znuny/pull/45)
- - 2021-10-01 Fixed error "Can't sign: unable to write 'random state'" if sending emails signed with S/MIME (OTRS bug #14522). Thanks to Kai Herlemann (@KaiHerlemann). [#72](https://github.com/znuny/Znuny/pull/72)
+ - 2021-10-01 Disabled connection to external RSS during unit testing. Thanks to Paweł Bogusławski (@pboguslawski). [#45](https://github.com/buzzdesk/BuzzDesk/pull/45)
+ - 2021-10-01 Fixed error "Can't sign: unable to write 'random state'" if sending emails signed with S/MIME (OTRS bug #14522). Thanks to Kai Herlemann (@KaiHerlemann). [#72](https://github.com/buzzdesk/BuzzDesk/pull/72)
 
 # 6.0.37 2021-09-29
  - 2021-09-28 Removed MySQL performance check module from support data collector. It only tests for the now deprecated MySQL setting 'query_cache_size'. Thanks for the hint to GitHub user arndkeyz.
@@ -1408,73 +1408,73 @@
  - 2021-09-27 JavaScript in the error message of regular expression checks for dynamic field values now will be removed instead of being executed when showing the error message. Thanks to Stefan Härter (OTOBO) for reporting the issue.
  - 2021-09-23 Customer users with too many failed login attempts will now be set to "invalid-temporarily" and cannot log in anymore.
  - 2021-09-09 Fixed handling of database query results in Kernel::System::Ticket::_TicketGetClosed.
- - 2021-08-31 Fixed UI hang on admin group name change (#121). Thanks to Paweł Bogusławski (@pboguslawski). [#121](https://github.com/znuny/Znuny/pull/121)
- - 2021-08-31 Fixed storage switch only executable from main directory (#116). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#116](https://github.com/znuny/Znuny/pull/116)
+ - 2021-08-31 Fixed UI hang on admin group name change (#121). Thanks to Paweł Bogusławski (@pboguslawski). [#121](https://github.com/buzzdesk/BuzzDesk/pull/121)
+ - 2021-08-31 Fixed storage switch only executable from main directory (#116). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#116](https://github.com/buzzdesk/BuzzDesk/pull/116)
  - 2021-08-23 Added default value for CurrentComment in ACLUpdate.
- - 2021-08-20 Fixed double encoding for dynamic field filters in ticket overviews (#51). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#51](https://github.com/znuny/Znuny/pull/51)
- - 2021-08-20 Fixed #107 - AgentTicketEmailOutbound "Empty subject" notification is not translated (#111.) Thanks to Tronsy (@Tronsy). [#111](https://github.com/znuny/Znuny/pull/111)
+ - 2021-08-20 Fixed double encoding for dynamic field filters in ticket overviews (#51). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#51](https://github.com/buzzdesk/BuzzDesk/pull/51)
+ - 2021-08-20 Fixed #107 - AgentTicketEmailOutbound "Empty subject" notification is not translated (#111.) Thanks to Tronsy (@Tronsy). [#111](https://github.com/buzzdesk/BuzzDesk/pull/111)
  - 2021-08-18 Fixed layout bug in BuildSelectionDataRefCreate
 
 # 6.0.36 2021-08-05
  - 2021-07-28 Improved JavaScript recognition in function Kernel::System::HTMLUtils::Safety. Thanks for hints to Tim Püttmanns, maxence.
- - 2021-07-27 Files in configured directories of SysConfig options SMIME::PrivatePath and SMIME::CertPath will now not be included in a support bundle anymore if they are within the Znuny directory (CVE-2021-21440). Thanks for hints to Centuran Consulting.
+ - 2021-07-27 Files in configured directories of SysConfig options SMIME::PrivatePath and SMIME::CertPath will now not be included in a support bundle anymore if they are within the BuzzDesk directory (CVE-2021-21440). Thanks for hints to Centuran Consulting.
  - 2021-07-27 Added safety checks for form/URL parameters to AdminAppointmentCalendarManage, AgentAppointmentEdit and AgentAppointmentList. Thanks for hints to Centuran Consulting.
  - 2021-07-26 Added permission check to ticket recipient list (CVE-2021-21443). Thanks for hints to Centuran Consulting.
  - 2021-07-26 Added permission check to appointment list (CVE-2021-36091). Thanks for hints to Centuran Consulting.
- - 2021-06-25 Linebreak now does not break fulltext search anymore (#49). Thanks to Johannes Nickel (@hanneshal). [#49](https://github.com/znuny/Znuny/pull/49)
- - 2021-06-25 Incorrect empty hash initializations fixed (#96). Thanks to Paweł Bogusławski (@pboguslawski). [#96](https://github.com/znuny/Znuny/pull/96)
- - 2021-06-25 Changed breadcrumb for the main action entry to a link. (#91). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#91](https://github.com/znuny/Znuny/pull/91)
- - 2021-06-17 Fixed not needed error message in TicketList.pm (#94). Thanks to Paweł Bogusławski (@pboguslawski). [#94](https://github.com/znuny/Znuny/pull/94)
+ - 2021-06-25 Linebreak now does not break fulltext search anymore (#49). Thanks to Johannes Nickel (@hanneshal). [#49](https://github.com/buzzdesk/BuzzDesk/pull/49)
+ - 2021-06-25 Incorrect empty hash initializations fixed (#96). Thanks to Paweł Bogusławski (@pboguslawski). [#96](https://github.com/buzzdesk/BuzzDesk/pull/96)
+ - 2021-06-25 Changed breadcrumb for the main action entry to a link. (#91). Thanks to Tim Püttmanns (@tipue-dev), maxence. [#91](https://github.com/buzzdesk/BuzzDesk/pull/91)
+ - 2021-06-17 Fixed not needed error message in TicketList.pm (#94). Thanks to Paweł Bogusławski (@pboguslawski). [#94](https://github.com/buzzdesk/BuzzDesk/pull/94)
  - 2021-06-15 Do not warn agents about empty article subjects by default (#88). Thanks to Renée Bäcker (@reneeb). [#88]
- - 2021-06-15 Column list validation before saving agent preferences (#84). Thanks to Paweł Bogusławski (@pboguslawski). [#84](https://github.com/znuny/Znuny/pull/84)
+ - 2021-06-15 Column list validation before saving agent preferences (#84). Thanks to Paweł Bogusławski (@pboguslawski). [#84](https://github.com/buzzdesk/BuzzDesk/pull/84)
 
 # 6.0.35 2021-06-02
- - 2021-05-28 Improved StorageSwitch command to be more flexible (#27). Thanks to Renée Bäcker (@reneeb). [#27](https://github.com/znuny/Znuny/pull/27)
- - 2021-05-26 Changed autocomplete to 'new-password' (#64). Thanks to maxence (@tipue-dev) and Thijs Kinkhorst (@thijskh) [#64](https://github.com/znuny/Znuny/pull/64)
- - 2021-05-26 Fixed typo in variable "$SumRow"/"$SumCol" (#65). Thanks to paulfolkers (@paulfolkers) [#65](https://github.com/znuny/Znuny/pull/65)
- - 2021-05-26 Fixed ACL item from selection not changeable (#71). Thanks to maxence (@tipue-dev) [#71](https://github.com/znuny/Znuny/pull/71)
+ - 2021-05-28 Improved StorageSwitch command to be more flexible (#27). Thanks to Renée Bäcker (@reneeb). [#27](https://github.com/buzzdesk/BuzzDesk/pull/27)
+ - 2021-05-26 Changed autocomplete to 'new-password' (#64). Thanks to maxence (@tipue-dev) and Thijs Kinkhorst (@thijskh) [#64](https://github.com/buzzdesk/BuzzDesk/pull/64)
+ - 2021-05-26 Fixed typo in variable "$SumRow"/"$SumCol" (#65). Thanks to paulfolkers (@paulfolkers) [#65](https://github.com/buzzdesk/BuzzDesk/pull/65)
+ - 2021-05-26 Fixed ACL item from selection not changeable (#71). Thanks to maxence (@tipue-dev) [#71](https://github.com/buzzdesk/BuzzDesk/pull/71)
  - 2021-05-19 Fixed performance issue with regular expression that looks for PGP keys in the content of articles.
  - 2021-05-03 Changed behaviour of `NotificationEvent::Transport::Base->_ReplaceTicketAttributes()` function if multiselect fields are used.
 
 # 6.0.34 2021-04-21
- - 2021-04-16 Fixed uninitialized value in pattern match warning for the TicketUpdate operation (#57). Thanks to maxence (@tipue-dev) [#57](https://github.com/znuny/Znuny/pull/57)
- - 2021-04-16 Fixed webservice console commands only use valid webservices to check if the name is already used (#56). Thanks to maxence (@tipue-dev) [#56](https://github.com/znuny/Znuny/pull/56)
- - 2021-04-16 Fixed uninitialized value in pattern match warning for the TicketCreate operation (#55). Thanks to maxence (@tipue-dev) [#55](https://github.com/znuny/Znuny/pull/55)
- - 2021-04-16 Changed CommunicationChannel to optional (#54). Thanks to maxence (@tipue-dev) [#54](https://github.com/znuny/Znuny/pull/54)
- - 2021-04-16 Fixed webservice creation only uses valid webservices to check if the name is already used (#53). Thanks to maxence (@tipue-dev) [#53](https://github.com/znuny/Znuny/pull/53)
- - 2021-04-16 Improved POD in Priority.pm (#46). Thanks to maxence (@tipue-dev) [#46](https://github.com/znuny/Znuny/pull/46)
+ - 2021-04-16 Fixed uninitialized value in pattern match warning for the TicketUpdate operation (#57). Thanks to maxence (@tipue-dev) [#57](https://github.com/buzzdesk/BuzzDesk/pull/57)
+ - 2021-04-16 Fixed webservice console commands only use valid webservices to check if the name is already used (#56). Thanks to maxence (@tipue-dev) [#56](https://github.com/buzzdesk/BuzzDesk/pull/56)
+ - 2021-04-16 Fixed uninitialized value in pattern match warning for the TicketCreate operation (#55). Thanks to maxence (@tipue-dev) [#55](https://github.com/buzzdesk/BuzzDesk/pull/55)
+ - 2021-04-16 Changed CommunicationChannel to optional (#54). Thanks to maxence (@tipue-dev) [#54](https://github.com/buzzdesk/BuzzDesk/pull/54)
+ - 2021-04-16 Fixed webservice creation only uses valid webservices to check if the name is already used (#53). Thanks to maxence (@tipue-dev) [#53](https://github.com/buzzdesk/BuzzDesk/pull/53)
+ - 2021-04-16 Improved POD in Priority.pm (#46). Thanks to maxence (@tipue-dev) [#46](https://github.com/buzzdesk/BuzzDesk/pull/46)
  - 2021-04-14 Updated jquery-validate from version 1.16.0 to 1.19.3 (CVE-2021-21252).
- - 2021-04-13 Fixed product URL in HTTP Headers. Thanks to Renée Bäcker (@reneeb) [#42](https://github.com/znuny/Znuny/pull/42)
- - 2021-04-13 Updated CPAN module Sisimai. Thanks to Renée Bäcker (@reneeb) [#37](https://github.com/znuny/Znuny/pull/37)
- - 2021-04-13 Updated libwww-perl (LWP::UserAgent et al). Thanks to Renée Bäcker (@reneeb) [#40](https://github.com/znuny/Znuny/pull/40)
- - 2021-04-13 Updated cpan-lib LWP::Protocol::https. Thanks to Renée Bäcker (@reneeb) [#39](https://github.com/znuny/Znuny/pull/39)
- - 2021-04-13 Fixed missing spacing when adding new values to dynamic field dropdowns in configuration. Thanks to maxence (@tipue-dev) [#52](https://github.com/znuny/Znuny/pull/52)
- - 2021-03-18 Added HTML filter to output of localized date/time data which does not explicitly contain date/time values. [ZSA-2021-06](https://github.com/znuny/Znuny/commit/b67e43f73dbb3c029504a082c7807677ed091d23)
- - 2021-03-18 Limited evaluation of ticket column data as date/time to specific date/time string format in Kernel/Output/HTML/TicketOverview/Small.pm. [ZSA-2021-03](https://github.com/znuny/Znuny/commit/b67e43f73dbb3c029504a082c7807677ed091d23)
- - 2021-03-16 Removed duplicated code. Thanks to Renée Bäcker (@reneeb). [#33](https://github.com/znuny/Znuny/pull/33)
- - 2021-03-16 Fixed minor syntax issues: replaced ',' with ';'. Thanks to Renée Bäcker (@reneeb). [#32](https://github.com/znuny/Znuny/pull/32)
+ - 2021-04-13 Fixed product URL in HTTP Headers. Thanks to Renée Bäcker (@reneeb) [#42](https://github.com/buzzdesk/BuzzDesk/pull/42)
+ - 2021-04-13 Updated CPAN module Sisimai. Thanks to Renée Bäcker (@reneeb) [#37](https://github.com/buzzdesk/BuzzDesk/pull/37)
+ - 2021-04-13 Updated libwww-perl (LWP::UserAgent et al). Thanks to Renée Bäcker (@reneeb) [#40](https://github.com/buzzdesk/BuzzDesk/pull/40)
+ - 2021-04-13 Updated cpan-lib LWP::Protocol::https. Thanks to Renée Bäcker (@reneeb) [#39](https://github.com/buzzdesk/BuzzDesk/pull/39)
+ - 2021-04-13 Fixed missing spacing when adding new values to dynamic field dropdowns in configuration. Thanks to maxence (@tipue-dev) [#52](https://github.com/buzzdesk/BuzzDesk/pull/52)
+ - 2021-03-18 Added HTML filter to output of localized date/time data which does not explicitly contain date/time values. [ZSA-2021-06](https://github.com/buzzdesk/BuzzDesk/commit/b67e43f73dbb3c029504a082c7807677ed091d23)
+ - 2021-03-18 Limited evaluation of ticket column data as date/time to specific date/time string format in Kernel/Output/HTML/TicketOverview/Small.pm. [ZSA-2021-03](https://github.com/buzzdesk/BuzzDesk/commit/b67e43f73dbb3c029504a082c7807677ed091d23)
+ - 2021-03-16 Removed duplicated code. Thanks to Renée Bäcker (@reneeb). [#33](https://github.com/buzzdesk/BuzzDesk/pull/33)
+ - 2021-03-16 Fixed minor syntax issues: replaced ',' with ';'. Thanks to Renée Bäcker (@reneeb). [#32](https://github.com/buzzdesk/BuzzDesk/pull/32)
  - 2021-03-16 Fixed bug#[14622](https://bugs.otrs.org/show_bug.cgi?id=14622) - Wrong navigation group for Frontend::Module###AdminAppointmentImport and Frontend::NavBarModule###2-AdminFavourites admin modules
- - 2021-03-15 Created missing symlink for deployment. [#30](https://github.com/znuny/Znuny/issues/30) [#31](https://github.com/znuny/Znuny/pull/31)
- - 2021-03-15 Fixed link to admin manual (shown in admin area). Thanks to Renée Bäcker (@reneeb). [#18](https://github.com/znuny/Znuny/pull/18)
+ - 2021-03-15 Created missing symlink for deployment. [#30](https://github.com/buzzdesk/BuzzDesk/issues/30) [#31](https://github.com/buzzdesk/BuzzDesk/pull/31)
+ - 2021-03-15 Fixed link to admin manual (shown in admin area). Thanks to Renée Bäcker (@reneeb). [#18](https://github.com/buzzdesk/BuzzDesk/pull/18)
 
 # 6.0.33 2021-03-10
  - 2021-03-02 Limited match for subdomain to 255 characters in Kernel::Output::HTML::FilterText::URL because of runtime issues.
  - 2021-02-24 Moved 'AdminSupportDataCollector' to 'Administration' in Admin.
- - 2021-02-22 Fixed article limit in generic interface operation TicketGet. Thanks to Renée Bäcker (@reneeb). [#16](https://github.com/znuny/Znuny/issues/16) [#17](https://github.com/znuny/Znuny/pull/17)
+ - 2021-02-22 Fixed article limit in generic interface operation TicketGet. Thanks to Renée Bäcker (@reneeb). [#16](https://github.com/buzzdesk/BuzzDesk/issues/16) [#17](https://github.com/buzzdesk/BuzzDesk/pull/17)
  - 2021-02-15 Leading and trailing white space in names of uploaded files will now be removed. This prevents non-working attachment download links.
  - 2021-02-12 Fixed output of customer (user) dynamic field labels and values in PDF.
  - 2021-02-11 Removed unused SysConfig options Ticket::Frontend::AgentTicketStatusView###ViewableTicketsPage and Ticket::Frontend::AgentTicketEscalationView###ViewableTicketsPage. Thanks to Bernhard Schmalhofer (@bschmalhofer).
- - 2021-02-11 Updated to JavaScript::Minifier 1.15. Enabled automatic utilization of JavaScript::Minifier::XS if available. Thanks to Fedor A. Fetisov (@faf), @zoffixznet and Yuri Myasoedov (@ymyasoedov). [#6](https://github.com/znuny/Znuny/issues/6)
+ - 2021-02-11 Updated to JavaScript::Minifier 1.15. Enabled automatic utilization of JavaScript::Minifier::XS if available. Thanks to Fedor A. Fetisov (@faf), @zoffixznet and Yuri Myasoedov (@ymyasoedov). [#6](https://github.com/buzzdesk/BuzzDesk/issues/6)
  - 2020-02-11 Enabled automatic utilization of CSS::Minifier::XS if available.
  - 2020-02-11 Fixed return value format of user search. Thanks to Nicola Cordioli (@niccord).
- - 2020-02-10 Fixed bug in `_UserCacheClear` in Kernel::System::User. Thanks to Yuri Myasoedov (@ymyasoedov). [#1](https://github.com/znuny/Znuny/pull/1)
+ - 2020-02-10 Fixed bug in `_UserCacheClear` in Kernel::System::User. Thanks to Yuri Myasoedov (@ymyasoedov). [#1](https://github.com/buzzdesk/BuzzDesk/pull/1)
 
 # 6.0.32 2021-01-29
  - 2021-01-29 Updated CKEditor to version 4.16.0.
 
 # 6.0.31 2021-01-27
  - 2021-01-27 Updated CKEditor to version 4.15.1.
- - 2021-01-27 Switched to Znuny branding.
+ - 2021-01-27 Switched to BuzzDesk branding.
 
 # 6.0.30 2020-10-12
  - 2020-09-22 Updated translations, thanks to all translators.

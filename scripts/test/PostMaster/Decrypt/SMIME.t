@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -159,9 +157,9 @@ if ( !$SMIMEObject ) {
 
 my $Check1Hash       = 'f62a2257';
 my $Check2Hash       = '35c7d865';
-my $ZnunyRootCAHash  = '7835cf94';
-my $ZnunySub2CAHash  = 'b5d19fb9';
-my $ZnunySub1CAHash  = '19545811';
+my $BuzzDeskRootCAHash  = '7835cf94';
+my $BuzzDeskSub2CAHash  = 'b5d19fb9';
+my $BuzzDeskSub1CAHash  = '19545811';
 my $OTRSUserCertHash = '4d400195';
 
 # certificates

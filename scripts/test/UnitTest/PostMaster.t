@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -20,7 +19,7 @@ $Kernel::OM->ObjectParamAdd(
     },
 );
 
-my $ZnunyHelperObject    = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject    = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $ConfigObject         = $Kernel::OM->Get('Kernel::Config');
 my $SysConfigObject      = $Kernel::OM->Get('Kernel::System::SysConfig');
 my $UnitTestHelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
@@ -70,7 +69,7 @@ for my $Test (@Tests) {
     # Add headers
     #
 
-    my $AddResult = $ZnunyHelperObject->_PostmasterXHeaderAdd(
+    my $AddResult = $BuzzDeskHelperObject->_PostmasterXHeaderAdd(
         Header => $Test->{Headers},
     );
     $AddResult = $AddResult ? 1 : 0;
@@ -84,7 +83,7 @@ for my $Test (@Tests) {
     next TEST if $AddResult != $Test->{ExpectedResult};
 
     # Write config changes
-    $ZnunyHelperObject->_RebuildConfig();
+    $BuzzDeskHelperObject->_RebuildConfig();
 
     # refetch config object because it was discarded by _PackageSetupInit
     $ConfigObject = $Kernel::OM->Get('Kernel::Config');
@@ -112,7 +111,7 @@ for my $Test (@Tests) {
     # Remove headers
     #
 
-    my $RemoveResult = $ZnunyHelperObject->_PostmasterXHeaderRemove(
+    my $RemoveResult = $BuzzDeskHelperObject->_PostmasterXHeaderRemove(
         Header => $Test->{Headers},
     );
     $RemoveResult = $RemoveResult ? 1 : 0;
@@ -126,7 +125,7 @@ for my $Test (@Tests) {
     next TEST if $RemoveResult != $Test->{ExpectedResult};
 
     # Write config changes
-    $ZnunyHelperObject->_RebuildConfig();
+    $BuzzDeskHelperObject->_RebuildConfig();
 
     # refetch config object because it was discarded by _PackageSetupInit
     $ConfigObject = $Kernel::OM->Get('Kernel::Config');

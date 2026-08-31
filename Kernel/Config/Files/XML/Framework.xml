@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_config version="2.0" init="Framework">
-    <!-- nofilter(TidyAll::Plugin::Znuny::Config::ACLKeysLevel3Actions) -->
+    <!-- nofilter(TidyAll::Plugin::BuzzDesk::Config::ACLKeysLevel3Actions) -->
     <Setting Name="SecureMode" Required="1" Valid="1" ConfigLevel="200">
-        <Description Translatable="1">Disables the web installer (http://yourhost.example.com/znuny/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.</Description>
+        <Description Translatable="1">Disables the web installer (http://yourhost.example.com/buzzdesk/installer.pl), to prevent the system from being hijacked. If not enabled, the system can be reinstalled and the current basic configuration will be used to pre-populate the questions within the installer script. If enabled, it also disables the GenericAgent, PackageManager and SQL Box.</Description>
         <Navigation>Core</Navigation>
         <Value>
             <Item ValueType="Checkbox">0</Item>
@@ -55,7 +55,7 @@
         </Value>
     </Setting>
     <Setting Name="SystemID" Required="1" Valid="1" ConfigLevel="200">
-        <Description Translatable="1">Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of Znuny).</Description>
+        <Description Translatable="1">Defines the system identifier. Every ticket number and http session string contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of BuzzDesk).</Description>
         <Navigation>Core</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="^\d+$">10</Item>
@@ -76,14 +76,14 @@
         </Value>
     </Setting>
     <Setting Name="SupportDataCollector::HTTPHostname" Required="0" Valid="0" ConfigLevel="200">
-        <Description Translatable="1">Defines the HTTP hostname for the support data collection with the public module 'PublicSupportDataCollector' (e.g. used from the Znuny Daemon).</Description>
+        <Description Translatable="1">Defines the HTTP hostname for the support data collection with the public module 'PublicSupportDataCollector' (e.g. used from the BuzzDesk Daemon).</Description>
         <Navigation>Core::SupportDataCollector</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex=""></Item>
         </Value>
     </Setting>
     <Setting Name="SupportDataCollector::WebUserAgent::Timeout" Required="0" Valid="0" ConfigLevel="200">
-        <Description Translatable="1">Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module 'PublicSupportDataCollector' (e.g. used from the Znuny Daemon).</Description>
+        <Description Translatable="1">Defines the timeout (in seconds, minimum is 20 seconds) for the support data collection with the public module 'PublicSupportDataCollector' (e.g. used from the BuzzDesk Daemon).</Description>
         <Navigation>Core::SupportDataCollector</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="^[2-9][0-9]{1,}|[1-9][0-9]{2,}$">20</Item>
@@ -120,7 +120,7 @@
         <Description Translatable="1">Sets the prefix to the scripts folder on the server, as configured on the web server. This setting is used as a variable, OTRS_CONFIG_ScriptAlias which is found in all forms of messaging used by the application, to build links to the tickets within the system.</Description>
         <Navigation>Frontend::Base</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">znuny/</Item>
+            <Item ValueType="String" ValueRegex="">buzzdesk/</Item>
         </Value>
     </Setting>
     <Setting Name="AdminEmail" Required="1" Valid="1">
@@ -261,7 +261,7 @@
         </Value>
     </Setting>
     <Setting Name="DefaultTheme" Required="1" Valid="1" ConfigLevel="200">
-        <Description Translatable="1">Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.znuny.org/developer/general_information/themes.html.</Description>
+        <Description Translatable="1">Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.buzzdesk.org/developer/general_information/themes.html.</Description>
         <Navigation>Frontend::Base</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="">Standard</Item>
@@ -395,7 +395,7 @@
         <Description Translatable="1">Defines the URL base path of icons, CSS and Java Script.</Description>
         <Navigation>Frontend::Base</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">/znuny-web/</Item>
+            <Item ValueType="String" ValueRegex="">/buzzdesk-web/</Item>
         </Value>
     </Setting>
     <Setting Name="Frontend::ImagePath" Required="1" Valid="1" ConfigLevel="200">
@@ -679,7 +679,7 @@
         </Value>
     </Setting>
     <Setting Name="DisableIFrameOriginRestricted" Required="0" Valid="1">
-        <Description Translatable="1">Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow Znuny to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!</Description>
+        <Description Translatable="1">Disable HTTP header "X-Frame-Options: SAMEORIGIN" to allow BuzzDesk to be included as an IFrame in other websites. Disabling this HTTP header can be a security issue! Only disable it, if you know what you are doing!</Description>
         <Navigation>Frontend::Base</Navigation>
         <Value>
             <Item ValueType="Checkbox">0</Item>
@@ -879,11 +879,11 @@
         <Description Translatable="1">If "file" was selected for LogModule, a logfile must be specified. If the file doesn't exist, it will be created by the system.</Description>
         <Navigation>Core::Log</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">&lt;OTRS_CONFIG_Home&gt;/var/log/znuny.log</Item>
+            <Item ValueType="String" ValueRegex="">&lt;OTRS_CONFIG_Home&gt;/var/log/buzzdesk.log</Item>
         </Value>
     </Setting>
     <Setting Name="LogModule::LogFile::Date" Required="1" Valid="1">
-        <Description Translatable="1">Adds a suffix with the actual year and month to the Znuny log file. A logfile for every month will be created.</Description>
+        <Description Translatable="1">Adds a suffix with the actual year and month to the BuzzDesk log file. A logfile for every month will be created.</Description>
         <Navigation>Core::Log</Navigation>
         <Value>
             <Item ValueType="Checkbox">0</Item>
@@ -1178,9 +1178,9 @@
             <Hash>
                 <Item Key="Module">Kernel::Output::HTML::Notification::Generic</Item>
                 <Item Key="Priority">Warning</Item>
-                <Item Key="Text">The Znuny Website</Item>
+                <Item Key="Text">The BuzzDesk Website</Item>
                 <Item Key="File">&lt;OTRS_CONFIG_Home&gt;/var/notify.txt</Item>
-                <Item Key="Link">http://www.znuny.com</Item>
+                <Item Key="Link">http://www.buzzdesk.com</Item>
             </Hash>
         </Value>
     </Setting>
@@ -1192,7 +1192,7 @@
         </Value>
     </Setting>
     <Setting Name="SessionName" Required="1" Valid="1">
-        <Description Translatable="1">Defines the name of the session key. E.g. Session, SessionID or Znuny.</Description>
+        <Description Translatable="1">Defines the name of the session key. E.g. Session, SessionID or BuzzDesk.</Description>
         <Navigation>Core::Session</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="">OTRSAgentInterface</Item>
@@ -1351,14 +1351,14 @@
         </Value>
     </Setting>
     <Setting Name="OTRSTimeZone" Required="1" Valid="1">
-        <Description Translatable="1">Sets the time zone being used internally by Znuny to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.</Description>
+        <Description Translatable="1">Sets the time zone being used internally by BuzzDesk to e. g. store dates and times in the database. WARNING: This setting must not be changed once set and tickets or any other data containing date/time have been created.</Description>
         <Navigation>Core::Time</Navigation>
         <Value>
             <Item ValueType="TimeZone">UTC</Item>
         </Value>
     </Setting>
     <Setting Name="UserDefaultTimeZone" Required="1" Valid="1">
-        <Description Translatable="1">Sets the time zone that will be assigned to newly created users and will be used for users that haven't yet set a time zone. This is the time zone being used as default to convert date and time between the Znuny time zone and the user's time zone.</Description>
+        <Description Translatable="1">Sets the time zone that will be assigned to newly created users and will be used for users that haven't yet set a time zone. This is the time zone being used as default to convert date and time between the BuzzDesk time zone and the user's time zone.</Description>
         <Navigation>Core::Time</Navigation>
         <Value>
             <Item ValueType="TimeZone">UTC</Item>
@@ -2755,7 +2755,7 @@
         </Value>
     </Setting>
     <Setting Name="WebMaxFileUpload" Required="1" Valid="1" ConfigLevel="200">
-        <Description Translatable="1">Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your Znuny instance to stop working (probably any mask which takes input from the user).</Description>
+        <Description Translatable="1">Defines the maximal size (in bytes) for file uploads via the browser. Warning: Setting this option to a value which is too low could cause many masks in your BuzzDesk instance to stop working (probably any mask which takes input from the user).</Description>
         <Navigation>Frontend::Base</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="^[0-9]{1,11}$">24000000</Item>
@@ -2772,7 +2772,7 @@
         <Description Translatable="1">Specifies the text that should appear in the log file to denote a CGI script entry.</Description>
         <Navigation>Core::Log</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">Znuny-CGI</Item>
+            <Item ValueType="String" ValueRegex="">BuzzDesk-CGI</Item>
         </Value>
     </Setting>
     <Setting Name="Frontend::Output::FilterText###AAAURL" Required="0" Valid="1">
@@ -2881,7 +2881,7 @@
                 <Item>
                     <Hash>
                         <Item Key="Name">Example repository 1</Item>
-                        <Item Key="URL">https://addons.znuny.com/private</Item>
+                        <Item Key="URL">https://addons.buzzdesk.com/private</Item>
                         <Item Key="AuthHeaderKey">Authorization</Item>
                         <Item Key="AuthHeaderValue">Token token=123</Item>
                     </Hash>
@@ -3118,7 +3118,7 @@
         </Value>
     </Setting>
     <Setting Name="PGP" Required="1" Valid="1">
-        <Description Translatable="1">Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the Znuny user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.</Description>
+        <Description Translatable="1">Enables PGP support. When PGP support is enabled for signing and encrypting mail, it is HIGHLY recommended that the web server runs as the BuzzDesk user. Otherwise, there will be problems with the privileges when accessing .gnupg folder.</Description>
         <Navigation>Core::Crypt::PGP</Navigation>
         <Value>
             <Item ValueType="Checkbox">0</Item>
@@ -3135,7 +3135,7 @@
         <Description Translatable="1">Sets the options for PGP binary.</Description>
         <Navigation>Core::Crypt::PGP</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">--homedir /opt/znuny/.gnupg/ --batch --no-tty --yes</Item>
+            <Item ValueType="String" ValueRegex="">--homedir /opt/buzzdesk/.gnupg/ --batch --no-tty --yes</Item>
         </Value>
     </Setting>
     <Setting Name="PGP::Options::DigestPreference" Required="0" Valid="1">
@@ -3243,17 +3243,17 @@
         </Value>
     </Setting>
     <Setting Name="NotificationSenderName" Required="1" Valid="1">
-        <Description Translatable="1">Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com).</Description>
+        <Description Translatable="1">Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com).</Description>
         <Navigation>Core::Email</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">Znuny Notifications</Item>
+            <Item ValueType="String" ValueRegex="">BuzzDesk Notifications</Item>
         </Value>
     </Setting>
     <Setting Name="NotificationSenderEmail" Required="1" Valid="1">
-        <Description Translatable="1">Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "Znuny Notifications" znuny@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.</Description>
+        <Description Translatable="1">Specifies the email address that should be used by the application when sending notifications. The email address is used to build the complete display name for the notification master (i.e. "BuzzDesk Notifications" buzzdesk@your.example.com). You can use the OTRS_CONFIG_FQDN variable as set in your configuation, or choose another email address.</Description>
         <Navigation>Core::Email</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">znuny@&lt;OTRS_CONFIG_FQDN&gt;</Item>
+            <Item ValueType="String" ValueRegex="">buzzdesk@&lt;OTRS_CONFIG_FQDN&gt;</Item>
         </Value>
     </Setting>
     <Setting Name="PasswordResetTokenExpiry" Required="1" Valid="1">
@@ -3281,7 +3281,7 @@
         <Description Translatable="1">Defines the subject for notification mails sent to agents, with token about new requested password.</Description>
         <Navigation>Frontend::Agent</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">New Znuny password request</Item>
+            <Item ValueType="String" ValueRegex="">New BuzzDesk password request</Item>
         </Value>
     </Setting>
     <Setting Name="NotificationBodyLostPasswordToken" Required="1" Valid="1">
@@ -3290,7 +3290,7 @@
         <Value>
             <Item ValueType="Textarea">Hi &lt;OTRS_USERFIRSTNAME&gt;,
 
-You or someone impersonating you has requested to change your Znuny
+You or someone impersonating you has requested to change your BuzzDesk
 password.
 
 If you want to do this, click on the link below to set a new password.
@@ -3306,7 +3306,7 @@ If you did not request a new password, please ignore this email.
         <Description Translatable="1">Defines the subject for notification mails sent to agents, confirming that the password has been reset.</Description>
         <Navigation>Frontend::Agent</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">Your Znuny password has been reset</Item>
+            <Item ValueType="String" ValueRegex="">Your BuzzDesk password has been reset</Item>
         </Value>
     </Setting>
     <Setting Name="NotificationBodyLostPassword" Required="1" Valid="1">
@@ -3315,7 +3315,7 @@ If you did not request a new password, please ignore this email.
         <Value>
             <Item ValueType="Textarea">Hi &lt;OTRS_USERFIRSTNAME&gt;,
 
-Your Znuny password has been successfully reset.
+Your BuzzDesk password has been successfully reset.
 
 You can log in via the following URL:
 
@@ -3882,7 +3882,7 @@ If you did not make this change, please contact your administrator immediately.
         <Description Translatable="1">Defines the subject for notification mails sent to customers, with token about new requested password.</Description>
         <Navigation>Frontend::Customer</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">New Znuny password request</Item>
+            <Item ValueType="String" ValueRegex="">New BuzzDesk password request</Item>
         </Value>
     </Setting>
     <Setting Name="CustomerPanelBodyLostPasswordToken" Required="1" Valid="1">
@@ -3891,7 +3891,7 @@ If you did not make this change, please contact your administrator immediately.
         <Value>
             <Item ValueType="Textarea">Hi &lt;OTRS_USERFIRSTNAME&gt;,
 
-You or someone impersonating you has requested to change your Znuny
+You or someone impersonating you has requested to change your BuzzDesk
 password.
 
 If you want to do this, click on the link below to set a new password.
@@ -3907,7 +3907,7 @@ If you did not request a new password, please ignore this email.
         <Description Translatable="1">Defines the subject for notification mails sent to customers, confirming that the password has been reset.</Description>
         <Navigation>Frontend::Customer</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">Your Znuny password has been reset</Item>
+            <Item ValueType="String" ValueRegex="">Your BuzzDesk password has been reset</Item>
         </Value>
     </Setting>
     <Setting Name="CustomerPanelBodyLostPassword" Required="1" Valid="1">
@@ -3916,7 +3916,7 @@ If you did not request a new password, please ignore this email.
         <Value>
             <Item ValueType="Textarea">Hi &lt;OTRS_USERFIRSTNAME&gt;,
 
-Your Znuny password has been successfully reset.
+Your BuzzDesk password has been successfully reset.
 
 You can log in via the following URL:
 
@@ -3930,7 +3930,7 @@ If you did not make this change, please contact your administrator immediately.
         <Description Translatable="1">Defines the subject for notification mails sent to customers, about new account.</Description>
         <Navigation>Frontend::Customer</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">New Znuny Account!</Item>
+            <Item ValueType="String" ValueRegex="">New BuzzDesk Account!</Item>
         </Value>
     </Setting>
     <Setting Name="CustomerPanelBodyNewAccount" Required="1" Valid="1">
@@ -3939,7 +3939,7 @@ If you did not make this change, please contact your administrator immediately.
         <Value>
             <Item ValueType="Textarea">Hi &lt;OTRS_USERFIRSTNAME&gt;,
 
-You or someone impersonating you has created a new Znuny account for
+You or someone impersonating you has created a new BuzzDesk account for
 you.
 
 Full name: &lt;OTRS_USERFIRSTNAME&gt; &lt;OTRS_USERLASTNAME&gt;
@@ -4068,7 +4068,7 @@ via the Preferences button after logging in.
         </Value>
     </Setting>
     <Setting Name="Customer::AuthModule::LDAP::GroupDN" Required="0" Valid="0" ConfigLevel="200">
-        <Description Translatable="1">If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use Znuny. Specify the group, who may access the system.</Description>
+        <Description Translatable="1">If "LDAP" was selected for Customer::Authmodule, you can check if the user is allowed to authenticate because he is in a posixGroup, e.g. user needs to be in a group xyz to use BuzzDesk. Specify the group, who may access the system.</Description>
         <Navigation>Core::Auth::Customer</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="">cn=otrsallow,ou=posixGroups,dc=example,dc=com</Item>
@@ -6708,7 +6708,7 @@ via the Preferences button after logging in.
                             <Item>admin</Item>
                         </Array>
                     </Item>
-                    <Item Key="Description" Translatable="1">This module is part of the admin area of Znuny.</Item>
+                    <Item Key="Description" Translatable="1">This module is part of the admin area of BuzzDesk.</Item>
                     <Item Key="Title" Translatable="1">Communication Log GUI</Item>
                     <Item Key="NavBarName">Admin</Item>
                 </Hash>
@@ -7190,11 +7190,11 @@ via the Preferences button after logging in.
         </Value>
     </Setting>
     <Setting Name="PublicFrontend::FooterLinks" Required="0" Valid="0">
-        <Description Translatable="1">Defines the shown links in the footer area of the customer and public interface of this Znuny system. The value in "Key" is the external URL, the value in "Content" is the shown label.</Description>
+        <Description Translatable="1">Defines the shown links in the footer area of the customer and public interface of this BuzzDesk system. The value in "Key" is the external URL, the value in "Content" is the shown label.</Description>
         <Navigation>Frontend::Public</Navigation>
         <Value>
             <Hash>
-                <Item Key="https://www.znuny.org">Znuny Open-Source Help Desk Platform</Item>
+                <Item Key="https://www.buzzdesk.org">BuzzDesk Open-Source Help Desk Platform</Item>
             </Hash>
         </Value>
     </Setting>
@@ -7492,7 +7492,7 @@ via the Preferences button after logging in.
         </Value>
     </Setting>
     <Setting Name="Core::MirrorDB::DSN" Required="0" Valid="0" ConfigLevel="200">
-        <Description Translatable="1">Znuny can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.</Description>
+        <Description Translatable="1">BuzzDesk can use one or more readonly mirror databases for expensive operations like fulltext search or statistics generation. Here you can specify the DSN for the first mirror database.</Description>
         <Navigation>Core::DB::Mirror</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="">DBI:mysql:database=mirrordb;host=mirrordbhost</Item>
@@ -7605,16 +7605,16 @@ via the Preferences button after logging in.
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="DashboardBackend###0442-RSS" Required="0" Valid="1">
+    <Setting Name="DashboardBackend###0442-RSS" Required="0" Valid="0">
         <Description Translatable="1">Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTL" indicates the cache expiration period in minutes for the plugin. "Mandatory" determines if the plugin is always shown and can not be removed by agents.</Description>
         <Navigation>Frontend::Agent::View::Dashboard</Navigation>
         <Value>
             <Hash>
                 <Item Key="Module">Kernel::Output::HTML::Dashboard::RSS</Item>
                 <Item Key="Title" Translatable="1">News</Item>
-                <Item Key="Description" Translatable="1">Znuny.org - News</Item>
-                <Item Key="URL">https://www.znuny.org/public/rss/en/rss.xml</Item>
-                <Item Key="URL_de">https://www.znuny.org/public/rss/de/rss.xml</Item>
+                <Item Key="Description" Translatable="1">BuzzDesk News</Item>
+                <Item Key="URL">https://www.buzzdesk.org/public/rss/en/rss.xml</Item>
+                <Item Key="URL_de">https://www.buzzdesk.org/public/rss/de/rss.xml</Item>
                 <Item Key="Block">ContentSmall</Item>
                 <Item Key="Limit">6</Item>
                 <Item Key="Group"></Item>
@@ -7633,11 +7633,11 @@ via the Preferences button after logging in.
                 <Item Key="Title" Translatable="1">A picture</Item>
                 <Item Key="Description" Translatable="1">Some picture description!</Item>
                 <Item Key="Block">ContentLarge</Item>
-                <Item Key="URL">https://www.znuny.org</Item>
+                <Item Key="URL">https://www.buzzdesk.org</Item>
                 <Item Key="Group"></Item>
                 <Item Key="Default">1</Item>
-                <Item Key="Link">https://znuny.org/</Item>
-                <Item Key="LinkTitle">https://znuny.org/</Item>
+                <Item Key="Link">https://buzzdesk.org/</Item>
+                <Item Key="LinkTitle">https://buzzdesk.org/</Item>
                 <Item Key="Width">198</Item>
                 <Item Key="Height">140</Item>
                 <Item Key="Mandatory">0</Item>
@@ -7666,11 +7666,11 @@ via the Preferences button after logging in.
                 <Item Key="Title" Translatable="1">A Website</Item>
                 <Item Key="Description" Translatable="1">Some description!</Item>
                 <Item Key="Block">ContentLarge</Item>
-                <Item Key="URL">https://znuny.com/</Item>
+                <Item Key="URL">https://buzzdesk.com/</Item>
                 <Item Key="Group"></Item>
                 <Item Key="Default">1</Item>
-                <Item Key="Link">https://znuny.com/</Item>
-                <Item Key="LinkTitle">znuny.com/</Item>
+                <Item Key="Link">https://buzzdesk.com/</Item>
+                <Item Key="LinkTitle">buzzdesk.com/</Item>
                 <Item Key="Width">1024</Item>
                 <Item Key="Height">800</Item>
                 <Item Key="Marginheight">5</Item>
@@ -7704,7 +7704,7 @@ via the Preferences button after logging in.
         </Value>
     </Setting>
     <Setting Name="Frontend::Output::OutputFilterTextAutoLink###CVE" Required="0" Valid="0">
-        <Description Translatable="1">Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.</Description>
+        <Description Translatable="1">Defines a filter for html output to add links behind CVE numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.</Description>
         <Navigation>Frontend::Base::OutputFilter</Navigation>
         <Value>
             <Hash>
@@ -7746,7 +7746,7 @@ via the Preferences button after logging in.
         </Value>
     </Setting>
     <Setting Name="Frontend::Output::OutputFilterTextAutoLink###Bugtraq" Required="0" Valid="0">
-        <Description Translatable="1">Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.</Description>
+        <Description Translatable="1">Defines a filter for html output to add links behind bugtraq numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.</Description>
         <Navigation>Frontend::Base::OutputFilter</Navigation>
         <!-- Example strings: BugTraq ID: 23862 | BugTraq ID: 8945 | Bugtraq ID 140 | BUGTRAQ:20070425 | BID 20799 -->
         <!-- Example URL: https://www.securityfocus.com/bid/23862/info  -->
@@ -7787,7 +7787,7 @@ via the Preferences button after logging in.
         </Value>
     </Setting>
     <Setting Name="Frontend::Output::OutputFilterTextAutoLink###MSBulletins" Required="0" Valid="0">
-        <Description Translatable="1">Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.</Description>
+        <Description Translatable="1">Defines a filter for html output to add links behind MSBulletin numbers. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.</Description>
         <Navigation>Frontend::Base::OutputFilter</Navigation>
         <!-- Example strings: MS07-021 | MS04-028 | MS-07-002 -->
         <!-- Example URL: https://www.microsoft.com/technet/security/bulletin/MS07-021.mspx  -->
@@ -7823,7 +7823,7 @@ via the Preferences button after logging in.
         </Value>
     </Setting>
     <Setting Name="Frontend::Output::OutputFilterTextAutoLink###Setting1" Required="0" Valid="0">
-        <Description Translatable="1">Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.</Description>
+        <Description Translatable="1">Define a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.</Description>
         <Navigation>Frontend::Base::OutputFilter</Navigation>
         <Value>
             <Hash>
@@ -7857,7 +7857,7 @@ via the Preferences button after logging in.
         </Value>
     </Setting>
     <Setting Name="Frontend::Output::OutputFilterTextAutoLink###Setting2" Required="0" Valid="0">
-        <Description Translatable="1">Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the Znuny image path will be used. The second possiblity is to insert the link to the image.</Description>
+        <Description Translatable="1">Defines a filter for html output to add links behind a defined string. The element Image allows two input kinds. At once the name of an image (e.g. faq.png). In this case the BuzzDesk image path will be used. The second possiblity is to insert the link to the image.</Description>
         <Navigation>Frontend::Base::OutputFilter</Navigation>
         <Value>
             <Hash>
@@ -7899,7 +7899,7 @@ via the Preferences button after logging in.
         </Value>
     </Setting>
     <Setting Name="Secure::DisableBanner" Required="1" Valid="1">
-        <Description Translatable="1">If enabled, the Znuny version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.</Description>
+        <Description Translatable="1">If enabled, the BuzzDesk version tag will be removed from the Webinterface, the HTTP headers and the X-Headers of outgoing mails. NOTE: If you change this option, please make sure to delete the cache.</Description>
         <Navigation>Core</Navigation>
         <Value>
             <Item ValueType="Checkbox">0</Item>
@@ -7913,14 +7913,14 @@ via the Preferences button after logging in.
         </Value>
     </Setting>
     <Setting Name="Loader::Enabled::CSS" Required="1" Valid="1">
-        <Description Translatable="1">If enabled, Znuny will deliver all CSS files in minified form.</Description>
+        <Description Translatable="1">If enabled, BuzzDesk will deliver all CSS files in minified form.</Description>
         <Navigation>Frontend::Base::Loader</Navigation>
         <Value>
             <Item ValueType="Checkbox">1</Item>
         </Value>
     </Setting>
     <Setting Name="Loader::Enabled::JS" Required="1" Valid="1">
-        <Description Translatable="1">If enabled, Znuny will deliver all JavaScript files in minified form.</Description>
+        <Description Translatable="1">If enabled, BuzzDesk will deliver all JavaScript files in minified form.</Description>
         <Navigation>Frontend::Base::Loader</Navigation>
         <Value>
             <Item ValueType="Checkbox">1</Item>
@@ -8050,7 +8050,7 @@ via the Preferences button after logging in.
                 <Item>modules/Module.Notification.js</Item>
                 <Item>modules/Module.Alert.js</Item>
                 <Item>modules/Module.SidebarWidget.js</Item>
-                <Item>Znuny.App.js</Item>
+                <Item>BuzzDesk.App.js</Item>
             </Array>
         </Value>
     </Setting>
@@ -8199,7 +8199,7 @@ via the Preferences button after logging in.
                 <Item Key="InternalName">default</Item>
                 <Item Key="VisibleName" Translatable="1">Default</Item>
                 <Item Key="Description" Translatable="1">This is the default orange - black skin.</Item>
-                <Item Key="HomePage">www.znuny.org</Item>
+                <Item Key="HomePage">www.buzzdesk.org</Item>
             </Hash>
         </Value>
     </Setting>
@@ -8211,7 +8211,7 @@ via the Preferences button after logging in.
                 <Item Key="InternalName">dark</Item>
                 <Item Key="VisibleName" Translatable="1">Dark</Item>
                 <Item Key="Description" Translatable="1">This is the dark skin for the agent interface.</Item>
-                <Item Key="HomePage">www.znuny.org</Item>
+                <Item Key="HomePage">www.buzzdesk.org</Item>
             </Hash>
         </Value>
     </Setting>
@@ -8240,7 +8240,7 @@ via the Preferences button after logging in.
                 <Item Key="InternalName">default</Item>
                 <Item Key="VisibleName" Translatable="1">Default</Item>
                 <Item Key="Description" Translatable="1">This is the default orange - black skin for the customer interface.</Item>
-                <Item Key="HomePage">www.znuny.org</Item>
+                <Item Key="HomePage">www.buzzdesk.org</Item>
             </Hash>
         </Value>
     </Setting>
@@ -8252,7 +8252,7 @@ via the Preferences button after logging in.
                 <Item Key="InternalName">dark</Item>
                 <Item Key="VisibleName" Translatable="1">Dark</Item>
                 <Item Key="Description" Translatable="1">This is the dark skin for the customer interface.</Item>
-                <Item Key="HomePage">www.znuny.org</Item>
+                <Item Key="HomePage">www.buzzdesk.org</Item>
             </Hash>
         </Value>
     </Setting>

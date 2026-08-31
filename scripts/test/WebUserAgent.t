@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -52,7 +50,7 @@ my @Tests = (
     },
     {
         Name        => 'GET - http - invalid proxy - Test ' . $TestNumber++,
-        URL         => "https://download.znuny.org/releases/packages/otrs.xml",
+        URL         => "https://download.buzzdesk.org/releases/packages/otrs.xml",
         Timeout     => $TimeOut,
         Proxy       => 'http://NoProxy',
         Success     => 0,
@@ -60,7 +58,7 @@ my @Tests = (
     },
     {
         Name        => 'GET - http - ftp proxy - Test ' . $TestNumber++,
-        URL         => "https://download.znuny.org/releases/packages/otrs.xml",
+        URL         => "https://download.buzzdesk.org/releases/packages/otrs.xml",
         Timeout     => $TimeOut,
         Proxy       => 'ftp://NoProxy',
         Success     => 0,
@@ -68,50 +66,50 @@ my @Tests = (
     },
     {
         Name        => 'GET - http - ftp NoProxy option - Test ' . $TestNumber++,
-        URL         => "https://download.znuny.org/releases/packages/otrs.xml",
+        URL         => "https://download.buzzdesk.org/releases/packages/otrs.xml",
         Timeout     => $TimeOut,
         Proxy       => 'ftp://NoProxy',
-        NoProxy     => 'download.znuny.org',
+        NoProxy     => 'download.buzzdesk.org',
         Success     => 1,
         ErrorNumber => 400,
     },
     {
         Name        => 'GET - http - ftp NoProxy option with multiple domains - Test ' . $TestNumber++,
-        URL         => "https://download.znuny.org/releases/packages/otrs.xml",
+        URL         => "https://download.buzzdesk.org/releases/packages/otrs.xml",
         Timeout     => $TimeOut,
         Proxy       => 'ftp://NoProxy',
-        NoProxy     => 'download2.znuny.org;download.znuny.org',
+        NoProxy     => 'download2.buzzdesk.org;download.buzzdesk.org',
         Success     => 1,
         ErrorNumber => 400,
     },
     {
         Name        => 'GET - http - ftp no matching NoProxy option - Test ' . $TestNumber++,
-        URL         => "https://download.znuny.org/releases/packages/otrs.xml",
+        URL         => "https://download.buzzdesk.org/releases/packages/otrs.xml",
         Timeout     => $TimeOut,
         Proxy       => 'ftp://NoProxy',
-        NoProxy     => 'download2.znuny.org',
+        NoProxy     => 'download2.buzzdesk.org',
         Success     => 0,
         ErrorNumber => 400,
     },
     {
         Name        => 'GET - http - ftp no matching NoProxy option with multiple domains - Test ' . $TestNumber++,
-        URL         => "https://download.znuny.org/releases/packages/otrs.xml",
+        URL         => "https://download.buzzdesk.org/releases/packages/otrs.xml",
         Timeout     => $TimeOut,
         Proxy       => 'ftp://NoProxy',
-        NoProxy     => 'download2.znuny.org;download3.znuny.org',
+        NoProxy     => 'download2.buzzdesk.org;download3.buzzdesk.org',
         Success     => 0,
         ErrorNumber => 400,
     },
     {
         Name    => 'GET - http - long timeout - Test ' . $TestNumber++,
-        URL     => "https://download.znuny.org/releases/packages/otrs.xml",
+        URL     => "https://download.buzzdesk.org/releases/packages/otrs.xml",
         Timeout => 100,
         Proxy   => $Proxy,
         Success => 1,
     },
     {
         Name    => 'GET - http - Header ' . $TestNumber++,
-        URL     => "https://download.znuny.org/releases/packages/otrs.xml",
+        URL     => "https://download.buzzdesk.org/releases/packages/otrs.xml",
         Timeout => 100,
         Proxy   => $Proxy,
         Success => 1,
@@ -123,7 +121,7 @@ my @Tests = (
     },
     {
         Name        => 'GET - http - Credentials ' . $TestNumber++,
-        URL         => "https://unittest.znuny.com/HTTPBasicAuth/",
+        URL         => "https://unittest.buzzdesk.com/HTTPBasicAuth/",
         Timeout     => 100,
         Proxy       => '',
         Success     => 1,
@@ -131,12 +129,12 @@ my @Tests = (
             User     => 'testuser',
             Password => 'testpassword',
             Realm    => 'Restricted Unittest Area',
-            Location => 'unittest.znuny.com:443',
+            Location => 'unittest.buzzdesk.com:443',
         },
     },
     {
         Name        => 'GET - http - MissingCredentials ' . $TestNumber++,
-        URL         => "https://unittest.znuny.com/HTTPBasicAuth/",
+        URL         => "https://unittest.buzzdesk.com/HTTPBasicAuth/",
         Timeout     => 100,
         Proxy       => '',
         Success     => 0,
@@ -144,7 +142,7 @@ my @Tests = (
     },
     {
         Name        => 'GET - http - IncompleteCredentials ' . $TestNumber++,
-        URL         => "https://unittest.znuny.com/HTTPBasicAuth/",
+        URL         => "https://unittest.buzzdesk.com/HTTPBasicAuth/",
         Timeout     => 100,
         Proxy       => '',
         Credentials => {

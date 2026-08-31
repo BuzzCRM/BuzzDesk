@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -25,7 +24,7 @@ my $FileTempObject    = $Kernel::OM->Get('Kernel::System::FileTemp');
 my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $StorableObject    = $Kernel::OM->Get('Kernel::System::Storable');
 my $SysConfigObject   = $Kernel::OM->Get('Kernel::System::SysConfig');
-my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $CacheObject       = $Kernel::OM->Get('Kernel::System::Cache');
 my $MainObject        = $Kernel::OM->Get('Kernel::System::Main');
 my $YAMLObject        = $Kernel::OM->Get('Kernel::System::YAML');

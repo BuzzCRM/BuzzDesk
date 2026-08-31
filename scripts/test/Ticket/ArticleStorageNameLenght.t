@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -34,7 +32,7 @@ my $TicketID = $TicketObject->TicketCreate(
     Priority     => '3 normal',
     State        => 'closed successful',
     CustomerNo   => '123465',
-    CustomerUser => 'unittest@znuny.com',
+    CustomerUser => 'unittest@buzzdesk.com',
     OwnerID      => 1,
     UserID       => 1,
 );
@@ -313,7 +311,7 @@ for my $Test (@Tests) {
 # Cleanup is done by RestoreDatabase, but we need to delete the tickets to cleanup the filesystem too.
 my @DeleteTicketList = $TicketObject->TicketSearch(
     Result            => 'ARRAY',
-    CustomerUserLogin => 'unittest@znuny.com',
+    CustomerUserLogin => 'unittest@buzzdesk.com',
     UserID            => 1,
 );
 for my $TicketID (@DeleteTicketList) {

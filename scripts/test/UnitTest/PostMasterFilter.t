@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -20,7 +19,7 @@ $Kernel::OM->ObjectParamAdd(
     },
 );
 
-my $ZnunyHelperObject         = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
+my $BuzzDeskHelperObject         = $Kernel::OM->Get('Kernel::System::BuzzDeskHelper');
 my $HelperObject              = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $PostMasterFilterObject    = $Kernel::OM->Get('Kernel::System::PostMaster::Filter');
 my $YAMLObject                = $Kernel::OM->Get('Kernel::System::YAML');
@@ -94,7 +93,7 @@ my @Filters = (
         'StopAfterMatch' => '1'
     },
 );
-my $Result = $ZnunyHelperObject->_PostMasterFilterCreate(@Filters);
+my $Result = $BuzzDeskHelperObject->_PostMasterFilterCreate(@Filters);
 
 $Self->True(
     $Result,

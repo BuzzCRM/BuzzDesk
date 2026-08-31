@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -81,7 +80,7 @@ sub Run {
         my $From = $ConfigObject->Get('AdminEmail');
         my $Sent = $EmailObject->Send(
             From       => $SendConfig{AdminEmail},
-            To         => 'support@znuny.com',
+            To         => 'support@buzzdesk.com',
             Subject    => "UnitTest $SendConfig{Organization}",
             Charset    => 'utf-8',
             MimeType   => 'text/plain',

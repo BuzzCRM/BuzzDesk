@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -25,7 +24,7 @@ $Kernel::OM->ObjectParamAdd(
 my $HelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
-my $Issuer = 'https://example.org/znuny/';
+my $Issuer = 'https://example.org/buzzdesk/';
 
 $ConfigObject->Set(
     Key   => 'AuthModule::SAML::Issuer2',
@@ -43,7 +42,7 @@ my $ExpectedSAMLRequestID = '_54c307de-960b-11f0-b741-ecb5948c096d';
 
 # Note: without signature to make tests easier.
 my $SAMLResponseXML = '<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
-    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Destination="https://example.com/znuny/index.pl?Action=Login" ID="ID_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" InResponseTo="'
+    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Destination="https://example.com/buzzdesk/index.pl?Action=Login" ID="ID_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" InResponseTo="'
     . $ExpectedSAMLRequestID
     . '" IssueInstant="2025-09-20T10:19:46.253Z" Version="2.0">
     <saml:Issuer>' . $Issuer . '</saml:Issuer>
@@ -53,11 +52,11 @@ my $SAMLResponseXML = '<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:
     <saml:Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" ID="ID_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" IssueInstant="2025-09-20T10:19:46.253Z" Version="2.0">
         <saml:Issuer>' . $Issuer . '</saml:Issuer>
         <saml:Subject>
-            <saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">unittest@znuny.org</saml:NameID>
+            <saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">unittest@buzzdesk.org</saml:NameID>
             <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
                 <saml:SubjectConfirmationData InResponseTo="'
     . $ExpectedSAMLRequestID
-    . '" NotOnOrAfter="2025-09-20T10:20:44.253Z" Recipient="https://example.com/znuny/index.pl?Action=Login"/>
+    . '" NotOnOrAfter="2025-09-20T10:20:44.253Z" Recipient="https://example.com/buzzdesk/index.pl?Action=Login"/>
             </saml:SubjectConfirmation>
         </saml:Subject>
         <saml:Conditions NotBefore="2025-09-20T10:19:44.253Z" NotOnOrAfter="2035-09-20T10:20:44.253Z">
@@ -73,7 +72,7 @@ my $SAMLResponseXML = '<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:
         <saml:AttributeStatement>
             <saml:Attribute FriendlyName="email" Name="email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
                 <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">unittest@znuny.org</saml:AttributeValue>
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">unittest@buzzdesk.org</saml:AttributeValue>
             </saml:Attribute>
             <saml:Attribute Name="Role" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
                 <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -166,14 +165,14 @@ $Self->True(
 my $EmailAddress = $SAMLResponseObject->GetFirstAttributeValue('email');
 $Self->Is(
     scalar $EmailAddress,
-    'unittest@znuny.org',
+    'unittest@buzzdesk.org',
     'GetFirstAttributeValue() must return expected value.',
 );
 
 my $NameID = $SAMLResponseObject->GetNameID();
 $Self->Is(
     scalar $NameID,
-    'unittest@znuny.org',
+    'unittest@buzzdesk.org',
     'GetNameID() must return expected value.',
 );
 

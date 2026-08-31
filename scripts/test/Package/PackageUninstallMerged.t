@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -42,8 +40,8 @@ if ( !$DeveloperSystem ) {
     <otrs_package version="1.0">
       <Name>PackageUninstallMerged</Name>
       <Version>0.0.1</Version>
-      <Vendor>Znuny GmbH</Vendor>
-      <URL>https://znuny.com/</URL>
+      <Vendor>BuzzDesk GmbH</Vendor>
+      <URL>https://buzzdesk.com/</URL>
       <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
       <ChangeLog>2005-11-10 New package (some test &lt; &gt; &amp;).</ChangeLog>
       <Description Lang="en">A test package (some test &lt; &gt; &amp;).</Description>
@@ -82,8 +80,8 @@ if ( !$DeveloperSystem ) {
     <otrs_package version="1.0">
       <Name>PackageUninstallMerged</Name>
       <Version>0.0.1</Version>
-      <Vendor>Znuny GmbH</Vendor>
-      <URL>https://znuny.com/</URL>
+      <Vendor>BuzzDesk GmbH</Vendor>
+      <URL>https://buzzdesk.com/</URL>
       <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
       <ChangeLog>2005-11-10 New package (some test &lt; &gt; &amp;).</ChangeLog>
       <Description Lang="en">A test package (some test &lt; &gt; &amp;).</Description>
@@ -95,7 +93,7 @@ if ( !$DeveloperSystem ) {
       <Filelist>
         <File Location="TestPackageUninstallMerged" Permission="644" Encode="Base64">aGVsbG8K</File>
         <File Location="var/TestPackageUninstallMerged" Permission="644" Encode="Base64">aGVsbG8K</File>
-        <File Location="bin/znuny.CheckSum.pl" Permission="755" Encode="Base64">aGVsbG8K</File>
+        <File Location="bin/buzzdesk.CheckSum.pl" Permission="755" Encode="Base64">aGVsbG8K</File>
       </Filelist>
     </otrs_package>
     ';
@@ -115,14 +113,14 @@ if ( !$DeveloperSystem ) {
 
     # now create an .save file for the framework file, content doesn't matter as it will be deleted
     my $Write = $Kernel::OM->Get('Kernel::System::Main')->FileWrite(
-        Location   => $Home . '/bin/znuny.CheckSum.pl.save',
+        Location   => $Home . '/bin/buzzdesk.CheckSum.pl.save',
         Content    => \$Content,
         Mode       => 'binmode',
         Permission => '644',
     );
     $Self->True(
         $Write,
-        '#FileWrite() - bin/znuny.CheckSum.pl.save',
+        '#FileWrite() - bin/buzzdesk.CheckSum.pl.save',
     );
 
     # create PackageObject again to make sure cache is cleared
@@ -137,7 +135,7 @@ if ( !$DeveloperSystem ) {
 
     # check that the original files from the package does not exist anymore
     # these files are suppose to be old files that are not required anymore by the merged package
-    for my $File (qw( TestPackageUninstallMerged var/TestPackageUninstallMerged bin/znuny.CheckSum.pl.save )) {
+    for my $File (qw( TestPackageUninstallMerged var/TestPackageUninstallMerged bin/buzzdesk.CheckSum.pl.save )) {
         my $RealFile = $Home . '/' . $File;
         $RealFile =~ s/\/\//\//g;
         $Self->False(
@@ -147,7 +145,7 @@ if ( !$DeveloperSystem ) {
     }
 
     # check that the framework file still exists
-    for my $File (qw( bin/znuny.CheckSum.pl )) {
+    for my $File (qw( bin/buzzdesk.CheckSum.pl )) {
         my $RealFile = $Home . '/' . $File;
         $RealFile =~ s/\/\//\//g;
         $Self->True(

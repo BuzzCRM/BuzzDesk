@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -48,7 +46,7 @@ my $CustomerID   = $Kernel::OM->Get('Kernel::System::CustomerCompany')->Customer
     CustomerCompanyZIP     => $CustomerName,
     CustomerCompanyCity    => $CustomerName,
     CustomerCompanyCountry => 'Germany',
-    CustomerCompanyURL     => 'http://www.znuny.com',
+    CustomerCompanyURL     => 'http://www.buzzdesk.com',
     CustomerCompanyComment => $CustomerName,
     ValidID                => 1,
     UserID                 => 1,

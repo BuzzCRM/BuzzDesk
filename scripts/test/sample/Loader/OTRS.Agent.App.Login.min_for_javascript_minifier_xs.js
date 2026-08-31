@@ -1,4 +1,3 @@
-// Copyright (C) 2001-2021 OTRS AG, https://otrs.com/\n";
 "use strict";var OTRS=OTRS||{};OTRS.Agent=OTRS.Agent||{};OTRS.Agent.App=OTRS.Agent.App||{};OTRS.Agent.App.Login=(function(TargetNS){TargetNS.Init=function(){if(!OTRS.Debug.BrowserCheck()){$('#LoginBox').hide();$('#OldBrowser').show();return;}
 OTRS.Form.EnableForm($('#LoginBox form, #PasswordBox form'));if($('#User').val()&&$('#User').val().length){$('#Password').focus();}
 else{$('#User').focus();}

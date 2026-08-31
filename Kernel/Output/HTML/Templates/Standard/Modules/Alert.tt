@@ -1,11 +1,10 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::TT::ScriptUsage)
+## nofilter(TidyAll::Plugin::BuzzDesk::TT::ScriptUsage)
 
 <div class="mod modAlert"[% IF Data.id %] id="[% Data.id | html %]"[% END %]>
     <div class="inner">

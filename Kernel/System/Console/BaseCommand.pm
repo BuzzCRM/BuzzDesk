@@ -1,12 +1,10 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-## nofilter(TidyAll::Plugin::Znuny::CodeStyle::STDERRCheck)
+## nofilter(TidyAll::Plugin::BuzzDesk::CodeStyle::STDERRCheck)
 
 package Kernel::System::Console::BaseCommand;
 
@@ -383,7 +381,7 @@ sub Execute {
     #   In future we might need to check if it was created and update it on the fly.
     $Kernel::OM->ObjectParamAdd(
         'Kernel::System::Log' => {
-            LogPrefix => 'Znuny-znuny.Console.pl-' . $Self->Name(),
+            LogPrefix => 'BuzzDesk-buzzdesk.Console.pl-' . $Self->Name(),
         },
     );
 
@@ -399,10 +397,10 @@ sub Execute {
     {
 
         $Self->PrintError(
-            "You cannot run znuny.Console.pl as user $CurrentUser. Please run it as user $ApplicationUser or with the help of su:"
+            "You cannot run buzzdesk.Console.pl as user $CurrentUser. Please run it as user $ApplicationUser or with the help of su:"
         );
         $Self->Print(
-            qq{  <yellow>su -c "bin/znuny.Console.pl MyCommand" -s /bin/bash $ApplicationUser</yellow>\n}
+            qq{  <yellow>su -c "bin/buzzdesk.Console.pl MyCommand" -s /bin/bash $ApplicationUser</yellow>\n}
         );
         return $Self->ExitCodeError();
     }
@@ -533,7 +531,7 @@ sub GetUsageHelp {
 
     my $UsageText = "<green>$Self->{Description}</green>\n";
     $UsageText .= "\n<yellow>Usage:</yellow>\n";
-    $UsageText .= " znuny.Console.pl $Self->{Name}";
+    $UsageText .= " buzzdesk.Console.pl $Self->{Name}";
 
     my $OptionsText   = "<yellow>Options:</yellow>\n";
     my $ArgumentsText = "<yellow>Arguments:</yellow>\n";

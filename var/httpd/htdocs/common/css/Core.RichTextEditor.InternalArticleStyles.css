@@ -1,5 +1,4 @@
 /*
-Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (AGPL). If you
@@ -20,7 +19,7 @@ did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
  * be visible for any email clients when article is sent.
  */
 
-/* revert all ck-editor styles with low priority to overwrite default Znuny css styles */
+/* revert all ck-editor styles with low priority to overwrite default BuzzDesk css styles */
 /* IE/Opera mini is not supported but in such case visual differences will be minor */
 .ck-content * {
     all: revert;

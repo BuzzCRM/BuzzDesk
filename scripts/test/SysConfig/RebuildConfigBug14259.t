@@ -1,6 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -42,7 +40,7 @@ for my $ChildIndex ( 1 .. $ChildCount ) {
         $Kernel::OM->ObjectsDiscard();
 
         # Execute console command.
-        `$^X bin/znuny.Console.pl Maint::Config::Rebuild --time 180`;
+        `$^X bin/buzzdesk.Console.pl Maint::Config::Rebuild --time 180`;
         my $ExitCode = $? >> 8;
 
         $Kernel::OM->Get('Kernel::System::Cache')->Set(
