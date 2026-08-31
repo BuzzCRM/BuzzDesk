@@ -162,7 +162,7 @@ sub LoadDefaults {
 
     # default language
     # (the default frontend language) [default: en]
-    $Self->{DefaultLanguage} = 'en';
+    $Self->{DefaultLanguage} = 'es';
 
     # used languages
     # (short name = long name and file)

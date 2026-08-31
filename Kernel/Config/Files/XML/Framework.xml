@@ -141,7 +141,7 @@
         <Description Translatable="1">Defines the default front-end language. All the possible values are determined by the available language files on the system (see the next setting).</Description>
         <Navigation>Frontend::Base</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="^(..|.._..)$">en</Item>
+            <Item ValueType="String" ValueRegex="^(..|.._..)$">es</Item>
         </Value>
     </Setting>
     <Setting Name="DefaultUsedLanguages" Required="1" Valid="1">
