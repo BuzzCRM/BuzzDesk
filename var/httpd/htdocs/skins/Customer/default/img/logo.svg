@@ -1,10 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 265 55" width="265" height="55">
     <defs>
-        <linearGradient id="buzzdeskLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#4EEBF3" />
-            <stop offset="55%" stop-color="#22D3EE" />
-            <stop offset="100%" stop-color="#5754FF" />
+        <linearGradient id="buzzdeskLogoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#1070D1" />
+            <stop offset="100%" stop-color="#54A3F2" />
         </linearGradient>
     </defs>
-    <text x="0" y="40" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="34" letter-spacing="-0.5" fill="url(#buzzdeskLogoGradient)">Buzz<tspan fill="#EAF1F2">Desk</tspan></text>
+    <text x="0" y="40" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="34" letter-spacing="-0.5" fill="url(#buzzdeskLogoGradient)">Buzz<tspan fill="#0B0B0D">Desk</tspan></text>
 </svg>

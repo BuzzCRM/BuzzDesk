@@ -15,32 +15,32 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 
 :root {
 
-    /* Main Colors (BuzzWave palette) */
-    --primary-color: #22D3EE;
-    --primary-color-darker: #17ACC2;
-    --primary-color-rgb: rgba(34, 211, 238, 0.18);
-    --primary-color-calendar: #123840;
-    --secondary-color: #5754FF;
+    /* Main Colors (buzzcrm.ai design system - Desk token family) */
+    --primary-color: #1070D1;
+    --primary-color-darker: #0D5CAB;
+    --primary-color-rgb: rgba(16, 112, 209, 0.14);
+    --primary-color-calendar: #EAF3FE;
+    --secondary-color: #54A3F2;
 
-    --white: #101B1E;
-    --gray-light-white: #16232A;
-    --gray-light-ultra: #182126;
-    --gray-light-semi: #1B262C;
-    --gray-light: #1D2830;
-    --gray-regular-light: #223034;
-    --gray-regular: #263942;
-    --gray-medium: #47616A;
-    --gray-medium-darker: #4A646D80;
-    --gray-dark-semi: #7C939C;
-    --gray-dark: #9FB4BC;
-    --gray-darker: #B7C8CF;
-    --black: #EAF1F2;
+    --white: #FEFEFD;
+    --gray-light-white: #FEFEFD;
+    --gray-light-ultra: #F4F5F1;
+    --gray-light-semi: #F4F5F1;
+    --gray-light: #EFEFEA;
+    --gray-regular-light: #E6E6E1;
+    --gray-regular: #D2D2CB;
+    --gray-medium: #B0B0A8;
+    --gray-medium-darker: #B0B0A880;
+    --gray-dark-semi: #8A8A82;
+    --gray-dark: #696973;
+    --gray-darker: #3F3F46;
+    --black: #0B0B0D;
 
     /* Font */
     --font-family-primary: 'Plus Jakarta Sans', sans-serif;
 
     --color-scroll-bar: var(--gray-dark);
-    --mail-outgoing-color: #2A2410;
+    --mail-outgoing-color: #EAF3FE;
 
     --disabled: var(--gray-light-semi);
     --disabled-text: var(--gray-medium);
@@ -55,65 +55,65 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
     --email-info: var(--gray-light-white);
     --ticket-subject: var(--table-text-color);
 
-    --success-color: #4ADE80;
-    --warning-color: #FBBF24;
-    --error-color: #F87171;
+    --success-color: #16A34A;
+    --warning-color: #D97706;
+    --error-color: #DC2626;
     --confirmation-color: var(--success-color);
     --plus-color: var(--success-color);
 
     /* Tables */
-    --table-text-color: #D7E4E7;
-    --table-th-bg: #16232A;
-    --table-td-even-bg: #101B1E;
-    --tr-disabled-bg: #1B262C;
-    --tr-disabled-text: #5C737B;
+    --table-text-color: #3F3F46;
+    --table-th-bg: #F4F5F1;
+    --table-td-even-bg: #FBFBF8;
+    --tr-disabled-bg: #F4F5F1;
+    --tr-disabled-text: #B0B0A8;
 
     /* Flag Element */
-    --color-flag-default: #55666C;
+    --color-flag-default: #D2D2CB;
 
     /* Alert Component */
     --alert-close-icon-color: var(--gray-dark);
 
     /* Info */
-    --alert-info-bg-color: #38BDF810;
-    --alert-info-icon-color: #38BDF8;
-    --alert-info-border-color: #38BDF81a;
+    --alert-info-bg-color: #E6F9FD;
+    --alert-info-icon-color: #0E7490;
+    --alert-info-border-color: #0E749033;
 
     /* Error */
-    --alert-error-bg-solid-color: #F87171;
-    --alert-error-bg-color: #F8717110;
-    --alert-error-icon-color: #F87171;
-    --alert-error-border-color: #F871711a;
+    --alert-error-bg-solid-color: #DC2626;
+    --alert-error-bg-color: #DC262610;
+    --alert-error-icon-color: #DC2626;
+    --alert-error-border-color: #DC26261a;
 
     /* Success */
-    --alert-success-bg-solid-color: #4ADE80;
-    --alert-success-bg-color: #4ADE8010;
-    --alert-success-icon-color: #4ADE80;
-    --alert-success-border-color: #4ADE801a;
+    --alert-success-bg-solid-color: #16A34A;
+    --alert-success-bg-color: #16A34A10;
+    --alert-success-icon-color: #16A34A;
+    --alert-success-border-color: #16A34A1a;
 
     /* Warning */
-    --alert-warning-bg-color: #FBBF2410;
-    --alert-warning-icon-color: #FBBF24;
-    --alert-warning-border-color: #FBBF241a;
+    --alert-warning-bg-color: #D9770610;
+    --alert-warning-icon-color: #D97706;
+    --alert-warning-border-color: #D977061a;
 
     /* Notice */
-    --alert-notice-bg-color: #ffffff10;
-    --alert-notice-icon-color: #9FB4BC;
-    --alert-notice-border-color: #ffffff1a;
+    --alert-notice-bg-color: #69697310;
+    --alert-notice-icon-color: #696973;
+    --alert-notice-border-color: #6969731a;
 
-    --color-icon-favorite: #FBBF24;
+    --color-icon-favorite: #D97706;
 
 
     /* Forms */
-    --border-color: #26393F;
-    --border-input-color: #33474D;
+    --border-color: #E6E6E1;
+    --border-input-color: #D2D2CB;
 
     /* Sections */
-    --main-bg-color: #0B1416;
+    --main-bg-color: #FBFBF8;
     --input-field-bg-color: var(--white);
 
     /* BG's */
-    --overlay-bg: rgba(0, 0, 0, 0.55);
+    --overlay-bg: rgba(11, 11, 13, 0.35);
 
 
 }

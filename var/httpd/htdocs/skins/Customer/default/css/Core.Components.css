@@ -1571,3 +1571,107 @@ did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
     }
 
 }
+
+/* ============================================================================
+   BuzzDesk — buzzcrm.ai design system (polish layer)
+   Self-hosted brand fonts + component treatment. Appended last in CommonCSS so
+   these rules win over the stock skin defaults.
+   Tokens: --bg #FBFBF8 · --surface #FEFEFD · --line #E6E6E1 · --ink #0B0B0D
+           primary #1070D1 (Desk) · live #54A3F2 · wash #EAF3FE
+   ============================================================================ */
+
+/* --- Brand typography (self-hosted, no external requests) --- */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url(../fonts/plus-jakarta-sans-latin.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url(../fonts/plus-jakarta-sans-latin-ext.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400 500;
+    font-display: swap;
+    src: url(../fonts/jetbrains-mono-latin.woff2) format('woff2');
+}
+
+:root {
+    --font-family-primary: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-family-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+    /* buzzcrm soft focus ring (glow-soft) */
+    --focus-ring: 0 0 0 4px rgba(16, 112, 209, 0.12);
+    /* buzzcrm soft card shadow (shadow-sm) */
+    --shadow-card: 0 1px 2px rgba(12, 30, 58, 0.06);
+}
+
+body,
+html,
+.Content {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+code,
+pre,
+tt {
+    font-family: var(--font-family-mono);
+}
+
+/* --- Soft brand focus ring on interactive elements --- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.CallForAction:focus,
+[role="button"]:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+}
+
+/* --- Primary action buttons: brand treatment --- */
+button.Primary,
+.CallForAction,
+.btn-main,
+input[type="submit"],
+button[type="submit"] {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    border-radius: var(--border-radius-sm);
+}
+
+button.Primary:hover,
+.btn-main:hover,
+a.CallForAction:hover {
+    box-shadow: 0 6px 20px -8px rgba(16, 112, 209, 0.40);
+}
+
+/* --- Ghost / secondary buttons: neutral outline --- */
+.SidebarColumn .CallForAction,
+button.Cancel,
+a.Cancel {
+    border-radius: var(--border-radius-sm);
+}
+
+/* --- Cards / widgets: soft surface + hairline + gentle shadow --- */
+.WidgetSimple,
+.WidgetBox,
+.Widget,
+.MainBox {
+    box-shadow: var(--shadow-card);
+}
+
+/* --- Airy table header hover --- */
+thead th,
+tr:hover {
+    transition: background 140ms ease;
+}
