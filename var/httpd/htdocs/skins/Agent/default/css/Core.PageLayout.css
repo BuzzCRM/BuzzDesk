@@ -1009,7 +1009,7 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 
     .ActionsSideBar.LayoutFixedSidebar .ActionsSideBarComp .Header > h2 {
         color: var(--black);
-        /*font-family: 'Inter'*/
+        /*font-family: 'Plus Jakarta Sans'*/
         font-size: var(--font-size-lg);
         font-weight: var(--medium);
         letter-spacing: .1px;

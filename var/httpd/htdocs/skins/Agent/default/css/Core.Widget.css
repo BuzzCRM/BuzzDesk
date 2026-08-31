@@ -623,7 +623,7 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
         color: var(--black);
         border: 0;
         border-radius: var(--border-radius-xs);
-        /*font-family: 'Inter';*/
+        /*font-family: 'Plus Jakarta Sans';*/
         font-size: var(--font-size-sm);
         font-weight: var(--normal);
         letter-spacing: .1px;
@@ -1491,7 +1491,7 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
         font-size: var(--font-size-lg);
         line-height: normal;
         font-weight: var(--normal);
-        /*font-family: 'Inter';*/
+        /*font-family: 'Plus Jakarta Sans';*/
     }
 
     @media only screen and (max-width: 768px) {
@@ -3160,7 +3160,7 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 
     .message-primary {
         color: var(--primary-color);
-        /*font-family: 'Inter';*/
+        /*font-family: 'Plus Jakarta Sans';*/
         font-size: var(--font-size-md);
         font-weight: var(--semi-bold);
         letter-spacing: .2px;

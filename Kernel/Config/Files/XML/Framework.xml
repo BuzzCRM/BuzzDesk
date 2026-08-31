@@ -51,7 +51,7 @@
         <Description Translatable="1">Defines the name of the application, shown in the web interface, tabs and title bar of the web browser.</Description>
         <Navigation>Core</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">Znuny</Item>
+            <Item ValueType="String" ValueRegex="">BuzzDesk</Item>
         </Value>
     </Setting>
     <Setting Name="SystemID" Required="1" Valid="1" ConfigLevel="200">
@@ -3010,7 +3010,7 @@
         <Description Translatable="1">Specifies the path of the file for the logo in the page header (gif|jpg|png).</Description>
         <Navigation>Core::PDF</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">&lt;OTRS_CONFIG_Home&gt;/var/httpd/htdocs/skins/Agent/default/img/logo.png</Item>
+            <Item ValueType="String" ValueRegex="">&lt;OTRS_CONFIG_Home&gt;/var/httpd/htdocs/skins/Agent/default/img/logo-print.png</Item>
         </Value>
     </Setting>
     <Setting Name="PDF::LogoSize" Required="1" Valid="1">

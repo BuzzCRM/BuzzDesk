@@ -66,7 +66,7 @@ a.Print span {
     justify-content: center;
     padding: var(--padding-xs);
     border-radius: var(--border-radius-xxs);
-    /*font-family: 'Inter'*/
+    /*font-family: 'Plus Jakarta Sans'*/
     font-size: 11px;
     font-weight: var(--medium);
 }
@@ -109,7 +109,7 @@ ul#ProcessElements li.AccordionElement h2 a {
     justify-content: space-between;
     padding: var(--padding-sm) var(--padding-lg);
     font-size: 14px;
-    /*font-family: 'Inter';*/
+    /*font-family: 'Plus Jakarta Sans';*/
     font-weight: var(--semi-bold);
     line-height: 150%;
     color: var(--black);
@@ -184,7 +184,7 @@ ul#ProcessElements li.AccordionElement div.Content ul {
 ul#ProcessElements li.AccordionElement div.Content ul li {
     display: flex;
     align-items: center;
-    /*font-family: 'Inter';*/
+    /*font-family: 'Plus Jakarta Sans';*/
     font-size: var(--font-size-sm);
     font-weight: var(--normal);
     padding: 12px var(--padding-sm);

@@ -172,7 +172,7 @@ div.Result {
     font-size: var(--main-font-size);
     line-height: normal;
     letter-spacing: 0.2px;
-    /* font-family: 'Inter';*/
+    /* font-family: 'Plus Jakarta Sans';*/
     padding-top: var(--padding-sm);
 }
 
@@ -187,7 +187,7 @@ span.Emphasis {
     letter-spacing: .2px;
     color: var(--black);
     font-weight: var(--medium);
-    /* font-family: 'Inter';*/
+    /* font-family: 'Plus Jakarta Sans';*/
 }
 
 } /* end @media */
