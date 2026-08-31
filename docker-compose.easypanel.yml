@@ -1,0 +1,45 @@
+services:
+  znuny:
+    image: local/znuny-httpd-postgres:7.3.6
+    command: ["/usr/local/bin/start-with-daemon.sh"]
+    environment:
+      DB_HOST: ${DB_HOST}
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_USER_PASS: ${DB_USER_PASS}
+      ZNUNY_ADMIN_PASS: ${ZNUNY_ADMIN_PASS}
+      DEFAULT_INTERFACE: ${DEFAULT_INTERFACE}
+      SMTP_DOMAIN: ${SMTP_DOMAIN}
+      SMTP_ADDRESS: ${SMTP_ADDRESS}
+      SMTP_PORT: ${SMTP_PORT}
+      SMTP_USERNAME: ${SMTP_USERNAME}
+      SMTP_PASSWORD: ${SMTP_PASSWORD}
+      SMTP_AUTHENTICATION: ${SMTP_AUTHENTICATION}
+      SMTP_ENABLE_STARTTLS_AUTO: ${SMTP_ENABLE_STARTTLS_AUTO}
+      SMTP_OPENSSL_VERIFY_MODE: ${SMTP_OPENSSL_VERIFY_MODE}
+      SMTP_OPEN_TIMEOUT: ${SMTP_OPEN_TIMEOUT}
+      SMTP_READ_TIMEOUT: ${SMTP_READ_TIMEOUT}
+      MAILER_SENDER_EMAIL: ${MAILER_SENDER_EMAIL}
+      NOTIFICATION_SENDER_NAME: ${NOTIFICATION_SENDER_NAME}
+      NOTIFICATION_SENDER_EMAIL: ${NOTIFICATION_SENDER_EMAIL}
+    volumes:
+      - znuny_persistent:/persistent
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost/znuny/index.pl >/dev/null || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 90s
+    networks:
+      - easypanel-znuny
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+
+volumes:
+  znuny_persistent:
+
+networks:
+  easypanel-znuny:
+    external: true
