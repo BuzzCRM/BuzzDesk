@@ -50,6 +50,7 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
         font-size: 12px;
         text-align: left;
         position: relative;
+        color: var(--main-font-color);
         background: var(--background-primary-color);
     }
 
