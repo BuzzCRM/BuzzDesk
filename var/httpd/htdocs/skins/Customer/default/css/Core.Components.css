@@ -1675,3 +1675,11 @@ thead th,
 tr:hover {
     transition: background 140ms ease;
 }
+
+/* --- Footer: no attribution banner, collapse the empty strip --- */
+#Footer {
+    border-top: 0;
+    padding: 0;
+    min-height: 0;
+    background: transparent;
+}

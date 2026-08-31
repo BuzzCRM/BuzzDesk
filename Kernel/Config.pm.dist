@@ -68,6 +68,11 @@ sub Load {
     # $Self->{SessionUseCookie} = 0;
     # $Self->{CheckMXRecord} = 0;
 
+    # Disable the "Powered by" attribution banner and the X-Powered-By header
+    # (removes it from the web UI footer, notification emails, PDF metadata and
+    # iCalendar PRODID). Brand decision: no third-party attribution in the UI.
+    $Self->{'Secure::DisableBanner'} = 1;
+
     # ---------------------------------------------------- #
 
     # ---------------------------------------------------- #
