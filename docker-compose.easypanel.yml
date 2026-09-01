@@ -27,8 +27,6 @@ services:
       NOTIFICATION_SENDER_EMAIL: ${NOTIFICATION_SENDER_EMAIL}
     volumes:
       - znuny_persistent:/persistent
-    ports:
-      - "80"
     healthcheck:
       test: ["CMD-SHELL", "curl -fsS http://localhost/buzzdesk/index.pl >/dev/null || exit 1"]
       interval: 30s
