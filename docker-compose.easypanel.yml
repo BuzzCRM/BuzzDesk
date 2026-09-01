@@ -33,6 +33,8 @@ services:
       timeout: 10s
       retries: 5
       start_period: 120s
+    networks:
+      - easypanel-znuny
     deploy:
       replicas: 1
       restart_policy:
@@ -40,3 +42,7 @@ services:
 
 volumes:
   znuny_persistent:
+
+networks:
+  easypanel-znuny:
+    external: true
