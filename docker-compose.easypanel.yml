@@ -1,8 +1,11 @@
 services:
   znuny:
-    image: local/znuny-httpd-postgres:7.3.6
+    build:
+      context: .
+      dockerfile: Dockerfile
     command: ["/usr/local/bin/start-with-daemon.sh"]
     environment:
+      DB_ENGINE: ${DB_ENGINE:-postgresql}
       DB_HOST: ${DB_HOST}
       DB_NAME: ${DB_NAME}
       DB_USER: ${DB_USER}
@@ -24,12 +27,14 @@ services:
       NOTIFICATION_SENDER_EMAIL: ${NOTIFICATION_SENDER_EMAIL}
     volumes:
       - znuny_persistent:/persistent
+    ports:
+      - "80"
     healthcheck:
-      test: ["CMD-SHELL", "curl -fsS http://localhost/znuny/index.pl >/dev/null || exit 1"]
+      test: ["CMD-SHELL", "curl -fsS http://localhost/buzzdesk/index.pl >/dev/null || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 5
-      start_period: 90s
+      start_period: 120s
     networks:
       - easypanel-znuny
     deploy:

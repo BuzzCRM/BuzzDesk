@@ -1,0 +1,7 @@
+.git
+.github
+development
+doc
+.dockerignore
+Dockerfile
+docker-compose.easypanel.yml
