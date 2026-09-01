@@ -68,18 +68,15 @@ RUN apt-get update && \
       libdatetime-format-xsd-perl \
       libdatetime-hires-perl \
       liblwp-protocol-https-perl \
-      libssl-dev \
       libcrypt-openssl-random-perl \
-      libfile-slurper-perl \
-      build-essential cpanminus && \
+      libfile-slurper-perl && \
     apt-get clean && rm -rf /var/lib/apt/lists/* && \
     sed -i '/en_US.UTF-8/s/^# //' /etc/locale.gen && \
     locale-gen
 
-RUN cpanm --notest --force Jq Net::SAML2 && \
-    apt remove --purge -y build-essential cpanminus gcc make libssl-dev && \
-    apt autoremove --purge -y && \
-    rm -rf /var/lib/apt/lists/* /root/.cpanm
+# Jq and Net::SAML2 are optional (GenericInterface extended conditions / SAML
+# SSO, neither used here) and were dropped: they pull build-essential/gcc and
+# compile CryptX from source, which is by far the slowest part of the build.
 
 # App source: this Dockerfile builds directly from the repo (build context = repo root)
 RUN mkdir -p ${ZNUNY_HOME}
