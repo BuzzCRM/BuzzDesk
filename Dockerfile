@@ -9,20 +9,11 @@ ARG BUZZDESK_USER=znuny
 ENV ZNUNY_HOME=/opt/znuny \
     PATH=$PATH:/opt/znuny/bin
 
-# gosu (privilege drop helper)
+# System + Perl + Apache packages (one update/install pass for the whole image)
 ARG GOSU_VERSION=1.17
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends ca-certificates wget && \
-    dpkgArch="$(dpkg --print-architecture)" && \
-    wget -qO /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-${dpkgArch}" && \
-    chmod +x /usr/local/bin/gosu && \
-    gosu nobody true && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
-
-# System + Perl + Apache packages
-RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-      wget default-mysql-client postgresql-client vim curl unzip \
+      ca-certificates wget default-mysql-client postgresql-client curl unzip \
       apache2 libapache2-mod-perl2 rsync \
       libdbd-odbc-perl \
       libdbd-mysql-perl \
@@ -50,7 +41,6 @@ RUN apt-get update && \
       libdatetime-locale-perl \
       libmoo-perl \
       locales \
-      bash-completion \
       libyaml-libyaml-perl \
       libjavascript-minifier-xs-perl \
       libcss-minifier-xs-perl \
@@ -74,9 +64,17 @@ RUN apt-get update && \
     sed -i '/en_US.UTF-8/s/^# //' /etc/locale.gen && \
     locale-gen
 
+# gosu (privilege drop helper)
+RUN dpkgArch="$(dpkg --print-architecture)" && \
+    wget -qO /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-${dpkgArch}" && \
+    chmod +x /usr/local/bin/gosu && \
+    gosu nobody true
+
 # Jq and Net::SAML2 are optional (GenericInterface extended conditions / SAML
 # SSO, neither used here) and were dropped: they pull build-essential/gcc and
 # compile CryptX from source, which is by far the slowest part of the build.
+# vim and bash-completion were also dropped: dev conveniences, not needed to
+# run the app.
 
 # App source: this Dockerfile builds directly from the repo (build context = repo root)
 RUN mkdir -p ${ZNUNY_HOME}

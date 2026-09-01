@@ -5,3 +5,4 @@ doc
 .dockerignore
 Dockerfile
 docker-compose.easypanel.yml
+var/httpd/htdocs/skins/*/*/img/source
